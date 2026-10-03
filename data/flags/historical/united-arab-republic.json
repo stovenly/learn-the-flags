@@ -1,0 +1,83 @@
+{
+  "code": "united-arab-republic",
+  "isoNumeric": "",
+  "name": "United Arab Republic",
+  "the": true,
+  "officialName": "United Arab Republic",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "الجمهورية العربية المتحدة",
+      "romanized": "al-Jumhūriyya al-ʿArabiyya al-Muttaḥida"
+    }
+  ],
+  "aliases": [
+    "UAR"
+  ],
+  "image": "Flag_of_the_United_Arab_Republic_(1958–1971),_Flag_of_Syria_(1980–2024).svg",
+  "capital": "Cairo",
+  "region": "Africa",
+  "subregion": "1958–1961",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Arabic"
+  ],
+  "currencies": [
+    {
+      "name": "Egyptian pound",
+      "code": "EGP",
+      "symbol": "£"
+    },
+    {
+      "name": "Syrian pound",
+      "code": "SYP",
+      "symbol": "£"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    30,
+    33
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1958–1961"
+    ],
+    [
+      "Flag used",
+      "1958–1961"
+    ],
+    [
+      "Today",
+      "Egypt and Syria"
+    ]
+  ],
+  "shape": [
+    "eg",
+    "sy"
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of red, white and black, with two green five-pointed stars in the white stripe.",
+    "adopted": "1958",
+    "colors": [
+      "red",
+      "white",
+      "black",
+      "green"
+    ],
+    "symbolism": "Red, white and black are the Arab Liberation colours of Egypt's 1952 revolution, and the two stars stood for Egypt and Syria."
+  },
+  "hook": "The UAR is red-white-black with two green stars, one each for Egypt and Syria; Iraq writes green script there, Egypt today uses a gold eagle, and Yemen leaves the white stripe empty.",
+  "lookalikes": [
+    "iq",
+    "eg",
+    "ye",
+    "sy"
+  ],
+  "trivia": [
+    "Egypt kept the name United Arab Republic until 1971 and this flag until 1972, a decade after Syria left the union.",
+    "Syria readopted the two-star flag in 1980 and used it until the fall of the Assad government in December 2024."
+  ]
+}

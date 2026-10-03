@@ -1,0 +1,51 @@
+{
+  "code": "sb",
+  "isoNumeric": "090",
+  "name": "Solomon Islands",
+  "the": true,
+  "officialName": "Solomon Islands",
+  "localNames": [],
+  "aliases": [
+    "Solomons"
+  ],
+  "status": "un-member",
+  "capital": "Honiara",
+  "region": "Oceania",
+  "subregion": "Melanesia",
+  "population": 819198,
+  "area": 28896,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "Solomon Islands dollar",
+      "code": "SBD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Solomon Islander",
+  "latlng": [
+    -8,
+    159
+  ],
+  "flag": {
+    "description": "Divided diagonally from lower hoist to upper fly by a thin yellow stripe, with a blue upper hoist triangle containing five white five-pointed stars arranged in an X, and a green lower fly triangle.",
+    "adopted": "1977",
+    "colors": [
+      "blue",
+      "green",
+      "yellow",
+      "white"
+    ],
+    "symbolism": "Blue represents the water, green the land and yellow the sunshine; the five stars originally stood for the country's five main island districts."
+  },
+  "hook": "Five white stars in an X on a blue triangle, then a thin yellow diagonal and green below; Tanzania's diagonal is a wide black band edged in yellow.",
+  "lookalikes": [
+    "tz"
+  ],
+  "trivia": [
+    "Guadalcanal, home of the capital Honiara, was the scene of a major Second World War campaign in 1942–43.",
+    "The country is made up of nearly a thousand islands spread over about 1,500 km of ocean."
+  ]
+}

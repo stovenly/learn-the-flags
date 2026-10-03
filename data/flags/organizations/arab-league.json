@@ -1,0 +1,88 @@
+{
+  "code": "arab-league",
+  "isoNumeric": "",
+  "name": "Arab League",
+  "the": true,
+  "officialName": "League of Arab States",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "جامعة الدول العربية",
+      "romanized": "Jāmiʿat ad-Duwal al-ʿArabiyya"
+    }
+  ],
+  "aliases": [
+    "League of Arab States"
+  ],
+  "image": "Flag_of_the_Arab_League.svg",
+  "capital": "Cairo",
+  "region": "Africa",
+  "subregion": "Founded 1945",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Arabic"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    30.04,
+    31.23
+  ],
+  "facts": [
+    [
+      "Founded",
+      "1945"
+    ],
+    [
+      "Members",
+      "22 states"
+    ],
+    [
+      "Headquarters",
+      "Cairo"
+    ]
+  ],
+  "shape": [
+    "ae",
+    "bh",
+    "dj",
+    "dz",
+    "eg",
+    "iq",
+    "jo",
+    "km",
+    "kw",
+    "lb",
+    "ly",
+    "ma",
+    "mr",
+    "om",
+    "ps",
+    "qa",
+    "sa",
+    "sd",
+    "so",
+    "sy",
+    "tn",
+    "ye"
+  ],
+  "flag": {
+    "description": "A green field with a white emblem in the centre: an upturned crescent beneath the Arabic name of the League, inside a gold chain and a white laurel wreath.",
+    "adopted": "1945",
+    "colors": [
+      "green",
+      "white",
+      "yellow"
+    ],
+    "symbolism": "The chain stands for the unity of the member states and the wreath for peace; green is a colour long associated with Islam and the Arab world."
+  },
+  "hook": "The Arab League is green with a white crescent, chain and laurel wreath around Arabic script; Saudi Arabia's green has its script above a sword and no wreath.",
+  "lookalikes": [
+    "sa"
+  ],
+  "trivia": [
+    "The League was founded in Cairo on 22 March 1945 by seven states: Egypt, Iraq, Transjordan, Lebanon, Saudi Arabia, Syria and Yemen.",
+    "Syria's membership was suspended in 2011 and restored in 2023."
+  ]
+}

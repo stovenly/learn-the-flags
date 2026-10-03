@@ -1,0 +1,62 @@
+{
+  "code": "ca-mb",
+  "isoNumeric": "",
+  "name": "Manitoba",
+  "officialName": "Province of Manitoba",
+  "localNames": [],
+  "aliases": [
+    "MB"
+  ],
+  "image": "Flag_of_Manitoba.svg",
+  "capital": "Winnipeg",
+  "region": "Canada",
+  "subregion": "Western Canada",
+  "population": 1342153,
+  "area": 647797,
+  "languages": [
+    "English",
+    "French"
+  ],
+  "currencies": [
+    {
+      "name": "Canadian dollar",
+      "code": "CAD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Manitoban",
+  "latlng": [
+    55,
+    -97
+  ],
+  "facts": [
+    [
+      "Type",
+      "Province"
+    ],
+    [
+      "Joined Confederation",
+      "1870"
+    ]
+  ],
+  "flag": {
+    "description": "A red ensign: a red field with the Union Jack in the upper hoist and the provincial shield in the fly, showing a red St George's cross above a bison standing on a rock on green.",
+    "adopted": "1966",
+    "colors": [
+      "red",
+      "white",
+      "blue",
+      "green",
+      "brown"
+    ],
+    "symbolism": "The Union Jack reflects the province's British heritage, and the bison recalls the great herds of the prairie and their importance to Indigenous peoples and the fur trade."
+  },
+  "hook": "Manitoba is a red ensign with a bison on its shield; Ontario's red ensign has three gold maple leaves instead.",
+  "lookalikes": [
+    "ca-on"
+  ],
+  "trivia": [
+    "Manitoba adopted its red ensign in 1966, soon after the Maple Leaf replaced the Canadian Red Ensign as the national flag.",
+    "Manitoba's name is thought to come from Cree or Ojibwe words referring to a spirit in the narrows of Lake Manitoba."
+  ]
+}

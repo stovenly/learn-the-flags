@@ -1,0 +1,49 @@
+{
+  "code": "us-ok",
+  "isoNumeric": "",
+  "name": "Oklahoma",
+  "officialName": "State of Oklahoma",
+  "localNames": [],
+  "aliases": [
+    "OK"
+  ],
+  "image": "Flag_of_Oklahoma.svg",
+  "capital": "Oklahoma City",
+  "region": "United States",
+  "subregion": "West South Central",
+  "population": 3959353,
+  "area": 181037,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Oklahoman",
+  "latlng": [
+    35.6,
+    -97.5
+  ],
+  "facts": [
+    [
+      "Nickname",
+      "The Sooner State"
+    ],
+    [
+      "Statehood",
+      "1907"
+    ]
+  ],
+  "flag": {
+    "description": "A sky blue field with an Osage warrior's buffalo-hide shield decorated with small crosses and hung with seven eagle feathers, crossed by a peace pipe and an olive branch, with \"OKLAHOMA\" in white below.",
+    "adopted": "1941",
+    "colors": [
+      "light-blue",
+      "brown",
+      "white"
+    ],
+    "symbolism": "The shield stands for defence, and the Native American peace pipe laid with the European olive branch stands for peace between the two peoples."
+  },
+  "hook": "Oklahoma hangs a tan Osage shield with dangling eagle feathers on sky blue, crossed by a peace pipe and an olive branch.",
+  "lookalikes": [],
+  "trivia": [
+    "Oklahoma's first flag, a red field with a white star bearing the number 46, was replaced in 1925, partly because red banners had become linked with communism.",
+    "The word \"OKLAHOMA\" was added below the shield in 1941."
+  ]
+}

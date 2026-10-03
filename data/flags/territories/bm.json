@@ -1,0 +1,60 @@
+{
+  "code": "bm",
+  "isoNumeric": "060",
+  "name": "Bermuda",
+  "officialName": "Bermuda",
+  "localNames": [],
+  "aliases": [
+    "The Bermudas",
+    "Somers Isles"
+  ],
+  "image": "Flag_of_Bermuda.svg",
+  "capital": "Hamilton",
+  "region": "North America",
+  "subregion": "British Overseas Territory",
+  "population": 63913,
+  "area": 53.2,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "Bermudian dollar",
+      "code": "BMD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Bermudian",
+  "latlng": [
+    32.33,
+    -64.75
+  ],
+  "facts": [
+    [
+      "Status",
+      "British Overseas Territory"
+    ],
+    [
+      "Sovereign state",
+      "United Kingdom"
+    ]
+  ],
+  "flag": {
+    "description": "A red field with the Union Jack in the upper hoist and, in the fly, the coat of arms of Bermuda: a red lion holding a shield that shows the wreck of a sailing ship on the rocks.",
+    "adopted": "1910",
+    "colors": [
+      "red",
+      "blue",
+      "white",
+      "green",
+      "yellow"
+    ],
+    "symbolism": "The shield shows the wreck of the Sea Venture on Bermuda's reefs in 1609, which led to the islands' settlement by the English."
+  },
+  "hook": "Bermuda is the British territory in red: a Red Ensign with a lion holding a shipwreck, where its Caribbean cousins fly blue.",
+  "lookalikes": [],
+  "trivia": [
+    "Bermuda is the only British Overseas Territory to use a Red Ensign, rather than a Blue Ensign, as its main flag.",
+    "The wreck of the Sea Venture shown on the flag is thought to have inspired Shakespeare's The Tempest."
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "code": "red-crescent",
+  "isoNumeric": "",
+  "name": "Red Crescent",
+  "the": true,
+  "officialName": "Red Crescent",
+  "localNames": [],
+  "aliases": [],
+  "image": "Flag_of_the_Red_Crescent.svg",
+  "capital": "Geneva",
+  "region": "International",
+  "subregion": "Founded 1919",
+  "population": null,
+  "area": null,
+  "languages": [],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    46.23,
+    6.14
+  ],
+  "facts": [
+    [
+      "Founded",
+      "1919 (IFRC)"
+    ],
+    [
+      "Emblem recognised",
+      "1929"
+    ],
+    [
+      "Headquarters",
+      "Geneva"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "A red crescent in the centre of a white field, its horns opening towards the fly.",
+    "adopted": "1929",
+    "colors": [
+      "white",
+      "red"
+    ],
+    "symbolism": "Like the Red Cross, the emblem marks medical workers and the wounded as protected in war; it is used by the national societies of most Muslim-majority countries."
+  },
+  "hook": "The Red Crescent is a lone red crescent on plain white; Turkey turns it around, with a white crescent and star on red.",
+  "lookalikes": [
+    "tr"
+  ],
+  "trivia": [
+    "The crescent was first used by the Ottoman Empire during the Russo-Turkish War of 1876–1878 and was formally recognised in the 1929 Geneva Convention.",
+    "A third, religiously neutral emblem, the Red Crystal, was added in 2005."
+  ]
+}

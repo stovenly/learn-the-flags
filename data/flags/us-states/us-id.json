@@ -1,0 +1,31 @@
+{
+  "code": "us-id",
+  "isoNumeric": "",
+  "name": "Idaho",
+  "officialName": "State of Idaho",
+  "localNames": [],
+  "aliases": ["ID"],
+  "image": "Flag_of_Idaho.svg",
+  "capital": "Boise",
+  "region": "United States",
+  "subregion": "Mountain",
+  "population": 1839106,
+  "area": 216443,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Idahoan",
+  "latlng": [44.4, -114.6],
+  "facts": [["Nickname", "The Gem State"], ["Statehood", "1890"]],
+  "flag": {
+    "description": "A blue field with the state seal in the centre, above a red scroll edged in gold reading STATE OF IDAHO.",
+    "adopted": "1957",
+    "colors": ["blue", "red", "yellow", "white", "green", "brown"],
+    "symbolism": "The seal shows a woman for liberty and justice and a miner for the state's mining, either side of a shield with mountains, a river and a pine tree."
+  },
+  "hook": "Idaho's seal-on-blue has its name on a red banner underneath: STATE OF IDAHO, where Montana puts its name in gold across the top.",
+  "lookalikes": ["us-mt"],
+  "trivia": [
+    "Idaho's seal, designed by Emma Edwards Green in 1891, is the only US state seal designed by a woman.",
+    "The state flag was first adopted in 1907; the current version dates from 1957."
+  ]
+}

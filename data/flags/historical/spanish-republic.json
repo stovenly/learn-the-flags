@@ -1,0 +1,74 @@
+{
+  "code": "spanish-republic",
+  "isoNumeric": "",
+  "name": "Second Spanish Republic",
+  "the": true,
+  "officialName": "Spanish Republic",
+  "localNames": [
+    {
+      "language": "Spanish",
+      "name": "República Española",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Spanish Republic",
+    "Republican Spain"
+  ],
+  "image": "Flag_of_the_Second_Spanish_Republic.svg",
+  "capital": "Madrid",
+  "region": "Europe",
+  "subregion": "1931–1939",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Spanish"
+  ],
+  "currencies": [
+    {
+      "name": "Spanish peseta",
+      "code": "ESP",
+      "symbol": "Pta"
+    }
+  ],
+  "demonym": "Spanish",
+  "latlng": [
+    40,
+    -4
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1931–1939"
+    ],
+    [
+      "Flag used",
+      "1931–1939"
+    ],
+    [
+      "Today",
+      "Spain"
+    ]
+  ],
+  "shape": [
+    "es"
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of red, yellow and purple, with the coat of arms of the Republic in the centre.",
+    "adopted": "1931",
+    "colors": [
+      "red",
+      "yellow",
+      "purple"
+    ],
+    "symbolism": "Purple was added to the red and yellow of the old Spanish flag to represent Castile, whose banner was then believed to have been purple."
+  },
+  "hook": "The Second Spanish Republic swapped the bottom red stripe of Spain's flag for purple, and made the three stripes equal: red, yellow, purple.",
+  "lookalikes": [
+    "es"
+  ],
+  "trivia": [
+    "The Republic ended in 1939 with Francisco Franco's victory in the Spanish Civil War.",
+    "The tricolour is still flown at demonstrations by Spaniards who favour abolishing the monarchy."
+  ]
+}

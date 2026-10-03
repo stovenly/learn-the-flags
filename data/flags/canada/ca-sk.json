@@ -1,0 +1,57 @@
+{
+  "code": "ca-sk",
+  "isoNumeric": "",
+  "name": "Saskatchewan",
+  "officialName": "Province of Saskatchewan",
+  "localNames": [],
+  "aliases": [
+    "SK"
+  ],
+  "image": "Flag_of_Saskatchewan.svg",
+  "capital": "Regina",
+  "region": "Canada",
+  "subregion": "Western Canada",
+  "population": 1132505,
+  "area": 651036,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "Canadian dollar",
+      "code": "CAD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Saskatchewanian",
+  "latlng": [
+    55,
+    -106
+  ],
+  "facts": [
+    [
+      "Type",
+      "Province"
+    ],
+    [
+      "Joined Confederation",
+      "1905"
+    ]
+  ],
+  "flag": {
+    "description": "Two horizontal halves, green over gold, with the provincial shield in the upper hoist and a western red lily in the fly.",
+    "adopted": "1969",
+    "colors": [
+      "green",
+      "yellow",
+      "red"
+    ],
+    "symbolism": "Green stands for the northern forests and gold for the southern grain fields; the western red lily is the provincial flower."
+  },
+  "hook": "Saskatchewan splits into green forest over golden wheat, with a shield in one corner and a red prairie lily on the other side.",
+  "lookalikes": [],
+  "trivia": [
+    "The design was chosen in a 1969 competition that drew more than 4,000 entries.",
+    "Saskatchewan has marked 22 September as its Flag Day since 2017."
+  ]
+}

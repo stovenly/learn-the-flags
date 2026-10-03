@@ -1,0 +1,61 @@
+{
+  "code": "oas",
+  "isoNumeric": "",
+  "name": "Organization of American States",
+  "the": true,
+  "officialName": "Organization of American States",
+  "localNames": [],
+  "aliases": [
+    "OAS",
+    "OEA"
+  ],
+  "image": "Flag_of_the_Organization_of_American_States.svg",
+  "capital": "Washington D.C.",
+  "region": "Americas",
+  "subregion": "Founded 1948",
+  "population": null,
+  "area": null,
+  "languages": [
+    "English",
+    "French",
+    "Portuguese",
+    "Spanish"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    38.89,
+    -77.04
+  ],
+  "facts": [
+    [
+      "Founded",
+      "1948"
+    ],
+    [
+      "Headquarters",
+      "Washington D.C."
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "A blue field with the seal of the Organization in the centre: a white disc edged in gold holding a fan of the flags of the member states on gold-tipped poles.",
+    "adopted": "1965",
+    "colors": [
+      "blue",
+      "white",
+      "yellow",
+      "red",
+      "green"
+    ],
+    "symbolism": "The fan of flags shows the member states standing together, and a new flag is added to the seal whenever a country joins."
+  },
+  "hook": "The OAS seal is a colourful fan of member flags inside a white disc on blue; the UN's emblem is a plain white world map on paler blue.",
+  "lookalikes": [
+    "un"
+  ],
+  "trivia": [
+    "The seal was last redrawn in 1991, when the flags of Belize and Guyana were added.",
+    "The OAS Charter was signed in Bogotá in 1948, but its roots go back to the First International Conference of American States in 1889–1890."
+  ]
+}

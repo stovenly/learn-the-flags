@@ -1,0 +1,73 @@
+{
+  "code": "russian-empire",
+  "isoNumeric": "",
+  "name": "Russian Empire",
+  "the": true,
+  "officialName": "Russian Empire",
+  "localNames": [
+    {
+      "language": "Russian",
+      "name": "Российская империя",
+      "romanized": "Rossiyskaya imperiya"
+    }
+  ],
+  "aliases": [
+    "Imperial Russia",
+    "Tsarist Russia"
+  ],
+  "image": "Flag_of_Russia_(1858–1896).svg",
+  "capital": "Saint Petersburg",
+  "region": "Europe",
+  "subregion": "1721–1917",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Russian"
+  ],
+  "currencies": [
+    {
+      "name": "Russian ruble",
+      "code": "",
+      "symbol": ""
+    }
+  ],
+  "demonym": "Russian",
+  "latlng": [
+    60,
+    90
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1721–1917"
+    ],
+    [
+      "Flag used",
+      "1858–1896"
+    ],
+    [
+      "Today",
+      "Russia and its neighbours"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "Three equal horizontal stripes of black, gold and white.",
+    "adopted": "1858",
+    "colors": [
+      "black",
+      "yellow",
+      "white"
+    ],
+    "symbolism": "The colours were taken from the imperial coat of arms: a black double-headed eagle on a gold field, with white for the figure of Saint George."
+  },
+  "hook": "Imperial Russia ran black, gold, white from top to bottom, the Romanov heraldic colours; Germany's empire went black, white, red.",
+  "lookalikes": [
+    "german-empire",
+    "de"
+  ],
+  "trivia": [
+    "From 1896 the white-blue-red tricolour, which Russia flies again today, replaced it as the national flag.",
+    "Russian monarchist and nationalist groups still fly the black-gold-white flag."
+  ]
+}

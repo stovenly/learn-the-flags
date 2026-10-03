@@ -1,0 +1,80 @@
+{
+  "code": "old-south-africa",
+  "isoNumeric": "",
+  "name": "South Africa (1928–1994)",
+  "officialName": "Union of South Africa",
+  "localNames": [
+    {
+      "language": "Afrikaans",
+      "name": "Unie van Suid-Afrika",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Union of South Africa",
+    "Oranje-blanje-blou",
+    "Apartheid South Africa"
+  ],
+  "image": "Flag_of_South_Africa_(1928–1994,_dark_colors).svg",
+  "capital": "Pretoria",
+  "region": "Africa",
+  "subregion": "1928–1994",
+  "population": null,
+  "area": null,
+  "languages": [
+    "English",
+    "Afrikaans"
+  ],
+  "currencies": [
+    {
+      "name": "South African pound",
+      "code": "",
+      "symbol": ""
+    },
+    {
+      "name": "South African rand",
+      "code": "ZAR",
+      "symbol": "R"
+    }
+  ],
+  "demonym": "South African",
+  "latlng": [
+    -29,
+    24
+  ],
+  "facts": [
+    [
+      "Flag used",
+      "1928–1994"
+    ],
+    [
+      "Apartheid",
+      "1948–1994"
+    ],
+    [
+      "Today",
+      "South Africa"
+    ]
+  ],
+  "shape": [
+    "za"
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of orange, white and blue, with three small flags in the centre of the white stripe: the Union Jack, the flag of the Orange Free State and the flag of the South African Republic (Transvaal).",
+    "adopted": "1928",
+    "colors": [
+      "orange",
+      "white",
+      "blue"
+    ],
+    "symbolism": "The orange, white and blue came from the Dutch Prince's Flag of the early settlers, and the three small flags stood for Britain and the two former Boer republics."
+  },
+  "hook": "The flag of the Union and of apartheid-era South Africa is orange-white-blue with three tiny flags in the middle; the Netherlands has red on top and no flags.",
+  "lookalikes": [
+    "nl"
+  ],
+  "trivia": [
+    "Until 1957 the Union Jack was also an official national flag, flown alongside this one.",
+    "It was replaced on 27 April 1994, the day of South Africa's first elections open to all races."
+  ]
+}

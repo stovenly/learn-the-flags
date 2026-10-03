@@ -1,0 +1,66 @@
+{
+  "code": "northern-cyprus",
+  "isoNumeric": "",
+  "name": "Northern Cyprus",
+  "officialName": "Turkish Republic of Northern Cyprus",
+  "localNames": [
+    {
+      "language": "Turkish",
+      "name": "Kuzey Kıbrıs",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "TRNC",
+    "Turkish Republic of Northern Cyprus"
+  ],
+  "image": "Flag_of_the_Turkish_Republic_of_Northern_Cyprus.svg",
+  "capital": "North Nicosia",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "population": null,
+  "area": 3355,
+  "languages": [
+    "Turkish"
+  ],
+  "currencies": [
+    {
+      "name": "Turkish lira",
+      "code": "TRY",
+      "symbol": "₺"
+    }
+  ],
+  "demonym": "Turkish Cypriot",
+  "latlng": [
+    35.25,
+    33.6
+  ],
+  "facts": [
+    [
+      "Recognised by",
+      "Turkey only"
+    ],
+    [
+      "Claimed by",
+      "Cyprus"
+    ]
+  ],
+  "flag": {
+    "description": "A white field with a red crescent and star in the centre, between a thin red horizontal stripe near the top and another near the bottom.",
+    "adopted": "1984",
+    "colors": [
+      "white",
+      "red"
+    ],
+    "symbolism": "The flag reverses the colours of Turkey's flag; there is no official meaning, but the crescent and star are usually read as Turkish identity and the two stripes as Turkey and Northern Cyprus."
+  },
+  "hook": "Northern Cyprus turns Turkey's flag inside out: a red crescent and star on white, held between two thin red stripes.",
+  "lookalikes": [
+    "tr",
+    "tn"
+  ],
+  "trivia": [
+    "An enormous version of the flag is laid out on the side of the Kyrenia Mountains, clearly visible from the southern half of Nicosia.",
+    "The flag was adopted in 1984, the year after the territory declared independence; before that the flag of Turkey was used."
+  ]
+}

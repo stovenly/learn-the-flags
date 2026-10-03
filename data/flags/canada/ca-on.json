@@ -1,0 +1,61 @@
+{
+  "code": "ca-on",
+  "isoNumeric": "",
+  "name": "Ontario",
+  "officialName": "Province of Ontario",
+  "localNames": [],
+  "aliases": [
+    "ON"
+  ],
+  "image": "Flag_of_Ontario.svg",
+  "capital": "Toronto",
+  "region": "Canada",
+  "subregion": "Central Canada",
+  "population": 14223942,
+  "area": 1076395,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "Canadian dollar",
+      "code": "CAD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Ontarian",
+  "latlng": [
+    50,
+    -85
+  ],
+  "facts": [
+    [
+      "Type",
+      "Province"
+    ],
+    [
+      "Joined Confederation",
+      "1867"
+    ]
+  ],
+  "flag": {
+    "description": "A red ensign: a red field with the Union Jack in the upper hoist and the provincial shield in the fly, showing a red St George's cross above three gold maple leaves on green.",
+    "adopted": "1965",
+    "colors": [
+      "red",
+      "white",
+      "blue",
+      "green",
+      "yellow"
+    ],
+    "symbolism": "The Union Jack reflects Ontario's British heritage, and the shield, granted in 1868, pairs the cross of St George with maple leaves for Canada."
+  },
+  "hook": "Ontario is a red ensign with three gold maple leaves on its shield; Manitoba's red ensign has a bison instead.",
+  "lookalikes": [
+    "ca-mb"
+  ],
+  "trivia": [
+    "Ontario adopted its red ensign in 1965, the same year the Maple Leaf replaced the Canadian Red Ensign as the national flag.",
+    "Ontario is home to almost two in every five Canadians."
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "code": "qing-dynasty",
+  "isoNumeric": "",
+  "name": "Qing dynasty",
+  "the": true,
+  "officialName": "Great Qing",
+  "localNames": [
+    {
+      "language": "Chinese",
+      "name": "大清",
+      "romanized": "Dà Qīng"
+    }
+  ],
+  "aliases": [
+    "Qing",
+    "Qing China",
+    "Qing Empire",
+    "Great Qing",
+    "Manchu dynasty"
+  ],
+  "image": "Flag_of_China_(1889–1912).svg",
+  "capital": "Beijing",
+  "region": "Asia",
+  "subregion": "1644–1912",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Chinese",
+    "Manchu"
+  ],
+  "currencies": [],
+  "demonym": "Chinese",
+  "latlng": [
+    35,
+    105
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1644–1912"
+    ],
+    [
+      "Flag used",
+      "1889–1912"
+    ],
+    [
+      "Today",
+      "China, Mongolia and Taiwan"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "A yellow field with a blue dragon stretched across it, its head turned towards a red pearl in the upper hoist corner.",
+    "adopted": "1889",
+    "colors": [
+      "yellow",
+      "blue",
+      "red"
+    ],
+    "symbolism": "Yellow was the imperial colour of the Qing, and the dragon was the symbol of the emperor."
+  },
+  "hook": "Qing China's Yellow Dragon Flag has a blue dragon chasing a red pearl across a yellow field; Bhutan's dragon is white and lies on a yellow-and-orange diagonal.",
+  "lookalikes": [
+    "bt"
+  ],
+  "trivia": [
+    "The Yellow Dragon Flag was first triangular and was made rectangular in 1889.",
+    "It was China's first national flag, created when the Qing navy needed an ensign for dealings with foreign powers."
+  ]
+}

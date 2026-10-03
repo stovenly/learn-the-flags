@@ -1,0 +1,50 @@
+{
+  "code": "us-nm",
+  "isoNumeric": "",
+  "name": "New Mexico",
+  "officialName": "State of New Mexico",
+  "localNames": [],
+  "aliases": [
+    "NM"
+  ],
+  "image": "Flag_of_New_Mexico.svg",
+  "capital": "Santa Fe",
+  "region": "United States",
+  "subregion": "Mountain",
+  "population": 2117522,
+  "area": 314917,
+  "languages": [],
+  "currencies": [],
+  "demonym": "New Mexican",
+  "latlng": [
+    34.4,
+    -106.1
+  ],
+  "facts": [
+    [
+      "Nickname",
+      "Land of Enchantment"
+    ],
+    [
+      "Statehood",
+      "1912"
+    ]
+  ],
+  "flag": {
+    "description": "A yellow field with a red Zia sun symbol in the centre: a circle with four groups of four rays pointing in the four directions.",
+    "adopted": "1925",
+    "colors": [
+      "yellow",
+      "red"
+    ],
+    "symbolism": "Red and yellow are the colours of Spain, and the Zia sun, taken from the Zia Pueblo, groups everything in fours: directions, seasons, times of day and stages of life."
+  },
+  "hook": "New Mexico is a red sun on yellow with its rays in four tidy bundles; North Macedonia flips the colours to a yellow sun on red.",
+  "lookalikes": [
+    "mk"
+  ],
+  "trivia": [
+    "A 2001 North American Vexillological Association survey rated New Mexico's flag the best design among US state, territory and Canadian provincial flags.",
+    "The Zia sun symbol comes from the Zia Pueblo, whose people regard the number four as sacred."
+  ]
+}

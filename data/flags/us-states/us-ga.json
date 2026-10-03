@@ -1,0 +1,32 @@
+{
+  "code": "us-ga",
+  "isoNumeric": "",
+  "name": "Georgia",
+  "slug": "georgia-us-state",
+  "officialName": "State of Georgia",
+  "localNames": [],
+  "aliases": ["GA"],
+  "image": "Flag_of_the_State_of_Georgia.svg",
+  "capital": "Atlanta",
+  "region": "United States",
+  "subregion": "South Atlantic",
+  "population": 10711908,
+  "area": 153910,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Georgian",
+  "latlng": [32.7, -83.4],
+  "facts": [["Nickname", "The Peach State"], ["Statehood", "1788"]],
+  "flag": {
+    "description": "Three horizontal stripes of red, white and red, with a blue canton spanning the top two stripes that holds a ring of 13 white stars around the gold state arms and the words IN GOD WE TRUST.",
+    "adopted": "2003",
+    "colors": ["red", "white", "blue", "yellow"],
+    "symbolism": "The arch of the arms stands for the constitution and its three pillars for wisdom, justice and moderation; the 13 stars show that Georgia was one of the original colonies."
+  },
+  "hook": "Georgia is red-white-red with a blue corner in which 13 stars circle a gold arch on three pillars.",
+  "lookalikes": [],
+  "trivia": [
+    "The 2003 flag replaced a 2001 design, which had in turn replaced the 1956 flag dominated by the Confederate battle emblem.",
+    "Voters endorsed the current flag in a 2004 referendum."
+  ]
+}

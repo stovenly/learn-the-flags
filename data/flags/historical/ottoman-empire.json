@@ -1,0 +1,74 @@
+{
+  "code": "ottoman-empire",
+  "isoNumeric": "",
+  "name": "Ottoman Empire",
+  "the": true,
+  "officialName": "Sublime Ottoman State",
+  "localNames": [
+    {
+      "language": "Ottoman Turkish",
+      "name": "دولت عليه عثمانيه",
+      "romanized": "Devlet-i Âliye-i Osmâniye"
+    }
+  ],
+  "aliases": [
+    "Ottomans",
+    "Ottoman Turkey",
+    "Turkish Empire"
+  ],
+  "image": "Flag_of_the_Ottoman_Empire_(1844–1922).svg",
+  "capital": "Constantinople",
+  "region": "Asia",
+  "subregion": "1299–1922",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Ottoman Turkish"
+  ],
+  "currencies": [
+    {
+      "name": "Ottoman lira",
+      "code": "",
+      "symbol": ""
+    }
+  ],
+  "demonym": "Ottoman",
+  "latlng": [
+    39,
+    35
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1299–1922"
+    ],
+    [
+      "Flag used",
+      "1844–1922"
+    ],
+    [
+      "Today",
+      "Turkey and much of the Balkans, Middle East and North Africa"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "A red field with a white crescent, opening towards the fly, and a white five-pointed star just beyond it.",
+    "adopted": "1844",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "symbolism": "The crescent and star became emblems of the Ottoman state in the late 18th century and are widely associated with the Islamic world."
+  },
+  "hook": "The Ottoman flag is the direct parent of Turkey's and practically the same white crescent and star on red; Tunisia sets its red crescent inside a white disc instead.",
+  "lookalikes": [
+    "tr",
+    "tn",
+    "az"
+  ],
+  "trivia": [
+    "The flag was adopted in 1844, during the Tanzimat reforms that modernised the Ottoman state.",
+    "The Republic of Turkey kept the flag and fixed its exact proportions in the Turkish Flag Law of 1936."
+  ]
+}

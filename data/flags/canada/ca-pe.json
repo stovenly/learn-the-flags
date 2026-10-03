@@ -1,0 +1,67 @@
+{
+  "code": "ca-pe",
+  "isoNumeric": "",
+  "name": "Prince Edward Island",
+  "officialName": "Province of Prince Edward Island",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "Île-du-Prince-Édouard",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "PE",
+    "PEI"
+  ],
+  "image": "Flag_of_Prince_Edward_Island.svg",
+  "capital": "Charlottetown",
+  "region": "Canada",
+  "subregion": "Atlantic Canada",
+  "population": 154331,
+  "area": 5660,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "Canadian dollar",
+      "code": "CAD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Prince Edward Islander",
+  "latlng": [
+    46.4,
+    -63.2
+  ],
+  "facts": [
+    [
+      "Type",
+      "Province"
+    ],
+    [
+      "Joined Confederation",
+      "1873"
+    ]
+  ],
+  "flag": {
+    "description": "A red band across the top with a gold lion; below, on white, a large oak tree and three oak saplings on a green island, all framed on three sides by a border of alternating red and white blocks.",
+    "adopted": "1964",
+    "colors": [
+      "red",
+      "white",
+      "yellow",
+      "green"
+    ],
+    "symbolism": "The lion stands for England, the great oak for Britain, and the three saplings for the island's three counties, sheltering under it as the motto \"Parva sub ingenti\" (\"The small under the protection of the great\") says."
+  },
+  "hook": "Prince Edward Island grows one big oak and three little ones on white inside a red-and-white chequered border; New Brunswick has the same lion band but a ship on gold.",
+  "lookalikes": [
+    "ca-nb"
+  ],
+  "trivia": [
+    "Charlottetown hosted the 1864 conference that led to Confederation, yet Prince Edward Island did not join Canada until 1873.",
+    "Prince Edward Island is Canada's smallest province by both area and population."
+  ]
+}

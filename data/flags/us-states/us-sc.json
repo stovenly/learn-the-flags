@@ -1,0 +1,48 @@
+{
+  "code": "us-sc",
+  "isoNumeric": "",
+  "name": "South Carolina",
+  "officialName": "State of South Carolina",
+  "localNames": [],
+  "aliases": [
+    "SC"
+  ],
+  "image": "Flag_of_South_Carolina.svg",
+  "capital": "Columbia",
+  "region": "United States",
+  "subregion": "South Atlantic",
+  "population": 5118425,
+  "area": 82933,
+  "languages": [],
+  "currencies": [],
+  "demonym": "South Carolinian",
+  "latlng": [
+    33.9,
+    -80.9
+  ],
+  "facts": [
+    [
+      "Nickname",
+      "The Palmetto State"
+    ],
+    [
+      "Statehood",
+      "1788"
+    ]
+  ],
+  "flag": {
+    "description": "An indigo blue field with a white palmetto tree in the centre and a white crescent in the upper hoist corner.",
+    "adopted": "1861",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "symbolism": "The crescent comes from the 1775 flag of Colonel William Moultrie's troops, and the palmetto recalls the palmetto-log fort that withstood a British fleet in 1776."
+  },
+  "hook": "South Carolina is just a white palmetto tree and a crescent moon on indigo, no seal, no words.",
+  "lookalikes": [],
+  "trivia": [
+    "The soft palmetto logs of Fort Moultrie absorbed British cannonballs during the battle of Sullivan's Island in 1776.",
+    "The palmetto tree was added in January 1861, weeks after South Carolina seceded from the Union."
+  ]
+}

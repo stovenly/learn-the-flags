@@ -1,0 +1,71 @@
+{
+  "code": "pf",
+  "isoNumeric": "258",
+  "name": "French Polynesia",
+  "officialName": "French Polynesia",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "Polynésie française",
+      "romanized": ""
+    },
+    {
+      "language": "Tahitian",
+      "name": "Pōrīnetia Farāni",
+      "romanized": ""
+    }
+  ],
+  "aliases": [],
+  "image": "Flag_of_French_Polynesia.svg",
+  "capital": "Papeete",
+  "region": "Polynesia",
+  "subregion": "French overseas collectivity",
+  "population": 278786,
+  "area": 4167,
+  "languages": [
+    "French",
+    "Tahitian"
+  ],
+  "currencies": [
+    {
+      "name": "CFP franc",
+      "code": "XPF",
+      "symbol": "₣"
+    }
+  ],
+  "demonym": "French Polynesian",
+  "latlng": [
+    -17.7,
+    -149.4
+  ],
+  "facts": [
+    [
+      "Status",
+      "Overseas collectivity of France"
+    ],
+    [
+      "Sovereign state",
+      "France"
+    ]
+  ],
+  "flag": {
+    "description": "Three horizontal bands of red, white and red, the white band twice as tall, with a central disc showing a Polynesian outrigger canoe in front of a golden sun, above blue and white waves.",
+    "adopted": "1984",
+    "colors": [
+      "red",
+      "white",
+      "yellow",
+      "blue"
+    ],
+    "symbolism": "Red-white-red goes back to the flags of the old Kingdom of Tahiti; the canoe carries five figures for the five archipelagos, sailing between the sun and the ocean."
+  },
+  "hook": "French Polynesia is Lebanon's red-white-red layout, but instead of a green cedar the white band holds a canoe sailing in front of a golden sun.",
+  "lookalikes": [
+    "lb",
+    "at"
+  ],
+  "trivia": [
+    "The five figures in the canoe stand for the Society, Tuamotu, Gambier, Marquesas and Austral archipelagos.",
+    "Its 118 islands and atolls are scattered across an area of ocean about the size of Western Europe."
+  ]
+}

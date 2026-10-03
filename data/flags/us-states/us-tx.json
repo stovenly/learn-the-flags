@@ -1,0 +1,52 @@
+{
+  "code": "us-tx",
+  "isoNumeric": "",
+  "name": "Texas",
+  "officialName": "State of Texas",
+  "localNames": [],
+  "aliases": [
+    "TX"
+  ],
+  "image": "Flag_of_Texas.svg",
+  "capital": "Austin",
+  "region": "United States",
+  "subregion": "West South Central",
+  "population": 29145505,
+  "area": 695662,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Texan",
+  "latlng": [
+    31,
+    -100
+  ],
+  "facts": [
+    [
+      "Nickname",
+      "The Lone Star State"
+    ],
+    [
+      "Statehood",
+      "1845"
+    ]
+  ],
+  "flag": {
+    "description": "A blue vertical band at the hoist with a white five-pointed star, beside two equal horizontal stripes of white over red.",
+    "adopted": "1839",
+    "colors": [
+      "blue",
+      "white",
+      "red"
+    ],
+    "symbolism": "State law says blue stands for loyalty, white for purity and red for bravery, and the single star gives the Lone Star State its name."
+  },
+  "hook": "Texas runs its blue band the full height of the flag; Chile squeezes its star into a small blue square in the corner.",
+  "lookalikes": [
+    "cl",
+    "us-nc"
+  ],
+  "trivia": [
+    "The flag was adopted in 1839 as the national flag of the Republic of Texas and kept when Texas joined the Union in 1845.",
+    "Chile's similar flag dates from 1817, more than twenty years before Texas's."
+  ]
+}

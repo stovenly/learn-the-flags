@@ -1,0 +1,31 @@
+{
+  "code": "us-co",
+  "isoNumeric": "",
+  "name": "Colorado",
+  "officialName": "State of Colorado",
+  "localNames": [],
+  "aliases": ["CO"],
+  "image": "Flag_of_Colorado.svg",
+  "capital": "Denver",
+  "region": "United States",
+  "subregion": "Mountain",
+  "population": 5773714,
+  "area": 269601,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Coloradan",
+  "latlng": [39, -105.5],
+  "facts": [["Nickname", "The Centennial State"], ["Statehood", "1876"]],
+  "flag": {
+    "description": "Three equal horizontal stripes of blue, white and blue, with a red letter C wrapped around a gold disc, set slightly towards the hoist.",
+    "adopted": "1911",
+    "colors": ["blue", "white", "red", "yellow"],
+    "symbolism": "Blue is for the sky, white for the snow-capped mountains, gold for the state's mineral wealth and sunshine, and red for the earth."
+  },
+  "hook": "Colorado is blue-white-blue with a giant red C hugging a gold ball, so the flag spells out its own initial.",
+  "lookalikes": [],
+  "trivia": [
+    "\"Colorado\" is Spanish for \"coloured red\", after the reddish rock and river silt of the region.",
+    "It was designed by Andrew Carlisle Johnson and adopted in 1911."
+  ]
+}

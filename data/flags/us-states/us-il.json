@@ -1,0 +1,31 @@
+{
+  "code": "us-il",
+  "isoNumeric": "",
+  "name": "Illinois",
+  "officialName": "State of Illinois",
+  "localNames": [],
+  "aliases": ["IL"],
+  "image": "Flag_of_Illinois.svg",
+  "capital": "Springfield",
+  "region": "United States",
+  "subregion": "East North Central",
+  "population": 12812508,
+  "area": 149995,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Illinoisan",
+  "latlng": [40, -89.2],
+  "facts": [["Nickname", "The Prairie State"], ["Statehood", "1818"]],
+  "flag": {
+    "description": "A white field with the state seal, a bald eagle on a rock holding a stars-and-stripes shield and a red banner, with the sun rising behind it and ILLINOIS in blue beneath.",
+    "adopted": "1970",
+    "colors": ["white", "blue", "red", "yellow", "green", "brown"],
+    "symbolism": "The banner carries the motto \"State Sovereignty, National Union\"; the dates 1818 and 1868 on the rock are the years of statehood and of the seal's redesign."
+  },
+  "hook": "Illinois has a white field, not blue, with a bald eagle perched on a rock and ILLINOIS spelled out underneath.",
+  "lookalikes": ["us-ma"],
+  "trivia": [
+    "The word ILLINOIS was added in 1970 after a sailor from the state, serving in Vietnam, complained that no one recognised the flag.",
+    "In a 2025 public vote on possible redesigns, the current flag came first with about 43 percent of nearly 385,000 votes."
+  ]
+}

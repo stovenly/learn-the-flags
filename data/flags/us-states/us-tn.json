@@ -1,0 +1,49 @@
+{
+  "code": "us-tn",
+  "isoNumeric": "",
+  "name": "Tennessee",
+  "officialName": "State of Tennessee",
+  "localNames": [],
+  "aliases": [
+    "TN"
+  ],
+  "image": "Flag_of_Tennessee.svg",
+  "capital": "Nashville",
+  "region": "United States",
+  "subregion": "East South Central",
+  "population": 6910840,
+  "area": 109153,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Tennessean",
+  "latlng": [
+    35.9,
+    -86.4
+  ],
+  "facts": [
+    [
+      "Nickname",
+      "The Volunteer State"
+    ],
+    [
+      "Statehood",
+      "1796"
+    ]
+  ],
+  "flag": {
+    "description": "A red field with a blue disc edged in white in the centre, holding three white five-pointed stars; at the fly end is a narrow white stripe and a broader blue vertical stripe.",
+    "adopted": "1905",
+    "colors": [
+      "red",
+      "blue",
+      "white"
+    ],
+    "symbolism": "The three stars stand for East, Middle and West Tennessee, the state's three Grand Divisions, bound together by the unbroken circle."
+  },
+  "hook": "Tennessee is three white stars in a blue circle on red, one for each of its three Grand Divisions.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag was designed by LeRoy Reeves, an officer of the Third Tennessee Infantry.",
+    "Its designer said the blue bar at the fly stops the flag showing nothing but red when it hangs limp."
+  ]
+}

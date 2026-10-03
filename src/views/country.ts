@@ -1,4 +1,4 @@
-import { ALL, currencyText, fmtNumber, fmtPopulation, localNameText, preload, preloadMap, STATUS_LABEL } from '../data';
+import { ALL, currencyText, fmtNumber, fmtPopulation, localNameText, preload, preloadMap, setById, SOVEREIGN, STATUS_LABEL } from '../data';
 import { level } from '../store';
 import { esc, flagImg, hookHtml, lookalikeList, mapImg, pairList, renderWhenReady } from '../ui';
 
@@ -13,19 +13,23 @@ export function countryView(root: HTMLElement, slug: string) {
     root.innerHTML = `<div class="card"><h1>Not found</h1><p><a href="#/browse">See all flags</a></p></div>`;
     return;
   }
-  document.title = `Flag of ${c.name} · Learn the Flags`;
+  document.title = `Flag of ${c.theName} · Learn the Flags`;
   const lv = level(c.code);
   const tags = [
+    c.set === SOVEREIGN ? '' : setById.get(c.set)!.name,
     c.subregion || c.region,
-    c.status !== 'un-member' ? STATUS_LABEL[c.status] : '',
+    c.status ? (STATUS_LABEL[c.status] ?? '') : '',
   ].filter(Boolean);
   const facts: [string, string][] = [
-    ['Population', fmtPopulation(c.population)],
-    ['Area', c.area ? `${fmtNumber(Math.round(c.area))} km²` : '—'],
+    ...c.facts,
+    [c.set === 'organizations' ? 'Headquarters' : 'Capital', c.capital],
+    ['Population', c.population == null ? '' : fmtPopulation(c.population)],
+    ['Area', c.area ? `${fmtNumber(Math.round(c.area))} km²` : ''],
     ['Languages', c.languages.join(', ')],
     ['Currency', currencyText(c)],
     ['Demonym', c.demonym],
   ];
+  const shownFacts = facts.filter(([k, v], i) => v && facts.findIndex(([k2]) => k2 === k) === i);
   const looks = lookalikeList(c);
   const html = `
     <a class="back" href="#/browse">← All flags</a>
@@ -70,13 +74,17 @@ export function countryView(root: HTMLElement, slug: string) {
         </div>
 
         <aside class="country-side">
-          <section class="card map-card">${mapImg(c, 'lg')}</section>
-          <section class="card">
-            <h2>Quick facts</h2>
-            <dl class="facts">${facts.filter(([, v]) => v).map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>
-          </section>
+          ${c.hasMap ? `<section class="card map-card">${mapImg(c, 'lg')}</section>` : ''}
+          ${
+            shownFacts.length
+              ? `<section class="card">
+                  <h2>Quick facts</h2>
+                  <dl class="facts">${shownFacts.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>
+                </section>`
+              : ''
+          }
         </aside>
       </div>
     </article>`;
-  renderWhenReady(root, html, [preload(c.code), preloadMap(c.code)]);
+  renderWhenReady(root, html, [preload(c.code), preloadMap(c)]);
 }

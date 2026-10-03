@@ -1,0 +1,65 @@
+{
+  "code": "im",
+  "isoNumeric": "833",
+  "name": "Isle of Man",
+  "the": true,
+  "officialName": "Isle of Man",
+  "localNames": [
+    {
+      "language": "Manx",
+      "name": "Mannin",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Mann"
+  ],
+  "image": "Flag_of_the_Isle_of_Man.svg",
+  "capital": "Douglas",
+  "region": "Northern Europe",
+  "subregion": "Crown Dependency",
+  "population": 84523,
+  "area": 574,
+  "languages": [
+    "English",
+    "Manx"
+  ],
+  "currencies": [
+    {
+      "name": "British pound",
+      "code": "GBP",
+      "symbol": "£"
+    }
+  ],
+  "demonym": "Manx",
+  "latlng": [
+    54.25,
+    -4.5
+  ],
+  "facts": [
+    [
+      "Status",
+      "Self-governing British Crown Dependency"
+    ],
+    [
+      "Head of state",
+      "King Charles III, as Lord of Mann"
+    ]
+  ],
+  "flag": {
+    "description": "A red field with a triskelion in the centre: three armoured legs with gold spurs, joined at the thigh and running clockwise.",
+    "adopted": "1932",
+    "colors": [
+      "red",
+      "white",
+      "yellow"
+    ],
+    "symbolism": "The three legs have been the island's emblem since the Middle Ages and are linked to its motto, \"Whithersoever you throw it, it will stand\"."
+  },
+  "hook": "The Isle of Man flag is all legs: three armoured legs spinning on a plain red field, with no cross or stripe anywhere.",
+  "lookalikes": [],
+  "trivia": [
+    "Sicily's flag also bears a three-legged triskelion, but with a Gorgon's head at the centre.",
+    "Tynwald, the Manx parliament, claims to be the oldest parliament in the world with an unbroken history."
+  ]
+}

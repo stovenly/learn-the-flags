@@ -1,0 +1,31 @@
+{
+  "code": "us-hi",
+  "isoNumeric": "",
+  "name": "Hawaii",
+  "officialName": "State of Hawaii",
+  "localNames": [],
+  "aliases": ["HI", "Hawaiʻi"],
+  "image": "Flag_of_Hawaii.svg",
+  "capital": "Honolulu",
+  "region": "United States",
+  "subregion": "Pacific",
+  "population": 1455271,
+  "area": 28313,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Hawaii resident",
+  "latlng": [20.8, -156.3],
+  "facts": [["Nickname", "The Aloha State"], ["Statehood", "1959"]],
+  "flag": {
+    "description": "Eight horizontal stripes repeating white, red and blue from the top, with the Union Jack in the canton.",
+    "adopted": "1845",
+    "colors": ["white", "red", "blue"],
+    "symbolism": "The eight stripes stand for the eight main islands; the Union Jack recalls the Hawaiian Kingdom's early friendship with Britain."
+  },
+  "hook": "Hawaii is the only US state wearing the Union Jack, over eight white-red-blue stripes, one for each main island.",
+  "lookalikes": ["gb", "us"],
+  "trivia": [
+    "It is the only US state flag to include the flag of another country.",
+    "The same flag has flown over Hawaii as a kingdom, a republic, a US territory and a state."
+  ]
+}

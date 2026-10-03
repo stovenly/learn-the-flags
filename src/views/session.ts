@@ -1,4 +1,4 @@
-import { ALL, byCode, Country, localNameText, matchAnswer, preload, preloadMap } from '../data';
+import { ALL, byCode, Country, localNameText, matchAnswer, preload, preloadMap, setById, SOVEREIGN } from '../data';
 import { Again, Easy, Good, Grade, Hard, Memory, review } from '../srs';
 import { logSession, save, state, today } from '../store';
 import { $, $$, countryLink, esc, flagImg, hookHtml, icon, lookalikeList, mapImg, nameLink, pairList, plural, shuffle, thumb } from '../ui';
@@ -81,16 +81,16 @@ export function buildStudy(due: Country[], fresh: Country[]): Item[] {
 
 function distractors(c: Country, n = 3): Country[] {
   const known = (x: Country) => !!state.cards[x.code];
-  const pool = ALL.filter((x) => x.code !== c.code && (state.settings.includePartial || x.status !== 'partially-recognized'));
+  const pool = ALL.filter((x) => x.code !== c.code && x.set === c.set && !c.identical.includes(x.code));
   const out: Country[] = [];
   const add = (x?: Country) => {
-    if (x && x.code !== c.code && !out.some((o) => o.code === x.code) && pool.includes(x)) out.push(x);
+    if (x && x.code !== c.code && !c.identical.includes(x.code) && !out.some((o) => o.code === x.code)) out.push(x);
   };
-  const look = shuffle(lookalikeList(c));
+  const look = shuffle(lookalikeList(c).filter((x) => x.set === c.set));
   const m = state.cards[c.code];
   const lookCount = !m || m.s < 1 ? 1 : 2;
   look.slice(0, lookCount).forEach(add);
-  shuffle(c.nearest.slice(0, 8).map((k) => byCode.get(k)!).filter(known)).slice(0, 1).forEach(add);
+  shuffle(c.nearest.slice(0, 8).map((k) => byCode.get(k)!).filter((x) => known(x) && x.set === c.set)).slice(0, 1).forEach(add);
   const learned = shuffle(pool.filter(known));
   while (out.length < n && learned.length) add(learned.pop());
   const rest = shuffle(pool);
@@ -104,8 +104,8 @@ function ensureOptions(item: Item) {
 
 function preloadItem(item: Item): Promise<unknown> {
   ensureOptions(item);
-  const jobs = [preload(item.c.code), preloadMap(item.c.code)];
-  if (item.kind === 'quiz' && item.mode === 'pick-flag') jobs.push(preloadMap(item.c.code, true));
+  const jobs = [preload(item.c.code), preloadMap(item.c)];
+  if (item.kind === 'quiz' && item.mode === 'pick-flag') jobs.push(preloadMap(item.c, true));
   if (item.kind === 'quiz' && item.mode === 'pick-flag') item.options!.forEach((o) => jobs.push(preload(o.code)));
   if (item.kind === 'intro') lookalikeList(item.c).slice(0, 3).forEach((o) => jobs.push(preload(o.code, 320)));
   return Promise.all(jobs);
@@ -314,7 +314,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
           : ''
       }
       ${tell ? `<div class="note note-tell">${icon('tell')}<div><span class="note-label">How to tell them apart</span><p>${esc(tell)}</p></div></div>` : hookHtml(c)}
-      ${withMap ? `<div class="fb-map">${mapImg(c, 'md')}</div>` : ''}`;
+      ${withMap && c.hasMap ? `<div class="fb-map">${mapImg(c, 'md')}</div>` : ''}`;
   }
 
   function afterAnswer(item: Quiz, ok: boolean, extra = '') {
@@ -334,11 +334,12 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
 
   // Wide screens show the answer's map under the flag instead of the thumbnail in the feedback.
   function showAnswerMap(c: Country) {
-    $('.pane-main', stage).insertAdjacentHTML('beforeend', `<div class="answer-map">${mapImg(c, 'md')}</div>`);
+    if (c.hasMap) $('.pane-main', stage).insertAdjacentHTML('beforeend', `<div class="answer-map">${mapImg(c, 'md')}</div>`);
   }
 
   function renderQuiz(item: Quiz) {
     const c = item.c;
+    const noun = setById.get(c.set)!.noun;
     const started = performance.now();
     const elapsed = () => (performance.now() - started) / 1000;
     let answered = false;
@@ -347,7 +348,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
       stage.innerHTML = `
         <article class="card stage quiz split fade-in">
           <div class="pane-main">
-          <p class="prompt">Which country is this?</p>
+          <p class="prompt">Which ${noun} is this?</p>
           <div class="flag-stage">${flagImg(c, { size: 'lg', alt: 'Flag to identify' })}</div>
           </div>
           <div class="pane-side">
@@ -380,12 +381,12 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
       stage.innerHTML = `
         <article class="card stage quiz split fade-in">
           <div class="pane-main">
-          <p class="prompt">Name this country</p>
+          <p class="prompt">Name this ${noun}</p>
           <div class="flag-stage">${flagImg(c, { size: 'lg', alt: 'Flag to identify' })}</div>
           </div>
           <div class="pane-side">
           <form class="type-form" autocomplete="off">
-            <input class="type-input" type="text" placeholder="Type the country name…" aria-label="Country name" autocapitalize="words" spellcheck="false" enterkeyhint="done">
+            <input class="type-input" type="text" placeholder="Type the name…" aria-label="Name" autocapitalize="words" spellcheck="false" enterkeyhint="done">
             <button class="btn primary" type="submit">Check</button>
           </form>
           <div class="feedback-slot"></div>
@@ -442,7 +443,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
       const prev = grade(c, g, ok);
       schedule(item, ok);
       input.classList.add(ok ? 'is-correct' : 'is-wrong');
-      const guessed = ALL.find((o) => o.code !== c.code && matchAnswer(text, o) === 'exact');
+      const guessed = ALL.find((o) => o.code !== c.code && [c.set, SOVEREIGN].includes(o.set) && matchAnswer(text, o) === 'exact');
       slot.innerHTML = feedbackHtml(c, ok, ok ? undefined : guessed, match === 'typo' ? `spelled “${c.name}”` : undefined);
       showAnswerMap(c);
       if (!ok && text && !guessed) {

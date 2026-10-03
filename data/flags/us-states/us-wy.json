@@ -1,0 +1,49 @@
+{
+  "code": "us-wy",
+  "isoNumeric": "",
+  "name": "Wyoming",
+  "officialName": "State of Wyoming",
+  "localNames": [],
+  "aliases": [
+    "WY"
+  ],
+  "image": "Flag_of_Wyoming.svg",
+  "capital": "Cheyenne",
+  "region": "United States",
+  "subregion": "Mountain",
+  "population": 576851,
+  "area": 253335,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Wyomingite",
+  "latlng": [
+    43,
+    -107.6
+  ],
+  "facts": [
+    [
+      "Nickname",
+      "The Equality State"
+    ],
+    [
+      "Statehood",
+      "1890"
+    ]
+  ],
+  "flag": {
+    "description": "A blue field with a white inner border and a red outer border, filled by a large white bison with the state seal printed on its side.",
+    "adopted": "1917",
+    "colors": [
+      "blue",
+      "white",
+      "red"
+    ],
+    "symbolism": "The bison once roamed the state, and the seal on it is said to represent the custom of branding livestock; red is said to honour Native Americans and the pioneers, white purity and blue the sky and mountains."
+  },
+  "hook": "Wyoming is the bison flag: a big white buffalo branded with the state seal, inside red and white borders.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag was designed by Verna Keays in a 1916 competition held by the Daughters of the American Revolution.",
+    "Wyoming is the least populous US state."
+  ]
+}

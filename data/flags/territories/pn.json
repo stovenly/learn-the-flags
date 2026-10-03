@@ -1,0 +1,71 @@
+{
+  "code": "pn",
+  "isoNumeric": "612",
+  "name": "Pitcairn Islands",
+  "the": true,
+  "officialName": "Pitcairn, Henderson, Ducie and Oeno Islands",
+  "localNames": [
+    {
+      "language": "Pitkern",
+      "name": "Pitkern Ailen",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Pitcairn"
+  ],
+  "image": "Flag_of_the_Pitcairn_Islands.svg",
+  "capital": "Adamstown",
+  "region": "Polynesia",
+  "subregion": "British Overseas Territory",
+  "population": 35,
+  "area": 47,
+  "languages": [
+    "English",
+    "Pitkern"
+  ],
+  "currencies": [
+    {
+      "name": "New Zealand dollar",
+      "code": "NZD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Pitcairn Islander",
+  "latlng": [
+    -25.07,
+    -130.1
+  ],
+  "facts": [
+    [
+      "Status",
+      "British Overseas Territory"
+    ],
+    [
+      "Sovereign state",
+      "United Kingdom"
+    ]
+  ],
+  "flag": {
+    "description": "A Blue Ensign with the coat of arms in the fly: a blue shield with a yellow-edged green triangle rising from the base, bearing a Bible and a gold anchor, with a wheelbarrow and a sprig of milo on top.",
+    "adopted": "1984",
+    "colors": [
+      "blue",
+      "red",
+      "white",
+      "green",
+      "yellow",
+      "brown"
+    ],
+    "symbolism": "The anchor and Bible are those of HMS Bounty, whose mutineers settled the island in 1790, and the wheelbarrow and milo sprig stand for the farming that let them survive there."
+  },
+  "hook": "Look for the wheelbarrow: Pitcairn's badge has one on top, with the Bounty's anchor and Bible on the shield below.",
+  "lookalikes": [
+    "fk",
+    "sh"
+  ],
+  "trivia": [
+    "Most of the islanders are descended from the Bounty mutineers and the Tahitians who came with them.",
+    "With only a few dozen residents, Pitcairn is often described as the least populous national jurisdiction in the world."
+  ]
+}

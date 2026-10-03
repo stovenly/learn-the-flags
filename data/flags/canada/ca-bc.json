@@ -1,0 +1,60 @@
+{
+  "code": "ca-bc",
+  "isoNumeric": "",
+  "name": "British Columbia",
+  "officialName": "Province of British Columbia",
+  "localNames": [],
+  "aliases": [
+    "BC"
+  ],
+  "image": "Flag_of_British_Columbia.svg",
+  "capital": "Victoria",
+  "region": "Canada",
+  "subregion": "Western Canada",
+  "population": 5000879,
+  "area": 944735,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "Canadian dollar",
+      "code": "CAD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "British Columbian",
+  "latlng": [
+    54,
+    -125
+  ],
+  "facts": [
+    [
+      "Type",
+      "Province"
+    ],
+    [
+      "Joined Confederation",
+      "1871"
+    ]
+  ],
+  "flag": {
+    "description": "The upper part shows the Union Jack with a gold crown at its centre; below, a gold sun sets behind wavy blue and white horizontal bands.",
+    "adopted": "1960",
+    "colors": [
+      "blue",
+      "white",
+      "red",
+      "yellow"
+    ],
+    "symbolism": "The Union Jack and crown recall the province's British origins, the waves stand for the Pacific Ocean, and the setting sun marks British Columbia as Canada's westernmost province."
+  },
+  "hook": "British Columbia puts the Union Jack on top and a sun setting into the Pacific below; Kiribati has the same sun and waves but a red sky with a frigatebird instead.",
+  "lookalikes": [
+    "ki"
+  ],
+  "trivia": [
+    "The provincial motto, \"Splendor sine occasu\" (\"Splendour without diminishment\"), plays on the setting sun shown on the arms and flag.",
+    "Queen Victoria chose the name \"British Columbia\" for the new colony in 1858."
+  ]
+}

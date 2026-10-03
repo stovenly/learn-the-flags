@@ -1,39 +1,58 @@
 import raw from './generated/countries.json';
+import rawSets from './generated/sets.json';
 
 export interface Country {
   code: string;
+  set: string;
   name: string;
+  theName: string; // "the United States", for running text
   slug: string;
   officialName: string;
   aliases: string[];
-  status: 'un-member' | 'un-observer' | 'partially-recognized';
+  status: 'un-member' | 'un-observer' | null;
   region: string;
   subregion: string;
+  continent: string | null; // sovereign states only
+  capital: string;
   population: number | null;
   area: number | null;
   localNames: { language: string; name: string; romanized: string }[];
   languages: string[];
   currencies: { name: string; code: string; symbol: string }[];
   demonym: string;
+  facts: [string, string][];
   flag: { description: string; adopted: string; colors: string[]; symbolism: string };
   hook: string;
   trivia: string[];
   lookalikes: string[];
+  identical: string[]; // flags with the same design, never offered as each other's wrong answer
   differences: Record<string, string>; // lookalike code → how to tell the two apart
   nearest: string[];
+  hasMap: boolean;
+  rank: number | null;
   ratio: number;
   transparent: boolean;
   color: string;
 }
 
+export interface FlagSet {
+  id: string;
+  name: string;
+  noun: string; // "Which <noun> is this?"
+  description: string;
+  cover: string;
+}
+
 export const ALL = raw as unknown as Country[];
 export const byCode = new Map(ALL.map((c) => [c.code, c]));
-export const REGIONS = ['Europe', 'Asia', 'Africa', 'Americas', 'Oceania'];
+export const SETS = rawSets as FlagSet[];
+export const SOVEREIGN = 'sovereign';
+export const setById = new Map(SETS.map((s) => [s.id, s]));
+export const inSet = (id: string) => ALL.filter((c) => c.set === id);
+export const CONTINENTS = ['Africa', 'Asia', 'Europe', 'North America', 'South America', 'Oceania'];
 
-export const STATUS_LABEL: Record<Country['status'], string> = {
-  'un-member': 'UN member',
+export const STATUS_LABEL: Record<string, string> = {
   'un-observer': 'UN observer state',
-  'partially-recognized': 'Partially recognized',
 };
 
 // Neighbours are learned together, best-known (most populous) first within each subregion.
@@ -45,12 +64,14 @@ const SUBREGION_ORDER = [
   'Australia and New Zealand', 'Melanesia', 'Micronesia', 'Polynesia',
 ];
 
+// Other sets go in their curated order, else best-known (most populous) first.
 export function curriculum(list: Country[]): Country[] {
-  const rank = (c: Country) => {
+  const group = (c: Country) => {
+    if (c.set !== SOVEREIGN) return c.rank ?? 0;
     const i = SUBREGION_ORDER.indexOf(c.subregion);
     return i === -1 ? SUBREGION_ORDER.length : i;
   };
-  return [...list].sort((a, b) => rank(a) - rank(b) || (b.population ?? 0) - (a.population ?? 0));
+  return [...list].sort((a, b) => group(a) - group(b) || (b.population ?? 0) - (a.population ?? 0));
 }
 
 export const flagSrc = (code: string, w: 320 | 640 = 640) => `img/flags/${w}/${code}.webp`;
@@ -68,7 +89,7 @@ function preloadSrc(src: string): Promise<void> {
   return p;
 }
 export const preload = (code: string, w: 320 | 640 = 640) => preloadSrc(flagSrc(code, w));
-export const preloadMap = (code: string, plain = false) => preloadSrc(mapSrc(code, plain));
+export const preloadMap = (c: Country, plain = false) => (c.hasMap ? preloadSrc(mapSrc(c.code, plain)) : Promise.resolve());
 
 export function normalize(s: string): string {
   return s

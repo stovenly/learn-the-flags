@@ -1,0 +1,59 @@
+{
+  "code": "ca-nl",
+  "isoNumeric": "",
+  "name": "Newfoundland and Labrador",
+  "officialName": "Province of Newfoundland and Labrador",
+  "localNames": [],
+  "aliases": [
+    "NL",
+    "Newfoundland"
+  ],
+  "image": "Flag_of_Newfoundland_and_Labrador.svg",
+  "capital": "St. John's",
+  "region": "Canada",
+  "subregion": "Atlantic Canada",
+  "population": 510550,
+  "area": 405212,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "Canadian dollar",
+      "code": "CAD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Newfoundlander and Labradorian",
+  "latlng": [
+    53,
+    -60
+  ],
+  "facts": [
+    [
+      "Type",
+      "Province"
+    ],
+    [
+      "Joined Confederation",
+      "1949"
+    ]
+  ],
+  "flag": {
+    "description": "A mostly white flag with blue triangles and rectangles at the hoist, and in the fly two red triangles edged in gold with a gold arrow between them.",
+    "adopted": "1980",
+    "colors": [
+      "white",
+      "blue",
+      "red",
+      "yellow"
+    ],
+    "symbolism": "The blue section recalls the Union Jack; white stands for snow and ice, blue for the sea, red for human effort and gold for confidence, while the arrow points towards a brighter future."
+  },
+  "hook": "Newfoundland and Labrador is an angular, mostly white flag: blue triangles at the hoist and a red-and-gold arrow shape in the fly, with no shield or emblem at all.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag was designed by the Newfoundland painter Christopher Pratt and first flown on 24 June 1980.",
+    "Newfoundland joined Canada in 1949, the last province to do so."
+  ]
+}

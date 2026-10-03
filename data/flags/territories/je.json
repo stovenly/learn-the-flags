@@ -1,0 +1,64 @@
+{
+  "code": "je",
+  "isoNumeric": "832",
+  "name": "Jersey",
+  "officialName": "Bailiwick of Jersey",
+  "localNames": [
+    {
+      "language": "Jèrriais",
+      "name": "Jèrri",
+      "romanized": ""
+    }
+  ],
+  "aliases": [],
+  "image": "Flag_of_Jersey.svg",
+  "capital": "Saint Helier",
+  "region": "Northern Europe",
+  "subregion": "Crown Dependency",
+  "population": 103267,
+  "area": 119.6,
+  "languages": [
+    "English",
+    "French"
+  ],
+  "currencies": [
+    {
+      "name": "British pound",
+      "code": "GBP",
+      "symbol": "£"
+    }
+  ],
+  "demonym": "Jersey",
+  "latlng": [
+    49.21,
+    -2.13
+  ],
+  "facts": [
+    [
+      "Status",
+      "Self-governing British Crown Dependency"
+    ],
+    [
+      "Head of state",
+      "King Charles III, as Duke of Normandy"
+    ]
+  ],
+  "flag": {
+    "description": "A white field with a red diagonal cross (saltire), with the badge of Jersey in the upper arm: a red shield of three gold lions beneath a yellow Plantagenet crown.",
+    "adopted": "1981",
+    "colors": [
+      "white",
+      "red",
+      "yellow"
+    ],
+    "symbolism": "The three lions are the arms of the English kings who were also Dukes of Normandy, and the Plantagenet crown recalls the medieval English kings to whom the island stayed loyal after mainland Normandy was lost in 1204."
+  },
+  "hook": "Jersey is a red X on white with a little crowned shield of three gold lions tucked into the top; Guernsey uses an upright cross instead.",
+  "lookalikes": [
+    "gg"
+  ],
+  "trivia": [
+    "Until the badge and crown were added in 1981, Jersey flew a plain red saltire on white.",
+    "The island gave its name both to the knitted jersey and to the Jersey breed of dairy cattle."
+  ]
+}

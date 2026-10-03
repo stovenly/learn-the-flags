@@ -1,0 +1,74 @@
+{
+  "code": "fo",
+  "isoNumeric": "234",
+  "name": "Faroe Islands",
+  "the": true,
+  "officialName": "Faroe Islands",
+  "localNames": [
+    {
+      "language": "Faroese",
+      "name": "Føroyar",
+      "romanized": ""
+    },
+    {
+      "language": "Danish",
+      "name": "Færøerne",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Faroes",
+    "Faeroe Islands"
+  ],
+  "image": "Flag_of_the_Faroe_Islands.svg",
+  "capital": "Tórshavn",
+  "region": "Northern Europe",
+  "subregion": "Autonomous territory of Denmark",
+  "population": 54700,
+  "area": 1399,
+  "languages": [
+    "Faroese",
+    "Danish"
+  ],
+  "currencies": [
+    {
+      "name": "Danish krone",
+      "code": "DKK",
+      "symbol": "kr"
+    }
+  ],
+  "demonym": "Faroese",
+  "latlng": [
+    62,
+    -7
+  ],
+  "facts": [
+    [
+      "Status",
+      "Autonomous territory within the Kingdom of Denmark"
+    ],
+    [
+      "Sovereign state",
+      "Denmark"
+    ]
+  ],
+  "flag": {
+    "description": "A white field with a red Nordic cross edged in blue, its vertical arm set towards the hoist.",
+    "adopted": "1948",
+    "colors": [
+      "white",
+      "red",
+      "blue"
+    ],
+    "symbolism": "White stands for the foam of the sea and the bright Faroese sky, while red and blue are traditional Faroese colours."
+  },
+  "hook": "The Faroes are the Nordic cross on a white background: Iceland and Norway put their cross on blue or red, but Merkið's field is white like sea foam.",
+  "lookalikes": [
+    "is",
+    "no"
+  ],
+  "trivia": [
+    "The flag, called Merkið (\"the banner\"), was designed by Faroese students in Copenhagen and first raised in 1919.",
+    "British authorities recognised it on 25 April 1940 during the wartime occupation, and the date is now celebrated as Flag Day."
+  ]
+}

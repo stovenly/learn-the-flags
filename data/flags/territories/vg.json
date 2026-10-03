@@ -1,0 +1,64 @@
+{
+  "code": "vg",
+  "isoNumeric": "092",
+  "name": "British Virgin Islands",
+  "the": true,
+  "officialName": "Virgin Islands",
+  "localNames": [],
+  "aliases": [
+    "BVI"
+  ],
+  "image": "Flag_of_the_British_Virgin_Islands.svg",
+  "capital": "Road Town",
+  "region": "Caribbean",
+  "subregion": "British Overseas Territory",
+  "population": 38984,
+  "area": 153,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "United States dollar",
+      "code": "USD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Virgin Islander",
+  "latlng": [
+    18.43,
+    -64.62
+  ],
+  "facts": [
+    [
+      "Status",
+      "British Overseas Territory"
+    ],
+    [
+      "Sovereign state",
+      "United Kingdom"
+    ]
+  ],
+  "flag": {
+    "description": "A Blue Ensign with the coat of arms in the fly: a green shield showing a woman in white holding a gold lamp, surrounded by eleven more lamps, above a scroll reading VIGILATE.",
+    "adopted": "1960",
+    "colors": [
+      "blue",
+      "red",
+      "white",
+      "green",
+      "yellow"
+    ],
+    "symbolism": "The woman is Saint Ursula and the lamps represent her 11,000 virgin followers, after whom Columbus named the islands."
+  },
+  "hook": "The British Virgin Islands' badge is a green shield with a woman in white surrounded by a dozen little lamps, Saint Ursula keeping watch.",
+  "lookalikes": [
+    "ms",
+    "ky",
+    "tc"
+  ],
+  "trivia": [
+    "The motto Vigilate is Latin for \"Be watchful\".",
+    "Although a British territory, the islands use the U.S. dollar as their currency."
+  ]
+}

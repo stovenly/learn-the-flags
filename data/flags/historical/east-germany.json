@@ -1,0 +1,79 @@
+{
+  "code": "east-germany",
+  "isoNumeric": "",
+  "name": "East Germany",
+  "officialName": "German Democratic Republic",
+  "localNames": [
+    {
+      "language": "German",
+      "name": "Deutsche Demokratische Republik",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "GDR",
+    "DDR",
+    "German Democratic Republic"
+  ],
+  "image": "Flag_of_East_Germany.svg",
+  "capital": "East Berlin",
+  "region": "Europe",
+  "subregion": "1949–1990",
+  "population": null,
+  "area": null,
+  "languages": [
+    "German"
+  ],
+  "currencies": [
+    {
+      "name": "East German mark",
+      "code": "DDM",
+      "symbol": "M"
+    }
+  ],
+  "demonym": "East German",
+  "latlng": [
+    52,
+    12.5
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1949–1990"
+    ],
+    [
+      "Flag used",
+      "1959–1990"
+    ],
+    [
+      "Today",
+      "Eastern Germany, reunified in 1990"
+    ]
+  ],
+  "shape": [
+    "de-bb",
+    "de-mv",
+    "de-sn",
+    "de-st",
+    "de-th",
+    "de-be"
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of black, red and gold, with the state emblem in the centre: a hammer and a pair of compasses inside a wreath of rye wrapped in a black-red-gold ribbon.",
+    "adopted": "1959",
+    "colors": [
+      "black",
+      "red",
+      "yellow"
+    ],
+    "symbolism": "The hammer stood for the workers, the compasses for the intelligentsia and the rye wreath for the farmers."
+  },
+  "hook": "East Germany is Germany's black-red-gold with a hammer and compasses in a wreath stamped in the middle; plain stripes mean West Germany or Germany today.",
+  "lookalikes": [
+    "de"
+  ],
+  "trivia": [
+    "Until 1959 East and West Germany flew the identical plain black-red-gold tricolour.",
+    "At the 1960 and 1964 Olympics the two German states competed as one team under a black-red-gold flag with white Olympic rings."
+  ]
+}

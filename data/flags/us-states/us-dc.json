@@ -1,0 +1,31 @@
+{
+  "code": "us-dc",
+  "isoNumeric": "",
+  "name": "Washington, D.C.",
+  "officialName": "District of Columbia",
+  "localNames": [],
+  "aliases": ["DC", "D.C.", "District of Columbia", "Washington DC", "Washington D.C."],
+  "image": "Flag_of_Washington,_D.C.svg",
+  "capital": "",
+  "region": "United States",
+  "subregion": "South Atlantic",
+  "population": 689545,
+  "area": 177,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Washingtonian",
+  "latlng": [38.9, -77],
+  "facts": [["Status", "Federal district"], ["Established", "1790"]],
+  "flag": {
+    "description": "A white field with three red five-pointed stars above two horizontal red bars.",
+    "adopted": "1938",
+    "colors": ["white", "red"],
+    "symbolism": "The design is taken from the coat of arms of George Washington's family."
+  },
+  "hook": "Washington, D.C. is three red stars over two red bars on white, George Washington's own family arms turned into a flag.",
+  "lookalikes": [],
+  "trivia": [
+    "A popular but unproven story claims the Washington family arms inspired the Stars and Stripes.",
+    "The design was chosen in 1938 by a commission set up by Congress to give the district a flag."
+  ]
+}

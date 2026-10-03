@@ -1,0 +1,49 @@
+{
+  "code": "us-ri",
+  "isoNumeric": "",
+  "name": "Rhode Island",
+  "officialName": "State of Rhode Island",
+  "localNames": [],
+  "aliases": [
+    "RI"
+  ],
+  "image": "Flag_of_Rhode_Island.svg",
+  "capital": "Providence",
+  "region": "United States",
+  "subregion": "New England",
+  "population": 1097379,
+  "area": 4001,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Rhode Islander",
+  "latlng": [
+    41.7,
+    -71.5
+  ],
+  "facts": [
+    [
+      "Nickname",
+      "The Ocean State"
+    ],
+    [
+      "Statehood",
+      "1790"
+    ]
+  ],
+  "flag": {
+    "description": "A white field with a gold anchor in the centre, encircled by 13 gold stars, with a blue ribbon below the anchor bearing the word \"HOPE\" in gold.",
+    "adopted": "1897",
+    "colors": [
+      "white",
+      "yellow",
+      "blue"
+    ],
+    "symbolism": "The anchor is a symbol of hope, and the 13 stars stand for the original colonies; Rhode Island was the 13th to ratify the Constitution."
+  },
+  "hook": "Rhode Island is the one with a gold anchor and the word HOPE on white, the opposite of a seal on a bedsheet.",
+  "lookalikes": [],
+  "trivia": [
+    "The anchor and \"Hope\" are usually linked to the Bible verse calling hope \"an anchor of the soul\".",
+    "Rhode Island is the smallest US state by area, and in 2020 voters removed \"and Providence Plantations\" from its official name."
+  ]
+}

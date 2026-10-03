@@ -1,0 +1,57 @@
+{
+  "code": "ph",
+  "isoNumeric": "608",
+  "name": "Philippines",
+  "the": true,
+  "officialName": "Republic of the Philippines",
+  "localNames": [
+    {
+      "language": "Filipino",
+      "name": "Pilipinas",
+      "romanized": ""
+    }
+  ],
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Manila",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "population": 115843670,
+  "area": 342353,
+  "languages": [
+    "English",
+    "Filipino"
+  ],
+  "currencies": [
+    {
+      "name": "Philippine peso",
+      "code": "PHP",
+      "symbol": "₱"
+    }
+  ],
+  "demonym": "Filipino",
+  "latlng": [
+    13,
+    122
+  ],
+  "flag": {
+    "description": "Two equal horizontal bands, blue over red, with a white equilateral triangle at the hoist containing a gold eight-rayed sun in the centre and a gold five-pointed star in each corner.",
+    "adopted": "1898",
+    "colors": [
+      "blue",
+      "red",
+      "white",
+      "yellow"
+    ],
+    "symbolism": "Blue stands for peace and justice, red for patriotism and valour, and white for equality; the sun's eight rays represent the first eight provinces to revolt against Spain, and the three stars Luzon, the Visayas and Mindanao."
+  },
+  "hook": "The Philippines is the flag that turns upside down in wartime: red on top means war; look for the gold sun and three stars in the white triangle.",
+  "lookalikes": [
+    "cz",
+    "cu"
+  ],
+  "trivia": [
+    "By law the flag is flown with the red band on top during a state of war.",
+    "The flag was conceived by Emilio Aguinaldo and first sewn in Hong Kong by Marcela Agoncillo, her daughter and Delfina Herbosa de Natividad."
+  ]
+}

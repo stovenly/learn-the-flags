@@ -1,0 +1,115 @@
+{
+  "code": "eu",
+  "isoNumeric": "",
+  "name": "European Union",
+  "the": true,
+  "officialName": "European Union",
+  "localNames": [],
+  "aliases": [
+    "EU"
+  ],
+  "image": "Flag_of_Europe.svg",
+  "capital": "Brussels",
+  "region": "Europe",
+  "subregion": "Founded 1993",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Bulgarian",
+    "Croatian",
+    "Czech",
+    "Danish",
+    "Dutch",
+    "English",
+    "Estonian",
+    "Finnish",
+    "French",
+    "German",
+    "Greek",
+    "Hungarian",
+    "Irish",
+    "Italian",
+    "Latvian",
+    "Lithuanian",
+    "Maltese",
+    "Polish",
+    "Portuguese",
+    "Romanian",
+    "Slovak",
+    "Slovene",
+    "Spanish",
+    "Swedish"
+  ],
+  "currencies": [
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    50.85,
+    4.35
+  ],
+  "facts": [
+    [
+      "Founded",
+      "1993"
+    ],
+    [
+      "Members",
+      "27 states"
+    ],
+    [
+      "Headquarters",
+      "Brussels"
+    ]
+  ],
+  "shape": [
+    "at",
+    "be",
+    "bg",
+    "cy",
+    "cz",
+    "de",
+    "dk",
+    "ee",
+    "es",
+    "fi",
+    "fr",
+    "gr",
+    "hr",
+    "hu",
+    "ie",
+    "it",
+    "lt",
+    "lu",
+    "lv",
+    "mt",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "se",
+    "si",
+    "sk"
+  ],
+  "flag": {
+    "description": "A blue field with a circle of twelve gold five-pointed stars in the centre.",
+    "adopted": "1985",
+    "colors": [
+      "blue",
+      "yellow"
+    ],
+    "symbolism": "The circle stands for unity, solidarity and harmony among the peoples of Europe; twelve is a symbol of completeness, not a count of members."
+  },
+  "hook": "Twelve gold stars in a ring on blue, and always twelve however many countries join; Cape Verde's ring has ten stars and sits on stripes.",
+  "lookalikes": [
+    "cv"
+  ],
+  "trivia": [
+    "The Council of Europe adopted the flag in 1955, three decades before the European Communities took it up in 1985.",
+    "The number of stars has never followed the number of members: there were twelve when the EU had twelve members and there are still twelve with 27."
+  ]
+}

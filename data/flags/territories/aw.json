@@ -1,0 +1,59 @@
+{
+  "code": "aw",
+  "isoNumeric": "533",
+  "name": "Aruba",
+  "officialName": "Aruba",
+  "localNames": [],
+  "aliases": [],
+  "image": "Flag_of_Aruba.svg",
+  "capital": "Oranjestad",
+  "region": "Caribbean",
+  "subregion": "Constituent country of the Netherlands",
+  "population": 107000,
+  "area": 180,
+  "languages": [
+    "Dutch",
+    "Papiamento"
+  ],
+  "currencies": [
+    {
+      "name": "Aruban florin",
+      "code": "AWG",
+      "symbol": "ƒ"
+    }
+  ],
+  "demonym": "Aruban",
+  "latlng": [
+    12.5,
+    -70
+  ],
+  "facts": [
+    [
+      "Status",
+      "Constituent country of the Kingdom of the Netherlands"
+    ],
+    [
+      "Sovereign state",
+      "Kingdom of the Netherlands"
+    ]
+  ],
+  "flag": {
+    "description": "A light blue field with two narrow parallel yellow stripes across the lower part and a white-edged red four-pointed star in the upper hoist corner.",
+    "adopted": "1976",
+    "colors": [
+      "light-blue",
+      "yellow",
+      "red",
+      "white"
+    ],
+    "symbolism": "Blue stands for the sea and sky and yellow for the sun and prosperity; the star is the island itself, its four points for the points of the compass, its red for the soil and its white edge for the beaches."
+  },
+  "hook": "Aruba is a sky-blue flag with a red four-pointed star in the corner and two thin yellow lines running along the bottom, like a sunlit horizon.",
+  "lookalikes": [
+    "cw"
+  ],
+  "trivia": [
+    "The flag was adopted on 18 March 1976, which Aruba celebrates every year as National Anthem and Flag Day.",
+    "Aruba left the Netherlands Antilles in 1986 to become a separate country within the Kingdom of the Netherlands."
+  ]
+}

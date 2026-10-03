@@ -1,0 +1,50 @@
+{
+  "code": "us-or",
+  "isoNumeric": "",
+  "name": "Oregon",
+  "officialName": "State of Oregon",
+  "localNames": [],
+  "aliases": [
+    "OR"
+  ],
+  "image": "Flag_of_Oregon.svg",
+  "capital": "Salem",
+  "region": "United States",
+  "subregion": "Pacific",
+  "population": 4237256,
+  "area": 254799,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Oregonian",
+  "latlng": [
+    43.9,
+    -120.6
+  ],
+  "facts": [
+    [
+      "Nickname",
+      "The Beaver State"
+    ],
+    [
+      "Statehood",
+      "1859"
+    ]
+  ],
+  "flag": {
+    "description": "A navy blue field with, in gold, \"STATE OF OREGON\" above and \"1859\" below the shield of the state seal, which is ringed by 33 stars; the reverse shows a gold beaver.",
+    "adopted": "1925",
+    "colors": [
+      "blue",
+      "yellow"
+    ],
+    "symbolism": "The 33 stars mark Oregon as the 33rd state, and the shield shows mountains, forest, a covered wagon and ships under an eagle, for the pioneers who settled it."
+  },
+  "hook": "Oregon is gold on navy with \"STATE OF OREGON\" over the shield, and it's the only state flag with a different back: a beaver.",
+  "lookalikes": [
+    "us-ne"
+  ],
+  "trivia": [
+    "Oregon's is the only US state flag with different designs on its two sides.",
+    "The beaver on the reverse matches the state's nickname, the Beaver State, and its state animal."
+  ]
+}

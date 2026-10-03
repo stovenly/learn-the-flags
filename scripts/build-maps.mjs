@@ -1,5 +1,5 @@
-// Renders public/img/maps/<code>.svg: a regional map zoomed on each country, highlighted, it and its neighbours labelled
-// with their flags where they fit, and a locator globe inset. maps/plain/<code>.svg leaves out every flag, for questions.
+// Renders public/img/maps/<code>.svg: a regional map zoomed on each flag's place (or union of places), highlighted, it and
+// its neighbours labelled with their flags where they fit, and a locator globe. maps/plain/<code>.svg has no flags, for questions.
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { geoArea, geoAzimuthalEqualArea, geoCentroid, geoContains, geoDistance, geoGraticule10, geoOrthographic, geoPath } from 'd3-geo';
@@ -21,11 +21,23 @@ const load = async (res) => {
 };
 const world50 = await load('50m');
 const world110 = await load('110m');
-const countries = await Promise.all(
-  (await fs.readdir(path.join(ROOT, 'data/countries')))
-    .filter((f) => f.endsWith('.json'))
-    .map(async (f) => JSON.parse(await fs.readFile(path.join(ROOT, 'data/countries', f), 'utf8'))),
+const countries = [];
+for (const set of await fs.readdir(path.join(ROOT, 'data/flags'))) {
+  for (const f of (await fs.readdir(path.join(ROOT, 'data/flags', set))).filter((f) => f.endsWith('.json'))) {
+    countries.push({ ...JSON.parse(await fs.readFile(path.join(ROOT, 'data/flags', set, f), 'utf8')), set });
+  }
+}
+const byCode = new Map(countries.map((c) => [c.code, c]));
+
+// Outlines world-atlas lacks (states, provinces, UK nations, breakaway regions), keyed by flag code; see fetch-geo.mjs.
+const extra = Object.entries(JSON.parse(await fs.readFile(path.join(ROOT, 'data/geo/extra.json'), 'utf8'))).map(
+  ([key, x]) => ({ type: 'Feature', id: key, parent: x.parent, properties: { name: x.name }, geometry: x.geometry }),
 );
+const extraByKey = new Map(extra.map((x) => [x.id, x]));
+// Natural Earth names for flags whose world-atlas feature has no ISO number.
+const NE_NAME = { Kosovo: 'xk', Somaliland: 'somaliland', 'N. Cyprus': 'northern-cyprus' };
+const byIso = new Map(countries.filter((c) => c.isoNumeric).map((c) => [c.isoNumeric, c.code]));
+const codeOf = (w) => (byCode.has(w.id) ? w.id : (byIso.get(w.id) ?? NE_NAME[w.properties.name]));
 
 const polygons = (f) =>
   f.geometry.type === 'Polygon' ? [f.geometry.coordinates] : f.geometry.type === 'MultiPolygon' ? f.geometry.coordinates : [];
@@ -62,7 +74,6 @@ function simplify(d, tol = 0.6, minSpan = 0.8) {
 const FONT = 3.8; // label size in viewBox units
 const textWidth = (t, size) => t.length * size * 0.56;
 const esc = (t) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;');
-const ourName = new Map(countries.map((c) => [c.isoNumeric, c.name]));
 const INSET = { x0: W - 30, y0: H - 30 };
 
 const parseRings = (d) =>
@@ -81,14 +92,15 @@ function inside(rings, x, y) {
 }
 
 // Tiny flag thumbnails inlined as data URIs (an SVG shown through <img> can't load external images).
-const ourCode = new Map(countries.map((c) => [c.isoNumeric || c.name, c.code]));
 const thumbs = new Map();
 for (const c of countries) {
-  const { data, info } = await sharp(path.join(ROOT, `public/img/flags/320/${c.code}.webp`))
-    .resize({ height: 30 })
-    .png({ palette: true, quality: 90, compressionLevel: 9 })
-    .toBuffer({ resolveWithObject: true });
-  thumbs.set(c.code, { uri: `data:image/png;base64,${data.toString('base64')}`, ratio: info.width / info.height });
+  try {
+    const { data, info } = await sharp(path.join(ROOT, `public/img/flags/320/${c.code}.webp`))
+      .resize({ height: 30 })
+      .png({ palette: true, quality: 90, compressionLevel: 9 })
+      .toBuffer({ resolveWithObject: true });
+    thumbs.set(c.code, { uri: `data:image/png;base64,${data.toString('base64')}`, ratio: info.width / info.height });
+  } catch {}
 }
 
 // Every grid point inside each neighbour's visible land, nearest its visual centre first.
@@ -108,8 +120,8 @@ function labelCandidates(base, draw) {
     const mx = pts.reduce((sum, q) => sum + q[0], 0) / pts.length;
     const my = pts.reduce((sum, q) => sum + q[1], 0) / pts.length;
     pts.sort((q, r) => Math.hypot(q[0] - mx, q[1] - my) - Math.hypot(r[0] - mx, r[1] - my));
-    const code = ourCode.get(w.id) ?? ourCode.get(w.properties.name);
-    const names = [ourName.get(w.id), w.properties.name].filter(Boolean);
+    const code = codeOf(w);
+    const names = [...new Set([byCode.get(code)?.name, w.properties.name].filter(Boolean))];
     candidates.push({ area, rings, pts, code, names });
   }
   return candidates.sort((q, r) => r.area - q.area);
@@ -170,14 +182,30 @@ function locator(center) {
 
 const STYLE = `<style>.o{fill:#b5d7ef}.g{fill:none;stroke:#fff;stroke-opacity:.45;stroke-width:.3}.l{fill:#f3ecd2;stroke:#ad9f78;stroke-width:.3}.t{fill:#d9302b;stroke:#7a1512;stroke-width:.45}.mh{fill:none;stroke:#fff;stroke-width:3}.m{fill:none;stroke:#d9302b;stroke-width:1.6}.io{fill:#4f93c9}.il{fill:#f3ecd2}.id{fill:#d9302b;stroke:#fff;stroke-width:.6}.ir{fill:none;stroke:#fff;stroke-width:1.2}.n{font:500 ${FONT}px system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;fill:#6b6249;text-anchor:middle;paint-order:stroke;stroke:#f3ecd2;stroke-width:.9;stroke-linejoin:round}.fb{fill:none;stroke:#00000040;stroke-width:.15}.tn{font-weight:650;fill:#fff;stroke:#a51f1b;stroke-width:.7}.tn .fb{stroke:#ffffffb0;stroke-width:.3}</style>`;
 
+// A flag's outline: its own extra outline, else its world-atlas country (for a union member code too).
+function outline(key) {
+  if (extraByKey.has(key)) return extraByKey.get(key);
+  const c = byCode.get(key);
+  return world50.find((w) => codeOf(w) === key || (c && !c.isoNumeric && c.set !== 'us-states' && c.set !== 'canada' && w.properties.name === c.name));
+}
+// Countries drawn as their subdivisions when a map highlights one of those (neighbouring states and provinces get labelled).
+const SUBDIVIDED = { 840: ['840', '124'], 124: ['840', '124'], 826: ['826'] };
+
 await fs.mkdir(path.join(OUT, 'plain'), { recursive: true });
 let total = 0;
 for (const c of countries) {
-  const f = world50.find((w) => (c.isoNumeric && w.id === c.isoNumeric) || w.properties.name === c.name);
+  if (c.shape === false) continue;
+  const members = (Array.isArray(c.shape) ? c.shape : [c.code]).map(outline).filter(Boolean);
+  const f = members.length ? { type: 'Feature', id: c.code, properties: { name: c.name }, geometry: asFeature(members.flatMap(polygons)).geometry } : null;
   const fallback = [c.latlng[1], c.latlng[0]];
-  const { near, center, markAt } = f ? focus(f) : { near: null, center: fallback, markAt: fallback };
-  const key = (w) => w.id ?? w.properties.name;
-  const isTarget = (w) => !!f && key(w) === key(f);
+  const parts = members.map(focus);
+  const near = parts.length ? asFeature(parts.flatMap((p) => polygons(p.near))) : null;
+  const center = near ? geoCentroid(near) : fallback;
+  const markAt = parts.length ? parts.reduce((a, b) => (geoArea(b.near) > geoArea(a.near) ? b : a)).markAt : fallback;
+  const inTarget = new Set([c.code, ...members.map((m) => codeOf(m) ?? m.id)]);
+  const isTarget = (w) => !!f && inTarget.has(codeOf(w) ?? w.id);
+  const swap = [...new Set(members.filter((m) => m.parent).flatMap((m) => SUBDIVIDED[m.parent] ?? []))];
+  const withParts = (world) => (swap.length ? [...world.filter((w) => !swap.includes(w.id)), ...extra.filter((x) => swap.includes(x.parent))] : world);
 
   const projection = geoAzimuthalEqualArea().rotate([-center[0], -center[1]]);
   let scale = scaleForHalfView(MIN_HALF_VIEW);
@@ -192,7 +220,7 @@ for (const c of countries) {
   for (;;) {
     projection.scale(scale).translate([W / 2, H / 2]).clipExtent([[0, 0], [W, H]]);
     draw = geoPath(projection).digits(1);
-    base = scale < scaleForHalfView(40 * DEG) ? world110 : world50;
+    base = withParts(scale < scaleForHalfView(40 * DEG) ? world110 : world50);
     others = base.filter((w) => !isTarget(w)).map((w) => simplify(draw(w), 0.4, 0.6)).join('');
     const land = base.reduce((sum, w) => sum + (isTarget(w) ? 0 : draw.area(w) || 0), 0);
     if (land > W * H * 0.04 || scale <= scaleForHalfView(MAX_HALF_VIEW)) break;
@@ -213,7 +241,7 @@ for (const c of countries) {
   const annotate = (withFlags) => {
     const placed = [...avoid];
     const self = labels(own, targetRings, placed, withFlags, true);
-    return self + labels(candidates, targetRings, placed, withFlags);
+    return self + labels(candidates, targetRings, placed, withFlags && c.set !== 'historical');
   };
   const render = (names) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}">${STYLE}<rect class="o" width="${W}" height="${H}"/><path class="g" d="${simplify(draw(geoGraticule10()), 1.5, 0)}"/><path class="l" d="${others}"/>${target ? `<path class="t" d="${target}"/>` : ''}${marker}${names}${locator(center)}</svg>\n`;
   const full = render(annotate(true));
@@ -221,4 +249,4 @@ for (const c of countries) {
   await fs.writeFile(path.join(OUT, 'plain', `${c.code}.svg`), render(annotate(false)));
   total += full.length;
 }
-console.log(`Wrote ${countries.length} maps (${Math.round(total / 1024)} KB total) to public/img/maps`);
+console.log(`Wrote ${countries.filter((c) => c.shape !== false).length} maps (${Math.round(total / 1024)} KB total) to public/img/maps`);

@@ -1,0 +1,55 @@
+{
+  "code": "us-mt",
+  "isoNumeric": "",
+  "name": "Montana",
+  "officialName": "State of Montana",
+  "localNames": [],
+  "aliases": [
+    "MT"
+  ],
+  "image": "Flag_of_Montana.svg",
+  "capital": "Helena",
+  "region": "United States",
+  "subregion": "Mountain",
+  "population": 1084225,
+  "area": 380831,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Montanan",
+  "latlng": [
+    47,
+    -109.6
+  ],
+  "facts": [
+    [
+      "Nickname",
+      "The Treasure State"
+    ],
+    [
+      "Statehood",
+      "1889"
+    ]
+  ],
+  "flag": {
+    "description": "A dark blue field with the state seal in the centre, showing a plough, a pick and a shovel before mountains and the Great Falls of the Missouri, with a ribbon reading \"Oro y Plata\"; the word \"MONTANA\" is written in gold above the seal.",
+    "adopted": "1981",
+    "colors": [
+      "blue",
+      "yellow",
+      "green",
+      "brown",
+      "white"
+    ],
+    "symbolism": "The plough, pick and shovel stand for the farming and mining that built the state, and the motto \"Oro y Plata\" (Spanish for \"gold and silver\") recalls its mineral wealth."
+  },
+  "hook": "Montana is the seal-on-blue flag that writes MONTANA in plain gold capitals above the seal; Kansas and Wisconsin's names sit elsewhere.",
+  "lookalikes": [
+    "us-wi",
+    "us-ks",
+    "us-id"
+  ],
+  "trivia": [
+    "The word \"MONTANA\" was added above the seal in 1981, and the law specifies the lettering in Helvetica Bold.",
+    "The motto \"Oro y Plata\" is Spanish, a nod to the gold and silver strikes of the 1860s."
+  ]
+}

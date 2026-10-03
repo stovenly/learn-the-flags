@@ -1,0 +1,31 @@
+{
+  "code": "us-me",
+  "isoNumeric": "",
+  "name": "Maine",
+  "officialName": "State of Maine",
+  "localNames": [],
+  "aliases": ["ME"],
+  "image": "Flag_of_Maine.svg",
+  "capital": "Augusta",
+  "region": "United States",
+  "subregion": "New England",
+  "population": 1362359,
+  "area": 91633,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Mainer",
+  "latlng": [45.4, -69.2],
+  "facts": [["Nickname", "The Pine Tree State"], ["Statehood", "1820"]],
+  "flag": {
+    "description": "A blue field with the state coat of arms: a moose resting under a pine tree on a shield held by a farmer and a sailor, a North Star and the word DIRIGO above, and MAINE on a banner below.",
+    "adopted": "1909",
+    "colors": ["blue", "yellow", "white", "green", "brown", "red"],
+    "symbolism": "The farmer and sailor stand for agriculture and the sea, the pine and moose for the forests, and the North Star for the motto \"Dirigo\", \"I lead\"."
+  },
+  "hook": "Maine's seal-on-blue has a moose lying under a pine tree, a farmer and a sailor at the sides, and a single star marked DIRIGO on top.",
+  "lookalikes": ["us-mi", "us-vt"],
+  "trivia": [
+    "In a 2024 referendum, about 55 percent of voters rejected bringing back a version of the 1901 pine tree flag.",
+    "Maine's first state flag, used from 1901 to 1909, was a green pine and blue star on a buff field."
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "code": "abkhazia",
+  "isoNumeric": "",
+  "name": "Abkhazia",
+  "officialName": "Republic of Abkhazia",
+  "localNames": [
+    {
+      "language": "Abkhaz",
+      "name": "Аҧсны",
+      "romanized": "Apsny"
+    },
+    {
+      "language": "Georgian",
+      "name": "აფხაზეთი",
+      "romanized": "Apkhazeti"
+    }
+  ],
+  "aliases": [
+    "Republic of Abkhazia"
+  ],
+  "image": "Flag_of_the_Republic_of_Abkhazia.svg",
+  "capital": "Sukhumi",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "population": 240705,
+  "area": 8665,
+  "languages": [
+    "Abkhaz",
+    "Russian"
+  ],
+  "currencies": [
+    {
+      "name": "Russian ruble",
+      "code": "RUB",
+      "symbol": "₽"
+    }
+  ],
+  "demonym": "Abkhaz",
+  "latlng": [
+    43,
+    41
+  ],
+  "facts": [
+    [
+      "Recognised by",
+      "Russia and a few other UN member states"
+    ],
+    [
+      "Claimed by",
+      "Georgia"
+    ]
+  ],
+  "flag": {
+    "description": "Seven horizontal stripes alternating green and white, with a red canton holding an open white right hand beneath an arc of seven white stars.",
+    "adopted": "1992",
+    "colors": [
+      "green",
+      "white",
+      "red"
+    ],
+    "symbolism": "The open hand comes from the banner of the medieval Kingdom of Abkhazia, the seven stars are said to stand for its historical regions, and green and white are said to represent the coexistence of Islam and Christianity."
+  },
+  "hook": "Abkhazia raises an open white hand under seven stars in a red corner, over green and white stripes.",
+  "lookalikes": [],
+  "trivia": [
+    "Both the stripes and the stars come to seven, a number often linked to Abkhazia's seven historical regions.",
+    "Abkhazia broke away from Georgia in the war of 1992–1993, but Russia did not recognise it until 2008."
+  ]
+}

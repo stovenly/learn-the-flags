@@ -1,0 +1,67 @@
+{
+  "code": "cw",
+  "isoNumeric": "531",
+  "name": "Curaçao",
+  "officialName": "Country of Curaçao",
+  "localNames": [
+    {
+      "language": "Papiamento",
+      "name": "Kòrsou",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Curacao"
+  ],
+  "image": "Flag_of_Curaçao.svg",
+  "capital": "Willemstad",
+  "region": "Caribbean",
+  "subregion": "Constituent country of the Netherlands",
+  "population": 155000,
+  "area": 444,
+  "languages": [
+    "Papiamento",
+    "Dutch",
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "Caribbean guilder",
+      "code": "XCG",
+      "symbol": "Cg"
+    }
+  ],
+  "demonym": "Curaçaoan",
+  "latlng": [
+    12.2,
+    -69
+  ],
+  "facts": [
+    [
+      "Status",
+      "Constituent country of the Kingdom of the Netherlands"
+    ],
+    [
+      "Sovereign state",
+      "Kingdom of the Netherlands"
+    ]
+  ],
+  "flag": {
+    "description": "A blue field with a horizontal yellow stripe just below the middle and two white five-pointed stars in the upper hoist, the smaller one nearer the corner.",
+    "adopted": "1984",
+    "colors": [
+      "blue",
+      "yellow",
+      "white"
+    ],
+    "symbolism": "Blue stands for the sea and sky and yellow for the sun; the two stars are Curaçao and its uninhabited neighbour Klein Curaçao, and their five points recall the five continents its people came from."
+  },
+  "hook": "Curaçao is a deep blue flag cut by one yellow line, with two white stars, one big and one small, floating above it like the island and its little sister.",
+  "lookalikes": [
+    "aw"
+  ],
+  "trivia": [
+    "Curaçao celebrates Flag Day on 2 July, the date the flag was adopted in 1984.",
+    "It became a constituent country of the Kingdom of the Netherlands on 10 October 2010, when the Netherlands Antilles was dissolved."
+  ]
+}

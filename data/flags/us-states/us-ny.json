@@ -1,0 +1,54 @@
+{
+  "code": "us-ny",
+  "isoNumeric": "",
+  "name": "New York",
+  "officialName": "State of New York",
+  "localNames": [],
+  "aliases": [
+    "NY"
+  ],
+  "image": "Flag_of_New_York.svg",
+  "capital": "Albany",
+  "region": "United States",
+  "subregion": "Mid-Atlantic",
+  "population": 20201249,
+  "area": 141297,
+  "languages": [],
+  "currencies": [],
+  "demonym": "New Yorker",
+  "latlng": [
+    42.9,
+    -75.5
+  ],
+  "facts": [
+    [
+      "Nickname",
+      "The Empire State"
+    ],
+    [
+      "Statehood",
+      "1788"
+    ]
+  ],
+  "flag": {
+    "description": "A dark blue field with the state coat of arms: a shield showing the sun rising over the Hudson River with sailing ships, supported by Liberty and Justice, topped by an eagle on a globe, with the ribbons \"E Pluribus Unum\" and \"Excelsior\" below.",
+    "adopted": "2020",
+    "colors": [
+      "blue",
+      "yellow",
+      "white",
+      "green",
+      "red"
+    ],
+    "symbolism": "Liberty has a discarded crown at her feet to mark independence from Britain, Justice is blindfolded with scales, and \"Excelsior\" means \"ever upward\"."
+  },
+  "hook": "New York's shield is flanked by two women, blindfolded Justice and Liberty, on blue; New Jersey's women stand on buff, and Pennsylvania uses horses.",
+  "lookalikes": [
+    "us-nj",
+    "us-pa"
+  ],
+  "trivia": [
+    "In 2020 the state added \"E Pluribus Unum\" on a scroll beneath the shield of the coat of arms, and so to the flag.",
+    "The flag's design dates from 1901, but the arms themselves go back to 1778."
+  ]
+}

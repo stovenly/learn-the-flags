@@ -1,0 +1,74 @@
+{
+  "code": "ca-nt",
+  "isoNumeric": "",
+  "name": "Northwest Territories",
+  "the": true,
+  "officialName": "Northwest Territories",
+  "localNames": [],
+  "aliases": [
+    "NT",
+    "NWT"
+  ],
+  "image": "Flag_of_the_Northwest_Territories.svg",
+  "capital": "Yellowknife",
+  "region": "Canada",
+  "subregion": "Northern Canada",
+  "population": 41070,
+  "area": 1346106,
+  "languages": [
+    "Chipewyan",
+    "Cree",
+    "English",
+    "French",
+    "Gwich'in",
+    "Inuinnaqtun",
+    "Inuktitut",
+    "Inuvialuktun",
+    "North Slavey",
+    "South Slavey",
+    "Tłı̨chǫ"
+  ],
+  "currencies": [
+    {
+      "name": "Canadian dollar",
+      "code": "CAD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Northwest Territorian",
+  "latlng": [
+    64,
+    -119
+  ],
+  "facts": [
+    [
+      "Type",
+      "Territory"
+    ],
+    [
+      "Joined Confederation",
+      "1870"
+    ]
+  ],
+  "flag": {
+    "description": "A blue vertical band at each end, each a quarter of the width, with a white square in the centre holding the territorial shield: a wavy blue line on white above a green and red field with gold bars and a white fox's head.",
+    "adopted": "1969",
+    "colors": [
+      "blue",
+      "white",
+      "green",
+      "red",
+      "yellow"
+    ],
+    "symbolism": "Blue stands for the lakes and waters and white for snow and ice; on the shield, the wavy line is the Northwest Passage, green and red are the forest and tundra split by the tree line, and the gold bars and fox stand for minerals and furs."
+  },
+  "hook": "The Northwest Territories borrow Canada's layout in blue: blue bands either side of a white centre holding a shield with a fox's head instead of a maple leaf.",
+  "lookalikes": [
+    "ca",
+    "ca-yt"
+  ],
+  "trivia": [
+    "The Northwest Territories recognise eleven official languages, more than any other province or territory in Canada.",
+    "The flag was chosen in a design competition and adopted by the territorial legislature in 1969."
+  ]
+}

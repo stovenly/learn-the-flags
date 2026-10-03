@@ -1,0 +1,31 @@
+{
+  "code": "us-ky",
+  "isoNumeric": "",
+  "name": "Kentucky",
+  "officialName": "Commonwealth of Kentucky",
+  "localNames": [],
+  "aliases": ["KY"],
+  "image": "Flag_of_Kentucky.svg",
+  "capital": "Frankfort",
+  "region": "United States",
+  "subregion": "East South Central",
+  "population": 4505836,
+  "area": 104656,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Kentuckian",
+  "latlng": [37.5, -85.3],
+  "facts": [["Nickname", "The Bluegrass State"], ["Statehood", "1792"]],
+  "flag": {
+    "description": "A navy blue field with the state seal, two men shaking hands, ringed by UNITED WE STAND DIVIDED WE FALL, with COMMONWEALTH OF KENTUCKY arched above and sprays of goldenrod below.",
+    "adopted": "1918",
+    "colors": ["blue", "yellow", "white", "green"],
+    "symbolism": "The handshake between a frontiersman and a statesman illustrates the state motto, \"United we stand, divided we fall\"."
+  },
+  "hook": "Kentucky's seal-on-blue is the handshake: two men greeting each other under COMMONWEALTH OF KENTUCKY.",
+  "lookalikes": ["us-wi"],
+  "trivia": [
+    "The two men are popularly said to be Daniel Boone and Henry Clay, but officially they are just a frontiersman and a statesman.",
+    "Kentucky is one of four US states that officially call themselves a commonwealth."
+  ]
+}

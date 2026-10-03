@@ -1,7 +1,7 @@
-import { byCode, Country, REGIONS } from '../data';
+import { ALL, byCode, CONTINENTS, Country, inSet, SETS, SOVEREIGN } from '../data';
 import { onCleanup } from '../router';
 import { dayNumber } from '../srs';
-import { deck, level, Level, SessionLog, state, streak } from '../store';
+import { level, Level, SessionLog, state, streak } from '../store';
 import { $, $$, countryLink, esc, flagImg, plural, thumb } from '../ui';
 
 type Status = 'learned' | 'learning' | 'new';
@@ -120,7 +120,7 @@ function attachTips(root: HTMLElement) {
 let gridFilter: Status | 'all' = 'all';
 
 export function progressView(root: HTMLElement) {
-  const all = deck();
+  const all = ALL;
   const status = new Map(all.map((c) => [c.code, statusOf(level(c.code))]));
   const count = (list: Country[]) => {
     let learned = 0, learning = 0;
@@ -154,16 +154,37 @@ export function progressView(root: HTMLElement) {
     .map(([k]) => byCode.get(k))
     .filter((c): c is Country => !!c);
 
+  const wall = (list: Country[]) =>
+    `<div class="flag-wall">${list
+      .map((c) => {
+        const s = status.get(c.code)!;
+        return `<a class="wall-flag is-${s}" href="${countryLink(c)}" data-tip="${c.code}" data-status="${s}" aria-label="${esc(c.name)}, ${STATUS_TEXT[s].toLowerCase()}">${flagImg(c, { size: 'sm', lazy: true, alt: '' })}</a>`;
+      })
+      .join('')}</div>`;
+  const groupHead = (name: string, list: Country[], tag = 'h2') => {
+    const s = count(list);
+    return `<div class="wall-head"><${tag}>${esc(name)}</${tag}><span class="muted small">${s.learned} of ${s.total} learned</span></div>`;
+  };
+  const setCards = SETS.map((set) => {
+    const list = inSet(set.id);
+    const body =
+      set.id === SOVEREIGN
+        ? CONTINENTS.map((k) => {
+            const sub = list.filter((c) => c.continent === k);
+            return `<div class="wall-group">${groupHead(k, sub, 'h3')}${wall(sub)}</div>`;
+          }).join('')
+        : wall(list);
+    return `<section class="card wall-card" data-set="${set.id}">${groupHead(set.name, list)}${body}</section>`;
+  }).join('');
+
   root.innerHTML = `
     <header class="page-head"><h1>Progress</h1></header>
     <section class="card overview">
       <div class="overview-main">
-        <div class="big-number"><strong>${overall.learned}</strong><span>of ${overall.total} flags learned ${info("learned", INFO.learned)}</span></div>
-        ${meter(overall.learned, overall.learning, overall.total)}
+        <div class="big-number"><strong>${overall.learned}</strong><span>${overall.learned === 1 ? 'flag' : 'flags'} learned ${info('learned', INFO.learned)}</span></div>
         <div class="legend">
           <span><i class="seg-learned"></i>Learned ${overall.learned}</span>
           <span><i class="seg-learning"></i>In progress ${overall.learning} ${info('in progress', INFO.learning)}</span>
-          <span><i class="seg-empty"></i>Not started ${overall.fresh}</span>
         </div>
         <div class="stats">
           <div class="stat"><strong>${streak()}</strong><span>day streak</span></div>
@@ -172,11 +193,11 @@ export function progressView(root: HTMLElement) {
         </div>
       </div>
       <div class="overview-regions">
-        <h2 class="label">By region</h2>
-        ${REGIONS.map((r) => {
-          const s = count(all.filter((c) => c.region === r));
+        <h2 class="label">By set</h2>
+        ${SETS.map((set) => {
+          const s = count(inSet(set.id));
           return `<div class="region-row">
-            <span class="region-name">${r}</span>
+            <span class="region-name">${esc(set.name)}</span>
             ${meter(s.learned, s.learning, s.total)}
             <span class="region-count muted">${s.learned}/${s.total}</span>
           </div>`;
@@ -184,31 +205,23 @@ export function progressView(root: HTMLElement) {
       </div>
     </section>
 
-    <section class="card">
-      <div class="section-head">
-        <h2>Your flags</h2>
-        <div class="chips" role="group" aria-label="Show">
-          ${(
-            [
-              ['all', 'All'],
-              ['learned', 'Learned'],
-              ['learning', 'In progress'],
-              ['new', 'Not started'],
-            ] as const
-          )
-            .map(([k, label]) => `<button class="chip${gridFilter === k ? ' active' : ''}" data-filter="${k}">${label}</button>`)
-            .join('')}
-        </div>
-      </div>
-      <div class="flag-wall">
-        ${all
-          .map((c) => {
-            const s = status.get(c.code)!;
-            return `<a class="wall-flag is-${s}" href="${countryLink(c)}" data-tip="${c.code}" data-status="${s}" aria-label="${esc(c.name)}, ${STATUS_TEXT[s].toLowerCase()}">${flagImg(c, { size: 'sm', lazy: true, alt: '' })}</a>`;
-          })
+    <div class="section-head wall-toolbar">
+      <h2>Your flags</h2>
+      <div class="chips" role="group" aria-label="Show">
+        ${(
+          [
+            ['all', 'All'],
+            ['learned', 'Learned'],
+            ['learning', 'In progress'],
+            ['new', 'Not started'],
+          ] as const
+        )
+          .map(([k, label]) => `<button class="chip${gridFilter === k ? ' active' : ''}" data-filter="${k}">${label}</button>`)
           .join('')}
       </div>
-    </section>
+    </div>
+    ${setCards}
+    <p class="empty muted" hidden>No flags here yet.</p>
 
     <div class="progress-cols${tricky.length ? '' : ' single'}">
       ${
@@ -231,7 +244,11 @@ export function progressView(root: HTMLElement) {
 
   attachTips(root);
   const tiles = $$('.wall-flag', root);
-  const apply = () => tiles.forEach((t) => (t.hidden = gridFilter !== 'all' && t.dataset.status !== gridFilter));
+  const apply = () => {
+    tiles.forEach((t) => (t.hidden = gridFilter !== 'all' && t.dataset.status !== gridFilter));
+    for (const g of $$('.wall-group, .wall-card', root)) g.hidden = !$$('.wall-flag', g).some((t) => !t.hidden);
+    $('.empty', root).hidden = tiles.some((t) => !t.hidden);
+  };
   for (const chip of $$('[data-filter]', root)) {
     chip.addEventListener('click', () => {
       gridFilter = chip.dataset.filter as typeof gridFilter;

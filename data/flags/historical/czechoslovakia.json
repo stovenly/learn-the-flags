@@ -1,0 +1,81 @@
+{
+  "code": "czechoslovakia",
+  "isoNumeric": "",
+  "name": "Czechoslovakia",
+  "officialName": "Czechoslovak Republic",
+  "localNames": [
+    {
+      "language": "Czech",
+      "name": "Československo",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "ČSSR",
+    "CSSR",
+    "ČSFR",
+    "Czechoslovak Socialist Republic",
+    "Czech and Slovak Federative Republic"
+  ],
+  "image": "Flag_of_the_Czech_Republic.svg",
+  "capital": "Prague",
+  "region": "Europe",
+  "subregion": "1918–1992",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Czech",
+    "Slovak"
+  ],
+  "currencies": [
+    {
+      "name": "Czechoslovak koruna",
+      "code": "CSK",
+      "symbol": "Kčs"
+    }
+  ],
+  "demonym": "Czechoslovak",
+  "latlng": [
+    49.5,
+    17
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1918–1992"
+    ],
+    [
+      "Flag used",
+      "1920–1992"
+    ],
+    [
+      "Today",
+      "Czechia and Slovakia"
+    ]
+  ],
+  "shape": [
+    "cz",
+    "sk"
+  ],
+  "identical": [
+    "cz"
+  ],
+  "flag": {
+    "description": "Two equal horizontal bands of white over red, with a blue isosceles triangle at the hoist reaching to the centre; it is identical to the flag of Czechia today.",
+    "adopted": "1920",
+    "colors": [
+      "white",
+      "red",
+      "blue"
+    ],
+    "symbolism": "White and red are the colours of Bohemia; the blue triangle was added to set the flag apart from Poland's and is often said to stand for Slovakia and Moravia."
+  },
+  "hook": "Czechoslovakia's flag is exactly the flag Czechia flies today: white over red with a blue triangle from the hoist, which the Philippines echoes in blue and red with a white triangle.",
+  "lookalikes": [
+    "ph"
+  ],
+  "trivia": [
+    "When the country split on 1 January 1993, the dissolution law barred both successors from using federal symbols, but the Czech Republic kept the flag anyway.",
+    "During the German occupation of 1939–1945 the Protectorate of Bohemia and Moravia used a horizontal white-red-blue tricolour instead."
+  ]
+}

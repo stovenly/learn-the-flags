@@ -1,0 +1,61 @@
+{
+  "code": "ai",
+  "isoNumeric": "660",
+  "name": "Anguilla",
+  "officialName": "Anguilla",
+  "localNames": [],
+  "aliases": [],
+  "image": "Flag_of_Anguilla.svg",
+  "capital": "The Valley",
+  "region": "Caribbean",
+  "subregion": "British Overseas Territory",
+  "population": 16010,
+  "area": 91,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "Eastern Caribbean dollar",
+      "code": "XCD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Anguillian",
+  "latlng": [
+    18.25,
+    -63.17
+  ],
+  "facts": [
+    [
+      "Status",
+      "British Overseas Territory"
+    ],
+    [
+      "Sovereign state",
+      "United Kingdom"
+    ]
+  ],
+  "flag": {
+    "description": "A Blue Ensign with the coat of arms in the fly: a white shield with three orange dolphins leaping in a circle above a turquoise base.",
+    "adopted": "1990",
+    "colors": [
+      "blue",
+      "red",
+      "white",
+      "orange",
+      "light-blue"
+    ],
+    "symbolism": "The three dolphins stand for unity, strength and endurance; the white represents peace and the turquoise the surrounding sea."
+  },
+  "hook": "Anguilla's badge is three orange dolphins chasing each other in a circle: no lion, no ship, no person.",
+  "lookalikes": [
+    "tc",
+    "ms",
+    "ck"
+  ],
+  "trivia": [
+    "The dolphins come from the Dolphin Flag flown during Anguilla's 1967 revolt against rule from St Kitts, which is still widely seen on the island.",
+    "Anguilla's .ai internet domain has become a major source of government income thanks to the boom in artificial intelligence."
+  ]
+}

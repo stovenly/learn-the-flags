@@ -1,0 +1,57 @@
+{
+  "code": "gb-eng",
+  "isoNumeric": "",
+  "name": "England",
+  "officialName": "England",
+  "localNames": [],
+  "aliases": [],
+  "image": "Flag_of_England.svg",
+  "capital": "London",
+  "region": "Northern Europe",
+  "subregion": "Country of the United Kingdom",
+  "population": 56490048,
+  "area": 132932,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "British pound",
+      "code": "GBP",
+      "symbol": "£"
+    }
+  ],
+  "demonym": "English",
+  "latlng": [
+    52.5,
+    -1.5
+  ],
+  "facts": [
+    [
+      "Status",
+      "Country of the United Kingdom"
+    ],
+    [
+      "Part of",
+      "United Kingdom"
+    ]
+  ],
+  "flag": {
+    "description": "A white field with a red cross reaching to the edges, the Cross of St George.",
+    "adopted": "1552",
+    "colors": [
+      "white",
+      "red"
+    ],
+    "symbolism": "The red cross on white is the emblem of St George, England's patron saint, and was in use as an English symbol by the late Middle Ages."
+  },
+  "hook": "England is the plain red cross on white: add four little crosses and you get Georgia, lay a gold cross over it and you get Guernsey.",
+  "lookalikes": [
+    "gg",
+    "ge"
+  ],
+  "trivia": [
+    "The red St George's cross forms the upright cross at the centre of the Union Jack.",
+    "Genoa and Milan also use a red cross on white as their flag."
+  ]
+}

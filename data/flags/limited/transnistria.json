@@ -1,0 +1,67 @@
+{
+  "code": "transnistria",
+  "isoNumeric": "",
+  "name": "Transnistria",
+  "officialName": "Pridnestrovian Moldavian Republic",
+  "localNames": [
+    {
+      "language": "Russian",
+      "name": "Приднестровье",
+      "romanized": "Pridnestrovye"
+    }
+  ],
+  "aliases": [
+    "Pridnestrovie",
+    "PMR",
+    "Pridnestrovian Moldavian Republic"
+  ],
+  "image": "Flag_of_Transnistria_(state).svg",
+  "capital": "Tiraspol",
+  "region": "Europe",
+  "subregion": "Eastern Europe",
+  "population": 475373,
+  "area": 4163,
+  "languages": [
+    "Russian",
+    "Romanian",
+    "Ukrainian"
+  ],
+  "currencies": [
+    {
+      "name": "Transnistrian ruble",
+      "code": "",
+      "symbol": "р."
+    }
+  ],
+  "demonym": "Transnistrian",
+  "latlng": [
+    47.2,
+    29.4
+  ],
+  "facts": [
+    [
+      "Recognised by",
+      "No UN member states; only Abkhazia and South Ossetia"
+    ],
+    [
+      "Claimed by",
+      "Moldova"
+    ]
+  ],
+  "flag": {
+    "description": "Horizontal red, green and red bands in a 3:2:3 ratio, with a gold hammer and sickle beneath a gold-edged red star in the upper hoist.",
+    "adopted": "2000",
+    "colors": [
+      "red",
+      "green",
+      "yellow"
+    ],
+    "symbolism": "The design copies the flag of the Soviet-era Moldavian SSR, from which Transnistria broke away; the flag law gives its symbols and colours no official meaning."
+  },
+  "hook": "Transnistria still flies the Soviet hammer and sickle: gold, under a red star, in the corner of a red flag with a green band across the middle.",
+  "lookalikes": [],
+  "trivia": [
+    "The reverse of the state flag leaves out the hammer, sickle and star, and anyone except government bodies may fly that plain version instead.",
+    "The flag of Russia has equal legal status with the state flag in Transnistria."
+  ]
+}

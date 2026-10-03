@@ -1,0 +1,31 @@
+{
+  "code": "us-md",
+  "isoNumeric": "",
+  "name": "Maryland",
+  "officialName": "State of Maryland",
+  "localNames": [],
+  "aliases": ["MD"],
+  "image": "Flag_of_Maryland.svg",
+  "capital": "Annapolis",
+  "region": "United States",
+  "subregion": "South Atlantic",
+  "population": 6177224,
+  "area": 32131,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Marylander",
+  "latlng": [39, -76.8],
+  "facts": [["Nickname", "The Old Line State"], ["Statehood", "1788"]],
+  "flag": {
+    "description": "Quartered: the first and fourth quarters have vertical gold and black stripes with a diagonal band in reversed colours; the second and third quarters show a red and white cross with flared ends, colours reversed on each side.",
+    "adopted": "1904",
+    "colors": ["yellow", "black", "red", "white"],
+    "symbolism": "It combines the arms of the Calvert family, the Lords Baltimore who founded the colony, with those of the Crossland family of the first Lord Baltimore's mother."
+  },
+  "hook": "Maryland looks like a medieval shield cut into four, black-and-gold stripes swapping corners with a red-and-white cross; no other state flag looks like it.",
+  "lookalikes": [],
+  "trivia": [
+    "It is the only US state flag based on English heraldry.",
+    "In the Civil War, the black and gold were associated with Unionists and the red and white with Marylanders who sided with the South."
+  ]
+}

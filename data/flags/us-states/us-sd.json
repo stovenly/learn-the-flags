@@ -1,0 +1,53 @@
+{
+  "code": "us-sd",
+  "isoNumeric": "",
+  "name": "South Dakota",
+  "officialName": "State of South Dakota",
+  "localNames": [],
+  "aliases": [
+    "SD"
+  ],
+  "image": "Flag_of_South_Dakota.svg",
+  "capital": "Pierre",
+  "region": "United States",
+  "subregion": "West North Central",
+  "population": 886667,
+  "area": 199729,
+  "languages": [],
+  "currencies": [],
+  "demonym": "South Dakotan",
+  "latlng": [
+    44.4,
+    -100.2
+  ],
+  "facts": [
+    [
+      "Nickname",
+      "The Mount Rushmore State"
+    ],
+    [
+      "Statehood",
+      "1889"
+    ]
+  ],
+  "flag": {
+    "description": "A sky blue field with the state seal in the centre, surrounded by a serrated gold sunburst, with \"SOUTH DAKOTA\" arched above and \"THE MOUNT RUSHMORE STATE\" arched below in gold.",
+    "adopted": "1992",
+    "colors": [
+      "light-blue",
+      "yellow",
+      "green",
+      "blue",
+      "white"
+    ],
+    "symbolism": "The sunburst reflects the state's sunny climate, and the seal shows farming, ranching, mining and river trade under the motto \"Under God the People Rule\"."
+  },
+  "hook": "South Dakota rings its seal with a spiky gold sun and spells \"THE MOUNT RUSHMORE STATE\" round the bottom.",
+  "lookalikes": [
+    "us-mt"
+  ],
+  "trivia": [
+    "Until 1992 the lower text read \"THE SUNSHINE STATE\"; it was changed to \"THE MOUNT RUSHMORE STATE\".",
+    "South Dakota and North Dakota were admitted on the same day in 1889; which came first was deliberately obscured."
+  ]
+}

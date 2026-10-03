@@ -1,0 +1,31 @@
+{
+  "code": "us-ma",
+  "isoNumeric": "",
+  "name": "Massachusetts",
+  "officialName": "Commonwealth of Massachusetts",
+  "localNames": [],
+  "aliases": ["MA"],
+  "image": "Flag_of_Massachusetts.svg",
+  "capital": "Boston",
+  "region": "United States",
+  "subregion": "New England",
+  "population": 7029917,
+  "area": 27336,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Massachusettsan",
+  "latlng": [42.3, -71.8],
+  "facts": [["Nickname", "The Bay State"], ["Statehood", "1788"]],
+  "flag": {
+    "description": "A white field with the state arms: a blue shield showing a Native American with a bow and a downward-pointing arrow and a white star, an arm holding a broadsword above, and a blue ribbon with the Latin motto below.",
+    "adopted": "1971",
+    "colors": ["white", "blue", "yellow"],
+    "symbolism": "The Latin motto means \"By the sword we seek peace, but peace only under liberty\"; the downward arrow signals peace."
+  },
+  "hook": "Massachusetts is white, not blue, with a blue shield in the middle showing a single standing figure and a sword-arm above.",
+  "lookalikes": ["us-il"],
+  "trivia": [
+    "Until 1971 the flag had a different reverse: a green pine tree on a blue shield.",
+    "A state commission has been working on a replacement flag since 2024, but the current design remains the official one."
+  ]
+}

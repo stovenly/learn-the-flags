@@ -1,0 +1,60 @@
+{
+  "code": "cg",
+  "isoNumeric": "178",
+  "name": "Republic of the Congo",
+  "the": true,
+  "officialName": "Republic of the Congo",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "Congo",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Congo",
+    "Congo-Brazzaville"
+  ],
+  "status": "un-member",
+  "capital": "Brazzaville",
+  "region": "Africa",
+  "subregion": "Middle Africa",
+  "population": 6332961,
+  "area": 342000,
+  "languages": [
+    "French",
+    "Kikongo",
+    "Lingala"
+  ],
+  "currencies": [
+    {
+      "name": "Central African CFA franc",
+      "code": "XAF",
+      "symbol": "FCFA"
+    }
+  ],
+  "demonym": "Congolese",
+  "latlng": [
+    -1,
+    15
+  ],
+  "flag": {
+    "description": "Divided diagonally by a yellow band from the lower hoist to the upper fly, with a green triangle in the upper hoist and a red triangle in the lower fly.",
+    "adopted": "1991",
+    "colors": [
+      "green",
+      "red",
+      "yellow"
+    ],
+    "symbolism": "Green represents the forests and hope for the future, yellow friendship and the nation's natural wealth, and red the struggle for independence."
+  },
+  "hook": "Congo-Brazzaville is a plain green-yellow-red diagonal with no star, unlike the sky-blue, starred flag of DR Congo across the river.",
+  "lookalikes": [
+    "cd",
+    "tz"
+  ],
+  "trivia": [
+    "The flag was first adopted in 1959; from 1970 to 1991 the People's Republic of the Congo used a red flag with a star, wreath and hammer and hoe, and the original returned in 1991.",
+    "Brazzaville and Kinshasa face each other across the Congo River, making them the closest pair of capital cities in the world apart from Rome and Vatican City."
+  ]
+}

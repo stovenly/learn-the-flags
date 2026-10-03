@@ -1,0 +1,67 @@
+{
+  "code": "tibet",
+  "isoNumeric": "",
+  "name": "Tibet",
+  "officialName": "Tibet",
+  "localNames": [
+    {
+      "language": "Tibetan",
+      "name": "བོད་",
+      "romanized": "Bod"
+    }
+  ],
+  "aliases": [
+    "Bod",
+    "Snow Lion Flag"
+  ],
+  "image": "Flag_of_Tibet.svg",
+  "capital": "Lhasa",
+  "region": "Asia",
+  "subregion": "1913–1951",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Tibetan"
+  ],
+  "currencies": [],
+  "demonym": "Tibetan",
+  "latlng": [
+    31,
+    88
+  ],
+  "facts": [
+    [
+      "De facto independent",
+      "1913–1951"
+    ],
+    [
+      "Flag used",
+      "1916–1959; since then in exile"
+    ],
+    [
+      "Today",
+      "Tibet Autonomous Region of China"
+    ]
+  ],
+  "shape": [
+    "cn-xz"
+  ],
+  "flag": {
+    "description": "A white mountain rising from the bottom, with two snow lions holding a flaming jewel and a swirling gankyil, under a yellow sun whose rays of red and dark blue spread to the edges; a yellow border runs along every side except the fly.",
+    "adopted": "1916",
+    "colors": [
+      "red",
+      "blue",
+      "white",
+      "yellow",
+      "green"
+    ],
+    "symbolism": "According to the Tibetan government in exile, the mountain stands for Tibet, the six red rays for the six ancestral tribes of the Tibetan people, the snow lions for the union of spiritual and secular rule, and the open fly edge for openness to Buddhist teaching."
+  },
+  "hook": "Tibet's snow lion flag is hard to mistake: two snow lions on a white peak under a sunburst of red and blue rays, with a yellow border on every side but the fly.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag was introduced by the 13th Dalai Lama and is now used by the Central Tibetan Administration, the government in exile based in Dharamsala, India.",
+    "Displaying the flag is banned in the People's Republic of China, which regards it as a symbol of Tibetan independence."
+  ]
+}

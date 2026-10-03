@@ -1,0 +1,53 @@
+{
+  "code": "us-pa",
+  "isoNumeric": "",
+  "name": "Pennsylvania",
+  "officialName": "Commonwealth of Pennsylvania",
+  "localNames": [],
+  "aliases": [
+    "PA"
+  ],
+  "image": "Flag_of_Pennsylvania.svg",
+  "capital": "Harrisburg",
+  "region": "United States",
+  "subregion": "Mid-Atlantic",
+  "population": 13002700,
+  "area": 119280,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Pennsylvanian",
+  "latlng": [
+    40.9,
+    -77.8
+  ],
+  "facts": [
+    [
+      "Nickname",
+      "The Keystone State"
+    ],
+    [
+      "Statehood",
+      "1787"
+    ]
+  ],
+  "flag": {
+    "description": "A dark blue field with the state coat of arms: a shield with a ship, a plough and three sheaves of wheat, topped by a bald eagle and supported by two black horses, above crossed stalks of corn and an olive branch and a red ribbon reading \"Virtue, Liberty and Independence\".",
+    "adopted": "1907",
+    "colors": [
+      "blue",
+      "yellow",
+      "black",
+      "red",
+      "white"
+    ],
+    "symbolism": "The ship stands for commerce, the plough and wheat for farming, and the olive branch and corn for peace and prosperity."
+  },
+  "hook": "Pennsylvania's shield is held up by two rearing black horses, where New York uses two women.",
+  "lookalikes": [
+    "us-ny"
+  ],
+  "trivia": [
+    "Pennsylvania is one of four US states officially styled a commonwealth.",
+    "The 1907 flag law requires the blue to match the blue of the US flag."
+  ]
+}

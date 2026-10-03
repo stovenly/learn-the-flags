@@ -1,0 +1,67 @@
+{
+  "code": "ca-nu",
+  "isoNumeric": "",
+  "name": "Nunavut",
+  "officialName": "Nunavut",
+  "localNames": [
+    {
+      "language": "Inuktitut",
+      "name": "ᓄᓇᕗᑦ",
+      "romanized": "Nunavut"
+    }
+  ],
+  "aliases": [
+    "NU"
+  ],
+  "image": "Flag_of_Nunavut.svg",
+  "capital": "Iqaluit",
+  "region": "Canada",
+  "subregion": "Northern Canada",
+  "population": 36858,
+  "area": 2093190,
+  "languages": [
+    "Inuktitut",
+    "Inuinnaqtun",
+    "English",
+    "French"
+  ],
+  "currencies": [
+    {
+      "name": "Canadian dollar",
+      "code": "CAD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Nunavummiuq",
+  "latlng": [
+    70,
+    -90
+  ],
+  "facts": [
+    [
+      "Type",
+      "Territory"
+    ],
+    [
+      "Joined Confederation",
+      "1999"
+    ]
+  ],
+  "flag": {
+    "description": "Divided vertically, gold at the hoist and white at the fly, with a red inuksuk standing across the division and a blue star in the upper fly.",
+    "adopted": "1999",
+    "colors": [
+      "yellow",
+      "white",
+      "red",
+      "blue"
+    ],
+    "symbolism": "Gold and white stand for the riches of the land, sea and sky; the inuksuk is a stone marker that guides people across the land, and the star is the North Star, Niqirtsuituq."
+  },
+  "hook": "Nunavut stands a red inuksuk, a stone figure like a person with outstretched arms, across a gold and white flag under a blue North Star.",
+  "lookalikes": [],
+  "trivia": [
+    "Nunavut was split from the Northwest Territories on 1 April 1999, the most recent change to Canada's map.",
+    "Nunavut means \"our land\" in Inuktitut."
+  ]
+}

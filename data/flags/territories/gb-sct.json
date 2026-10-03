@@ -1,0 +1,68 @@
+{
+  "code": "gb-sct",
+  "isoNumeric": "",
+  "name": "Scotland",
+  "officialName": "Scotland",
+  "localNames": [
+    {
+      "language": "Scottish Gaelic",
+      "name": "Alba",
+      "romanized": ""
+    }
+  ],
+  "aliases": [],
+  "image": "Flag_of_Scotland.svg",
+  "capital": "Edinburgh",
+  "region": "Northern Europe",
+  "subregion": "Country of the United Kingdom",
+  "population": 5439842,
+  "area": 80231,
+  "languages": [
+    "English",
+    "Scots",
+    "Scottish Gaelic"
+  ],
+  "currencies": [
+    {
+      "name": "British pound",
+      "code": "GBP",
+      "symbol": "£"
+    }
+  ],
+  "demonym": "Scottish",
+  "latlng": [
+    56.5,
+    -4.2
+  ],
+  "facts": [
+    [
+      "Status",
+      "Country of the United Kingdom"
+    ],
+    [
+      "Part of",
+      "United Kingdom"
+    ],
+    [
+      "Legislature",
+      "Scottish Parliament"
+    ]
+  ],
+  "flag": {
+    "description": "A blue field with a white diagonal cross (saltire) running from corner to corner.",
+    "adopted": "1542",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "symbolism": "The saltire is the cross of St Andrew, Scotland's patron saint, who is said to have been crucified on an X-shaped cross."
+  },
+  "hook": "Scotland is the white X on blue that the Union Jack is built on: strip away all the red and this is what is left.",
+  "lookalikes": [
+    "gb"
+  ],
+  "trivia": [
+    "Legend says the saltire first appeared as white clouds in a blue sky before a battle in 832, and it is often claimed as one of the oldest national flags still in use.",
+    "The Scottish saltire supplies the white diagonal cross on the Union Jack."
+  ]
+}

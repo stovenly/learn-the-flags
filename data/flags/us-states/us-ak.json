@@ -1,0 +1,31 @@
+{
+  "code": "us-ak",
+  "isoNumeric": "",
+  "name": "Alaska",
+  "officialName": "State of Alaska",
+  "localNames": [],
+  "aliases": ["AK"],
+  "image": "Flag_of_Alaska.svg",
+  "capital": "Juneau",
+  "region": "United States",
+  "subregion": "Pacific",
+  "population": 733391,
+  "area": 1723337,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Alaskan",
+  "latlng": [64, -152],
+  "facts": [["Nickname", "The Last Frontier"], ["Statehood", "1959"]],
+  "flag": {
+    "description": "A dark blue field with eight gold five-pointed stars: the seven of the Big Dipper, and a larger North Star in the upper fly.",
+    "adopted": "1927",
+    "colors": ["blue", "yellow"],
+    "symbolism": "The blue stands for the sky and the forget-me-not, the state flower; the North Star marks Alaska as the northernmost state, and the Big Dipper is part of the Great Bear."
+  },
+  "hook": "Alaska is the night sky: eight gold stars on dark blue, with the Big Dipper pointing up to the North Star.",
+  "lookalikes": [],
+  "trivia": [
+    "It was designed in 1926 by Benny Benson, a 13-year-old Alaska Native boy, who won a contest for schoolchildren.",
+    "The flag was adopted by the territorial legislature in 1927, more than 30 years before Alaska became a state."
+  ]
+}

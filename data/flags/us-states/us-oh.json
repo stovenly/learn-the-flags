@@ -1,0 +1,51 @@
+{
+  "code": "us-oh",
+  "isoNumeric": "",
+  "name": "Ohio",
+  "officialName": "State of Ohio",
+  "localNames": [],
+  "aliases": [
+    "OH"
+  ],
+  "image": "Flag_of_Ohio.svg",
+  "capital": "Columbus",
+  "region": "United States",
+  "subregion": "East North Central",
+  "population": 11799448,
+  "area": 116098,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Ohioan",
+  "latlng": [
+    40.3,
+    -82.8
+  ],
+  "facts": [
+    [
+      "Nickname",
+      "The Buckeye State"
+    ],
+    [
+      "Statehood",
+      "1803"
+    ]
+  ],
+  "flag": {
+    "description": "A swallowtailed pennant with three red and two white horizontal stripes, and a blue triangle at the hoist holding 17 white stars around a white circle with a red centre.",
+    "adopted": "1902",
+    "colors": [
+      "red",
+      "white",
+      "blue"
+    ],
+    "symbolism": "The 17 stars show Ohio was the 17th state, the triangle stands for its hills and valleys, the stripes for its roads and waterways, and the circle for the \"O\" of Ohio and a buckeye."
+  },
+  "hook": "Ohio is the only state flag that isn't a rectangle: a stars-and-stripes swallowtail with a red-and-white \"O\" in a blue triangle.",
+  "lookalikes": [
+    "us"
+  ],
+  "trivia": [
+    "The flag was designed by John Eisenmann for the 1901 Pan-American Exposition in Buffalo.",
+    "Ohio law sets out an official way to fold the flag, in 17 folds for the 17th state."
+  ]
+}

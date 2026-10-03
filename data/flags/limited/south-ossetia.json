@@ -1,0 +1,64 @@
+{
+  "code": "south-ossetia",
+  "isoNumeric": "",
+  "name": "South Ossetia",
+  "officialName": "Republic of South Ossetia – the State of Alania",
+  "localNames": [
+    {
+      "language": "Ossetian",
+      "name": "Хуссар Ирыстон",
+      "romanized": "Khussar Iryston"
+    }
+  ],
+  "aliases": [
+    "State of Alania"
+  ],
+  "image": "Flag_of_South_Ossetia.svg",
+  "capital": "Tskhinvali",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "population": 53532,
+  "area": 3900,
+  "languages": [
+    "Ossetian",
+    "Russian"
+  ],
+  "currencies": [
+    {
+      "name": "Russian ruble",
+      "code": "RUB",
+      "symbol": "₽"
+    }
+  ],
+  "demonym": "Ossetian",
+  "latlng": [
+    42.3,
+    44
+  ],
+  "facts": [
+    [
+      "Recognised by",
+      "Russia and a few other UN member states"
+    ],
+    [
+      "Claimed by",
+      "Georgia"
+    ]
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of white, red and yellow.",
+    "adopted": "1990",
+    "colors": [
+      "white",
+      "red",
+      "yellow"
+    ],
+    "symbolism": "The colours are traditionally said to represent moral purity (white), courage (red) and wealth and prosperity (yellow)."
+  },
+  "hook": "South Ossetia is a plain white-red-yellow tricolour from top to bottom, with no emblem at all.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag has the same design as that of North Ossetia–Alania, a republic of Russia on the other side of the Caucasus.",
+    "Russia recognised South Ossetia's independence in August 2008, after the Russo-Georgian War."
+  ]
+}

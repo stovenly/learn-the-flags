@@ -1,0 +1,64 @@
+{
+  "code": "ca-ns",
+  "isoNumeric": "",
+  "name": "Nova Scotia",
+  "officialName": "Province of Nova Scotia",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "Nouvelle-Écosse",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "NS"
+  ],
+  "image": "Flag_of_Nova_Scotia.svg",
+  "capital": "Halifax",
+  "region": "Canada",
+  "subregion": "Atlantic Canada",
+  "population": 969383,
+  "area": 55284,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "Canadian dollar",
+      "code": "CAD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Nova Scotian",
+  "latlng": [
+    45,
+    -63
+  ],
+  "facts": [
+    [
+      "Type",
+      "Province"
+    ],
+    [
+      "Joined Confederation",
+      "1867"
+    ]
+  ],
+  "flag": {
+    "description": "A blue saltire on a white field, with a gold shield bearing a red rampant lion at the centre.",
+    "adopted": "1929",
+    "colors": [
+      "white",
+      "blue",
+      "yellow",
+      "red"
+    ],
+    "symbolism": "The saltire is Scotland's St Andrew's cross with its colours reversed, and the shield bears the royal arms of Scotland, recalling the colony granted by King James VI to Sir William Alexander in 1621."
+  },
+  "hook": "Nova Scotia means \"New Scotland\", so it flips Scotland's flag: a blue X on white, with Scotland's red lion on a gold shield where the arms cross.",
+  "lookalikes": [],
+  "trivia": [
+    "The coat of arms the flag is based on was granted in 1625, making it the oldest provincial coat of arms in Canada.",
+    "The flag was used from 1858 but was only confirmed in provincial law in 2013."
+  ]
+}

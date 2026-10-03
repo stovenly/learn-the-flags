@@ -1,0 +1,118 @@
+{
+  "code": "african-union",
+  "isoNumeric": "",
+  "name": "African Union",
+  "the": true,
+  "officialName": "African Union",
+  "localNames": [],
+  "aliases": [
+    "AU"
+  ],
+  "image": "Flag_of_the_African_Union.svg",
+  "capital": "Addis Ababa",
+  "region": "Africa",
+  "subregion": "Founded 2002",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Arabic",
+    "English",
+    "French",
+    "Portuguese",
+    "Spanish",
+    "Swahili"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    9.03,
+    38.74
+  ],
+  "facts": [
+    [
+      "Founded",
+      "2002"
+    ],
+    [
+      "Members",
+      "55 states"
+    ],
+    [
+      "Headquarters",
+      "Addis Ababa"
+    ]
+  ],
+  "shape": [
+    "ao",
+    "bf",
+    "bi",
+    "bj",
+    "bw",
+    "cd",
+    "cf",
+    "cg",
+    "ci",
+    "cm",
+    "cv",
+    "dj",
+    "dz",
+    "eg",
+    "eh",
+    "er",
+    "et",
+    "ga",
+    "gh",
+    "gm",
+    "gn",
+    "gq",
+    "gw",
+    "ke",
+    "km",
+    "lr",
+    "ls",
+    "ly",
+    "ma",
+    "mg",
+    "ml",
+    "mr",
+    "mu",
+    "mw",
+    "mz",
+    "na",
+    "ne",
+    "ng",
+    "rw",
+    "sc",
+    "sd",
+    "sl",
+    "sn",
+    "so",
+    "ss",
+    "st",
+    "sz",
+    "td",
+    "tg",
+    "tn",
+    "tz",
+    "ug",
+    "za",
+    "zm",
+    "zw"
+  ],
+  "flag": {
+    "description": "A green field with a green map of Africa in the centre, set in a burst of white rays and ringed by small gold five-pointed stars.",
+    "adopted": "2010",
+    "colors": [
+      "green",
+      "white",
+      "yellow"
+    ],
+    "symbolism": "Green stands for Africa's hopes, gold for its wealth and bright future, white for purity, and the stars for the member states; the map is drawn without borders as a sign of unity."
+  },
+  "hook": "The African Union puts the whole continent on its flag: a borderless map of Africa glowing with white sunrays on green, inside a ring of gold stars.",
+  "lookalikes": [],
+  "trivia": [
+    "The African Union replaced the Organisation of African Unity, which had been founded in Addis Ababa in 1963.",
+    "It is one of the few flags to show a map, along with those of Cyprus and Kosovo."
+  ]
+}

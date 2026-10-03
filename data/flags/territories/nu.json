@@ -1,0 +1,63 @@
+{
+  "code": "nu",
+  "isoNumeric": "570",
+  "name": "Niue",
+  "officialName": "Niue",
+  "localNames": [
+    {
+      "language": "Niuean",
+      "name": "Niuē",
+      "romanized": ""
+    }
+  ],
+  "aliases": [],
+  "image": "Flag_of_Niue.svg",
+  "capital": "Alofi",
+  "region": "Polynesia",
+  "subregion": "Free association with New Zealand",
+  "population": 1681,
+  "area": 260,
+  "languages": [
+    "Niuean",
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "New Zealand dollar",
+      "code": "NZD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Niuean",
+  "latlng": [
+    -19.05,
+    -169.87
+  ],
+  "facts": [
+    [
+      "Status",
+      "Self-governing in free association with New Zealand"
+    ],
+    [
+      "Sovereign state",
+      "Realm of New Zealand"
+    ]
+  ],
+  "flag": {
+    "description": "A golden yellow field with the Union Jack in the upper hoist corner; the Union Jack carries five yellow stars, a larger one in a blue disc at its centre and four small ones on the arms of the red cross.",
+    "adopted": "1975",
+    "colors": [
+      "yellow",
+      "blue",
+      "red",
+      "white"
+    ],
+    "symbolism": "Yellow stands for the bright sun and the warm feelings of Niueans towards New Zealand; the four small stars are the Southern Cross and the larger star in the blue disc is Niue itself."
+  },
+  "hook": "Niue is the sunny one: the Union Jack on a bright yellow field instead of blue, with five little gold stars pinned onto the Jack itself.",
+  "lookalikes": [],
+  "trivia": [
+    "Niue is one of the world's largest raised coral islands, nicknamed \"the Rock of Polynesia\".",
+    "Niueans are New Zealand citizens, and far more of them live in New Zealand than on Niue."
+  ]
+}

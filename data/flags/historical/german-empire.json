@@ -1,0 +1,75 @@
+{
+  "code": "german-empire",
+  "isoNumeric": "",
+  "name": "German Empire",
+  "the": true,
+  "officialName": "German Empire",
+  "localNames": [
+    {
+      "language": "German",
+      "name": "Deutsches Kaiserreich",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Imperial Germany",
+    "Kaiserreich",
+    "Second Reich"
+  ],
+  "image": "Flag_of_Germany_(1867–1918).svg",
+  "capital": "Berlin",
+  "region": "Europe",
+  "subregion": "1871–1918",
+  "population": null,
+  "area": null,
+  "languages": [
+    "German"
+  ],
+  "currencies": [
+    {
+      "name": "German mark",
+      "code": "",
+      "symbol": ""
+    }
+  ],
+  "demonym": "German",
+  "latlng": [
+    52,
+    13
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1871–1918"
+    ],
+    [
+      "Flag used",
+      "1871–1918"
+    ],
+    [
+      "Today",
+      "Germany, with parts now in Poland and other neighbours"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "Three equal horizontal stripes of black, white and red.",
+    "adopted": "1867",
+    "colors": [
+      "black",
+      "white",
+      "red"
+    ],
+    "symbolism": "Black and white were the colours of Prussia, and red and white those of the Hanseatic trading cities."
+  },
+  "hook": "The Kaiser's Germany was black, white, red from the top; turn it upside down and you get Yemen, and today's Germany swapped to black, red, gold.",
+  "lookalikes": [
+    "ye",
+    "de",
+    "russian-empire"
+  ],
+  "trivia": [
+    "The tricolour was first adopted by the North German Confederation in 1867 and kept when the empire was founded in 1871.",
+    "The Nazi regime brought back the black-white-red tricolour in 1933, flying it alongside the swastika flag until 1935."
+  ]
+}

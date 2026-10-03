@@ -1,0 +1,70 @@
+{
+  "code": "hk",
+  "isoNumeric": "344",
+  "name": "Hong Kong",
+  "officialName": "Hong Kong Special Administrative Region of the People's Republic of China",
+  "localNames": [
+    {
+      "language": "Chinese",
+      "name": "香港",
+      "romanized": "Hēung Góng"
+    }
+  ],
+  "aliases": [
+    "HKSAR"
+  ],
+  "image": "Flag_of_Hong_Kong.svg",
+  "capital": "",
+  "region": "Eastern Asia",
+  "subregion": "Special administrative region of China",
+  "population": 7524100,
+  "area": 1114,
+  "languages": [
+    "Chinese",
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "Hong Kong dollar",
+      "code": "HKD",
+      "symbol": "HK$"
+    }
+  ],
+  "demonym": "Hongkonger",
+  "latlng": [
+    22.3,
+    114.2
+  ],
+  "facts": [
+    [
+      "Status",
+      "Special administrative region of China"
+    ],
+    [
+      "Sovereign state",
+      "China"
+    ],
+    [
+      "Handover",
+      "1 July 1997, from the United Kingdom"
+    ]
+  ],
+  "flag": {
+    "description": "A red field with a stylised white five-petalled bauhinia flower in the centre, each petal carrying a small red five-pointed star.",
+    "adopted": "1990",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "symbolism": "Red is the colour of the Chinese national flag and the white bauhinia stands for Hong Kong, so the two colours together express \"one country, two systems\"; the stars echo those on China's flag."
+  },
+  "hook": "Hong Kong is a white bauhinia flower on red, each of its five petals holding a red star; Macau swaps it for a white lotus on green.",
+  "lookalikes": [
+    "mo",
+    "cn"
+  ],
+  "trivia": [
+    "The flag was first raised officially at midnight on 1 July 1997, at the ceremony handing Hong Kong from the United Kingdom to China.",
+    "The flower, Bauhinia × blakeana, is a sterile hybrid first found in Hong Kong and can only be grown from cuttings or grafts."
+  ]
+}

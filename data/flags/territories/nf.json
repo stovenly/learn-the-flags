@@ -1,0 +1,66 @@
+{
+  "code": "nf",
+  "isoNumeric": "574",
+  "name": "Norfolk Island",
+  "officialName": "Territory of Norfolk Island",
+  "localNames": [
+    {
+      "language": "Norfuk",
+      "name": "Norf'k Ailen",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Norfolk"
+  ],
+  "image": "Flag_of_Norfolk_Island.svg",
+  "capital": "Kingston",
+  "region": "Australia and New Zealand",
+  "subregion": "Australian external territory",
+  "population": 2188,
+  "area": 35,
+  "languages": [
+    "English",
+    "Norfuk"
+  ],
+  "currencies": [
+    {
+      "name": "Australian dollar",
+      "code": "AUD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Norfolk Islander",
+  "latlng": [
+    -29.03,
+    167.95
+  ],
+  "facts": [
+    [
+      "Status",
+      "External territory of Australia"
+    ],
+    [
+      "Sovereign state",
+      "Australia"
+    ]
+  ],
+  "flag": {
+    "description": "Three vertical bands of green, white and green, the white band slightly wider, with a green Norfolk Island pine in the centre.",
+    "adopted": "1980",
+    "colors": [
+      "green",
+      "white"
+    ],
+    "symbolism": "The Norfolk Island pine is the island's emblem, a tall native conifer, and the green stands for the island's plant life."
+  },
+  "hook": "Norfolk Island is Nigeria's green-white-green with a tall pine tree planted in the middle, the way Canada plants a maple leaf.",
+  "lookalikes": [
+    "ng",
+    "ca"
+  ],
+  "trivia": [
+    "Many islanders descend from the Bounty mutineers and their Tahitian companions, who moved from Pitcairn Island in 1856.",
+    "Australia abolished the island's Legislative Assembly and its self-government in 2015."
+  ]
+}

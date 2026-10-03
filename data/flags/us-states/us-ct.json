@@ -1,0 +1,31 @@
+{
+  "code": "us-ct",
+  "isoNumeric": "",
+  "name": "Connecticut",
+  "officialName": "State of Connecticut",
+  "localNames": [],
+  "aliases": ["CT"],
+  "image": "Flag_of_Connecticut.svg",
+  "capital": "Hartford",
+  "region": "United States",
+  "subregion": "New England",
+  "population": 3605944,
+  "area": 14357,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Connecticuter",
+  "latlng": [41.6, -72.7],
+  "facts": [["Nickname", "The Constitution State"], ["Statehood", "1788"]],
+  "flag": {
+    "description": "A blue field with a white rococo shield showing three grapevines, above a white streamer reading QUI TRANSTULIT SUSTINET.",
+    "adopted": "1897",
+    "colors": ["blue", "white", "yellow", "green", "brown"],
+    "symbolism": "The three grapevines are often said to represent the colony's first three towns, Windsor, Wethersfield and Hartford, transplanted from England."
+  },
+  "hook": "Connecticut's seal-on-blue is the one with just three grapevines on a white shield, with no people or animals at all.",
+  "lookalikes": ["us-vt"],
+  "trivia": [
+    "The Latin motto means \"He who transplanted still sustains\".",
+    "The colonial seal once showed fifteen grapevines; the number was cut to three in 1711."
+  ]
+}

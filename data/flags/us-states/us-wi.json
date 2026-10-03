@@ -1,0 +1,54 @@
+{
+  "code": "us-wi",
+  "isoNumeric": "",
+  "name": "Wisconsin",
+  "officialName": "State of Wisconsin",
+  "localNames": [],
+  "aliases": [
+    "WI"
+  ],
+  "image": "Flag_of_Wisconsin.svg",
+  "capital": "Madison",
+  "region": "United States",
+  "subregion": "East North Central",
+  "population": 5893718,
+  "area": 169635,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Wisconsinite",
+  "latlng": [
+    44.6,
+    -89.9
+  ],
+  "facts": [
+    [
+      "Nickname",
+      "The Badger State"
+    ],
+    [
+      "Statehood",
+      "1848"
+    ]
+  ],
+  "flag": {
+    "description": "A dark blue field with the state coat of arms in the centre, a shield held by a sailor and a miner with a badger on top and the motto \"Forward\", between \"WISCONSIN\" in white above and \"1848\" in white below.",
+    "adopted": "1981",
+    "colors": [
+      "blue",
+      "white",
+      "yellow",
+      "black",
+      "red"
+    ],
+    "symbolism": "The sailor and miner stand for work on water and land, the badger for the state nickname, and 1848 is the year of statehood."
+  },
+  "hook": "Wisconsin brackets its arms with WISCONSIN above and 1848 below, and a little badger sits on top of the shield.",
+  "lookalikes": [
+    "us-mt",
+    "us-mi"
+  ],
+  "trivia": [
+    "The name and the date 1848 were added in 1981 to make the flag stand out from other blue state flags.",
+    "Wisconsin's nickname comes from early lead miners who lived in hillside dugouts, like badgers."
+  ]
+}

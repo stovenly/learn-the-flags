@@ -1,0 +1,53 @@
+{
+  "code": "us-nd",
+  "isoNumeric": "",
+  "name": "North Dakota",
+  "officialName": "State of North Dakota",
+  "localNames": [],
+  "aliases": [
+    "ND"
+  ],
+  "image": "Flag_of_North_Dakota.svg",
+  "capital": "Bismarck",
+  "region": "United States",
+  "subregion": "West North Central",
+  "population": 779094,
+  "area": 183108,
+  "languages": [],
+  "currencies": [],
+  "demonym": "North Dakotan",
+  "latlng": [
+    47.5,
+    -100.5
+  ],
+  "facts": [
+    [
+      "Nickname",
+      "The Peace Garden State"
+    ],
+    [
+      "Statehood",
+      "1889"
+    ]
+  ],
+  "flag": {
+    "description": "A dark blue field with a bald eagle, wings spread, holding an olive branch and arrows and a ribbon reading \"E Pluribus Unum\", under 13 stars and a sunburst, with a red scroll below reading \"North Dakota\"; the flag has a gold fringe.",
+    "adopted": "1911",
+    "colors": [
+      "blue",
+      "brown",
+      "red",
+      "yellow",
+      "white"
+    ],
+    "symbolism": "The design copies the regimental colours of the 1st North Dakota Infantry, and the eagle is the one from the US coat of arms."
+  },
+  "hook": "North Dakota has no seal at all: just a big American eagle on blue with a red \"North Dakota\" scroll below.",
+  "lookalikes": [
+    "us-mi"
+  ],
+  "trivia": [
+    "The flag is based on the banner carried by North Dakota troops in the Spanish–American War and the Philippine–American War.",
+    "North Dakota and South Dakota were admitted on the same day, 2 November 1889."
+  ]
+}

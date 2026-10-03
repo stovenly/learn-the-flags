@@ -1,0 +1,59 @@
+{
+  "code": "ca-ab",
+  "isoNumeric": "",
+  "name": "Alberta",
+  "officialName": "Province of Alberta",
+  "localNames": [],
+  "aliases": [
+    "AB"
+  ],
+  "image": "Flag_of_Alberta.svg",
+  "capital": "Edmonton",
+  "region": "Canada",
+  "subregion": "Western Canada",
+  "population": 4262635,
+  "area": 661848,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "Canadian dollar",
+      "code": "CAD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Albertan",
+  "latlng": [
+    55,
+    -115
+  ],
+  "facts": [
+    [
+      "Type",
+      "Province"
+    ],
+    [
+      "Joined Confederation",
+      "1905"
+    ]
+  ],
+  "flag": {
+    "description": "A royal blue field with the provincial shield in the centre: a red St George's cross on white above snow-capped mountains, green hills, prairie and a golden wheat field.",
+    "adopted": "1968",
+    "colors": [
+      "blue",
+      "white",
+      "red",
+      "green",
+      "yellow"
+    ],
+    "symbolism": "The shield shows the province's landscape from west to east, from the Rocky Mountains through the foothills to the wheat-growing prairie, beneath the cross of St George."
+  },
+  "hook": "Alberta is a royal blue flag carrying a whole landscape on its shield: a red cross above the Rockies, green hills and golden wheat.",
+  "lookalikes": [],
+  "trivia": [
+    "The shield on the flag was granted by royal warrant in 1907, two years after Alberta became a province.",
+    "Alberta is named after Princess Louise Caroline Alberta, a daughter of Queen Victoria."
+  ]
+}

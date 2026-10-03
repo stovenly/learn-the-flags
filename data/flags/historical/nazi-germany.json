@@ -1,0 +1,69 @@
+{
+  "code": "nazi-germany",
+  "isoNumeric": "",
+  "name": "Nazi Germany",
+  "officialName": "German Reich",
+  "localNames": [
+    {
+      "language": "German",
+      "name": "Deutsches Reich",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Third Reich",
+    "Greater German Reich"
+  ],
+  "image": "Flag_of_Germany_(1935–1945).svg",
+  "capital": "Berlin",
+  "region": "Europe",
+  "subregion": "1933–1945",
+  "population": null,
+  "area": null,
+  "languages": [
+    "German"
+  ],
+  "currencies": [
+    {
+      "name": "Reichsmark",
+      "code": "",
+      "symbol": ""
+    }
+  ],
+  "demonym": "German",
+  "latlng": [
+    51,
+    10
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1933–1945"
+    ],
+    [
+      "Flag used",
+      "1935–1945"
+    ],
+    [
+      "Today",
+      "Germany, Austria and parts of Poland and Russia"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "A red field with a white disc, set slightly towards the hoist, bearing a black swastika turned at 45 degrees.",
+    "adopted": "1935",
+    "colors": [
+      "red",
+      "white",
+      "black"
+    ],
+    "symbolism": "It was the flag of the Nazi Party; Hitler wrote that red stood for the movement's social idea, white for its nationalism and the swastika for its racist ideology of \"Aryan\" supremacy."
+  },
+  "hook": "This was the flag of the Nazi dictatorship, which started the Second World War in Europe and carried out the Holocaust, the murder of six million Jews.",
+  "lookalikes": [],
+  "trivia": [
+    "It became the sole national flag under the Reich Flag Law of September 1935, one of the Nuremberg Laws.",
+    "Displaying the swastika flag is a criminal offence in Germany, with exceptions for purposes such as education, research and art."
+  ]
+}

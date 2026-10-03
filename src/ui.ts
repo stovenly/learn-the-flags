@@ -16,7 +16,7 @@ export const sample = <T>(a: T[]): T => a[Math.floor(Math.random() * a.length)];
 
 export function flagImg(c: Country, opts: { size?: 'sm' | 'md' | 'lg'; lazy?: boolean; alt?: string } = {}) {
   const { size = 'md', lazy = false } = opts;
-  const alt = opts.alt ?? `Flag of ${c.name}`;
+  const alt = opts.alt ?? `Flag of ${c.theName}`;
   const w = 640;
   const h = Math.round(w / c.ratio);
   const src = size === 'sm' ? flagSrc(c.code, 320) : flagSrc(c.code, 640);
@@ -26,6 +26,7 @@ export function flagImg(c: Country, opts: { size?: 'sm' | 'md' | 'lg'; lazy?: bo
 
 // `plain` leaves neighbours' flags off the map, for questions where they would give options away.
 export function mapImg(c: Country, size: 'xs' | 'sm' | 'md' | 'lg' = 'md', plain = false) {
+  if (!c.hasMap) return '';
   return `<img class="map map-${size}" src="${mapSrc(c.code, plain)}" width="150" height="100" alt="Map showing where ${esc(c.name)} is" decoding="async" draggable="false">`;
 }
 

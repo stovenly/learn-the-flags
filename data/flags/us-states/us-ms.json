@@ -1,0 +1,31 @@
+{
+  "code": "us-ms",
+  "isoNumeric": "",
+  "name": "Mississippi",
+  "officialName": "State of Mississippi",
+  "localNames": [],
+  "aliases": ["MS"],
+  "image": "Flag_of_Mississippi.svg",
+  "capital": "Jackson",
+  "region": "United States",
+  "subregion": "East South Central",
+  "population": 2961279,
+  "area": 125438,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Mississippian",
+  "latlng": [32.7, -89.7],
+  "facts": [["Nickname", "The Magnolia State"], ["Statehood", "1817"]],
+  "flag": {
+    "description": "A blue central band between two vertical red bands, separated by thin gold stripes; in the centre, a white magnolia blossom ringed by 20 white stars and a gold star at the top, above the words IN GOD WE TRUST.",
+    "adopted": "2021",
+    "colors": ["blue", "red", "yellow", "white", "green"],
+    "symbolism": "The magnolia stands for the state's hospitality, the 20 stars for Mississippi as the 20th state, and the gold star for its Native American peoples."
+  },
+  "hook": "Mississippi's new flag is a white magnolia flower inside a ring of stars on blue, flanked by red bands.",
+  "lookalikes": [],
+  "trivia": [
+    "It replaced the 1894 flag, the last US state flag to contain the Confederate battle emblem.",
+    "About 73 percent of voters approved the magnolia design in a November 2020 referendum."
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "code": "pm",
+  "isoNumeric": "666",
+  "name": "Saint Pierre and Miquelon",
+  "officialName": "Territorial Collectivity of Saint Pierre and Miquelon",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "Saint-Pierre-et-Miquelon",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Saint-Pierre-et-Miquelon",
+    "St Pierre and Miquelon",
+    "St. Pierre and Miquelon"
+  ],
+  "image": "Flag_of_Saint-Pierre_and_Miquelon.svg",
+  "capital": "Saint-Pierre",
+  "region": "North America",
+  "subregion": "French overseas collectivity",
+  "population": 5819,
+  "area": 242,
+  "languages": [
+    "French"
+  ],
+  "currencies": [
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
+  ],
+  "demonym": "Saint-Pierrais",
+  "latlng": [
+    46.9,
+    -56.3
+  ],
+  "facts": [
+    [
+      "Status",
+      "Overseas collectivity of France"
+    ],
+    [
+      "Sovereign state",
+      "France"
+    ]
+  ],
+  "flag": {
+    "description": "An unofficial but widely flown local flag: a yellow three-masted ship sailing on a blue field over white-crested waves, with a strip at the hoist bearing the Basque, Breton and Norman flags. The official flag is the French tricolour.",
+    "adopted": "",
+    "colors": [
+      "blue",
+      "yellow",
+      "white",
+      "red",
+      "green",
+      "black"
+    ],
+    "symbolism": "The ship is the Grande Hermine, in which Jacques Cartier reached the islands in 1536, and the three small flags honour the Basque, Breton and Norman origins of the settlers."
+  },
+  "hook": "Saint Pierre and Miquelon is a golden sailing ship on blue, with three tiny flags of Basques, Bretons and Normans stacked at the pole like passengers' luggage.",
+  "lookalikes": [],
+  "trivia": [
+    "The islands are the last remnant of New France, France's former empire in North America.",
+    "They lie less than 25 km off the coast of Newfoundland, Canada."
+  ]
+}

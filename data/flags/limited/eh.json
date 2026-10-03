@@ -1,0 +1,79 @@
+{
+  "code": "eh",
+  "isoNumeric": "732",
+  "name": "Western Sahara",
+  "officialName": "Sahrawi Arab Democratic Republic",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "الصحراء الغربية",
+      "romanized": "aṣ-Ṣaḥrāʼ al-Gharbiyya"
+    },
+    {
+      "language": "Spanish",
+      "name": "Sáhara Occidental",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Sahrawi Republic",
+    "SADR",
+    "Sahrawi Arab Democratic Republic"
+  ],
+  "image": "Flag_of_the_Sahrawi_Arab_Democratic_Republic.svg",
+  "capital": "Laayoune (claimed)",
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "population": 600000,
+  "area": 266000,
+  "languages": [
+    "Arabic"
+  ],
+  "currencies": [
+    {
+      "name": "Moroccan dirham",
+      "code": "MAD",
+      "symbol": "د.م."
+    },
+    {
+      "name": "Algerian dinar",
+      "code": "DZD",
+      "symbol": "د.ج"
+    }
+  ],
+  "demonym": "Sahrawi",
+  "latlng": [
+    24.5,
+    -13
+  ],
+  "facts": [
+    [
+      "Recognised by",
+      "The African Union and several dozen UN member states, though many have withdrawn or frozen recognition"
+    ],
+    [
+      "Claimed by",
+      "Morocco, which controls most of the territory; the UN lists it as a non-self-governing territory"
+    ]
+  ],
+  "flag": {
+    "description": "Three horizontal stripes of black, white and green, with a red triangle at the hoist and a red crescent and star in the centre of the white stripe.",
+    "adopted": "1976",
+    "colors": [
+      "black",
+      "white",
+      "green",
+      "red"
+    ],
+    "symbolism": "Black, white, green and red are the Pan-Arab colours, and the crescent and star are symbols of Islam."
+  },
+  "hook": "Western Sahara is Palestine's flag with a red crescent and star added to the white stripe; Jordan puts a white star in the triangle instead.",
+  "lookalikes": [
+    "ps",
+    "jo"
+  ],
+  "trivia": [
+    "The flag was adopted when the Polisario Front proclaimed the Sahrawi Arab Democratic Republic on 27 February 1976.",
+    "Western Sahara is the largest territory by area on the UN's list of non-self-governing territories."
+  ]
+}

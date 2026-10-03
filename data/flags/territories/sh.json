@@ -1,0 +1,63 @@
+{
+  "code": "sh",
+  "isoNumeric": "654",
+  "name": "Saint Helena",
+  "officialName": "Saint Helena",
+  "localNames": [],
+  "aliases": [
+    "St Helena",
+    "St. Helena"
+  ],
+  "image": "Flag_of_Saint_Helena.svg",
+  "capital": "Jamestown",
+  "region": "Western Africa",
+  "subregion": "British Overseas Territory",
+  "population": 3980,
+  "area": 121.8,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "Saint Helena pound",
+      "code": "SHP",
+      "symbol": "£"
+    }
+  ],
+  "demonym": "Saint Helenian",
+  "latlng": [
+    -15.95,
+    -5.72
+  ],
+  "facts": [
+    [
+      "Status",
+      "Part of the British Overseas Territory of Saint Helena, Ascension and Tristan da Cunha"
+    ],
+    [
+      "Sovereign state",
+      "United Kingdom"
+    ]
+  ],
+  "flag": {
+    "description": "A Blue Ensign with a shield in the fly: a wirebird on a yellow band at the top, above a three-masted sailing ship between two rocky cliffs.",
+    "adopted": "1984",
+    "colors": [
+      "blue",
+      "red",
+      "white",
+      "yellow",
+      "brown"
+    ],
+    "symbolism": "The wirebird, or Saint Helena plover, is the island's national bird, and the ship approaching between the cliffs recalls the sailing ships that called at this remote Atlantic stop."
+  },
+  "hook": "Saint Helena's badge has a little wirebird perched on a yellow strip above a sailing ship between cliffs; the Falklands put a ram above their ship instead.",
+  "lookalikes": [
+    "fk",
+    "pn"
+  ],
+  "trivia": [
+    "Napoleon was exiled to Saint Helena in 1815 and died there in 1821.",
+    "The wirebird on the flag is the last surviving bird species endemic to the island."
+  ]
+}

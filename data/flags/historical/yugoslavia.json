@@ -1,0 +1,86 @@
+{
+  "code": "yugoslavia",
+  "isoNumeric": "",
+  "name": "Yugoslavia",
+  "officialName": "Socialist Federal Republic of Yugoslavia",
+  "localNames": [
+    {
+      "language": "Serbo-Croatian",
+      "name": "Jugoslavija",
+      "romanized": ""
+    },
+    {
+      "language": "Serbo-Croatian",
+      "name": "Југославија",
+      "romanized": "Jugoslavija"
+    }
+  ],
+  "aliases": [
+    "SFRY",
+    "SFR Yugoslavia",
+    "Socialist Federal Republic of Yugoslavia"
+  ],
+  "image": "Flag_of_Yugoslavia_(1946-1992).svg",
+  "capital": "Belgrade",
+  "region": "Europe",
+  "subregion": "1945–1992",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Serbo-Croatian",
+    "Slovene",
+    "Macedonian"
+  ],
+  "currencies": [
+    {
+      "name": "Yugoslav dinar",
+      "code": "",
+      "symbol": ""
+    }
+  ],
+  "demonym": "Yugoslav",
+  "latlng": [
+    44,
+    18
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1945–1992"
+    ],
+    [
+      "Flag used",
+      "1946–1992"
+    ],
+    [
+      "Today",
+      "Seven states, from Slovenia to North Macedonia"
+    ]
+  ],
+  "shape": [
+    "si",
+    "hr",
+    "ba",
+    "rs",
+    "me",
+    "mk",
+    "xk"
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of blue, white and red, with a large red five-pointed star edged in gold in the centre, overlapping all three stripes.",
+    "adopted": "1946",
+    "colors": [
+      "blue",
+      "white",
+      "red",
+      "yellow"
+    ],
+    "symbolism": "Blue, white and red are the Pan-Slavic colours, and the red star stood for socialism and the partisan struggle of the Second World War."
+  },
+  "hook": "Socialist Yugoslavia is a blue-white-red tricolour with one big gold-edged red star spanning all three stripes.",
+  "lookalikes": [],
+  "trivia": [
+    "The same tricolour without the star was the flag of the earlier Kingdom of Yugoslavia, and of Serbia and Montenegro until 2006.",
+    "Yugoslavia was a founding member of the Non-Aligned Movement, whose first summit was held in Belgrade in 1961."
+  ]
+}

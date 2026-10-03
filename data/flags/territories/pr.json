@@ -1,0 +1,66 @@
+{
+  "code": "pr",
+  "isoNumeric": "630",
+  "name": "Puerto Rico",
+  "officialName": "Commonwealth of Puerto Rico",
+  "localNames": [
+    {
+      "language": "Spanish",
+      "name": "Estado Libre Asociado de Puerto Rico",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "PR"
+  ],
+  "image": "Flag_of_Puerto_Rico.svg",
+  "capital": "San Juan",
+  "region": "Caribbean",
+  "subregion": "U.S. territory",
+  "population": 3184195,
+  "area": 9104,
+  "languages": [
+    "Spanish",
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "United States dollar",
+      "code": "USD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Puerto Rican",
+  "latlng": [
+    18.25,
+    -66.5
+  ],
+  "facts": [
+    [
+      "Status",
+      "Unincorporated U.S. territory (commonwealth)"
+    ],
+    [
+      "Sovereign state",
+      "United States"
+    ]
+  ],
+  "flag": {
+    "description": "Five equal horizontal stripes alternating red and white, with a blue equilateral triangle at the hoist bearing a large white five-pointed star.",
+    "adopted": "1952",
+    "colors": [
+      "red",
+      "white",
+      "blue"
+    ],
+    "symbolism": "It was created in 1895 by Puerto Rican independence activists in New York, deliberately reversing the colours of Cuba's flag to show the two islands' shared struggle against Spanish rule."
+  },
+  "hook": "Puerto Rico is Cuba with the colours swapped: red stripes and a blue triangle, where Cuba has blue stripes and a red triangle.",
+  "lookalikes": [
+    "cu"
+  ],
+  "trivia": [
+    "Displaying the flag was effectively outlawed by Puerto Rico's 1948 \"Gag Law\", which was repealed in 1957.",
+    "No shade of blue is fixed by law: the flag has been flown in light, medium and dark blue, and the shade chosen is often read as a political statement."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "code": "tk",
+  "isoNumeric": "772",
+  "name": "Tokelau",
+  "officialName": "Tokelau",
+  "localNames": [],
+  "aliases": [],
+  "image": "Flag_of_Tokelau.svg",
+  "capital": "",
+  "region": "Polynesia",
+  "subregion": "New Zealand territory",
+  "population": 1500,
+  "area": 10,
+  "languages": [
+    "Tokelauan",
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "New Zealand dollar",
+      "code": "NZD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Tokelauan",
+  "latlng": [
+    -9.2,
+    -171.8
+  ],
+  "facts": [
+    [
+      "Status",
+      "Non-self-governing territory of New Zealand"
+    ],
+    [
+      "Sovereign state",
+      "Realm of New Zealand"
+    ],
+    [
+      "Seat of government",
+      "Rotates yearly between the three atolls"
+    ]
+  ],
+  "flag": {
+    "description": "A dark blue field with a stylised yellow Tokelauan canoe in the lower half, sailing towards four white stars of the Southern Cross at the hoist.",
+    "adopted": "2009",
+    "colors": [
+      "blue",
+      "yellow",
+      "white"
+    ],
+    "symbolism": "The canoe (vaka) is Tokelau voyaging into the future, guided by the Southern Cross that islanders have long used for navigation."
+  },
+  "hook": "Tokelau is a golden canoe sailing across a dark blue night towards the four stars of the Southern Cross.",
+  "lookalikes": [],
+  "trivia": [
+    "In 2012 Tokelau became one of the first places in the world to get essentially all its electricity from solar power.",
+    "Referendums on self-government in 2006 and 2007 both fell just short of the two-thirds majority required."
+  ]
+}

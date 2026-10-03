@@ -1,0 +1,82 @@
+{
+  "code": "mercosur",
+  "isoNumeric": "",
+  "name": "Mercosur",
+  "officialName": "Southern Common Market",
+  "localNames": [
+    {
+      "language": "Spanish",
+      "name": "Mercado Común del Sur",
+      "romanized": ""
+    },
+    {
+      "language": "Portuguese",
+      "name": "Mercado Comum do Sul",
+      "romanized": ""
+    },
+    {
+      "language": "Guarani",
+      "name": "Ñemby Ñemuha",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Mercosul",
+    "Southern Common Market"
+  ],
+  "image": "Flag_of_Mercosur.svg",
+  "capital": "Montevideo",
+  "region": "Americas",
+  "subregion": "Founded 1991",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Spanish",
+    "Portuguese",
+    "Guarani"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    -34.9,
+    -56.16
+  ],
+  "facts": [
+    [
+      "Founded",
+      "1991"
+    ],
+    [
+      "Members",
+      "6 states (Venezuela suspended)"
+    ],
+    [
+      "Headquarters",
+      "Montevideo"
+    ]
+  ],
+  "shape": [
+    "ar",
+    "bo",
+    "br",
+    "py",
+    "uy",
+    "ve"
+  ],
+  "flag": {
+    "description": "A white field with four blue four-pointed stars of the Southern Cross above a curved green line, and the name MERCOSUR in blue letters below.",
+    "adopted": "2002",
+    "colors": [
+      "white",
+      "blue",
+      "green"
+    ],
+    "symbolism": "The Southern Cross marks the bloc's place in the Southern Hemisphere, above a green arc of the horizon."
+  },
+  "hook": "Mercosur is mostly white: four blue Southern Cross stars over a green horizon, with the name spelled out underneath in case you forget.",
+  "lookalikes": [],
+  "trivia": [
+    "Mercosur was founded by the Treaty of Asunción in 1991, signed by Argentina, Brazil, Paraguay and Uruguay.",
+    "The flag has a Portuguese version that reads MERCOSUL instead of MERCOSUR."
+  ]
+}

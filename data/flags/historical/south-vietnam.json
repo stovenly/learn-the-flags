@@ -1,0 +1,68 @@
+{
+  "code": "south-vietnam",
+  "isoNumeric": "",
+  "name": "South Vietnam",
+  "officialName": "Republic of Vietnam",
+  "localNames": [
+    {
+      "language": "Vietnamese",
+      "name": "Việt Nam Cộng hòa",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Republic of Vietnam",
+    "RVN"
+  ],
+  "image": "Flag_of_South_Vietnam.svg",
+  "capital": "Saigon",
+  "region": "Asia",
+  "subregion": "1955–1975",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Vietnamese"
+  ],
+  "currencies": [
+    {
+      "name": "South Vietnamese đồng",
+      "code": "",
+      "symbol": ""
+    }
+  ],
+  "demonym": "South Vietnamese",
+  "latlng": [
+    12,
+    107
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1955–1975"
+    ],
+    [
+      "Flag used",
+      "1949–1975"
+    ],
+    [
+      "Today",
+      "Southern Vietnam, reunified in 1976"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "A yellow field with three thin horizontal red stripes across the centre.",
+    "adopted": "1949",
+    "colors": [
+      "yellow",
+      "red"
+    ],
+    "symbolism": "Yellow represented the Vietnamese people and land, and the three red stripes the three regions of Vietnam: north, centre and south."
+  },
+  "hook": "South Vietnam is yellow with three thin red stripes through the middle; the Vietnam that absorbed it in 1975 flips the scheme to a yellow star on red.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag is still widely flown by Vietnamese communities abroad, especially in the United States, as the \"Heritage and Freedom Flag\".",
+    "After reunification, Saigon was renamed Ho Chi Minh City in 1976."
+  ]
+}

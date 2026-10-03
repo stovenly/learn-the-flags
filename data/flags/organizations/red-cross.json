@@ -1,0 +1,57 @@
+{
+  "code": "red-cross",
+  "isoNumeric": "",
+  "name": "Red Cross",
+  "the": true,
+  "officialName": "International Committee of the Red Cross",
+  "localNames": [],
+  "aliases": [
+    "ICRC",
+    "International Committee of the Red Cross"
+  ],
+  "image": "Flag_of_the_Red_Cross.svg",
+  "capital": "Geneva",
+  "region": "International",
+  "subregion": "Founded 1863",
+  "population": null,
+  "area": null,
+  "languages": [],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    46.23,
+    6.14
+  ],
+  "facts": [
+    [
+      "Founded",
+      "1863"
+    ],
+    [
+      "Emblem recognised",
+      "1864"
+    ],
+    [
+      "Headquarters",
+      "Geneva"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "A red cross with arms of equal length in the centre of a white field.",
+    "adopted": "1864",
+    "colors": [
+      "white",
+      "red"
+    ],
+    "symbolism": "The emblem reverses the colours of Switzerland's flag in honour of the country where the movement was founded; it marks people and places protected in war."
+  },
+  "hook": "The Red Cross is Switzerland turned inside out: a red cross on white instead of Switzerland's white cross on a square red flag.",
+  "lookalikes": [
+    "ch"
+  ],
+  "trivia": [
+    "The ICRC was founded in Geneva after Henry Dunant saw the wounded left on the battlefield of Solferino in 1859.",
+    "The ICRC has won the Nobel Peace Prize three times, in 1917, 1944 and 1963."
+  ]
+}

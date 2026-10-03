@@ -1,0 +1,70 @@
+{
+  "code": "libyan-jamahiriya",
+  "isoNumeric": "",
+  "name": "Libyan Arab Jamahiriya",
+  "the": true,
+  "officialName": "Great Socialist People's Libyan Arab Jamahiriya",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "الجماهيرية العربية الليبية",
+      "romanized": "al-Jamāhīriyya al-ʿArabiyya al-Lībiyya"
+    }
+  ],
+  "aliases": [
+    "Gaddafi's Libya",
+    "Jamahiriya"
+  ],
+  "image": "Flag_of_Libya_(1977–2011).svg",
+  "capital": "Tripoli",
+  "region": "Africa",
+  "subregion": "1977–2011",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Arabic"
+  ],
+  "currencies": [
+    {
+      "name": "Libyan dinar",
+      "code": "LYD",
+      "symbol": "LD"
+    }
+  ],
+  "demonym": "Libyan",
+  "latlng": [
+    27,
+    17
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1977–2011"
+    ],
+    [
+      "Flag used",
+      "1977–2011"
+    ],
+    [
+      "Today",
+      "Libya"
+    ]
+  ],
+  "shape": [
+    "ly"
+  ],
+  "flag": {
+    "description": "A plain green field with no emblem or other design.",
+    "adopted": "1977",
+    "colors": [
+      "green"
+    ],
+    "symbolism": "Green stood for Islam and for Muammar Gaddafi's political philosophy, set out in his \"Green Book\"."
+  },
+  "hook": "Gaddafi's Libya flew the simplest national flag ever: nothing but green.",
+  "lookalikes": [],
+  "trivia": [
+    "From 1977 to 2011 it was the only national flag in the world with a single colour and no design.",
+    "The rebels of 2011 revived the red-black-green flag with a crescent and star from before Gaddafi's 1969 coup, and it is Libya's flag today."
+  ]
+}

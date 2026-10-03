@@ -1,0 +1,52 @@
+{
+  "code": "us-nc",
+  "isoNumeric": "",
+  "name": "North Carolina",
+  "officialName": "State of North Carolina",
+  "localNames": [],
+  "aliases": [
+    "NC"
+  ],
+  "image": "Flag_of_North_Carolina.svg",
+  "capital": "Raleigh",
+  "region": "United States",
+  "subregion": "South Atlantic",
+  "population": 10439388,
+  "area": 139391,
+  "languages": [],
+  "currencies": [],
+  "demonym": "North Carolinian",
+  "latlng": [
+    35.6,
+    -79.4
+  ],
+  "facts": [
+    [
+      "Nickname",
+      "The Tar Heel State"
+    ],
+    [
+      "Statehood",
+      "1789"
+    ]
+  ],
+  "flag": {
+    "description": "A blue vertical band at the hoist with a white star between gold letters \"N\" and \"C\", and gold scrolls above and below bearing the dates \"May 20th 1775\" and \"April 12th 1776\"; the fly has two equal horizontal bands of red over white.",
+    "adopted": "1885",
+    "colors": [
+      "blue",
+      "red",
+      "white",
+      "yellow"
+    ],
+    "symbolism": "The two dates mark the Mecklenburg Declaration of Independence and the Halifax Resolves, early steps towards independence."
+  },
+  "hook": "North Carolina is Texas turned the other way up: red over white, with \"N★C\" and two dates on the blue band.",
+  "lookalikes": [
+    "us-tx"
+  ],
+  "trivia": [
+    "The Halifax Resolves of 12 April 1776 made North Carolina the first colony to instruct its delegates to vote for independence.",
+    "The authenticity of the Mecklenburg Declaration of 20 May 1775 is disputed by historians, yet its date remains on the flag."
+  ]
+}

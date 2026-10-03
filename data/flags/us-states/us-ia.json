@@ -1,0 +1,31 @@
+{
+  "code": "us-ia",
+  "isoNumeric": "",
+  "name": "Iowa",
+  "officialName": "State of Iowa",
+  "localNames": [],
+  "aliases": ["IA"],
+  "image": "Flag_of_Iowa.svg",
+  "capital": "Des Moines",
+  "region": "United States",
+  "subregion": "West North Central",
+  "population": 3190369,
+  "area": 145746,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Iowan",
+  "latlng": [42.1, -93.5],
+  "facts": [["Nickname", "The Hawkeye State"], ["Statehood", "1846"]],
+  "flag": {
+    "description": "Three vertical stripes of blue, white and red; on the wider white centre, a bald eagle carries a blue streamer reading OUR LIBERTIES WE PRIZE AND OUR RIGHTS WE WILL MAINTAIN, above IOWA in red.",
+    "adopted": "1921",
+    "colors": ["blue", "white", "red"],
+    "symbolism": "The colours echo the French tricolour, recalling that Iowa was part of the Louisiana Purchase from France."
+  },
+  "hook": "Iowa is the French tricolour with a bald eagle and the word IOWA dropped onto the white stripe.",
+  "lookalikes": ["fr"],
+  "trivia": [
+    "It was designed by Dixie Cornell Gebhardt of the Daughters of the American Revolution during the First World War.",
+    "Iowa troops had no state flag to carry in the war; the design was approved in 1917 and officially adopted in 1921."
+  ]
+}

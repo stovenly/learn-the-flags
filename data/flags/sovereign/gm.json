@@ -1,0 +1,49 @@
+{
+  "code": "gm",
+  "isoNumeric": "270",
+  "name": "Gambia",
+  "the": true,
+  "officialName": "Republic of the Gambia",
+  "localNames": [],
+  "aliases": [
+    "The Gambia"
+  ],
+  "status": "un-member",
+  "capital": "Banjul",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "population": 2759988,
+  "area": 10689,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "dalasi",
+      "code": "GMD",
+      "symbol": "D"
+    }
+  ],
+  "demonym": "Gambian",
+  "latlng": [
+    13.46666666,
+    -16.56666666
+  ],
+  "flag": {
+    "description": "Three horizontal stripes of red, blue and green, with the blue stripe edged above and below by thin white stripes.",
+    "adopted": "1965",
+    "colors": [
+      "red",
+      "blue",
+      "green",
+      "white"
+    ],
+    "symbolism": "Red stands for the sun and the savanna, blue for the Gambia River, green for the forests and agriculture, and white for unity and peace."
+  },
+  "hook": "Gambia's blue river runs through the middle of its flag between white banks, just as the Gambia River runs through the middle of the country.",
+  "lookalikes": [],
+  "trivia": [
+    "The Gambia is the smallest country on mainland Africa and, apart from its short coastline, is entirely surrounded by Senegal.",
+    "The country follows the Gambia River and is rarely more than about 50 km wide."
+  ]
+}

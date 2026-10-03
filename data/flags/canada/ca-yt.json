@@ -1,0 +1,63 @@
+{
+  "code": "ca-yt",
+  "isoNumeric": "",
+  "name": "Yukon",
+  "officialName": "Yukon",
+  "localNames": [],
+  "aliases": [
+    "YT",
+    "Yukon Territory"
+  ],
+  "image": "Flag_of_Yukon.svg",
+  "capital": "Whitehorse",
+  "region": "Canada",
+  "subregion": "Northern Canada",
+  "population": 40232,
+  "area": 482443,
+  "languages": [
+    "English",
+    "French"
+  ],
+  "currencies": [
+    {
+      "name": "Canadian dollar",
+      "code": "CAD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Yukoner",
+  "latlng": [
+    63,
+    -135
+  ],
+  "facts": [
+    [
+      "Type",
+      "Territory"
+    ],
+    [
+      "Joined Confederation",
+      "1898"
+    ]
+  ],
+  "flag": {
+    "description": "Three vertical panels of green, white and blue, the white centre wider, with the territorial coat of arms above a wreath of fireweed in the centre.",
+    "adopted": "1968",
+    "colors": [
+      "green",
+      "white",
+      "blue",
+      "red",
+      "yellow"
+    ],
+    "symbolism": "Green stands for the forests, white for the snow and blue for the lakes and rivers; fireweed is the territorial flower."
+  },
+  "hook": "Yukon runs green, white and blue, with a coat of arms topped by a husky-like malamute on the white; the Northwest Territories have blue on both sides.",
+  "lookalikes": [
+    "ca-nt"
+  ],
+  "trivia": [
+    "The flag was picked from a territory-wide design competition in 1967 and adopted on 1 March 1968.",
+    "The crest of the coat of arms on the flag is a malamute dog standing on a mound of snow."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "code": "gb",
+  "isoNumeric": "826",
+  "name": "United Kingdom",
+  "the": true,
+  "officialName": "United Kingdom of Great Britain and Northern Ireland",
+  "localNames": [],
+  "aliases": [
+    "UK",
+    "Great Britain",
+    "Britain"
+  ],
+  "status": "un-member",
+  "capital": "London",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "population": 69281000,
+  "area": 242900,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "British pound",
+      "code": "GBP",
+      "symbol": "£"
+    }
+  ],
+  "demonym": "British",
+  "latlng": [
+    54,
+    -2
+  ],
+  "flag": {
+    "description": "The Union Jack: a blue field with the red cross of St George edged in white, over the white diagonal cross of St Andrew combined with the offset red diagonal cross of St Patrick.",
+    "adopted": "1801",
+    "colors": [
+      "blue",
+      "red",
+      "white"
+    ],
+    "symbolism": "It combines the crosses of the patron saints of England (St George), Scotland (St Andrew) and Ireland (St Patrick)."
+  },
+  "hook": "Three saints' crosses layered on blue fill the whole flag: if the Union Jack is only a small corner of a blue flag with stars, think Australia, New Zealand or Tuvalu instead.",
+  "lookalikes": [
+    "au",
+    "nz",
+    "tv",
+    "fj"
+  ],
+  "trivia": [
+    "Wales is not represented on the flag because it was already united with England when the first Union Flag was created in 1606.",
+    "The flag is not symmetrical: correctly flown, the broader white diagonal is above the red one on the half nearest the flagpole."
+  ]
+}

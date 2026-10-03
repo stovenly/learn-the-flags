@@ -1,6 +1,6 @@
 # Learn the Flags
 
-A free static web app for memorizing every sovereign flag in the world: the 193 UN member states, the two UN observer states (Vatican City and Palestine), and optionally Kosovo and Taiwan.
+A free static web app for memorizing flags: every sovereign state (the 193 UN members plus Vatican City and Palestine), US states, Canadian provinces and territories, territories and dependencies, states with limited recognition, iconic historical flags and international organizations.
 
 Live site: https://stovenly.github.io/learn-the-flags/
 
@@ -24,25 +24,36 @@ npm run build    # build data, typecheck, build the site into docs/
 
 GitHub Pages serves the `docs/` folder on `main`. Commit `docs/` after building.
 
-## Editing countries
+## Editing flags
 
-Each country is one file in `data/countries/<iso-alpha-2>.json`. That file is the source of truth for names, accepted answers (`aliases`), facts, the flag description, the memory hook, curated `lookalikes` and trivia.
+Flags are grouped into sets, listed in `data/sets.json` (id, display name, the noun used in questions, a description, a cover flag and an optional curated learning order). Learners pick one set to learn new flags from; the sovereign set can be narrowed to continents. Reviews always cover every flag already started.
+
+Each flag is one file in `data/flags/<set>/<code>.json`. Sovereign states use their ISO alpha-2 code; others use ISO 3166-2 (`us-tx`, `ca-on`, `gb-sct`) or a readable code (`ussr`, `nato`). That file is the source of truth for names, accepted answers (`aliases`), facts, the flag description, the memory hook, curated `lookalikes` and trivia. Optional fields:
+
+- `image`: a Wikimedia Commons file name to download the flag from (otherwise flagcdn.com by code).
+- `facts`: extra `[label, value]` quick facts.
+- `shape`: what the map highlights. Omitted means the place itself; a list of codes highlights their union (the Soviet Union, the EU); `false` means no map.
+- `identical`: codes of flags with the same design (Czechoslovakia and Czechia), never offered as each other's wrong answer.
+- `slug`: a URL slug when the name would clash (`georgia-us-state`).
+
+Workflow:
 
 - **Change content:** edit the JSON, then run `npm run build`.
 - **Flag redesigned:** `node scripts/fetch-flags.mjs <code> --force` downloads the new image. Then update `flag.description` and `flag.adopted`.
-- **New country:** `node scripts/add-country.mjs <code>` creates a skeleton with base facts. Fill in the content fields, run `npm run flags`, then build.
-- **Remove a country:** delete its JSON file and its images in `public/img/flags/*/`.
-- **Recognition status:** `status` is one of `un-member`, `un-observer` or `partially-recognized`. Partially recognized states are left out of lessons unless the learner opts in.
+- **New sovereign state:** `node scripts/add-country.mjs <code>` creates a skeleton with base facts. Fill in the content fields, run `npm run flags`, then build.
+- **New flag in another set:** copy a file from that set, edit it, run `npm run flags`, then build.
+- **Remove a flag:** delete its JSON file and its images in `public/img/flags/*/`.
 
-Lookalike pairs live in `data/lookalikes.json`, keyed by the two codes in alphabetical order (`"id-mc"`), with one or two sentences on how to tell the flags apart. Every pair listed there is shown as a lookalike for both countries; a country's own `lookalikes` array should have a matching entry.
+Lookalike pairs live in `data/lookalikes/*.json`, keyed by the two codes in sorted order joined by `|` (`"id|mc"`), with one or two sentences on how to tell the flags apart. A pair is shown as a lookalike for both flags. Lookalikes must be in the same set, or one of the two must be a sovereign state; a sovereign state's page only lists sovereign lookalikes.
 
-`npm run build` validates every file and fails on unknown colours, broken lookalike codes or missing images.
+`npm run build` validates every file and fails on unknown colours, broken or cross-set lookalike codes, clashing slugs or missing images.
 
 ## Other scripts
 
 - `scripts/build-assets.mjs` re-renders the favicon, the touch icon and the `og.png` social preview.
-- `scripts/build-maps.mjs` runs as part of the build. It renders `img/maps/<code>.svg`: a regional map zoomed on each country with it highlighted, neighbours labelled with their name and flag where they fit, and a locator globe inset. `img/maps/plain/` has the same maps without neighbour flags, used on "Which is the flag of…" questions so the map does not give options away. Data is Natural Earth via `world-atlas`. Countries are matched by `isoNumeric`, or by name when that is empty (Kosovo).
+- `scripts/build-maps.mjs` runs as part of the build. It renders `img/maps/<code>.svg`: a regional map zoomed on each flag's place with it highlighted and labelled, neighbours labelled with their name and flag where they fit, and a locator globe inset. `img/maps/plain/` has the same maps without flags, used on "Which is the flag of…" questions so the map does not give options away. Countries come from Natural Earth via `world-atlas`, matched by `isoNumeric` or name.
+- `scripts/fetch-geo.mjs` writes `data/geo/extra.json`, the outlines `world-atlas` lacks (US states, Canadian provinces, the UK's nations, breakaway states), from Natural Earth 10m. Run it only to change that list.
 - `scripts/build-pages.mjs` runs as part of the build. It writes a static, crawlable page per country (`docs/flags/<slug>/`), the flag index, `sitemap.xml` and `robots.txt`.
 - `site.config.json` holds the site URL, name and description used for SEO tags.
 
-Flag images come from Wikimedia Commons via [flagcdn.com](https://flagcdn.com) and are public domain. Map outlines come from [Natural Earth](https://www.naturalearthdata.com) (public domain). Base country facts come from [mledoze/countries](https://github.com/mledoze/countries) (ODbL), and population figures from the World Bank.
+Flag images come from Wikimedia Commons, directly or via [flagcdn.com](https://flagcdn.com). Map outlines come from [Natural Earth](https://www.naturalearthdata.com) (public domain). Base country facts come from [mledoze/countries](https://github.com/mledoze/countries) (ODbL), and population figures from the World Bank.

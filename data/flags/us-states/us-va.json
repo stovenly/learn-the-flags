@@ -1,0 +1,53 @@
+{
+  "code": "us-va",
+  "isoNumeric": "",
+  "name": "Virginia",
+  "officialName": "Commonwealth of Virginia",
+  "localNames": [],
+  "aliases": [
+    "VA"
+  ],
+  "image": "Flag_of_Virginia.svg",
+  "capital": "Richmond",
+  "region": "United States",
+  "subregion": "South Atlantic",
+  "population": 8631393,
+  "area": 110787,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Virginian",
+  "latlng": [
+    37.5,
+    -78.8
+  ],
+  "facts": [
+    [
+      "Nickname",
+      "Old Dominion"
+    ],
+    [
+      "Statehood",
+      "1788"
+    ]
+  ],
+  "flag": {
+    "description": "A dark blue field with the state seal on a white disc in the centre: the figure of Virtue, armed with a spear and sword, standing over the fallen figure of Tyranny, with \"Virginia\" above and \"Sic Semper Tyrannis\" below, inside a ring of Virginia creeper.",
+    "adopted": "1861",
+    "colors": [
+      "blue",
+      "white",
+      "green",
+      "red",
+      "yellow"
+    ],
+    "symbolism": "Virtue defeating Tyranny, whose crown lies on the ground, celebrates the overthrow of British rule; the motto means \"Thus always to tyrants\"."
+  },
+  "hook": "Virginia's seal sits on a bright white disc and shows a warrior woman with her foot on a fallen tyrant.",
+  "lookalikes": [
+    "us-ky"
+  ],
+  "trivia": [
+    "Virtue is shown with one breast bare, making Virginia's the only US state flag with nudity.",
+    "The design was first adopted in 1861 and given a precise legal specification in 1950."
+  ]
+}

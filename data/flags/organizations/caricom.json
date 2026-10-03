@@ -1,0 +1,74 @@
+{
+  "code": "caricom",
+  "isoNumeric": "",
+  "name": "CARICOM",
+  "officialName": "Caribbean Community",
+  "localNames": [],
+  "aliases": [
+    "Caribbean Community"
+  ],
+  "image": "Flag_of_CARICOM.svg",
+  "capital": "Georgetown",
+  "region": "Americas",
+  "subregion": "Founded 1973",
+  "population": null,
+  "area": null,
+  "languages": [
+    "English"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    6.8,
+    -58.16
+  ],
+  "facts": [
+    [
+      "Founded",
+      "1973"
+    ],
+    [
+      "Members",
+      "15 full members"
+    ],
+    [
+      "Headquarters",
+      "Georgetown"
+    ]
+  ],
+  "shape": [
+    "ag",
+    "bb",
+    "bs",
+    "bz",
+    "dm",
+    "gd",
+    "gy",
+    "ht",
+    "jm",
+    "kn",
+    "lc",
+    "ms",
+    "sr",
+    "tt",
+    "vc"
+  ],
+  "flag": {
+    "description": "Two horizontal bands, light blue over a narrower dark blue, with a yellow disc ringed in green in the centre bearing two black interlocking letters C.",
+    "adopted": "1983",
+    "colors": [
+      "light-blue",
+      "blue",
+      "yellow",
+      "green",
+      "black"
+    ],
+    "symbolism": "Light blue stands for the sky and dark blue for the Caribbean Sea; the yellow disc is the sun, the green ring the vegetation, and the linked Cs the Caribbean Community."
+  },
+  "hook": "CARICOM is sky over sea in two blues, with a yellow sun showing two linked black Cs, for Caribbean Community.",
+  "lookalikes": [],
+  "trivia": [
+    "CARICOM was founded by the Treaty of Chaguaramas in 1973, signed by Barbados, Guyana, Jamaica and Trinidad and Tobago.",
+    "Montserrat, a British Overseas Territory, is the only full member that is not a sovereign state."
+  ]
+}

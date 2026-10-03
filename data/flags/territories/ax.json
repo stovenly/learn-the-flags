@@ -1,0 +1,72 @@
+{
+  "code": "ax",
+  "isoNumeric": "248",
+  "name": "Åland",
+  "officialName": "Åland Islands",
+  "localNames": [
+    {
+      "language": "Swedish",
+      "name": "Åland",
+      "romanized": ""
+    },
+    {
+      "language": "Finnish",
+      "name": "Ahvenanmaa",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Aland",
+    "Åland Islands",
+    "Aland Islands"
+  ],
+  "image": "Flag_of_Åland.svg",
+  "capital": "Mariehamn",
+  "region": "Northern Europe",
+  "subregion": "Autonomous region of Finland",
+  "population": 30500,
+  "area": 1580,
+  "languages": [
+    "Swedish"
+  ],
+  "currencies": [
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
+  ],
+  "demonym": "Ålander",
+  "latlng": [
+    60.2,
+    20
+  ],
+  "facts": [
+    [
+      "Status",
+      "Autonomous region of Finland"
+    ],
+    [
+      "Sovereign state",
+      "Finland"
+    ]
+  ],
+  "flag": {
+    "description": "A blue field with a yellow Nordic cross, inside which runs a narrower red Nordic cross.",
+    "adopted": "1954",
+    "colors": [
+      "blue",
+      "yellow",
+      "red"
+    ],
+    "symbolism": "Blue and yellow come from the flag of Sweden, reflecting the islands' Swedish language and culture, while red and yellow are the colours of Finland's coat of arms."
+  },
+  "hook": "Åland is Sweden's flag with a red cross threaded through the middle of the yellow one: Swedish colours, Finnish red.",
+  "lookalikes": [
+    "se"
+  ],
+  "trivia": [
+    "Åland is demilitarised and, under a 1921 League of Nations decision, belongs to Finland while keeping wide self-government and Swedish as its only official language.",
+    "It issues its own postage stamps and has its own internet domain, .ax."
+  ]
+}

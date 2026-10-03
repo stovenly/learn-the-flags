@@ -1,0 +1,51 @@
+{
+  "code": "us-wv",
+  "isoNumeric": "",
+  "name": "West Virginia",
+  "officialName": "State of West Virginia",
+  "localNames": [],
+  "aliases": [
+    "WV"
+  ],
+  "image": "Flag_of_West_Virginia.svg",
+  "capital": "Charleston",
+  "region": "United States",
+  "subregion": "South Atlantic",
+  "population": 1793716,
+  "area": 62756,
+  "languages": [],
+  "currencies": [],
+  "demonym": "West Virginian",
+  "latlng": [
+    38.6,
+    -80.6
+  ],
+  "facts": [
+    [
+      "Nickname",
+      "The Mountain State"
+    ],
+    [
+      "Statehood",
+      "1863"
+    ]
+  ],
+  "flag": {
+    "description": "A white field with a blue border, bearing the state coat of arms: a farmer and a miner flanking a rock inscribed \"June 20, 1863\", with two crossed rifles and a cap of liberty, a wreath of rhododendron below and a ribbon reading \"State of West Virginia\" above.",
+    "adopted": "1929",
+    "colors": [
+      "white",
+      "blue",
+      "green",
+      "brown",
+      "red"
+    ],
+    "symbolism": "The farmer and miner stand for the state's agriculture and industry, the rifles and liberty cap for the fight for freedom, and the motto \"Montani Semper Liberi\" means \"Mountaineers are always free\"."
+  },
+  "hook": "West Virginia flips the usual scheme: its arms sit on white inside a blue border, with a farmer and a miner beside a dated rock.",
+  "lookalikes": [],
+  "trivia": [
+    "The date on the rock, 20 June 1863, is the day West Virginia split from Virginia and joined the Union.",
+    "The rhododendron in the wreath is the state flower."
+  ]
+}

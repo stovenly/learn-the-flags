@@ -1,0 +1,76 @@
+{
+  "code": "mo",
+  "isoNumeric": "446",
+  "name": "Macau",
+  "officialName": "Macao Special Administrative Region of the People's Republic of China",
+  "localNames": [
+    {
+      "language": "Chinese",
+      "name": "澳門",
+      "romanized": "Ou Mun"
+    },
+    {
+      "language": "Portuguese",
+      "name": "Macau",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Macao",
+    "Macao SAR"
+  ],
+  "image": "Flag_of_Macau.svg",
+  "capital": "",
+  "region": "Eastern Asia",
+  "subregion": "Special administrative region of China",
+  "population": 683700,
+  "area": 33,
+  "languages": [
+    "Chinese",
+    "Portuguese"
+  ],
+  "currencies": [
+    {
+      "name": "Macanese pataca",
+      "code": "MOP",
+      "symbol": "MOP$"
+    }
+  ],
+  "demonym": "Macanese",
+  "latlng": [
+    22.17,
+    113.55
+  ],
+  "facts": [
+    [
+      "Status",
+      "Special administrative region of China"
+    ],
+    [
+      "Sovereign state",
+      "China"
+    ],
+    [
+      "Handover",
+      "20 December 1999, from Portugal"
+    ]
+  ],
+  "flag": {
+    "description": "A green field with a white lotus flower above a stylised bridge and white waves, beneath an arc of five yellow five-pointed stars.",
+    "adopted": "1993",
+    "colors": [
+      "green",
+      "white",
+      "yellow"
+    ],
+    "symbolism": "The lotus is Macau's emblem, its three petals for the peninsula and the islands of Taipa and Coloane; the bridge and water show its setting, and the five stars echo China's flag."
+  },
+  "hook": "Macau is a white lotus floating on a green field under five gold stars; Hong Kong's flower is a bauhinia on red.",
+  "lookalikes": [
+    "hk"
+  ],
+  "trivia": [
+    "The flag was first raised officially on 20 December 1999, when Portugal handed Macau to China after more than four centuries.",
+    "Macau is among the most densely populated places in the world."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "code": "us-ne",
+  "isoNumeric": "",
+  "name": "Nebraska",
+  "officialName": "State of Nebraska",
+  "localNames": [],
+  "aliases": [
+    "NE"
+  ],
+  "image": "Flag_of_Nebraska.svg",
+  "capital": "Lincoln",
+  "region": "United States",
+  "subregion": "West North Central",
+  "population": 1961504,
+  "area": 200330,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Nebraskan",
+  "latlng": [
+    41.5,
+    -99.8
+  ],
+  "facts": [
+    [
+      "Nickname",
+      "The Cornhusker State"
+    ],
+    [
+      "Statehood",
+      "1867"
+    ]
+  ],
+  "flag": {
+    "description": "A blue field with the state seal in gold and silver in the centre: a blacksmith at his anvil, a settler's cabin and sheaves of wheat, with a steamboat on the river and a train heading for the mountains, under the motto \"Equality Before the Law\".",
+    "adopted": "1925",
+    "colors": [
+      "blue",
+      "yellow",
+      "white"
+    ],
+    "symbolism": "The blacksmith stands for the mechanical arts, the cabin and wheat for farming, and the steamboat and train for the river and rail routes that opened the state."
+  },
+  "hook": "Nebraska's seal is drawn only in gold and silver, with a blacksmith up front and a steam train chugging across the back.",
+  "lookalikes": [
+    "us-or"
+  ],
+  "trivia": [
+    "The design was adopted as the state banner in 1925 and only declared the official state flag in 1963.",
+    "Nebraska's seal includes both a Missouri River steamboat and a train, two transport routes in one picture."
+  ]
+}

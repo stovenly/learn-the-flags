@@ -1,0 +1,68 @@
+{
+  "code": "gb-wls",
+  "isoNumeric": "",
+  "name": "Wales",
+  "officialName": "Wales",
+  "localNames": [
+    {
+      "language": "Welsh",
+      "name": "Cymru",
+      "romanized": ""
+    }
+  ],
+  "aliases": [],
+  "image": "Flag_of_Wales.svg",
+  "capital": "Cardiff",
+  "region": "Northern Europe",
+  "subregion": "Country of the United Kingdom",
+  "population": 3107494,
+  "area": 21218,
+  "languages": [
+    "Welsh",
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "British pound",
+      "code": "GBP",
+      "symbol": "£"
+    }
+  ],
+  "demonym": "Welsh",
+  "latlng": [
+    52.3,
+    -3.7
+  ],
+  "facts": [
+    [
+      "Status",
+      "Country of the United Kingdom"
+    ],
+    [
+      "Part of",
+      "United Kingdom"
+    ],
+    [
+      "Legislature",
+      "Senedd"
+    ]
+  ],
+  "flag": {
+    "description": "Two equal horizontal bands of white over green, with a large red dragon striding across both.",
+    "adopted": "1959",
+    "colors": [
+      "white",
+      "green",
+      "red"
+    ],
+    "symbolism": "The red dragon, Y Ddraig Goch, has been a symbol of Wales for centuries, and white and green were the colours of the Welsh-descended House of Tudor."
+  },
+  "hook": "Wales has a red dragon striding over white and green; Bhutan's dragon is white and lies across a diagonal split of yellow and orange.",
+  "lookalikes": [
+    "bt"
+  ],
+  "trivia": [
+    "Wales is the only one of the UK's countries whose flag is not represented on the Union Jack.",
+    "The red dragon is said to come from the legend of a red dragon defeating a white one, told in the ninth-century Historia Brittonum."
+  ]
+}

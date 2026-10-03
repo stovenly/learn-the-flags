@@ -1,0 +1,90 @@
+{
+  "code": "nato",
+  "isoNumeric": "",
+  "name": "NATO",
+  "officialName": "North Atlantic Treaty Organization",
+  "localNames": [],
+  "aliases": [
+    "North Atlantic Treaty Organization",
+    "OTAN"
+  ],
+  "image": "Flag_of_NATO.svg",
+  "capital": "Brussels",
+  "region": "Europe",
+  "subregion": "Founded 1949",
+  "population": null,
+  "area": null,
+  "languages": [
+    "English",
+    "French"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    50.88,
+    4.43
+  ],
+  "facts": [
+    [
+      "Founded",
+      "1949"
+    ],
+    [
+      "Members",
+      "32 states"
+    ],
+    [
+      "Headquarters",
+      "Brussels"
+    ]
+  ],
+  "shape": [
+    "al",
+    "be",
+    "bg",
+    "ca",
+    "cz",
+    "de",
+    "dk",
+    "ee",
+    "es",
+    "fi",
+    "fr",
+    "gb",
+    "gr",
+    "hr",
+    "hu",
+    "is",
+    "it",
+    "lt",
+    "lu",
+    "lv",
+    "me",
+    "mk",
+    "nl",
+    "no",
+    "pl",
+    "pt",
+    "ro",
+    "se",
+    "si",
+    "sk",
+    "tr",
+    "us"
+  ],
+  "flag": {
+    "description": "A dark blue field with a white four-pointed compass rose inside a white ring in the centre, and four white lines running out from it towards the edges.",
+    "adopted": "1953",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "symbolism": "Blue stands for the Atlantic Ocean, the circle for unity, and the compass rose for the common road to peace the members chose."
+  },
+  "hook": "NATO is a white compass rose on navy blue with four lines shooting out north, south, east and west, like a map pinned to the Atlantic.",
+  "lookalikes": [],
+  "trivia": [
+    "The North Atlantic Treaty was signed in Washington, D.C. on 4 April 1949 by twelve founding countries.",
+    "Finland joined in 2023 and Sweden in 2024, bringing the alliance to 32 members."
+  ]
+}

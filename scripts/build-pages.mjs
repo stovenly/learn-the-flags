@@ -6,13 +6,15 @@ const ROOT = path.resolve(import.meta.dirname, '..');
 const OUT = path.join(ROOT, 'docs');
 const site = JSON.parse(await fs.readFile(path.join(ROOT, 'site.config.json'), 'utf8'));
 const countries = JSON.parse(await fs.readFile(path.join(ROOT, 'src/generated/countries.json'), 'utf8'));
+const sets = JSON.parse(await fs.readFile(path.join(ROOT, 'src/generated/sets.json'), 'utf8'));
+const setName = Object.fromEntries(sets.map((s) => [s.id, s.name]));
 const byCode = new Map(countries.map((c) => [c.code, c]));
-const REGIONS = ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania'];
+const CONTINENTS = ['Africa', 'Asia', 'Europe', 'North America', 'South America', 'Oceania'];
 const today = new Date().toISOString().slice(0, 10);
 
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch]);
 const fmtPop = (n) => (n == null ? '—' : n >= 1e9 ? `${(n / 1e9).toFixed(2)} billion` : n >= 1e6 ? `${(n / 1e6).toFixed(n >= 1e7 ? 0 : 1)} million` : n.toLocaleString('en-US'));
-const STATUS = { 'un-observer': 'UN observer state', 'partially-recognized': 'Partially recognized state' };
+const STATUS = { 'un-observer': 'UN observer state' };
 
 const CSS = `
 :root{--bg:#f6f6f3;--surface:#fff;--border:#e4e4df;--text:#17181b;--muted:#6b6d74;--accent:#3b5bdb;--hook:#fff6dc;--hook-border:#f0dfa8;--edge:rgba(0,0,0,.1);color-scheme:light dark}
@@ -25,7 +27,7 @@ header{border-bottom:1px solid var(--border)}header .wrap{display:flex;align-ite
 .cta{background:var(--accent);color:#fff;padding:9px 16px;border-radius:10px;font-weight:600;font-size:.92rem}.cta:hover{text-decoration:none}
 @media (prefers-color-scheme:dark){.cta{color:#0f1220}}
 main{padding:32px 16px 56px}h1{font-size:clamp(1.7rem,4vw,2.3rem);line-height:1.2;letter-spacing:-.015em;margin:0 0 6px}
-h2{font-size:1.15rem;margin:0 0 10px}.muted{color:var(--muted)}
+h2{font-size:1.15rem;margin:0 0 10px}h3{font-size:1rem;margin:22px 0 12px}.muted{color:var(--muted)}
 .card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:22px;margin:16px 0}
 .flag{display:block;height:auto;border-radius:4px;box-shadow:0 0 0 1px var(--edge)}
 .flag.shaped{box-shadow:none;border-radius:0}
@@ -86,8 +88,10 @@ const localName = (c) =>
 
 const img = (c, up, size = 640) => {
   const h = Math.round(640 / c.ratio);
-  return `<img class="flag${c.transparent ? ' shaped' : ''}" src="${up}img/flags/${size}/${c.code}.webp" width="640" height="${h}" alt="Flag of ${esc(c.name)}" style="--r:${c.ratio}"${size === 320 ? ' loading="lazy"' : ''} decoding="async">`;
+  return `<img class="flag${c.transparent ? ' shaped' : ''}" src="${up}img/flags/${size}/${c.code}.webp" width="640" height="${h}" alt="Flag of ${esc(c.theName)}" style="--r:${c.ratio}"${size === 320 ? ' loading="lazy"' : ''} decoding="async">`;
 };
+
+const subtitle = (c) => [c.officialName !== c.name ? c.officialName : '', STATUS[c.status] ?? '', c.set === 'sovereign' ? '' : setName[c.set]].filter(Boolean).join(' · ');
 
 const tile = (c, up, href) => `<a href="${href}"><span class="box">${img(c, up, 320)}</span>${esc(c.name)}</a>`;
 
@@ -95,9 +99,11 @@ for (const c of countries) {
   const up = '../../';
   const looks = c.lookalikes.map((k) => byCode.get(k)).filter(Boolean);
   const facts = [
+    ...c.facts,
+    [c.set === 'organizations' ? 'Headquarters' : 'Capital', c.capital],
     ['Region', c.subregion || c.region],
-    ['Population', fmtPop(c.population)],
-    ['Area', c.area ? `${Math.round(c.area).toLocaleString('en-US')} km²` : '—'],
+    ['Population', c.population == null ? '' : fmtPop(c.population)],
+    ['Area', c.area ? `${Math.round(c.area).toLocaleString('en-US')} km²` : ''],
     ['Languages', c.languages.join(', ')],
     ['Currency', c.currencies.map((x) => (x.symbol && x.symbol !== x.code ? `${x.name} (${x.symbol})` : x.name)).join(', ')],
     ['Flag adopted', c.flag.adopted],
@@ -105,10 +111,10 @@ for (const c of countries) {
   const body = `
 <article>
 <div class="card hero">${img(c, up)}</div>
-<h1>Flag of ${esc(c.name)}</h1>
+<h1>Flag of ${esc(c.theName)}</h1>
 ${localName(c) ? `<p class="local">${esc(localName(c))}</p>` : ''}
-${[c.officialName !== c.name ? c.officialName : '', STATUS[c.status] ?? ''].filter(Boolean).length ? `<p class="muted">${esc([c.officialName !== c.name ? c.officialName : '', STATUS[c.status] ?? ''].filter(Boolean).join(' · '))}</p>` : ''}
-<div class="card mapcard"><img class="map" src="${up}img/maps/${c.code}.svg" width="150" height="100" alt="Map showing where ${esc(c.name)} is" loading="lazy"></div>
+${subtitle(c) ? `<p class="muted">${esc(subtitle(c))}</p>` : ''}
+${c.hasMap ? `<div class="card mapcard"><img class="map" src="${up}img/maps/${c.code}.svg" width="150" height="100" alt="Map showing where ${esc(c.name)} is" loading="lazy"></div>` : ''}
 <section class="card">
 <h2>What the flag looks like</h2>
 <p>${esc(c.flag.description)}</p>
@@ -116,15 +122,15 @@ ${c.flag.symbolism ? `<h2>What it means</h2><p>${esc(c.flag.symbolism)}</p>` : '
 ${c.hook ? `<div class="hook"><span class="label">How to remember it</span><p style="margin:2px 0 0">${esc(c.hook)}</p></div>` : ''}
 </section>
 ${c.trivia.length ? `<section class="card"><h2>Fun facts</h2><ul>${c.trivia.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>` : ''}
-<section class="card"><h2>${esc(c.name)} at a glance</h2><dl>${facts.map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v || '—')}</dd></div>`).join('')}</dl></section>
+<section class="card"><h2>${esc(c.name)} at a glance</h2><dl>${facts.filter(([, v]) => v).map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl></section>
 ${looks.length ? `<section class="card"><h2>Flags often confused with ${esc(c.name)}</h2><div class="pairs">${looks.map((o) => `<a class="pair" href="../${o.slug}/"><span class="box">${img(o, up, 320)}</span><span><strong>${esc(o.name)}</strong>${c.differences[o.code] ? `<span class="muted">${esc(c.differences[o.code])}</span>` : ''}</span></a>`).join('')}</div></section>` : ''}
-<section class="card promo"><p>Learn the flag of ${esc(c.name)} and every other country with short daily lessons.</p><a class="cta" href="${up}#/flag/${c.slug}">Practice with ${esc(site.name)}</a></section>
+<section class="card promo"><p>Learn the flag of ${esc(c.theName)} and every other flag with short daily lessons.</p><a class="cta" href="${up}#/flag/${c.slug}">Practice with ${esc(site.name)}</a></section>
 <p><a href="../">← All flags of the world</a></p>
 </article>`;
-  const description = `${c.flag.description} Meaning, history and fun facts about the flag of ${c.name}.`.slice(0, 300);
+  const description = `${c.flag.description} Meaning, history and fun facts about the flag of ${c.theName}.`.slice(0, 300);
   const canonical = `${site.siteUrl}flags/${c.slug}/`;
   const html = page({
-    title: `Flag of ${c.name}: meaning, colors & facts · ${site.name}`,
+    title: `Flag of ${c.theName}: meaning, colors & facts · ${site.name}`,
     description,
     canonical,
     image: `${site.siteUrl}img/flags/640/${c.code}.webp`,
@@ -133,7 +139,7 @@ ${looks.length ? `<section class="card"><h2>Flags often confused with ${esc(c.na
     jsonld: {
       '@context': 'https://schema.org',
       '@type': 'Article',
-      headline: `Flag of ${c.name}`,
+      headline: `Flag of ${c.theName}`,
       description,
       image: `${site.siteUrl}img/flags/640/${c.code}.webp`,
       url: canonical,
@@ -144,20 +150,30 @@ ${looks.length ? `<section class="card"><h2>Flags often confused with ${esc(c.na
   await fs.writeFile(path.join(OUT, 'flags', c.slug, 'index.html'), html);
 }
 
-const sections = REGIONS.map((r) => {
-  const list = countries.filter((c) => c.region === r);
-  return `<section class="card"><h2>${r} <span class="muted">(${list.length})</span></h2><div class="grid">${list.map((c) => tile(c, '../', `${c.slug}/`)).join('')}</div></section>`;
-}).join('');
-const recognized = countries.filter((c) => c.status !== 'partially-recognized').length;
+const grid = (list) => `<div class="grid">${list.map((c) => tile(c, '../', `${c.slug}/`)).join('')}</div>`;
+const sections = sets
+  .map((set) => {
+    const list = countries.filter((c) => c.set === set.id);
+    if (!list.length) return '';
+    const body =
+      set.id === 'sovereign'
+        ? CONTINENTS.map((k) => {
+            const sub = list.filter((c) => c.continent === k);
+            return `<h3>${k} <span class="muted">(${sub.length})</span></h3>${grid(sub)}`;
+          }).join('')
+        : grid(list);
+    return `<section class="card"><h2>${esc(set.name)} <span class="muted">(${list.length})</span></h2><p class="muted">${esc(set.description)}</p>${body}</section>`;
+  })
+  .join('');
 await fs.writeFile(
   path.join(OUT, 'flags', 'index.html'),
   page({
-    title: `All ${recognized} flags of the world · ${site.name}`,
-    description: `Every flag of the world's ${recognized} sovereign states, plus Kosovo and Taiwan, with what each flag looks like, what it means and fun facts.`,
+    title: `All ${countries.length} flags: countries, states, territories and more · ${site.name}`,
+    description: `Every flag of the world's 195 sovereign states, plus US states, Canadian provinces, territories, historical flags and international organizations, with what each flag looks like, what it means and fun facts.`,
     canonical: `${site.siteUrl}flags/`,
     image: `${site.siteUrl}og.png`,
     depth: 1,
-    body: `<h1>Flags of the world</h1><p class="muted">All 193 UN member states, the two UN observer states (Vatican City and Palestine), and the partially recognized states Kosovo and Taiwan. Tap any flag for its meaning and history.</p>${sections}`,
+    body: `<h1>Flags of the world</h1><p class="muted">Every sovereign state, plus US states, Canadian provinces, territories, states with limited recognition, historical flags and international organizations. Tap any flag for its meaning and history.</p>${sections}`,
   }),
 );
 
@@ -170,4 +186,4 @@ await fs.writeFile(
 );
 await fs.writeFile(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${site.siteUrl}sitemap.xml\n`);
 await fs.writeFile(path.join(OUT, '.nojekyll'), '');
-console.log(`Wrote ${countries.length} country pages, flag index, sitemap.xml and robots.txt`);
+console.log(`Wrote ${countries.length} flag pages, flag index, sitemap.xml and robots.txt`);

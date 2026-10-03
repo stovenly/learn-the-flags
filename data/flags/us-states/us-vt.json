@@ -1,0 +1,54 @@
+{
+  "code": "us-vt",
+  "isoNumeric": "",
+  "name": "Vermont",
+  "officialName": "State of Vermont",
+  "localNames": [],
+  "aliases": [
+    "VT"
+  ],
+  "image": "Flag_of_Vermont.svg",
+  "capital": "Montpelier",
+  "region": "United States",
+  "subregion": "New England",
+  "population": 643077,
+  "area": 24906,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Vermonter",
+  "latlng": [
+    44.1,
+    -72.7
+  ],
+  "facts": [
+    [
+      "Nickname",
+      "The Green Mountain State"
+    ],
+    [
+      "Statehood",
+      "1791"
+    ]
+  ],
+  "flag": {
+    "description": "A dark blue field with the state coat of arms: a shield showing a pine tree, a cow and sheaves of wheat before the Green Mountains, topped by a stag's head and framed by pine branches, above a red ribbon reading \"Vermont\" and \"Freedom and Unity\".",
+    "adopted": "1923",
+    "colors": [
+      "blue",
+      "green",
+      "yellow",
+      "red",
+      "white"
+    ],
+    "symbolism": "The pine tree, cow and wheat stand for Vermont's forests and farms, and the stag's head for its wildlife."
+  },
+  "hook": "Vermont's shield is a farm scene: one tall pine with a cow grazing beside it, a stag's head on top and pine boughs round the sides.",
+  "lookalikes": [
+    "us-me",
+    "us-nh"
+  ],
+  "trivia": [
+    "Vermont was an independent republic from 1777 until it joined the Union as the 14th state in 1791.",
+    "Before 1923 Vermont's flag was a Stars-and-Stripes design with the state arms in the canton."
+  ]
+}

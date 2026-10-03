@@ -1,0 +1,63 @@
+{
+  "code": "ca-qc",
+  "isoNumeric": "",
+  "name": "Quebec",
+  "officialName": "Province of Quebec",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "Québec",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "QC",
+    "Québec"
+  ],
+  "image": "Flag_of_Quebec.svg",
+  "capital": "Quebec City",
+  "region": "Canada",
+  "subregion": "Central Canada",
+  "population": 8501833,
+  "area": 1542056,
+  "languages": [
+    "French"
+  ],
+  "currencies": [
+    {
+      "name": "Canadian dollar",
+      "code": "CAD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Quebecer",
+  "latlng": [
+    52,
+    -72
+  ],
+  "facts": [
+    [
+      "Type",
+      "Province"
+    ],
+    [
+      "Joined Confederation",
+      "1867"
+    ]
+  ],
+  "flag": {
+    "description": "A white cross on a blue field, with a white fleur-de-lis upright in each of the four quarters.",
+    "adopted": "1948",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "symbolism": "The white cross and fleurs-de-lis recall the Christian and royal French heritage of New France."
+  },
+  "hook": "Quebec's Fleurdelisé is a white cross on blue with a white fleur-de-lis in every corner: four lilies for New France.",
+  "lookalikes": [],
+  "trivia": [
+    "The Fleurdelisé was first raised over Quebec's Parliament Building on 21 January 1948, the day it was adopted.",
+    "Quebec is the only Canadian province whose sole official language is French."
+  ]
+}

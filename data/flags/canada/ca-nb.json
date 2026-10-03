@@ -1,0 +1,68 @@
+{
+  "code": "ca-nb",
+  "isoNumeric": "",
+  "name": "New Brunswick",
+  "officialName": "Province of New Brunswick",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "Nouveau-Brunswick",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "NB"
+  ],
+  "image": "Flag_of_New_Brunswick.svg",
+  "capital": "Fredericton",
+  "region": "Canada",
+  "subregion": "Atlantic Canada",
+  "population": 775610,
+  "area": 72908,
+  "languages": [
+    "English",
+    "French"
+  ],
+  "currencies": [
+    {
+      "name": "Canadian dollar",
+      "code": "CAD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "New Brunswicker",
+  "latlng": [
+    46.5,
+    -66.5
+  ],
+  "facts": [
+    [
+      "Type",
+      "Province"
+    ],
+    [
+      "Joined Confederation",
+      "1867"
+    ]
+  ],
+  "flag": {
+    "description": "A gold field with a red band across the top carrying a gold lion; below, a black ancient galley with oars sails on wavy blue and white water.",
+    "adopted": "1965",
+    "colors": [
+      "yellow",
+      "red",
+      "black",
+      "blue",
+      "white"
+    ],
+    "symbolism": "The lion recalls the province's ties to Britain and to the German duchy of Brunswick, and the galley stands for shipbuilding and seafaring."
+  },
+  "hook": "New Brunswick sails a black galley across a gold flag under a red lion band; Prince Edward Island has the same lion band but oak trees on white below.",
+  "lookalikes": [
+    "ca-pe"
+  ],
+  "trivia": [
+    "New Brunswick is the only officially bilingual province in Canada.",
+    "The province was named in 1784 in honour of King George III, who was also Duke of Brunswick-Lüneburg."
+  ]
+}

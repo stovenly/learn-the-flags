@@ -1,0 +1,64 @@
+{
+  "code": "mp",
+  "isoNumeric": "580",
+  "name": "Northern Mariana Islands",
+  "the": true,
+  "officialName": "Commonwealth of the Northern Mariana Islands",
+  "localNames": [],
+  "aliases": [
+    "CNMI",
+    "Northern Marianas"
+  ],
+  "image": "Flag_of_the_Northern_Mariana_Islands.svg",
+  "capital": "Saipan",
+  "region": "Micronesia",
+  "subregion": "U.S. territory",
+  "population": 47329,
+  "area": 464,
+  "languages": [
+    "English",
+    "Chamorro",
+    "Carolinian"
+  ],
+  "currencies": [
+    {
+      "name": "United States dollar",
+      "code": "USD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Northern Mariana Islander",
+  "latlng": [
+    15.2,
+    145.75
+  ],
+  "facts": [
+    [
+      "Status",
+      "Unincorporated U.S. territory (commonwealth)"
+    ],
+    [
+      "Sovereign state",
+      "United States"
+    ]
+  ],
+  "flag": {
+    "description": "A blue field with a large white five-pointed star in front of a grey latte stone, encircled by a wreath of flowers.",
+    "adopted": "1985",
+    "colors": [
+      "blue",
+      "white",
+      "green",
+      "red"
+    ],
+    "symbolism": "The white star represents the United States, the latte stone the Chamorro people, and the flower wreath (mwarmwar) the Carolinian people."
+  },
+  "hook": "The Northern Marianas put a white star on a grey stone pillar inside a ring of flowers; Guam has a red border and its name in red letters instead.",
+  "lookalikes": [
+    "gu"
+  ],
+  "trivia": [
+    "Latte stones are stone pillars topped with cup-shaped capstones that once raised ancient Chamorro houses off the ground.",
+    "The flower wreath was added in 1985; the earlier flag showed only the star and the latte stone."
+  ]
+}

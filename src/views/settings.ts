@@ -1,4 +1,3 @@
-import { REGIONS } from '../data';
 import { exportProgress, importProgress, resetProgress, save, Settings, state } from '../store';
 import { $, esc } from '../ui';
 import { applyTheme } from '../theme';
@@ -18,9 +17,7 @@ export function settingsView(root: HTMLElement) {
     <h2 class="group-title">Learning</h2>
     <section class="card form">
       ${select('lessonSize', 'New flags per lesson', [[3, '3'], [5, '5'], [8, '8'], [10, '10']])}
-      ${select('focusRegion', 'Learn new flags from', [['all', 'Everywhere'], ...REGIONS.map((r) => [r, r] as [string, string])])}
       ${select('answerStyle', 'Answer by', [['auto', 'Mix of picking and typing'], ['choice', 'Picking only'], ['typing', 'Typing only']])}
-      ${select('includePartial', 'Include Kosovo and Taiwan', [[false, 'No'], [true, 'Yes']], 'Partially recognized states')}
     </section>
 
     <h2 class="group-title">Appearance</h2>

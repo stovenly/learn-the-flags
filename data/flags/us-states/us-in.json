@@ -1,0 +1,31 @@
+{
+  "code": "us-in",
+  "isoNumeric": "",
+  "name": "Indiana",
+  "officialName": "State of Indiana",
+  "localNames": [],
+  "aliases": ["IN"],
+  "image": "Flag_of_Indiana.svg",
+  "capital": "Indianapolis",
+  "region": "United States",
+  "subregion": "East North Central",
+  "population": 6785528,
+  "area": 94326,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Hoosier",
+  "latlng": [39.9, -86.3],
+  "facts": [["Nickname", "The Hoosier State"], ["Statehood", "1816"]],
+  "flag": {
+    "description": "A blue field with a gold torch giving off rays, surrounded by an outer ring of 13 gold stars and an inner arc of five, with a larger 19th star above the torch beneath the word INDIANA.",
+    "adopted": "1917",
+    "colors": ["blue", "yellow"],
+    "symbolism": "The torch stands for liberty and enlightenment; the outer 13 stars are the original states, the inner five the next states admitted, and the big star Indiana, the 19th."
+  },
+  "hook": "Indiana is a gold torch in a ring of stars on blue, with one big star labelled INDIANA for the 19th state.",
+  "lookalikes": [],
+  "trivia": [
+    "Paul Hadley designed it for a contest held during the state's centennial in 1916.",
+    "The rays from the torch are meant to show Indiana's far-reaching influence."
+  ]
+}

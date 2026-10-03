@@ -1,0 +1,69 @@
+{
+  "code": "asean",
+  "isoNumeric": "",
+  "name": "ASEAN",
+  "officialName": "Association of Southeast Asian Nations",
+  "localNames": [],
+  "aliases": [
+    "Association of Southeast Asian Nations"
+  ],
+  "image": "Infobox_ASEAN_flag.svg",
+  "capital": "Jakarta",
+  "region": "Asia",
+  "subregion": "Founded 1967",
+  "population": null,
+  "area": null,
+  "languages": [
+    "English"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    -6.24,
+    106.8
+  ],
+  "facts": [
+    [
+      "Founded",
+      "1967"
+    ],
+    [
+      "Members",
+      "11 states"
+    ],
+    [
+      "Headquarters",
+      "Jakarta"
+    ]
+  ],
+  "shape": [
+    "bn",
+    "id",
+    "kh",
+    "la",
+    "mm",
+    "my",
+    "ph",
+    "sg",
+    "th",
+    "tl",
+    "vn"
+  ],
+  "flag": {
+    "description": "A blue field with a red disc edged in white in the centre, holding a bundle of yellow rice stalks tied together.",
+    "adopted": "1997",
+    "colors": [
+      "blue",
+      "red",
+      "white",
+      "yellow"
+    ],
+    "symbolism": "The bound rice stalks stand for the countries of Southeast Asia joined in friendship; blue is peace and stability, red courage, white purity and yellow prosperity."
+  },
+  "hook": "ASEAN is a red disc on blue holding a sheaf of yellow rice stalks tied at the waist, a harvest bundle of Southeast Asian nations.",
+  "lookalikes": [],
+  "trivia": [
+    "ASEAN was founded by the Bangkok Declaration of 8 August 1967, signed by Indonesia, Malaysia, the Philippines, Singapore and Thailand.",
+    "Timor-Leste became the 11th member on 26 October 2025, the first new member since Cambodia in 1999."
+  ]
+}

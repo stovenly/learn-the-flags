@@ -1,0 +1,60 @@
+{
+  "code": "olympics",
+  "isoNumeric": "",
+  "name": "Olympics",
+  "the": true,
+  "officialName": "Olympic flag",
+  "localNames": [],
+  "aliases": [
+    "Olympic flag",
+    "Olympic Games",
+    "Olympic rings",
+    "IOC"
+  ],
+  "image": "Olympic_flag.svg",
+  "capital": "Lausanne",
+  "region": "International",
+  "subregion": "Founded 1894",
+  "population": null,
+  "area": null,
+  "languages": [
+    "French",
+    "English"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    46.52,
+    6.6
+  ],
+  "facts": [
+    [
+      "Founded",
+      "1894"
+    ],
+    [
+      "Headquarters",
+      "Lausanne"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "A white field with five interlocking rings in the centre: blue, black and red on top, yellow and green below.",
+    "adopted": "1914",
+    "colors": [
+      "white",
+      "blue",
+      "yellow",
+      "black",
+      "green",
+      "red"
+    ],
+    "symbolism": "The five rings stand for the union of the five inhabited continents; Pierre de Coubertin said the six colours, white included, could reproduce every national flag of his day."
+  },
+  "hook": "Five linked rings on white, three on top and two below: blue, black and red over yellow and green.",
+  "lookalikes": [],
+  "trivia": [
+    "Pierre de Coubertin designed the flag in 1913, and it was first flown at the Games in Antwerp in 1920.",
+    "At each closing ceremony the flag is handed from the host city's mayor to the mayor of the next host city."
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "code": "cd",
+  "isoNumeric": "180",
+  "name": "DR Congo",
+  "the": true,
+  "officialName": "Democratic Republic of the Congo",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "RD Congo",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Democratic Republic of the Congo",
+    "DRC",
+    "Congo-Kinshasa",
+    "Zaire"
+  ],
+  "status": "un-member",
+  "capital": "Kinshasa",
+  "region": "Africa",
+  "subregion": "Middle Africa",
+  "population": 109276265,
+  "area": 2344858,
+  "languages": [
+    "French",
+    "Kikongo",
+    "Lingala",
+    "Tshiluba",
+    "Swahili"
+  ],
+  "currencies": [
+    {
+      "name": "Congolese franc",
+      "code": "CDF",
+      "symbol": "FC"
+    }
+  ],
+  "demonym": "Congolese",
+  "latlng": [
+    0,
+    25
+  ],
+  "flag": {
+    "description": "A sky-blue field with a red diagonal band, edged in yellow, running from the lower hoist to the upper fly, and a yellow five-pointed star in the upper hoist corner.",
+    "adopted": "2006",
+    "colors": [
+      "light-blue",
+      "red",
+      "yellow"
+    ],
+    "symbolism": "Blue stands for peace, red for the blood of the country's martyrs, yellow for its wealth, and the star for a radiant future."
+  },
+  "hook": "DR Congo has a sky-blue field with a yellow star in the corner; its neighbour Congo-Brazzaville has no blue and no star.",
+  "lookalikes": [
+    "cg",
+    "tz",
+    "na"
+  ],
+  "trivia": [
+    "From 1971 to 1997 the country was called Zaire and flew a green flag showing a hand holding a flaming torch.",
+    "It is the second-largest country in Africa by area, after Algeria."
+  ]
+}

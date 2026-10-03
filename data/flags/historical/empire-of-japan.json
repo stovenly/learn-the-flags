@@ -1,0 +1,72 @@
+{
+  "code": "empire-of-japan",
+  "isoNumeric": "",
+  "name": "Empire of Japan",
+  "the": true,
+  "officialName": "Empire of Great Japan",
+  "localNames": [
+    {
+      "language": "Japanese",
+      "name": "大日本帝国",
+      "romanized": "Dai Nippon Teikoku"
+    }
+  ],
+  "aliases": [
+    "Imperial Japan",
+    "Rising Sun Flag",
+    "Japanese Empire"
+  ],
+  "image": "Naval_ensign_of_Japan_(1889–1945).svg",
+  "capital": "Tokyo",
+  "region": "Asia",
+  "subregion": "1868–1947",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "Japanese",
+  "latlng": [
+    36,
+    138
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1868–1947"
+    ],
+    [
+      "Flag used",
+      "Naval ensign from 1889"
+    ],
+    [
+      "Today",
+      "Japan"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "A white field with a red disc set towards the hoist, from which sixteen red rays spread out to the edges.",
+    "adopted": "1889",
+    "colors": [
+      "white",
+      "red"
+    ],
+    "symbolism": "The red disc is the sun, as on Japan's national flag; the rayed version was the army flag from 1870 and the naval ensign from 1889, while the national flag remained the plain Hinomaru."
+  },
+  "hook": "The Rising Sun Flag, carried by Japan's armed forces during its wars of conquest in Asia, sends sixteen red rays out from an off-centre sun; Japan's national flag, then and now, is the plain red disc.",
+  "lookalikes": [
+    "jp"
+  ],
+  "trivia": [
+    "Japan's Maritime Self-Defense Force has used the same sixteen-ray design as its ensign since 1954.",
+    "The flag is highly controversial in South Korea and China, where many see it as a symbol of Japanese wartime aggression and colonial rule."
+  ]
+}

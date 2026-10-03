@@ -1,0 +1,61 @@
+{
+  "code": "gi",
+  "isoNumeric": "292",
+  "name": "Gibraltar",
+  "officialName": "Gibraltar",
+  "localNames": [],
+  "aliases": [],
+  "image": "Flag_of_Gibraltar.svg",
+  "capital": "Gibraltar",
+  "region": "Southern Europe",
+  "subregion": "British Overseas Territory",
+  "population": 37936,
+  "area": 6.8,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "Gibraltar pound",
+      "code": "GIP",
+      "symbol": "£"
+    }
+  ],
+  "demonym": "Gibraltarian",
+  "latlng": [
+    36.14,
+    -5.35
+  ],
+  "facts": [
+    [
+      "Status",
+      "British Overseas Territory"
+    ],
+    [
+      "Sovereign state",
+      "United Kingdom"
+    ],
+    [
+      "Also claimed by",
+      "Spain"
+    ]
+  ],
+  "flag": {
+    "description": "Two horizontal bands of white over red, the white twice as tall, with a red three-towered castle on the white and a gold key hanging from its gate onto the red.",
+    "adopted": "1982",
+    "colors": [
+      "white",
+      "red",
+      "yellow"
+    ],
+    "symbolism": "The castle and key come from the arms granted to Gibraltar by Spain's Catholic Monarchs in 1502; the key represents Gibraltar as the key to the Mediterranean."
+  },
+  "hook": "Gibraltar is a white-over-red flag like Poland's, but with a red castle sitting on a tall white band and dangling a golden key into the red.",
+  "lookalikes": [
+    "pl"
+  ],
+  "trivia": [
+    "In a 1967 referendum, 12,138 Gibraltarians voted to remain under British sovereignty and 44 voted to pass to Spain.",
+    "Gibraltar is home to Europe's only wild monkeys, the Barbary macaques."
+  ]
+}

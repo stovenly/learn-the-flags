@@ -1,0 +1,64 @@
+{
+  "code": "ky",
+  "isoNumeric": "136",
+  "name": "Cayman Islands",
+  "the": true,
+  "officialName": "Cayman Islands",
+  "localNames": [],
+  "aliases": [
+    "Caymans"
+  ],
+  "image": "Flag_of_the_Cayman_Islands.svg",
+  "capital": "George Town",
+  "region": "Caribbean",
+  "subregion": "British Overseas Territory",
+  "population": 90577,
+  "area": 264,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "Cayman Islands dollar",
+      "code": "KYD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Caymanian",
+  "latlng": [
+    19.5,
+    -80.5
+  ],
+  "facts": [
+    [
+      "Status",
+      "British Overseas Territory"
+    ],
+    [
+      "Sovereign state",
+      "United Kingdom"
+    ]
+  ],
+  "flag": {
+    "description": "A Blue Ensign with the coat of arms in the fly: a shield with a gold lion on red above three green stars on wavy blue and white bars, topped by a green turtle and a pineapple, with a motto scroll beneath.",
+    "adopted": "1999",
+    "colors": [
+      "blue",
+      "red",
+      "white",
+      "green",
+      "yellow"
+    ],
+    "symbolism": "The three stars are Grand Cayman, Cayman Brac and Little Cayman on the Caribbean Sea, the lion represents England, the turtle the islands' seafaring past and the pineapple their historic link with Jamaica."
+  },
+  "hook": "Spot the turtle: the Cayman Islands' badge is crowned by a green turtle and a pineapple, above three green stars floating on the waves.",
+  "lookalikes": [
+    "tc",
+    "vg",
+    "fk"
+  ],
+  "trivia": [
+    "The motto on the scroll, \"He hath founded it upon the seas\", comes from Psalm 24.",
+    "The Spanish first called the islands Las Tortugas after the many turtles in their waters, which is why a turtle sits on top of the arms."
+  ]
+}

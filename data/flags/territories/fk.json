@@ -1,0 +1,69 @@
+{
+  "code": "fk",
+  "isoNumeric": "238",
+  "name": "Falkland Islands",
+  "the": true,
+  "officialName": "Falkland Islands",
+  "localNames": [],
+  "aliases": [
+    "Falklands"
+  ],
+  "image": "Flag_of_the_Falkland_Islands.svg",
+  "capital": "Stanley",
+  "region": "South America",
+  "subregion": "British Overseas Territory",
+  "population": 3662,
+  "area": 12173,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "Falkland Islands pound",
+      "code": "FKP",
+      "symbol": "£"
+    }
+  ],
+  "demonym": "Falkland Islander",
+  "latlng": [
+    -51.75,
+    -59
+  ],
+  "facts": [
+    [
+      "Status",
+      "British Overseas Territory"
+    ],
+    [
+      "Sovereign state",
+      "United Kingdom"
+    ],
+    [
+      "Also claimed by",
+      "Argentina"
+    ]
+  ],
+  "flag": {
+    "description": "A Blue Ensign with the coat of arms in the fly: a white ram standing on green tussock grass above a sailing ship on blue and white waves, with the motto \"Desire the right\" on a scroll.",
+    "adopted": "1999",
+    "colors": [
+      "blue",
+      "red",
+      "white",
+      "green",
+      "yellow",
+      "brown"
+    ],
+    "symbolism": "The ram stands for sheep farming, long the islands' main industry, and the ship is the Desire, in which the English navigator John Davis is said to have sighted the islands in 1592."
+  },
+  "hook": "The Falklands' badge stacks a white ram on top of a sailing ship; Saint Helena also has a ship, but with a small bird above it.",
+  "lookalikes": [
+    "sh",
+    "pn",
+    "ky"
+  ],
+  "trivia": [
+    "The motto \"Desire the right\" is a pun on the name of John Davis's ship, the Desire.",
+    "Sheep outnumber people on the islands by more than a hundred to one."
+  ]
+}

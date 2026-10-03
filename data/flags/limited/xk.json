@@ -1,0 +1,59 @@
+{
+  "code": "xk",
+  "isoNumeric": "",
+  "name": "Kosovo",
+  "officialName": "Republic of Kosovo",
+  "localNames": [
+    {
+      "language": "Albanian",
+      "name": "Kosova",
+      "romanized": ""
+    },
+    {
+      "language": "Serbian",
+      "name": "Косово",
+      "romanized": "Kosovo"
+    }
+  ],
+  "aliases": [],
+  "capital": "Pristina",
+  "region": "Europe",
+  "subregion": "Southeast Europe",
+  "population": 1586659,
+  "area": 10908,
+  "languages": [
+    "Albanian",
+    "Serbian"
+  ],
+  "currencies": [
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
+  ],
+  "demonym": "Kosovar",
+  "latlng": [
+    42.666667,
+    21.166667
+  ],
+  "flag": {
+    "description": "A blue field with a gold map of Kosovo in the centre, under an arc of six white five-pointed stars.",
+    "adopted": "2008",
+    "colors": [
+      "blue",
+      "yellow",
+      "white"
+    ],
+    "symbolism": "The six stars are commonly said to represent Kosovo's main ethnic communities; the blue, gold and stars echo the flag of Europe."
+  },
+  "hook": "A golden map under an arc of six white stars on blue: Kosovo shows its own outline like Cyprus, but on blue instead of white.",
+  "lookalikes": [
+    "ba",
+    "cy"
+  ],
+  "trivia": [
+    "Kosovo and Cyprus are the only countries whose flags show a map of their territory.",
+    "The flag was chosen through a public design competition in 2008 and avoids the symbols of any single ethnic group."
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "code": "zaire",
+  "isoNumeric": "",
+  "name": "Zaire",
+  "officialName": "Republic of Zaire",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "République du Zaïre",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Zaïre",
+    "Republic of Zaire"
+  ],
+  "image": "Flag_of_Zaire_(1971–1997).svg",
+  "capital": "Kinshasa",
+  "region": "Africa",
+  "subregion": "1971–1997",
+  "population": null,
+  "area": null,
+  "languages": [
+    "French"
+  ],
+  "currencies": [
+    {
+      "name": "Zaire",
+      "code": "",
+      "symbol": ""
+    }
+  ],
+  "demonym": "Zairean",
+  "latlng": [
+    -2.5,
+    23.5
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1971–1997"
+    ],
+    [
+      "Flag used",
+      "1971–1997"
+    ],
+    [
+      "Today",
+      "Democratic Republic of the Congo"
+    ]
+  ],
+  "shape": [
+    "cd"
+  ],
+  "flag": {
+    "description": "A green field with a yellow disc in the centre, in which a brown arm and hand hold up a torch with a red flame.",
+    "adopted": "1971",
+    "colors": [
+      "green",
+      "yellow",
+      "red",
+      "brown"
+    ],
+    "symbolism": "The torch was the emblem of the Popular Movement of the Revolution, the ruling and only legal party under Mobutu Sese Seko."
+  },
+  "hook": "Mobutu's Zaire flew a green flag with a yellow disc where a hand raises a flaming torch; the Congo it became flies sky blue with a red diagonal.",
+  "lookalikes": [],
+  "trivia": [
+    "Mobutu also renamed the Congo River the Zaire River, and the national currency was called the zaire.",
+    "When Laurent-Désiré Kabila's forces took Kinshasa in 1997, the country became the Democratic Republic of the Congo again."
+  ]
+}

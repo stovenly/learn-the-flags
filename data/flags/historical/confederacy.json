@@ -1,0 +1,77 @@
+{
+  "code": "confederacy",
+  "isoNumeric": "",
+  "name": "Confederate States",
+  "the": true,
+  "officialName": "Confederate States of America",
+  "localNames": [],
+  "aliases": [
+    "Confederacy",
+    "CSA",
+    "Confederate States of America"
+  ],
+  "image": "Battle_flag_of_the_Confederate_States_of_America_(1-1).svg",
+  "capital": "Richmond",
+  "region": "North America",
+  "subregion": "1861–1865",
+  "population": null,
+  "area": null,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "Confederate States dollar",
+      "code": "",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Confederate",
+  "latlng": [
+    33,
+    -86
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1861–1865"
+    ],
+    [
+      "This flag",
+      "A battle flag, never the national flag"
+    ],
+    [
+      "Today",
+      "Eleven states of the US South"
+    ]
+  ],
+  "shape": [
+    "us-tx",
+    "us-la",
+    "us-ar",
+    "us-ms",
+    "us-al",
+    "us-ga",
+    "us-fl",
+    "us-sc",
+    "us-nc",
+    "us-va",
+    "us-tn"
+  ],
+  "flag": {
+    "description": "A square red field with a blue saltire edged in white, bearing thirteen white five-pointed stars.",
+    "adopted": "1861",
+    "colors": [
+      "red",
+      "blue",
+      "white"
+    ],
+    "symbolism": "The thirteen stars stood for the eleven seceded states plus Kentucky and Missouri, which the Confederacy also claimed."
+  },
+  "hook": "The Confederate battle flag, a starred blue X on red, was carried by the armies of the states that seceded to preserve slavery; it was never the Confederacy's national flag.",
+  "lookalikes": [],
+  "trivia": [
+    "The Confederacy had three successive national flags; the first, the \"Stars and Bars\", had red and white stripes and a blue canton with a circle of stars.",
+    "The battle flag was revived in the 20th century, notably by opponents of the civil rights movement, and is widely seen today as a symbol of slavery and racism."
+  ]
+}

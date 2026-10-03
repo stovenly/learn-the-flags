@@ -1,0 +1,50 @@
+{
+  "code": "us-nv",
+  "isoNumeric": "",
+  "name": "Nevada",
+  "officialName": "State of Nevada",
+  "localNames": [],
+  "aliases": [
+    "NV"
+  ],
+  "image": "Flag_of_Nevada.svg",
+  "capital": "Carson City",
+  "region": "United States",
+  "subregion": "Mountain",
+  "population": 3104614,
+  "area": 286380,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Nevadan",
+  "latlng": [
+    39.3,
+    -116.6
+  ],
+  "facts": [
+    [
+      "Nickname",
+      "The Silver State"
+    ],
+    [
+      "Statehood",
+      "1864"
+    ]
+  ],
+  "flag": {
+    "description": "A cobalt blue field with an emblem in the upper hoist corner: a silver five-pointed star with \"NEVADA\" in gold below it, framed by two sprays of sagebrush, under a gold scroll reading \"Battle Born\".",
+    "adopted": "1991",
+    "colors": [
+      "blue",
+      "white",
+      "yellow",
+      "green"
+    ],
+    "symbolism": "The silver star recalls the state's silver mining, the sagebrush is the state flower, and \"Battle Born\" marks its admission to the Union during the Civil War."
+  },
+  "hook": "Nevada keeps its emblem tucked in the top corner: a silver star with a \"Battle Born\" scroll overhead, not a seal in the middle.",
+  "lookalikes": [],
+  "trivia": [
+    "Nevada became a state on 31 October 1864, during the Civil War, hence the scroll's \"Battle Born\".",
+    "In 1991 the law was corrected to place the letters of \"NEVADA\" below the star; earlier flags had spread them between its points."
+  ]
+}

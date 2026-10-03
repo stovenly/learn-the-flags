@@ -1,0 +1,59 @@
+{
+  "code": "sx",
+  "isoNumeric": "534",
+  "name": "Sint Maarten",
+  "officialName": "Sint Maarten",
+  "localNames": [],
+  "aliases": [],
+  "image": "Flag_of_Sint_Maarten.svg",
+  "capital": "Philipsburg",
+  "region": "Caribbean",
+  "subregion": "Constituent country of the Netherlands",
+  "population": 42000,
+  "area": 34,
+  "languages": [
+    "Dutch",
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "Caribbean guilder",
+      "code": "XCG",
+      "symbol": "Cg"
+    }
+  ],
+  "demonym": "Sint Maartener",
+  "latlng": [
+    18.03,
+    -63.07
+  ],
+  "facts": [
+    [
+      "Status",
+      "Constituent country of the Kingdom of the Netherlands"
+    ],
+    [
+      "Sovereign state",
+      "Kingdom of the Netherlands"
+    ]
+  ],
+  "flag": {
+    "description": "Two equal horizontal bands of red over blue, with a white triangle at the hoist bearing the coat of arms under a rising sun and a pelican.",
+    "adopted": "1985",
+    "colors": [
+      "red",
+      "blue",
+      "white",
+      "yellow"
+    ],
+    "symbolism": "Red, white and blue are the colours of the Netherlands; the arms show the courthouse in Philipsburg, the yellow sage flower and the monument to Dutch-French friendship on the island."
+  },
+  "hook": "Sint Maarten is the Philippines flipped, red on top, blue below, and a coat of arms with a pelican in the white triangle instead of a golden sun and stars.",
+  "lookalikes": [
+    "ph"
+  ],
+  "trivia": [
+    "The island of Saint Martin is shared with France: Dutch Sint Maarten in the south and the French Collectivity of Saint-Martin in the north.",
+    "The motto on the coat of arms is Semper pro grediens, \"always progressing\"."
+  ]
+}

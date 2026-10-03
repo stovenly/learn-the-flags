@@ -1,0 +1,54 @@
+{
+  "code": "us-nh",
+  "isoNumeric": "",
+  "name": "New Hampshire",
+  "officialName": "State of New Hampshire",
+  "localNames": [],
+  "aliases": [
+    "NH"
+  ],
+  "image": "Flag_of_New_Hampshire.svg",
+  "capital": "Concord",
+  "region": "United States",
+  "subregion": "New England",
+  "population": 1377529,
+  "area": 24214,
+  "languages": [],
+  "currencies": [],
+  "demonym": "New Hampshirite",
+  "latlng": [
+    43.7,
+    -71.6
+  ],
+  "facts": [
+    [
+      "Nickname",
+      "The Granite State"
+    ],
+    [
+      "Statehood",
+      "1788"
+    ]
+  ],
+  "flag": {
+    "description": "A blue field with the state seal in the centre: a sailing frigate on the stocks in a harbour at sunrise, with a granite boulder in the foreground, surrounded by a yellow laurel wreath set with nine stars.",
+    "adopted": "1931",
+    "colors": [
+      "blue",
+      "yellow",
+      "white",
+      "brown",
+      "red"
+    ],
+    "symbolism": "The ship is the frigate Raleigh, built at Portsmouth in 1776 for the Continental Navy, and the nine stars mark New Hampshire as the ninth state to ratify the Constitution."
+  },
+  "hook": "New Hampshire's seal shows a ship being built on dry land, ringed by a yellow wreath with nine stars for the ninth state.",
+  "lookalikes": [
+    "us-vt",
+    "us-me"
+  ],
+  "trivia": [
+    "The flag dates from 1909; the seal on it was redrawn in 1931 to show the frigate Raleigh on the stocks.",
+    "New Hampshire's ratification in 1788, as the ninth state, made the Constitution take effect."
+  ]
+}

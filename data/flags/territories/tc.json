@@ -1,0 +1,66 @@
+{
+  "code": "tc",
+  "isoNumeric": "796",
+  "name": "Turks and Caicos Islands",
+  "the": true,
+  "officialName": "Turks and Caicos Islands",
+  "localNames": [],
+  "aliases": [
+    "Turks and Caicos",
+    "TCI"
+  ],
+  "image": "Flag_of_the_Turks_and_Caicos_Islands.svg",
+  "capital": "Cockburn Town",
+  "region": "Caribbean",
+  "subregion": "British Overseas Territory",
+  "population": 50828,
+  "area": 948,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "United States dollar",
+      "code": "USD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Turks and Caicos Islander",
+  "latlng": [
+    21.75,
+    -71.58
+  ],
+  "facts": [
+    [
+      "Status",
+      "British Overseas Territory"
+    ],
+    [
+      "Sovereign state",
+      "United Kingdom"
+    ]
+  ],
+  "flag": {
+    "description": "A Blue Ensign with a yellow shield in the fly bearing a queen conch shell, a spiny lobster and a Turk's cap cactus.",
+    "adopted": "1968",
+    "colors": [
+      "blue",
+      "red",
+      "white",
+      "yellow",
+      "orange",
+      "green"
+    ],
+    "symbolism": "The conch and lobster represent the islands' marine life and fishing, and the Turk's cap cactus, whose red top looks like a fez, gave the Turks Islands their name."
+  },
+  "hook": "Turks and Caicos puts a seafood-and-cactus trio on a plain yellow shield: a conch, a lobster and the fez-topped cactus that named the Turks Islands.",
+  "lookalikes": [
+    "ky",
+    "ai",
+    "vg"
+  ],
+  "trivia": [
+    "Whether the lobster on the badge should have eight or ten legs has long been disputed; the real Caribbean spiny lobster has ten.",
+    "The capital, Cockburn Town, is on Grand Turk, but most of the population lives on Providenciales."
+  ]
+}

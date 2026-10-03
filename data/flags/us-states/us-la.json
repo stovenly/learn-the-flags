@@ -1,0 +1,31 @@
+{
+  "code": "us-la",
+  "isoNumeric": "",
+  "name": "Louisiana",
+  "officialName": "State of Louisiana",
+  "localNames": [],
+  "aliases": ["LA"],
+  "image": "Flag_of_Louisiana.svg",
+  "capital": "Baton Rouge",
+  "region": "United States",
+  "subregion": "West South Central",
+  "population": 4657757,
+  "area": 135659,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Louisianian",
+  "latlng": [31, -92],
+  "facts": [["Nickname", "The Pelican State"], ["Statehood", "1812"]],
+  "flag": {
+    "description": "A blue field with a white mother pelican tearing at her breast to feed three chicks in a nest, with three red drops of blood, above a white ribbon reading UNION JUSTICE CONFIDENCE.",
+    "adopted": "2010",
+    "colors": ["blue", "white", "red", "yellow"],
+    "symbolism": "The \"pelican in her piety\", feeding her young with her own blood, is an old Christian symbol of self-sacrifice, here standing for the state caring for its people."
+  },
+  "hook": "Louisiana is the pelican flag: a white mother bird feeding three chicks on blue, with three drops of red blood.",
+  "lookalikes": [],
+  "trivia": [
+    "The drops of blood had disappeared from official versions over the years; a high-school student noticed, and they were restored in 2010.",
+    "The brown pelican is the state bird, and Louisiana's nickname is \"The Pelican State\"."
+  ]
+}

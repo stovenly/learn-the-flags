@@ -1,0 +1,65 @@
+{
+  "code": "ms",
+  "isoNumeric": "500",
+  "name": "Montserrat",
+  "officialName": "Montserrat",
+  "localNames": [],
+  "aliases": [],
+  "image": "Flag_of_Montserrat.svg",
+  "capital": "Brades",
+  "region": "Caribbean",
+  "subregion": "British Overseas Territory",
+  "population": 4399,
+  "area": 102,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "Eastern Caribbean dollar",
+      "code": "XCD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Montserratian",
+  "latlng": [
+    16.75,
+    -62.2
+  ],
+  "facts": [
+    [
+      "Status",
+      "British Overseas Territory"
+    ],
+    [
+      "Sovereign state",
+      "United Kingdom"
+    ],
+    [
+      "Capital",
+      "Plymouth (de jure, abandoned); Brades (de facto)"
+    ]
+  ],
+  "flag": {
+    "description": "A Blue Ensign with the coat of arms in the fly: a woman in a green dress holding a golden harp and embracing a dark cross.",
+    "adopted": "1960",
+    "colors": [
+      "blue",
+      "red",
+      "white",
+      "green",
+      "yellow",
+      "brown"
+    ],
+    "symbolism": "The woman is Erin, the personification of Ireland, honouring the Irish settlers who came to the island in the 17th century."
+  },
+  "hook": "Montserrat's badge is a woman in green hugging a cross and holding a harp: Ireland's Erin, on the \"Emerald Isle of the Caribbean\".",
+  "lookalikes": [
+    "vg",
+    "ai"
+  ],
+  "trivia": [
+    "St Patrick's Day is a public holiday on Montserrat, which is nicknamed the \"Emerald Isle of the Caribbean\".",
+    "Eruptions of the Soufrière Hills volcano from 1995 buried the capital, Plymouth, which has been abandoned ever since."
+  ]
+}

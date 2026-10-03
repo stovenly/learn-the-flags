@@ -1,0 +1,31 @@
+{
+  "code": "us-al",
+  "isoNumeric": "",
+  "name": "Alabama",
+  "officialName": "State of Alabama",
+  "localNames": [],
+  "aliases": ["AL"],
+  "image": "Flag_of_Alabama.svg",
+  "capital": "Montgomery",
+  "region": "United States",
+  "subregion": "East South Central",
+  "population": 5024279,
+  "area": 135767,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Alabamian",
+  "latlng": [32.8, -86.8],
+  "facts": [["Nickname", "The Yellowhammer State"], ["Statehood", "1819"]],
+  "flag": {
+    "description": "A white field with a crimson saltire (diagonal cross) running from corner to corner.",
+    "adopted": "1895",
+    "colors": ["red", "white"],
+    "symbolism": "The law gives no meaning for the design; the crimson cross is often said to recall the saltire of the Confederate battle flag."
+  },
+  "hook": "Alabama is a bare red X on white with nothing in the middle; put a seal at the crossing and you have Florida.",
+  "lookalikes": ["us-fl"],
+  "trivia": [
+    "The 1895 law says the bars of the cross must be at least six inches wide.",
+    "With no seal, words or stars, it is one of the plainest US state flags."
+  ]
+}

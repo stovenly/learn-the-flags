@@ -1,0 +1,66 @@
+{
+  "code": "ck",
+  "isoNumeric": "184",
+  "name": "Cook Islands",
+  "the": true,
+  "officialName": "Cook Islands",
+  "localNames": [
+    {
+      "language": "Cook Islands Māori",
+      "name": "Kūki 'Āirani",
+      "romanized": ""
+    }
+  ],
+  "aliases": [],
+  "image": "Flag_of_the_Cook_Islands.svg",
+  "capital": "Avarua",
+  "region": "Polynesia",
+  "subregion": "Free association with New Zealand",
+  "population": 15040,
+  "area": 236,
+  "languages": [
+    "English",
+    "Cook Islands Māori"
+  ],
+  "currencies": [
+    {
+      "name": "New Zealand dollar",
+      "code": "NZD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Cook Islander",
+  "latlng": [
+    -21.2,
+    -159.8
+  ],
+  "facts": [
+    [
+      "Status",
+      "Self-governing in free association with New Zealand"
+    ],
+    [
+      "Sovereign state",
+      "Realm of New Zealand"
+    ]
+  ],
+  "flag": {
+    "description": "A dark blue field with the Union Jack in the upper hoist corner and a ring of fifteen white five-pointed stars in the fly.",
+    "adopted": "1979",
+    "colors": [
+      "blue",
+      "white",
+      "red"
+    ],
+    "symbolism": "The fifteen stars stand for the fifteen islands, and the ring for the unity of their people; the Union Jack recalls the link with the United Kingdom and the Commonwealth."
+  },
+  "hook": "The Cook Islands set their stars in a circle: fifteen white stars in a ring, one per island, where New Zealand and Australia scatter theirs as the Southern Cross.",
+  "lookalikes": [
+    "nz",
+    "au"
+  ],
+  "trivia": [
+    "From 1973 to 1979 the flag was green with a ring of fifteen golden stars.",
+    "Cook Islanders are New Zealand citizens, and far more of them live in New Zealand than in the islands."
+  ]
+}

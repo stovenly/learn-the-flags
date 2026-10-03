@@ -1,0 +1,62 @@
+{
+  "code": "vi",
+  "isoNumeric": "850",
+  "name": "U.S. Virgin Islands",
+  "the": true,
+  "officialName": "Virgin Islands of the United States",
+  "localNames": [],
+  "aliases": [
+    "USVI",
+    "United States Virgin Islands",
+    "American Virgin Islands"
+  ],
+  "image": "Flag_of_the_United_States_Virgin_Islands.svg",
+  "capital": "Charlotte Amalie",
+  "region": "Caribbean",
+  "subregion": "U.S. territory",
+  "population": 87146,
+  "area": 346,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "United States dollar",
+      "code": "USD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Virgin Islander",
+  "latlng": [
+    18.35,
+    -64.93
+  ],
+  "facts": [
+    [
+      "Status",
+      "Unincorporated territory of the United States"
+    ],
+    [
+      "Sovereign state",
+      "United States"
+    ]
+  ],
+  "flag": {
+    "description": "A white field with a simplified yellow eagle from the U.S. coat of arms, a red, white and blue shield on its breast, holding a sprig of laurel and three blue arrows, between the blue letters V and I.",
+    "adopted": "1921",
+    "colors": [
+      "white",
+      "yellow",
+      "blue",
+      "red",
+      "green"
+    ],
+    "symbolism": "The three arrows, in place of the thirteen on the U.S. coat of arms, stand for the three main islands of St Croix, St Thomas and St John; the laurel symbolises victory."
+  },
+  "hook": "The U.S. Virgin Islands sign their own flag: a gold eagle on white, flanked by a big blue V and I.",
+  "lookalikes": [],
+  "trivia": [
+    "The United States bought the islands from Denmark in 1917 for $25 million in gold.",
+    "The capital, Charlotte Amalie, is named after a Danish queen, the wife of King Christian V."
+  ]
+}

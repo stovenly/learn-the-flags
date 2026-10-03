@@ -1,0 +1,66 @@
+{
+  "code": "biafra",
+  "isoNumeric": "",
+  "name": "Biafra",
+  "officialName": "Republic of Biafra",
+  "localNames": [],
+  "aliases": [
+    "Republic of Biafra"
+  ],
+  "image": "Flag_of_Biafra.svg",
+  "capital": "Enugu",
+  "region": "Africa",
+  "subregion": "1967–1970",
+  "population": null,
+  "area": null,
+  "languages": [
+    "English",
+    "Igbo"
+  ],
+  "currencies": [
+    {
+      "name": "Biafran pound",
+      "code": "",
+      "symbol": ""
+    }
+  ],
+  "demonym": "Biafran",
+  "latlng": [
+    6,
+    7.5
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1967–1970"
+    ],
+    [
+      "Flag used",
+      "1967–1970"
+    ],
+    [
+      "Today",
+      "Southeastern Nigeria"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "Three equal horizontal stripes of red, black and green, with a yellow rising half sun of eleven rays in the centre of the black stripe.",
+    "adopted": "1967",
+    "colors": [
+      "red",
+      "black",
+      "green",
+      "yellow"
+    ],
+    "symbolism": "Red stood for the blood of Igbo people killed in massacres in northern Nigeria, black for mourning and green for prosperity; the eleven rays represented Biafra's eleven provinces."
+  },
+  "hook": "Biafra, the breakaway state of the 1967–1970 Nigerian Civil War, put a yellow half sun on the black middle stripe of red-black-green; Malawi runs black-red-green with a red sun at the top.",
+  "lookalikes": [
+    "mw"
+  ],
+  "trivia": [
+    "Chimamanda Ngozi Adichie's novel \"Half of a Yellow Sun\", set during the war, takes its title from the flag.",
+    "Estimates of the civilian dead range from about 500,000 to two million, most of them from famine under the Nigerian blockade."
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "code": "as",
+  "isoNumeric": "016",
+  "name": "American Samoa",
+  "officialName": "Territory of American Samoa",
+  "localNames": [
+    {
+      "language": "Samoan",
+      "name": "Amerika Sāmoa",
+      "romanized": ""
+    }
+  ],
+  "aliases": [],
+  "image": "Flag_of_American_Samoa.svg",
+  "capital": "Pago Pago",
+  "region": "Polynesia",
+  "subregion": "U.S. territory",
+  "population": 49710,
+  "area": 199,
+  "languages": [
+    "English",
+    "Samoan"
+  ],
+  "currencies": [
+    {
+      "name": "United States dollar",
+      "code": "USD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "American Samoan",
+  "latlng": [
+    -14.33,
+    -170.7
+  ],
+  "facts": [
+    [
+      "Status",
+      "Unincorporated territory of the United States"
+    ],
+    [
+      "Sovereign state",
+      "United States"
+    ]
+  ],
+  "flag": {
+    "description": "A dark blue field divided by a red-edged white triangle that points to the hoist from a base along the fly, bearing a bald eagle that grips a war club and a fly whisk.",
+    "adopted": "1960",
+    "colors": [
+      "blue",
+      "red",
+      "white",
+      "brown",
+      "yellow"
+    ],
+    "symbolism": "The eagle represents the United States, while the Samoan war club (uatogi) and fly whisk (fue) in its talons stand for the power of the state and the wisdom of Samoan chiefs."
+  },
+  "hook": "American Samoa drives a white wedge into the flagpole, and the American eagle riding it clutches two Samoan chiefly symbols.",
+  "lookalikes": [],
+  "trivia": [
+    "American Samoa is the only inhabited U.S. territory south of the equator.",
+    "People born in American Samoa are U.S. nationals but not automatically U.S. citizens."
+  ]
+}

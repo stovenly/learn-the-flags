@@ -1,0 +1,31 @@
+{
+  "code": "us-mi",
+  "isoNumeric": "",
+  "name": "Michigan",
+  "officialName": "State of Michigan",
+  "localNames": [],
+  "aliases": ["MI"],
+  "image": "Flag_of_Michigan.svg",
+  "capital": "Lansing",
+  "region": "United States",
+  "subregion": "East North Central",
+  "population": 10077331,
+  "area": 250487,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Michigander",
+  "latlng": [44.3, -85.4],
+  "facts": [["Nickname", "The Great Lakes State"], ["Statehood", "1837"]],
+  "flag": {
+    "description": "A dark blue field with the coat of arms: a shield showing a man on a lakeshore under a rising sun, held up by a rearing elk and moose, with a bald eagle on top and Latin mottoes above and below.",
+    "adopted": "1911",
+    "colors": ["blue", "yellow", "white", "red", "brown", "green"],
+    "symbolism": "The shield's motto \"Tuebor\" means \"I will defend\"; the lower motto means \"If you seek a pleasant peninsula, look about you\"."
+  },
+  "hook": "Michigan's seal-on-blue has an elk and a moose rearing up either side of the shield, with a bald eagle perched on top.",
+  "lookalikes": ["us-me", "us-wi"],
+  "trivia": [
+    "Its motto, \"Si quaeris peninsulam amoenam circumspice\", refers to Michigan being made up of two peninsulas.",
+    "The elk and the moose holding up the shield are both animals native to Michigan."
+  ]
+}

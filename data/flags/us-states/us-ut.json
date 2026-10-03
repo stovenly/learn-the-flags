@@ -1,0 +1,50 @@
+{
+  "code": "us-ut",
+  "isoNumeric": "",
+  "name": "Utah",
+  "officialName": "State of Utah",
+  "localNames": [],
+  "aliases": [
+    "UT"
+  ],
+  "image": "Flag_of_Utah.svg",
+  "capital": "Salt Lake City",
+  "region": "United States",
+  "subregion": "Mountain",
+  "population": 3271616,
+  "area": 219882,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Utahn",
+  "latlng": [
+    39.3,
+    -111.7
+  ],
+  "facts": [
+    [
+      "Nickname",
+      "The Beehive State"
+    ],
+    [
+      "Statehood",
+      "1896"
+    ]
+  ],
+  "flag": {
+    "description": "A white field with dark blue across the top, its lower edge cut into five snowy peaks, and a red band across the bottom; in the centre a dark blue hexagon holds a gold beehive above a small white star.",
+    "adopted": "2024",
+    "colors": [
+      "blue",
+      "white",
+      "red",
+      "yellow"
+    ],
+    "symbolism": "The blue stands for the sky, the white peaks for Utah's snow-capped mountains and the red for the red rock of the south, while the beehive represents the state motto, \"Industry\"."
+  },
+  "hook": "Utah traded its old seal on blue for a gold beehive in a blue hexagon, between white mountain peaks and a red-rock band.",
+  "lookalikes": [],
+  "trivia": [
+    "The beehive flag became official on 9 March 2024, chosen after a public design process that drew thousands of submissions.",
+    "The old seal-on-blue flag was not abolished; it was kept as Utah's historic state flag."
+  ]
+}

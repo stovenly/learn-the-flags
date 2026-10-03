@@ -1,0 +1,31 @@
+{
+  "code": "us-az",
+  "isoNumeric": "",
+  "name": "Arizona",
+  "officialName": "State of Arizona",
+  "localNames": [],
+  "aliases": ["AZ"],
+  "image": "Flag_of_Arizona.svg",
+  "capital": "Phoenix",
+  "region": "United States",
+  "subregion": "Mountain",
+  "population": 7151502,
+  "area": 295234,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Arizonan",
+  "latlng": [34.3, -111.7],
+  "facts": [["Nickname", "The Grand Canyon State"], ["Statehood", "1912"]],
+  "flag": {
+    "description": "A blue lower half; the upper half has 13 alternating red and yellow rays fanning out from a copper-coloured star in the centre.",
+    "adopted": "1917",
+    "colors": ["red", "yellow", "blue", "orange"],
+    "symbolism": "The 13 rays recall the original colonies and a western sunset, red and yellow are the colours of Spain, blue matches the US flag, and the copper star stands for the state's copper mining."
+  },
+  "hook": "Arizona is a desert sunset: 13 red and gold rays fanning up from a copper star over a plain blue lower half.",
+  "lookalikes": [],
+  "trivia": [
+    "Arizona is the largest copper-producing state in the US, which is why the star is copper rather than white or gold.",
+    "The design grew out of a banner made for Arizona's rifle team at the 1910 national shooting matches at Camp Perry, Ohio."
+  ]
+}

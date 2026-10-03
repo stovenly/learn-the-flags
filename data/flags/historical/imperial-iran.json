@@ -1,0 +1,76 @@
+{
+  "code": "imperial-iran",
+  "isoNumeric": "",
+  "name": "Imperial Iran",
+  "officialName": "Imperial State of Iran",
+  "localNames": [
+    {
+      "language": "Persian",
+      "name": "کشور شاهنشاهی ایران",
+      "romanized": "Kešvar-e Šâhanšâhi-ye Irân"
+    }
+  ],
+  "aliases": [
+    "Pahlavi Iran",
+    "Imperial State of Iran",
+    "Persia"
+  ],
+  "image": "State_flag_of_Iran_(1964–1980).svg",
+  "capital": "Tehran",
+  "region": "Asia",
+  "subregion": "1925–1979",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Persian"
+  ],
+  "currencies": [
+    {
+      "name": "Iranian rial",
+      "code": "IRR",
+      "symbol": "﷼"
+    }
+  ],
+  "demonym": "Iranian",
+  "latlng": [
+    32,
+    53
+  ],
+  "facts": [
+    [
+      "Pahlavi dynasty",
+      "1925–1979"
+    ],
+    [
+      "Flag used",
+      "1964–1980"
+    ],
+    [
+      "Today",
+      "Iran"
+    ]
+  ],
+  "shape": [
+    "ir"
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of green, white and red, with a gold lion holding a curved sword in front of a rising sun in the centre of the white stripe.",
+    "adopted": "1964",
+    "colors": [
+      "green",
+      "white",
+      "red",
+      "yellow"
+    ],
+    "symbolism": "The lion and sun had been an emblem of Iran for centuries, combining old Persian symbols of royalty and the sun."
+  },
+  "hook": "Imperial Iran is green-white-red with a gold sword-carrying lion before a rising sun; the Islamic Republic swapped it for a red emblem and white script, and Tajikistan reverses the colours.",
+  "lookalikes": [
+    "ir",
+    "tj"
+  ],
+  "trivia": [
+    "After the 1979 revolution the lion and sun was removed, and the current emblem was adopted in 1980.",
+    "The lion-and-sun flag is still widely flown by Iranians abroad and by opponents of the Islamic Republic."
+  ]
+}

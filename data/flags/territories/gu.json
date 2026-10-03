@@ -1,0 +1,69 @@
+{
+  "code": "gu",
+  "isoNumeric": "316",
+  "name": "Guam",
+  "officialName": "Territory of Guam",
+  "localNames": [
+    {
+      "language": "Chamorro",
+      "name": "Guåhan",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Guahan"
+  ],
+  "image": "Flag_of_Guam.svg",
+  "capital": "Hagåtña",
+  "region": "Micronesia",
+  "subregion": "U.S. territory",
+  "population": 153836,
+  "area": 549,
+  "languages": [
+    "English",
+    "Chamorro"
+  ],
+  "currencies": [
+    {
+      "name": "United States dollar",
+      "code": "USD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Guamanian",
+  "latlng": [
+    13.47,
+    144.78
+  ],
+  "facts": [
+    [
+      "Status",
+      "Unincorporated territory of the United States"
+    ],
+    [
+      "Sovereign state",
+      "United States"
+    ]
+  ],
+  "flag": {
+    "description": "A dark blue field with a thin red border and, in the centre, the almond-shaped seal of Guam: a proa sailing in a bay beneath a coconut palm and a cliff, with the word GUAM in red letters.",
+    "adopted": "1948",
+    "colors": [
+      "blue",
+      "red",
+      "light-blue",
+      "green",
+      "brown",
+      "yellow"
+    ],
+    "symbolism": "The seal's almond shape recalls the sling stones of the ancient Chamorro people, and the cliff in the background is Two Lovers Point; the red border is said to represent the blood shed in the Second World War and under earlier Spanish rule."
+  },
+  "hook": "Guam frames its dark blue in a thin red border and spells out GUAM in red on an almond-shaped beach scene; the Northern Mariana Islands has a white star on a grey stone and no words.",
+  "lookalikes": [
+    "mp"
+  ],
+  "trivia": [
+    "The seal at the centre of the flag was designed by Helen Paul, the wife of a U.S. Navy officer stationed on the island.",
+    "The thin red border was a later addition to the original design."
+  ]
+}

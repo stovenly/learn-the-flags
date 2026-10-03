@@ -1,0 +1,31 @@
+{
+  "code": "us-ar",
+  "isoNumeric": "",
+  "name": "Arkansas",
+  "officialName": "State of Arkansas",
+  "localNames": [],
+  "aliases": ["AR"],
+  "image": "Flag_of_Arkansas.svg",
+  "capital": "Little Rock",
+  "region": "United States",
+  "subregion": "West South Central",
+  "population": 3011524,
+  "area": 137732,
+  "languages": [],
+  "currencies": [],
+  "demonym": "Arkansan",
+  "latlng": [34.9, -92.4],
+  "facts": [["Nickname", "The Natural State"], ["Statehood", "1836"]],
+  "flag": {
+    "description": "A red field with a large white diamond edged by a blue band holding 25 white stars; inside the diamond, ARKANSAS in blue with one blue star above it and three below.",
+    "adopted": "1924",
+    "colors": ["red", "white", "blue"],
+    "symbolism": "The diamond marks Arkansas as the only US state where diamonds have been mined, and the 25 stars show it was the 25th state; the three stars below the name stand for Spain, France and the United States, and the star above for the Confederacy."
+  },
+  "hook": "Arkansas frames a big white diamond on red, because it is the one US state with a diamond mine, and writes ARKANSAS across it.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag was designed by Willie Hocker, a member of the Daughters of the American Revolution, and first adopted in 1913.",
+    "Visitors to Crater of Diamonds State Park in Arkansas can dig for diamonds and keep what they find."
+  ]
+}
