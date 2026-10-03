@@ -53,7 +53,7 @@ export function curriculum(list: Country[]): Country[] {
 }
 
 export const flagSrc = (code: string, w: 320 | 640 = 640) => `img/flags/${w}/${code}.webp`;
-export const globeSrc = (code: string) => `img/globes/${code}.svg`;
+export const mapSrc = (code: string) => `img/maps/${code}.svg`;
 
 const imageCache = new Map<string, Promise<void>>();
 function preloadSrc(src: string): Promise<void> {
@@ -67,7 +67,7 @@ function preloadSrc(src: string): Promise<void> {
   return p;
 }
 export const preload = (code: string, w: 320 | 640 = 640) => preloadSrc(flagSrc(code, w));
-export const preloadGlobe = (code: string) => preloadSrc(globeSrc(code));
+export const preloadMap = (code: string) => preloadSrc(mapSrc(code));
 
 export function normalize(s: string): string {
   return s

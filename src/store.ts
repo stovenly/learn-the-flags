@@ -16,10 +16,20 @@ export interface DayLog {
   learned: number;
 }
 
+export interface SessionLog {
+  at: number; // ms epoch, session start
+  ms: number;
+  answered: number;
+  correct: number;
+  learned: string[];
+  missed: string[];
+}
+
 interface State {
   version: 1;
   cards: Record<string, Memory>;
   days: Record<string, DayLog>; // keyed by dayNumber()
+  sessions: SessionLog[]; // newest first
   settings: Settings;
 }
 
@@ -36,9 +46,9 @@ const DEFAULTS: Settings = {
 function load(): State {
   try {
     const s = JSON.parse(localStorage.getItem(KEY) ?? '');
-    if (s?.version === 1) return { ...s, settings: { ...DEFAULTS, ...s.settings } };
+    if (s?.version === 1) return { ...s, sessions: s.sessions ?? [], settings: { ...DEFAULTS, ...s.settings } };
   } catch {}
-  return { version: 1, cards: {}, days: {}, settings: { ...DEFAULTS } };
+  return { version: 1, cards: {}, days: {}, sessions: [], settings: { ...DEFAULTS } };
 }
 
 export const state = load();
@@ -98,6 +108,12 @@ export function streak(): number {
   return n;
 }
 
+export function logSession(log: SessionLog) {
+  state.sessions.unshift(log);
+  state.sessions.length = Math.min(state.sessions.length, 500);
+  save();
+}
+
 export function exportProgress(): string {
   return JSON.stringify(state, null, 2);
 }
@@ -107,6 +123,7 @@ export function importProgress(json: string) {
   if (s?.version !== 1 || typeof s.cards !== 'object') throw new Error('That is not a Learn the Flags progress file.');
   state.cards = s.cards;
   state.days = s.days ?? {};
+  state.sessions = s.sessions ?? [];
   state.settings = { ...DEFAULTS, ...s.settings };
   save();
 }
@@ -114,5 +131,6 @@ export function importProgress(json: string) {
 export function resetProgress() {
   state.cards = {};
   state.days = {};
+  state.sessions = [];
   save();
 }

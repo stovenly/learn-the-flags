@@ -38,11 +38,11 @@ ul{padding-left:20px;margin:0}li{margin-bottom:6px}
 .grid a{color:var(--text);font-size:.88rem;display:flex;flex-direction:column;gap:6px}.grid a:hover{color:var(--accent);text-decoration:none}
 .grid .box{aspect-ratio:3/2;display:grid;place-items:center;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px}
 .grid .flag{width:auto;max-width:100%;max-height:100%}
-.head{display:flex;align-items:center;gap:18px;margin-top:8px}.head p{margin:0}.globe{width:220px;height:220px;flex-shrink:0;filter:drop-shadow(0 2px 6px rgba(20,30,50,.22))}
+.map{display:block;width:100%;height:auto;border-radius:8px}.mapcard{padding:12px}
 .pairs{display:flex;flex-direction:column;gap:14px}.pair{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center;color:var(--text)}.pair:hover{text-decoration:none}.pair .box{aspect-ratio:3/2;display:grid;place-items:center}.pair .flag{width:auto;max-width:100%;max-height:100%}.pair strong{display:block}
 .promo{text-align:center}.promo p{margin:0 0 14px}
 footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85rem;color:var(--muted)}
-@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}.globe{width:132px;height:132px}.pair{grid-template-columns:80px 1fr;gap:12px}}
+@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}.pair{grid-template-columns:80px 1fr;gap:12px}}
 `.trim();
 
 function page({ title, description, canonical, image, depth, body, jsonld }) {
@@ -99,10 +99,9 @@ for (const c of countries) {
   const body = `
 <article>
 <div class="card hero">${img(c, up)}</div>
-<div class="head"><img class="globe" src="${up}img/globes/${c.code}.svg" width="100" height="100" alt="Where ${esc(c.name)} is on the globe"><div>
 <h1>Flag of ${esc(c.name)}</h1>
 <p class="muted">${esc(c.officialName)}${STATUS[c.status] ? ` · ${STATUS[c.status]}` : ''}</p>
-</div></div>
+<div class="card mapcard"><img class="map" src="${up}img/maps/${c.code}.svg" width="150" height="100" alt="Map showing where ${esc(c.name)} is" loading="lazy"></div>
 <section class="card">
 <h2>What the flag looks like</h2>
 <p>${esc(c.flag.description)}</p>

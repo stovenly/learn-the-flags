@@ -1,7 +1,7 @@
-import { ALL, byCode, Country, matchAnswer, preload, preloadGlobe } from '../data';
+import { ALL, byCode, Country, matchAnswer, preload, preloadMap } from '../data';
 import { Again, Easy, Good, Grade, Hard, Memory, review } from '../srs';
-import { save, state, today } from '../store';
-import { $, $$, countryLink, differencesHtml, esc, flagImg, globeImg, lookalikeList, plural, shuffle } from '../ui';
+import { logSession, save, state, today } from '../store';
+import { $, $$, countryLink, differencesHtml, nameLink, esc, flagImg, lookalikeList, mapImg, plural, shuffle } from '../ui';
 import { onCleanup } from '../router';
 
 export type Mode = 'pick-name' | 'pick-flag' | 'type-name';
@@ -104,7 +104,7 @@ function ensureOptions(item: Item) {
 
 function preloadItem(item: Item): Promise<unknown> {
   ensureOptions(item);
-  const jobs = [preload(item.c.code), preloadGlobe(item.c.code)];
+  const jobs = [preload(item.c.code), preloadMap(item.c.code)];
   if (item.kind === 'quiz' && item.mode === 'pick-flag') item.options!.forEach((o) => jobs.push(preload(o.code)));
   if (item.kind === 'intro') lookalikeList(item.c).slice(0, 3).forEach((o) => jobs.push(preload(o.code, 320)));
   return Promise.all(jobs);
@@ -119,6 +119,20 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
   let current: Item | undefined;
   let keyHandler: ((e: KeyboardEvent) => void) | null = null;
   let timer = 0;
+  const startedAt = Date.now();
+  let logged = false;
+  const record = () => {
+    if (logged || !cfg.scheduled || !summary.answered) return;
+    logged = true;
+    logSession({
+      at: startedAt,
+      ms: Date.now() - startedAt,
+      answered: summary.answered,
+      correct: summary.correct,
+      learned: summary.learned.map((c) => c.code),
+      missed: summary.missed.map((c) => c.code),
+    });
+  };
 
   for (const item of queue) {
     if (tracks.has(item.c.code)) continue;
@@ -144,6 +158,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
   onCleanup(() => {
     document.removeEventListener('keydown', onKey);
     clearTimeout(timer);
+    record();
   });
 
   function updateBar() {
@@ -246,13 +261,9 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
       <article class="card intro fade-in">
         <p class="eyebrow">New flag</p>
         <div class="flag-stage">${flagImg(c, { size: 'lg' })}</div>
-        <div class="name-row">
-          ${globeImg(c, 'md')}
-          <div>
-            <h2 class="intro-name">${esc(c.name)}</h2>
-            <p class="muted intro-meta">${esc(c.subregion || c.region)}</p>
-          </div>
-        </div>
+        <h2 class="intro-name">${nameLink(c)}</h2>
+        <p class="muted intro-meta">${esc(c.subregion || c.region)}</p>
+        ${mapImg(c, 'md')}
         ${c.flag.description ? `<p class="intro-desc">${esc(c.flag.description)}</p>` : ''}
         ${c.hook ? `<div class="hook"><span class="hook-label">Memory hook</span><p>${esc(c.hook)}</p></div>` : ''}
         ${
@@ -287,9 +298,10 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
     $('[data-act=next]', stage).focus({ preventScroll: true });
   }
 
-  function feedbackHtml(c: Country, ok: boolean, chosen?: Country, note?: string) {
+  // `withMap` is false when the question itself already shows the map.
+  function feedbackHtml(c: Country, ok: boolean, chosen?: Country, note?: string, withMap = true) {
     if (ok) {
-      return `<div class="feedback ok fb-head">${globeImg(c, 'sm')}<p><strong>Correct</strong> — ${esc(c.name)}${note ? `<span class="muted"> · ${esc(note)}</span>` : ''}</p></div>`;
+      return `<div class="feedback ok fb-head">${withMap ? mapImg(c, 'xs') : ''}<p><strong>Correct</strong> — ${nameLink(c)}${note ? `<span class="muted"> · ${esc(note)}</span>` : ''}</p></div>`;
     }
     const compare = chosen
       ? `<div class="compare">
@@ -299,10 +311,9 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
       : '';
     const tell = chosen ? differencesHtml(c, [chosen]) : '';
     return `<div class="feedback bad">
-        <div class="fb-head">${globeImg(c, 'sm')}<p><strong>It's ${esc(c.name)}.</strong>${chosen ? ` You answered ${esc(chosen.name)}.` : ''}</p></div>
+        <div class="fb-head">${withMap ? mapImg(c, 'sm') : ''}<p><strong>It's ${nameLink(c)}.</strong>${chosen ? ` You answered ${esc(chosen.name)}.` : ''}</p></div>
         ${compare}
         ${tell || (c.hook ? `<div class="hook"><span class="hook-label">Memory hook</span><p>${esc(c.hook)}</p></div>` : '')}
-        <p class="more"><a href="${countryLink(c)}" target="_blank" rel="noopener">More about ${esc(c.name)} ↗</a></p>
       </div>`;
   }
 
@@ -342,7 +353,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
       stage.innerHTML = `
         <article class="card quiz fade-in">
           <p class="eyebrow">Which is the flag of</p>
-          <div class="name-row quiz-name-row">${globeImg(c, 'md')}<h2 class="quiz-name">${esc(c.name)}</h2></div>
+          <h2 class="quiz-name">${esc(c.name)}</h2>${mapImg(c, 'sm')}
           <div class="flag-options">${item
             .options!.map(
               (o, i) =>
@@ -386,7 +397,8 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
             $('.flag-option-name', b).textContent = byCode.get(b.dataset.code!)!.name;
           }
         }
-        slot.innerHTML = feedbackHtml(c, ok, ok ? undefined : chosen);
+        slot.innerHTML = feedbackHtml(c, ok, ok ? undefined : chosen, undefined, item.mode !== 'pick-flag');
+        if (item.mode === 'pick-flag') $('.quiz-name', stage).innerHTML = nameLink(c);
         afterAnswer(item, ok);
       };
       buttons.forEach((b) => b.addEventListener('click', () => choose(b.dataset.code!)));
@@ -434,6 +446,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
 
   function finish() {
     keyHandler = null;
+    record();
     const pct = summary.answered ? Math.round((summary.correct / summary.answered) * 100) : 0;
     const strip = (list: Country[]) =>
       `<div class="mini-grid">${list

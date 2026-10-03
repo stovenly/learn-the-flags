@@ -1,6 +1,6 @@
-import { ALL, fmtNumber, fmtPopulation, preload, preloadGlobe, STATUS_LABEL } from '../data';
+import { ALL, fmtNumber, fmtPopulation, preload, preloadMap, STATUS_LABEL } from '../data';
 import { level } from '../store';
-import { countryLink, esc, flagImg, globeImg, lookalikeList, renderWhenReady } from '../ui';
+import { countryLink, esc, flagImg, lookalikeList, mapImg, renderWhenReady } from '../ui';
 
 const SWATCH: Record<string, string> = {
   red: '#d62828', orange: '#f77f00', yellow: '#fcbf49', green: '#2a9d4b', blue: '#1d4e9e', 'light-blue': '#5fa8e0',
@@ -29,12 +29,11 @@ export function countryView(root: HTMLElement, slug: string) {
     <article class="country">
       <div class="country-flag card">${flagImg(c, { size: 'lg' })}</div>
       <header class="country-head">
-        ${globeImg(c, 'lg')}
-        <div>
-          <h1>${esc(c.name)} ${badge}</h1>
-          <p class="muted">${esc(c.officialName)}${c.status !== 'un-member' ? ` · ${STATUS_LABEL[c.status]}` : ''}</p>
-        </div>
+        <h1>${esc(c.name)} ${badge}</h1>
+        <p class="muted">${esc(c.officialName)}${c.status !== 'un-member' ? ` · ${STATUS_LABEL[c.status]}` : ''}</p>
       </header>
+
+      <section class="card map-card">${mapImg(c, 'lg')}</section>
 
       <section class="card">
         <h2>The flag</h2>
@@ -75,5 +74,5 @@ export function countryView(root: HTMLElement, slug: string) {
           : ''
       }
     </article>`;
-  renderWhenReady(root, html, [preload(c.code), preloadGlobe(c.code)]);
+  renderWhenReady(root, html, [preload(c.code), preloadMap(c.code)]);
 }

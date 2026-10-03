@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node scripts/build-data.mjs && node scripts/build-globes.mjs && vite",
+    "dev": "node scripts/build-data.mjs && node scripts/build-maps.mjs && vite",
     "flags": "node scripts/fetch-flags.mjs",
     "data": "node scripts/build-data.mjs",
-    "globes": "node scripts/build-globes.mjs",
-    "build": "node scripts/build-data.mjs && node scripts/build-globes.mjs && tsc --noEmit && vite build && node scripts/build-pages.mjs",
+    "maps": "node scripts/build-maps.mjs",
+    "build": "node scripts/build-data.mjs && node scripts/build-maps.mjs && tsc --noEmit && vite build && node scripts/build-pages.mjs",
     "preview": "vite preview"
   },
   "devDependencies": {

@@ -41,8 +41,8 @@ Lookalike pairs live in `data/lookalikes.json`, keyed by the two codes in alphab
 ## Other scripts
 
 - `scripts/build-assets.mjs` re-renders the favicon, the touch icon and the `og.png` social preview.
-- `scripts/build-globes.mjs` runs as part of the build. It renders `img/globes/<code>.svg`, a small globe centred and zoomed on each country with it highlighted, from Natural Earth data (`world-atlas`). It matches countries by `isoNumeric`, or by name when that is empty (Kosovo).
+- `scripts/build-maps.mjs` runs as part of the build. It renders `img/maps/<code>.svg`: a regional map zoomed on each country with it highlighted, neighbours labelled where their names fit, and a locator globe inset. Data is Natural Earth via `world-atlas`. Countries are matched by `isoNumeric`, or by name when that is empty (Kosovo).
 - `scripts/build-pages.mjs` runs as part of the build. It writes a static, crawlable page per country (`docs/flags/<slug>/`), the flag index, `sitemap.xml` and `robots.txt`.
 - `site.config.json` holds the site URL, name and description used for SEO tags.
 
-Flag images come from Wikimedia Commons via [flagcdn.com](https://flagcdn.com) and are public domain. Globe outlines come from [Natural Earth](https://www.naturalearthdata.com) (public domain). Base country facts come from [mledoze/countries](https://github.com/mledoze/countries) (ODbL), and population figures from the World Bank.
+Flag images come from Wikimedia Commons via [flagcdn.com](https://flagcdn.com) and are public domain. Map outlines come from [Natural Earth](https://www.naturalearthdata.com) (public domain). Base country facts come from [mledoze/countries](https://github.com/mledoze/countries) (ODbL), and population figures from the World Bank.

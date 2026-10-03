@@ -7,4 +7,4 @@ PLAN*.md
 .DS_Store
 Thumbs.db
 src/generated/
-public/img/globes/
+public/img/maps/

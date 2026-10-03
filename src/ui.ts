@@ -1,4 +1,4 @@
-import { byCode, Country, flagSrc, globeSrc } from './data';
+import { byCode, Country, flagSrc, mapSrc } from './data';
 
 export const esc = (s: unknown) =>
   String(s ?? '').replace(/[&<>"']/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch]!);
@@ -24,8 +24,8 @@ export function flagImg(c: Country, opts: { size?: 'sm' | 'md' | 'lg'; lazy?: bo
   return `<img class="flag flag-${size}${c.transparent ? ' flag-shaped' : ''}" src="${src}"${srcset ? ` srcset="${srcset}"` : ''} width="${w}" height="${h}" alt="${esc(alt)}" style="--ratio:${c.ratio}${lazy && !c.transparent ? `;background-color:${c.color}` : ''}"${lazy ? ' loading="lazy"' : ''} decoding="async" draggable="false">`;
 }
 
-export function globeImg(c: Country, size: 'sm' | 'md' | 'lg' = 'md') {
-  return `<img class="globe globe-${size}" src="${globeSrc(c.code)}" width="100" height="100" alt="Where ${esc(c.name)} is on the globe" decoding="async" draggable="false">`;
+export function mapImg(c: Country, size: 'xs' | 'sm' | 'md' | 'lg' = 'md') {
+  return `<img class="map map-${size}" src="${mapSrc(c.code)}" width="150" height="100" alt="Map showing where ${esc(c.name)} is" decoding="async" draggable="false">`;
 }
 
 export function differencesHtml(c: Country, others: Country[]) {
@@ -34,6 +34,10 @@ export function differencesHtml(c: Country, others: Country[]) {
 }
 
 export const countryLink = (c: Country) => `#/flag/${c.slug}`;
+
+export function nameLink(c: Country) {
+  return `<a class="name-link" href="${countryLink(c)}" target="_blank" rel="noopener" title="Read about ${esc(c.name)} in a new tab">${esc(c.name)}<svg class="ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M7 3H3.5A.5.5 0 0 0 3 3.5v9a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V9M10 3h3v3M13 3 7.5 8.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>`;
+}
 
 export function lookalikeList(c: Country): Country[] {
   return c.lookalikes.map((k) => byCode.get(k)).filter((x): x is Country => !!x);

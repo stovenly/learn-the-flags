@@ -1,0 +1,180 @@
+// Renders public/img/maps/<code>.svg: a regional map zoomed on each country, highlighted, with a locator globe inset.
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { geoArea, geoAzimuthalEqualArea, geoCentroid, geoContains, geoDistance, geoGraticule10, geoOrthographic, geoPath } from 'd3-geo';
+import { feature } from 'topojson-client';
+
+const ROOT = path.resolve(import.meta.dirname, '..');
+const OUT = path.join(ROOT, 'public/img/maps');
+const W = 150; // viewBox units, 3:2
+const H = 100;
+const DEG = Math.PI / 180;
+const MIN_HALF_VIEW = 4.5 * DEG; // never zoom in further than this, so neighbours stay in view
+const MAX_HALF_VIEW = 75 * DEG;
+const NEAR = 0.45; // radians; parts further than this from the main landmass don't steer the view
+
+const load = async (res) => {
+  const topo = JSON.parse(await fs.readFile(path.join(ROOT, `node_modules/world-atlas/countries-${res}.json`), 'utf8'));
+  return feature(topo, topo.objects.countries).features;
+};
+const world50 = await load('50m');
+const world110 = await load('110m');
+const countries = await Promise.all(
+  (await fs.readdir(path.join(ROOT, 'data/countries')))
+    .filter((f) => f.endsWith('.json'))
+    .map(async (f) => JSON.parse(await fs.readFile(path.join(ROOT, 'data/countries', f), 'utf8'))),
+);
+
+const polygons = (f) =>
+  f.geometry.type === 'Polygon' ? [f.geometry.coordinates] : f.geometry.type === 'MultiPolygon' ? f.geometry.coordinates : [];
+const asFeature = (polys) => ({ type: 'Feature', geometry: { type: 'MultiPolygon', coordinates: polys } });
+
+function focus(f) {
+  const parts = polygons(f).map((p) => ({ p, area: geoArea(asFeature([p])), c: geoCentroid(asFeature([p])) }));
+  const main = parts.reduce((a, b) => (b.area > a.area ? b : a));
+  const near = asFeature(parts.filter((x) => geoDistance(x.c, main.c) < NEAR).map((x) => x.p));
+  return { near, center: geoCentroid(near), markAt: main.c };
+}
+
+// Screen-space simplification: drop vertices closer than `tol` units to the last kept one, and specks.
+function simplify(d, tol = 0.6, minSpan = 0.8) {
+  if (!d) return '';
+  const out = [];
+  for (const sub of d.split('M').filter(Boolean)) {
+    const closed = sub.endsWith('Z');
+    const pts = sub.replace(/Z$/, '').split('L').map((p) => p.split(',').map(Number));
+    const kept = [pts[0]];
+    for (const p of pts.slice(1)) {
+      const q = kept[kept.length - 1];
+      if (Math.hypot(p[0] - q[0], p[1] - q[1]) >= tol) kept.push(p);
+    }
+    const xs = kept.map((p) => p[0]), ys = kept.map((p) => p[1]);
+    if (Math.max(...xs) - Math.min(...xs) < minSpan && Math.max(...ys) - Math.min(...ys) < minSpan) continue;
+    if (closed && kept.length < 3) continue;
+    const fmt = (n) => +n.toFixed(1);
+    out.push('M' + kept.map(([x, y]) => `${fmt(x)} ${fmt(y)}`).join('L') + (closed ? 'Z' : ''));
+  }
+  return out.join('');
+}
+
+const FONT = 3.8; // label size in viewBox units
+const textWidth = (t, size) => t.length * size * 0.56;
+const esc = (t) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+const ourName = new Map(countries.map((c) => [c.isoNumeric, c.name]));
+const INSET = { x0: W - 30, y0: H - 30 };
+
+const parseRings = (d) =>
+  d ? d.split('M').filter(Boolean).map((sub) => sub.replace(/Z$/, '').split('L').map((p) => p.split(/[ ,]/).map(Number))) : [];
+
+// Even-odd point-in-polygon over all rings, in screen space (holes such as Lesotho inside South Africa work).
+function inside(rings, x, y) {
+  let c = false;
+  for (const r of rings) {
+    for (let i = 0, j = r.length - 1; i < r.length; j = i++) {
+      const [xi, yi] = r[i], [xj, yj] = r[j];
+      if (yi > y !== yj > y && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) c = !c;
+    }
+  }
+  return c;
+}
+
+// Labels each neighbour where the whole name sits on its land, off the highlighted country, and clear of other labels.
+function labels(base, draw, targetRings, avoid) {
+  const placed = [...avoid];
+  const hits = (r) => placed.some((p) => r.x0 < p.x1 && r.x1 > p.x0 && r.y0 < p.y1 && r.y1 > p.y0);
+  const candidates = [];
+  for (const w of base) {
+    const area = draw.area(w);
+    if (!(area >= 40)) continue;
+    const rings = parseRings(simplify(draw(w), 0.4, 0));
+    if (!rings.length) continue;
+    const [[bx0, by0], [bx1, by1]] = draw.bounds(w);
+    candidates.push({ w, area, rings, box: [Math.max(0, bx0), Math.max(0, by0), Math.min(W, bx1), Math.min(H, by1)] });
+  }
+  candidates.sort((a, b) => b.area - a.area);
+  const out = [];
+  for (const k of candidates) {
+    const [x0, y0, x1, y1] = k.box;
+    const step = Math.max(2, Math.sqrt(((x1 - x0) * (y1 - y0)) / 500));
+    const pts = [];
+    for (let y = y0 + step / 2; y < y1; y += step) for (let x = x0 + step / 2; x < x1; x += step) if (inside(k.rings, x, y)) pts.push([x, y]);
+    if (!pts.length) continue;
+    const mx = pts.reduce((s, p) => s + p[0], 0) / pts.length;
+    const my = pts.reduce((s, p) => s + p[1], 0) / pts.length;
+    pts.sort((a, b) => Math.hypot(a[0] - mx, a[1] - my) - Math.hypot(b[0] - mx, b[1] - my));
+    const names = [ourName.get(k.w.id), k.w.properties.name].filter(Boolean);
+    let done = false;
+    for (const [name, size] of names.flatMap((n) => [[n, FONT], [n, FONT * 0.78]])) {
+      const hw = textWidth(name, size) / 2 + 0.8;
+      for (const [x, y] of pts) {
+        const r = { x0: x - hw, x1: x + hw, y0: y - size * 0.7, y1: y + size * 0.55 };
+        if (r.x0 < 1 || r.x1 > W - 1 || r.y0 < 1 || r.y1 > H - 1 || hits(r)) continue;
+        const probe = [[r.x0, r.y0], [x, r.y0], [r.x1, r.y0], [r.x0, y], [x, y], [r.x1, y], [r.x0, r.y1], [x, r.y1], [r.x1, r.y1]];
+        if (!probe.every(([px, py]) => inside(k.rings, px, py) && !inside(targetRings, px, py))) continue;
+        placed.push(r);
+        const small = size < FONT ? ` font-size="${size.toFixed(2)}"` : '';
+        out.push(`<text x="${x.toFixed(1)}" y="${(y + size * 0.35).toFixed(1)}"${small}>${esc(name)}</text>`);
+        done = true;
+        break;
+      }
+      if (done) break;
+    }
+  }
+  return out.length ? `<g class="n">${out.join('')}</g>` : '';
+}
+
+// Azimuthal equal-area maps a point θ radians from the centre to 2·sin(θ/2)·scale.
+const scaleForHalfView = (theta) => W / 2 / (2 * Math.sin(theta / 2));
+
+function locator(center) {
+  const r = 11, cx = W - r - 4, cy = H - r - 4;
+  const proj = geoOrthographic().rotate([-center[0], -center[1]]).scale(r).translate([cx, cy]).clipAngle(90);
+  const draw = geoPath(proj).digits(1);
+  const land = world110.map((w) => simplify(draw(w), 0.5, 0.6)).join('');
+  return `<circle class="io" cx="${cx}" cy="${cy}" r="${r}"/><path class="il" d="${land}"/><circle class="id" cx="${cx}" cy="${cy}" r="1.7"/><circle class="ir" cx="${cx}" cy="${cy}" r="${r}"/>`;
+}
+
+const STYLE = `<style>.o{fill:#b5d7ef}.g{fill:none;stroke:#fff;stroke-opacity:.45;stroke-width:.3}.l{fill:#f3ecd2;stroke:#ad9f78;stroke-width:.3}.t{fill:#d9302b;stroke:#7a1512;stroke-width:.45}.mh{fill:none;stroke:#fff;stroke-width:3}.m{fill:none;stroke:#d9302b;stroke-width:1.6}.io{fill:#4f93c9}.il{fill:#f3ecd2}.id{fill:#d9302b;stroke:#fff;stroke-width:.6}.ir{fill:none;stroke:#fff;stroke-width:1.2}.n{font:500 ${FONT}px system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;fill:#6b6249;text-anchor:middle;paint-order:stroke;stroke:#f3ecd2;stroke-width:.9;stroke-linejoin:round}</style>`;
+
+await fs.mkdir(OUT, { recursive: true });
+let total = 0;
+for (const c of countries) {
+  const f = world50.find((w) => (c.isoNumeric && w.id === c.isoNumeric) || w.properties.name === c.name);
+  const fallback = [c.latlng[1], c.latlng[0]];
+  const { near, center, markAt } = f ? focus(f) : { near: null, center: fallback, markAt: fallback };
+  const key = (w) => w.id ?? w.properties.name;
+  const isTarget = (w) => !!f && key(w) === key(f);
+
+  const projection = geoAzimuthalEqualArea().rotate([-center[0], -center[1]]);
+  let scale = scaleForHalfView(MIN_HALF_VIEW);
+  if (near) {
+    projection.fitExtent([[W * 0.2, H * 0.17], [W * 0.8, H * 0.83]], near);
+    scale = Math.min(scale, projection.scale());
+  }
+  scale = Math.max(scale, scaleForHalfView(MAX_HALF_VIEW));
+
+  let draw, others, base;
+  // Zoom out until some other land is in view, so remote islands still have context.
+  for (;;) {
+    projection.scale(scale).translate([W / 2, H / 2]).clipExtent([[0, 0], [W, H]]);
+    draw = geoPath(projection).digits(1);
+    base = scale < scaleForHalfView(40 * DEG) ? world110 : world50;
+    others = base.filter((w) => !isTarget(w)).map((w) => simplify(draw(w), 0.4, 0.6)).join('');
+    const land = base.reduce((sum, w) => sum + (isTarget(w) ? 0 : draw.area(w) || 0), 0);
+    if (land > W * H * 0.04 || scale <= scaleForHalfView(MAX_HALF_VIEW)) break;
+    scale /= 1.5;
+  }
+  const target = f ? simplify(draw(f), 0.2, 0) : '';
+  let marker = '';
+  const avoid = [{ x0: INSET.x0, y0: INSET.y0, x1: W, y1: H }];
+  if (!f || draw.area(f) < 12) {
+    const [x, y] = projection(markAt);
+    avoid.push({ x0: x - 8, y0: y - 8, x1: x + 8, y1: y + 8 });
+    marker = `<circle class="mh" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6"/><circle class="m" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6"/>`;
+  }
+  const names = labels(base.filter((w) => !isTarget(w)), draw, parseRings(target), avoid);
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}">${STYLE}<rect class="o" width="${W}" height="${H}"/><path class="g" d="${simplify(draw(geoGraticule10()), 1.5, 0)}"/><path class="l" d="${others}"/>${target ? `<path class="t" d="${target}"/>` : ''}${marker}${names}${locator(center)}</svg>\n`;
+  await fs.writeFile(path.join(OUT, `${c.code}.svg`), svg);
+  total += svg.length;
+}
+console.log(`Wrote ${countries.length} maps (${Math.round(total / 1024)} KB total) to public/img/maps`);
