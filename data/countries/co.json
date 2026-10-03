@@ -3,6 +3,7 @@
   "isoNumeric": "170",
   "name": "Colombia",
   "officialName": "Republic of Colombia",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Bogotá",
@@ -14,7 +15,11 @@
     "Spanish"
   ],
   "currencies": [
-    "Colombian peso"
+    {
+      "name": "Colombian peso",
+      "code": "COP",
+      "symbol": "$"
+    }
   ],
   "demonym": "Colombian",
   "latlng": [

@@ -3,6 +3,13 @@
   "isoNumeric": "050",
   "name": "Bangladesh",
   "officialName": "People's Republic of Bangladesh",
+  "localNames": [
+    {
+      "language": "Bengali",
+      "name": "বাংলাদেশ",
+      "romanized": "Bānglādesh"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Dhaka",
@@ -14,7 +21,11 @@
     "Bengali"
   ],
   "currencies": [
-    "Bangladeshi taka"
+    {
+      "name": "Bangladeshi taka",
+      "code": "BDT",
+      "symbol": "৳"
+    }
   ],
   "demonym": "Bangladeshi",
   "latlng": [

@@ -3,6 +3,13 @@
   "isoNumeric": "372",
   "name": "Ireland",
   "officialName": "Ireland",
+  "localNames": [
+    {
+      "language": "Irish",
+      "name": "Éire",
+      "romanized": ""
+    }
+  ],
   "aliases": [
     "Republic of Ireland",
     "Eire"
@@ -18,7 +25,11 @@
     "Irish"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Irish",
   "latlng": [

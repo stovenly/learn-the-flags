@@ -3,6 +3,13 @@
   "isoNumeric": "203",
   "name": "Czechia",
   "officialName": "Czech Republic",
+  "localNames": [
+    {
+      "language": "Czech",
+      "name": "Česko",
+      "romanized": ""
+    }
+  ],
   "aliases": [
     "Czech Republic"
   ],
@@ -17,7 +24,11 @@
     "Slovak"
   ],
   "currencies": [
-    "Czech koruna"
+    {
+      "name": "Czech koruna",
+      "code": "CZK",
+      "symbol": "Kč"
+    }
   ],
   "demonym": "Czech",
   "latlng": [

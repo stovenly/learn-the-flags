@@ -3,6 +3,13 @@
   "isoNumeric": "548",
   "name": "Vanuatu",
   "officialName": "Republic of Vanuatu",
+  "localNames": [
+    {
+      "language": "Bislama",
+      "name": "Vanuatu",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Port Vila",
@@ -16,7 +23,11 @@
     "French"
   ],
   "currencies": [
-    "Vanuatu vatu"
+    {
+      "name": "Vanuatu vatu",
+      "code": "VUV",
+      "symbol": "Vt"
+    }
   ],
   "demonym": "Ni-Vanuatu",
   "latlng": [

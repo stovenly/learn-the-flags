@@ -3,6 +3,13 @@
   "isoNumeric": "048",
   "name": "Bahrain",
   "officialName": "Kingdom of Bahrain",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "البحرين",
+      "romanized": "al-Baḥrayn"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Manama",
@@ -14,7 +21,11 @@
     "Arabic"
   ],
   "currencies": [
-    "Bahraini dinar"
+    {
+      "name": "Bahraini dinar",
+      "code": "BHD",
+      "symbol": ".د.ب"
+    }
   ],
   "demonym": "Bahraini",
   "latlng": [

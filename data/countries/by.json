@@ -3,6 +3,18 @@
   "isoNumeric": "112",
   "name": "Belarus",
   "officialName": "Republic of Belarus",
+  "localNames": [
+    {
+      "language": "Belarusian",
+      "name": "Беларусь",
+      "romanized": "Bielaruś"
+    },
+    {
+      "language": "Russian",
+      "name": "Беларусь",
+      "romanized": "Belarus"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Minsk",
@@ -15,7 +27,11 @@
     "Russian"
   ],
   "currencies": [
-    "Belarusian ruble"
+    {
+      "name": "Belarusian ruble",
+      "code": "BYN",
+      "symbol": "Br"
+    }
   ],
   "demonym": "Belarusian",
   "latlng": [

@@ -3,6 +3,7 @@
   "isoNumeric": "840",
   "name": "United States",
   "officialName": "United States of America",
+  "localNames": [],
   "aliases": [
     "USA",
     "US",
@@ -19,7 +20,11 @@
     "English"
   ],
   "currencies": [
-    "United States dollar"
+    {
+      "name": "United States dollar",
+      "code": "USD",
+      "symbol": "$"
+    }
   ],
   "demonym": "American",
   "latlng": [

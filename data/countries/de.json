@@ -3,6 +3,13 @@
   "isoNumeric": "276",
   "name": "Germany",
   "officialName": "Federal Republic of Germany",
+  "localNames": [
+    {
+      "language": "German",
+      "name": "Deutschland",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Berlin",
@@ -14,7 +21,11 @@
     "German"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "German",
   "latlng": [

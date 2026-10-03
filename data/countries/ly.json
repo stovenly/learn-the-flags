@@ -3,6 +3,13 @@
   "isoNumeric": "434",
   "name": "Libya",
   "officialName": "State of Libya",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "ليبيا",
+      "romanized": "Lībiyā"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Tripoli",
@@ -14,7 +21,11 @@
     "Arabic"
   ],
   "currencies": [
-    "Libyan dinar"
+    {
+      "name": "Libyan dinar",
+      "code": "LYD",
+      "symbol": "ل.د"
+    }
   ],
   "demonym": "Libyan",
   "latlng": [

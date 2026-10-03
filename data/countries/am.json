@@ -3,6 +3,13 @@
   "isoNumeric": "051",
   "name": "Armenia",
   "officialName": "Republic of Armenia",
+  "localNames": [
+    {
+      "language": "Armenian",
+      "name": "Հայաստան",
+      "romanized": "Hayastan"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Yerevan",
@@ -14,7 +21,11 @@
     "Armenian"
   ],
   "currencies": [
-    "Armenian dram"
+    {
+      "name": "Armenian dram",
+      "code": "AMD",
+      "symbol": "֏"
+    }
   ],
   "demonym": "Armenian",
   "latlng": [

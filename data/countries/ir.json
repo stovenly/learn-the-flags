@@ -3,6 +3,13 @@
   "isoNumeric": "364",
   "name": "Iran",
   "officialName": "Islamic Republic of Iran",
+  "localNames": [
+    {
+      "language": "Persian",
+      "name": "ایران",
+      "romanized": "Īrān"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Tehran",
@@ -14,7 +21,11 @@
     "Persian (Farsi)"
   ],
   "currencies": [
-    "Iranian rial"
+    {
+      "name": "Iranian rial",
+      "code": "IRR",
+      "symbol": "﷼"
+    }
   ],
   "demonym": "Iranian",
   "latlng": [

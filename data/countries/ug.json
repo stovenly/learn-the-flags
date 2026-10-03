@@ -3,6 +3,7 @@
   "isoNumeric": "800",
   "name": "Uganda",
   "officialName": "Republic of Uganda",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Kampala",
@@ -15,7 +16,11 @@
     "Swahili"
   ],
   "currencies": [
-    "Ugandan shilling"
+    {
+      "name": "Ugandan shilling",
+      "code": "UGX",
+      "symbol": "USh"
+    }
   ],
   "demonym": "Ugandan",
   "latlng": [

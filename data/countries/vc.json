@@ -3,6 +3,7 @@
   "isoNumeric": "670",
   "name": "Saint Vincent and the Grenadines",
   "officialName": "Saint Vincent and the Grenadines",
+  "localNames": [],
   "aliases": [
     "St Vincent and the Grenadines",
     "St Vincent"
@@ -17,7 +18,11 @@
     "English"
   ],
   "currencies": [
-    "Eastern Caribbean dollar"
+    {
+      "name": "Eastern Caribbean dollar",
+      "code": "XCD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Saint Vincentian",
   "latlng": [

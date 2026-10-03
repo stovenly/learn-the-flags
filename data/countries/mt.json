@@ -3,6 +3,7 @@
   "isoNumeric": "470",
   "name": "Malta",
   "officialName": "Republic of Malta",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Valletta",
@@ -15,7 +16,11 @@
     "Maltese"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Maltese",
   "latlng": [

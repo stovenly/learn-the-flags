@@ -3,6 +3,7 @@
   "isoNumeric": "558",
   "name": "Nicaragua",
   "officialName": "Republic of Nicaragua",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Managua",
@@ -14,7 +15,11 @@
     "Spanish"
   ],
   "currencies": [
-    "Nicaraguan córdoba"
+    {
+      "name": "Nicaraguan córdoba",
+      "code": "NIO",
+      "symbol": "C$"
+    }
   ],
   "demonym": "Nicaraguan",
   "latlng": [

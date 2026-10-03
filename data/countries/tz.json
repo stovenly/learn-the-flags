@@ -3,6 +3,13 @@
   "isoNumeric": "834",
   "name": "Tanzania",
   "officialName": "United Republic of Tanzania",
+  "localNames": [
+    {
+      "language": "Swahili",
+      "name": "Tanzania",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Dodoma",
@@ -15,7 +22,11 @@
     "Swahili"
   ],
   "currencies": [
-    "Tanzanian shilling"
+    {
+      "name": "Tanzanian shilling",
+      "code": "TZS",
+      "symbol": "TSh"
+    }
   ],
   "demonym": "Tanzanian",
   "latlng": [

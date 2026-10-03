@@ -3,6 +3,13 @@
   "isoNumeric": "384",
   "name": "Ivory Coast",
   "officialName": "Republic of Côte d'Ivoire",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "Côte d'Ivoire",
+      "romanized": ""
+    }
+  ],
   "aliases": [
     "Côte d'Ivoire"
   ],
@@ -16,7 +23,11 @@
     "French"
   ],
   "currencies": [
-    "West African CFA franc"
+    {
+      "name": "West African CFA franc",
+      "code": "XOF",
+      "symbol": "FCFA"
+    }
   ],
   "demonym": "Ivorian",
   "latlng": [

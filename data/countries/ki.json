@@ -3,6 +3,7 @@
   "isoNumeric": "296",
   "name": "Kiribati",
   "officialName": "Independent and Sovereign Republic of Kiribati",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "South Tarawa",
@@ -15,8 +16,16 @@
     "Gilbertese"
   ],
   "currencies": [
-    "Australian dollar",
-    "Kiribati dollar"
+    {
+      "name": "Australian dollar",
+      "code": "AUD",
+      "symbol": "$"
+    },
+    {
+      "name": "Kiribati dollar",
+      "code": "KID",
+      "symbol": "$"
+    }
   ],
   "demonym": "I-Kiribati",
   "latlng": [

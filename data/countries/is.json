@@ -3,6 +3,13 @@
   "isoNumeric": "352",
   "name": "Iceland",
   "officialName": "Iceland",
+  "localNames": [
+    {
+      "language": "Icelandic",
+      "name": "Ísland",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Reykjavik",
@@ -14,7 +21,11 @@
     "Icelandic"
   ],
   "currencies": [
-    "Icelandic króna"
+    {
+      "name": "Icelandic króna",
+      "code": "ISK",
+      "symbol": "kr"
+    }
   ],
   "demonym": "Icelander",
   "latlng": [

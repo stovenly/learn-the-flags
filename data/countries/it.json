@@ -3,6 +3,13 @@
   "isoNumeric": "380",
   "name": "Italy",
   "officialName": "Italian Republic",
+  "localNames": [
+    {
+      "language": "Italian",
+      "name": "Italia",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Rome",
@@ -14,7 +21,11 @@
     "Italian"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Italian",
   "latlng": [

@@ -3,6 +3,13 @@
   "isoNumeric": "104",
   "name": "Myanmar",
   "officialName": "Republic of the Union of Myanmar",
+  "localNames": [
+    {
+      "language": "Burmese",
+      "name": "မြန်မာ",
+      "romanized": "Myanma"
+    }
+  ],
   "aliases": [
     "Burma"
   ],
@@ -16,7 +23,11 @@
     "Burmese"
   ],
   "currencies": [
-    "Burmese kyat"
+    {
+      "name": "Burmese kyat",
+      "code": "MMK",
+      "symbol": "Ks"
+    }
   ],
   "demonym": "Burmese",
   "latlng": [

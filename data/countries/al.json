@@ -3,6 +3,13 @@
   "isoNumeric": "008",
   "name": "Albania",
   "officialName": "Republic of Albania",
+  "localNames": [
+    {
+      "language": "Albanian",
+      "name": "Shqipëria",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Tirana",
@@ -14,7 +21,11 @@
     "Albanian"
   ],
   "currencies": [
-    "Albanian lek"
+    {
+      "name": "Albanian lek",
+      "code": "ALL",
+      "symbol": "L"
+    }
   ],
   "demonym": "Albanian",
   "latlng": [

@@ -3,6 +3,13 @@
   "isoNumeric": "462",
   "name": "Maldives",
   "officialName": "Republic of the Maldives",
+  "localNames": [
+    {
+      "language": "Dhivehi",
+      "name": "ދިވެހިރާއްޖެ",
+      "romanized": "Dhivehi Raajje"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Malé",
@@ -14,7 +21,11 @@
     "Maldivian"
   ],
   "currencies": [
-    "Maldivian rufiyaa"
+    {
+      "name": "Maldivian rufiyaa",
+      "code": "MVR",
+      "symbol": "Rf"
+    }
   ],
   "demonym": "Maldivan",
   "latlng": [

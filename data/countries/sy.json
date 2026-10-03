@@ -3,6 +3,13 @@
   "isoNumeric": "760",
   "name": "Syria",
   "officialName": "Syrian Arab Republic",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "سوريا",
+      "romanized": "Sūriyā"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Damascus",
@@ -14,7 +21,11 @@
     "Arabic"
   ],
   "currencies": [
-    "Syrian pound"
+    {
+      "name": "Syrian pound",
+      "code": "SYP",
+      "symbol": "ل.س"
+    }
   ],
   "demonym": "Syrian",
   "latlng": [

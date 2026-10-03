@@ -3,6 +3,13 @@
   "isoNumeric": "031",
   "name": "Azerbaijan",
   "officialName": "Republic of Azerbaijan",
+  "localNames": [
+    {
+      "language": "Azerbaijani",
+      "name": "Azərbaycan",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Baku",
@@ -15,7 +22,11 @@
     "Russian"
   ],
   "currencies": [
-    "Azerbaijani manat"
+    {
+      "name": "Azerbaijani manat",
+      "code": "AZN",
+      "symbol": "₼"
+    }
   ],
   "demonym": "Azerbaijani",
   "latlng": [

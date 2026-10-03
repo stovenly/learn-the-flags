@@ -3,6 +3,13 @@
   "isoNumeric": "608",
   "name": "Philippines",
   "officialName": "Republic of the Philippines",
+  "localNames": [
+    {
+      "language": "Filipino",
+      "name": "Pilipinas",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Manila",
@@ -15,7 +22,11 @@
     "Filipino"
   ],
   "currencies": [
-    "Philippine peso"
+    {
+      "name": "Philippine peso",
+      "code": "PHP",
+      "symbol": "₱"
+    }
   ],
   "demonym": "Filipino",
   "latlng": [

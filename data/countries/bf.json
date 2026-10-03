@@ -3,6 +3,7 @@
   "isoNumeric": "854",
   "name": "Burkina Faso",
   "officialName": "Burkina Faso",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Ouagadougou",
@@ -14,7 +15,11 @@
     "French"
   ],
   "currencies": [
-    "West African CFA franc"
+    {
+      "name": "West African CFA franc",
+      "code": "XOF",
+      "symbol": "FCFA"
+    }
   ],
   "demonym": "Burkinabe",
   "latlng": [

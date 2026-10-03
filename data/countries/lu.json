@@ -3,6 +3,23 @@
   "isoNumeric": "442",
   "name": "Luxembourg",
   "officialName": "Grand Duchy of Luxembourg",
+  "localNames": [
+    {
+      "language": "Luxembourgish",
+      "name": "Lëtzebuerg",
+      "romanized": ""
+    },
+    {
+      "language": "French",
+      "name": "Luxembourg",
+      "romanized": ""
+    },
+    {
+      "language": "German",
+      "name": "Luxemburg",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Luxembourg",
@@ -16,7 +33,11 @@
     "Luxembourgish"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Luxembourger",
   "latlng": [

@@ -3,6 +3,13 @@
   "isoNumeric": "108",
   "name": "Burundi",
   "officialName": "Republic of Burundi",
+  "localNames": [
+    {
+      "language": "Kirundi",
+      "name": "Uburundi",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Gitega",
@@ -15,7 +22,11 @@
     "Kirundi"
   ],
   "currencies": [
-    "Burundian franc"
+    {
+      "name": "Burundian franc",
+      "code": "BIF",
+      "symbol": "FBu"
+    }
   ],
   "demonym": "Burundian",
   "latlng": [

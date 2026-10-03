@@ -3,6 +3,7 @@
   "isoNumeric": "438",
   "name": "Liechtenstein",
   "officialName": "Principality of Liechtenstein",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Vaduz",
@@ -14,7 +15,11 @@
     "German"
   ],
   "currencies": [
-    "Swiss franc"
+    {
+      "name": "Swiss franc",
+      "code": "CHF",
+      "symbol": "Fr"
+    }
   ],
   "demonym": "Liechtensteiner",
   "latlng": [

@@ -3,6 +3,13 @@
   "isoNumeric": "624",
   "name": "Guinea-Bissau",
   "officialName": "Republic of Guinea-Bissau",
+  "localNames": [
+    {
+      "language": "Portuguese",
+      "name": "Guiné-Bissau",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Bissau",
@@ -15,7 +22,11 @@
     "Upper Guinea Creole"
   ],
   "currencies": [
-    "West African CFA franc"
+    {
+      "name": "West African CFA franc",
+      "code": "XOF",
+      "symbol": "FCFA"
+    }
   ],
   "demonym": "Guinea-Bissauan",
   "latlng": [

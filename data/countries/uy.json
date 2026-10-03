@@ -3,6 +3,13 @@
   "isoNumeric": "858",
   "name": "Uruguay",
   "officialName": "Oriental Republic of Uruguay",
+  "localNames": [
+    {
+      "language": "Spanish",
+      "name": "Uruguay",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Montevideo",
@@ -14,7 +21,11 @@
     "Spanish"
   ],
   "currencies": [
-    "Uruguayan peso"
+    {
+      "name": "Uruguayan peso",
+      "code": "UYU",
+      "symbol": "$"
+    }
   ],
   "demonym": "Uruguayan",
   "latlng": [

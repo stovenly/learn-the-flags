@@ -3,6 +3,7 @@
   "isoNumeric": "659",
   "name": "Saint Kitts and Nevis",
   "officialName": "Federation of Saint Christopher and Nevis",
+  "localNames": [],
   "aliases": [
     "St Kitts and Nevis",
     "Saint Christopher and Nevis",
@@ -18,7 +19,11 @@
     "English"
   ],
   "currencies": [
-    "Eastern Caribbean dollar"
+    {
+      "name": "Eastern Caribbean dollar",
+      "code": "XCD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Kittitian or Nevisian",
   "latlng": [

@@ -3,6 +3,13 @@
   "isoNumeric": "400",
   "name": "Jordan",
   "officialName": "Hashemite Kingdom of Jordan",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "الأردن",
+      "romanized": "al-Urdunn"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Amman",
@@ -14,7 +21,11 @@
     "Arabic"
   ],
   "currencies": [
-    "Jordanian dinar"
+    {
+      "name": "Jordanian dinar",
+      "code": "JOD",
+      "symbol": "د.ا"
+    }
   ],
   "demonym": "Jordanian",
   "latlng": [

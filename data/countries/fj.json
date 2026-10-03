@@ -3,6 +3,18 @@
   "isoNumeric": "242",
   "name": "Fiji",
   "officialName": "Republic of Fiji",
+  "localNames": [
+    {
+      "language": "Fijian",
+      "name": "Viti",
+      "romanized": ""
+    },
+    {
+      "language": "Fiji Hindi",
+      "name": "फिजी",
+      "romanized": "Fijī"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Suva",
@@ -16,7 +28,11 @@
     "Fiji Hindi"
   ],
   "currencies": [
-    "Fijian dollar"
+    {
+      "name": "Fijian dollar",
+      "code": "FJD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Fijian",
   "latlng": [

@@ -3,6 +3,7 @@
   "isoNumeric": "780",
   "name": "Trinidad and Tobago",
   "officialName": "Republic of Trinidad and Tobago",
+  "localNames": [],
   "aliases": [
     "Trinidad"
   ],
@@ -16,7 +17,11 @@
     "English"
   ],
   "currencies": [
-    "Trinidad and Tobago dollar"
+    {
+      "name": "Trinidad and Tobago dollar",
+      "code": "TTD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Trinidadian",
   "latlng": [

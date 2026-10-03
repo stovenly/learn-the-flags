@@ -3,6 +3,13 @@
   "isoNumeric": "528",
   "name": "Netherlands",
   "officialName": "Kingdom of the Netherlands",
+  "localNames": [
+    {
+      "language": "Dutch",
+      "name": "Nederland",
+      "romanized": ""
+    }
+  ],
   "aliases": [
     "Holland"
   ],
@@ -16,7 +23,11 @@
     "Dutch"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Dutch",
   "latlng": [

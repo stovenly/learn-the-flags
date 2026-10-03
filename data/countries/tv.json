@@ -3,6 +3,13 @@
   "isoNumeric": "798",
   "name": "Tuvalu",
   "officialName": "Tuvalu",
+  "localNames": [
+    {
+      "language": "Tuvaluan",
+      "name": "Tuvalu",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Funafuti",
@@ -15,8 +22,16 @@
     "Tuvaluan"
   ],
   "currencies": [
-    "Australian dollar",
-    "Tuvaluan dollar"
+    {
+      "name": "Australian dollar",
+      "code": "AUD",
+      "symbol": "$"
+    },
+    {
+      "name": "Tuvaluan dollar",
+      "code": "TVD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Tuvaluan",
   "latlng": [

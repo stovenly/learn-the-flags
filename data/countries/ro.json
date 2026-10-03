@@ -3,6 +3,13 @@
   "isoNumeric": "642",
   "name": "Romania",
   "officialName": "Romania",
+  "localNames": [
+    {
+      "language": "Romanian",
+      "name": "România",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Bucharest",
@@ -14,7 +21,11 @@
     "Romanian"
   ],
   "currencies": [
-    "Romanian leu"
+    {
+      "name": "Romanian leu",
+      "code": "RON",
+      "symbol": "lei"
+    }
   ],
   "demonym": "Romanian",
   "latlng": [

@@ -3,6 +3,13 @@
   "isoNumeric": "418",
   "name": "Laos",
   "officialName": "Lao People's Democratic Republic",
+  "localNames": [
+    {
+      "language": "Lao",
+      "name": "ລາວ",
+      "romanized": "Lao"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Vientiane",
@@ -14,7 +21,11 @@
     "Lao"
   ],
   "currencies": [
-    "Lao kip"
+    {
+      "name": "Lao kip",
+      "code": "LAK",
+      "symbol": "₭"
+    }
   ],
   "demonym": "Laotian",
   "latlng": [

@@ -3,6 +3,7 @@
   "isoNumeric": "266",
   "name": "Gabon",
   "officialName": "Gabonese Republic",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Libreville",
@@ -14,7 +15,11 @@
     "French"
   ],
   "currencies": [
-    "Central African CFA franc"
+    {
+      "name": "Central African CFA franc",
+      "code": "XAF",
+      "symbol": "FCFA"
+    }
   ],
   "demonym": "Gabonese",
   "latlng": [

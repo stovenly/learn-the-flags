@@ -3,6 +3,13 @@
   "isoNumeric": "784",
   "name": "United Arab Emirates",
   "officialName": "United Arab Emirates",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "الإمارات",
+      "romanized": "al-Imārāt"
+    }
+  ],
   "aliases": [
     "UAE",
     "Emirates"
@@ -17,7 +24,11 @@
     "Arabic"
   ],
   "currencies": [
-    "United Arab Emirates dirham"
+    {
+      "name": "United Arab Emirates dirham",
+      "code": "AED",
+      "symbol": "د.إ"
+    }
   ],
   "demonym": "Emirati",
   "latlng": [

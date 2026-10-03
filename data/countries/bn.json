@@ -3,6 +3,13 @@
   "isoNumeric": "096",
   "name": "Brunei",
   "officialName": "Nation of Brunei, Abode of Peace",
+  "localNames": [
+    {
+      "language": "Malay",
+      "name": "Brunei Darussalam",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Bandar Seri Begawan",
@@ -14,8 +21,16 @@
     "Malay"
   ],
   "currencies": [
-    "Brunei dollar",
-    "Singapore dollar"
+    {
+      "name": "Brunei dollar",
+      "code": "BND",
+      "symbol": "$"
+    },
+    {
+      "name": "Singapore dollar",
+      "code": "SGD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Bruneian",
   "latlng": [

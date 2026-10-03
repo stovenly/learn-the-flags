@@ -3,6 +3,13 @@
   "isoNumeric": "410",
   "name": "South Korea",
   "officialName": "Republic of Korea",
+  "localNames": [
+    {
+      "language": "Korean",
+      "name": "한국",
+      "romanized": "Hanguk"
+    }
+  ],
   "aliases": [
     "Korea"
   ],
@@ -16,7 +23,11 @@
     "Korean"
   ],
   "currencies": [
-    "South Korean won"
+    {
+      "name": "South Korean won",
+      "code": "KRW",
+      "symbol": "₩"
+    }
   ],
   "demonym": "South Korean",
   "latlng": [

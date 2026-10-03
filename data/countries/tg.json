@@ -3,6 +3,13 @@
   "isoNumeric": "768",
   "name": "Togo",
   "officialName": "Togolese Republic",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "Togo",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Lomé",
@@ -14,7 +21,11 @@
     "French"
   ],
   "currencies": [
-    "West African CFA franc"
+    {
+      "name": "West African CFA franc",
+      "code": "XOF",
+      "symbol": "FCFA"
+    }
   ],
   "demonym": "Togolese",
   "latlng": [

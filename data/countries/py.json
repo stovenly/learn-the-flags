@@ -3,6 +3,18 @@
   "isoNumeric": "600",
   "name": "Paraguay",
   "officialName": "Republic of Paraguay",
+  "localNames": [
+    {
+      "language": "Spanish",
+      "name": "Paraguay",
+      "romanized": ""
+    },
+    {
+      "language": "Guaraní",
+      "name": "Paraguái",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Asunción",
@@ -15,7 +27,11 @@
     "Spanish"
   ],
   "currencies": [
-    "Paraguayan guaraní"
+    {
+      "name": "Paraguayan guaraní",
+      "code": "PYG",
+      "symbol": "₲"
+    }
   ],
   "demonym": "Paraguayan",
   "latlng": [

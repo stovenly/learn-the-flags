@@ -3,6 +3,18 @@
   "isoNumeric": "368",
   "name": "Iraq",
   "officialName": "Republic of Iraq",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "العراق",
+      "romanized": "al-ʿIrāq"
+    },
+    {
+      "language": "Kurdish",
+      "name": "عێراق",
+      "romanized": "Êraq"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Baghdad",
@@ -16,7 +28,11 @@
     "Sorani"
   ],
   "currencies": [
-    "Iraqi dinar"
+    {
+      "name": "Iraqi dinar",
+      "code": "IQD",
+      "symbol": "ع.د"
+    }
   ],
   "demonym": "Iraqi",
   "latlng": [

@@ -3,6 +3,7 @@
   "isoNumeric": "492",
   "name": "Monaco",
   "officialName": "Principality of Monaco",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Monaco",
@@ -14,7 +15,11 @@
     "French"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Monegasque",
   "latlng": [

@@ -3,6 +3,13 @@
   "isoNumeric": "214",
   "name": "Dominican Republic",
   "officialName": "Dominican Republic",
+  "localNames": [
+    {
+      "language": "Spanish",
+      "name": "República Dominicana",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Santo Domingo",
@@ -14,7 +21,11 @@
     "Spanish"
   ],
   "currencies": [
-    "Dominican peso"
+    {
+      "name": "Dominican peso",
+      "code": "DOP",
+      "symbol": "$"
+    }
   ],
   "demonym": "Dominican",
   "latlng": [

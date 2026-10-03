@@ -3,6 +3,13 @@
   "isoNumeric": "887",
   "name": "Yemen",
   "officialName": "Republic of Yemen",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "اليمن",
+      "romanized": "al-Yaman"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Sana'a",
@@ -14,7 +21,11 @@
     "Arabic"
   ],
   "currencies": [
-    "Yemeni rial"
+    {
+      "name": "Yemeni rial",
+      "code": "YER",
+      "symbol": "﷼"
+    }
   ],
   "demonym": "Yemeni",
   "latlng": [

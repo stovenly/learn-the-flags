@@ -3,6 +3,13 @@
   "isoNumeric": "818",
   "name": "Egypt",
   "officialName": "Arab Republic of Egypt",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "مصر",
+      "romanized": "Miṣr"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Cairo",
@@ -14,7 +21,11 @@
     "Arabic"
   ],
   "currencies": [
-    "Egyptian pound"
+    {
+      "name": "Egyptian pound",
+      "code": "EGP",
+      "symbol": "ج.م"
+    }
   ],
   "demonym": "Egyptian",
   "latlng": [

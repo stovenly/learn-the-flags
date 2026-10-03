@@ -3,6 +3,18 @@
   "isoNumeric": "706",
   "name": "Somalia",
   "officialName": "Federal Republic of Somalia",
+  "localNames": [
+    {
+      "language": "Somali",
+      "name": "Soomaaliya",
+      "romanized": ""
+    },
+    {
+      "language": "Arabic",
+      "name": "الصومال",
+      "romanized": "aṣ-Ṣūmāl"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Mogadishu",
@@ -15,7 +27,11 @@
     "Somali"
   ],
   "currencies": [
-    "Somali shilling"
+    {
+      "name": "Somali shilling",
+      "code": "SOS",
+      "symbol": "Sh"
+    }
   ],
   "demonym": "Somali",
   "latlng": [

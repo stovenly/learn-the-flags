@@ -3,6 +3,13 @@
   "isoNumeric": "120",
   "name": "Cameroon",
   "officialName": "Republic of Cameroon",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "Cameroun",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Yaoundé",
@@ -15,7 +22,11 @@
     "French"
   ],
   "currencies": [
-    "Central African CFA franc"
+    {
+      "name": "Central African CFA franc",
+      "code": "XAF",
+      "symbol": "FCFA"
+    }
   ],
   "demonym": "Cameroonian",
   "latlng": [

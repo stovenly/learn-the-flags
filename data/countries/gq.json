@@ -3,6 +3,13 @@
   "isoNumeric": "226",
   "name": "Equatorial Guinea",
   "officialName": "Republic of Equatorial Guinea",
+  "localNames": [
+    {
+      "language": "Spanish",
+      "name": "Guinea Ecuatorial",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Ciudad de la Paz (Malabo during the transition)",
@@ -16,7 +23,11 @@
     "Spanish"
   ],
   "currencies": [
-    "Central African CFA franc"
+    {
+      "name": "Central African CFA franc",
+      "code": "XAF",
+      "symbol": "FCFA"
+    }
   ],
   "demonym": "Equatorial Guinean",
   "latlng": [

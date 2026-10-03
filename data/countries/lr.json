@@ -3,6 +3,7 @@
   "isoNumeric": "430",
   "name": "Liberia",
   "officialName": "Republic of Liberia",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Monrovia",
@@ -14,7 +15,11 @@
     "English"
   ],
   "currencies": [
-    "Liberian dollar"
+    {
+      "name": "Liberian dollar",
+      "code": "LRD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Liberian",
   "latlng": [

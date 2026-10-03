@@ -1,7 +1,9 @@
-// Renders public/img/maps/<code>.svg: a regional map zoomed on each country, highlighted, with a locator globe inset.
+// Renders public/img/maps/<code>.svg: a regional map zoomed on each country, highlighted, neighbours labelled with their
+// flags, and a locator globe inset. maps/plain/<code>.svg leaves out neighbour flags, for questions they'd give away.
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { geoArea, geoAzimuthalEqualArea, geoCentroid, geoContains, geoDistance, geoGraticule10, geoOrthographic, geoPath } from 'd3-geo';
+import sharp from 'sharp';
 import { feature } from 'topojson-client';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
@@ -78,10 +80,19 @@ function inside(rings, x, y) {
   return c;
 }
 
-// Labels each neighbour where the whole name sits on its land, off the highlighted country, and clear of other labels.
-function labels(base, draw, targetRings, avoid) {
-  const placed = [...avoid];
-  const hits = (r) => placed.some((p) => r.x0 < p.x1 && r.x1 > p.x0 && r.y0 < p.y1 && r.y1 > p.y0);
+// Tiny flag thumbnails inlined as data URIs (an SVG shown through <img> can't load external images).
+const ourCode = new Map(countries.map((c) => [c.isoNumeric || c.name, c.code]));
+const thumbs = new Map();
+for (const c of countries) {
+  const { data, info } = await sharp(path.join(ROOT, `public/img/flags/320/${c.code}.webp`))
+    .resize({ height: 30 })
+    .png({ palette: true, quality: 90, compressionLevel: 9 })
+    .toBuffer({ resolveWithObject: true });
+  thumbs.set(c.code, { uri: `data:image/png;base64,${data.toString('base64')}`, ratio: info.width / info.height });
+}
+
+// Every grid point inside each neighbour's visible land, nearest its visual centre first.
+function labelCandidates(base, draw) {
   const candidates = [];
   for (const w of base) {
     const area = draw.area(w);
@@ -89,31 +100,53 @@ function labels(base, draw, targetRings, avoid) {
     const rings = parseRings(simplify(draw(w), 0.4, 0));
     if (!rings.length) continue;
     const [[bx0, by0], [bx1, by1]] = draw.bounds(w);
-    candidates.push({ w, area, rings, box: [Math.max(0, bx0), Math.max(0, by0), Math.min(W, bx1), Math.min(H, by1)] });
-  }
-  candidates.sort((a, b) => b.area - a.area);
-  const out = [];
-  for (const k of candidates) {
-    const [x0, y0, x1, y1] = k.box;
+    const [x0, y0, x1, y1] = [Math.max(0, bx0), Math.max(0, by0), Math.min(W, bx1), Math.min(H, by1)];
     const step = Math.max(2, Math.sqrt(((x1 - x0) * (y1 - y0)) / 500));
     const pts = [];
-    for (let y = y0 + step / 2; y < y1; y += step) for (let x = x0 + step / 2; x < x1; x += step) if (inside(k.rings, x, y)) pts.push([x, y]);
+    for (let y = y0 + step / 2; y < y1; y += step) for (let x = x0 + step / 2; x < x1; x += step) if (inside(rings, x, y)) pts.push([x, y]);
     if (!pts.length) continue;
-    const mx = pts.reduce((s, p) => s + p[0], 0) / pts.length;
-    const my = pts.reduce((s, p) => s + p[1], 0) / pts.length;
-    pts.sort((a, b) => Math.hypot(a[0] - mx, a[1] - my) - Math.hypot(b[0] - mx, b[1] - my));
-    const names = [ourName.get(k.w.id), k.w.properties.name].filter(Boolean);
+    const mx = pts.reduce((sum, q) => sum + q[0], 0) / pts.length;
+    const my = pts.reduce((sum, q) => sum + q[1], 0) / pts.length;
+    pts.sort((q, r) => Math.hypot(q[0] - mx, q[1] - my) - Math.hypot(r[0] - mx, r[1] - my));
+    const code = ourCode.get(w.id) ?? ourCode.get(w.properties.name);
+    const names = [ourName.get(w.id), w.properties.name].filter(Boolean);
+    candidates.push({ area, rings, pts, code, names });
+  }
+  return candidates.sort((q, r) => r.area - q.area);
+}
+
+// Places each label (the name, plus its flag below when wanted and there's room) wholly on that country's land,
+// off the highlighted country, and clear of everything already placed.
+function labels(candidates, targetRings, avoid, withFlags) {
+  const placed = [...avoid];
+  const hits = (r) => placed.some((q) => r.x0 < q.x1 && r.x1 > q.x0 && r.y0 < q.y1 && r.y1 > q.y0);
+  const out = [];
+  for (const k of candidates) {
+    const thumb = withFlags && k.code ? thumbs.get(k.code) : null;
+    const variants = k.names.flatMap((n) => [
+      ...(thumb ? [[n, FONT, true]] : []),
+      [n, FONT, false],
+      ...(thumb ? [[n, FONT * 0.78, true]] : []),
+      [n, FONT * 0.78, false],
+    ]);
     let done = false;
-    for (const [name, size] of names.flatMap((n) => [[n, FONT], [n, FONT * 0.78]])) {
-      const hw = textWidth(name, size) / 2 + 0.8;
-      for (const [x, y] of pts) {
-        const r = { x0: x - hw, x1: x + hw, y0: y - size * 0.7, y1: y + size * 0.55 };
+    for (const [name, size, flag] of variants) {
+      const fh = size * 1.3;
+      const fw = flag ? Math.min(fh * thumb.ratio, fh * 1.9) : 0;
+      const hw = Math.max(textWidth(name, size), fw) / 2 + 0.8;
+      for (const [x, y] of k.pts) {
+        const r = { x0: x - hw, x1: x + hw, y0: y - size * 0.7, y1: y + size * 0.55 + (flag ? fh + size * 0.35 : 0) };
         if (r.x0 < 1 || r.x1 > W - 1 || r.y0 < 1 || r.y1 > H - 1 || hits(r)) continue;
-        const probe = [[r.x0, r.y0], [x, r.y0], [r.x1, r.y0], [r.x0, y], [x, y], [r.x1, y], [r.x0, r.y1], [x, r.y1], [r.x1, r.y1]];
+        const mid = (r.y0 + r.y1) / 2;
+        const probe = [[r.x0, r.y0], [x, r.y0], [r.x1, r.y0], [r.x0, mid], [x, mid], [r.x1, mid], [r.x0, r.y1], [x, r.y1], [r.x1, r.y1]];
         if (!probe.every(([px, py]) => inside(k.rings, px, py) && !inside(targetRings, px, py))) continue;
         placed.push(r);
         const small = size < FONT ? ` font-size="${size.toFixed(2)}"` : '';
         out.push(`<text x="${x.toFixed(1)}" y="${(y + size * 0.35).toFixed(1)}"${small}>${esc(name)}</text>`);
+        if (flag) {
+          const fx = (x - fw / 2).toFixed(2), fy = (y + size * 0.75).toFixed(2), fwS = fw.toFixed(2), fhS = fh.toFixed(2);
+          out.push(`<image href="${thumb.uri}" x="${fx}" y="${fy}" width="${fwS}" height="${fhS}" preserveAspectRatio="none"/><rect class="fb" x="${fx}" y="${fy}" width="${fwS}" height="${fhS}"/>`);
+        }
         done = true;
         break;
       }
@@ -134,9 +167,9 @@ function locator(center) {
   return `<circle class="io" cx="${cx}" cy="${cy}" r="${r}"/><path class="il" d="${land}"/><circle class="id" cx="${cx}" cy="${cy}" r="1.7"/><circle class="ir" cx="${cx}" cy="${cy}" r="${r}"/>`;
 }
 
-const STYLE = `<style>.o{fill:#b5d7ef}.g{fill:none;stroke:#fff;stroke-opacity:.45;stroke-width:.3}.l{fill:#f3ecd2;stroke:#ad9f78;stroke-width:.3}.t{fill:#d9302b;stroke:#7a1512;stroke-width:.45}.mh{fill:none;stroke:#fff;stroke-width:3}.m{fill:none;stroke:#d9302b;stroke-width:1.6}.io{fill:#4f93c9}.il{fill:#f3ecd2}.id{fill:#d9302b;stroke:#fff;stroke-width:.6}.ir{fill:none;stroke:#fff;stroke-width:1.2}.n{font:500 ${FONT}px system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;fill:#6b6249;text-anchor:middle;paint-order:stroke;stroke:#f3ecd2;stroke-width:.9;stroke-linejoin:round}</style>`;
+const STYLE = `<style>.o{fill:#b5d7ef}.g{fill:none;stroke:#fff;stroke-opacity:.45;stroke-width:.3}.l{fill:#f3ecd2;stroke:#ad9f78;stroke-width:.3}.t{fill:#d9302b;stroke:#7a1512;stroke-width:.45}.mh{fill:none;stroke:#fff;stroke-width:3}.m{fill:none;stroke:#d9302b;stroke-width:1.6}.io{fill:#4f93c9}.il{fill:#f3ecd2}.id{fill:#d9302b;stroke:#fff;stroke-width:.6}.ir{fill:none;stroke:#fff;stroke-width:1.2}.n{font:500 ${FONT}px system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;fill:#6b6249;text-anchor:middle;paint-order:stroke;stroke:#f3ecd2;stroke-width:.9;stroke-linejoin:round}.fb{fill:none;stroke:#00000040;stroke-width:.15}</style>`;
 
-await fs.mkdir(OUT, { recursive: true });
+await fs.mkdir(path.join(OUT, 'plain'), { recursive: true });
 let total = 0;
 for (const c of countries) {
   const f = world50.find((w) => (c.isoNumeric && w.id === c.isoNumeric) || w.properties.name === c.name);
@@ -172,9 +205,12 @@ for (const c of countries) {
     avoid.push({ x0: x - 8, y0: y - 8, x1: x + 8, y1: y + 8 });
     marker = `<circle class="mh" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6"/><circle class="m" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6"/>`;
   }
-  const names = labels(base.filter((w) => !isTarget(w)), draw, parseRings(target), avoid);
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}">${STYLE}<rect class="o" width="${W}" height="${H}"/><path class="g" d="${simplify(draw(geoGraticule10()), 1.5, 0)}"/><path class="l" d="${others}"/>${target ? `<path class="t" d="${target}"/>` : ''}${marker}${names}${locator(center)}</svg>\n`;
-  await fs.writeFile(path.join(OUT, `${c.code}.svg`), svg);
-  total += svg.length;
+  const candidates = labelCandidates(base.filter((w) => !isTarget(w)), draw);
+  const targetRings = parseRings(target);
+  const render = (names) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}">${STYLE}<rect class="o" width="${W}" height="${H}"/><path class="g" d="${simplify(draw(geoGraticule10()), 1.5, 0)}"/><path class="l" d="${others}"/>${target ? `<path class="t" d="${target}"/>` : ''}${marker}${names}${locator(center)}</svg>\n`;
+  const full = render(labels(candidates, targetRings, avoid, true));
+  await fs.writeFile(path.join(OUT, `${c.code}.svg`), full);
+  await fs.writeFile(path.join(OUT, 'plain', `${c.code}.svg`), render(labels(candidates, targetRings, avoid, false)));
+  total += full.length;
 }
 console.log(`Wrote ${countries.length} maps (${Math.round(total / 1024)} KB total) to public/img/maps`);

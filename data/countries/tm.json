@@ -3,6 +3,13 @@
   "isoNumeric": "795",
   "name": "Turkmenistan",
   "officialName": "Turkmenistan",
+  "localNames": [
+    {
+      "language": "Turkmen",
+      "name": "Türkmenistan",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Ashgabat",
@@ -15,7 +22,11 @@
     "Turkmen"
   ],
   "currencies": [
-    "Turkmenistan manat"
+    {
+      "name": "Turkmenistan manat",
+      "code": "TMT",
+      "symbol": "m"
+    }
   ],
   "demonym": "Turkmen",
   "latlng": [

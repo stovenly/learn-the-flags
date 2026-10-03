@@ -3,6 +3,13 @@
   "isoNumeric": "704",
   "name": "Vietnam",
   "officialName": "Socialist Republic of Vietnam",
+  "localNames": [
+    {
+      "language": "Vietnamese",
+      "name": "Việt Nam",
+      "romanized": ""
+    }
+  ],
   "aliases": [
     "Viet Nam"
   ],
@@ -16,7 +23,11 @@
     "Vietnamese"
   ],
   "currencies": [
-    "Vietnamese đồng"
+    {
+      "name": "Vietnamese đồng",
+      "code": "VND",
+      "symbol": "₫"
+    }
   ],
   "demonym": "Vietnamese",
   "latlng": [

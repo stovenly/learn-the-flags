@@ -3,6 +3,13 @@
   "isoNumeric": "100",
   "name": "Bulgaria",
   "officialName": "Republic of Bulgaria",
+  "localNames": [
+    {
+      "language": "Bulgarian",
+      "name": "България",
+      "romanized": "Balgariya"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Sofia",
@@ -14,7 +21,11 @@
     "Bulgarian"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Bulgarian",
   "latlng": [

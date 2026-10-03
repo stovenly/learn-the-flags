@@ -3,6 +3,7 @@
   "isoNumeric": "024",
   "name": "Angola",
   "officialName": "Republic of Angola",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Luanda",
@@ -14,7 +15,11 @@
     "Portuguese"
   ],
   "currencies": [
-    "Angolan kwanza"
+    {
+      "name": "Angolan kwanza",
+      "code": "AOA",
+      "symbol": "Kz"
+    }
   ],
   "demonym": "Angolan",
   "latlng": [

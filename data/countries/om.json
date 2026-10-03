@@ -3,6 +3,13 @@
   "isoNumeric": "512",
   "name": "Oman",
   "officialName": "Sultanate of Oman",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "عُمان",
+      "romanized": "ʿUmān"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Muscat",
@@ -14,7 +21,11 @@
     "Arabic"
   ],
   "currencies": [
-    "Omani rial"
+    {
+      "name": "Omani rial",
+      "code": "OMR",
+      "symbol": "ر.ع."
+    }
   ],
   "demonym": "Omani",
   "latlng": [

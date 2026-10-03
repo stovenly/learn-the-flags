@@ -1,4 +1,4 @@
-import { ALL, byCode, Country, matchAnswer, preload, preloadMap } from '../data';
+import { ALL, byCode, Country, localNameText, matchAnswer, preload, preloadMap } from '../data';
 import { Again, Easy, Good, Grade, Hard, Memory, review } from '../srs';
 import { logSession, save, state, today } from '../store';
 import { $, $$, countryLink, differencesHtml, nameLink, esc, flagImg, lookalikeList, mapImg, plural, shuffle } from '../ui';
@@ -105,6 +105,7 @@ function ensureOptions(item: Item) {
 function preloadItem(item: Item): Promise<unknown> {
   ensureOptions(item);
   const jobs = [preload(item.c.code), preloadMap(item.c.code)];
+  if (item.kind === 'quiz' && item.mode === 'pick-flag') jobs.push(preloadMap(item.c.code, true));
   if (item.kind === 'quiz' && item.mode === 'pick-flag') item.options!.forEach((o) => jobs.push(preload(o.code)));
   if (item.kind === 'intro') lookalikeList(item.c).slice(0, 3).forEach((o) => jobs.push(preload(o.code, 320)));
   return Promise.all(jobs);
@@ -262,6 +263,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
         <p class="eyebrow">New flag</p>
         <div class="flag-stage">${flagImg(c, { size: 'lg' })}</div>
         <h2 class="intro-name">${nameLink(c)}</h2>
+        ${localNameText(c) ? `<p class="local-name">${esc(localNameText(c))}</p>` : ''}
         <p class="muted intro-meta">${esc(c.subregion || c.region)}</p>
         ${mapImg(c, 'md')}
         ${c.flag.description ? `<p class="intro-desc">${esc(c.flag.description)}</p>` : ''}
@@ -353,7 +355,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
       stage.innerHTML = `
         <article class="card quiz fade-in">
           <p class="eyebrow">Which is the flag of</p>
-          <h2 class="quiz-name">${esc(c.name)}</h2>${mapImg(c, 'sm')}
+          <h2 class="quiz-name">${esc(c.name)}</h2>${mapImg(c, 'sm', true)}
           <div class="flag-options">${item
             .options!.map(
               (o, i) =>

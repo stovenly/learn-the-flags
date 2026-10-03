@@ -3,6 +3,13 @@
   "isoNumeric": "499",
   "name": "Montenegro",
   "officialName": "Montenegro",
+  "localNames": [
+    {
+      "language": "Montenegrin",
+      "name": "Црна Гора",
+      "romanized": "Crna Gora"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Podgorica",
@@ -14,7 +21,11 @@
     "Montenegrin"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Montenegrin",
   "latlng": [

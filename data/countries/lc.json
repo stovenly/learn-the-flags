@@ -3,6 +3,7 @@
   "isoNumeric": "662",
   "name": "Saint Lucia",
   "officialName": "Saint Lucia",
+  "localNames": [],
   "aliases": [
     "St Lucia"
   ],
@@ -16,7 +17,11 @@
     "English"
   ],
   "currencies": [
-    "Eastern Caribbean dollar"
+    {
+      "name": "Eastern Caribbean dollar",
+      "code": "XCD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Saint Lucian",
   "latlng": [

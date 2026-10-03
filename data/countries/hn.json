@@ -3,6 +3,7 @@
   "isoNumeric": "340",
   "name": "Honduras",
   "officialName": "Republic of Honduras",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Tegucigalpa",
@@ -14,7 +15,11 @@
     "Spanish"
   ],
   "currencies": [
-    "Honduran lempira"
+    {
+      "name": "Honduran lempira",
+      "code": "HNL",
+      "symbol": "L"
+    }
   ],
   "demonym": "Honduran",
   "latlng": [

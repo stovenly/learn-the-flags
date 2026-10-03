@@ -3,6 +3,18 @@
   "isoNumeric": "",
   "name": "Kosovo",
   "officialName": "Republic of Kosovo",
+  "localNames": [
+    {
+      "language": "Albanian",
+      "name": "Kosova",
+      "romanized": ""
+    },
+    {
+      "language": "Serbian",
+      "name": "Косово",
+      "romanized": "Kosovo"
+    }
+  ],
   "aliases": [],
   "status": "partially-recognized",
   "capital": "Pristina",
@@ -15,7 +27,11 @@
     "Serbian"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Kosovar",
   "latlng": [

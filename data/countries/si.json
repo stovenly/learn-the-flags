@@ -3,6 +3,13 @@
   "isoNumeric": "705",
   "name": "Slovenia",
   "officialName": "Republic of Slovenia",
+  "localNames": [
+    {
+      "language": "Slovene",
+      "name": "Slovenija",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Ljubljana",
@@ -14,7 +21,11 @@
     "Slovene"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Slovene",
   "latlng": [

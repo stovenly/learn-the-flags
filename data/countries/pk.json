@@ -3,6 +3,13 @@
   "isoNumeric": "586",
   "name": "Pakistan",
   "officialName": "Islamic Republic of Pakistan",
+  "localNames": [
+    {
+      "language": "Urdu",
+      "name": "پاکستان",
+      "romanized": "Pākistān"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Islamabad",
@@ -15,7 +22,11 @@
     "Urdu"
   ],
   "currencies": [
-    "Pakistani rupee"
+    {
+      "name": "Pakistani rupee",
+      "code": "PKR",
+      "symbol": "₨"
+    }
   ],
   "demonym": "Pakistani",
   "latlng": [

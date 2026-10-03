@@ -3,6 +3,13 @@
   "isoNumeric": "231",
   "name": "Ethiopia",
   "officialName": "Federal Democratic Republic of Ethiopia",
+  "localNames": [
+    {
+      "language": "Amharic",
+      "name": "ኢትዮጵያ",
+      "romanized": "Ītyōṗṗyā"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Addis Ababa",
@@ -14,7 +21,11 @@
     "Amharic"
   ],
   "currencies": [
-    "Ethiopian birr"
+    {
+      "name": "Ethiopian birr",
+      "code": "ETB",
+      "symbol": "Br"
+    }
   ],
   "demonym": "Ethiopian",
   "latlng": [

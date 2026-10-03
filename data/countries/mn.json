@@ -3,6 +3,13 @@
   "isoNumeric": "496",
   "name": "Mongolia",
   "officialName": "Mongolia",
+  "localNames": [
+    {
+      "language": "Mongolian",
+      "name": "Монгол",
+      "romanized": "Mongol"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Ulaanbaatar",
@@ -14,7 +21,11 @@
     "Mongolian"
   ],
   "currencies": [
-    "Mongolian tögrög"
+    {
+      "name": "Mongolian tögrög",
+      "code": "MNT",
+      "symbol": "₮"
+    }
   ],
   "demonym": "Mongolian",
   "latlng": [

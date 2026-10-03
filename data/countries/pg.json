@@ -3,6 +3,18 @@
   "isoNumeric": "598",
   "name": "Papua New Guinea",
   "officialName": "Independent State of Papua New Guinea",
+  "localNames": [
+    {
+      "language": "Tok Pisin",
+      "name": "Papua Niugini",
+      "romanized": ""
+    },
+    {
+      "language": "Hiri Motu",
+      "name": "Papua Niu Gini",
+      "romanized": ""
+    }
+  ],
   "aliases": [
     "PNG"
   ],
@@ -18,7 +30,11 @@
     "Tok Pisin"
   ],
   "currencies": [
-    "Papua New Guinean kina"
+    {
+      "name": "Papua New Guinean kina",
+      "code": "PGK",
+      "symbol": "K"
+    }
   ],
   "demonym": "Papua New Guinean",
   "latlng": [

@@ -3,6 +3,7 @@
   "isoNumeric": "458",
   "name": "Malaysia",
   "officialName": "Malaysia",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Kuala Lumpur (official), Putrajaya (administrative)",
@@ -15,7 +16,11 @@
     "Malay"
   ],
   "currencies": [
-    "Malaysian ringgit"
+    {
+      "name": "Malaysian ringgit",
+      "code": "MYR",
+      "symbol": "RM"
+    }
   ],
   "demonym": "Malaysian",
   "latlng": [

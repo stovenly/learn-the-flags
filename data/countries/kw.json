@@ -3,6 +3,13 @@
   "isoNumeric": "414",
   "name": "Kuwait",
   "officialName": "State of Kuwait",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "الكويت",
+      "romanized": "al-Kuwayt"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Kuwait City",
@@ -14,7 +21,11 @@
     "Arabic"
   ],
   "currencies": [
-    "Kuwaiti dinar"
+    {
+      "name": "Kuwaiti dinar",
+      "code": "KWD",
+      "symbol": "د.ك"
+    }
   ],
   "demonym": "Kuwaiti",
   "latlng": [

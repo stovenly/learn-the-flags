@@ -3,6 +3,7 @@
   "isoNumeric": "716",
   "name": "Zimbabwe",
   "officialName": "Republic of Zimbabwe",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Harare",
@@ -28,15 +29,51 @@
     "Zimbabwean Sign Language"
   ],
   "currencies": [
-    "Botswana pula",
-    "Chinese yuan",
-    "Euro",
-    "British pound",
-    "Indian rupee",
-    "Japanese yen",
-    "United States dollar",
-    "South African rand",
-    "Zimbabwean bonds"
+    {
+      "name": "Botswana pula",
+      "code": "BWP",
+      "symbol": "P"
+    },
+    {
+      "name": "Chinese yuan",
+      "code": "CNY",
+      "symbol": "¥"
+    },
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    },
+    {
+      "name": "British pound",
+      "code": "GBP",
+      "symbol": "£"
+    },
+    {
+      "name": "Indian rupee",
+      "code": "INR",
+      "symbol": "₹"
+    },
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    },
+    {
+      "name": "United States dollar",
+      "code": "USD",
+      "symbol": "$"
+    },
+    {
+      "name": "South African rand",
+      "code": "ZAR",
+      "symbol": "R"
+    },
+    {
+      "name": "Zimbabwean bonds",
+      "code": "ZWB",
+      "symbol": "$"
+    }
   ],
   "demonym": "Zimbabwean",
   "latlng": [

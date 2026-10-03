@@ -3,6 +3,13 @@
   "isoNumeric": "748",
   "name": "Eswatini",
   "officialName": "Kingdom of Eswatini",
+  "localNames": [
+    {
+      "language": "Swazi",
+      "name": "eSwatini",
+      "romanized": ""
+    }
+  ],
   "aliases": [
     "Swaziland"
   ],
@@ -17,8 +24,16 @@
     "Swazi"
   ],
   "currencies": [
-    "Swazi lilangeni",
-    "South African rand"
+    {
+      "name": "Swazi lilangeni",
+      "code": "SZL",
+      "symbol": "E"
+    },
+    {
+      "name": "South African rand",
+      "code": "ZAR",
+      "symbol": "R"
+    }
   ],
   "demonym": "Swazi",
   "latlng": [

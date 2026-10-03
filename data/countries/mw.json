@@ -3,6 +3,13 @@
   "isoNumeric": "454",
   "name": "Malawi",
   "officialName": "Republic of Malawi",
+  "localNames": [
+    {
+      "language": "Chewa",
+      "name": "Malaŵi",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Lilongwe",
@@ -15,7 +22,11 @@
     "Chewa"
   ],
   "currencies": [
-    "Malawian kwacha"
+    {
+      "name": "Malawian kwacha",
+      "code": "MWK",
+      "symbol": "MK"
+    }
   ],
   "demonym": "Malawian",
   "latlng": [

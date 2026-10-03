@@ -3,6 +3,13 @@
   "isoNumeric": "233",
   "name": "Estonia",
   "officialName": "Republic of Estonia",
+  "localNames": [
+    {
+      "language": "Estonian",
+      "name": "Eesti",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Tallinn",
@@ -14,7 +21,11 @@
     "Estonian"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Estonian",
   "latlng": [

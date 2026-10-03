@@ -3,6 +3,18 @@
   "isoNumeric": "196",
   "name": "Cyprus",
   "officialName": "Republic of Cyprus",
+  "localNames": [
+    {
+      "language": "Greek",
+      "name": "Κύπρος",
+      "romanized": "Kýpros"
+    },
+    {
+      "language": "Turkish",
+      "name": "Kıbrıs",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Nicosia",
@@ -15,7 +27,11 @@
     "Turkish"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Cypriot",
   "latlng": [

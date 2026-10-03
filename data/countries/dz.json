@@ -3,6 +3,13 @@
   "isoNumeric": "012",
   "name": "Algeria",
   "officialName": "People's Democratic Republic of Algeria",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "الجزائر",
+      "romanized": "al-Jazāʾir"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Algiers",
@@ -14,7 +21,11 @@
     "Arabic"
   ],
   "currencies": [
-    "Algerian dinar"
+    {
+      "name": "Algerian dinar",
+      "code": "DZD",
+      "symbol": "د.ج"
+    }
   ],
   "demonym": "Algerian",
   "latlng": [

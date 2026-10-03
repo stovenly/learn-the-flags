@@ -3,6 +3,13 @@
   "isoNumeric": "740",
   "name": "Suriname",
   "officialName": "Republic of Suriname",
+  "localNames": [
+    {
+      "language": "Dutch",
+      "name": "Suriname",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Paramaribo",
@@ -14,7 +21,11 @@
     "Dutch"
   ],
   "currencies": [
-    "Surinamese dollar"
+    {
+      "name": "Surinamese dollar",
+      "code": "SRD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Surinamer",
   "latlng": [

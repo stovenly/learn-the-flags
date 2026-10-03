@@ -3,6 +3,7 @@
   "isoNumeric": "044",
   "name": "Bahamas",
   "officialName": "Commonwealth of the Bahamas",
+  "localNames": [],
   "aliases": [
     "The Bahamas"
   ],
@@ -16,8 +17,16 @@
     "English"
   ],
   "currencies": [
-    "Bahamian dollar",
-    "United States dollar"
+    {
+      "name": "Bahamian dollar",
+      "code": "BSD",
+      "symbol": "$"
+    },
+    {
+      "name": "United States dollar",
+      "code": "USD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Bahamian",
   "latlng": [

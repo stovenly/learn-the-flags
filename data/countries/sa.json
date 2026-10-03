@@ -3,6 +3,13 @@
   "isoNumeric": "682",
   "name": "Saudi Arabia",
   "officialName": "Kingdom of Saudi Arabia",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "السعودية",
+      "romanized": "as-Saʿūdiyya"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Riyadh",
@@ -14,7 +21,11 @@
     "Arabic"
   ],
   "currencies": [
-    "Saudi riyal"
+    {
+      "name": "Saudi riyal",
+      "code": "SAR",
+      "symbol": "ر.س"
+    }
   ],
   "demonym": "Saudi Arabian",
   "latlng": [

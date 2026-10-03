@@ -3,6 +3,7 @@
   "isoNumeric": "188",
   "name": "Costa Rica",
   "officialName": "Republic of Costa Rica",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "San José",
@@ -14,7 +15,11 @@
     "Spanish"
   ],
   "currencies": [
-    "Costa Rican colón"
+    {
+      "name": "Costa Rican colón",
+      "code": "CRC",
+      "symbol": "₡"
+    }
   ],
   "demonym": "Costa Rican",
   "latlng": [

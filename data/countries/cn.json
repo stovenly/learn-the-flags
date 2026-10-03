@@ -3,6 +3,13 @@
   "isoNumeric": "156",
   "name": "China",
   "officialName": "People's Republic of China",
+  "localNames": [
+    {
+      "language": "Chinese",
+      "name": "中国",
+      "romanized": "Zhōngguó"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Beijing",
@@ -14,7 +21,11 @@
     "Chinese"
   ],
   "currencies": [
-    "Chinese yuan"
+    {
+      "name": "Chinese yuan",
+      "code": "CNY",
+      "symbol": "¥"
+    }
   ],
   "demonym": "Chinese",
   "latlng": [

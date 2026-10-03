@@ -355,6 +355,8 @@ body[data-route='study'] #app { padding-top: 16px; }
 
 .intro-name { font-size: 2rem; margin-bottom: 4px; }
 .intro-meta { margin-bottom: 0; }
+.local-name { font-size: 1.15rem; margin: 0 0 2px; color: var(--text); opacity: 0.8; white-space: pre-wrap; }
+.country-head .local-name { font-size: 1.3rem; margin-bottom: 4px; }
 .intro-desc { max-width: 480px; margin: 0 auto 16px; }
 .quiz-name { font-size: 1.9rem; margin: -2px 0 14px; }
 .map { display: block; width: 100%; height: auto; border-radius: 10px; box-shadow: 0 0 0 1px var(--border); user-select: none; background: #b5d7ef; }

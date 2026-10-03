@@ -3,6 +3,7 @@
   "isoNumeric": "516",
   "name": "Namibia",
   "officialName": "Republic of Namibia",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Windhoek",
@@ -22,8 +23,16 @@
     "Tswana"
   ],
   "currencies": [
-    "Namibian dollar",
-    "South African rand"
+    {
+      "name": "Namibian dollar",
+      "code": "NAD",
+      "symbol": "N$"
+    },
+    {
+      "name": "South African rand",
+      "code": "ZAR",
+      "symbol": "R"
+    }
   ],
   "demonym": "Namibian",
   "latlng": [

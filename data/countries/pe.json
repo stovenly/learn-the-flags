@@ -3,6 +3,18 @@
   "isoNumeric": "604",
   "name": "Peru",
   "officialName": "Republic of Peru",
+  "localNames": [
+    {
+      "language": "Spanish",
+      "name": "Perú",
+      "romanized": ""
+    },
+    {
+      "language": "Quechua",
+      "name": "Piruw",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Lima",
@@ -16,7 +28,11 @@
     "Spanish"
   ],
   "currencies": [
-    "Peruvian sol"
+    {
+      "name": "Peruvian sol",
+      "code": "PEN",
+      "symbol": "S/"
+    }
   ],
   "demonym": "Peruvian",
   "latlng": [

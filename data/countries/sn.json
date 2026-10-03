@@ -3,6 +3,13 @@
   "isoNumeric": "686",
   "name": "Senegal",
   "officialName": "Republic of Senegal",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "Sénégal",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Dakar",
@@ -14,7 +21,11 @@
     "French"
   ],
   "currencies": [
-    "West African CFA franc"
+    {
+      "name": "West African CFA franc",
+      "code": "XOF",
+      "symbol": "FCFA"
+    }
   ],
   "demonym": "Senegalese",
   "latlng": [

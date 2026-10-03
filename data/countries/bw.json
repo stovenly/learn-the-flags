@@ -3,6 +3,7 @@
   "isoNumeric": "072",
   "name": "Botswana",
   "officialName": "Republic of Botswana",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Gaborone",
@@ -15,7 +16,11 @@
     "Tswana"
   ],
   "currencies": [
-    "Botswana pula"
+    {
+      "name": "Botswana pula",
+      "code": "BWP",
+      "symbol": "P"
+    }
   ],
   "demonym": "Motswana",
   "latlng": [

@@ -3,6 +3,18 @@
   "isoNumeric": "690",
   "name": "Seychelles",
   "officialName": "Republic of Seychelles",
+  "localNames": [
+    {
+      "language": "Seychellois Creole",
+      "name": "Sesel",
+      "romanized": ""
+    },
+    {
+      "language": "French",
+      "name": "Seychelles",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Victoria",
@@ -16,7 +28,11 @@
     "French"
   ],
   "currencies": [
-    "Seychellois rupee"
+    {
+      "name": "Seychellois rupee",
+      "code": "SCR",
+      "symbol": "SR"
+    }
   ],
   "demonym": "Seychellois",
   "latlng": [

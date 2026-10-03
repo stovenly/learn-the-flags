@@ -3,6 +3,13 @@
   "isoNumeric": "324",
   "name": "Guinea",
   "officialName": "Republic of Guinea",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "Guinée",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Conakry",
@@ -14,7 +21,11 @@
     "French"
   ],
   "currencies": [
-    "Guinean franc"
+    {
+      "name": "Guinean franc",
+      "code": "GNF",
+      "symbol": "FG"
+    }
   ],
   "demonym": "Guinean",
   "latlng": [

@@ -3,6 +3,13 @@
   "isoNumeric": "084",
   "name": "Belize",
   "officialName": "Belize",
+  "localNames": [
+    {
+      "language": "Spanish",
+      "name": "Belice",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Belmopan",
@@ -16,7 +23,11 @@
     "Spanish"
   ],
   "currencies": [
-    "Belize dollar"
+    {
+      "name": "Belize dollar",
+      "code": "BZD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Belizean",
   "latlng": [

@@ -3,6 +3,13 @@
   "isoNumeric": "792",
   "name": "Turkey",
   "officialName": "Republic of Türkiye",
+  "localNames": [
+    {
+      "language": "Turkish",
+      "name": "Türkiye",
+      "romanized": ""
+    }
+  ],
   "aliases": [
     "Türkiye"
   ],
@@ -16,7 +23,11 @@
     "Turkish"
   ],
   "currencies": [
-    "Turkish lira"
+    {
+      "name": "Turkish lira",
+      "code": "TRY",
+      "symbol": "₺"
+    }
   ],
   "demonym": "Turkish",
   "latlng": [

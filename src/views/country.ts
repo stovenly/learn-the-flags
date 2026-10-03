@@ -1,4 +1,4 @@
-import { ALL, fmtNumber, fmtPopulation, preload, preloadMap, STATUS_LABEL } from '../data';
+import { ALL, currencyText, fmtNumber, fmtPopulation, localNameText, preload, preloadMap, STATUS_LABEL } from '../data';
 import { level } from '../store';
 import { countryLink, esc, flagImg, lookalikeList, mapImg, renderWhenReady } from '../ui';
 
@@ -21,7 +21,7 @@ export function countryView(root: HTMLElement, slug: string) {
     ['Population', fmtPopulation(c.population)],
     ['Area', c.area ? `${fmtNumber(Math.round(c.area))} km²` : '—'],
     ['Languages', c.languages.join(', ')],
-    ['Currency', c.currencies.join(', ')],
+    ['Currency', currencyText(c)],
   ];
   const looks = lookalikeList(c);
   const html = `
@@ -30,7 +30,11 @@ export function countryView(root: HTMLElement, slug: string) {
       <div class="country-flag card">${flagImg(c, { size: 'lg' })}</div>
       <header class="country-head">
         <h1>${esc(c.name)} ${badge}</h1>
-        <p class="muted">${esc(c.officialName)}${c.status !== 'un-member' ? ` · ${STATUS_LABEL[c.status]}` : ''}</p>
+        ${localNameText(c) ? `<p class="local-name">${esc(localNameText(c))}</p>` : ''}
+        ${(() => {
+          const sub = [c.officialName !== c.name ? c.officialName : '', c.status !== 'un-member' ? STATUS_LABEL[c.status] : ''].filter(Boolean).join(' · ');
+          return sub ? `<p class="muted">${esc(sub)}</p>` : '';
+        })()}
       </header>
 
       <section class="card map-card">${mapImg(c, 'lg')}</section>

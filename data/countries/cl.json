@@ -3,6 +3,7 @@
   "isoNumeric": "152",
   "name": "Chile",
   "officialName": "Republic of Chile",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Santiago",
@@ -14,7 +15,11 @@
     "Spanish"
   ],
   "currencies": [
-    "Chilean peso"
+    {
+      "name": "Chilean peso",
+      "code": "CLP",
+      "symbol": "$"
+    }
   ],
   "demonym": "Chilean",
   "latlng": [

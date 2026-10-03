@@ -3,6 +3,7 @@
   "isoNumeric": "036",
   "name": "Australia",
   "officialName": "Commonwealth of Australia",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Canberra",
@@ -14,7 +15,11 @@
     "English"
   ],
   "currencies": [
-    "Australian dollar"
+    {
+      "name": "Australian dollar",
+      "code": "AUD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Australian",
   "latlng": [

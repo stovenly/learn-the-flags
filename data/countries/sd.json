@@ -3,6 +3,13 @@
   "isoNumeric": "729",
   "name": "Sudan",
   "officialName": "Republic of the Sudan",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "السودان",
+      "romanized": "as-Sūdān"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Khartoum",
@@ -15,7 +22,11 @@
     "English"
   ],
   "currencies": [
-    "Sudanese pound"
+    {
+      "name": "Sudanese pound",
+      "code": "SDG",
+      "symbol": "ج.س."
+    }
   ],
   "demonym": "Sudanese",
   "latlng": [

@@ -3,6 +3,13 @@
   "isoNumeric": "752",
   "name": "Sweden",
   "officialName": "Kingdom of Sweden",
+  "localNames": [
+    {
+      "language": "Swedish",
+      "name": "Sverige",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Stockholm",
@@ -14,7 +21,11 @@
     "Swedish"
   ],
   "currencies": [
-    "Swedish krona"
+    {
+      "name": "Swedish krona",
+      "code": "SEK",
+      "symbol": "kr"
+    }
   ],
   "demonym": "Swedish",
   "latlng": [

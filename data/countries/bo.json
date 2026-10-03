@@ -3,6 +3,18 @@
   "isoNumeric": "068",
   "name": "Bolivia",
   "officialName": "Plurinational State of Bolivia",
+  "localNames": [
+    {
+      "language": "Quechua",
+      "name": "Buliwya",
+      "romanized": ""
+    },
+    {
+      "language": "Aymara",
+      "name": "Wuliwya",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Sucre (constitutional), La Paz (seat of government)",
@@ -17,7 +29,11 @@
     "Spanish"
   ],
   "currencies": [
-    "Bolivian boliviano"
+    {
+      "name": "Bolivian boliviano",
+      "code": "BOB",
+      "symbol": "Bs."
+    }
   ],
   "demonym": "Bolivian",
   "latlng": [

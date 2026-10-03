@@ -3,6 +3,7 @@
   "isoNumeric": "192",
   "name": "Cuba",
   "officialName": "Republic of Cuba",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Havana",
@@ -14,7 +15,11 @@
     "Spanish"
   ],
   "currencies": [
-    "Cuban peso"
+    {
+      "name": "Cuban peso",
+      "code": "CUP",
+      "symbol": "$"
+    }
   ],
   "demonym": "Cuban",
   "latlng": [

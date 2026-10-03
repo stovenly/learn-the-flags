@@ -3,6 +3,18 @@
   "isoNumeric": "140",
   "name": "Central African Republic",
   "officialName": "Central African Republic",
+  "localNames": [
+    {
+      "language": "Sango",
+      "name": "Bêafrîka",
+      "romanized": ""
+    },
+    {
+      "language": "French",
+      "name": "Centrafrique",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Bangui",
@@ -15,7 +27,11 @@
     "Sango"
   ],
   "currencies": [
-    "Central African CFA franc"
+    {
+      "name": "Central African CFA franc",
+      "code": "XAF",
+      "symbol": "FCFA"
+    }
   ],
   "demonym": "Central African",
   "latlng": [

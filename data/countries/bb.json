@@ -3,6 +3,7 @@
   "isoNumeric": "052",
   "name": "Barbados",
   "officialName": "Barbados",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Bridgetown",
@@ -14,7 +15,11 @@
     "English"
   ],
   "currencies": [
-    "Barbadian dollar"
+    {
+      "name": "Barbadian dollar",
+      "code": "BBD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Barbadian",
   "latlng": [

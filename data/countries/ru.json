@@ -3,6 +3,13 @@
   "isoNumeric": "643",
   "name": "Russia",
   "officialName": "Russian Federation",
+  "localNames": [
+    {
+      "language": "Russian",
+      "name": "Россия",
+      "romanized": "Rossiya"
+    }
+  ],
   "aliases": [
     "Russian Federation"
   ],
@@ -16,7 +23,11 @@
     "Russian"
   ],
   "currencies": [
-    "Russian ruble"
+    {
+      "name": "Russian ruble",
+      "code": "RUB",
+      "symbol": "₽"
+    }
   ],
   "demonym": "Russian",
   "latlng": [

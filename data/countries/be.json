@@ -3,6 +3,23 @@
   "isoNumeric": "056",
   "name": "Belgium",
   "officialName": "Kingdom of Belgium",
+  "localNames": [
+    {
+      "language": "Dutch",
+      "name": "België",
+      "romanized": ""
+    },
+    {
+      "language": "French",
+      "name": "Belgique",
+      "romanized": ""
+    },
+    {
+      "language": "German",
+      "name": "Belgien",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Brussels",
@@ -16,7 +33,11 @@
     "Dutch"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Belgian",
   "latlng": [

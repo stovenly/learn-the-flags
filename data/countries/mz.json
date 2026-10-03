@@ -3,6 +3,13 @@
   "isoNumeric": "508",
   "name": "Mozambique",
   "officialName": "Republic of Mozambique",
+  "localNames": [
+    {
+      "language": "Portuguese",
+      "name": "Moçambique",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Maputo",
@@ -14,7 +21,11 @@
     "Portuguese"
   ],
   "currencies": [
-    "Mozambican metical"
+    {
+      "name": "Mozambican metical",
+      "code": "MZN",
+      "symbol": "MT"
+    }
   ],
   "demonym": "Mozambican",
   "latlng": [

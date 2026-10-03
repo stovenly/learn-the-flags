@@ -3,6 +3,7 @@
   "isoNumeric": "566",
   "name": "Nigeria",
   "officialName": "Federal Republic of Nigeria",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Abuja",
@@ -14,7 +15,11 @@
     "English"
   ],
   "currencies": [
-    "Nigerian naira"
+    {
+      "name": "Nigerian naira",
+      "code": "NGN",
+      "symbol": "₦"
+    }
   ],
   "demonym": "Nigerian",
   "latlng": [

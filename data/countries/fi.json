@@ -3,6 +3,13 @@
   "isoNumeric": "246",
   "name": "Finland",
   "officialName": "Republic of Finland",
+  "localNames": [
+    {
+      "language": "Finnish",
+      "name": "Suomi",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Helsinki",
@@ -15,7 +22,11 @@
     "Swedish"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Finnish",
   "latlng": [

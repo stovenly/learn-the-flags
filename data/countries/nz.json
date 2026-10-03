@@ -3,6 +3,13 @@
   "isoNumeric": "554",
   "name": "New Zealand",
   "officialName": "New Zealand",
+  "localNames": [
+    {
+      "language": "Māori",
+      "name": "Aotearoa",
+      "romanized": ""
+    }
+  ],
   "aliases": [
     "Aotearoa"
   ],
@@ -18,7 +25,11 @@
     "New Zealand Sign Language"
   ],
   "currencies": [
-    "New Zealand dollar"
+    {
+      "name": "New Zealand dollar",
+      "code": "NZD",
+      "symbol": "$"
+    }
   ],
   "demonym": "New Zealander",
   "latlng": [

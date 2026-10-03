@@ -3,6 +3,13 @@
   "isoNumeric": "064",
   "name": "Bhutan",
   "officialName": "Kingdom of Bhutan",
+  "localNames": [
+    {
+      "language": "Dzongkha",
+      "name": "འབྲུག་ཡུལ་",
+      "romanized": "Druk Yul"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Thimphu",
@@ -14,8 +21,16 @@
     "Dzongkha"
   ],
   "currencies": [
-    "Bhutanese ngultrum",
-    "Indian rupee"
+    {
+      "name": "Bhutanese ngultrum",
+      "code": "BTN",
+      "symbol": "Nu."
+    },
+    {
+      "name": "Indian rupee",
+      "code": "INR",
+      "symbol": "₹"
+    }
   ],
   "demonym": "Bhutanese",
   "latlng": [

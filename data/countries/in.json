@@ -3,6 +3,13 @@
   "isoNumeric": "356",
   "name": "India",
   "officialName": "Republic of India",
+  "localNames": [
+    {
+      "language": "Hindi",
+      "name": "भारत",
+      "romanized": "Bhārat"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "New Delhi",
@@ -16,7 +23,11 @@
     "Tamil"
   ],
   "currencies": [
-    "Indian rupee"
+    {
+      "name": "Indian rupee",
+      "code": "INR",
+      "symbol": "₹"
+    }
   ],
   "demonym": "Indian",
   "latlng": [

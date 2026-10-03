@@ -3,6 +3,13 @@
   "isoNumeric": "862",
   "name": "Venezuela",
   "officialName": "Bolivarian Republic of Venezuela",
+  "localNames": [
+    {
+      "language": "Spanish",
+      "name": "Venezuela",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Caracas",
@@ -14,7 +21,11 @@
     "Spanish"
   ],
   "currencies": [
-    "Venezuelan bolívar"
+    {
+      "name": "Venezuelan bolívar",
+      "code": "VES",
+      "symbol": "Bs."
+    }
   ],
   "demonym": "Venezuelan",
   "latlng": [

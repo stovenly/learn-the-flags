@@ -3,6 +3,18 @@
   "isoNumeric": "332",
   "name": "Haiti",
   "officialName": "Republic of Haiti",
+  "localNames": [
+    {
+      "language": "Haitian Creole",
+      "name": "Ayiti",
+      "romanized": ""
+    },
+    {
+      "language": "French",
+      "name": "Haïti",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Port-au-Prince",
@@ -15,7 +27,11 @@
     "Haitian Creole"
   ],
   "currencies": [
-    "Haitian gourde"
+    {
+      "name": "Haitian gourde",
+      "code": "HTG",
+      "symbol": "G"
+    }
   ],
   "demonym": "Haitian",
   "latlng": [

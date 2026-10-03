@@ -3,6 +3,13 @@
   "isoNumeric": "478",
   "name": "Mauritania",
   "officialName": "Islamic Republic of Mauritania",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "موريتانيا",
+      "romanized": "Mūrītānyā"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Nouakchott",
@@ -14,7 +21,11 @@
     "Arabic"
   ],
   "currencies": [
-    "Mauritanian ouguiya"
+    {
+      "name": "Mauritanian ouguiya",
+      "code": "MRU",
+      "symbol": "UM"
+    }
   ],
   "demonym": "Mauritanian",
   "latlng": [

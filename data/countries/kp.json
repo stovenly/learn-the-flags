@@ -3,6 +3,13 @@
   "isoNumeric": "408",
   "name": "North Korea",
   "officialName": "Democratic People's Republic of Korea",
+  "localNames": [
+    {
+      "language": "Korean",
+      "name": "조선",
+      "romanized": "Chosŏn"
+    }
+  ],
   "aliases": [
     "DPRK"
   ],
@@ -16,7 +23,11 @@
     "Korean"
   ],
   "currencies": [
-    "North Korean won"
+    {
+      "name": "North Korean won",
+      "code": "KPW",
+      "symbol": "₩"
+    }
   ],
   "demonym": "North Korean",
   "latlng": [

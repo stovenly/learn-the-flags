@@ -3,6 +3,13 @@
   "isoNumeric": "616",
   "name": "Poland",
   "officialName": "Republic of Poland",
+  "localNames": [
+    {
+      "language": "Polish",
+      "name": "Polska",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Warsaw",
@@ -14,7 +21,11 @@
     "Polish"
   ],
   "currencies": [
-    "Polish złoty"
+    {
+      "name": "Polish złoty",
+      "code": "PLN",
+      "symbol": "zł"
+    }
   ],
   "demonym": "Polish",
   "latlng": [

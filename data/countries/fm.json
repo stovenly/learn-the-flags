@@ -3,6 +3,7 @@
   "isoNumeric": "583",
   "name": "Micronesia",
   "officialName": "Federated States of Micronesia",
+  "localNames": [],
   "aliases": [
     "Federated States of Micronesia",
     "FSM"
@@ -17,7 +18,11 @@
     "English"
   ],
   "currencies": [
-    "United States dollar"
+    {
+      "name": "United States dollar",
+      "code": "USD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Micronesian",
   "latlng": [

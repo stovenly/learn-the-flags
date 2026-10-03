@@ -3,6 +3,7 @@
   "isoNumeric": "894",
   "name": "Zambia",
   "officialName": "Republic of Zambia",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Lusaka",
@@ -14,7 +15,11 @@
     "English"
   ],
   "currencies": [
-    "Zambian kwacha"
+    {
+      "name": "Zambian kwacha",
+      "code": "ZMW",
+      "symbol": "ZK"
+    }
   ],
   "demonym": "Zambian",
   "latlng": [

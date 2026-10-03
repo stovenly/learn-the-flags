@@ -3,6 +3,13 @@
   "isoNumeric": "703",
   "name": "Slovakia",
   "officialName": "Slovak Republic",
+  "localNames": [
+    {
+      "language": "Slovak",
+      "name": "Slovensko",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Bratislava",
@@ -14,7 +21,11 @@
     "Slovak"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Slovak",
   "latlng": [

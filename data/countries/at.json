@@ -3,6 +3,13 @@
   "isoNumeric": "040",
   "name": "Austria",
   "officialName": "Republic of Austria",
+  "localNames": [
+    {
+      "language": "German",
+      "name": "Österreich",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Vienna",
@@ -14,7 +21,11 @@
     "German"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Austrian",
   "latlng": [

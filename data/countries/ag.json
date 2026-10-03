@@ -3,6 +3,7 @@
   "isoNumeric": "028",
   "name": "Antigua and Barbuda",
   "officialName": "Antigua and Barbuda",
+  "localNames": [],
   "aliases": [
     "Antigua"
   ],
@@ -16,7 +17,11 @@
     "English"
   ],
   "currencies": [
-    "Eastern Caribbean dollar"
+    {
+      "name": "Eastern Caribbean dollar",
+      "code": "XCD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Antiguan, Barbudan",
   "latlng": [

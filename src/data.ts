@@ -11,8 +11,9 @@ export interface Country {
   subregion: string;
   population: number | null;
   area: number | null;
+  localNames: { language: string; name: string; romanized: string }[];
   languages: string[];
-  currencies: string[];
+  currencies: { name: string; code: string; symbol: string }[];
   demonym: string;
   flag: { description: string; adopted: string; colors: string[]; symbolism: string };
   hook: string;
@@ -53,7 +54,7 @@ export function curriculum(list: Country[]): Country[] {
 }
 
 export const flagSrc = (code: string, w: 320 | 640 = 640) => `img/flags/${w}/${code}.webp`;
-export const mapSrc = (code: string) => `img/maps/${code}.svg`;
+export const mapSrc = (code: string, plain = false) => `img/maps/${plain ? 'plain/' : ''}${code}.svg`;
 
 const imageCache = new Map<string, Promise<void>>();
 function preloadSrc(src: string): Promise<void> {
@@ -67,7 +68,7 @@ function preloadSrc(src: string): Promise<void> {
   return p;
 }
 export const preload = (code: string, w: 320 | 640 = 640) => preloadSrc(flagSrc(code, w));
-export const preloadMap = (code: string) => preloadSrc(mapSrc(code));
+export const preloadMap = (code: string, plain = false) => preloadSrc(mapSrc(code, plain));
 
 export function normalize(s: string): string {
   return s
@@ -99,7 +100,8 @@ export type Match = 'exact' | 'typo' | 'wrong';
 export function matchAnswer(input: string, c: Country): Match {
   const guess = normalize(input);
   if (!guess) return 'wrong';
-  const targets = [c.name, c.officialName, ...c.aliases].map(normalize);
+  const local = c.localNames.flatMap((l) => [l.name, l.romanized]).filter(Boolean);
+  const targets = [c.name, c.officialName, ...c.aliases, ...local].map(normalize).filter(Boolean);
   if (targets.includes(guess)) return 'exact';
   // A typo must not land on a different country's name ("Niger" vs "Nigeria").
   for (const other of ALL) {
@@ -108,6 +110,17 @@ export function matchAnswer(input: string, c: Country): Match {
   const tolerance = (t: string) => (t.length <= 4 ? 0 : t.length <= 8 ? 1 : 2);
   return targets.some((t) => editDistance(guess, t) <= tolerance(t)) ? 'typo' : 'wrong';
 }
+
+// "Nippon · 日本" for each language the country uses for itself, skipping its English name.
+export function localNameText(c: Country): string {
+  return c.localNames
+    .filter((l) => l.name !== c.name || l.romanized)
+    .map((l) => [l.romanized, l.name].filter(Boolean).join(' · '))
+    .join('  /  ');
+}
+
+export const currencyText = (c: Country) =>
+  c.currencies.map((x) => (x.symbol && x.symbol !== x.code ? `${x.name} (${x.symbol})` : x.name)).join(', ');
 
 export const fmtNumber = (n: number | null) => (n == null ? '—' : n.toLocaleString('en-US'));
 

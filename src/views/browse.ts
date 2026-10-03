@@ -21,7 +21,7 @@ export function browseView(root: HTMLElement) {
     <div class="grid">
       ${list
         .map(
-          (c) => `<a class="tile" href="${countryLink(c)}" data-region="${c.region}" data-search="${esc(normalize(`${c.name} ${c.aliases.join(' ')}`))}">
+          (c) => `<a class="tile" href="${countryLink(c)}" data-region="${c.region}" data-search="${esc(normalize(`${c.name} ${c.aliases.join(' ')} ${c.localNames.map((l) => `${l.name} ${l.romanized}`).join(' ')}`))}">
             <div class="tile-flag">${flagImg(c, { size: 'sm', lazy: true })}</div>
             <span class="tile-name">${esc(c.name)}</span>
             ${level(c.code) === 'new' ? '' : `<span class="dot dot-${level(c.code)}" title="${level(c.code) === 'learning' ? 'Learning' : 'Learned'}"></span>`}

@@ -114,6 +114,7 @@ const out = countries
       subregion: c.subregion,
       population: c.population,
       area: c.area,
+      localNames: c.localNames ?? [],
       languages: c.languages ?? [],
       currencies: c.currencies ?? [],
       demonym: c.demonym,

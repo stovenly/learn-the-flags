@@ -3,6 +3,18 @@
   "isoNumeric": "336",
   "name": "Vatican City",
   "officialName": "Vatican City State",
+  "localNames": [
+    {
+      "language": "Italian",
+      "name": "Città del Vaticano",
+      "romanized": ""
+    },
+    {
+      "language": "Latin",
+      "name": "Civitas Vaticana",
+      "romanized": ""
+    }
+  ],
   "aliases": [
     "Holy See",
     "Vatican"
@@ -18,7 +30,11 @@
     "Latin"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Vatican",
   "latlng": [

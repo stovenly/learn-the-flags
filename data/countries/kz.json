@@ -3,6 +3,18 @@
   "isoNumeric": "398",
   "name": "Kazakhstan",
   "officialName": "Republic of Kazakhstan",
+  "localNames": [
+    {
+      "language": "Kazakh",
+      "name": "Қазақстан",
+      "romanized": "Qazaqstan"
+    },
+    {
+      "language": "Russian",
+      "name": "Казахстан",
+      "romanized": "Kazakhstan"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Astana",
@@ -15,7 +27,11 @@
     "Russian"
   ],
   "currencies": [
-    "Kazakhstani tenge"
+    {
+      "name": "Kazakhstani tenge",
+      "code": "KZT",
+      "symbol": "₸"
+    }
   ],
   "demonym": "Kazakhstani",
   "latlng": [

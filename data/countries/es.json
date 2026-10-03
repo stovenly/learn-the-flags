@@ -3,6 +3,13 @@
   "isoNumeric": "724",
   "name": "Spain",
   "officialName": "Kingdom of Spain",
+  "localNames": [
+    {
+      "language": "Spanish",
+      "name": "España",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Madrid",
@@ -14,7 +21,11 @@
     "Spanish"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Spanish",
   "latlng": [

@@ -3,6 +3,13 @@
   "isoNumeric": "116",
   "name": "Cambodia",
   "officialName": "Kingdom of Cambodia",
+  "localNames": [
+    {
+      "language": "Khmer",
+      "name": "កម្ពុជា",
+      "romanized": "Kâmpŭchéa"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Phnom Penh",
@@ -14,8 +21,16 @@
     "Khmer"
   ],
   "currencies": [
-    "Cambodian riel",
-    "United States dollar"
+    {
+      "name": "Cambodian riel",
+      "code": "KHR",
+      "symbol": "៛"
+    },
+    {
+      "name": "United States dollar",
+      "code": "USD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Cambodian",
   "latlng": [

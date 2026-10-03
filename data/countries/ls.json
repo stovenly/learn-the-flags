@@ -3,6 +3,7 @@
   "isoNumeric": "426",
   "name": "Lesotho",
   "officialName": "Kingdom of Lesotho",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Maseru",
@@ -15,8 +16,16 @@
     "Sotho"
   ],
   "currencies": [
-    "Lesotho loti",
-    "South African rand"
+    {
+      "name": "Lesotho loti",
+      "code": "LSL",
+      "symbol": "L"
+    },
+    {
+      "name": "South African rand",
+      "code": "ZAR",
+      "symbol": "R"
+    }
   ],
   "demonym": "Mosotho",
   "latlng": [

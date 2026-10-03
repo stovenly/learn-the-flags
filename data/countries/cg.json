@@ -3,6 +3,13 @@
   "isoNumeric": "178",
   "name": "Republic of the Congo",
   "officialName": "Republic of the Congo",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "Congo",
+      "romanized": ""
+    }
+  ],
   "aliases": [
     "Congo",
     "Congo-Brazzaville"
@@ -19,7 +26,11 @@
     "Lingala"
   ],
   "currencies": [
-    "Central African CFA franc"
+    {
+      "name": "Central African CFA franc",
+      "code": "XAF",
+      "symbol": "FCFA"
+    }
   ],
   "demonym": "Congolese",
   "latlng": [

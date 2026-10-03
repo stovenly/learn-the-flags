@@ -3,6 +3,13 @@
   "isoNumeric": "804",
   "name": "Ukraine",
   "officialName": "Ukraine",
+  "localNames": [
+    {
+      "language": "Ukrainian",
+      "name": "Україна",
+      "romanized": "Ukraïna"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Kyiv",
@@ -14,7 +21,11 @@
     "Ukrainian"
   ],
   "currencies": [
-    "Ukrainian hryvnia"
+    {
+      "name": "Ukrainian hryvnia",
+      "code": "UAH",
+      "symbol": "₴"
+    }
   ],
   "demonym": "Ukrainian",
   "latlng": [

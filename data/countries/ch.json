@@ -3,6 +3,23 @@
   "isoNumeric": "756",
   "name": "Switzerland",
   "officialName": "Swiss Confederation",
+  "localNames": [
+    {
+      "language": "German",
+      "name": "Schweiz",
+      "romanized": ""
+    },
+    {
+      "language": "French",
+      "name": "Suisse",
+      "romanized": ""
+    },
+    {
+      "language": "Italian",
+      "name": "Svizzera",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Bern",
@@ -17,7 +34,11 @@
     "Romansh"
   ],
   "currencies": [
-    "Swiss franc"
+    {
+      "name": "Swiss franc",
+      "code": "CHF",
+      "symbol": "Fr."
+    }
   ],
   "demonym": "Swiss",
   "latlng": [

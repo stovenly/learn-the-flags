@@ -3,6 +3,13 @@
   "isoNumeric": "348",
   "name": "Hungary",
   "officialName": "Hungary",
+  "localNames": [
+    {
+      "language": "Hungarian",
+      "name": "Magyarország",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Budapest",
@@ -14,7 +21,11 @@
     "Hungarian"
   ],
   "currencies": [
-    "Hungarian forint"
+    {
+      "name": "Hungarian forint",
+      "code": "HUF",
+      "symbol": "Ft"
+    }
   ],
   "demonym": "Hungarian",
   "latlng": [

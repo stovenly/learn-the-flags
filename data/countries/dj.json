@@ -3,6 +3,23 @@
   "isoNumeric": "262",
   "name": "Djibouti",
   "officialName": "Republic of Djibouti",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "Djibouti",
+      "romanized": ""
+    },
+    {
+      "language": "Arabic",
+      "name": "جيبوتي",
+      "romanized": "Jībūtī"
+    },
+    {
+      "language": "Somali",
+      "name": "Jabuuti",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Djibouti",
@@ -15,7 +32,11 @@
     "French"
   ],
   "currencies": [
-    "Djiboutian franc"
+    {
+      "name": "Djiboutian franc",
+      "code": "DJF",
+      "symbol": "Fdj"
+    }
   ],
   "demonym": "Djibouti",
   "latlng": [

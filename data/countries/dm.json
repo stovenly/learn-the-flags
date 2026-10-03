@@ -3,6 +3,7 @@
   "isoNumeric": "212",
   "name": "Dominica",
   "officialName": "Commonwealth of Dominica",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Roseau",
@@ -14,7 +15,11 @@
     "English"
   ],
   "currencies": [
-    "Eastern Caribbean dollar"
+    {
+      "name": "Eastern Caribbean dollar",
+      "code": "XCD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Dominican",
   "latlng": [

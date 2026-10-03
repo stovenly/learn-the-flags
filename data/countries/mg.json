@@ -3,6 +3,13 @@
   "isoNumeric": "450",
   "name": "Madagascar",
   "officialName": "Republic of Madagascar",
+  "localNames": [
+    {
+      "language": "Malagasy",
+      "name": "Madagasikara",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Antananarivo",
@@ -15,7 +22,11 @@
     "Malagasy"
   ],
   "currencies": [
-    "Malagasy ariary"
+    {
+      "name": "Malagasy ariary",
+      "code": "MGA",
+      "symbol": "Ar"
+    }
   ],
   "demonym": "Malagasy",
   "latlng": [

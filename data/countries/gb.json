@@ -3,6 +3,7 @@
   "isoNumeric": "826",
   "name": "United Kingdom",
   "officialName": "United Kingdom of Great Britain and Northern Ireland",
+  "localNames": [],
   "aliases": [
     "UK",
     "Great Britain",
@@ -18,7 +19,11 @@
     "English"
   ],
   "currencies": [
-    "British pound"
+    {
+      "name": "British pound",
+      "code": "GBP",
+      "symbol": "£"
+    }
   ],
   "demonym": "British",
   "latlng": [

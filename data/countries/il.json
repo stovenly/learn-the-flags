@@ -3,6 +3,18 @@
   "isoNumeric": "376",
   "name": "Israel",
   "officialName": "State of Israel",
+  "localNames": [
+    {
+      "language": "Hebrew",
+      "name": "ישראל",
+      "romanized": "Yisra'el"
+    },
+    {
+      "language": "Arabic",
+      "name": "إسرائيل",
+      "romanized": "Isrāʼīl"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Jerusalem",
@@ -15,7 +27,11 @@
     "Hebrew"
   ],
   "currencies": [
-    "Israeli new shekel"
+    {
+      "name": "Israeli new shekel",
+      "code": "ILS",
+      "symbol": "₪"
+    }
   ],
   "demonym": "Israeli",
   "latlng": [

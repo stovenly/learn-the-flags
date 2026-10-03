@@ -3,6 +3,13 @@
   "isoNumeric": "591",
   "name": "Panama",
   "officialName": "Republic of Panama",
+  "localNames": [
+    {
+      "language": "Spanish",
+      "name": "Panamá",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Panama City",
@@ -14,8 +21,16 @@
     "Spanish"
   ],
   "currencies": [
-    "Panamanian balboa",
-    "United States dollar"
+    {
+      "name": "Panamanian balboa",
+      "code": "PAB",
+      "symbol": "B/."
+    },
+    {
+      "name": "United States dollar",
+      "code": "USD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Panamanian",
   "latlng": [

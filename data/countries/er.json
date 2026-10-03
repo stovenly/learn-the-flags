@@ -3,6 +3,18 @@
   "isoNumeric": "232",
   "name": "Eritrea",
   "officialName": "State of Eritrea",
+  "localNames": [
+    {
+      "language": "Tigrinya",
+      "name": "ኤርትራ",
+      "romanized": "Ertra"
+    },
+    {
+      "language": "Arabic",
+      "name": "إريتريا",
+      "romanized": "Iritriyā"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Asmara",
@@ -16,7 +28,11 @@
     "Tigrinya"
   ],
   "currencies": [
-    "Eritrean nakfa"
+    {
+      "name": "Eritrean nakfa",
+      "code": "ERN",
+      "symbol": "Nfk"
+    }
   ],
   "demonym": "Eritrean",
   "latlng": [

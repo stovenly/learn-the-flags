@@ -3,6 +3,13 @@
   "isoNumeric": "776",
   "name": "Tonga",
   "officialName": "Kingdom of Tonga",
+  "localNames": [
+    {
+      "language": "Tongan",
+      "name": "Tonga",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Nuku'alofa",
@@ -15,7 +22,11 @@
     "Tongan"
   ],
   "currencies": [
-    "Tongan paʻanga"
+    {
+      "name": "Tongan paʻanga",
+      "code": "TOP",
+      "symbol": "T$"
+    }
   ],
   "demonym": "Tongan",
   "latlng": [

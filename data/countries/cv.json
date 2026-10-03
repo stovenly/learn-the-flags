@@ -3,6 +3,13 @@
   "isoNumeric": "132",
   "name": "Cape Verde",
   "officialName": "Republic of Cabo Verde",
+  "localNames": [
+    {
+      "language": "Portuguese",
+      "name": "Cabo Verde",
+      "romanized": ""
+    }
+  ],
   "aliases": [
     "Cabo Verde"
   ],
@@ -16,7 +23,11 @@
     "Portuguese"
   ],
   "currencies": [
-    "Cape Verdean escudo"
+    {
+      "name": "Cape Verdean escudo",
+      "code": "CVE",
+      "symbol": "Esc"
+    }
   ],
   "demonym": "Cape Verdian",
   "latlng": [

@@ -3,6 +3,7 @@
   "isoNumeric": "404",
   "name": "Kenya",
   "officialName": "Republic of Kenya",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Nairobi",
@@ -15,7 +16,11 @@
     "Swahili"
   ],
   "currencies": [
-    "Kenyan shilling"
+    {
+      "name": "Kenyan shilling",
+      "code": "KES",
+      "symbol": "KSh"
+    }
   ],
   "demonym": "Kenyan",
   "latlng": [

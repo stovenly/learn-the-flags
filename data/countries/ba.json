@@ -3,6 +3,23 @@
   "isoNumeric": "070",
   "name": "Bosnia and Herzegovina",
   "officialName": "Bosnia and Herzegovina",
+  "localNames": [
+    {
+      "language": "Bosnian",
+      "name": "Bosna i Hercegovina",
+      "romanized": ""
+    },
+    {
+      "language": "Croatian",
+      "name": "Bosna i Hercegovina",
+      "romanized": ""
+    },
+    {
+      "language": "Serbian",
+      "name": "Босна и Херцеговина",
+      "romanized": "Bosna i Hercegovina"
+    }
+  ],
   "aliases": [
     "Bosnia"
   ],
@@ -18,7 +35,11 @@
     "Serbian"
   ],
   "currencies": [
-    "Bosnia and Herzegovina convertible mark"
+    {
+      "name": "Bosnia and Herzegovina convertible mark",
+      "code": "BAM",
+      "symbol": "KM"
+    }
   ],
   "demonym": "Bosnian, Herzegovinian",
   "latlng": [

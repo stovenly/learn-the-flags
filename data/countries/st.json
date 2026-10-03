@@ -3,6 +3,13 @@
   "isoNumeric": "678",
   "name": "São Tomé and Príncipe",
   "officialName": "Democratic Republic of São Tomé and Príncipe",
+  "localNames": [
+    {
+      "language": "Portuguese",
+      "name": "São Tomé e Príncipe",
+      "romanized": ""
+    }
+  ],
   "aliases": [
     "São Tomé"
   ],
@@ -16,7 +23,11 @@
     "Portuguese"
   ],
   "currencies": [
-    "São Tomé and Príncipe dobra"
+    {
+      "name": "São Tomé and Príncipe dobra",
+      "code": "STN",
+      "symbol": "Db"
+    }
   ],
   "demonym": "Sao Tomean",
   "latlng": [

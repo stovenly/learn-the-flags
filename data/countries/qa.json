@@ -3,6 +3,13 @@
   "isoNumeric": "634",
   "name": "Qatar",
   "officialName": "State of Qatar",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "قطر",
+      "romanized": "Qaṭar"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Doha",
@@ -14,7 +21,11 @@
     "Arabic"
   ],
   "currencies": [
-    "Qatari riyal"
+    {
+      "name": "Qatari riyal",
+      "code": "QAR",
+      "symbol": "ر.ق"
+    }
   ],
   "demonym": "Qatari",
   "latlng": [

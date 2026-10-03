@@ -3,6 +3,13 @@
   "isoNumeric": "440",
   "name": "Lithuania",
   "officialName": "Republic of Lithuania",
+  "localNames": [
+    {
+      "language": "Lithuanian",
+      "name": "Lietuva",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Vilnius",
@@ -14,7 +21,11 @@
     "Lithuanian"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Lithuanian",
   "latlng": [

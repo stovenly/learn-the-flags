@@ -3,6 +3,13 @@
   "isoNumeric": "417",
   "name": "Kyrgyzstan",
   "officialName": "Kyrgyz Republic",
+  "localNames": [
+    {
+      "language": "Kyrgyz",
+      "name": "Кыргызстан",
+      "romanized": "Kyrgyzstan"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Bishkek",
@@ -15,7 +22,11 @@
     "Russian"
   ],
   "currencies": [
-    "Kyrgyzstani som"
+    {
+      "name": "Kyrgyzstani som",
+      "code": "KGS",
+      "symbol": "с"
+    }
   ],
   "demonym": "Kirghiz",
   "latlng": [

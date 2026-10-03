@@ -3,6 +3,13 @@
   "isoNumeric": "646",
   "name": "Rwanda",
   "officialName": "Republic of Rwanda",
+  "localNames": [
+    {
+      "language": "Kinyarwanda",
+      "name": "Rwanda",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Kigali",
@@ -16,7 +23,11 @@
     "Kinyarwanda"
   ],
   "currencies": [
-    "Rwandan franc"
+    {
+      "name": "Rwandan franc",
+      "code": "RWF",
+      "symbol": "FRw"
+    }
   ],
   "demonym": "Rwandan",
   "latlng": [

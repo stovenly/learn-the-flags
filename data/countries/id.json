@@ -3,6 +3,7 @@
   "isoNumeric": "360",
   "name": "Indonesia",
   "officialName": "Republic of Indonesia",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Jakarta",
@@ -14,7 +15,11 @@
     "Indonesian"
   ],
   "currencies": [
-    "Indonesian rupiah"
+    {
+      "name": "Indonesian rupiah",
+      "code": "IDR",
+      "symbol": "Rp"
+    }
   ],
   "demonym": "Indonesian",
   "latlng": [

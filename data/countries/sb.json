@@ -3,6 +3,7 @@
   "isoNumeric": "090",
   "name": "Solomon Islands",
   "officialName": "Solomon Islands",
+  "localNames": [],
   "aliases": [
     "Solomons"
   ],
@@ -16,7 +17,11 @@
     "English"
   ],
   "currencies": [
-    "Solomon Islands dollar"
+    {
+      "name": "Solomon Islands dollar",
+      "code": "SBD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Solomon Islander",
   "latlng": [

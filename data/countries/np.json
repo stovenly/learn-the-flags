@@ -3,6 +3,13 @@
   "isoNumeric": "524",
   "name": "Nepal",
   "officialName": "Federal Democratic Republic of Nepal",
+  "localNames": [
+    {
+      "language": "Nepali",
+      "name": "नेपाल",
+      "romanized": "Nepāl"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Kathmandu",
@@ -14,7 +21,11 @@
     "Nepali"
   ],
   "currencies": [
-    "Nepalese rupee"
+    {
+      "name": "Nepalese rupee",
+      "code": "NPR",
+      "symbol": "₨"
+    }
   ],
   "demonym": "Nepalese",
   "latlng": [

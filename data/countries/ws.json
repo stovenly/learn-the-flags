@@ -3,6 +3,13 @@
   "isoNumeric": "882",
   "name": "Samoa",
   "officialName": "Independent State of Samoa",
+  "localNames": [
+    {
+      "language": "Samoan",
+      "name": "Sāmoa",
+      "romanized": ""
+    }
+  ],
   "aliases": [
     "Western Samoa"
   ],
@@ -17,7 +24,11 @@
     "Samoan"
   ],
   "currencies": [
-    "Samoan tālā"
+    {
+      "name": "Samoan tālā",
+      "code": "WST",
+      "symbol": "T"
+    }
   ],
   "demonym": "Samoan",
   "latlng": [

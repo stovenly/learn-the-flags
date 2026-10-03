@@ -3,6 +3,7 @@
   "isoNumeric": "328",
   "name": "Guyana",
   "officialName": "Co-operative Republic of Guyana",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Georgetown",
@@ -14,7 +15,11 @@
     "English"
   ],
   "currencies": [
-    "Guyanese dollar"
+    {
+      "name": "Guyanese dollar",
+      "code": "GYD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Guyanese",
   "latlng": [

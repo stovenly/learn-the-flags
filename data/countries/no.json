@@ -3,6 +3,23 @@
   "isoNumeric": "578",
   "name": "Norway",
   "officialName": "Kingdom of Norway",
+  "localNames": [
+    {
+      "language": "Norwegian Bokmål",
+      "name": "Norge",
+      "romanized": ""
+    },
+    {
+      "language": "Norwegian Nynorsk",
+      "name": "Noreg",
+      "romanized": ""
+    },
+    {
+      "language": "Sami",
+      "name": "Norga",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Oslo",
@@ -16,7 +33,11 @@
     "Sami"
   ],
   "currencies": [
-    "Norwegian krone"
+    {
+      "name": "Norwegian krone",
+      "code": "NOK",
+      "symbol": "kr"
+    }
   ],
   "demonym": "Norwegian",
   "latlng": [

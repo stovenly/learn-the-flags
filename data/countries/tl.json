@@ -3,6 +3,18 @@
   "isoNumeric": "626",
   "name": "Timor-Leste",
   "officialName": "Democratic Republic of Timor-Leste",
+  "localNames": [
+    {
+      "language": "Tetum",
+      "name": "Timór-Leste",
+      "romanized": ""
+    },
+    {
+      "language": "Portuguese",
+      "name": "Timor-Leste",
+      "romanized": ""
+    }
+  ],
   "aliases": [
     "East Timor"
   ],
@@ -17,7 +29,11 @@
     "Tetum"
   ],
   "currencies": [
-    "United States dollar"
+    {
+      "name": "United States dollar",
+      "code": "USD",
+      "symbol": "$"
+    }
   ],
   "demonym": "East Timorese",
   "latlng": [

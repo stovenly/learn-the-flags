@@ -3,6 +3,18 @@
   "isoNumeric": "144",
   "name": "Sri Lanka",
   "officialName": "Democratic Socialist Republic of Sri Lanka",
+  "localNames": [
+    {
+      "language": "Sinhala",
+      "name": "ශ්‍රී ලංකාව",
+      "romanized": "Śrī Laṅkāva"
+    },
+    {
+      "language": "Tamil",
+      "name": "இலங்கை",
+      "romanized": "Ilaṅkai"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Sri Jayawardenepura Kotte (official), Colombo (executive and commercial)",
@@ -15,7 +27,11 @@
     "Tamil"
   ],
   "currencies": [
-    "Sri Lankan rupee"
+    {
+      "name": "Sri Lankan rupee",
+      "code": "LKR",
+      "symbol": "Rs"
+    }
   ],
   "demonym": "Sri Lankan",
   "latlng": [

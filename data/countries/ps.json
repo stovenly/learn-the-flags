@@ -3,6 +3,13 @@
   "isoNumeric": "275",
   "name": "Palestine",
   "officialName": "State of Palestine",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "فلسطين",
+      "romanized": "Filasṭīn"
+    }
+  ],
   "aliases": [
     "State of Palestine"
   ],
@@ -16,9 +23,21 @@
     "Arabic"
   ],
   "currencies": [
-    "Egyptian pound",
-    "Israeli new shekel",
-    "Jordanian dinar"
+    {
+      "name": "Egyptian pound",
+      "code": "EGP",
+      "symbol": "E£"
+    },
+    {
+      "name": "Israeli new shekel",
+      "code": "ILS",
+      "symbol": "₪"
+    },
+    {
+      "name": "Jordanian dinar",
+      "code": "JOD",
+      "symbol": "JD"
+    }
   ],
   "demonym": "Palestinian",
   "latlng": [

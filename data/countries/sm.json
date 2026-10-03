@@ -3,6 +3,13 @@
   "isoNumeric": "674",
   "name": "San Marino",
   "officialName": "Most Serene Republic of San Marino",
+  "localNames": [
+    {
+      "language": "Italian",
+      "name": "San Marino",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "City of San Marino",
@@ -14,7 +21,11 @@
     "Italian"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Sammarinese",
   "latlng": [

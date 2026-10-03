@@ -24,8 +24,9 @@ export function flagImg(c: Country, opts: { size?: 'sm' | 'md' | 'lg'; lazy?: bo
   return `<img class="flag flag-${size}${c.transparent ? ' flag-shaped' : ''}" src="${src}"${srcset ? ` srcset="${srcset}"` : ''} width="${w}" height="${h}" alt="${esc(alt)}" style="--ratio:${c.ratio}${lazy && !c.transparent ? `;background-color:${c.color}` : ''}"${lazy ? ' loading="lazy"' : ''} decoding="async" draggable="false">`;
 }
 
-export function mapImg(c: Country, size: 'xs' | 'sm' | 'md' | 'lg' = 'md') {
-  return `<img class="map map-${size}" src="${mapSrc(c.code)}" width="150" height="100" alt="Map showing where ${esc(c.name)} is" decoding="async" draggable="false">`;
+// `plain` leaves neighbours' flags off the map, for questions where they would give options away.
+export function mapImg(c: Country, size: 'xs' | 'sm' | 'md' | 'lg' = 'md', plain = false) {
+  return `<img class="map map-${size}" src="${mapSrc(c.code, plain)}" width="150" height="100" alt="Map showing where ${esc(c.name)} is" decoding="async" draggable="false">`;
 }
 
 export function differencesHtml(c: Country, others: Country[]) {

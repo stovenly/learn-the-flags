@@ -3,6 +3,7 @@
   "isoNumeric": "320",
   "name": "Guatemala",
   "officialName": "Republic of Guatemala",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Guatemala City",
@@ -14,7 +15,11 @@
     "Spanish"
   ],
   "currencies": [
-    "Guatemalan quetzal"
+    {
+      "name": "Guatemalan quetzal",
+      "code": "GTQ",
+      "symbol": "Q"
+    }
   ],
   "demonym": "Guatemalan",
   "latlng": [

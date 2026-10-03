@@ -3,6 +3,7 @@
   "isoNumeric": "728",
   "name": "South Sudan",
   "officialName": "Republic of South Sudan",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Juba",
@@ -14,7 +15,11 @@
     "English"
   ],
   "currencies": [
-    "South Sudanese pound"
+    {
+      "name": "South Sudanese pound",
+      "code": "SSP",
+      "symbol": "£"
+    }
   ],
   "demonym": "South Sudanese",
   "latlng": [

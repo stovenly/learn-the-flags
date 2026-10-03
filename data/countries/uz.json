@@ -3,6 +3,13 @@
   "isoNumeric": "860",
   "name": "Uzbekistan",
   "officialName": "Republic of Uzbekistan",
+  "localNames": [
+    {
+      "language": "Uzbek",
+      "name": "Oʻzbekiston",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Tashkent",
@@ -15,7 +22,11 @@
     "Uzbek"
   ],
   "currencies": [
-    "Uzbekistani soʻm"
+    {
+      "name": "Uzbekistani soʻm",
+      "code": "UZS",
+      "symbol": "so'm"
+    }
   ],
   "demonym": "Uzbekistani",
   "latlng": [

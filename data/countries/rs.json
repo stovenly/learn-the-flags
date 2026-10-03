@@ -3,6 +3,13 @@
   "isoNumeric": "688",
   "name": "Serbia",
   "officialName": "Republic of Serbia",
+  "localNames": [
+    {
+      "language": "Serbian",
+      "name": "Србија",
+      "romanized": "Srbija"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Belgrade",
@@ -14,7 +21,11 @@
     "Serbian"
   ],
   "currencies": [
-    "Serbian dinar"
+    {
+      "name": "Serbian dinar",
+      "code": "RSD",
+      "symbol": "дин."
+    }
   ],
   "demonym": "Serbian",
   "latlng": [

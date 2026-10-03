@@ -3,6 +3,13 @@
   "isoNumeric": "300",
   "name": "Greece",
   "officialName": "Hellenic Republic",
+  "localNames": [
+    {
+      "language": "Greek",
+      "name": "Ελλάδα",
+      "romanized": "Elláda"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Athens",
@@ -14,7 +21,11 @@
     "Greek"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Greek",
   "latlng": [

@@ -3,6 +3,13 @@
   "isoNumeric": "498",
   "name": "Moldova",
   "officialName": "Republic of Moldova",
+  "localNames": [
+    {
+      "language": "Romanian",
+      "name": "Moldova",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Chișinău",
@@ -14,7 +21,11 @@
     "Romanian"
   ],
   "currencies": [
-    "Moldovan leu"
+    {
+      "name": "Moldovan leu",
+      "code": "MDL",
+      "symbol": "L"
+    }
   ],
   "demonym": "Moldovan",
   "latlng": [

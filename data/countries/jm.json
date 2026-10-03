@@ -3,6 +3,7 @@
   "isoNumeric": "388",
   "name": "Jamaica",
   "officialName": "Jamaica",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Kingston",
@@ -15,7 +16,11 @@
     "Jamaican Patois"
   ],
   "currencies": [
-    "Jamaican dollar"
+    {
+      "name": "Jamaican dollar",
+      "code": "JMD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Jamaican",
   "latlng": [

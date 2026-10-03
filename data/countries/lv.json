@@ -3,6 +3,13 @@
   "isoNumeric": "428",
   "name": "Latvia",
   "officialName": "Republic of Latvia",
+  "localNames": [
+    {
+      "language": "Latvian",
+      "name": "Latvija",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Riga",
@@ -14,7 +21,11 @@
     "Latvian"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Latvian",
   "latlng": [

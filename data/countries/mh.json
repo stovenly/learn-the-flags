@@ -3,6 +3,13 @@
   "isoNumeric": "584",
   "name": "Marshall Islands",
   "officialName": "Republic of the Marshall Islands",
+  "localNames": [
+    {
+      "language": "Marshallese",
+      "name": "M̧ajeļ",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Majuro",
@@ -15,7 +22,11 @@
     "Marshallese"
   ],
   "currencies": [
-    "United States dollar"
+    {
+      "name": "United States dollar",
+      "code": "USD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Marshallese",
   "latlng": [

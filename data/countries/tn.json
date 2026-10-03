@@ -3,6 +3,13 @@
   "isoNumeric": "788",
   "name": "Tunisia",
   "officialName": "Tunisian Republic",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "تونس",
+      "romanized": "Tūnis"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Tunis",
@@ -14,7 +21,11 @@
     "Arabic"
   ],
   "currencies": [
-    "Tunisian dinar"
+    {
+      "name": "Tunisian dinar",
+      "code": "TND",
+      "symbol": "د.ت"
+    }
   ],
   "demonym": "Tunisian",
   "latlng": [

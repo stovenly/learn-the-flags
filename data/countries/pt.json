@@ -3,6 +3,13 @@
   "isoNumeric": "620",
   "name": "Portugal",
   "officialName": "Portuguese Republic",
+  "localNames": [
+    {
+      "language": "Portuguese",
+      "name": "Portugal",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Lisbon",
@@ -14,7 +21,11 @@
     "Portuguese"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Portuguese",
   "latlng": [

@@ -3,6 +3,18 @@
   "isoNumeric": "148",
   "name": "Chad",
   "officialName": "Republic of Chad",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "Tchad",
+      "romanized": ""
+    },
+    {
+      "language": "Arabic",
+      "name": "تشاد",
+      "romanized": "Tshād"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "N'Djamena",
@@ -15,7 +27,11 @@
     "French"
   ],
   "currencies": [
-    "Central African CFA franc"
+    {
+      "name": "Central African CFA franc",
+      "code": "XAF",
+      "symbol": "FCFA"
+    }
   ],
   "demonym": "Chadian",
   "latlng": [

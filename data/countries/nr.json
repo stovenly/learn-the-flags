@@ -3,6 +3,13 @@
   "isoNumeric": "520",
   "name": "Nauru",
   "officialName": "Republic of Nauru",
+  "localNames": [
+    {
+      "language": "Nauruan",
+      "name": "Naoero",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Yaren (de facto)",
@@ -15,7 +22,11 @@
     "Nauru"
   ],
   "currencies": [
-    "Australian dollar"
+    {
+      "name": "Australian dollar",
+      "code": "AUD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Nauruan",
   "latlng": [

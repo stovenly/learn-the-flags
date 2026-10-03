@@ -3,6 +3,18 @@
   "isoNumeric": "504",
   "name": "Morocco",
   "officialName": "Kingdom of Morocco",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "المغرب",
+      "romanized": "al-Maghrib"
+    },
+    {
+      "language": "Berber",
+      "name": "ⵍⵎⵖⵔⵉⴱ",
+      "romanized": "Lmeɣrib"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Rabat",
@@ -15,7 +27,11 @@
     "Berber"
   ],
   "currencies": [
-    "Moroccan dirham"
+    {
+      "name": "Moroccan dirham",
+      "code": "MAD",
+      "symbol": "د.م."
+    }
   ],
   "demonym": "Moroccan",
   "latlng": [

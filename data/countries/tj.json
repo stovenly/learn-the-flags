@@ -3,6 +3,13 @@
   "isoNumeric": "762",
   "name": "Tajikistan",
   "officialName": "Republic of Tajikistan",
+  "localNames": [
+    {
+      "language": "Tajik",
+      "name": "Тоҷикистон",
+      "romanized": "Tojikiston"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Dushanbe",
@@ -15,7 +22,11 @@
     "Tajik"
   ],
   "currencies": [
-    "Tajikistani somoni"
+    {
+      "name": "Tajikistani somoni",
+      "code": "TJS",
+      "symbol": "ЅМ"
+    }
   ],
   "demonym": "Tadzhik",
   "latlng": [

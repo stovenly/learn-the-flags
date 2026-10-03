@@ -40,7 +40,7 @@ ul{padding-left:20px;margin:0}li{margin-bottom:6px}
 .grid .flag{width:auto;max-width:100%;max-height:100%}
 .map{display:block;width:100%;height:auto;border-radius:8px}.mapcard{padding:12px}
 .pairs{display:flex;flex-direction:column;gap:14px}.pair{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center;color:var(--text)}.pair:hover{text-decoration:none}.pair .box{aspect-ratio:3/2;display:grid;place-items:center}.pair .flag{width:auto;max-width:100%;max-height:100%}.pair strong{display:block}
-.promo{text-align:center}.promo p{margin:0 0 14px}
+.local{font-size:1.15rem;margin:0 0 4px}.promo{text-align:center}.promo p{margin:0 0 14px}
 footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85rem;color:var(--muted)}
 @media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}.pair{grid-template-columns:80px 1fr;gap:12px}}
 `.trim();
@@ -78,6 +78,12 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script
 `;
 }
 
+const localName = (c) =>
+  c.localNames
+    .filter((l) => l.name !== c.name || l.romanized)
+    .map((l) => [l.romanized, l.name].filter(Boolean).join(' · '))
+    .join('  /  ');
+
 const img = (c, up, size = 640) => {
   const h = Math.round(640 / c.ratio);
   return `<img class="flag${c.transparent ? ' shaped' : ''}" src="${up}img/flags/${size}/${c.code}.webp" width="640" height="${h}" alt="Flag of ${esc(c.name)}" style="--r:${c.ratio}"${size === 320 ? ' loading="lazy"' : ''} decoding="async">`;
@@ -93,14 +99,15 @@ for (const c of countries) {
     ['Population', fmtPop(c.population)],
     ['Area', c.area ? `${Math.round(c.area).toLocaleString('en-US')} km²` : '—'],
     ['Languages', c.languages.join(', ')],
-    ['Currency', c.currencies.join(', ')],
+    ['Currency', c.currencies.map((x) => (x.symbol && x.symbol !== x.code ? `${x.name} (${x.symbol})` : x.name)).join(', ')],
     ['Flag adopted', c.flag.adopted],
   ];
   const body = `
 <article>
 <div class="card hero">${img(c, up)}</div>
 <h1>Flag of ${esc(c.name)}</h1>
-<p class="muted">${esc(c.officialName)}${STATUS[c.status] ? ` · ${STATUS[c.status]}` : ''}</p>
+${localName(c) ? `<p class="local">${esc(localName(c))}</p>` : ''}
+${[c.officialName !== c.name ? c.officialName : '', STATUS[c.status] ?? ''].filter(Boolean).length ? `<p class="muted">${esc([c.officialName !== c.name ? c.officialName : '', STATUS[c.status] ?? ''].filter(Boolean).join(' · '))}</p>` : ''}
 <div class="card mapcard"><img class="map" src="${up}img/maps/${c.code}.svg" width="150" height="100" alt="Map showing where ${esc(c.name)} is" loading="lazy"></div>
 <section class="card">
 <h2>What the flag looks like</h2>

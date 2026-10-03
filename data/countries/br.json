@@ -3,6 +3,13 @@
   "isoNumeric": "076",
   "name": "Brazil",
   "officialName": "Federative Republic of Brazil",
+  "localNames": [
+    {
+      "language": "Portuguese",
+      "name": "Brasil",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Brasília",
@@ -14,7 +21,11 @@
     "Portuguese"
   ],
   "currencies": [
-    "Brazilian real"
+    {
+      "name": "Brazilian real",
+      "code": "BRL",
+      "symbol": "R$"
+    }
   ],
   "demonym": "Brazilian",
   "latlng": [

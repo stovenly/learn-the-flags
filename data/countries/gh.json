@@ -3,6 +3,7 @@
   "isoNumeric": "288",
   "name": "Ghana",
   "officialName": "Republic of Ghana",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Accra",
@@ -14,7 +15,11 @@
     "English"
   ],
   "currencies": [
-    "Ghanaian cedi"
+    {
+      "name": "Ghanaian cedi",
+      "code": "GHS",
+      "symbol": "₵"
+    }
   ],
   "demonym": "Ghanaian",
   "latlng": [

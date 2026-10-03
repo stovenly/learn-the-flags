@@ -3,6 +3,13 @@
   "isoNumeric": "208",
   "name": "Denmark",
   "officialName": "Kingdom of Denmark",
+  "localNames": [
+    {
+      "language": "Danish",
+      "name": "Danmark",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Copenhagen",
@@ -14,7 +21,11 @@
     "Danish"
   ],
   "currencies": [
-    "Danish krone"
+    {
+      "name": "Danish krone",
+      "code": "DKK",
+      "symbol": "kr"
+    }
   ],
   "demonym": "Danish",
   "latlng": [

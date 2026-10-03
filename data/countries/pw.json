@@ -3,6 +3,13 @@
   "isoNumeric": "585",
   "name": "Palau",
   "officialName": "Republic of Palau",
+  "localNames": [
+    {
+      "language": "Palauan",
+      "name": "Belau",
+      "romanized": ""
+    }
+  ],
   "aliases": [
     "Belau"
   ],
@@ -17,7 +24,11 @@
     "Palauan"
   ],
   "currencies": [
-    "United States dollar"
+    {
+      "name": "United States dollar",
+      "code": "USD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Palauan",
   "latlng": [

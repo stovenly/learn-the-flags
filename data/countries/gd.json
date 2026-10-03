@@ -3,6 +3,7 @@
   "isoNumeric": "308",
   "name": "Grenada",
   "officialName": "Grenada",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "St. George's",
@@ -14,7 +15,11 @@
     "English"
   ],
   "currencies": [
-    "Eastern Caribbean dollar"
+    {
+      "name": "Eastern Caribbean dollar",
+      "code": "XCD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Grenadian",
   "latlng": [

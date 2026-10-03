@@ -3,6 +3,7 @@
   "isoNumeric": "032",
   "name": "Argentina",
   "officialName": "Argentine Republic",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Buenos Aires",
@@ -15,7 +16,11 @@
     "Spanish"
   ],
   "currencies": [
-    "Argentine peso"
+    {
+      "name": "Argentine peso",
+      "code": "ARS",
+      "symbol": "$"
+    }
   ],
   "demonym": "Argentine",
   "latlng": [

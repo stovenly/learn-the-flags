@@ -3,6 +3,7 @@
   "isoNumeric": "270",
   "name": "Gambia",
   "officialName": "Republic of the Gambia",
+  "localNames": [],
   "aliases": [
     "The Gambia"
   ],
@@ -16,7 +17,11 @@
     "English"
   ],
   "currencies": [
-    "dalasi"
+    {
+      "name": "dalasi",
+      "code": "GMD",
+      "symbol": "D"
+    }
   ],
   "demonym": "Gambian",
   "latlng": [

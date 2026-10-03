@@ -3,6 +3,23 @@
   "isoNumeric": "702",
   "name": "Singapore",
   "officialName": "Republic of Singapore",
+  "localNames": [
+    {
+      "language": "Malay",
+      "name": "Singapura",
+      "romanized": ""
+    },
+    {
+      "language": "Chinese",
+      "name": "新加坡",
+      "romanized": "Xīnjiāpō"
+    },
+    {
+      "language": "Tamil",
+      "name": "சிங்கப்பூர்",
+      "romanized": "Ciṅkappūr"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Singapore",
@@ -17,7 +34,11 @@
     "Chinese"
   ],
   "currencies": [
-    "Singapore dollar"
+    {
+      "name": "Singapore dollar",
+      "code": "SGD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Singaporean",
   "latlng": [

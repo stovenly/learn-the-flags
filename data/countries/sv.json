@@ -3,6 +3,13 @@
   "isoNumeric": "222",
   "name": "El Salvador",
   "officialName": "Republic of El Salvador",
+  "localNames": [
+    {
+      "language": "Spanish",
+      "name": "El Salvador",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "San Salvador",
@@ -14,7 +21,11 @@
     "Spanish"
   ],
   "currencies": [
-    "United States dollar"
+    {
+      "name": "United States dollar",
+      "code": "USD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Salvadoran",
   "latlng": [

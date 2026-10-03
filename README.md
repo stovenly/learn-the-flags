@@ -41,7 +41,7 @@ Lookalike pairs live in `data/lookalikes.json`, keyed by the two codes in alphab
 ## Other scripts
 
 - `scripts/build-assets.mjs` re-renders the favicon, the touch icon and the `og.png` social preview.
-- `scripts/build-maps.mjs` runs as part of the build. It renders `img/maps/<code>.svg`: a regional map zoomed on each country with it highlighted, neighbours labelled where their names fit, and a locator globe inset. Data is Natural Earth via `world-atlas`. Countries are matched by `isoNumeric`, or by name when that is empty (Kosovo).
+- `scripts/build-maps.mjs` runs as part of the build. It renders `img/maps/<code>.svg`: a regional map zoomed on each country with it highlighted, neighbours labelled with their name and flag where they fit, and a locator globe inset. `img/maps/plain/` has the same maps without neighbour flags, used on "Which is the flag of…" questions so the map does not give options away. Data is Natural Earth via `world-atlas`. Countries are matched by `isoNumeric`, or by name when that is empty (Kosovo).
 - `scripts/build-pages.mjs` runs as part of the build. It writes a static, crawlable page per country (`docs/flags/<slug>/`), the flag index, `sitemap.xml` and `robots.txt`.
 - `site.config.json` holds the site URL, name and description used for SEO tags.
 

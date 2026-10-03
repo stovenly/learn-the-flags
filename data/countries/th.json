@@ -3,6 +3,13 @@
   "isoNumeric": "764",
   "name": "Thailand",
   "officialName": "Kingdom of Thailand",
+  "localNames": [
+    {
+      "language": "Thai",
+      "name": "ประเทศไทย",
+      "romanized": "Prathet Thai"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Bangkok",
@@ -14,7 +21,11 @@
     "Thai"
   ],
   "currencies": [
-    "Thai baht"
+    {
+      "name": "Thai baht",
+      "code": "THB",
+      "symbol": "฿"
+    }
   ],
   "demonym": "Thai",
   "latlng": [

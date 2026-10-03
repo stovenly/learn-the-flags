@@ -3,6 +3,13 @@
   "isoNumeric": "392",
   "name": "Japan",
   "officialName": "Japan",
+  "localNames": [
+    {
+      "language": "Japanese",
+      "name": "日本",
+      "romanized": "Nippon"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Tokyo",
@@ -14,7 +21,11 @@
     "Japanese"
   ],
   "currencies": [
-    "Japanese yen"
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
   ],
   "demonym": "Japanese",
   "latlng": [

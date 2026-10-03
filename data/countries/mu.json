@@ -3,6 +3,18 @@
   "isoNumeric": "480",
   "name": "Mauritius",
   "officialName": "Republic of Mauritius",
+  "localNames": [
+    {
+      "language": "Mauritian Creole",
+      "name": "Moris",
+      "romanized": ""
+    },
+    {
+      "language": "French",
+      "name": "Maurice",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Port Louis",
@@ -16,7 +28,11 @@
     "Mauritian Creole"
   ],
   "currencies": [
-    "Mauritian rupee"
+    {
+      "name": "Mauritian rupee",
+      "code": "MUR",
+      "symbol": "Rs"
+    }
   ],
   "demonym": "Mauritian",
   "latlng": [

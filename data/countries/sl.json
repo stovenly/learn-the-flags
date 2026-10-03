@@ -3,6 +3,7 @@
   "isoNumeric": "694",
   "name": "Sierra Leone",
   "officialName": "Republic of Sierra Leone",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Freetown",
@@ -14,7 +15,11 @@
     "English"
   ],
   "currencies": [
-    "Sierra Leonean leone"
+    {
+      "name": "Sierra Leonean leone",
+      "code": "SLE",
+      "symbol": "Le"
+    }
   ],
   "demonym": "Sierra Leonean",
   "latlng": [

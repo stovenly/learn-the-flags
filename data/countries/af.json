@@ -3,6 +3,18 @@
   "isoNumeric": "004",
   "name": "Afghanistan",
   "officialName": "Islamic Republic of Afghanistan",
+  "localNames": [
+    {
+      "language": "Dari",
+      "name": "افغانستان",
+      "romanized": "Afghānistān"
+    },
+    {
+      "language": "Pashto",
+      "name": "افغانستان",
+      "romanized": "Afġānistān"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Kabul",
@@ -16,7 +28,11 @@
     "Turkmen"
   ],
   "currencies": [
-    "Afghan afghani"
+    {
+      "name": "Afghan afghani",
+      "code": "AFN",
+      "symbol": "؋"
+    }
   ],
   "demonym": "Afghan",
   "latlng": [

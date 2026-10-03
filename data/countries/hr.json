@@ -3,6 +3,13 @@
   "isoNumeric": "191",
   "name": "Croatia",
   "officialName": "Republic of Croatia",
+  "localNames": [
+    {
+      "language": "Croatian",
+      "name": "Hrvatska",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Zagreb",
@@ -14,7 +21,11 @@
     "Croatian"
   ],
   "currencies": [
-    "Euro"
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
   ],
   "demonym": "Croatian",
   "latlng": [

@@ -3,6 +3,7 @@
   "isoNumeric": "124",
   "name": "Canada",
   "officialName": "Canada",
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Ottawa",
@@ -15,7 +16,11 @@
     "French"
   ],
   "currencies": [
-    "Canadian dollar"
+    {
+      "name": "Canadian dollar",
+      "code": "CAD",
+      "symbol": "$"
+    }
   ],
   "demonym": "Canadian",
   "latlng": [

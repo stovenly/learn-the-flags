@@ -3,6 +3,13 @@
   "isoNumeric": "484",
   "name": "Mexico",
   "officialName": "United Mexican States",
+  "localNames": [
+    {
+      "language": "Spanish",
+      "name": "México",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Mexico City",
@@ -14,7 +21,11 @@
     "Spanish"
   ],
   "currencies": [
-    "Mexican peso"
+    {
+      "name": "Mexican peso",
+      "code": "MXN",
+      "symbol": "$"
+    }
   ],
   "demonym": "Mexican",
   "latlng": [

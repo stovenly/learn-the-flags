@@ -3,6 +3,18 @@
   "isoNumeric": "807",
   "name": "North Macedonia",
   "officialName": "Republic of North Macedonia",
+  "localNames": [
+    {
+      "language": "Macedonian",
+      "name": "Северна Македонија",
+      "romanized": "Severna Makedonija"
+    },
+    {
+      "language": "Albanian",
+      "name": "Maqedonia e Veriut",
+      "romanized": ""
+    }
+  ],
   "aliases": [
     "Macedonia"
   ],
@@ -16,7 +28,11 @@
     "Macedonian"
   ],
   "currencies": [
-    "Macedonian denar"
+    {
+      "name": "Macedonian denar",
+      "code": "MKD",
+      "symbol": "ден"
+    }
   ],
   "demonym": "Macedonian",
   "latlng": [

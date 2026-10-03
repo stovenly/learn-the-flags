@@ -3,6 +3,18 @@
   "isoNumeric": "422",
   "name": "Lebanon",
   "officialName": "Lebanese Republic",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "لبنان",
+      "romanized": "Lubnān"
+    },
+    {
+      "language": "French",
+      "name": "Liban",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Beirut",
@@ -15,7 +27,11 @@
     "French"
   ],
   "currencies": [
-    "Lebanese pound"
+    {
+      "name": "Lebanese pound",
+      "code": "LBP",
+      "symbol": "ل.ل"
+    }
   ],
   "demonym": "Lebanese",
   "latlng": [

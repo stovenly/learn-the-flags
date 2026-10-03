@@ -3,6 +3,13 @@
   "isoNumeric": "268",
   "name": "Georgia",
   "officialName": "Georgia",
+  "localNames": [
+    {
+      "language": "Georgian",
+      "name": "საქართველო",
+      "romanized": "Sakartvelo"
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Tbilisi",
@@ -14,7 +21,11 @@
     "Georgian"
   ],
   "currencies": [
-    "lari"
+    {
+      "name": "lari",
+      "code": "GEL",
+      "symbol": "₾"
+    }
   ],
   "demonym": "Georgian",
   "latlng": [

@@ -3,6 +3,13 @@
   "isoNumeric": "180",
   "name": "DR Congo",
   "officialName": "Democratic Republic of the Congo",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "RD Congo",
+      "romanized": ""
+    }
+  ],
   "aliases": [
     "Democratic Republic of the Congo",
     "DRC",
@@ -23,7 +30,11 @@
     "Swahili"
   ],
   "currencies": [
-    "Congolese franc"
+    {
+      "name": "Congolese franc",
+      "code": "CDF",
+      "symbol": "FC"
+    }
   ],
   "demonym": "Congolese",
   "latlng": [
