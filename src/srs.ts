@@ -72,11 +72,11 @@ export function intervalDays(s: number, retention: number): number {
 
 export function review(m: Memory | undefined, g: Grade, retention: number, now = Date.now()): Memory {
   let s: number, d: number;
+  const elapsed = m ? dayNumber(now) - dayNumber(m.last) : 0;
   if (!m) {
     s = Math.max(W[g - 1], 0.1);
     d = clamp(initDifficulty(g), 1, 10);
   } else {
-    const elapsed = dayNumber(now) - dayNumber(m.last);
     const r = retrievability(m, now);
     if (elapsed === 0) s = shortTermStability(m.s, g);
     else if (g === Again) s = forgetStability(m.d, m.s, r);
@@ -94,6 +94,6 @@ export function review(m: Memory | undefined, g: Grade, retention: number, now =
     last: now,
     due,
     reps: (m?.reps ?? 0) + 1,
-    lapses: (m?.lapses ?? 0) + (m && g === Again ? 1 : 0),
+    lapses: (m?.lapses ?? 0) + (m && elapsed > 0 && g === Again ? 1 : 0),
   };
 }

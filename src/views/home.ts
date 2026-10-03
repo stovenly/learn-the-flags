@@ -1,6 +1,6 @@
-import { ALL, byCode, Country } from '../data';
+import { ALL, byCode, Country, preload } from '../data';
 import { deck, dueCards, dueLaterToday, level, newCards, newLeftToday, state, streak } from '../store';
-import { countryLink, esc, flagImg, plural, sample } from '../ui';
+import { countryLink, esc, flagImg, plural, renderWhenReady, sample } from '../ui';
 
 function ring(pct: number) {
   const r = 52;
@@ -11,11 +11,14 @@ function ring(pct: number) {
   </svg>`;
 }
 
-function didYouKnow(): string {
+const HERO = ['jp', 'br', 'ca', 'za', 'np', 'ch', 'kr', 'bt', 'gb'];
+
+function didYouKnow(images: Promise<void>[]): string {
   const seen = Object.keys(state.cards).map((k) => byCode.get(k)).filter((c): c is Country => !!c && c.trivia.length > 0);
   const pool = seen.length >= 3 ? seen : ALL.filter((c) => c.trivia.length);
   if (!pool.length) return '';
   const c = sample(pool);
+  images.push(preload(c.code, 320));
   return `
     <a class="card trivia-card" href="${countryLink(c)}">
       <div class="trivia-flag">${flagImg(c, { size: 'sm' })}</div>
@@ -57,8 +60,9 @@ export function homeView(root: HTMLElement) {
     cta = '';
   }
 
-  root.innerHTML = `
-    <section class="today card">
+  const images: Promise<void>[] = started ? [] : HERO.map((k) => preload(k, 320));
+  const html = `
+    <section class="today card${started ? ' started' : ''}">
       <div class="today-main">
         <h1>${esc(title)}</h1>
         <p class="muted">${esc(detail)}</p>
@@ -71,7 +75,7 @@ export function homeView(root: HTMLElement) {
               <div class="ring-label"><strong>${learned}</strong><span>of ${all.length}</span></div>
               ${days > 1 ? `<p class="streak">${days}-day streak</p>` : ''}
             </div>`
-          : `<div class="hero-flags" aria-hidden="true">${['jp', 'br', 'ca', 'za', 'np', 'ch', 'kr', 'bt', 'gb']
+          : `<div class="hero-flags" aria-hidden="true">${HERO
               .map((k) => byCode.get(k))
               .filter((c): c is Country => !!c)
               .map((c) => flagImg(c, { size: 'sm', alt: '' }))
@@ -79,7 +83,7 @@ export function homeView(root: HTMLElement) {
       }
     </section>
 
-    ${didYouKnow()}
+    ${didYouKnow(images)}
 
     <section class="about">
       <h2>How it works</h2>
@@ -90,4 +94,5 @@ export function homeView(root: HTMLElement) {
       </div>
       <p class="muted small">Free, no account needed. Your progress is saved in this browser.</p>
     </section>`;
+  renderWhenReady(root, html, images);
 }

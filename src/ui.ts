@@ -14,7 +14,6 @@ export function shuffle<T>(a: T[]): T[] {
 
 export const sample = <T>(a: T[]): T => a[Math.floor(Math.random() * a.length)];
 
-// `size` is the CSS display height in px; the width follows the flag's true aspect ratio.
 export function flagImg(c: Country, opts: { size?: 'sm' | 'md' | 'lg'; lazy?: boolean; alt?: string } = {}) {
   const { size = 'md', lazy = false } = opts;
   const alt = opts.alt ?? `Flag of ${c.name}`;
@@ -22,7 +21,7 @@ export function flagImg(c: Country, opts: { size?: 'sm' | 'md' | 'lg'; lazy?: bo
   const h = Math.round(w / c.ratio);
   const src = size === 'sm' ? flagSrc(c.code, 320) : flagSrc(c.code, 640);
   const srcset = size === 'sm' ? `${flagSrc(c.code, 320)} 1x, ${flagSrc(c.code, 640)} 2x` : '';
-  return `<img class="flag flag-${size}${c.transparent ? ' flag-shaped' : ''}" src="${src}"${srcset ? ` srcset="${srcset}"` : ''} width="${w}" height="${h}" alt="${esc(alt)}" style="--ratio:${c.ratio}"${lazy ? ' loading="lazy"' : ''} decoding="async" draggable="false">`;
+  return `<img class="flag flag-${size}${c.transparent ? ' flag-shaped' : ''}" src="${src}"${srcset ? ` srcset="${srcset}"` : ''} width="${w}" height="${h}" alt="${esc(alt)}" style="--ratio:${c.ratio}${lazy && !c.transparent ? `;background-color:${c.color}` : ''}"${lazy ? ' loading="lazy"' : ''} decoding="async" draggable="false">`;
 }
 
 export const countryLink = (c: Country) => `#/flag/${c.slug}`;
@@ -41,11 +40,11 @@ export function $$(sel: string, root: ParentNode = document) {
 
 export const plural = (n: number, word: string, many = word + 's') => `${n} ${n === 1 ? word : many}`;
 
-export function relativeDay(ms: number): string {
-  const days = Math.round((ms - Date.now()) / 86400000);
-  if (days <= 0) return 'today';
-  if (days === 1) return 'tomorrow';
-  if (days < 30) return `in ${days} days`;
-  if (days < 365) return `in ${Math.round(days / 30)} months`;
-  return `in ${(days / 365).toFixed(1)} years`;
+// Holds a render until its key images are decoded (capped), so flags never pop in; skips if the route changed meanwhile.
+export async function renderWhenReady(root: HTMLElement, html: string, images: Promise<void>[], maxWait = 350) {
+  const hash = location.hash;
+  await Promise.race([Promise.all(images), new Promise((r) => setTimeout(r, maxWait))]);
+  if (location.hash !== hash) return false;
+  root.innerHTML = html;
+  return true;
 }

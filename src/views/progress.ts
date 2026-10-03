@@ -65,7 +65,7 @@ export function progressView(root: HTMLElement) {
     ${
       tricky.length
         ? `<section class="card"><h2>Flags you mix up most</h2><div class="mini-grid">${tricky
-            .map((c) => `<a class="mini" href="${countryLink(c)}">${flagImg(c, { size: 'sm' })}<span>${esc(c.name)}</span></a>`)
+            .map((c) => `<a class="mini" href="${countryLink(c)}"><span class="mini-flag">${flagImg(c, { size: 'sm' })}</span><span>${esc(c.name)}</span></a>`)
             .join('')}</div></section>`
         : ''
     }`;

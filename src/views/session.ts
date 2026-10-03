@@ -40,15 +40,26 @@ export interface Summary {
   missed: Country[];
 }
 
+function once(fn: () => void) {
+  let done = false;
+  return () => {
+    if (done) return;
+    done = true;
+    fn();
+  };
+}
+
 const intro = (c: Country): Intro => ({ kind: 'intro', c });
 export const quiz = (c: Country, mode: Mode): Quiz => ({ kind: 'quiz', c, mode });
 
-export function modeFor(c: Country, step = 0): Mode {
+export function modeFor(c: Country, step?: number): Mode {
+  const pick = (): Mode =>
+    step === undefined ? (Math.random() < 0.5 ? 'pick-name' : 'pick-flag') : step % 2 === 0 ? 'pick-name' : 'pick-flag';
   const style = state.settings.answerStyle;
   if (style === 'typing') return 'type-name';
-  if (style === 'choice') return step % 2 === 0 ? 'pick-name' : 'pick-flag';
+  if (style === 'choice') return pick();
   const m = state.cards[c.code];
-  if (!m || m.s < 2) return step % 2 === 0 ? 'pick-name' : 'pick-flag';
+  if (!m || m.s < 2) return pick();
   if (m.s < 10) return Math.random() < 0.6 ? 'type-name' : 'pick-flag';
   return Math.random() < 0.8 ? 'type-name' : 'pick-flag';
 }
@@ -60,9 +71,9 @@ export function buildStudy(due: Country[], fresh: Country[]): Item[] {
   const lesson: Item[] = [];
   fresh.forEach((c, i) => {
     lesson.push(intro(c));
-    if (i > 0) lesson.push(quiz(fresh[i - 1], 'pick-name'));
+    if (i > 0) lesson.push(quiz(fresh[i - 1], modeFor(fresh[i - 1], 0)));
   });
-  if (fresh.length) lesson.push(quiz(fresh[fresh.length - 1], 'pick-name'));
+  if (fresh.length) lesson.push(quiz(fresh[fresh.length - 1], modeFor(fresh[fresh.length - 1], 0)));
   return [...reviews.slice(0, half), ...lesson, ...reviews.slice(half)];
 }
 
@@ -143,16 +154,21 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
     queue.splice(Math.min(offset, queue.length), 0, item);
   }
 
+  let advancing = false;
   async function next() {
+    if (advancing) return;
+    advancing = true;
     clearTimeout(timer);
     keyHandler = null;
     current = queue.shift();
     updateBar();
-    if (!current) return finish();
-    await preloadItem(current);
-    queue.slice(0, 3).forEach(preloadItem);
-    if (current.kind === 'intro') renderIntro(current);
-    else renderQuiz(current);
+    if (current) {
+      await preloadItem(current);
+      queue.slice(0, 3).forEach(preloadItem);
+      if (current.kind === 'intro') renderIntro(current);
+      else renderQuiz(current);
+    } else finish();
+    advancing = false;
   }
 
   function grade(c: Country, g: Grade, correct: boolean): Memory | undefined {
@@ -242,9 +258,9 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
           <button class="btn primary" data-act="next">Got it <kbd>Enter</kbd></button>
         </div>
       </article>`;
-    const go = () => next();
+    const go = once(next);
     $('[data-act=next]', stage).addEventListener('click', go);
-    $('[data-act=known]', stage)?.addEventListener('click', () => {
+    $('[data-act=known]', stage)?.addEventListener('click', once(() => {
       const t = tracks.get(c.code)!;
       grade(c, Easy, true);
       summary.answered--;
@@ -254,8 +270,8 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
         queue.splice(i, 1);
         total--;
       }
-      next();
-    });
+      go();
+    }));
     keyHandler = (e) => {
       if (e.key === 'Enter') go();
     };
@@ -283,7 +299,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
   function afterAnswer(item: Quiz, ok: boolean, extra = '') {
     const actions = $('.actions', stage);
     actions.innerHTML = `${extra}<button class="btn primary" data-act="continue">Continue <kbd>Enter</kbd></button>`;
-    const go = () => next();
+    const go = once(next);
     $('[data-act=continue]', actions).addEventListener('click', go);
     $('[data-act=continue]', actions).focus({ preventScroll: true });
     keyHandler = (e) => {
@@ -357,8 +373,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
           if (b.dataset.code === c.code) b.classList.add('is-correct');
           else if (b.dataset.code === code) b.classList.add('is-wrong');
           if (item.mode === 'pick-flag') {
-            const label = $('.flag-option-name', b);
-            if (b.dataset.code === c.code || b.dataset.code === code) label.textContent = byCode.get(b.dataset.code!)!.name;
+            $('.flag-option-name', b).textContent = byCode.get(b.dataset.code!)!.name;
           }
         }
         slot.innerHTML = feedbackHtml(c, ok, ok ? undefined : chosen);
@@ -389,12 +404,12 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
       input.classList.add(ok ? 'is-correct' : 'is-wrong');
       const guessed = ALL.find((o) => o.code !== c.code && matchAnswer(text, o) === 'exact');
       slot.innerHTML = feedbackHtml(c, ok, ok ? undefined : guessed, match === 'typo' ? `spelled “${c.name}”` : undefined);
-      if (!ok && text) {
+      if (!ok && text && !guessed) {
         afterAnswer(item, false, `<button class="btn ghost" data-act="accept">I was right</button>`);
-        $('[data-act=accept]', stage).addEventListener('click', () => {
+        $('[data-act=accept]', stage).addEventListener('click', once(() => {
           unschedule(item, prev, Good);
           next();
-        });
+        }));
       } else afterAnswer(item, ok && match === 'exact');
     };
     $('.type-form', stage).addEventListener('submit', (e) => {
@@ -412,7 +427,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
     const pct = summary.answered ? Math.round((summary.correct / summary.answered) * 100) : 0;
     const strip = (list: Country[]) =>
       `<div class="mini-grid">${list
-        .map((c) => `<a class="mini" href="${countryLink(c)}">${flagImg(c, { size: 'sm' })}<span>${esc(c.name)}</span></a>`)
+        .map((c) => `<a class="mini" href="${countryLink(c)}"><span class="mini-flag">${flagImg(c, { size: 'sm' })}</span><span>${esc(c.name)}</span></a>`)
         .join('')}</div>`;
     stage.innerHTML = `
       <article class="card done fade-in">

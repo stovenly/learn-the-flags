@@ -1,6 +1,6 @@
-import { ALL, fmtNumber, fmtPopulation, STATUS_LABEL } from '../data';
+import { ALL, fmtNumber, fmtPopulation, preload, STATUS_LABEL } from '../data';
 import { level } from '../store';
-import { countryLink, esc, flagImg, lookalikeList } from '../ui';
+import { countryLink, esc, flagImg, lookalikeList, renderWhenReady } from '../ui';
 
 const SWATCH: Record<string, string> = {
   red: '#d62828', orange: '#f77f00', yellow: '#fcbf49', green: '#2a9d4b', blue: '#1d4e9e', 'light-blue': '#5fa8e0',
@@ -25,7 +25,7 @@ export function countryView(root: HTMLElement, slug: string) {
     ['Currency', c.currencies.join(', ')],
   ];
   const looks = lookalikeList(c);
-  root.innerHTML = `
+  const html = `
     <a class="back" href="#/browse">← All flags</a>
     <article class="country">
       <div class="country-flag card">${flagImg(c, { size: 'lg' })}</div>
@@ -63,9 +63,10 @@ export function countryView(root: HTMLElement, slug: string) {
       ${
         looks.length
           ? `<section class="card"><h2>Easy to confuse with</h2><div class="mini-grid">${looks
-              .map((o) => `<a class="mini" href="${countryLink(o)}">${flagImg(o, { size: 'sm' })}<span>${esc(o.name)}</span></a>`)
+              .map((o) => `<a class="mini" href="${countryLink(o)}"><span class="mini-flag">${flagImg(o, { size: 'sm' })}</span><span>${esc(o.name)}</span></a>`)
               .join('')}</div></section>`
           : ''
       }
     </article>`;
+  renderWhenReady(root, html, [preload(c.code)]);
 }
