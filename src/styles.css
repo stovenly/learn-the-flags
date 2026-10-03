@@ -509,7 +509,7 @@ a.pair:hover strong { color: var(--accent); }
 .trivia-card .label { margin-bottom: 4px; }
 .more { display: inline-flex; align-items: center; gap: 4px; color: var(--accent); font-size: 0.9rem; font-weight: 600; }
 
-.picker .section-head { margin-bottom: 14px; }
+.picker h2 { margin: 0 0 14px; }
 .sets { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 10px; }
 .set-option {
   display: flex; align-items: center; gap: 12px; padding: 10px 12px; min-width: 0;
@@ -525,7 +525,6 @@ a.pair:hover strong { color: var(--accent); }
 .set-check { margin-left: auto; color: var(--accent); visibility: hidden; }
 .set-option[aria-checked="true"] .set-check { visibility: visible; }
 .continents { margin-top: 18px; display: flex; flex-direction: column; gap: 8px; }
-.set-desc { margin: 14px 0 0; }
 
 .about { margin-top: 44px; }
 .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 16px 0 20px; }
@@ -898,8 +897,8 @@ body[data-route='settings'] #app { max-width: 720px; }
   .today.started .ring-label strong { font-size: 1.4rem; margin-right: 4px; }
   .today.started .streak { margin: 0; }
   .today.started .today-ring { order: -1; }
-  .hero-flags { display: flex; flex-wrap: wrap; gap: 10px; }
-  .hero-flags .flag { height: 30px; width: auto; max-width: none; }
+  .hero-flags { display: grid; grid-template-columns: repeat(5, 1fr); grid-auto-rows: 30px; gap: 10px; justify-items: start; }
+  .hero-flags .flag { height: 30px; width: auto; max-width: 100%; object-fit: contain; }
   .today-cta .btn { flex: 1 1 auto; }
   .trivia-card { gap: 16px; padding: 18px; align-items: flex-start; }
   .trivia-card .thumb { width: 72px; }

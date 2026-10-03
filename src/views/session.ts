@@ -489,7 +489,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
               </div>`
             : ''
         }
-        ${strip('Learned today', summary.learned)}
+        ${strip('New today', summary.learned)}
         ${strip('Worth another look', summary.missed)}
         <div class="actions">${cfg.onDone(summary)}</div>
       </article>`;
