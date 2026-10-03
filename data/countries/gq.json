@@ -1,0 +1,42 @@
+{
+  "code": "gq",
+  "name": "Equatorial Guinea",
+  "officialName": "Republic of Equatorial Guinea",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Malabo",
+  "region": "Africa",
+  "subregion": "Middle Africa",
+  "population": 1892516,
+  "area": 28051,
+  "languages": [
+    "French",
+    "Portuguese",
+    "Spanish"
+  ],
+  "currencies": [
+    "Central African CFA franc"
+  ],
+  "demonym": "Equatorial Guinean",
+  "latlng": [
+    2,
+    10
+  ],
+  "flag": {
+    "description": "Three horizontal stripes of green, white and red, with a blue triangle at the hoist and the national coat of arms, a silk-cotton tree beneath six stars, in the centre of the white stripe.",
+    "adopted": "1979",
+    "colors": [
+      "green",
+      "white",
+      "red",
+      "blue"
+    ],
+    "symbolism": "Green represents natural resources, white peace, red the struggle for independence, and blue the sea linking the mainland and islands; the six stars are the mainland and the five islands."
+  },
+  "hook": "Equatorial Guinea stacks green-white-red with a blue hoist triangle and a silk-cotton tree in the middle; the tree is its giveaway.",
+  "lookalikes": [],
+  "trivia": [
+    "It is the only sovereign African country with Spanish as an official language.",
+    "The capital, Malabo, lies on Bioko Island rather than the mainland, and a new capital, Ciudad de la Paz, has long been under construction inland."
+  ]
+}

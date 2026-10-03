@@ -1,0 +1,43 @@
+{
+  "code": "la",
+  "name": "Laos",
+  "officialName": "Lao People's Democratic Republic",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Vientiane",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "population": 7769819,
+  "area": 236800,
+  "languages": [
+    "Lao"
+  ],
+  "currencies": [
+    "Lao kip"
+  ],
+  "demonym": "Laotian",
+  "latlng": [
+    18,
+    105
+  ],
+  "flag": {
+    "description": "Three horizontal bands of red, blue and red, with the blue band twice as tall as each red one, and a white disc in the centre.",
+    "adopted": "1975",
+    "colors": [
+      "blue",
+      "red",
+      "white"
+    ],
+    "symbolism": "Red represents the blood shed for independence and blue the prosperity of the country; the white disc is a full moon over the Mekong River and symbolises the unity of the people."
+  },
+  "hook": "Laos is a white full moon rising over the blue Mekong between red banks; Thailand has no disc, and Cambodia has a temple instead.",
+  "lookalikes": [
+    "th",
+    "kh"
+  ],
+  "trivia": [
+    "The design was first used by the Lao Issara independence movement in 1945.",
+    "It is one of the few flags of a communist state with no star or hammer and sickle.",
+    "Laos is the most heavily bombed country per capita in history, from the 1964–1973 air campaign."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "code": "fm",
+  "name": "Micronesia",
+  "officialName": "Federated States of Micronesia",
+  "aliases": [
+    "Federated States of Micronesia",
+    "FSM"
+  ],
+  "status": "un-member",
+  "capital": "Palikir",
+  "region": "Oceania",
+  "subregion": "Micronesia",
+  "population": 113160,
+  "area": 702,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    "United States dollar"
+  ],
+  "demonym": "Micronesian",
+  "latlng": [
+    6.91666666,
+    158.25
+  ],
+  "flag": {
+    "description": "A light blue field with four white five-pointed stars arranged in a diamond, like the points of a compass, in the centre.",
+    "adopted": "1978",
+    "colors": [
+      "light-blue",
+      "white"
+    ],
+    "symbolism": "The blue represents the Pacific Ocean and the four stars the four states of Chuuk, Kosrae, Pohnpei and Yap."
+  },
+  "hook": "Four white stars in a diamond, one per state, on light blue; Somalia's light-blue flag has just one big white star.",
+  "lookalikes": [
+    "so"
+  ],
+  "trivia": [
+    "The flag is based on that of the former UN Trust Territory of the Pacific Islands, which had six stars for its districts.",
+    "Yap is famous for rai stones, huge carved limestone discs traditionally used as money.",
+    "The stone city of Nan Madol on Pohnpei, built on artificial islets in a lagoon, is a UNESCO World Heritage Site."
+  ]
+}

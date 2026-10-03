@@ -1,0 +1,42 @@
+{
+  "code": "er",
+  "name": "Eritrea",
+  "officialName": "State of Eritrea",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Asmara",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "population": 3535603,
+  "area": 117600,
+  "languages": [
+    "Arabic",
+    "English",
+    "Tigrinya"
+  ],
+  "currencies": [
+    "Eritrean nakfa"
+  ],
+  "demonym": "Eritrean",
+  "latlng": [
+    15,
+    39
+  ],
+  "flag": {
+    "description": "A red triangle based on the hoist stretches to the fly, dividing a green upper triangle from a blue lower one; a gold olive branch inside a gold olive wreath stands upright in the hoist part of the red triangle.",
+    "adopted": "1995",
+    "colors": [
+      "red",
+      "green",
+      "blue",
+      "yellow"
+    ],
+    "symbolism": "Green stands for agriculture, blue for the Red Sea and red for the blood shed in the fight for independence; the olive branch and wreath stand for peace."
+  },
+  "hook": "Eritrea's red triangle reaches all the way to the fly, splitting green land from the blue Red Sea, with a gold olive wreath at the hoist.",
+  "lookalikes": [],
+  "trivia": [
+    "Eritrea became independent from Ethiopia in 1993, confirmed by a referendum after a 30-year war.",
+    "Its capital Asmara was listed as a UNESCO World Heritage Site in 2017 for its early 20th-century modernist architecture."
+  ]
+}

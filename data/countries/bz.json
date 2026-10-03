@@ -1,0 +1,42 @@
+{
+  "code": "bz",
+  "name": "Belize",
+  "officialName": "Belize",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Belmopan",
+  "region": "Americas",
+  "subregion": "Central America",
+  "population": 417072,
+  "area": 22966,
+  "languages": [
+    "Belizean Creole",
+    "English",
+    "Spanish"
+  ],
+  "currencies": [
+    "Belize dollar"
+  ],
+  "demonym": "Belizean",
+  "latlng": [
+    17.25,
+    -88.75
+  ],
+  "flag": {
+    "description": "A royal blue field with a narrow red stripe along the top and bottom edges and a white disc in the centre holding the coat of arms: two woodcutters beside a mahogany tree, ringed by a wreath of 50 leaves.",
+    "adopted": "1981",
+    "colors": [
+      "blue",
+      "red",
+      "white"
+    ],
+    "symbolism": "Blue and red are the colours of the two main political parties, joined in a symbol of unity; the woodcutters and mahogany recall the logging trade, and the 50 leaves mark 1950, when the independence movement began."
+  },
+  "hook": "Belize puts two woodcutters under a mahogany tree in a white disc on blue, with thin red stripes at the top and bottom.",
+  "lookalikes": [],
+  "trivia": [
+    "Belize is one of very few national flags to show human figures, the two woodcutters in its coat of arms.",
+    "The motto on the coat of arms, \"Sub Umbra Floreo\", means \"Under the shade I flourish\" in Latin.",
+    "The Belize Barrier Reef is the largest barrier reef in the Northern Hemisphere and a UNESCO World Heritage Site."
+  ]
+}

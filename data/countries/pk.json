@@ -1,0 +1,43 @@
+{
+  "code": "pk",
+  "name": "Pakistan",
+  "officialName": "Islamic Republic of Pakistan",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Islamabad",
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "population": 251269164,
+  "area": 881912,
+  "languages": [
+    "English",
+    "Urdu"
+  ],
+  "currencies": [
+    "Pakistani rupee"
+  ],
+  "demonym": "Pakistani",
+  "latlng": [
+    30,
+    70
+  ],
+  "flag": {
+    "description": "A dark green field with a white vertical band at the hoist and a white crescent and five-pointed star in the centre of the green.",
+    "adopted": "1947",
+    "colors": [
+      "green",
+      "white"
+    ],
+    "symbolism": "Green represents the Muslim majority and white the religious minorities; the crescent stands for progress and the star for light and knowledge."
+  },
+  "hook": "Pakistan is a white crescent and star on dark green with a white strip at the hoist; Algeria is half green, half white with a red crescent.",
+  "lookalikes": [
+    "dz",
+    "mr",
+    "tr"
+  ],
+  "trivia": [
+    "The flag was adopted on 11 August 1947, three days before independence, and was based on the flag of the All-India Muslim League.",
+    "K2, the second-highest mountain on Earth, lies on the border between Pakistan and China."
+  ]
+}

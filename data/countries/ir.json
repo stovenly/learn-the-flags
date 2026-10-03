@@ -1,0 +1,43 @@
+{
+  "code": "ir",
+  "name": "Iran",
+  "officialName": "Islamic Republic of Iran",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Tehran",
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "population": 91567738,
+  "area": 1648195,
+  "languages": [
+    "Persian (Farsi)"
+  ],
+  "currencies": [
+    "Iranian rial"
+  ],
+  "demonym": "Iranian",
+  "latlng": [
+    32,
+    53
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of green, white and red, with the red national emblem in the centre and the phrase \"Allahu akbar\" repeated 22 times in white Kufic script along the inner edges of the green and red stripes.",
+    "adopted": "1980",
+    "colors": [
+      "green",
+      "white",
+      "red"
+    ],
+    "symbolism": "Green stands for Islam and growth, white for peace and red for courage and martyrdom; the 22 inscriptions refer to 22 Bahman, the date in the Iranian calendar of the 1979 revolution."
+  },
+  "hook": "Iran is green-white-red with a red tulip-shaped emblem and a fringe of tiny white inscriptions; Tajikistan puts red on top and a gold crown in the middle.",
+  "lookalikes": [
+    "tj",
+    "hu",
+    "bg"
+  ],
+  "trivia": [
+    "The emblem is a stylised form of the word \"Allah\" whose shape also resembles a tulip, a traditional symbol of martyrdom.",
+    "Iran was known internationally as Persia until 1935, when the government asked other countries to use the name Iran."
+  ]
+}

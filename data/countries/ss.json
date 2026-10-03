@@ -1,0 +1,47 @@
+{
+  "code": "ss",
+  "name": "South Sudan",
+  "officialName": "Republic of South Sudan",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Juba",
+  "region": "Africa",
+  "subregion": "Middle Africa",
+  "population": 11943408,
+  "area": 619745,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    "South Sudanese pound"
+  ],
+  "demonym": "South Sudanese",
+  "latlng": [
+    7,
+    30
+  ],
+  "flag": {
+    "description": "Three horizontal stripes of black, red and green separated by narrow white stripes, with a blue triangle at the hoist bearing a yellow five-pointed star.",
+    "adopted": "2005",
+    "colors": [
+      "black",
+      "red",
+      "green",
+      "blue",
+      "white",
+      "yellow"
+    ],
+    "symbolism": "Black represents the people, red the blood shed for freedom, green the land, white peace and blue the waters of the Nile; the yellow star stands for unity."
+  },
+  "hook": "South Sudan is Kenya's black-red-green stripes with a blue Nile triangle and gold star at the hoist instead of a shield.",
+  "lookalikes": [
+    "ke",
+    "sd",
+    "mw"
+  ],
+  "trivia": [
+    "The flag was used by the autonomous region from 2005 and became the national flag at independence in 2011.",
+    "South Sudan, admitted in July 2011, is the newest member of the United Nations.",
+    "The Sudd in South Sudan is one of the largest wetlands in the world."
+  ]
+}

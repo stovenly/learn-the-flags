@@ -1,0 +1,42 @@
+{
+  "code": "fr",
+  "name": "France",
+  "officialName": "French Republic",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Paris",
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "population": 68551653,
+  "area": 551695,
+  "languages": [
+    "French"
+  ],
+  "currencies": [
+    "Euro"
+  ],
+  "demonym": "French",
+  "latlng": [
+    46,
+    2
+  ],
+  "flag": {
+    "description": "Three equal vertical stripes of blue, white and red from the hoist.",
+    "adopted": "1794",
+    "colors": [
+      "blue",
+      "white",
+      "red"
+    ],
+    "symbolism": "Blue and red are the traditional colours of Paris, and white was the colour of the monarchy; together they came to represent the Revolution and the Republic."
+  },
+  "hook": "France stands blue-white-red upright from the flagpole; the Netherlands lays red-white-blue flat, and Italy swaps the blue for green.",
+  "lookalikes": [
+    "nl",
+    "it"
+  ],
+  "trivia": [
+    "The French Navy's ensign uses stripes of unequal width (30:33:37) so they look equal when the flag flaps.",
+    "In 2020 the Élysée Palace switched back to a darker navy blue for the flags it flies."
+  ]
+}

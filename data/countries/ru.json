@@ -1,0 +1,45 @@
+{
+  "code": "ru",
+  "name": "Russia",
+  "officialName": "Russian Federation",
+  "aliases": [
+    "Russian Federation"
+  ],
+  "status": "un-member",
+  "capital": "Moscow",
+  "region": "Europe",
+  "subregion": "Eastern Europe",
+  "population": 143669648,
+  "area": 17098242,
+  "languages": [
+    "Russian"
+  ],
+  "currencies": [
+    "Russian ruble"
+  ],
+  "demonym": "Russian",
+  "latlng": [
+    60,
+    100
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of white, blue and red.",
+    "adopted": "1993",
+    "colors": [
+      "white",
+      "blue",
+      "red"
+    ],
+    "symbolism": "There is no official meaning; a common interpretation is white for nobility and frankness, blue for faithfulness, and red for courage."
+  },
+  "hook": "Russia is plain white-blue-red from the top; Slovakia and Slovenia add shields, and Serbia turns it upside down.",
+  "lookalikes": [
+    "sk",
+    "si",
+    "rs"
+  ],
+  "trivia": [
+    "The white-blue-red tricolour dates back to the late 17th century and is often linked to Peter the Great.",
+    "Russia celebrates National Flag Day on 22 August."
+  ]
+}

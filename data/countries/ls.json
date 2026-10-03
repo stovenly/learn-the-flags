@@ -1,0 +1,44 @@
+{
+  "code": "ls",
+  "name": "Lesotho",
+  "officialName": "Kingdom of Lesotho",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Maseru",
+  "region": "Africa",
+  "subregion": "Southern Africa",
+  "population": 2337423,
+  "area": 30355,
+  "languages": [
+    "English",
+    "Sotho"
+  ],
+  "currencies": [
+    "Lesotho loti",
+    "South African rand"
+  ],
+  "demonym": "Mosotho",
+  "latlng": [
+    -29.5,
+    28.5
+  ],
+  "flag": {
+    "description": "Three horizontal stripes of blue, white and green, the white one widest, with a black Basotho hat in the centre of the white stripe.",
+    "adopted": "2006",
+    "colors": [
+      "white",
+      "blue",
+      "green",
+      "black"
+    ],
+    "symbolism": "Blue stands for the sky and rain, white for peace and green for prosperity; the mokorotlo hat represents the Basotho people."
+  },
+  "hook": "Lesotho's flag wears a hat: a black conical Basotho mokorotlo on a white band between blue and green.",
+  "lookalikes": [
+    "sl"
+  ],
+  "trivia": [
+    "Lesotho is entirely surrounded by South Africa, one of only three countries enclosed by a single other country.",
+    "Its lowest point is about 1,400 m above sea level, the highest low point of any country."
+  ]
+}

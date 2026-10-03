@@ -1,0 +1,40 @@
+{
+  "code": "al",
+  "name": "Albania",
+  "officialName": "Republic of Albania",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Tirana",
+  "region": "Europe",
+  "subregion": "Southeast Europe",
+  "population": 2377128,
+  "area": 28748,
+  "languages": [
+    "Albanian"
+  ],
+  "currencies": [
+    "Albanian lek"
+  ],
+  "demonym": "Albanian",
+  "latlng": [
+    41,
+    20
+  ],
+  "flag": {
+    "description": "A red field with a black double-headed eagle in the centre.",
+    "adopted": "1992",
+    "colors": [
+      "red",
+      "black"
+    ],
+    "symbolism": "Red stands for bravery, strength and the blood of patriots; the double-headed eagle comes from the seal of the 15th-century national hero Skanderbeg."
+  },
+  "hook": "A black double-headed eagle spread across a blood-red field: Albania's eagle is black and borderless, while Montenegro's is gold inside a gold frame.",
+  "lookalikes": [
+    "me"
+  ],
+  "trivia": [
+    "Albanians call their country Shqipëri, a name popularly linked to the word for eagle, giving it the nickname 'Land of the Eagles'.",
+    "The flag was raised in Vlorë on 28 November 1912 when Ismail Qemali declared Albania's independence from the Ottoman Empire."
+  ]
+}

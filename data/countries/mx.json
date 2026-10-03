@@ -1,0 +1,42 @@
+{
+  "code": "mx",
+  "name": "Mexico",
+  "officialName": "United Mexican States",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Mexico City",
+  "region": "Americas",
+  "subregion": "North America",
+  "population": 130861007,
+  "area": 1964375,
+  "languages": [
+    "Spanish"
+  ],
+  "currencies": [
+    "Mexican peso"
+  ],
+  "demonym": "Mexican",
+  "latlng": [
+    23,
+    -102
+  ],
+  "flag": {
+    "description": "Three equal vertical bands of green, white and red, with the coat of arms in the centre: a golden eagle perched on a prickly pear cactus devouring a snake.",
+    "adopted": "1968",
+    "colors": [
+      "green",
+      "white",
+      "red"
+    ],
+    "symbolism": "Green is commonly said to represent hope, white unity and red the blood of national heroes; the eagle recalls the Aztec legend of the founding of Tenochtitlan."
+  },
+  "hook": "Mexico is Italy plus an eagle eating a snake on a cactus, on a longer 4:7 rectangle; Ireland swaps the red for orange.",
+  "lookalikes": [
+    "it",
+    "ie"
+  ],
+  "trivia": [
+    "According to legend, the Aztecs founded Tenochtitlan, now Mexico City, where they saw an eagle on a cactus eating a snake.",
+    "Mexico celebrates Flag Day on 24 February."
+  ]
+}

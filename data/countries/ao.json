@@ -1,0 +1,40 @@
+{
+  "code": "ao",
+  "name": "Angola",
+  "officialName": "Republic of Angola",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Luanda",
+  "region": "Africa",
+  "subregion": "Middle Africa",
+  "population": 37885849,
+  "area": 1246700,
+  "languages": [
+    "Portuguese"
+  ],
+  "currencies": [
+    "Angolan kwanza"
+  ],
+  "demonym": "Angolan",
+  "latlng": [
+    -12.5,
+    18.5
+  ],
+  "flag": {
+    "description": "Two horizontal bands, red over black, with a yellow emblem in the centre: half a cogwheel crossed by a machete, with a five-pointed star.",
+    "adopted": "1975",
+    "colors": [
+      "red",
+      "black",
+      "yellow"
+    ],
+    "symbolism": "Red stands for the blood shed during the liberation struggle, black for Africa and yellow for the country's wealth; the cogwheel represents industrial workers, the machete peasants and armed struggle, and the star progress."
+  },
+  "hook": "Angola's red-over-black flag carries a yellow half-cogwheel and machete in the middle, an African take on the hammer and sickle.",
+  "lookalikes": [],
+  "trivia": [
+    "A new flag showing a rock-painting-style sun was proposed in 2003, but it was never adopted.",
+    "Luanda has several times been ranked the world's most expensive city for expatriates.",
+    "Angola, one of Africa's largest oil producers, left OPEC at the start of 2024."
+  ]
+}

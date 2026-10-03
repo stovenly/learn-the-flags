@@ -1,0 +1,45 @@
+{
+  "code": "tj",
+  "name": "Tajikistan",
+  "officialName": "Republic of Tajikistan",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Dushanbe",
+  "region": "Asia",
+  "subregion": "Central Asia",
+  "population": 10590927,
+  "area": 143100,
+  "languages": [
+    "Russian",
+    "Tajik"
+  ],
+  "currencies": [
+    "Tajikistani somoni"
+  ],
+  "demonym": "Tadzhik",
+  "latlng": [
+    39,
+    71
+  ],
+  "flag": {
+    "description": "Three horizontal stripes of red, white and green, with the white stripe twice as tall as the others, and a gold crown under an arc of seven gold stars in the centre.",
+    "adopted": "1992",
+    "colors": [
+      "white",
+      "red",
+      "green",
+      "yellow"
+    ],
+    "symbolism": "Red represents unity and sovereignty, white purity and cotton, and green the bounty of nature; the crown and seven stars are linked to the people and to traditional ideas of happiness and perfection."
+  },
+  "hook": "Tajikistan wears a gold crown with seven stars on its wide white band, red on top; Iran puts green on top, and Hungary has no emblem.",
+  "lookalikes": [
+    "ir",
+    "hu",
+    "bg"
+  ],
+  "trivia": [
+    "The crown is often linked to a folk etymology connecting the name \"Tajik\" with \"taj\", the Persian word for crown.",
+    "More than 90% of Tajikistan is mountainous, much of it in the Pamir range."
+  ]
+}

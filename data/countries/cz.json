@@ -1,0 +1,45 @@
+{
+  "code": "cz",
+  "name": "Czechia",
+  "officialName": "Czech Republic",
+  "aliases": [
+    "Czech Republic"
+  ],
+  "status": "un-member",
+  "capital": "Prague",
+  "region": "Europe",
+  "subregion": "Central Europe",
+  "population": 10905028,
+  "area": 78865,
+  "languages": [
+    "Czech",
+    "Slovak"
+  ],
+  "currencies": [
+    "Czech koruna"
+  ],
+  "demonym": "Czech",
+  "latlng": [
+    49.75,
+    15.5
+  ],
+  "flag": {
+    "description": "Two horizontal bands, white over red, with a blue isosceles triangle reaching from the hoist to the centre of the flag.",
+    "adopted": "1920",
+    "colors": [
+      "white",
+      "red",
+      "blue"
+    ],
+    "symbolism": "White and red are the colours of Bohemia's coat of arms; blue was added for Moravia and to tell the flag apart from Poland's."
+  },
+  "hook": "Take Poland's white-over-red and drive a blue wedge in from the flagpole: that's Czechia; the Philippines adds a golden sun and stars to its white triangle.",
+  "lookalikes": [
+    "ph",
+    "pl"
+  ],
+  "trivia": [
+    "It was the flag of Czechoslovakia, and Czechia kept it in 1993 even though the split agreement said neither successor state should use the old federal symbols.",
+    "Czechia consistently tops world rankings for beer consumption per person."
+  ]
+}

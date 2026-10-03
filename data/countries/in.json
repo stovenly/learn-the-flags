@@ -1,0 +1,46 @@
+{
+  "code": "in",
+  "name": "India",
+  "officialName": "Republic of India",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "New Delhi",
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "population": 1450935791,
+  "area": 3287590,
+  "languages": [
+    "English",
+    "Hindi",
+    "Tamil"
+  ],
+  "currencies": [
+    "Indian rupee"
+  ],
+  "demonym": "Indian",
+  "latlng": [
+    20,
+    77
+  ],
+  "flag": {
+    "description": "Three equal horizontal bands of saffron, white and green, with a navy-blue wheel of 24 spokes (the Ashoka Chakra) in the centre of the white band.",
+    "adopted": "1947",
+    "colors": [
+      "orange",
+      "white",
+      "green",
+      "blue"
+    ],
+    "symbolism": "Saffron represents courage and sacrifice, white truth and peace, and green faith and fertility; the chakra is the wheel of dharma (law and righteousness)."
+  },
+  "hook": "India is saffron-white-green with a navy 24-spoke wheel in the middle; Niger has an orange disc instead, and Ireland's and Côte d'Ivoire's stripes run vertically.",
+  "lookalikes": [
+    "ne",
+    "ie",
+    "ci"
+  ],
+  "trivia": [
+    "The chakra is taken from the Lion Capital of Ashoka at Sarnath, a sculpture from the 3rd century BC.",
+    "The flag is known as the Tiranga (\"tricolour\") and is based on a design by Pingali Venkayya."
+  ]
+}

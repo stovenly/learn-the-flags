@@ -1,0 +1,44 @@
+{
+  "code": "ye",
+  "name": "Yemen",
+  "officialName": "Republic of Yemen",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Sana'a",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "population": 40583164,
+  "area": 527968,
+  "languages": [
+    "Arabic"
+  ],
+  "currencies": [
+    "Yemeni rial"
+  ],
+  "demonym": "Yemeni",
+  "latlng": [
+    15,
+    48
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of red, white and black, with no emblem.",
+    "adopted": "1990",
+    "colors": [
+      "red",
+      "white",
+      "black"
+    ],
+    "symbolism": "Red represents the blood shed for unity and independence, white a bright future, and black the dark past."
+  },
+  "hook": "Yemen is the plain red-white-black tricolour; add a gold eagle for Egypt or green script for Iraq.",
+  "lookalikes": [
+    "eg",
+    "iq",
+    "sy"
+  ],
+  "trivia": [
+    "The flag was adopted on 22 May 1990, when North and South Yemen unified.",
+    "The old walled city of Shibam, with its mud-brick tower houses, is sometimes called the \"Manhattan of the Desert\".",
+    "Yemen's Socotra archipelago is home to the dragon's blood tree, found nowhere else."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "code": "eg",
+  "name": "Egypt",
+  "officialName": "Arab Republic of Egypt",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Cairo",
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "population": 116538258,
+  "area": 1002450,
+  "languages": [
+    "Arabic"
+  ],
+  "currencies": [
+    "Egyptian pound"
+  ],
+  "demonym": "Egyptian",
+  "latlng": [
+    27,
+    30
+  ],
+  "flag": {
+    "description": "Three horizontal stripes of red, white and black, with a golden Eagle of Saladin in the centre of the white stripe.",
+    "adopted": "1984",
+    "colors": [
+      "red",
+      "white",
+      "black",
+      "yellow"
+    ],
+    "symbolism": "Red recalls the struggle before the 1952 revolution, white the bloodless revolution itself, and black the end of oppression; the eagle is the Eagle of Saladin."
+  },
+  "hook": "Egypt's red-white-black has a golden eagle in the middle; Iraq writes green Arabic script there and Yemen leaves it blank.",
+  "lookalikes": [
+    "iq",
+    "ye",
+    "sd"
+  ],
+  "trivia": [
+    "From 1958 to 1972 Egypt flew a red-white-black flag with two green stars, representing Egypt and Syria in the United Arab Republic.",
+    "Between 1972 and 1984 the centre held a golden Hawk of Quraish before the eagle replaced it."
+  ]
+}

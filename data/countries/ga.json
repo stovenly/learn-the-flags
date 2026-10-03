@@ -1,0 +1,41 @@
+{
+  "code": "ga",
+  "name": "Gabon",
+  "officialName": "Gabonese Republic",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Libreville",
+  "region": "Africa",
+  "subregion": "Middle Africa",
+  "population": 2538952,
+  "area": 267668,
+  "languages": [
+    "French"
+  ],
+  "currencies": [
+    "Central African CFA franc"
+  ],
+  "demonym": "Gabonese",
+  "latlng": [
+    -1,
+    11.75
+  ],
+  "flag": {
+    "description": "Three horizontal stripes of green, yellow and blue.",
+    "adopted": "1960",
+    "colors": [
+      "green",
+      "yellow",
+      "blue"
+    ],
+    "symbolism": "Green represents the forests, yellow the equator and the sun, and blue the sea."
+  },
+  "hook": "Gabon stacks green forest, yellow equator and blue ocean, and the equator really does run through the country; Sierra Leone has white in the middle.",
+  "lookalikes": [
+    "sl"
+  ],
+  "trivia": [
+    "The equator crosses Gabon, just as the yellow stripe crosses the middle of its flag.",
+    "Libreville, 'free town', was founded in 1849 by people freed from a slave ship."
+  ]
+}

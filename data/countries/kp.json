@@ -1,0 +1,41 @@
+{
+  "code": "kp",
+  "name": "North Korea",
+  "officialName": "Democratic People's Republic of Korea",
+  "aliases": [
+    "DPRK"
+  ],
+  "status": "un-member",
+  "capital": "Pyongyang",
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "population": 26498823,
+  "area": 120538,
+  "languages": [
+    "Korean"
+  ],
+  "currencies": [
+    "North Korean won"
+  ],
+  "demonym": "North Korean",
+  "latlng": [
+    40,
+    127
+  ],
+  "flag": {
+    "description": "A wide red central band bordered above and below by thin white stripes and then blue stripes, with a white disc containing a red five-pointed star in the red band towards the hoist.",
+    "adopted": "1948",
+    "colors": [
+      "red",
+      "blue",
+      "white"
+    ],
+    "symbolism": "Red represents revolutionary traditions, white purity and unity, and blue sovereignty and peace; the red star stands for communism."
+  },
+  "hook": "North Korea has a red star inside a white circle on a broad red band between blue stripes; South Korea is a white flag with a red-and-blue yin-yang.",
+  "lookalikes": [],
+  "trivia": [
+    "The village of Kijong-dong near the border with South Korea has a flagpole about 160 metres tall, one of the tallest in the world.",
+    "North Korea officially calls itself the Democratic People's Republic of Korea (DPRK)."
+  ]
+}

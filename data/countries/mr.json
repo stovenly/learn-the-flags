@@ -1,0 +1,43 @@
+{
+  "code": "mr",
+  "name": "Mauritania",
+  "officialName": "Islamic Republic of Mauritania",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Nouakchott",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "population": 5169395,
+  "area": 1030700,
+  "languages": [
+    "Arabic"
+  ],
+  "currencies": [
+    "Mauritanian ouguiya"
+  ],
+  "demonym": "Mauritanian",
+  "latlng": [
+    20,
+    -12
+  ],
+  "flag": {
+    "description": "A green field with a yellow crescent opening upward beneath a yellow five-pointed star in the centre, and horizontal red stripes along the top and bottom edges.",
+    "adopted": "2017",
+    "colors": [
+      "green",
+      "yellow",
+      "red"
+    ],
+    "symbolism": "Green and the crescent and star represent Islam, yellow the Sahara, and the red stripes the blood of those who fought for independence."
+  },
+  "hook": "Mauritania is green with an upward-cupped yellow crescent and star, and since 2017 red stripes along the top and bottom.",
+  "lookalikes": [
+    "dz",
+    "pk"
+  ],
+  "trivia": [
+    "The red stripes were added in 2017 after a constitutional referendum.",
+    "Mauritania's iron-ore trains, up to about 2.5 km long, are among the longest and heaviest trains in the world.",
+    "The Richat Structure, a 40 km-wide set of concentric rings known as the 'Eye of the Sahara', lies in Mauritania."
+  ]
+}

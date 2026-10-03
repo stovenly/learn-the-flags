@@ -1,0 +1,42 @@
+{
+  "code": "tg",
+  "name": "Togo",
+  "officialName": "Togolese Republic",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Lomé",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "population": 8406558,
+  "area": 56785,
+  "languages": [
+    "French"
+  ],
+  "currencies": [
+    "West African CFA franc"
+  ],
+  "demonym": "Togolese",
+  "latlng": [
+    8,
+    1.16666666
+  ],
+  "flag": {
+    "description": "Five horizontal stripes alternating green and yellow, with a red square canton in the upper hoist bearing a white five-pointed star.",
+    "adopted": "1960",
+    "colors": [
+      "green",
+      "yellow",
+      "red",
+      "white"
+    ],
+    "symbolism": "Green stands for hope and agriculture, yellow for faith in work, red for the blood of the martyrs and the white star for hope; the five stripes represent the country's regions."
+  },
+  "hook": "Togo is a Liberia-style 'lone star' flag in African colours: five green and yellow stripes with a white star in a red corner.",
+  "lookalikes": [
+    "lr"
+  ],
+  "trivia": [
+    "The flag was designed by Togolese artist Paul Ahyi.",
+    "Togo is a narrow strip of land with a coastline only about 56 km long."
+  ]
+}

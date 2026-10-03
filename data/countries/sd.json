@@ -1,0 +1,47 @@
+{
+  "code": "sd",
+  "name": "Sudan",
+  "officialName": "Republic of the Sudan",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Khartoum",
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "population": 50448963,
+  "area": 1886068,
+  "languages": [
+    "Arabic",
+    "English"
+  ],
+  "currencies": [
+    "Sudanese pound"
+  ],
+  "demonym": "Sudanese",
+  "latlng": [
+    15,
+    30
+  ],
+  "flag": {
+    "description": "Three horizontal stripes of red, white and black, with a green triangle at the hoist.",
+    "adopted": "1970",
+    "colors": [
+      "red",
+      "white",
+      "black",
+      "green"
+    ],
+    "symbolism": "Red stands for the struggle and martyrs, white for peace and optimism, black for Sudan itself, and green for Islam and prosperity."
+  },
+  "hook": "Sudan is red on top with a green hoist triangle; Palestine, Jordan and Kuwait reverse the order with black or green on top.",
+  "lookalikes": [
+    "ps",
+    "jo",
+    "kw",
+    "eg"
+  ],
+  "trivia": [
+    "The flag replaced a blue-yellow-green tricolour in 1970.",
+    "Sudan has more pyramids than Egypt, built by the ancient Kingdom of Kush around Meroë.",
+    "The capital, Khartoum, lies where the Blue Nile and White Nile meet."
+  ]
+}

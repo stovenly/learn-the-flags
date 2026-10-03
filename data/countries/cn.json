@@ -1,0 +1,40 @@
+{
+  "code": "cn",
+  "name": "China",
+  "officialName": "People's Republic of China",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Beijing",
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "population": 1408975000,
+  "area": 9706961,
+  "languages": [
+    "Chinese"
+  ],
+  "currencies": [
+    "Chinese yuan"
+  ],
+  "demonym": "Chinese",
+  "latlng": [
+    35,
+    105
+  ],
+  "flag": {
+    "description": "A red field with one large yellow five-pointed star in the canton and four smaller yellow stars arranged in an arc to its right.",
+    "adopted": "1949",
+    "colors": [
+      "red",
+      "yellow"
+    ],
+    "symbolism": "Red represents the communist revolution; the large star stands for the Communist Party and the four smaller stars for the social classes of the people united around it."
+  },
+  "hook": "China has one big yellow star plus four small ones in the top-left corner; Vietnam has a single big star in the centre.",
+  "lookalikes": [
+    "vn"
+  ],
+  "trivia": [
+    "Known as the Five-star Red Flag, it was designed by Zeng Liansong, an economist who entered a national design competition in 1949.",
+    "Each of the four small stars has one point aimed at the centre of the large star."
+  ]
+}

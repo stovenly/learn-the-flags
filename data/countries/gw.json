@@ -1,0 +1,45 @@
+{
+  "code": "gw",
+  "name": "Guinea-Bissau",
+  "officialName": "Republic of Guinea-Bissau",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Bissau",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "population": 2201352,
+  "area": 36125,
+  "languages": [
+    "Portuguese",
+    "Upper Guinea Creole"
+  ],
+  "currencies": [
+    "West African CFA franc"
+  ],
+  "demonym": "Guinea-Bissauan",
+  "latlng": [
+    12,
+    -15
+  ],
+  "flag": {
+    "description": "A vertical red band at the hoist bearing a black five-pointed star, with two horizontal bands, yellow over green, filling the fly.",
+    "adopted": "1973",
+    "colors": [
+      "red",
+      "yellow",
+      "green",
+      "black"
+    ],
+    "symbolism": "Red represents the blood of the independence fighters, yellow the sun and wealth, and green hope and the forests; the black star stands for African unity."
+  },
+  "hook": "Guinea-Bissau has a black star on a red hoist band beside yellow over green; Benin has the same layout but a plain green band.",
+  "lookalikes": [
+    "bj",
+    "gh",
+    "mg"
+  ],
+  "trivia": [
+    "Guinea-Bissau declared independence from Portugal in 1973; Portugal recognised it in 1974.",
+    "Hippos in the Bijagós archipelago are known for swimming in the sea between islands."
+  ]
+}

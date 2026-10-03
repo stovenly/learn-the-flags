@@ -1,0 +1,45 @@
+{
+  "code": "ar",
+  "name": "Argentina",
+  "officialName": "Argentine Republic",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Buenos Aires",
+  "region": "Americas",
+  "subregion": "South America",
+  "population": 45696159,
+  "area": 2780400,
+  "languages": [
+    "Guaraní",
+    "Spanish"
+  ],
+  "currencies": [
+    "Argentine peso"
+  ],
+  "demonym": "Argentine",
+  "latlng": [
+    -34,
+    -64
+  ],
+  "flag": {
+    "description": "Three equal horizontal bands of light blue, white and light blue, with a golden Sun of May with a human face in the centre of the white band.",
+    "adopted": "1818",
+    "colors": [
+      "light-blue",
+      "white",
+      "yellow"
+    ],
+    "symbolism": "The light blue and white come from the cockade used in the independence movement and are traditionally linked to the sky and clouds; the Sun of May recalls the May Revolution of 1810 and the Inca sun god Inti."
+  },
+  "hook": "Argentina is a sky-blue sandwich with one Sun of May in the middle; Uruguay moves its sun into the corner above nine stripes.",
+  "lookalikes": [
+    "uy",
+    "ni",
+    "sv",
+    "hn"
+  ],
+  "trivia": [
+    "Manuel Belgrano first raised the light blue and white flag in 1812 in Rosario; Argentina celebrates Flag Day on 20 June, the anniversary of his death.",
+    "Aconcagua in the Argentine Andes, at about 6,961 m, is the highest mountain outside Asia."
+  ]
+}

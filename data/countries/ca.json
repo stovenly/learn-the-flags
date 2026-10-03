@@ -1,0 +1,43 @@
+{
+  "code": "ca",
+  "name": "Canada",
+  "officialName": "Canada",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Ottawa",
+  "region": "Americas",
+  "subregion": "North America",
+  "population": 41262329,
+  "area": 9984670,
+  "languages": [
+    "English",
+    "French"
+  ],
+  "currencies": [
+    "Canadian dollar"
+  ],
+  "demonym": "Canadian",
+  "latlng": [
+    60,
+    -95
+  ],
+  "flag": {
+    "description": "A red vertical band at each end, each a quarter of the width, with a white square in the centre holding a red stylised 11-point maple leaf.",
+    "adopted": "1965",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "symbolism": "Red and white were proclaimed Canada's official colours in 1921, and the maple leaf has long been a national emblem."
+  },
+  "hook": "Canada is red-white-red standing up with one 11-point maple leaf on a wide white square; Peru has no leaf and three equal bands.",
+  "lookalikes": [
+    "pe",
+    "lb"
+  ],
+  "trivia": [
+    "The flag was first raised on 15 February 1965, now marked as National Flag of Canada Day.",
+    "The stylised maple leaf has 11 points, although real maple leaves usually have more.",
+    "Canada has the longest coastline of any country in the world."
+  ]
+}

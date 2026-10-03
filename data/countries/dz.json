@@ -1,0 +1,42 @@
+{
+  "code": "dz",
+  "name": "Algeria",
+  "officialName": "People's Democratic Republic of Algeria",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Algiers",
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "population": 46814308,
+  "area": 2381741,
+  "languages": [
+    "Arabic"
+  ],
+  "currencies": [
+    "Algerian dinar"
+  ],
+  "demonym": "Algerian",
+  "latlng": [
+    28,
+    3
+  ],
+  "flag": {
+    "description": "Two vertical halves, green at the hoist and white at the fly, with a red crescent and five-pointed star in the centre.",
+    "adopted": "1962",
+    "colors": [
+      "green",
+      "white",
+      "red"
+    ],
+    "symbolism": "Green represents Islam and the land, white purity and peace, and the red crescent and star Islam and the blood of those who died for independence."
+  },
+  "hook": "Algeria splits green and white straight down the middle and pins a red crescent and star on the seam; Pakistan's is white crescent on green.",
+  "lookalikes": [
+    "pk",
+    "mr"
+  ],
+  "trivia": [
+    "The flag was used by the National Liberation Front during the 1954-1962 war of independence before becoming the national flag.",
+    "Algeria has been Africa's largest country by area since Sudan split in 2011, and the Sahara covers over 80% of it."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "code": "bn",
+  "name": "Brunei",
+  "officialName": "Nation of Brunei, Abode of Peace",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Bandar Seri Begawan",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "population": 462721,
+  "area": 5765,
+  "languages": [
+    "Malay"
+  ],
+  "currencies": [
+    "Brunei dollar",
+    "Singapore dollar"
+  ],
+  "demonym": "Bruneian",
+  "latlng": [
+    4.5,
+    114.66666666
+  ],
+  "flag": {
+    "description": "A yellow field crossed by two parallel diagonal bands, white above black, running from the upper hoist to the lower fly, with the red national emblem in the centre.",
+    "adopted": "1959",
+    "colors": [
+      "yellow",
+      "white",
+      "black",
+      "red"
+    ],
+    "symbolism": "Yellow is the colour of the Sultan, while the white and black bands represent his chief ministers; the emblem's crescent stands for Islam, the parasol for the monarchy and the upraised hands for the government's benevolence."
+  },
+  "hook": "Brunei is the yellow flag slashed by a white-and-black diagonal, with a red crest of a crescent, parasol and two raised hands in the middle.",
+  "lookalikes": [],
+  "trivia": [
+    "The Arabic motto on the crescent means \"Always in service with God's guidance\".",
+    "Sultan Hassanal Bolkiah has reigned since 1967, making him one of the longest-reigning monarchs in the world."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "code": "cl",
+  "name": "Chile",
+  "officialName": "Republic of Chile",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Santiago",
+  "region": "Americas",
+  "subregion": "South America",
+  "population": 19764771,
+  "area": 756102,
+  "languages": [
+    "Spanish"
+  ],
+  "currencies": [
+    "Chilean peso"
+  ],
+  "demonym": "Chilean",
+  "latlng": [
+    -30,
+    -71
+  ],
+  "flag": {
+    "description": "Two horizontal bands of white over red, with a blue square in the upper hoist corner, as tall as the white band, holding a white five-pointed star.",
+    "adopted": "1817",
+    "colors": [
+      "red",
+      "white",
+      "blue"
+    ],
+    "symbolism": "Blue represents the sky and the Pacific Ocean, white the snow of the Andes and red the blood shed for independence; the star is a guide to progress and honour."
+  },
+  "hook": "Chile's lone star sits in a blue square covering only the white half; Texas-style flags run the blue bar down the full height.",
+  "lookalikes": [
+    "cu",
+    "lr",
+    "us"
+  ],
+  "trivia": [
+    "Chileans call their flag \"La Estrella Solitaria\" (the Lone Star).",
+    "Chile stretches about 4,300 km from north to south but averages only around 180 km wide.",
+    "The Atacama Desert in northern Chile is one of the driest places on Earth outside the poles."
+  ]
+}

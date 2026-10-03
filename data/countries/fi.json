@@ -1,0 +1,41 @@
+{
+  "code": "fi",
+  "name": "Finland",
+  "officialName": "Republic of Finland",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Helsinki",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "population": 5619911,
+  "area": 338424,
+  "languages": [
+    "Finnish",
+    "Swedish"
+  ],
+  "currencies": [
+    "Euro"
+  ],
+  "demonym": "Finnish",
+  "latlng": [
+    64,
+    26
+  ],
+  "flag": {
+    "description": "A white field with a blue Nordic cross extending to the edges, its vertical arm shifted towards the hoist.",
+    "adopted": "1918",
+    "colors": [
+      "white",
+      "blue"
+    ],
+    "symbolism": "Blue is commonly linked to Finland's lakes and sky, and white to snow; the cross is a shared Nordic and Christian symbol."
+  },
+  "hook": "A blue cross on snow-white: Finland's 'blue cross flag' is the only Nordic cross on a white background; Greece keeps its cross in a corner of stripes.",
+  "lookalikes": [
+    "gr"
+  ],
+  "trivia": [
+    "In Finnish the flag is called 'Siniristilippu', literally 'blue cross flag'.",
+    "Finland has about 188,000 lakes, earning it the nickname 'land of a thousand lakes'."
+  ]
+}

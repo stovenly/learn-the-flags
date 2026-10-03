@@ -1,0 +1,41 @@
+{
+  "code": "ma",
+  "name": "Morocco",
+  "officialName": "Kingdom of Morocco",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Rabat",
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "population": 38081173,
+  "area": 446550,
+  "languages": [
+    "Arabic",
+    "Berber"
+  ],
+  "currencies": [
+    "Moroccan dirham"
+  ],
+  "demonym": "Moroccan",
+  "latlng": [
+    32,
+    -5
+  ],
+  "flag": {
+    "description": "A red field with a green interlaced five-pointed star, drawn as an outline, in the centre.",
+    "adopted": "1915",
+    "colors": [
+      "red",
+      "green"
+    ],
+    "symbolism": "Red is associated with the ruling Alaouite dynasty and bravery; the green star, the Seal of Solomon, is linked to Islam and its five pillars."
+  },
+  "hook": "Morocco is red with a green star drawn as an interlaced outline; Vietnam's red flag has a solid yellow star.",
+  "lookalikes": [
+    "vn"
+  ],
+  "trivia": [
+    "The green star was added in 1915 to the plain red flag previously flown by the sultans.",
+    "The University of al-Qarawiyyin in Fez, founded in 859, is often cited as the oldest continuously operating university in the world."
+  ]
+}

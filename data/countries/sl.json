@@ -1,0 +1,42 @@
+{
+  "code": "sl",
+  "name": "Sierra Leone",
+  "officialName": "Republic of Sierra Leone",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Freetown",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "population": 8642022,
+  "area": 71740,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    "Sierra Leonean leone"
+  ],
+  "demonym": "Sierra Leonean",
+  "latlng": [
+    8.5,
+    -11.5
+  ],
+  "flag": {
+    "description": "Three horizontal stripes of green, white and blue.",
+    "adopted": "1961",
+    "colors": [
+      "green",
+      "white",
+      "blue"
+    ],
+    "symbolism": "Green represents agriculture and the mountains, white unity and justice, and blue the natural harbour of Freetown."
+  },
+  "hook": "Sierra Leone reads top to bottom like the view from Freetown: green hills, white beaches, blue harbour; Gabon has yellow in the middle.",
+  "lookalikes": [
+    "ga",
+    "ls"
+  ],
+  "trivia": [
+    "Freetown was founded in 1792 as a settlement for freed slaves.",
+    "The name comes from the Portuguese 'Serra Leoa', 'lion mountains'."
+  ]
+}

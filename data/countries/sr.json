@@ -1,0 +1,41 @@
+{
+  "code": "sr",
+  "name": "Suriname",
+  "officialName": "Republic of Suriname",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Paramaribo",
+  "region": "Americas",
+  "subregion": "South America",
+  "population": 634431,
+  "area": 163820,
+  "languages": [
+    "Dutch"
+  ],
+  "currencies": [
+    "Surinamese dollar"
+  ],
+  "demonym": "Surinamer",
+  "latlng": [
+    4,
+    -56
+  ],
+  "flag": {
+    "description": "Five horizontal bands of green, white, red, white and green, with the red band twice as tall as the green ones, and a large yellow five-pointed star in the centre.",
+    "adopted": "1975",
+    "colors": [
+      "red",
+      "green",
+      "white",
+      "yellow"
+    ],
+    "symbolism": "Green represents fertility and hope, white justice and freedom, and red progress and love; the gold star stands for unity and a bright future."
+  },
+  "hook": "Suriname: one big golden star on a thick red band, framed by thin white and green stripes above and below.",
+  "lookalikes": [],
+  "trivia": [
+    "Suriname is the smallest sovereign country in South America by area.",
+    "It is the only sovereign state in the Americas with Dutch as its official language.",
+    "Over 90% of Suriname is covered by forest, among the highest proportions of any country."
+  ]
+}

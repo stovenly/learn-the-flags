@@ -1,0 +1,40 @@
+{
+  "code": "bt",
+  "name": "Bhutan",
+  "officialName": "Kingdom of Bhutan",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Thimphu",
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "population": 791524,
+  "area": 38394,
+  "languages": [
+    "Dzongkha"
+  ],
+  "currencies": [
+    "Bhutanese ngultrum",
+    "Indian rupee"
+  ],
+  "demonym": "Bhutanese",
+  "latlng": [
+    27.5,
+    90.5
+  ],
+  "flag": {
+    "description": "Divided diagonally from the lower hoist to the upper fly, with a yellow upper triangle and an orange lower triangle, and a white dragon holding jewels in its claws lying along the dividing line.",
+    "adopted": "1969",
+    "colors": [
+      "orange",
+      "yellow",
+      "white"
+    ],
+    "symbolism": "Yellow represents the secular authority of the king and orange the Buddhist spiritual tradition; the white dragon (Druk) stands for purity and the jewels for the wealth and security of the nation."
+  },
+  "hook": "Bhutan flies a white thunder dragon on a yellow-and-orange diagonal; its own name for itself, Druk Yul, means \"Land of the Thunder Dragon\".",
+  "lookalikes": [],
+  "trivia": [
+    "Bhutan is known for measuring Gross National Happiness as a guide to government policy.",
+    "More than two-thirds of the country is forested, and Bhutan absorbs more carbon dioxide than it emits."
+  ]
+}

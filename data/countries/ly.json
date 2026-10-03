@@ -1,0 +1,40 @@
+{
+  "code": "ly",
+  "name": "Libya",
+  "officialName": "State of Libya",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Tripoli",
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "population": 7381023,
+  "area": 1759540,
+  "languages": [
+    "Arabic"
+  ],
+  "currencies": [
+    "Libyan dinar"
+  ],
+  "demonym": "Libyan",
+  "latlng": [
+    25,
+    17
+  ],
+  "flag": {
+    "description": "Three horizontal stripes of red, black and green, the black stripe twice as tall as the others, with a white crescent and five-pointed star in the centre.",
+    "adopted": "2011",
+    "colors": [
+      "black",
+      "red",
+      "green",
+      "white"
+    ],
+    "symbolism": "The stripes recall the historic regions of Fezzan (red), Cyrenaica (black) and Tripolitania (green); the crescent and star represent Islam."
+  },
+  "hook": "Libya's broad black middle band carries a white crescent and star between thin red and green stripes.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag was first used under the monarchy from 1951 and readopted in 2011, replacing the plain green flag used from 1977.",
+    "From 1977 to 2011 Libya's plain green flag was the only national flag with a single colour and no design."
+  ]
+}

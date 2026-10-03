@@ -1,0 +1,43 @@
+{
+  "code": "be",
+  "name": "Belgium",
+  "officialName": "Kingdom of Belgium",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Brussels",
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "population": 11858610,
+  "area": 30528,
+  "languages": [
+    "German",
+    "French",
+    "Dutch"
+  ],
+  "currencies": [
+    "Euro"
+  ],
+  "demonym": "Belgian",
+  "latlng": [
+    50.83333333,
+    4
+  ],
+  "flag": {
+    "description": "Three equal vertical stripes of black, yellow and red from the hoist, in an unusual near-square 13:15 ratio.",
+    "adopted": "1831",
+    "colors": [
+      "black",
+      "yellow",
+      "red"
+    ],
+    "symbolism": "The colours come from the arms of the Duchy of Brabant: a golden lion with red claws and tongue on a black field."
+  },
+  "hook": "Belgium is Germany's black, yellow and red standing upright: vertical stripes with black at the flagpole, versus Germany's horizontal stack.",
+  "lookalikes": [
+    "de"
+  ],
+  "trivia": [
+    "The official proportion of 13:15 is rarely seen; most Belgian flags in everyday use are made in the common 2:3 shape.",
+    "Belgium has three official languages: Dutch, French and German."
+  ]
+}

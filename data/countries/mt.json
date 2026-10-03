@@ -1,0 +1,39 @@
+{
+  "code": "mt",
+  "name": "Malta",
+  "officialName": "Republic of Malta",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Valletta",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "population": 568847,
+  "area": 316,
+  "languages": [
+    "English",
+    "Maltese"
+  ],
+  "currencies": [
+    "Euro"
+  ],
+  "demonym": "Maltese",
+  "latlng": [
+    35.83333333,
+    14.58333333
+  ],
+  "flag": {
+    "description": "Two equal vertical bands, white at the hoist and red, with a representation of the George Cross edged in red in the upper hoist corner.",
+    "adopted": "1964",
+    "colors": [
+      "white",
+      "red"
+    ],
+    "symbolism": "White and red are traditional Maltese colours; the George Cross was awarded to the island by King George VI in 1942 for its bravery during the Second World War."
+  },
+  "hook": "Malta splits white and red vertically and pins a small grey medal, the George Cross, in the white corner.",
+  "lookalikes": [],
+  "trivia": [
+    "The George Cross was awarded collectively to the people of Malta on 15 April 1942, during a long wartime siege.",
+    "Maltese is the only Semitic language that is an official language of the European Union, and it is written in the Latin alphabet."
+  ]
+}

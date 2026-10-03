@@ -1,0 +1,45 @@
+{
+  "code": "st",
+  "name": "São Tomé and Príncipe",
+  "officialName": "Democratic Republic of São Tomé and Príncipe",
+  "aliases": [
+    "São Tomé"
+  ],
+  "status": "un-member",
+  "capital": "São Tomé",
+  "region": "Africa",
+  "subregion": "Middle Africa",
+  "population": 235536,
+  "area": 964,
+  "languages": [
+    "Portuguese"
+  ],
+  "currencies": [
+    "São Tomé and Príncipe dobra"
+  ],
+  "demonym": "Sao Tomean",
+  "latlng": [
+    1,
+    7
+  ],
+  "flag": {
+    "description": "Three horizontal stripes of green, yellow and green, the yellow one wider, with a red triangle at the hoist and two black five-pointed stars on the yellow stripe.",
+    "adopted": "1975",
+    "colors": [
+      "green",
+      "yellow",
+      "red",
+      "black"
+    ],
+    "symbolism": "Green represents the vegetation, yellow the sun and cocoa, red the struggle for independence, and the two stars the two main islands."
+  },
+  "hook": "São Tomé and Príncipe puts two black stars, one per island, on a wide yellow band between green stripes, with a red hoist triangle.",
+  "lookalikes": [
+    "gh",
+    "gw"
+  ],
+  "trivia": [
+    "The equator passes through Ilhéu das Rolas, an islet just off São Tomé.",
+    "In 1919 Arthur Eddington photographed a solar eclipse on Príncipe, helping confirm Einstein's general theory of relativity."
+  ]
+}

@@ -1,0 +1,9 @@
+node_modules/
+.cache/
+specs/
+*.spec.md
+SPEC*.md
+PLAN*.md
+.DS_Store
+Thumbs.db
+src/generated/

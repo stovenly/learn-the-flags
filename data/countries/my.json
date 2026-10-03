@@ -1,0 +1,44 @@
+{
+  "code": "my",
+  "name": "Malaysia",
+  "officialName": "Malaysia",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Kuala Lumpur (official), Putrajaya (administrative)",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "population": 35557673,
+  "area": 330803,
+  "languages": [
+    "English",
+    "Malay"
+  ],
+  "currencies": [
+    "Malaysian ringgit"
+  ],
+  "demonym": "Malaysian",
+  "latlng": [
+    2.5,
+    112.5
+  ],
+  "flag": {
+    "description": "Fourteen horizontal stripes alternating red and white, starting with red, and a dark blue canton containing a yellow crescent and a yellow fourteen-pointed star.",
+    "adopted": "1963",
+    "colors": [
+      "red",
+      "white",
+      "blue",
+      "yellow"
+    ],
+    "symbolism": "The 14 stripes and 14 star points represent the 13 states and the federal government; the crescent stands for Islam, yellow for the royal rulers and blue for the unity of the people."
+  },
+  "hook": "Malaysia looks like the US flag at first glance, but its blue corner holds a yellow crescent and a 14-pointed star instead of white stars.",
+  "lookalikes": [
+    "us",
+    "lr"
+  ],
+  "trivia": [
+    "The flag is called the Jalur Gemilang, \"Stripes of Glory\", a name given in 1997.",
+    "The star and stripes rose from 11 to 14 in 1963 to include Sabah, Sarawak and Singapore; after Singapore left in 1965, the 14th came to represent the federal government."
+  ]
+}

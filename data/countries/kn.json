@@ -1,0 +1,48 @@
+{
+  "code": "kn",
+  "name": "Saint Kitts and Nevis",
+  "officialName": "Federation of Saint Christopher and Nevis",
+  "aliases": [
+    "St Kitts and Nevis",
+    "Saint Christopher and Nevis",
+    "St Kitts"
+  ],
+  "status": "un-member",
+  "capital": "Basseterre",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "population": 46843,
+  "area": 261,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    "Eastern Caribbean dollar"
+  ],
+  "demonym": "Kittitian or Nevisian",
+  "latlng": [
+    17.33333333,
+    -62.75
+  ],
+  "flag": {
+    "description": "A black diagonal band edged in yellow runs from the lower hoist to the upper fly, carrying two white five-pointed stars; the upper hoist triangle is green and the lower fly triangle red.",
+    "adopted": "1983",
+    "colors": [
+      "green",
+      "red",
+      "black",
+      "yellow",
+      "white"
+    ],
+    "symbolism": "Green represents the fertile land, yellow the sunshine, black the African heritage, and red the struggle against slavery and colonialism; the two stars stand for hope and liberty."
+  },
+  "hook": "Saint Kitts and Nevis: a black diagonal sash with two white stars, one for each island, between green and red triangles.",
+  "lookalikes": [
+    "tz",
+    "tt"
+  ],
+  "trivia": [
+    "Saint Kitts and Nevis is the smallest sovereign state in the Americas by both area and population.",
+    "The flag was designed by Edrice Lewis, whose entry won a national competition before independence in 1983."
+  ]
+}

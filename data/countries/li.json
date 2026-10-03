@@ -1,0 +1,41 @@
+{
+  "code": "li",
+  "name": "Liechtenstein",
+  "officialName": "Principality of Liechtenstein",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Vaduz",
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "population": 40450,
+  "area": 160,
+  "languages": [
+    "German"
+  ],
+  "currencies": [
+    "Swiss franc"
+  ],
+  "demonym": "Liechtensteiner",
+  "latlng": [
+    47.26666666,
+    9.53333333
+  ],
+  "flag": {
+    "description": "Two equal horizontal bands, blue over red, with a gold crown in the upper hoist corner.",
+    "adopted": "1937",
+    "colors": [
+      "blue",
+      "red",
+      "yellow"
+    ],
+    "symbolism": "Blue is said to represent the sky and red the glow of evening fires in homes; the crown stands for the unity of the people and the princely house."
+  },
+  "hook": "Blue over red with a gold crown: Liechtenstein added the crown after discovering its plain flag matched Haiti's, so crown means Liechtenstein, central crest means Haiti.",
+  "lookalikes": [
+    "ht"
+  ],
+  "trivia": [
+    "At the 1936 Berlin Olympics Liechtenstein discovered its flag was identical to Haiti's civil flag, and added the crown in 1937.",
+    "Liechtenstein is one of only two doubly landlocked countries, along with Uzbekistan."
+  ]
+}

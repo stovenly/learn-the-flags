@@ -1,0 +1,38 @@
+{
+  "code": "se",
+  "name": "Sweden",
+  "officialName": "Kingdom of Sweden",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Stockholm",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "population": 10569709,
+  "area": 450295,
+  "languages": [
+    "Swedish"
+  ],
+  "currencies": [
+    "Swedish krona"
+  ],
+  "demonym": "Swedish",
+  "latlng": [
+    62,
+    15
+  ],
+  "flag": {
+    "description": "A blue field with a yellow Nordic cross extending to the edges, its vertical arm shifted towards the hoist.",
+    "adopted": "1906",
+    "colors": [
+      "blue",
+      "yellow"
+    ],
+    "symbolism": "The colours come from Sweden's coat of arms, three gold crowns on a blue field."
+  },
+  "hook": "Sweden is a gold cross on blue: the only Nordic cross in yellow, and the same two colours as Ukraine but laid out as a cross.",
+  "lookalikes": [],
+  "trivia": [
+    "Sweden's National Day, 6 June, is also its Flag Day.",
+    "The current flag law dates from 1906, after the union with Norway ended and the union badge in the canton was dropped."
+  ]
+}

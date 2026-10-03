@@ -1,0 +1,42 @@
+{
+  "code": "vn",
+  "name": "Vietnam",
+  "officialName": "Socialist Republic of Vietnam",
+  "aliases": [
+    "Viet Nam"
+  ],
+  "status": "un-member",
+  "capital": "Hanoi",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "population": 100987686,
+  "area": 331212,
+  "languages": [
+    "Vietnamese"
+  ],
+  "currencies": [
+    "Vietnamese đồng"
+  ],
+  "demonym": "Vietnamese",
+  "latlng": [
+    16.16666666,
+    107.83333333
+  ],
+  "flag": {
+    "description": "A red field with a large yellow five-pointed star in the centre.",
+    "adopted": "1976",
+    "colors": [
+      "red",
+      "yellow"
+    ],
+    "symbolism": "Red stands for revolution and the blood shed for independence; the five points of the star represent intellectuals, farmers, workers, businesspeople and soldiers."
+  },
+  "hook": "Vietnam is a single big yellow star in the centre of red; China moves its star to the corner and adds four small ones.",
+  "lookalikes": [
+    "cn"
+  ],
+  "trivia": [
+    "The flag was first used in 1940 in an uprising in southern Vietnam and became the flag of the reunified country in 1976.",
+    "Vietnam is one of the largest coffee producers in the world, second only to Brazil."
+  ]
+}

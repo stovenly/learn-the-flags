@@ -1,0 +1,45 @@
+{
+  "code": "pw",
+  "name": "Palau",
+  "officialName": "Republic of Palau",
+  "aliases": [
+    "Belau"
+  ],
+  "status": "un-member",
+  "capital": "Ngerulmud",
+  "region": "Oceania",
+  "subregion": "Micronesia",
+  "population": 17695,
+  "area": 459,
+  "languages": [
+    "English",
+    "Palauan"
+  ],
+  "currencies": [
+    "United States dollar"
+  ],
+  "demonym": "Palauan",
+  "latlng": [
+    7.5,
+    134.5
+  ],
+  "flag": {
+    "description": "A light blue field with a large yellow disc placed slightly towards the hoist.",
+    "adopted": "1981",
+    "colors": [
+      "light-blue",
+      "yellow"
+    ],
+    "symbolism": "The yellow disc is the full moon, considered the best time for fishing, planting and celebrations, and the blue is the Pacific Ocean."
+  },
+  "hook": "A yellow full moon over a blue sea: Palau's off-centre disc echoes Bangladesh's red sun on green and Japan's centred red sun on white, but only Palau's is yellow on blue.",
+  "lookalikes": [
+    "bd",
+    "jp"
+  ],
+  "trivia": [
+    "Palau created the world's first shark sanctuary in 2009, banning commercial shark fishing in its waters.",
+    "Since 2017 visitors must sign the 'Palau Pledge', stamped in their passport, promising to protect the environment.",
+    "Ngerulmud became the capital in 2006, replacing Koror, the largest town."
+  ]
+}

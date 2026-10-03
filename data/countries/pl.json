@@ -1,0 +1,42 @@
+{
+  "code": "pl",
+  "name": "Poland",
+  "officialName": "Republic of Poland",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Warsaw",
+  "region": "Europe",
+  "subregion": "Central Europe",
+  "population": 36559233,
+  "area": 312679,
+  "languages": [
+    "Polish"
+  ],
+  "currencies": [
+    "Polish złoty"
+  ],
+  "demonym": "Polish",
+  "latlng": [
+    52,
+    20
+  ],
+  "flag": {
+    "description": "Two equal horizontal bands, white over red.",
+    "adopted": "1919",
+    "colors": [
+      "white",
+      "red"
+    ],
+    "symbolism": "The colours come from Poland's coat of arms, a white eagle on a red field."
+  },
+  "hook": "Poland puts white on top like snow over red; Indonesia and Monaco flip it to red over white.",
+  "lookalikes": [
+    "id",
+    "mc",
+    "sg"
+  ],
+  "trivia": [
+    "Poland celebrates Flag Day on 2 May, between Labour Day and Constitution Day.",
+    "Upside down, the Polish flag looks almost exactly like the flags of Indonesia and Monaco."
+  ]
+}

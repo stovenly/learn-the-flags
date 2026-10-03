@@ -1,0 +1,38 @@
+{
+  "code": "sa",
+  "name": "Saudi Arabia",
+  "officialName": "Kingdom of Saudi Arabia",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Riyadh",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "population": 35300280,
+  "area": 2149690,
+  "languages": [
+    "Arabic"
+  ],
+  "currencies": [
+    "Saudi riyal"
+  ],
+  "demonym": "Saudi Arabian",
+  "latlng": [
+    25,
+    45
+  ],
+  "flag": {
+    "description": "A green field with the Shahada (Islamic declaration of faith) written in large white Arabic script, above a white horizontal sword.",
+    "adopted": "1973",
+    "colors": [
+      "green",
+      "white"
+    ],
+    "symbolism": "Green is associated with Islam, the Shahada declares the faith, and the sword represents justice and strength."
+  },
+  "hook": "Saudi Arabia is green with white Arabic writing above a long sword; it is the only green flag with a sword under its words.",
+  "lookalikes": [],
+  "trivia": [
+    "Because it carries the Shahada, the flag is traditionally never flown at half-mast.",
+    "It is made double-sided so the inscription reads correctly from both sides."
+  ]
+}

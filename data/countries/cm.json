@@ -1,0 +1,44 @@
+{
+  "code": "cm",
+  "name": "Cameroon",
+  "officialName": "Republic of Cameroon",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Yaoundé",
+  "region": "Africa",
+  "subregion": "Middle Africa",
+  "population": 29123744,
+  "area": 475442,
+  "languages": [
+    "English",
+    "French"
+  ],
+  "currencies": [
+    "Central African CFA franc"
+  ],
+  "demonym": "Cameroonian",
+  "latlng": [
+    6,
+    12
+  ],
+  "flag": {
+    "description": "Three vertical stripes of green (hoist), red and yellow, with a yellow five-pointed star in the centre of the red stripe.",
+    "adopted": "1975",
+    "colors": [
+      "green",
+      "red",
+      "yellow"
+    ],
+    "symbolism": "Green represents the forests of the south, yellow the savanna and sun of the north, and red unity; the star is the 'star of unity'."
+  },
+  "hook": "Cameroon puts red in the middle with a yellow star; Senegal puts yellow in the middle with a green star, and Mali has no star at all.",
+  "lookalikes": [
+    "sn",
+    "ml",
+    "gn"
+  ],
+  "trivia": [
+    "From 1961 to 1975 the flag had two stars, for the former French and British Cameroons; they became one when the federation ended.",
+    "Cameroon is nicknamed 'Africa in miniature' for its range of landscapes, from rainforest to desert to volcanic Mount Cameroon (about 4,040 m)."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "code": "sn",
+  "name": "Senegal",
+  "officialName": "Republic of Senegal",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Dakar",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "population": 18501984,
+  "area": 196722,
+  "languages": [
+    "French"
+  ],
+  "currencies": [
+    "West African CFA franc"
+  ],
+  "demonym": "Senegalese",
+  "latlng": [
+    14,
+    -14
+  ],
+  "flag": {
+    "description": "Three vertical stripes of green (hoist), yellow and red, with a green five-pointed star in the centre of the yellow stripe.",
+    "adopted": "1960",
+    "colors": [
+      "green",
+      "yellow",
+      "red"
+    ],
+    "symbolism": "Green represents hope and Islam, yellow wealth and the arts, and red life and sacrifice; the star stands for unity and hope."
+  },
+  "hook": "Senegal is Mali plus a green Star in the middle: 'S' for Senegal, 'S' for Star.",
+  "lookalikes": [
+    "ml",
+    "cm",
+    "gn"
+  ],
+  "trivia": [
+    "Senegal shares its colours with Mali because both were briefly united in the Mali Federation (1959-1960).",
+    "Dakar's African Renaissance Monument, at 49 m, is the tallest statue in Africa.",
+    "Lake Retba near Dakar is famous for its pink water, coloured by algae."
+  ]
+}

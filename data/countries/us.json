@@ -1,0 +1,48 @@
+{
+  "code": "us",
+  "name": "United States",
+  "officialName": "United States of America",
+  "aliases": [
+    "USA",
+    "US",
+    "America",
+    "United States of America"
+  ],
+  "status": "un-member",
+  "capital": "Washington D.C.",
+  "region": "Americas",
+  "subregion": "North America",
+  "population": 340003797,
+  "area": 9372610,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    "United States dollar"
+  ],
+  "demonym": "American",
+  "latlng": [
+    38,
+    -97
+  ],
+  "flag": {
+    "description": "Thirteen horizontal stripes alternating red and white, starting and ending with red, with a blue rectangle in the upper hoist holding 50 white five-pointed stars in nine offset rows of six and five.",
+    "adopted": "1960",
+    "colors": [
+      "red",
+      "white",
+      "blue"
+    ],
+    "symbolism": "The 13 stripes represent the original colonies and the 50 stars the states; red is traditionally said to signify valour, white purity and blue vigilance and justice."
+  },
+  "hook": "The United States: 50 stars and 13 stripes; Liberia has 11 stripes and one big star, and Malaysia adds a crescent.",
+  "lookalikes": [
+    "lr",
+    "my",
+    "cl"
+  ],
+  "trivia": [
+    "The 50-star flag became official on 4 July 1960 and has been in use longer than any earlier version.",
+    "Six American flags were planted on the Moon during the Apollo landings between 1969 and 1972."
+  ]
+}

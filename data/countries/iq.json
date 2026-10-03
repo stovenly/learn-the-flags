@@ -1,0 +1,46 @@
+{
+  "code": "iq",
+  "name": "Iraq",
+  "officialName": "Republic of Iraq",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Baghdad",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "population": 46042015,
+  "area": 438317,
+  "languages": [
+    "Arabic",
+    "Aramaic",
+    "Sorani"
+  ],
+  "currencies": [
+    "Iraqi dinar"
+  ],
+  "demonym": "Iraqi",
+  "latlng": [
+    33,
+    44
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of red, white and black, with the phrase \"Allahu akbar\" written in green Kufic script in the centre of the white stripe.",
+    "adopted": "2008",
+    "colors": [
+      "red",
+      "white",
+      "black",
+      "green"
+    ],
+    "symbolism": "The Pan-Arab colours are commonly said to represent courage (red), generosity (white) and past oppression (black); the inscription is the Takbir, \"God is the greatest\"."
+  },
+  "hook": "Iraq writes green Arabic script on the white stripe; Egypt has a gold eagle, Yemen's stripes are bare, and Syria now uses green-white-black with red stars.",
+  "lookalikes": [
+    "eg",
+    "ye",
+    "sy"
+  ],
+  "trivia": [
+    "Until 2008 the flag carried three green stars, which were removed in that year's redesign.",
+    "The Takbir was added in 1991 in a handwritten style; the current flag uses a standardised Kufic script instead."
+  ]
+}

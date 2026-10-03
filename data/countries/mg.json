@@ -1,0 +1,43 @@
+{
+  "code": "mg",
+  "name": "Madagascar",
+  "officialName": "Republic of Madagascar",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Antananarivo",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "population": 31964956,
+  "area": 587041,
+  "languages": [
+    "French",
+    "Malagasy"
+  ],
+  "currencies": [
+    "Malagasy ariary"
+  ],
+  "demonym": "Malagasy",
+  "latlng": [
+    -20,
+    47
+  ],
+  "flag": {
+    "description": "A vertical white band at the hoist, with two horizontal bands, red over green, filling the fly.",
+    "adopted": "1958",
+    "colors": [
+      "red",
+      "green",
+      "white"
+    ],
+    "symbolism": "Red stands for sovereignty, green for hope and the coastal peoples, and white for purity."
+  },
+  "hook": "Madagascar has a white band at the flagpole beside red over green; Benin's matching layout has a green band and yellow over red.",
+  "lookalikes": [
+    "bj",
+    "gw"
+  ],
+  "trivia": [
+    "The flag was adopted in 1958, two years before independence from France, and has not changed since.",
+    "Madagascar is the world's fourth-largest island, and lemurs live wild nowhere else."
+  ]
+}

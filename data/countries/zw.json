@@ -1,0 +1,63 @@
+{
+  "code": "zw",
+  "name": "Zimbabwe",
+  "officialName": "Republic of Zimbabwe",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Harare",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "population": 16634373,
+  "area": 390757,
+  "languages": [
+    "Chibarwe",
+    "English",
+    "Kalanga",
+    "Khoisan",
+    "Ndau",
+    "Northern Ndebele",
+    "Chewa",
+    "Shona",
+    "Sotho",
+    "Tonga",
+    "Tswana",
+    "Tsonga",
+    "Venda",
+    "Xhosa",
+    "Zimbabwean Sign Language"
+  ],
+  "currencies": [
+    "Botswana pula",
+    "Chinese yuan",
+    "Euro",
+    "British pound",
+    "Indian rupee",
+    "Japanese yen",
+    "United States dollar",
+    "South African rand",
+    "Zimbabwean bonds"
+  ],
+  "demonym": "Zimbabwean",
+  "latlng": [
+    -20,
+    30
+  ],
+  "flag": {
+    "description": "Seven horizontal stripes of green, yellow, red, black, red, yellow and green, with a white triangle edged in black at the hoist containing a yellow Zimbabwe Bird on a red star.",
+    "adopted": "1980",
+    "colors": [
+      "green",
+      "yellow",
+      "red",
+      "black",
+      "white"
+    ],
+    "symbolism": "Green represents agriculture, yellow minerals, red the blood of the liberation struggle and black the majority people; white stands for peace, and the bird is the national emblem."
+  },
+  "hook": "Zimbabwe's white hoist triangle holds the soapstone Zimbabwe Bird beside seven mirrored stripes of green, yellow, red and black.",
+  "lookalikes": [],
+  "trivia": [
+    "The Zimbabwe Bird is based on soapstone carvings found at the ruins of Great Zimbabwe.",
+    "The name Zimbabwe comes from the Shona for 'houses of stone', after those ruins."
+  ]
+}

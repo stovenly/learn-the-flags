@@ -1,0 +1,42 @@
+{
+  "code": "uy",
+  "name": "Uruguay",
+  "officialName": "Oriental Republic of Uruguay",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Montevideo",
+  "region": "Americas",
+  "subregion": "South America",
+  "population": 3386588,
+  "area": 181034,
+  "languages": [
+    "Spanish"
+  ],
+  "currencies": [
+    "Uruguayan peso"
+  ],
+  "demonym": "Uruguayan",
+  "latlng": [
+    -33,
+    -56
+  ],
+  "flag": {
+    "description": "Nine horizontal stripes, five white alternating with four light blue, starting and ending with white, and a white square in the upper hoist holding a golden Sun of May with a face.",
+    "adopted": "1830",
+    "colors": [
+      "white",
+      "light-blue",
+      "yellow"
+    ],
+    "symbolism": "The nine stripes stand for the nine departments the country had in 1830, and the Sun of May symbolises independence and the May Revolution of 1810."
+  },
+  "hook": "Uruguay tucks Argentina's Sun of May into a white top-left corner over nine stripes, like a sunny Greece.",
+  "lookalikes": [
+    "ar",
+    "gr"
+  ],
+  "trivia": [
+    "Uruguay hosted and won the first FIFA World Cup in 1930.",
+    "The nine stripes match Uruguay's nine original departments; the country now has 19."
+  ]
+}

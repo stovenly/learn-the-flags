@@ -1,0 +1,43 @@
+{
+  "code": "sk",
+  "name": "Slovakia",
+  "officialName": "Slovak Republic",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Bratislava",
+  "region": "Europe",
+  "subregion": "Central Europe",
+  "population": 5422069,
+  "area": 49037,
+  "languages": [
+    "Slovak"
+  ],
+  "currencies": [
+    "Euro"
+  ],
+  "demonym": "Slovak",
+  "latlng": [
+    48.66666666,
+    19.5
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of white, blue and red, with the coat of arms on the hoist side: a white double cross standing on three blue hills on a red shield edged in white.",
+    "adopted": "1992",
+    "colors": [
+      "white",
+      "blue",
+      "red"
+    ],
+    "symbolism": "White, blue and red are pan-Slavic colours; the double cross reflects the Christian heritage brought by Saints Cyril and Methodius, and the three hills are traditionally the Tatra, Fatra and Mátra ranges."
+  },
+  "hook": "Slovakia's large red shield carries a white double cross on three blue hills; Slovenia's smaller blue shield shows a mountain and stars.",
+  "lookalikes": [
+    "si",
+    "ru",
+    "rs"
+  ],
+  "trivia": [
+    "The flag was adopted in September 1992, a few months before Czechoslovakia peacefully split on 1 January 1993.",
+    "Without the shield, Slovakia's flag would be identical to Russia's."
+  ]
+}

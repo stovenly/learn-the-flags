@@ -1,0 +1,43 @@
+{
+  "code": "af",
+  "name": "Afghanistan",
+  "officialName": "Islamic Republic of Afghanistan",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Kabul",
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "population": 42647492,
+  "area": 652230,
+  "languages": [
+    "Dari",
+    "Pashto",
+    "Turkmen"
+  ],
+  "currencies": [
+    "Afghan afghani"
+  ],
+  "demonym": "Afghan",
+  "latlng": [
+    33,
+    65
+  ],
+  "flag": {
+    "description": "Three equal vertical bands of black, red and green, with the white national emblem (a mosque with a mihrab and minbar, framed by wheat sheaves and topped by the Shahada) centred over the red band.",
+    "adopted": "2004",
+    "colors": [
+      "black",
+      "red",
+      "green",
+      "white"
+    ],
+    "symbolism": "Black is usually said to represent the troubled past, red the blood shed for independence, and green hope, prosperity and Islam."
+  },
+  "hook": "Afghanistan is a vertical black-red-green tricolour with a white mosque emblem on the red; Belgium is vertical black-yellow-red with no emblem.",
+  "lookalikes": [],
+  "trivia": [
+    "Afghanistan changed its national flag more often during the 20th century than any other country.",
+    "The number 1298 under the mosque is the Solar Hijri year corresponding to 1919, when Afghanistan regained full independence.",
+    "Since 2021 the Taliban-led authorities in Kabul have used a white flag bearing the black Shahada; the tricolour shown here remains widely used abroad, including by the national cricket team."
+  ]
+}

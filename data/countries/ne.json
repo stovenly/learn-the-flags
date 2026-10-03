@@ -1,0 +1,42 @@
+{
+  "code": "ne",
+  "name": "Niger",
+  "officialName": "Republic of Niger",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Niamey",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "population": 27032412,
+  "area": 1267000,
+  "languages": [
+    "French"
+  ],
+  "currencies": [
+    "West African CFA franc"
+  ],
+  "demonym": "Nigerien",
+  "latlng": [
+    16,
+    8
+  ],
+  "flag": {
+    "description": "Three horizontal stripes of orange, white and green, with an orange disc in the centre of the white stripe; the flag is nearly square.",
+    "adopted": "1959",
+    "colors": [
+      "orange",
+      "white",
+      "green"
+    ],
+    "symbolism": "Orange represents the Sahara in the north, white purity and hope, and green the fertile south and the Niger River; the disc represents the sun."
+  },
+  "hook": "Niger looks like India with a plain orange sun instead of a blue wheel, on a nearly square flag.",
+  "lookalikes": [
+    "in",
+    "ci"
+  ],
+  "trivia": [
+    "Niger's flag has unusual proportions of 6:7, making it almost square.",
+    "Niger has the highest fertility rate in the world."
+  ]
+}

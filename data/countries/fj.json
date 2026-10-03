@@ -1,0 +1,48 @@
+{
+  "code": "fj",
+  "name": "Fiji",
+  "officialName": "Republic of Fiji",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Suva",
+  "region": "Oceania",
+  "subregion": "Melanesia",
+  "population": 928784,
+  "area": 18272,
+  "languages": [
+    "English",
+    "Fijian",
+    "Fiji Hindi"
+  ],
+  "currencies": [
+    "Fijian dollar"
+  ],
+  "demonym": "Fijian",
+  "latlng": [
+    -18,
+    175
+  ],
+  "flag": {
+    "description": "A light blue field with the Union Jack in the upper hoist and the shield from Fiji's coat of arms in the fly: a golden lion holding a cocoa pod above a red St George's cross, with sugar cane, a coconut palm, a dove and a bunch of bananas in the quarters.",
+    "adopted": "1970",
+    "colors": [
+      "light-blue",
+      "white",
+      "red",
+      "blue",
+      "yellow"
+    ],
+    "symbolism": "The light blue represents the Pacific Ocean and the Union Jack Fiji's links with Britain; the shield shows the country's main crops and a dove of peace."
+  },
+  "hook": "Fiji's light-blue ensign carries a single shield with a lion, sugar cane, palm, bananas and a dove; Tuvalu's light-blue ensign has nine yellow stars instead.",
+  "lookalikes": [
+    "tv",
+    "au",
+    "nz"
+  ],
+  "trivia": [
+    "In 2015 the government announced it would replace the flag to drop the Union Jack, but abandoned the plan in 2016 after a design competition.",
+    "Fiji's rugby sevens gold at the 2016 Rio Olympics was the country's first ever Olympic medal.",
+    "The 180th meridian passes through Fiji, though the International Date Line bends around the islands so the whole country shares one date."
+  ]
+}

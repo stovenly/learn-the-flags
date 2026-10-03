@@ -1,0 +1,43 @@
+{
+  "code": "lc",
+  "name": "Saint Lucia",
+  "officialName": "Saint Lucia",
+  "aliases": [
+    "St Lucia"
+  ],
+  "status": "un-member",
+  "capital": "Castries",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "population": 179744,
+  "area": 616,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    "Eastern Caribbean dollar"
+  ],
+  "demonym": "Saint Lucian",
+  "latlng": [
+    13.88333333,
+    -60.96666666
+  ],
+  "flag": {
+    "description": "A cerulean blue field with a central emblem of a gold triangle set in front of a larger black triangle edged in white.",
+    "adopted": "1967",
+    "colors": [
+      "light-blue",
+      "yellow",
+      "black",
+      "white"
+    ],
+    "symbolism": "Blue represents the sky and the surrounding sea, gold the sunshine, and black and white the harmony of the island's peoples; the triangles evoke the twin Pitons volcanic peaks."
+  },
+  "hook": "Saint Lucia shows its twin Pitons as a gold triangle in front of a white-edged black one on plain sky blue.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag was designed by Saint Lucian artist Dunstan St Omer.",
+    "Saint Lucia has produced two Nobel laureates: economist Sir Arthur Lewis (1979) and poet Derek Walcott (1992).",
+    "The island is named after Saint Lucy of Syracuse, and its national day, 13 December, is her feast day."
+  ]
+}

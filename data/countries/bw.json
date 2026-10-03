@@ -1,0 +1,40 @@
+{
+  "code": "bw",
+  "name": "Botswana",
+  "officialName": "Republic of Botswana",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Gaborone",
+  "region": "Africa",
+  "subregion": "Southern Africa",
+  "population": 2521139,
+  "area": 582000,
+  "languages": [
+    "English",
+    "Tswana"
+  ],
+  "currencies": [
+    "Botswana pula"
+  ],
+  "demonym": "Motswana",
+  "latlng": [
+    -22,
+    24
+  ],
+  "flag": {
+    "description": "A light blue field crossed horizontally through the middle by a black band edged with thin white stripes.",
+    "adopted": "1966",
+    "colors": [
+      "light-blue",
+      "black",
+      "white"
+    ],
+    "symbolism": "Blue represents water and rain, echoing the national motto 'Pula'; the black and white bands stand for racial harmony and recall the zebra, the national animal."
+  },
+  "hook": "Botswana paints a single white-edged black zebra stripe across a pale blue sky; the blue is 'pula', rain.",
+  "lookalikes": [],
+  "trivia": [
+    "Botswana's currency, the pula, is named after the Setswana word for rain, which is also the national motto.",
+    "Botswana is home to the world's largest population of African elephants, estimated at around 130,000."
+  ]
+}

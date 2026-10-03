@@ -1,0 +1,43 @@
+{
+  "code": "hn",
+  "name": "Honduras",
+  "officialName": "Republic of Honduras",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Tegucigalpa",
+  "region": "Americas",
+  "subregion": "Central America",
+  "population": 10825703,
+  "area": 112492,
+  "languages": [
+    "Spanish"
+  ],
+  "currencies": [
+    "Honduran lempira"
+  ],
+  "demonym": "Honduran",
+  "latlng": [
+    15,
+    -86.5
+  ],
+  "flag": {
+    "description": "Three equal horizontal bands of turquoise blue, white and turquoise blue, with five turquoise five-pointed stars arranged in an X pattern in the centre.",
+    "adopted": "1866",
+    "colors": [
+      "light-blue",
+      "white"
+    ],
+    "symbolism": "The blue bands represent the Pacific Ocean and the Caribbean Sea and white the land and peace between them; the five stars stand for the five nations of the former Federal Republic of Central America and the hope of reunion."
+  },
+  "hook": "Honduras: plain blue-white-blue with five stars in an X like the five on a dice, and no coat of arms, unlike El Salvador and Nicaragua.",
+  "lookalikes": [
+    "ni",
+    "sv",
+    "ar",
+    "gt"
+  ],
+  "trivia": [
+    "In 2022 Honduras officially set its flag's blue to a turquoise shade, replacing the darker navy blue that had come into use.",
+    "The Maya city of Copán in western Honduras is a UNESCO World Heritage Site famous for its carved stelae."
+  ]
+}

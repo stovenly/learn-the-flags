@@ -1,0 +1,44 @@
+{
+  "code": "vu",
+  "name": "Vanuatu",
+  "officialName": "Republic of Vanuatu",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Port Vila",
+  "region": "Oceania",
+  "subregion": "Melanesia",
+  "population": 327777,
+  "area": 12189,
+  "languages": [
+    "Bislama",
+    "English",
+    "French"
+  ],
+  "currencies": [
+    "Vanuatu vatu"
+  ],
+  "demonym": "Ni-Vanuatu",
+  "latlng": [
+    -16,
+    167
+  ],
+  "flag": {
+    "description": "Red over green horizontal halves with a black triangle at the hoist, separated by a yellow horizontal Y edged in black; the triangle holds a yellow curled boar's tusk around two crossed namele fern leaves.",
+    "adopted": "1980",
+    "colors": [
+      "red",
+      "green",
+      "black",
+      "yellow"
+    ],
+    "symbolism": "Red stands for the blood of boars and people, green for the islands' richness and black for the Ni-Vanuatu people; the yellow Y traces the shape of the archipelago, the tusk symbolises prosperity and the namele leaves peace."
+  },
+  "hook": "A yellow sideways Y plus a curled boar's tusk in the black triangle: South Africa has a similar Y but no tusk, and adds blue.",
+  "lookalikes": [
+    "za"
+  ],
+  "trivia": [
+    "Before independence in 1980 the islands were the New Hebrides, jointly ruled by Britain and France.",
+    "The land-diving ritual of Pentecost Island, leaping from tall towers with vines tied to the ankles, inspired modern bungee jumping."
+  ]
+}

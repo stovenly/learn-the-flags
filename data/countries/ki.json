@@ -1,0 +1,43 @@
+{
+  "code": "ki",
+  "name": "Kiribati",
+  "officialName": "Independent and Sovereign Republic of Kiribati",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "South Tarawa",
+  "region": "Oceania",
+  "subregion": "Micronesia",
+  "population": 134518,
+  "area": 811,
+  "languages": [
+    "English",
+    "Gilbertese"
+  ],
+  "currencies": [
+    "Australian dollar",
+    "Kiribati dollar"
+  ],
+  "demonym": "I-Kiribati",
+  "latlng": [
+    1.41666666,
+    173
+  ],
+  "flag": {
+    "description": "The upper half is red with a golden frigatebird flying over a golden rising sun with 17 rays; the lower half has three white and three blue wavy horizontal bands.",
+    "adopted": "1979",
+    "colors": [
+      "red",
+      "blue",
+      "white",
+      "yellow"
+    ],
+    "symbolism": "The waves represent the Pacific Ocean, with the three white bands for the Gilbert, Phoenix and Line Islands; the sun reflects the country's position on the equator and the frigatebird stands for power and freedom over the sea."
+  },
+  "hook": "Picture a golden frigatebird gliding over a rising sun above wavy blue-and-white sea stripes: Kiribati's flag is a postcard of a Pacific dawn.",
+  "lookalikes": [],
+  "trivia": [
+    "The design is taken from the coat of arms granted to the British colony of the Gilbert and Ellice Islands in 1937.",
+    "'Kiribati' is the local rendering of 'Gilberts' and is pronounced roughly 'KIRR-ee-bass'.",
+    "Kiribati is the only country lying in all four hemispheres, and in 1995 it moved the International Date Line so the whole country shares one date."
+  ]
+}

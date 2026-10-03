@@ -1,0 +1,42 @@
+{
+  "code": "lb",
+  "name": "Lebanon",
+  "officialName": "Lebanese Republic",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Beirut",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "population": 5805962,
+  "area": 10452,
+  "languages": [
+    "Arabic",
+    "French"
+  ],
+  "currencies": [
+    "Lebanese pound"
+  ],
+  "demonym": "Lebanese",
+  "latlng": [
+    33.83333333,
+    35.83333333
+  ],
+  "flag": {
+    "description": "Three horizontal bands of red, white and red, with the white band twice as tall as each red one, and a green cedar tree in the centre.",
+    "adopted": "1943",
+    "colors": [
+      "red",
+      "white",
+      "green"
+    ],
+    "symbolism": "The cedar represents holiness, eternity and peace; red stands for the blood shed for liberation and white for peace and the snow of the mountains."
+  },
+  "hook": "Lebanon is Austria's red-white-red with a big green cedar tree planted in the middle.",
+  "lookalikes": [
+    "at"
+  ],
+  "trivia": [
+    "The flag was adopted on 7 December 1943, shortly after independence from French rule.",
+    "The Cedars of God grove in northern Lebanon is a UNESCO World Heritage Site."
+  ]
+}

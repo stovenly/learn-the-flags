@@ -1,0 +1,44 @@
+{
+  "code": "ke",
+  "name": "Kenya",
+  "officialName": "Republic of Kenya",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Nairobi",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "population": 56432944,
+  "area": 580367,
+  "languages": [
+    "English",
+    "Swahili"
+  ],
+  "currencies": [
+    "Kenyan shilling"
+  ],
+  "demonym": "Kenyan",
+  "latlng": [
+    1,
+    38
+  ],
+  "flag": {
+    "description": "Three horizontal stripes of black, red and green separated by narrow white stripes, with a red, white and black Maasai shield and two crossed white spears in the centre.",
+    "adopted": "1963",
+    "colors": [
+      "black",
+      "red",
+      "green",
+      "white"
+    ],
+    "symbolism": "Black stands for the people, red for the blood shed during the struggle for independence, green for the land, and white for peace; the shield and spears represent the defence of freedom."
+  },
+  "hook": "Kenya's Maasai shield and crossed spears stand over black-red-green stripes; South Sudan has the stripes but a blue triangle with a star.",
+  "lookalikes": [
+    "ss",
+    "mw"
+  ],
+  "trivia": [
+    "The country takes its name from Mount Kenya, Africa's second-highest mountain at 5,199 m.",
+    "M-Pesa, the mobile-phone money service launched in Kenya in 2007, became a model for mobile banking worldwide."
+  ]
+}

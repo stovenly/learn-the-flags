@@ -1,0 +1,41 @@
+{
+  "code": "ee",
+  "name": "Estonia",
+  "officialName": "Republic of Estonia",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Tallinn",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "population": 1372341,
+  "area": 45227,
+  "languages": [
+    "Estonian"
+  ],
+  "currencies": [
+    "Euro"
+  ],
+  "demonym": "Estonian",
+  "latlng": [
+    59,
+    26
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of blue, black and white.",
+    "adopted": "1990",
+    "colors": [
+      "blue",
+      "black",
+      "white"
+    ],
+    "symbolism": "Blue is commonly said to represent the sky, sea and lakes, black the soil and the nation's hard past, and white snow, birch bark and hope."
+  },
+  "hook": "Sky over black earth over snow: Estonia reads like a winter landscape, and no other flag puts black between blue and white.",
+  "lookalikes": [
+    "bw"
+  ],
+  "trivia": [
+    "The tricolour began as the flag of the Estonian Students' Society, consecrated in Otepää in 1884, and became the national flag in 1918.",
+    "It was banned under Soviet rule and raised again on Tallinn's Tall Hermann tower in February 1989."
+  ]
+}

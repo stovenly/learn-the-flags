@@ -1,0 +1,41 @@
+{
+  "code": "bh",
+  "name": "Bahrain",
+  "officialName": "Kingdom of Bahrain",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Manama",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "population": 1588670,
+  "area": 765,
+  "languages": [
+    "Arabic"
+  ],
+  "currencies": [
+    "Bahraini dinar"
+  ],
+  "demonym": "Bahraini",
+  "latlng": [
+    26,
+    50.55
+  ],
+  "flag": {
+    "description": "A red field with a white vertical band at the hoist, separated from the red by a serrated edge forming five white triangular points.",
+    "adopted": "2002",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "symbolism": "The five white points represent the Five Pillars of Islam; red is the traditional colour of the Gulf states and white stands for peace."
+  },
+  "hook": "Bahrain has five white zigzag points on bright red (Five Pillars); Qatar's flag is maroon, much longer and has nine points.",
+  "lookalikes": [
+    "qa"
+  ],
+  "trivia": [
+    "The number of points was reduced from eight to five in 2002.",
+    "Red-and-white Gulf flags trace back to an 1820 treaty with Britain that required friendly Arab vessels to fly red flags with a white border.",
+    "Bahrain is an archipelago of over 30 natural islands, joined to Saudi Arabia by the 25 km King Fahd Causeway."
+  ]
+}

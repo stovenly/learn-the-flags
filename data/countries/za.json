@@ -1,0 +1,54 @@
+{
+  "code": "za",
+  "name": "South Africa",
+  "officialName": "Republic of South Africa",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Pretoria (executive), Cape Town (legislative), Bloemfontein (judicial)",
+  "region": "Africa",
+  "subregion": "Southern Africa",
+  "population": 64007187,
+  "area": 1221037,
+  "languages": [
+    "Afrikaans",
+    "English",
+    "Southern Ndebele",
+    "Northern Sotho",
+    "Southern Sotho",
+    "Swazi",
+    "Tswana",
+    "Tsonga",
+    "Venda",
+    "Xhosa",
+    "Zulu"
+  ],
+  "currencies": [
+    "South African rand"
+  ],
+  "demonym": "South African",
+  "latlng": [
+    -29,
+    24
+  ],
+  "flag": {
+    "description": "A green horizontal Y shape edged in white and gold, whose arms open toward the hoist around a black triangle edged in gold, with a red band above and a blue band below.",
+    "adopted": "1994",
+    "colors": [
+      "green",
+      "red",
+      "blue",
+      "black",
+      "yellow",
+      "white"
+    ],
+    "symbolism": "No official meaning is given, but the Y shape is commonly read as diverse elements converging and moving forward together."
+  },
+  "hook": "South Africa's sideways green Y merges two paths into one road, with a black triangle at the hoist and red above, blue below.",
+  "lookalikes": [
+    "vu"
+  ],
+  "trivia": [
+    "The flag was designed by Frederick Brownell just weeks before the 1994 election and was meant to be temporary.",
+    "South Africa has three capital cities, one for each branch of government."
+  ]
+}

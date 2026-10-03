@@ -1,0 +1,40 @@
+{
+  "code": "lv",
+  "name": "Latvia",
+  "officialName": "Republic of Latvia",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Riga",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "population": 1866124,
+  "area": 64559,
+  "languages": [
+    "Latvian"
+  ],
+  "currencies": [
+    "Euro"
+  ],
+  "demonym": "Latvian",
+  "latlng": [
+    57,
+    25
+  ],
+  "flag": {
+    "description": "A dark carmine-red field divided by a narrow white horizontal stripe in the middle, in the ratio 2:1:2.",
+    "adopted": "1990",
+    "colors": [
+      "maroon",
+      "white"
+    ],
+    "symbolism": "Legend tells of a wounded leader wrapped in a white sheet whose blood stained its edges; the dark red stands for readiness to give one's life for freedom."
+  },
+  "hook": "Latvia's 'Latvian red' is nearly maroon and its white stripe is thin; Austria's is bright red with three equal stripes.",
+  "lookalikes": [
+    "at"
+  ],
+  "trivia": [
+    "A red-white-red banner is mentioned in the 13th-century Livonian Rhymed Chronicle, making it one of the oldest flag designs in the world.",
+    "Banned under Soviet rule, the flag was officially restored in February 1990."
+  ]
+}

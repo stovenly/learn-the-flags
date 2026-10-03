@@ -1,0 +1,41 @@
+{
+  "code": "kg",
+  "name": "Kyrgyzstan",
+  "officialName": "Kyrgyz Republic",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Bishkek",
+  "region": "Asia",
+  "subregion": "Central Asia",
+  "population": 7221868,
+  "area": 199951,
+  "languages": [
+    "Kyrgyz",
+    "Russian"
+  ],
+  "currencies": [
+    "Kyrgyzstani som"
+  ],
+  "demonym": "Kirghiz",
+  "latlng": [
+    41,
+    75
+  ],
+  "flag": {
+    "description": "A red field with a yellow sun of 40 straight rays in the centre; inside the sun is a red ring crossed by two sets of three lines, depicting the crown (tunduk) of a yurt.",
+    "adopted": "2023",
+    "colors": [
+      "red",
+      "yellow"
+    ],
+    "symbolism": "The 40 rays represent the 40 tribes united by the epic hero Manas, and the tunduk symbolises home, family and the unity of the people; red is said to recall Manas's banner."
+  },
+  "hook": "Kyrgyzstan is a yellow sun with 40 rays on red, its centre crossed like the roof lattice of a yurt; North Macedonia's sun has just eight broad rays.",
+  "lookalikes": [
+    "mk"
+  ],
+  "trivia": [
+    "In 2023 the rays were redrawn as straight lines instead of wavy flames, partly because the old design was said to look like a sunflower.",
+    "The Epic of Manas, the source of the flag's 40 rays, is one of the longest epic poems in the world."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "code": "md",
+  "name": "Moldova",
+  "officialName": "Republic of Moldova",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Chișinău",
+  "region": "Europe",
+  "subregion": "Eastern Europe",
+  "population": 2402306,
+  "area": 33846,
+  "languages": [
+    "Romanian"
+  ],
+  "currencies": [
+    "Moldovan leu"
+  ],
+  "demonym": "Moldovan",
+  "latlng": [
+    47,
+    29
+  ],
+  "flag": {
+    "description": "A vertical tricolour of blue, yellow and red, with the coat of arms on the yellow band: a golden eagle holding a cross in its beak and a shield bearing an aurochs head.",
+    "adopted": "1990",
+    "colors": [
+      "blue",
+      "yellow",
+      "red"
+    ],
+    "symbolism": "The colours reflect the shared heritage with Romania; the aurochs head was the emblem of the medieval Principality of Moldavia."
+  },
+  "hook": "Moldova is Romania's tricolour with a golden eagle clutching a bull's-head shield in the middle; Andorra's crest has no eagle.",
+  "lookalikes": [
+    "ad",
+    "ro",
+    "td"
+  ],
+  "trivia": [
+    "Moldova and Andorra have the only national flags depicting cattle.",
+    "The Mileștii Mici wine cellars hold the Guinness record for the largest wine collection in the world."
+  ]
+}

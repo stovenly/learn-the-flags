@@ -1,0 +1,42 @@
+{
+  "code": "jm",
+  "name": "Jamaica",
+  "officialName": "Jamaica",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Kingston",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "population": 2839175,
+  "area": 10991,
+  "languages": [
+    "English",
+    "Jamaican Patois"
+  ],
+  "currencies": [
+    "Jamaican dollar"
+  ],
+  "demonym": "Jamaican",
+  "latlng": [
+    18.25,
+    -77.5
+  ],
+  "flag": {
+    "description": "A gold diagonal cross (saltire) divides the flag into four triangles: green at top and bottom, black at hoist and fly.",
+    "adopted": "1962",
+    "colors": [
+      "green",
+      "black",
+      "yellow"
+    ],
+    "symbolism": "Black represents the strength and creativity of the people, gold the sunlight and natural wealth, and green the land and hope."
+  },
+  "hook": "Jamaica: a golden X splitting black and green triangles, and the only national flag with no red, white or blue.",
+  "lookalikes": [
+    "bs"
+  ],
+  "trivia": [
+    "Jamaica's flag is the only current national flag that contains none of red, white or blue.",
+    "An earlier proposal with horizontal stripes was dropped because it looked too similar to the flag of Tanganyika."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "code": "ci",
+  "name": "Ivory Coast",
+  "officialName": "Republic of Côte d'Ivoire",
+  "aliases": [
+    "Côte d'Ivoire"
+  ],
+  "status": "un-member",
+  "capital": "Yamoussoukro",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "population": 31934230,
+  "area": 322463,
+  "languages": [
+    "French"
+  ],
+  "currencies": [
+    "West African CFA franc"
+  ],
+  "demonym": "Ivorian",
+  "latlng": [
+    8,
+    -5
+  ],
+  "flag": {
+    "description": "Three vertical stripes of orange (hoist), white and green.",
+    "adopted": "1959",
+    "colors": [
+      "orange",
+      "white",
+      "green"
+    ],
+    "symbolism": "Orange represents the savanna of the north, white peace and unity, and green hope and the forests of the south."
+  },
+  "hook": "Ivory Coast is Ireland in a mirror: orange savanna at the flagpole, green coastal forest at the fly, while Ireland starts with green.",
+  "lookalikes": [
+    "ie",
+    "ne",
+    "in"
+  ],
+  "trivia": [
+    "Besides the reversed colour order, Ivory Coast's flag is shorter than Ireland's: proportions 2:3 against Ireland's 1:2.",
+    "Ivory Coast is the world's largest producer of cocoa beans.",
+    "Yamoussoukro's Basilica of Our Lady of Peace is among the largest churches in the world."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "code": "it",
+  "name": "Italy",
+  "officialName": "Italian Republic",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Rome",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "population": 58952704,
+  "area": 301336,
+  "languages": [
+    "Italian"
+  ],
+  "currencies": [
+    "Euro"
+  ],
+  "demonym": "Italian",
+  "latlng": [
+    42.83333333,
+    12.83333333
+  ],
+  "flag": {
+    "description": "Three equal vertical stripes of green, white and red from the hoist.",
+    "adopted": "1946",
+    "colors": [
+      "green",
+      "white",
+      "red"
+    ],
+    "symbolism": "The tricolour was inspired by the French flag; green, white and red are popularly said to represent hope, faith and charity."
+  },
+  "hook": "Italy reads like a pizza margherita from the flagpole: basil, mozzarella, tomato; Ireland ends in orange, and Mexico adds an eagle.",
+  "lookalikes": [
+    "mx",
+    "ie",
+    "hu"
+  ],
+  "trivia": [
+    "It was first adopted by the Cispadane Republic in Reggio Emilia on 7 January 1797, now celebrated as Italy's Flag Day.",
+    "The royal Savoy coat of arms was removed from the centre when Italy became a republic in 1946."
+  ]
+}

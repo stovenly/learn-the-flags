@@ -1,0 +1,42 @@
+{
+  "code": "mk",
+  "name": "North Macedonia",
+  "officialName": "Republic of North Macedonia",
+  "aliases": [
+    "Macedonia"
+  ],
+  "status": "un-member",
+  "capital": "Skopje",
+  "region": "Europe",
+  "subregion": "Southeast Europe",
+  "population": 1824359,
+  "area": 25713,
+  "languages": [
+    "Macedonian"
+  ],
+  "currencies": [
+    "Macedonian denar"
+  ],
+  "demonym": "Macedonian",
+  "latlng": [
+    41.83333333,
+    22
+  ],
+  "flag": {
+    "description": "A red field with a yellow stylised sun in the centre, from which eight broadening yellow rays extend to the edges and corners.",
+    "adopted": "1995",
+    "colors": [
+      "red",
+      "yellow"
+    ],
+    "symbolism": "The sun represents the 'new sun of liberty' mentioned in the national anthem."
+  },
+  "hook": "A golden sun bursting eight rays all the way to the edges on red: North Macedonia's rays reach the border, while Kyrgyzstan's compact sun stays in the middle.",
+  "lookalikes": [
+    "kg"
+  ],
+  "trivia": [
+    "The current flag replaced a 1992 design showing the Vergina Sun after Greece objected to its use.",
+    "The country added 'North' to its name in 2019 under the Prespa Agreement with Greece."
+  ]
+}

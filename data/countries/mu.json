@@ -1,0 +1,42 @@
+{
+  "code": "mu",
+  "name": "Mauritius",
+  "officialName": "Republic of Mauritius",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Port Louis",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "population": 1245779,
+  "area": 2040,
+  "languages": [
+    "English",
+    "French",
+    "Mauritian Creole"
+  ],
+  "currencies": [
+    "Mauritian rupee"
+  ],
+  "demonym": "Mauritian",
+  "latlng": [
+    -20.28333333,
+    57.55
+  ],
+  "flag": {
+    "description": "Four equal horizontal stripes of red, blue, yellow and green.",
+    "adopted": "1968",
+    "colors": [
+      "red",
+      "blue",
+      "yellow",
+      "green"
+    ],
+    "symbolism": "Red represents the struggle for independence, blue the Indian Ocean, yellow the light of independence, and green agriculture and the island's greenery."
+  },
+  "hook": "Mauritius stacks four equal stripes top to bottom like an island view: red sunset, blue ocean, yellow sand, green sugar cane.",
+  "lookalikes": [],
+  "trivia": [
+    "Mauritius was the only home of the dodo, which was extinct by the late 17th century.",
+    "The 1847 'Blue Mauritius' stamps are among the rarest and most valuable stamps in the world."
+  ]
+}

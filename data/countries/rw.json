@@ -1,0 +1,42 @@
+{
+  "code": "rw",
+  "name": "Rwanda",
+  "officialName": "Republic of Rwanda",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Kigali",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "population": 14256567,
+  "area": 26338,
+  "languages": [
+    "English",
+    "French",
+    "Kinyarwanda"
+  ],
+  "currencies": [
+    "Rwandan franc"
+  ],
+  "demonym": "Rwandan",
+  "latlng": [
+    -2,
+    30
+  ],
+  "flag": {
+    "description": "Three horizontal stripes: a wide light blue stripe taking the top half, then yellow and green, with a golden sun of 24 rays in the upper fly.",
+    "adopted": "2001",
+    "colors": [
+      "light-blue",
+      "green",
+      "yellow"
+    ],
+    "symbolism": "Blue stands for happiness and peace, yellow for economic development and green for prosperity; the sun represents enlightenment."
+  },
+  "hook": "Rwanda shows a golden sun shining in the corner of a big sky-blue band above yellow and green farmland.",
+  "lookalikes": [],
+  "trivia": [
+    "The 2001 flag replaced a red-yellow-green flag with a large black R, which had become associated with the 1994 genocide.",
+    "Rwanda has the world's highest share of women in its national parliament, over 60% of lower-house seats.",
+    "Rwanda banned plastic bags in 2008."
+  ]
+}

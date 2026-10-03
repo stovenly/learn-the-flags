@@ -1,0 +1,43 @@
+{
+  "code": "ag",
+  "name": "Antigua and Barbuda",
+  "officialName": "Antigua and Barbuda",
+  "aliases": [
+    "Antigua"
+  ],
+  "status": "un-member",
+  "capital": "Saint John's",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "population": 93772,
+  "area": 442,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    "Eastern Caribbean dollar"
+  ],
+  "demonym": "Antiguan, Barbudan",
+  "latlng": [
+    17.05,
+    -61.8
+  ],
+  "flag": {
+    "description": "A red field with a large inverted triangle (a V shape) filled with horizontal bands of black, blue and white from top to bottom; a golden sun with seven rays rises from the black band.",
+    "adopted": "1967",
+    "colors": [
+      "red",
+      "black",
+      "blue",
+      "white",
+      "yellow"
+    ],
+    "symbolism": "The rising sun marks the dawn of a new era, black the African heritage of the people, blue hope and the sea, white the sand, and red the energy of the people; the V shape stands for victory."
+  },
+  "hook": "Antigua and Barbuda: a golden sun rising out of black, blue and white bands inside a big red V for victory.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag was designed by Reginald Samuel, an art teacher, whose entry won a national competition in 1967.",
+    "Antigua is often said to have 365 beaches, one for every day of the year."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "code": "ml",
+  "name": "Mali",
+  "officialName": "Republic of Mali",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Bamako",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "population": 24478595,
+  "area": 1240192,
+  "languages": [
+    "French"
+  ],
+  "currencies": [
+    "West African CFA franc"
+  ],
+  "demonym": "Malian",
+  "latlng": [
+    17,
+    -4
+  ],
+  "flag": {
+    "description": "Three vertical stripes of green (hoist), yellow and red.",
+    "adopted": "1961",
+    "colors": [
+      "green",
+      "yellow",
+      "red"
+    ],
+    "symbolism": "Green stands for hope and fertility, yellow for purity and mineral wealth, and red for the blood shed for independence."
+  },
+  "hook": "Mali is plain green-yellow-red verticals: Guinea in reverse, and Senegal without its green star.",
+  "lookalikes": [
+    "gn",
+    "sn",
+    "cm"
+  ],
+  "trivia": [
+    "The 1959-1961 flag had a black human figure, the kanaga, in the centre; it was removed partly because of Islamic objections to images of people.",
+    "The Great Mosque of Djenné is the largest mud-brick building in the world."
+  ]
+}

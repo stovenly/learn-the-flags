@@ -1,0 +1,41 @@
+{
+  "code": "ug",
+  "name": "Uganda",
+  "officialName": "Republic of Uganda",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Kampala",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "population": 50015092,
+  "area": 241550,
+  "languages": [
+    "English",
+    "Swahili"
+  ],
+  "currencies": [
+    "Ugandan shilling"
+  ],
+  "demonym": "Ugandan",
+  "latlng": [
+    1,
+    32
+  ],
+  "flag": {
+    "description": "Six horizontal stripes of black, yellow, red, black, yellow and red, with a white disc in the centre showing a grey crowned crane facing the hoist.",
+    "adopted": "1962",
+    "colors": [
+      "black",
+      "yellow",
+      "red",
+      "white"
+    ],
+    "symbolism": "Black represents the people, yellow the sunshine and red brotherhood; the grey crowned crane is the national bird."
+  },
+  "hook": "Uganda repeats black-yellow-red twice and puts a grey crowned crane, one leg raised, in a white circle in the middle.",
+  "lookalikes": [],
+  "trivia": [
+    "The crane is shown with one leg raised, often said to symbolise the country moving forward.",
+    "Bwindi Impenetrable National Park is home to about half of the world's mountain gorillas."
+  ]
+}

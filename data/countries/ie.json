@@ -1,0 +1,46 @@
+{
+  "code": "ie",
+  "name": "Ireland",
+  "officialName": "Ireland",
+  "aliases": [
+    "Republic of Ireland",
+    "Eire"
+  ],
+  "status": "un-member",
+  "capital": "Dublin",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "population": 5395790,
+  "area": 70273,
+  "languages": [
+    "English",
+    "Irish"
+  ],
+  "currencies": [
+    "Euro"
+  ],
+  "demonym": "Irish",
+  "latlng": [
+    53,
+    -8
+  ],
+  "flag": {
+    "description": "Three equal vertical stripes of green, white and orange from the hoist.",
+    "adopted": "1937",
+    "colors": [
+      "green",
+      "white",
+      "orange"
+    ],
+    "symbolism": "Green represents the Gaelic tradition, orange the supporters of William of Orange, and white the lasting peace between them."
+  },
+  "hook": "Ireland runs green-white-orange from the flagpole, green like its fields first; Ivory Coast reverses it to orange-white-green, and Italy uses red instead of orange.",
+  "lookalikes": [
+    "ci",
+    "it"
+  ],
+  "trivia": [
+    "Thomas Francis Meagher first unveiled the tricolour in 1848, inspired by the French flag.",
+    "It was flown over the General Post Office in Dublin during the Easter Rising of 1916."
+  ]
+}

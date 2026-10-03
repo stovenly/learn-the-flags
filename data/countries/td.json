@@ -1,0 +1,44 @@
+{
+  "code": "td",
+  "name": "Chad",
+  "officialName": "Republic of Chad",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "N'Djamena",
+  "region": "Africa",
+  "subregion": "Middle Africa",
+  "population": 20299123,
+  "area": 1284000,
+  "languages": [
+    "Arabic",
+    "French"
+  ],
+  "currencies": [
+    "Central African CFA franc"
+  ],
+  "demonym": "Chadian",
+  "latlng": [
+    15,
+    19
+  ],
+  "flag": {
+    "description": "Three vertical stripes of blue (hoist), yellow and red.",
+    "adopted": "1959",
+    "colors": [
+      "blue",
+      "yellow",
+      "red"
+    ],
+    "symbolism": "Blue represents the sky, hope and water, yellow the sun and desert, and red progress, unity and sacrifice."
+  },
+  "hook": "Chad and Romania are near-twins in blue-yellow-red: Chad's blue is a slightly deeper indigo, and Andorra and Moldova add a coat of arms.",
+  "lookalikes": [
+    "ro",
+    "ad",
+    "md"
+  ],
+  "trivia": [
+    "Chad's flag is almost identical to Romania's; the only difference is a slightly darker shade of blue.",
+    "Lake Chad has shrunk by around 90% since the 1960s."
+  ]
+}

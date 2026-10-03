@@ -1,0 +1,39 @@
+{
+  "code": "il",
+  "name": "Israel",
+  "officialName": "State of Israel",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Jerusalem",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "population": 10002200,
+  "area": 20770,
+  "languages": [
+    "Arabic",
+    "Hebrew"
+  ],
+  "currencies": [
+    "Israeli new shekel"
+  ],
+  "demonym": "Israeli",
+  "latlng": [
+    31.47,
+    35.13
+  ],
+  "flag": {
+    "description": "A white field with two horizontal blue stripes, one near the top and one near the bottom, and a blue Star of David in the centre.",
+    "adopted": "1948",
+    "colors": [
+      "white",
+      "blue"
+    ],
+    "symbolism": "The stripes are modelled on the tallit (Jewish prayer shawl), and the Star of David is a long-standing symbol of Judaism."
+  },
+  "hook": "Israel is a white flag with two blue stripes like a prayer shawl and a blue Star of David between them.",
+  "lookalikes": [],
+  "trivia": [
+    "The design was used by the Zionist movement from the late 19th century, including at the First Zionist Congress in 1897.",
+    "The shore of the Dead Sea, on Israel's eastern border, is the lowest land elevation on Earth, more than 400 metres below sea level."
+  ]
+}

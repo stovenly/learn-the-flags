@@ -1,0 +1,41 @@
+{
+  "code": "th",
+  "name": "Thailand",
+  "officialName": "Kingdom of Thailand",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Bangkok",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "population": 71668011,
+  "area": 513120,
+  "languages": [
+    "Thai"
+  ],
+  "currencies": [
+    "Thai baht"
+  ],
+  "demonym": "Thai",
+  "latlng": [
+    15,
+    100
+  ],
+  "flag": {
+    "description": "Five horizontal stripes of red, white, blue, white and red, with the central blue stripe twice as tall as each of the others.",
+    "adopted": "1917",
+    "colors": [
+      "red",
+      "white",
+      "blue"
+    ],
+    "symbolism": "Red represents the nation, white religion and blue the monarchy."
+  },
+  "hook": "Thailand is red-white-BLUE-white-red with a thick blue belt; Costa Rica uses the same pattern with the colours swapped (blue outside, red in the middle).",
+  "lookalikes": [
+    "cr"
+  ],
+  "trivia": [
+    "The flag is called the Trairong, \"tricolour\", and was adopted in 1917 by King Vajiravudh, replacing a flag with a white elephant on red.",
+    "Thailand is the only country in Southeast Asia never colonised by a European power."
+  ]
+}

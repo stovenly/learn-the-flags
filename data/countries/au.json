@@ -1,0 +1,44 @@
+{
+  "code": "au",
+  "name": "Australia",
+  "officialName": "Commonwealth of Australia",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Canberra",
+  "region": "Oceania",
+  "subregion": "Australia and New Zealand",
+  "population": 27194286,
+  "area": 7692024,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    "Australian dollar"
+  ],
+  "demonym": "Australian",
+  "latlng": [
+    -27,
+    133
+  ],
+  "flag": {
+    "description": "A dark blue field with the Union Jack in the upper hoist, a large white seven-pointed Commonwealth Star below it, and the Southern Cross in the fly as four white seven-pointed stars and one small white five-pointed star.",
+    "adopted": "1908",
+    "colors": [
+      "blue",
+      "white",
+      "red"
+    ],
+    "symbolism": "The Union Jack recalls Australia's British heritage and the Southern Cross its place in the southern sky; the Commonwealth Star's seven points stand for the six states plus the territories."
+  },
+  "hook": "Australia's stars are all white, with a big seven-pointed Commonwealth Star under the Union Jack; New Zealand's four stars are red with white borders and nothing sits under its Union Jack.",
+  "lookalikes": [
+    "nz",
+    "tv",
+    "fj"
+  ],
+  "trivia": [
+    "The design came from a 1901 public competition that drew over 32,000 entries; five entrants with near-identical designs shared the prize.",
+    "The Commonwealth Star originally had six points; a seventh was added in 1908 to represent the territories.",
+    "The Aboriginal flag and the Torres Strait Islander flag were proclaimed official flags of Australia in 1995."
+  ]
+}

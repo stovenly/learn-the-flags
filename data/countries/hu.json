@@ -1,0 +1,44 @@
+{
+  "code": "hu",
+  "name": "Hungary",
+  "officialName": "Hungary",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Budapest",
+  "region": "Europe",
+  "subregion": "Central Europe",
+  "population": 9562065,
+  "area": 93028,
+  "languages": [
+    "Hungarian"
+  ],
+  "currencies": [
+    "Hungarian forint"
+  ],
+  "demonym": "Hungarian",
+  "latlng": [
+    47,
+    20
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of red, white and green.",
+    "adopted": "1957",
+    "colors": [
+      "red",
+      "white",
+      "green"
+    ],
+    "symbolism": "Red is commonly said to stand for strength, white for faithfulness and green for hope."
+  },
+  "hook": "Hungary is Italy's colours laid flat with red on top; Bulgaria starts with white, and Iran and Tajikistan add emblems.",
+  "lookalikes": [
+    "bg",
+    "ir",
+    "tj",
+    "it"
+  ],
+  "trivia": [
+    "During the 1956 uprising, protesters cut the communist emblem out of the flag, leaving a hole that became a symbol of the revolution.",
+    "The red-white-green tricolour became a national symbol during the 1848 revolution."
+  ]
+}

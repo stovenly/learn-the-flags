@@ -1,0 +1,41 @@
+{
+  "code": "bd",
+  "name": "Bangladesh",
+  "officialName": "People's Republic of Bangladesh",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Dhaka",
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "population": 173562364,
+  "area": 147570,
+  "languages": [
+    "Bengali"
+  ],
+  "currencies": [
+    "Bangladeshi taka"
+  ],
+  "demonym": "Bangladeshi",
+  "latlng": [
+    24,
+    90
+  ],
+  "flag": {
+    "description": "A dark green field with a large red disc placed slightly towards the hoist from the centre.",
+    "adopted": "1972",
+    "colors": [
+      "green",
+      "red"
+    ],
+    "symbolism": "The red disc represents the sun rising over Bengal and the blood of those who died in the 1971 Liberation War; green represents the lush land."
+  },
+  "hook": "Bangladesh is Japan's red sun set on green grass and nudged towards the flagpole; Palau's disc is a yellow moon on blue.",
+  "lookalikes": [
+    "jp",
+    "pw"
+  ],
+  "trivia": [
+    "The first flag of 1971 had a yellow map of the country inside the red disc; it was removed in 1972, partly because it was hard to render correctly on both sides.",
+    "The disc is offset towards the hoist so that it appears centred when the flag is flying."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "code": "de",
+  "name": "Germany",
+  "officialName": "Federal Republic of Germany",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Berlin",
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "population": 83516593,
+  "area": 357114,
+  "languages": [
+    "German"
+  ],
+  "currencies": [
+    "Euro"
+  ],
+  "demonym": "German",
+  "latlng": [
+    51,
+    9
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of black, red and gold.",
+    "adopted": "1949",
+    "colors": [
+      "black",
+      "red",
+      "yellow"
+    ],
+    "symbolism": "The colours trace back to the black uniforms with red trim and gold buttons of the Lützow Free Corps in the Napoleonic Wars, and became the colours of German democracy and unity in 1848."
+  },
+  "hook": "Germany stacks black, red and gold horizontally with black on top; Belgium stands black, yellow and red upright.",
+  "lookalikes": [
+    "be"
+  ],
+  "trivia": [
+    "Supporters of a united, democratic Germany waved black-red-gold at the Hambach Festival in 1832.",
+    "East Germany used the same tricolour with a hammer-and-compass emblem added from 1959 until reunification in 1990."
+  ]
+}

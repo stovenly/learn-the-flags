@@ -1,0 +1,44 @@
+{
+  "code": "py",
+  "name": "Paraguay",
+  "officialName": "Republic of Paraguay",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Asunción",
+  "region": "Americas",
+  "subregion": "South America",
+  "population": 6929153,
+  "area": 406752,
+  "languages": [
+    "Guaraní",
+    "Spanish"
+  ],
+  "currencies": [
+    "Paraguayan guaraní"
+  ],
+  "demonym": "Paraguayan",
+  "latlng": [
+    -23,
+    -58
+  ],
+  "flag": {
+    "description": "Three equal horizontal bands of red, white and blue, with the national coat of arms in the centre of the white band on the front and the treasury seal, a lion with a cap of liberty, on the back.",
+    "adopted": "1842",
+    "colors": [
+      "red",
+      "white",
+      "blue"
+    ],
+    "symbolism": "The colours are commonly said to stand for patriotism and courage (red), peace (white) and liberty (blue); the treasury seal's motto \"Paz y Justicia\" means \"Peace and Justice\"."
+  },
+  "hook": "Paraguay looks like the Netherlands until you spot the emblem, and flip it over: it is the only national flag with a different design on each side.",
+  "lookalikes": [
+    "nl",
+    "lu",
+    "hr"
+  ],
+  "trivia": [
+    "Paraguay's flag is the only national flag whose two sides differ: the front shows the national arms and the back the treasury seal.",
+    "Guaraní, an Indigenous language, is spoken by most Paraguayans and is an official language alongside Spanish."
+  ]
+}

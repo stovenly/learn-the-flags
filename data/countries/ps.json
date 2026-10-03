@@ -1,0 +1,49 @@
+{
+  "code": "ps",
+  "name": "Palestine",
+  "officialName": "State of Palestine",
+  "aliases": [
+    "State of Palestine"
+  ],
+  "status": "un-observer",
+  "capital": "Jerusalem (claimed), Ramallah (administrative)",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "population": 5289152,
+  "area": 6220,
+  "languages": [
+    "Arabic"
+  ],
+  "currencies": [
+    "Egyptian pound",
+    "Israeli new shekel",
+    "Jordanian dinar"
+  ],
+  "demonym": "Palestinian",
+  "latlng": [
+    31.9,
+    35.2
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of black, white and green, with a red triangle at the hoist.",
+    "adopted": "1964",
+    "colors": [
+      "black",
+      "white",
+      "green",
+      "red"
+    ],
+    "symbolism": "The Pan-Arab colours derive from the flag of the 1916 Arab Revolt and are associated with historic Arab dynasties."
+  },
+  "hook": "Palestine is black-white-green with a plain red triangle; Jordan adds a white star to the triangle, and Sudan's triangle is green.",
+  "lookalikes": [
+    "jo",
+    "sd",
+    "kw",
+    "ae"
+  ],
+  "trivia": [
+    "The flag was adopted by the Palestine Liberation Organization in 1964 and by the State of Palestine when it declared independence in 1988.",
+    "It was first raised at United Nations headquarters in New York in September 2015, alongside the flags of member states."
+  ]
+}

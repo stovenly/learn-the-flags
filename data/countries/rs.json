@@ -1,0 +1,44 @@
+{
+  "code": "rs",
+  "name": "Serbia",
+  "officialName": "Republic of Serbia",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Belgrade",
+  "region": "Europe",
+  "subregion": "Southeast Europe",
+  "population": 6586476,
+  "area": 88361,
+  "languages": [
+    "Serbian"
+  ],
+  "currencies": [
+    "Serbian dinar"
+  ],
+  "demonym": "Serbian",
+  "latlng": [
+    44,
+    21
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of red, blue and white, with the coat of arms, a crowned white double-headed eagle on a red shield, placed towards the hoist.",
+    "adopted": "2004",
+    "colors": [
+      "red",
+      "blue",
+      "white"
+    ],
+    "symbolism": "Red, blue and white are pan-Slavic colours; the double-headed eagle comes from the medieval Nemanjić dynasty."
+  },
+  "hook": "Serbia is Russia's flag turned upside down, red-blue-white from the top, with a crowned white eagle near the flagpole.",
+  "lookalikes": [
+    "ru",
+    "sk",
+    "si",
+    "hr"
+  ],
+  "trivia": [
+    "Without the coat of arms, Serbia's civil flag is exactly Russia's flag upside down.",
+    "The coat of arms on the flag was redrawn in 2010."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "code": "nz",
+  "name": "New Zealand",
+  "officialName": "New Zealand",
+  "aliases": [
+    "Aotearoa"
+  ],
+  "status": "un-member",
+  "capital": "Wellington",
+  "region": "Oceania",
+  "subregion": "Australia and New Zealand",
+  "population": 5290000,
+  "area": 270467,
+  "languages": [
+    "English",
+    "Māori",
+    "New Zealand Sign Language"
+  ],
+  "currencies": [
+    "New Zealand dollar"
+  ],
+  "demonym": "New Zealander",
+  "latlng": [
+    -41,
+    174
+  ],
+  "flag": {
+    "description": "A dark blue field with the Union Jack in the upper hoist and four red five-pointed stars with white borders in the fly, forming the Southern Cross.",
+    "adopted": "1902",
+    "colors": [
+      "blue",
+      "red",
+      "white"
+    ],
+    "symbolism": "The Union Jack reflects New Zealand's historical ties to Britain and the Southern Cross its location in the South Pacific."
+  },
+  "hook": "New Zealand: four red stars outlined in white and nothing under the Union Jack; Australia has white stars, five in its Southern Cross plus a big one below the Jack.",
+  "lookalikes": [
+    "au",
+    "tv",
+    "fj"
+  ],
+  "trivia": [
+    "In a 2016 referendum about 57% of voters chose to keep the current flag over a silver fern design.",
+    "The flag's Southern Cross has four stars, leaving out the small fifth star that appears on Australia's.",
+    "In 1893 New Zealand became the first self-governing country to give women the vote in national elections."
+  ]
+}

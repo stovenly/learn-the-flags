@@ -1,0 +1,43 @@
+{
+  "code": "cu",
+  "name": "Cuba",
+  "officialName": "Republic of Cuba",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Havana",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "population": 10979783,
+  "area": 109884,
+  "languages": [
+    "Spanish"
+  ],
+  "currencies": [
+    "Cuban peso"
+  ],
+  "demonym": "Cuban",
+  "latlng": [
+    21.5,
+    -80
+  ],
+  "flag": {
+    "description": "Five horizontal stripes, three blue alternating with two white, and a red equilateral triangle at the hoist holding a white five-pointed star.",
+    "adopted": "1902",
+    "colors": [
+      "blue",
+      "white",
+      "red"
+    ],
+    "symbolism": "The three blue stripes stand for the three military departments of colonial Cuba, white for the purity of the cause, and the red triangle for liberty, equality and fraternity and the blood of the struggle; the lone star stands for independence."
+  },
+  "hook": "Cuba: blue and white stripes with a red triangle at the hoist; Puerto Rico swaps the colours, using red stripes and a blue triangle.",
+  "lookalikes": [
+    "cl",
+    "cz",
+    "gr"
+  ],
+  "trivia": [
+    "The flag was designed in 1849 for Narciso López, who first raised it in Cárdenas in 1850, decades before Cuba became independent.",
+    "Cuba is the largest island in the Caribbean."
+  ]
+}

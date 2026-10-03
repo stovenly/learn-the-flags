@@ -1,0 +1,40 @@
+{
+  "code": "me",
+  "name": "Montenegro",
+  "officialName": "Montenegro",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Podgorica",
+  "region": "Europe",
+  "subregion": "Southeast Europe",
+  "population": 623525,
+  "area": 13812,
+  "languages": [
+    "Montenegrin"
+  ],
+  "currencies": [
+    "Euro"
+  ],
+  "demonym": "Montenegrin",
+  "latlng": [
+    42.5,
+    19.3
+  ],
+  "flag": {
+    "description": "A red field with a broad gold border and the gold double-headed eagle coat of arms in the centre, with a lion on the eagle's chest shield.",
+    "adopted": "2004",
+    "colors": [
+      "red",
+      "yellow"
+    ],
+    "symbolism": "It is based on the royal standard of the Petrović-Njegoš dynasty; the double-headed eagle reflects Byzantine heritage and the lion is an old symbol of the bishop-princes."
+  },
+  "hook": "Montenegro is a golden double-headed eagle framed in a gold border on red: a gilded version of Albania's black eagle.",
+  "lookalikes": [
+    "al"
+  ],
+  "trivia": [
+    "The name Montenegro means 'black mountain' in Venetian Italian.",
+    "Montenegro uses the euro, although it is not a member of the European Union."
+  ]
+}

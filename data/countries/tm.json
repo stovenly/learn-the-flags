@@ -1,0 +1,40 @@
+{
+  "code": "tm",
+  "name": "Turkmenistan",
+  "officialName": "Turkmenistan",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Ashgabat",
+  "region": "Asia",
+  "subregion": "Central Asia",
+  "population": 7494498,
+  "area": 488100,
+  "languages": [
+    "Russian",
+    "Turkmen"
+  ],
+  "currencies": [
+    "Turkmenistan manat"
+  ],
+  "demonym": "Turkmen",
+  "latlng": [
+    40,
+    60
+  ],
+  "flag": {
+    "description": "A green field with a vertical red stripe near the hoist containing five traditional carpet patterns (guls) stacked above two crossed olive branches, and a white crescent with five white stars in the upper hoist of the green.",
+    "adopted": "2001",
+    "colors": [
+      "green",
+      "red",
+      "white"
+    ],
+    "symbolism": "Green represents Islam, the five guls the five main Turkmen tribes, the olive branches the country's neutrality, and the five stars the provinces."
+  },
+  "hook": "Turkmenistan has a carpet on its flag: a red strip of five woven rug patterns down the hoist of a green flag with a crescent and five stars.",
+  "lookalikes": [],
+  "trivia": [
+    "It is often called the most intricate national flag because of its detailed carpet designs.",
+    "The Darvaza gas crater, nicknamed the \"Door to Hell\", has been burning in the Karakum Desert since 1971."
+  ]
+}

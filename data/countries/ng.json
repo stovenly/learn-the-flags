@@ -1,0 +1,38 @@
+{
+  "code": "ng",
+  "name": "Nigeria",
+  "officialName": "Federal Republic of Nigeria",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Abuja",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "population": 232679478,
+  "area": 923768,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    "Nigerian naira"
+  ],
+  "demonym": "Nigerian",
+  "latlng": [
+    10,
+    8
+  ],
+  "flag": {
+    "description": "Three vertical stripes of green, white and green.",
+    "adopted": "1960",
+    "colors": [
+      "green",
+      "white"
+    ],
+    "symbolism": "Green represents the country's forests and agriculture, and white peace and unity."
+  },
+  "hook": "Nigeria is just green-white-green standing upright, no emblem at all: green farmland on both sides of a white road of peace.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag was designed in 1958 by Michael Taiwo Akinkunmi, a student in London; his original entry had a red sun, which the judges removed.",
+    "Nigeria is the most populous country in Africa."
+  ]
+}

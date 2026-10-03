@@ -1,0 +1,41 @@
+{
+  "code": "dk",
+  "name": "Denmark",
+  "officialName": "Kingdom of Denmark",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Copenhagen",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "population": 5976992,
+  "area": 43094,
+  "languages": [
+    "Danish"
+  ],
+  "currencies": [
+    "Danish krone"
+  ],
+  "demonym": "Danish",
+  "latlng": [
+    56,
+    10
+  ],
+  "flag": {
+    "description": "A red field with a white Nordic cross extending to the edges, its vertical arm shifted towards the hoist.",
+    "adopted": "1625",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "symbolism": "The white cross is a Christian symbol; legend says the flag fell from the sky during a Danish battle in Estonia in 1219."
+  },
+  "hook": "Denmark is the original Nordic cross: plain white on red, running edge to edge; Switzerland's cross floats, and Norway adds a blue cross inside.",
+  "lookalikes": [
+    "no",
+    "ch"
+  ],
+  "trivia": [
+    "Known as the Dannebrog, it holds the Guinness record for the oldest continuously used national flag, in use since 1625.",
+    "Every other Nordic country's cross flag was inspired by the Danish design."
+  ]
+}

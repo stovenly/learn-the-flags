@@ -1,0 +1,43 @@
+{
+  "code": "pe",
+  "name": "Peru",
+  "officialName": "Republic of Peru",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Lima",
+  "region": "Americas",
+  "subregion": "South America",
+  "population": 34217848,
+  "area": 1285216,
+  "languages": [
+    "Aymara",
+    "Quechua",
+    "Spanish"
+  ],
+  "currencies": [
+    "Peruvian sol"
+  ],
+  "demonym": "Peruvian",
+  "latlng": [
+    -10,
+    -76
+  ],
+  "flag": {
+    "description": "Three equal vertical bands of red, white and red; the state flag adds the coat of arms in the centre of the white band.",
+    "adopted": "1825",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "symbolism": "Red is commonly said to represent the blood shed for independence and white peace; tradition says José de San Martín was inspired by a flock of red and white flamingos."
+  },
+  "hook": "Peru is red-white-red standing up with three equal bands; Canada's white centre is twice as wide and holds a maple leaf.",
+  "lookalikes": [
+    "ca",
+    "lb"
+  ],
+  "trivia": [
+    "The coat of arms shows a vicuña, a cinchona tree and a cornucopia spilling coins, representing the animal, plant and mineral riches of the country.",
+    "Lake Titicaca, on the border of Peru and Bolivia, is often described as the highest navigable lake in the world."
+  ]
+}

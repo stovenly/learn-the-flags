@@ -1,0 +1,46 @@
+{
+  "code": "mm",
+  "name": "Myanmar",
+  "officialName": "Republic of the Union of Myanmar",
+  "aliases": [
+    "Burma"
+  ],
+  "status": "un-member",
+  "capital": "Naypyidaw",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "population": 54500091,
+  "area": 676578,
+  "languages": [
+    "Burmese"
+  ],
+  "currencies": [
+    "Burmese kyat"
+  ],
+  "demonym": "Burmese",
+  "latlng": [
+    22,
+    98
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of yellow, green and red, with a large white five-pointed star in the centre spanning all three.",
+    "adopted": "2010",
+    "colors": [
+      "yellow",
+      "green",
+      "red",
+      "white"
+    ],
+    "symbolism": "Yellow represents solidarity, green peace and tranquillity, and red courage and decisiveness; the white star stands for the union of the country."
+  },
+  "hook": "Myanmar is yellow-green-red with a huge white star straddling all three stripes; Lithuania has the same order with no star, and Ghana has a black star.",
+  "lookalikes": [
+    "lt",
+    "gh",
+    "bo"
+  ],
+  "trivia": [
+    "The flag was introduced in 2010 along with the 2008 constitution.",
+    "The government moved the capital from Yangon to the purpose-built city of Naypyidaw in 2005–2006."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "code": "am",
+  "name": "Armenia",
+  "officialName": "Republic of Armenia",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Yerevan",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "population": 3033500,
+  "area": 29743,
+  "languages": [
+    "Armenian"
+  ],
+  "currencies": [
+    "Armenian dram"
+  ],
+  "demonym": "Armenian",
+  "latlng": [
+    40,
+    45
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of red, blue and orange (apricot), from top to bottom.",
+    "adopted": "1990",
+    "colors": [
+      "red",
+      "blue",
+      "orange"
+    ],
+    "symbolism": "Officially, red stands for the Armenian Highland and the struggle for survival, blue for the peaceful sky, and orange for the creativity and hard work of the people."
+  },
+  "hook": "Armenia is red-blue-orange from top to bottom; remember the bottom stripe as an Armenian apricot, a fruit the country is famous for.",
+  "lookalikes": [],
+  "trivia": [
+    "The same tricolour was used by the First Republic of Armenia from 1918 to 1920 and was readopted in 1990.",
+    "Armenia is traditionally regarded as the first country to adopt Christianity as its state religion, in 301 AD.",
+    "Mount Ararat, a national symbol that appears on the coat of arms, lies across the border in Turkey."
+  ]
+}

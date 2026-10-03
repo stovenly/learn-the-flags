@@ -1,0 +1,43 @@
+{
+  "code": "va",
+  "name": "Vatican City",
+  "officialName": "Vatican City State",
+  "aliases": [
+    "Holy See",
+    "Vatican"
+  ],
+  "status": "un-observer",
+  "capital": "Vatican City",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "population": 882,
+  "area": 0.44,
+  "languages": [
+    "Italian",
+    "Latin"
+  ],
+  "currencies": [
+    "Euro"
+  ],
+  "demonym": "Vatican",
+  "latlng": [
+    41.9,
+    12.45
+  ],
+  "flag": {
+    "description": "A square flag divided vertically into yellow (hoist) and white halves, with the crossed keys of Saint Peter, one gold and one silver, beneath the papal tiara on the white half.",
+    "adopted": "1929",
+    "colors": [
+      "yellow",
+      "white"
+    ],
+    "symbolism": "Yellow and white recall the gold and silver keys of Saint Peter; the keys and the tiara symbolise the authority of the Pope."
+  },
+  "hook": "A square gold-and-white flag with crossed keys on the white half: Vatican City holds the keys of Saint Peter, and shares its square shape only with Switzerland.",
+  "lookalikes": [],
+  "trivia": [
+    "Vatican City and Switzerland have the only square national flags.",
+    "At about 0.44 square kilometres, Vatican City is the smallest country in the world.",
+    "The Pontifical Swiss Guard has protected the Pope since 1506."
+  ]
+}

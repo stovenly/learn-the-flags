@@ -1,0 +1,44 @@
+{
+  "code": "et",
+  "name": "Ethiopia",
+  "officialName": "Federal Democratic Republic of Ethiopia",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Addis Ababa",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "population": 132059767,
+  "area": 1104300,
+  "languages": [
+    "Amharic"
+  ],
+  "currencies": [
+    "Ethiopian birr"
+  ],
+  "demonym": "Ethiopian",
+  "latlng": [
+    8,
+    38
+  ],
+  "flag": {
+    "description": "Three horizontal stripes of green, yellow and red, with a blue disc in the centre bearing a yellow five-pointed star with rays between its points.",
+    "adopted": "1996",
+    "colors": [
+      "green",
+      "yellow",
+      "red",
+      "blue"
+    ],
+    "symbolism": "Green stands for the land and fertility, yellow for hope and peace, and red for strength and sacrifice; the star on the blue disc represents the unity and equality of the nation's peoples."
+  },
+  "hook": "Ethiopia gave Africa its green-yellow-red; its own flag adds a blue disc with a golden star, which Bolivia's and Lithuania's stripes lack.",
+  "lookalikes": [
+    "bo",
+    "lt",
+    "gh"
+  ],
+  "trivia": [
+    "Because Ethiopia avoided colonisation, its green, yellow and red were taken up by many newly independent African states as the pan-African colours.",
+    "Ethiopia uses its own calendar of 13 months, which runs about seven to eight years behind the Gregorian calendar."
+  ]
+}

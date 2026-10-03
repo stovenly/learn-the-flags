@@ -1,0 +1,44 @@
+{
+  "code": "sv",
+  "name": "El Salvador",
+  "officialName": "Republic of El Salvador",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "San Salvador",
+  "region": "Americas",
+  "subregion": "Central America",
+  "population": 6338193,
+  "area": 21041,
+  "languages": [
+    "Spanish"
+  ],
+  "currencies": [
+    "United States dollar"
+  ],
+  "demonym": "Salvadoran",
+  "latlng": [
+    13.83333333,
+    -88.91666666
+  ],
+  "flag": {
+    "description": "Three equal horizontal bands of blue, white and blue, with the coat of arms in the centre: a triangle containing five volcanoes, a cap of liberty and a rainbow, surrounded by flags and a laurel wreath, encircled by the words \"REPUBLICA DE EL SALVADOR EN LA AMERICA CENTRAL\".",
+    "adopted": "1912",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "symbolism": "The blue bands represent the Pacific Ocean and the Caribbean Sea and white the land and peace; the five volcanoes stand for the members of the former Federal Republic of Central America."
+  },
+  "hook": "El Salvador frames its volcano triangle with five flags and a green laurel wreath; Nicaragua uses only gold lettering, and Honduras just stars.",
+  "lookalikes": [
+    "ni",
+    "hn",
+    "ar",
+    "gt"
+  ],
+  "trivia": [
+    "The national motto \"Dios, Unión, Libertad\" (God, Union, Liberty) appears on the coat of arms.",
+    "El Salvador is the smallest country in mainland Central America by area.",
+    "In 2021 El Salvador became the first country to make Bitcoin legal tender."
+  ]
+}

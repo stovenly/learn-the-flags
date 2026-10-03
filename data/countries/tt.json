@@ -1,0 +1,43 @@
+{
+  "code": "tt",
+  "name": "Trinidad and Tobago",
+  "officialName": "Republic of Trinidad and Tobago",
+  "aliases": [
+    "Trinidad"
+  ],
+  "status": "un-member",
+  "capital": "Port of Spain",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "population": 1368333,
+  "area": 5130,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    "Trinidad and Tobago dollar"
+  ],
+  "demonym": "Trinidadian",
+  "latlng": [
+    11,
+    -61
+  ],
+  "flag": {
+    "description": "A red field with a white-edged black diagonal band running from the upper hoist to the lower fly.",
+    "adopted": "1962",
+    "colors": [
+      "red",
+      "black",
+      "white"
+    ],
+    "symbolism": "Red represents the vitality of the land and people and the warmth of the sun, black the strength and dedication of the people, and white the sea and equality."
+  },
+  "hook": "Trinidad and Tobago: one white-edged black slash across solid red, with no stars, unlike the diagonal of Saint Kitts and Nevis.",
+  "lookalikes": [
+    "kn"
+  ],
+  "trivia": [
+    "The steelpan, made from oil drums, was developed in Trinidad and is the national instrument.",
+    "Pitch Lake in Trinidad is the largest natural deposit of asphalt in the world."
+  ]
+}

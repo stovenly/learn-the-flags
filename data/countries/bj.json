@@ -1,0 +1,42 @@
+{
+  "code": "bj",
+  "name": "Benin",
+  "officialName": "Republic of Benin",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Porto-Novo",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "population": 14462724,
+  "area": 112622,
+  "languages": [
+    "French"
+  ],
+  "currencies": [
+    "West African CFA franc"
+  ],
+  "demonym": "Beninese",
+  "latlng": [
+    9.5,
+    2.25
+  ],
+  "flag": {
+    "description": "A vertical green band at the hoist, with two horizontal bands, yellow over red, filling the fly.",
+    "adopted": "1990",
+    "colors": [
+      "green",
+      "yellow",
+      "red"
+    ],
+    "symbolism": "Green stands for hope and renewal, yellow for the country's wealth and red for the courage of the ancestors."
+  },
+  "hook": "Benin has a green band standing at the hoist with yellow over red beside it; Madagascar's band is white, Guinea-Bissau's is red with a star.",
+  "lookalikes": [
+    "gw",
+    "mg"
+  ],
+  "trivia": [
+    "The flag was first adopted in 1959; from 1975 to 1990 the Marxist People's Republic of Benin used a green flag with a red star, and the original returned in 1990.",
+    "Until 1975 the country was called Dahomey, after the precolonial kingdom whose all-female Agojie regiment inspired the 2022 film The Woman King."
+  ]
+}

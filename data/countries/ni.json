@@ -1,0 +1,43 @@
+{
+  "code": "ni",
+  "name": "Nicaragua",
+  "officialName": "Republic of Nicaragua",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Managua",
+  "region": "Americas",
+  "subregion": "Central America",
+  "population": 6916140,
+  "area": 130373,
+  "languages": [
+    "Spanish"
+  ],
+  "currencies": [
+    "Nicaraguan córdoba"
+  ],
+  "demonym": "Nicaraguan",
+  "latlng": [
+    13,
+    -85
+  ],
+  "flag": {
+    "description": "Three equal horizontal bands of blue, white and blue, with the coat of arms in the centre: a triangle containing five volcanoes, a cap of liberty and a rainbow, circled by the words \"REPUBLICA DE NICARAGUA - AMERICA CENTRAL\".",
+    "adopted": "1971",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "symbolism": "The blue bands represent the Pacific Ocean and the Caribbean Sea and white the land and peace; the five volcanoes stand for the five members of the former Federal Republic of Central America."
+  },
+  "hook": "Nicaragua circles its rainbow-and-volcanoes triangle with gold lettering; El Salvador wraps its triangle in a laurel wreath, and Honduras just has stars.",
+  "lookalikes": [
+    "sv",
+    "hn",
+    "ar",
+    "gt"
+  ],
+  "trivia": [
+    "The rainbow in the coat of arms makes Nicaragua's one of only two national flags that include purple, alongside Dominica's.",
+    "Lake Nicaragua is one of the few freshwater lakes in the world where bull sharks are found."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "code": "gy",
+  "name": "Guyana",
+  "officialName": "Co-operative Republic of Guyana",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Georgetown",
+  "region": "Americas",
+  "subregion": "South America",
+  "population": 831087,
+  "area": 214969,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    "Guyanese dollar"
+  ],
+  "demonym": "Guyanese",
+  "latlng": [
+    5,
+    -59
+  ],
+  "flag": {
+    "description": "A green field with a white-edged yellow triangle running from the hoist to the fly, overlaid by a black-edged red triangle reaching from the hoist to the middle.",
+    "adopted": "1966",
+    "colors": [
+      "green",
+      "yellow",
+      "red",
+      "white",
+      "black"
+    ],
+    "symbolism": "Green stands for agriculture and forests, white for rivers, yellow for mineral wealth, black for endurance and red for the zeal of nation-building."
+  },
+  "hook": "Guyana's \"Golden Arrowhead\" fires a yellow arrow across green, with a red, black-edged triangle at its base.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag, known as the Golden Arrowhead, was originally designed by American vexillologist Whitney Smith.",
+    "Guyana is the only country in South America with English as its official language.",
+    "Kaieteur Falls in Guyana is among the most powerful single-drop waterfalls in the world."
+  ]
+}

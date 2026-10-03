@@ -1,0 +1,42 @@
+{
+  "code": "pa",
+  "name": "Panama",
+  "officialName": "Republic of Panama",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Panama City",
+  "region": "Americas",
+  "subregion": "Central America",
+  "population": 4515577,
+  "area": 75417,
+  "languages": [
+    "Spanish"
+  ],
+  "currencies": [
+    "Panamanian balboa",
+    "United States dollar"
+  ],
+  "demonym": "Panamanian",
+  "latlng": [
+    9,
+    -80
+  ],
+  "flag": {
+    "description": "Divided into four equal quarters: white with a blue five-pointed star at upper hoist, plain red at upper fly, plain blue at lower hoist, and white with a red star at lower fly.",
+    "adopted": "1903",
+    "colors": [
+      "white",
+      "red",
+      "blue"
+    ],
+    "symbolism": "Blue and red represent the country's two traditional political parties, the Conservatives and the Liberals, and white the peace between them; the blue star stands for purity and honesty and the red star for authority and law."
+  },
+  "hook": "Panama: four quarters with a blue star top-left and a red star bottom-right, and no cross, unlike the Dominican Republic.",
+  "lookalikes": [
+    "do"
+  ],
+  "trivia": [
+    "The flag was designed in 1903 by Manuel Encarnación Amador and sewn by his mother, María de la Ossa de Amador, wife of Panama's first president.",
+    "The Panama Canal, opened in 1914, links the Atlantic and Pacific Oceans across the isthmus."
+  ]
+}

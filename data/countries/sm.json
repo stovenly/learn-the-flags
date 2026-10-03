@@ -1,0 +1,38 @@
+{
+  "code": "sm",
+  "name": "San Marino",
+  "officialName": "Most Serene Republic of San Marino",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "City of San Marino",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "population": 33977,
+  "area": 61,
+  "languages": [
+    "Italian"
+  ],
+  "currencies": [
+    "Euro"
+  ],
+  "demonym": "Sammarinese",
+  "latlng": [
+    43.76666666,
+    12.41666666
+  ],
+  "flag": {
+    "description": "Two equal horizontal bands, white over light blue, with the national coat of arms in the centre: three towers on three peaks in a shield, framed by a wreath, topped by a crown and above a scroll reading 'LIBERTAS'.",
+    "adopted": "1862",
+    "colors": [
+      "white",
+      "light-blue"
+    ],
+    "symbolism": "White is commonly said to represent peace and the snow of Monte Titano, and light blue the sky and liberty; the three towers stand on the mountain's three peaks."
+  },
+  "hook": "San Marino is snow over sky, white above light blue, with the three towers of Monte Titano crowned in the middle.",
+  "lookalikes": [],
+  "trivia": [
+    "San Marino claims to be the world's oldest surviving republic, traditionally founded in 301 AD.",
+    "The motto on the flag, 'Libertas', is Latin for 'Liberty'."
+  ]
+}

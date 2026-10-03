@@ -1,0 +1,40 @@
+{
+  "code": "by",
+  "name": "Belarus",
+  "officialName": "Republic of Belarus",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Minsk",
+  "region": "Europe",
+  "subregion": "Eastern Europe",
+  "population": 9132629,
+  "area": 207600,
+  "languages": [
+    "Belarusian",
+    "Russian"
+  ],
+  "currencies": [
+    "Belarusian ruble"
+  ],
+  "demonym": "Belarusian",
+  "latlng": [
+    53,
+    28
+  ],
+  "flag": {
+    "description": "A red horizontal band over a narrower green band (2:1), with a vertical white strip at the hoist bearing a red traditional ornament.",
+    "adopted": "1995",
+    "colors": [
+      "red",
+      "green",
+      "white"
+    ],
+    "symbolism": "Red is associated with historical banners and the struggle against invaders, green with hope and the country's forests; the ornament is a traditional folk textile pattern."
+  },
+  "hook": "Red over green with an embroidered strip running down the hoist: Belarus is the only flag that looks like it has a folk towel stitched to its edge.",
+  "lookalikes": [],
+  "trivia": [
+    "The design was chosen in a 1995 referendum, replacing a white-red-white flag used since 1991.",
+    "The hoist ornament is based on a traditional towel (rushnyk) pattern created in 1917 by Matrona Markevich; its drawing was slightly revised in 2012."
+  ]
+}

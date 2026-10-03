@@ -1,0 +1,46 @@
+{
+  "code": "gh",
+  "name": "Ghana",
+  "officialName": "Republic of Ghana",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Accra",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "population": 34427414,
+  "area": 238533,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    "Ghanaian cedi"
+  ],
+  "demonym": "Ghanaian",
+  "latlng": [
+    8,
+    -2
+  ],
+  "flag": {
+    "description": "Three horizontal stripes of red, gold and green, with a black five-pointed star in the centre of the gold stripe.",
+    "adopted": "1966",
+    "colors": [
+      "red",
+      "yellow",
+      "green",
+      "black"
+    ],
+    "symbolism": "Red represents the blood shed for independence, gold the country's mineral wealth and green its forests; the black star is the lodestar of African freedom."
+  },
+  "hook": "Ghana's Black Star sits on the gold stripe, the same Black Star that names its football team; Bolivia's red-yellow-green has no star.",
+  "lookalikes": [
+    "bo",
+    "lt",
+    "et",
+    "gw"
+  ],
+  "trivia": [
+    "The flag was designed by Theodosia Okoh; from 1964 to 1966 the middle stripe was white, then gold returned.",
+    "Ghana's national football team is nicknamed the Black Stars after the flag.",
+    "Lake Volta in Ghana is the world's largest artificial reservoir by surface area."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "code": "kr",
+  "name": "South Korea",
+  "officialName": "Republic of Korea",
+  "aliases": [
+    "Korea"
+  ],
+  "status": "un-member",
+  "capital": "Seoul",
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "population": 51751065,
+  "area": 100210,
+  "languages": [
+    "Korean"
+  ],
+  "currencies": [
+    "South Korean won"
+  ],
+  "demonym": "South Korean",
+  "latlng": [
+    37,
+    127.5
+  ],
+  "flag": {
+    "description": "A white field with a red-and-blue taegeuk (yin-yang) circle in the centre, red on top, and a black trigram of three broken or unbroken bars near each corner.",
+    "adopted": "1949",
+    "colors": [
+      "white",
+      "red",
+      "blue",
+      "black"
+    ],
+    "symbolism": "White stands for peace and purity, the taegeuk for the balance of opposing forces, and the four trigrams for heaven, earth, water and fire."
+  },
+  "hook": "South Korea is a white flag with a red-and-blue yin-yang circle and four black bar patterns in the corners; North Korea has stripes and a red star.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag is called the Taegukgi, and its trigrams come from the ancient Chinese divination text the I Ching.",
+    "A version of the flag was first used in 1883 by the Joseon dynasty."
+  ]
+}

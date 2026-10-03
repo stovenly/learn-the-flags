@@ -1,0 +1,42 @@
+{
+  "code": "mc",
+  "name": "Monaco",
+  "officialName": "Principality of Monaco",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Monaco",
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "population": 38631,
+  "area": 2.02,
+  "languages": [
+    "French"
+  ],
+  "currencies": [
+    "Euro"
+  ],
+  "demonym": "Monegasque",
+  "latlng": [
+    43.73333333,
+    7.4
+  ],
+  "flag": {
+    "description": "Two equal horizontal bands, red over white, in a 4:5 ratio.",
+    "adopted": "1881",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "symbolism": "Red and white are the heraldic colours of the House of Grimaldi, which has ruled Monaco since the 13th century."
+  },
+  "hook": "Red over white like Indonesia, but Monaco's is the squatter, almost square one; flip it to white over red and you get Poland.",
+  "lookalikes": [
+    "id",
+    "pl",
+    "sg"
+  ],
+  "trivia": [
+    "Monaco's flag is identical to Indonesia's except for its proportions, and Monaco objected when Indonesia adopted its flag in 1945.",
+    "Monaco is the world's second-smallest country after Vatican City."
+  ]
+}

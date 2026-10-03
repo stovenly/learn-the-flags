@@ -1,0 +1,45 @@
+{
+  "code": "nl",
+  "name": "Netherlands",
+  "officialName": "Kingdom of the Netherlands",
+  "aliases": [
+    "Holland"
+  ],
+  "status": "un-member",
+  "capital": "Amsterdam",
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "population": 17993485,
+  "area": 41850,
+  "languages": [
+    "Dutch"
+  ],
+  "currencies": [
+    "Euro"
+  ],
+  "demonym": "Dutch",
+  "latlng": [
+    52.5,
+    5.75
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of red, white and blue.",
+    "adopted": "1937",
+    "colors": [
+      "red",
+      "white",
+      "blue"
+    ],
+    "symbolism": "It derives from the orange-white-blue 'Prince's Flag' of William of Orange; the orange was gradually replaced by red in the 17th century."
+  },
+  "hook": "The Dutch flag is red-white-blue with a dark navy bottom; Luxembourg's bottom is light sky-blue, and Paraguay adds a crest in the middle.",
+  "lookalikes": [
+    "lu",
+    "py",
+    "hr"
+  ],
+  "trivia": [
+    "On King's Day and royal occasions the flag is flown with an orange pennant above it, honouring the House of Orange.",
+    "About a quarter of the Netherlands lies below sea level."
+  ]
+}

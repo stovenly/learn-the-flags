@@ -1,0 +1,40 @@
+{
+  "code": "to",
+  "name": "Tonga",
+  "officialName": "Kingdom of Tonga",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Nuku'alofa",
+  "region": "Oceania",
+  "subregion": "Polynesia",
+  "population": 104175,
+  "area": 747,
+  "languages": [
+    "English",
+    "Tongan"
+  ],
+  "currencies": [
+    "Tongan paʻanga"
+  ],
+  "demonym": "Tongan",
+  "latlng": [
+    -20,
+    -175
+  ],
+  "flag": {
+    "description": "A red field with a white rectangle in the upper hoist containing a red cross.",
+    "adopted": "1875",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "symbolism": "The cross represents Christianity and the red the blood of Christ."
+  },
+  "hook": "A red field with a small red cross in a white corner box: Tonga's flag looks like a Red Cross banner, and its constitution says it may never change.",
+  "lookalikes": [],
+  "trivia": [
+    "Tonga's constitution states that the flag shall never be altered.",
+    "An earlier version was white with a red cross, but it was changed because it looked too much like the Red Cross flag.",
+    "Tonga was never fully colonised: it was a British protected state from 1900 to 1970 but kept its own monarchy throughout."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "code": "sc",
+  "name": "Seychelles",
+  "officialName": "Republic of Seychelles",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Victoria",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "population": 121354,
+  "area": 452,
+  "languages": [
+    "Seychellois Creole",
+    "English",
+    "French"
+  ],
+  "currencies": [
+    "Seychellois rupee"
+  ],
+  "demonym": "Seychellois",
+  "latlng": [
+    -4.58333333,
+    55.66666666
+  ],
+  "flag": {
+    "description": "Five oblique bands of blue, yellow, red, white and green fanning out from the lower hoist corner.",
+    "adopted": "1996",
+    "colors": [
+      "blue",
+      "yellow",
+      "red",
+      "white",
+      "green"
+    ],
+    "symbolism": "Blue represents the sky and sea, yellow the sun, red the people and their work, white social justice and harmony, and green the land."
+  },
+  "hook": "The Seychelles' five colours fan out from the bottom-left corner like rays of sunshine, the only national flag built this way.",
+  "lookalikes": [],
+  "trivia": [
+    "The coco de mer palm, native to the Seychelles, produces the largest and heaviest seed of any plant.",
+    "The Seychelles has the smallest population of any African country, at around 100,000."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "code": "vc",
+  "name": "Saint Vincent and the Grenadines",
+  "officialName": "Saint Vincent and the Grenadines",
+  "aliases": [
+    "St Vincent and the Grenadines",
+    "St Vincent"
+  ],
+  "status": "un-member",
+  "capital": "Kingstown",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "population": 100616,
+  "area": 389,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    "Eastern Caribbean dollar"
+  ],
+  "demonym": "Saint Vincentian",
+  "latlng": [
+    13.25,
+    -61.2
+  ],
+  "flag": {
+    "description": "Three vertical bands of blue, gold and green, with the gold band twice as wide as the others and holding three green diamonds arranged in a V.",
+    "adopted": "1985",
+    "colors": [
+      "yellow",
+      "blue",
+      "green"
+    ],
+    "symbolism": "Blue represents the sky and sea, gold warmth and the islands' sands, and green the vegetation; the diamonds form a V for Vincent and are called the \"Gems of the Antilles\"."
+  },
+  "hook": "Saint Vincent and the Grenadines sets three green diamonds in a V for Vincent on a wide gold band between blue and green.",
+  "lookalikes": [
+    "bb"
+  ],
+  "trivia": [
+    "The current design by Swiss artist Julien van der Wal replaced an earlier flag that showed a breadfruit leaf and the coat of arms.",
+    "Scenes from the \"Pirates of the Caribbean\" films were shot at Wallilabou Bay on Saint Vincent."
+  ]
+}

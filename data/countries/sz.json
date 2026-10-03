@@ -1,0 +1,45 @@
+{
+  "code": "sz",
+  "name": "Eswatini",
+  "officialName": "Kingdom of Eswatini",
+  "aliases": [
+    "Swaziland"
+  ],
+  "status": "un-member",
+  "capital": "Lobamba",
+  "region": "Africa",
+  "subregion": "Southern Africa",
+  "population": 1242822,
+  "area": 17364,
+  "languages": [
+    "English",
+    "Swazi"
+  ],
+  "currencies": [
+    "Swazi lilangeni",
+    "South African rand"
+  ],
+  "demonym": "Swazi",
+  "latlng": [
+    -26.5,
+    31.5
+  ],
+  "flag": {
+    "description": "Horizontal stripes of blue, yellow, crimson, yellow and blue, the crimson widest, with a black-and-white Nguni shield, two spears and a tasselled staff lying horizontally across the centre.",
+    "adopted": "1968",
+    "colors": [
+      "blue",
+      "red",
+      "yellow",
+      "black",
+      "white"
+    ],
+    "symbolism": "Red stands for past battles, blue for peace and yellow for mineral wealth; the shield represents protection, and its black and white show people of different races living together."
+  },
+  "hook": "Eswatini lays a black-and-white Nguni shield and spears sideways across a broad crimson band framed by yellow and blue.",
+  "lookalikes": [],
+  "trivia": [
+    "The country was renamed from Swaziland to Eswatini in 2018, on the 50th anniversary of independence.",
+    "The design is based on a banner given by King Sobhuza II to the Swazi Pioneer Corps during the Second World War."
+  ]
+}

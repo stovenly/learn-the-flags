@@ -1,0 +1,45 @@
+{
+  "code": "jo",
+  "name": "Jordan",
+  "officialName": "Hashemite Kingdom of Jordan",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Amman",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "population": 11552876,
+  "area": 89342,
+  "languages": [
+    "Arabic"
+  ],
+  "currencies": [
+    "Jordanian dinar"
+  ],
+  "demonym": "Jordanian",
+  "latlng": [
+    31,
+    36
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of black, white and green, with a red triangle at the hoist containing a small white seven-pointed star.",
+    "adopted": "1928",
+    "colors": [
+      "black",
+      "white",
+      "green",
+      "red"
+    ],
+    "symbolism": "The stripes recall the Abbasid (black), Umayyad (white) and Fatimid (green) caliphates and the red triangle the Hashemite dynasty; the star's seven points represent the seven verses of the first chapter of the Quran."
+  },
+  "hook": "Jordan is Palestine's flag plus a small white seven-pointed star in the red triangle; Sudan's triangle is green and its stripes start with red.",
+  "lookalikes": [
+    "ps",
+    "sd",
+    "kw",
+    "ae"
+  ],
+  "trivia": [
+    "The design is based on the flag of the Arab Revolt of 1916 against Ottoman rule.",
+    "Petra, the ancient city carved into rose-coloured sandstone cliffs, is one of the New Seven Wonders of the World."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "code": "nr",
+  "name": "Nauru",
+  "officialName": "Republic of Nauru",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Yaren (de facto)",
+  "region": "Oceania",
+  "subregion": "Micronesia",
+  "population": 11947,
+  "area": 21,
+  "languages": [
+    "English",
+    "Nauru"
+  ],
+  "currencies": [
+    "Australian dollar"
+  ],
+  "demonym": "Nauruan",
+  "latlng": [
+    -0.53333333,
+    166.91666666
+  ],
+  "flag": {
+    "description": "A dark blue field divided by a narrow yellow horizontal stripe across the middle, with a white twelve-pointed star below the stripe near the hoist.",
+    "adopted": "1968",
+    "colors": [
+      "blue",
+      "yellow",
+      "white"
+    ],
+    "symbolism": "The yellow stripe is the equator and the star marks Nauru's position just south of it; the star's twelve points stand for the island's twelve original tribes."
+  },
+  "hook": "A thin yellow equator line with a twelve-pointed star just below it: Nauru sits just south of the equator, exactly where the star is.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag was adopted on independence day, 31 January 1968.",
+    "At about 21 km², Nauru is the third-smallest country in the world, after Vatican City and Monaco.",
+    "Nauru has no official capital; government offices are in the district of Yaren."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "code": "gn",
+  "name": "Guinea",
+  "officialName": "Republic of Guinea",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Conakry",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "population": 14754785,
+  "area": 245857,
+  "languages": [
+    "French"
+  ],
+  "currencies": [
+    "Guinean franc"
+  ],
+  "demonym": "Guinean",
+  "latlng": [
+    11,
+    -10
+  ],
+  "flag": {
+    "description": "Three vertical stripes of red (hoist), yellow and green.",
+    "adopted": "1958",
+    "colors": [
+      "red",
+      "yellow",
+      "green"
+    ],
+    "symbolism": "Red stands for the sacrifice of the martyrs and labour, yellow for the sun and the country's mineral wealth, and green for its vegetation; together they echo the motto 'Work, Justice, Solidarity'."
+  },
+  "hook": "Guinea reads red-yellow-green from the flagpole, like a traffic light read from 'stop' to 'go'; Mali is the exact mirror image, starting green.",
+  "lookalikes": [
+    "ml",
+    "sn",
+    "cm"
+  ],
+  "trivia": [
+    "Guinea's flag is Mali's flag reversed.",
+    "Guinea holds the world's largest known reserves of bauxite, the main ore of aluminium.",
+    "The Niger, Senegal and Gambia rivers all rise in Guinea, earning it the nickname 'water tower of West Africa'."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "code": "pt",
+  "name": "Portugal",
+  "officialName": "Portuguese Republic",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Lisbon",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "population": 10694681,
+  "area": 92090,
+  "languages": [
+    "Portuguese"
+  ],
+  "currencies": [
+    "Euro"
+  ],
+  "demonym": "Portuguese",
+  "latlng": [
+    39.5,
+    -8
+  ],
+  "flag": {
+    "description": "A vertical bicolour of green at the hoist (two-fifths) and red (three-fifths), with the national arms on a yellow armillary sphere centred on the dividing line.",
+    "adopted": "1911",
+    "colors": [
+      "red",
+      "green",
+      "yellow"
+    ],
+    "symbolism": "Green is commonly said to stand for hope and red for the blood of those who died for the nation; the armillary sphere honours the Age of Discovery."
+  },
+  "hook": "Portugal splits green and red unevenly and pins a navigator's armillary sphere on the seam, a reminder of its seafaring explorers.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag was adopted in 1911, after the monarchy was overthrown in 1910.",
+    "The shield carries seven castles and five small blue shields called 'quinas'."
+  ]
+}

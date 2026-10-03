@@ -1,0 +1,44 @@
+{
+  "code": "az",
+  "name": "Azerbaijan",
+  "officialName": "Republic of Azerbaijan",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Baku",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "population": 10202830,
+  "area": 86600,
+  "languages": [
+    "Azerbaijani",
+    "Russian"
+  ],
+  "currencies": [
+    "Azerbaijani manat"
+  ],
+  "demonym": "Azerbaijani",
+  "latlng": [
+    40.5,
+    47.5
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of blue, red and green, with a white crescent and white eight-pointed star in the centre of the red stripe.",
+    "adopted": "1991",
+    "colors": [
+      "blue",
+      "red",
+      "green",
+      "white"
+    ],
+    "symbolism": "Blue represents Turkic heritage, red progress and modernisation, and green Islam; the eight points of the star are often linked to the eight branches of the Turkic peoples."
+  },
+  "hook": "Azerbaijan is blue-red-green with the crescent and eight-pointed star centred in the red stripe; Uzbekistan has a white middle band and its crescent in the blue corner.",
+  "lookalikes": [
+    "uz",
+    "tr"
+  ],
+  "trivia": [
+    "The flag was first adopted in 1918 by the Azerbaijan Democratic Republic and restored in 1991.",
+    "Baku lies about 28 metres below sea level, making it the lowest-lying national capital in the world."
+  ]
+}

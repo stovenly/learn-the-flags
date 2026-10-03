@@ -1,0 +1,41 @@
+{
+  "code": "lk",
+  "name": "Sri Lanka",
+  "officialName": "Democratic Socialist Republic of Sri Lanka",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Sri Jayawardenepura Kotte (official), Colombo (executive and commercial)",
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "population": 21916000,
+  "area": 65610,
+  "languages": [
+    "Sinhala",
+    "Tamil"
+  ],
+  "currencies": [
+    "Sri Lankan rupee"
+  ],
+  "demonym": "Sri Lankan",
+  "latlng": [
+    7,
+    81
+  ],
+  "flag": {
+    "description": "A yellow border enclosing two panels: at the hoist, vertical green and saffron stripes; at the fly, a maroon panel with a gold lion holding a sword and a gold bo leaf in each corner.",
+    "adopted": "1972",
+    "colors": [
+      "maroon",
+      "yellow",
+      "orange",
+      "green"
+    ],
+    "symbolism": "The lion represents the Sinhalese people and the bravery of the nation, green and saffron the Muslim and Tamil communities, and the four bo leaves Buddhism's four virtues of kindness, compassion, joy and equanimity."
+  },
+  "hook": "Sri Lanka is the Lion Flag: a gold sword-wielding lion on maroon, with a green and a saffron stripe standing beside it.",
+  "lookalikes": [],
+  "trivia": [
+    "The green and saffron stripes were added soon after independence to represent minority communities, and the corner bo leaves took their current shape in 1972.",
+    "In 1960 Sirimavo Bandaranaike of Sri Lanka became the world's first female prime minister."
+  ]
+}

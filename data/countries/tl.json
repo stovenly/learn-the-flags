@@ -1,0 +1,43 @@
+{
+  "code": "tl",
+  "name": "Timor-Leste",
+  "officialName": "Democratic Republic of Timor-Leste",
+  "aliases": [
+    "East Timor"
+  ],
+  "status": "un-member",
+  "capital": "Dili",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "population": 1400638,
+  "area": 14874,
+  "languages": [
+    "Portuguese",
+    "Tetum"
+  ],
+  "currencies": [
+    "United States dollar"
+  ],
+  "demonym": "East Timorese",
+  "latlng": [
+    -8.83333333,
+    125.91666666
+  ],
+  "flag": {
+    "description": "A red field with a black triangle at the hoist laid over a larger yellow triangle (arrowhead), and a white five-pointed star, tilted, in the black triangle.",
+    "adopted": "2002",
+    "colors": [
+      "red",
+      "yellow",
+      "black",
+      "white"
+    ],
+    "symbolism": "Yellow represents the traces of colonialism, black the obscurantism to be overcome, red the struggle for liberation, and the white star peace and the light that guides the way."
+  },
+  "hook": "Timor-Leste is a red flag with a black arrowhead on a yellow arrowhead pointing in, and a tilted white star in the black.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag was first used in 1975 when FRETILIN declared independence from Portugal, and was readopted at independence in 2002.",
+    "Timor-Leste was the first new sovereign state of the 21st century."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "code": "no",
+  "name": "Norway",
+  "officialName": "Kingdom of Norway",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Oslo",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "population": 5572279,
+  "area": 323802,
+  "languages": [
+    "Norwegian Nynorsk",
+    "Norwegian Bokmål",
+    "Sami"
+  ],
+  "currencies": [
+    "Norwegian krone"
+  ],
+  "demonym": "Norwegian",
+  "latlng": [
+    62,
+    10
+  ],
+  "flag": {
+    "description": "A red field with a blue Nordic cross edged in white, its vertical arm shifted towards the hoist.",
+    "adopted": "1821",
+    "colors": [
+      "red",
+      "blue",
+      "white"
+    ],
+    "symbolism": "Red, white and blue echo the flags of France, the United States and the United Kingdom as symbols of liberty; the cross shape comes from Denmark's flag."
+  },
+  "hook": "Norway is Denmark's white cross with a blue cross laid inside it; Iceland uses the same three colours with red and blue swapped.",
+  "lookalikes": [
+    "is",
+    "dk"
+  ],
+  "trivia": [
+    "The flag was designed by Fredrik Meltzer and adopted in 1821, while Norway was in union with Sweden.",
+    "It has been called 'the mother of all flags' because the patterns of several other flags, such as France's and the Netherlands', can be found within it."
+  ]
+}

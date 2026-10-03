@@ -1,0 +1,42 @@
+{
+  "code": "kh",
+  "name": "Cambodia",
+  "officialName": "Kingdom of Cambodia",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Phnom Penh",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "population": 17638801,
+  "area": 181035,
+  "languages": [
+    "Khmer"
+  ],
+  "currencies": [
+    "Cambodian riel",
+    "United States dollar"
+  ],
+  "demonym": "Cambodian",
+  "latlng": [
+    13,
+    105
+  ],
+  "flag": {
+    "description": "Three horizontal bands of blue, red and blue, with the red band twice as tall as each blue one, and a white depiction of the temple of Angkor Wat in the centre.",
+    "adopted": "1993",
+    "colors": [
+      "red",
+      "blue",
+      "white"
+    ],
+    "symbolism": "Blue represents the monarchy, red the nation and white religion, with Angkor Wat symbolising the country's heritage and Buddhism."
+  },
+  "hook": "Cambodia is the flag with a building on it: the white temple of Angkor Wat stands on a red band between blue stripes.",
+  "lookalikes": [
+    "th"
+  ],
+  "trivia": [
+    "Some form of Angkor Wat has appeared on Cambodian national flags since around 1850.",
+    "Angkor Wat is the largest religious monument in the world by area."
+  ]
+}

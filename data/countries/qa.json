@@ -1,0 +1,40 @@
+{
+  "code": "qa",
+  "name": "Qatar",
+  "officialName": "State of Qatar",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Doha",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "population": 2857822,
+  "area": 11586,
+  "languages": [
+    "Arabic"
+  ],
+  "currencies": [
+    "Qatari riyal"
+  ],
+  "demonym": "Qatari",
+  "latlng": [
+    25.5,
+    51.25
+  ],
+  "flag": {
+    "description": "A maroon field with a white vertical band at the hoist, separated by a serrated edge of nine white points; the flag is unusually elongated, with proportions of 11:28.",
+    "adopted": "1971",
+    "colors": [
+      "maroon",
+      "white"
+    ],
+    "symbolism": "The nine points are said to mark Qatar as the ninth member of the reconciled emirates of the Gulf after a 1916 treaty; maroon recalls blood shed in conflicts and white peace."
+  },
+  "hook": "Qatar is the extra-long maroon flag with nine white zigzag points; Bahrain's is bright red, shorter and has five.",
+  "lookalikes": [
+    "bh"
+  ],
+  "trivia": [
+    "It is the only national flag whose width is more than twice its height.",
+    "The maroon is often said to come from red dyes that darkened in the desert sun."
+  ]
+}

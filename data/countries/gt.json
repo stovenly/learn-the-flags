@@ -1,0 +1,43 @@
+{
+  "code": "gt",
+  "name": "Guatemala",
+  "officialName": "Republic of Guatemala",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Guatemala City",
+  "region": "Americas",
+  "subregion": "Central America",
+  "population": 18406359,
+  "area": 108889,
+  "languages": [
+    "Spanish"
+  ],
+  "currencies": [
+    "Guatemalan quetzal"
+  ],
+  "demonym": "Guatemalan",
+  "latlng": [
+    15.5,
+    -90.25
+  ],
+  "flag": {
+    "description": "Three equal vertical bands of sky blue, white and sky blue, with the coat of arms in the centre: a resplendent quetzal perched on a scroll dated 15 September 1821, over crossed rifles and swords inside a laurel wreath.",
+    "adopted": "1871",
+    "colors": [
+      "light-blue",
+      "white"
+    ],
+    "symbolism": "The blue bands represent the Pacific Ocean and the Caribbean Sea, and white represents peace and purity; the quetzal symbolises liberty."
+  },
+  "hook": "Guatemala turns the Central American blue-white-blue sideways into vertical bands, with a green quetzal bird perched on crossed rifles.",
+  "lookalikes": [
+    "sv",
+    "ni",
+    "hn",
+    "ar"
+  ],
+  "trivia": [
+    "The date on the scroll, 15 September 1821, is the day Central America declared independence from Spain.",
+    "Guatemala's currency, the quetzal, is named after the same bird that appears on its flag."
+  ]
+}

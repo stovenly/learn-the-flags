@@ -1,0 +1,44 @@
+{
+  "code": "tr",
+  "name": "Turkey",
+  "officialName": "Republic of Türkiye",
+  "aliases": [
+    "Türkiye"
+  ],
+  "status": "un-member",
+  "capital": "Ankara",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "population": 85518661,
+  "area": 783562,
+  "languages": [
+    "Turkish"
+  ],
+  "currencies": [
+    "Turkish lira"
+  ],
+  "demonym": "Turkish",
+  "latlng": [
+    39,
+    35
+  ],
+  "flag": {
+    "description": "A red field with a white crescent, opening towards the fly, and a white five-pointed star just beyond it, both slightly towards the hoist.",
+    "adopted": "1936",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "symbolism": "A popular legend says the design is the reflection of the crescent moon and a star in a pool of blood after a battle; it derives from late Ottoman flags."
+  },
+  "hook": "Turkey is a white crescent and star on plain red; Tunisia sets its red crescent and star inside a white disc.",
+  "lookalikes": [
+    "tn",
+    "az",
+    "pk"
+  ],
+  "trivia": [
+    "The exact proportions of the flag were set by the Turkish Flag Law of 1936.",
+    "Istanbul spans two continents, Europe and Asia, divided by the Bosphorus strait."
+  ]
+}

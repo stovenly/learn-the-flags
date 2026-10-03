@@ -1,0 +1,40 @@
+{
+  "code": "tn",
+  "name": "Tunisia",
+  "officialName": "Tunisian Republic",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Tunis",
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "population": 12277109,
+  "area": 163610,
+  "languages": [
+    "Arabic"
+  ],
+  "currencies": [
+    "Tunisian dinar"
+  ],
+  "demonym": "Tunisian",
+  "latlng": [
+    34,
+    9
+  ],
+  "flag": {
+    "description": "A red field with a white disc in the centre containing a red crescent that encircles a red five-pointed star.",
+    "adopted": "1831",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "symbolism": "Red recalls the blood of the martyrs and white peace; the crescent and star are symbols of Islam and the country's Ottoman heritage."
+  },
+  "hook": "Tunisia keeps its red crescent and star inside a white disc in the centre; Turkey's white crescent floats freely toward the hoist.",
+  "lookalikes": [
+    "tr"
+  ],
+  "trivia": [
+    "The flag dates from 1831 under Hussein II Bey, making it one of the oldest national flags still in use; its exact proportions were standardised in 1999.",
+    "The desert planet Tatooine in Star Wars is named after the Tunisian town of Tataouine, and scenes were filmed in southern Tunisia."
+  ]
+}

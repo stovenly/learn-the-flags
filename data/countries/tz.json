@@ -1,0 +1,46 @@
+{
+  "code": "tz",
+  "name": "Tanzania",
+  "officialName": "United Republic of Tanzania",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Dodoma",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "population": 68560157,
+  "area": 945087,
+  "languages": [
+    "English",
+    "Swahili"
+  ],
+  "currencies": [
+    "Tanzanian shilling"
+  ],
+  "demonym": "Tanzanian",
+  "latlng": [
+    -6,
+    35
+  ],
+  "flag": {
+    "description": "A black diagonal band edged in yellow runs from the lower hoist to the upper fly, with a green triangle in the upper hoist and a blue triangle in the lower fly.",
+    "adopted": "1964",
+    "colors": [
+      "green",
+      "blue",
+      "black",
+      "yellow"
+    ],
+    "symbolism": "Green represents the land, yellow the mineral wealth, black the people and blue the Indian Ocean and lakes."
+  },
+  "hook": "Tanzania merges Tanganyika's green and Zanzibar's blue across a yellow-edged black diagonal, with no star or sun.",
+  "lookalikes": [
+    "na",
+    "cd",
+    "sb",
+    "cg"
+  ],
+  "trivia": [
+    "The flag and the name combine Tanganyika and Zanzibar, which united in 1964.",
+    "Mount Kilimanjaro, at 5,895 m, is the highest mountain in Africa."
+  ]
+}

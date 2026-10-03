@@ -1,0 +1,42 @@
+{
+  "code": "at",
+  "name": "Austria",
+  "officialName": "Republic of Austria",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Vienna",
+  "region": "Europe",
+  "subregion": "Central Europe",
+  "population": 9177982,
+  "area": 83871,
+  "languages": [
+    "German"
+  ],
+  "currencies": [
+    "Euro"
+  ],
+  "demonym": "Austrian",
+  "latlng": [
+    47.33333333,
+    13.33333333
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of red, white and red.",
+    "adopted": "1945",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "symbolism": "The colours come from the arms of the Babenberg dukes; legend says Duke Leopold V's white tunic was soaked in blood at the Siege of Acre in 1191, except under his belt."
+  },
+  "hook": "Picture a blood-soaked white tunic with a clean band where the belt was: Austria is bright red-white-red in equal stripes, unlike Latvia's dark maroon with a thin white stripe.",
+  "lookalikes": [
+    "lv",
+    "lb",
+    "pe"
+  ],
+  "trivia": [
+    "The red-white-red colours are attested as early as 1230, making them among the oldest national colours in the world.",
+    "The state flag used by government bodies adds Austria's coat of arms, a black eagle, in the centre."
+  ]
+}

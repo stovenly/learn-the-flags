@@ -1,0 +1,41 @@
+{
+  "code": "mz",
+  "name": "Mozambique",
+  "officialName": "Republic of Mozambique",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Maputo",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "population": 34631766,
+  "area": 801590,
+  "languages": [
+    "Portuguese"
+  ],
+  "currencies": [
+    "Mozambican metical"
+  ],
+  "demonym": "Mozambican",
+  "latlng": [
+    -18.25,
+    35
+  ],
+  "flag": {
+    "description": "Three horizontal stripes of green, black and yellow separated by thin white stripes, with a red triangle at the hoist bearing a yellow star with an open book, a hoe and an AK-47 rifle with bayonet.",
+    "adopted": "1983",
+    "colors": [
+      "green",
+      "black",
+      "yellow",
+      "red",
+      "white"
+    ],
+    "symbolism": "Green represents the land, black Africa, yellow mineral wealth, white peace and red the resistance to colonialism; the book stands for education, the hoe for agriculture and the rifle for defence."
+  },
+  "hook": "Mozambique is the flag with the AK-47: a rifle crossed with a hoe over an open book in the red hoist triangle.",
+  "lookalikes": [],
+  "trivia": [
+    "It is the only national flag that shows a modern assault rifle.",
+    "Mozambique joined the Commonwealth in 1995 despite never having been a British colony."
+  ]
+}

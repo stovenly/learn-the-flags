@@ -1,0 +1,40 @@
+{
+  "code": "bi",
+  "name": "Burundi",
+  "officialName": "Republic of Burundi",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Gitega",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "population": 14047786,
+  "area": 27834,
+  "languages": [
+    "French",
+    "Kirundi"
+  ],
+  "currencies": [
+    "Burundian franc"
+  ],
+  "demonym": "Burundian",
+  "latlng": [
+    -3.5,
+    30
+  ],
+  "flag": {
+    "description": "A white saltire divides the field into red triangles at top and bottom and green triangles at hoist and fly; a white disc in the centre holds three red six-pointed stars outlined in green.",
+    "adopted": "1967",
+    "colors": [
+      "red",
+      "green",
+      "white"
+    ],
+    "symbolism": "Red stands for the struggle for independence, green for hope and white for peace; the three stars represent the Hutu, Twa and Tutsi peoples and the motto 'Unity, Work, Progress'."
+  },
+  "hook": "Burundi's flag is a big white X with a white disc holding three red stars: three syllables, Bu-run-di, three stars.",
+  "lookalikes": [],
+  "trivia": [
+    "The three stars echo the national motto 'Unité, Travail, Progrès' as well as the country's three main ethnic groups.",
+    "In 2019 Gitega replaced Bujumbura as the political capital; Bujumbura remains the economic centre."
+  ]
+}

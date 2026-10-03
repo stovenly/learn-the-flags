@@ -1,0 +1,45 @@
+{
+  "code": "lu",
+  "name": "Luxembourg",
+  "officialName": "Grand Duchy of Luxembourg",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Luxembourg",
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "population": 677012,
+  "area": 2586,
+  "languages": [
+    "German",
+    "French",
+    "Luxembourgish"
+  ],
+  "currencies": [
+    "Euro"
+  ],
+  "demonym": "Luxembourger",
+  "latlng": [
+    49.75,
+    6.16666666
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of red, white and light blue.",
+    "adopted": "1972",
+    "colors": [
+      "red",
+      "white",
+      "light-blue"
+    ],
+    "symbolism": "The colours come from the coat of arms of the House of Luxembourg: a red lion on a field of blue and white stripes."
+  },
+  "hook": "'Lux' means light, so Luxembourg has the light, sky-blue bottom stripe; the Netherlands uses dark navy.",
+  "lookalikes": [
+    "nl",
+    "py",
+    "hr"
+  ],
+  "trivia": [
+    "Because the flag is so easily confused with the Dutch one, Luxembourg has repeatedly debated replacing it with the 'Red Lion' flag taken from its coat of arms.",
+    "Luxembourg is the world's only remaining grand duchy."
+  ]
+}

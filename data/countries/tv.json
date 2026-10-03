@@ -1,0 +1,48 @@
+{
+  "code": "tv",
+  "name": "Tuvalu",
+  "officialName": "Tuvalu",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Funafuti",
+  "region": "Oceania",
+  "subregion": "Polynesia",
+  "population": 9646,
+  "area": 26,
+  "languages": [
+    "English",
+    "Tuvaluan"
+  ],
+  "currencies": [
+    "Australian dollar",
+    "Tuvaluan dollar"
+  ],
+  "demonym": "Tuvaluan",
+  "latlng": [
+    -8,
+    178
+  ],
+  "flag": {
+    "description": "A light blue field with the Union Jack in the upper hoist and nine yellow five-pointed stars in the fly, arranged like a map of the country's nine islands.",
+    "adopted": "1997",
+    "colors": [
+      "light-blue",
+      "yellow",
+      "red",
+      "white",
+      "blue"
+    ],
+    "symbolism": "The nine stars represent the nine islands in their geographical positions, the light blue the Pacific Ocean and the Union Jack Tuvalu's historical ties to Britain."
+  },
+  "hook": "Tuvalu's light-blue ensign scatters nine yellow stars like a map of its islands; Fiji's light-blue ensign carries a shield instead.",
+  "lookalikes": [
+    "fj",
+    "au",
+    "nz"
+  ],
+  "trivia": [
+    "The Union Jack was removed in 1995 but restored in 1997, when the original 1978 design returned.",
+    "'Tuvalu' means 'eight standing together', for the eight traditionally inhabited islands, yet the flag shows nine stars.",
+    "Tuvalu earns a significant share of its income from licensing its internet domain, .tv."
+  ]
+}

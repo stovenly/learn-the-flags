@@ -1,0 +1,41 @@
+{
+  "code": "gr",
+  "name": "Greece",
+  "officialName": "Hellenic Republic",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Athens",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "population": 10405134,
+  "area": 131990,
+  "languages": [
+    "Greek"
+  ],
+  "currencies": [
+    "Euro"
+  ],
+  "demonym": "Greek",
+  "latlng": [
+    39,
+    22
+  ],
+  "flag": {
+    "description": "Nine equal horizontal stripes alternating blue and white, with a blue square canton bearing a white cross in the upper hoist corner.",
+    "adopted": "1978",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "symbolism": "The nine stripes are traditionally said to match the syllables of 'Eleftheria i Thanatos' ('Freedom or Death'); the cross stands for Greek Orthodox Christianity."
+  },
+  "hook": "Nine blue and white stripes, one per syllable of 'Freedom or Death', with a cross in the corner: Uruguay has a sun in the corner instead.",
+  "lookalikes": [
+    "uy",
+    "fi"
+  ],
+  "trivia": [
+    "The striped design dates from 1822, but until 1978 a plain white cross on blue served as the flag on land.",
+    "Greeks often call the flag the 'Galanolefki', meaning 'the blue and white'."
+  ]
+}

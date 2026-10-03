@@ -1,0 +1,39 @@
+{
+  "code": "np",
+  "name": "Nepal",
+  "officialName": "Federal Democratic Republic of Nepal",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Kathmandu",
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "population": 29651054,
+  "area": 147181,
+  "languages": [
+    "Nepali"
+  ],
+  "currencies": [
+    "Nepalese rupee"
+  ],
+  "demonym": "Nepalese",
+  "latlng": [
+    28,
+    84
+  ],
+  "flag": {
+    "description": "A non-rectangular flag of two stacked crimson pennants with a blue border; the upper pennant has a white crescent moon and the lower one a white twelve-pointed sun.",
+    "adopted": "1962",
+    "colors": [
+      "red",
+      "blue",
+      "white"
+    ],
+    "symbolism": "The two peaks represent the Himalayas and the two main religions, Hinduism and Buddhism; the moon and sun express the hope that the nation will last as long as they do, and crimson is the colour of the rhododendron, the national flower."
+  },
+  "hook": "Nepal is the only national flag that is not a rectangle: two stacked pennants like Himalayan peaks, with a moon above and a sun below.",
+  "lookalikes": [],
+  "trivia": [
+    "Nepal's constitution includes detailed step-by-step geometric instructions for drawing the flag.",
+    "Eight of the fourteen mountains over 8,000 metres, including Everest, are wholly or partly in Nepal."
+  ]
+}

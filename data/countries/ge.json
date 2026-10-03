@@ -1,0 +1,38 @@
+{
+  "code": "ge",
+  "name": "Georgia",
+  "officialName": "Georgia",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Tbilisi",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "population": 3812518,
+  "area": 69700,
+  "languages": [
+    "Georgian"
+  ],
+  "currencies": [
+    "lari"
+  ],
+  "demonym": "Georgian",
+  "latlng": [
+    42,
+    43.5
+  ],
+  "flag": {
+    "description": "A white field with a large red St George's cross in the centre and a smaller red cross (a bolnisi cross) in each of the four quarters.",
+    "adopted": "2004",
+    "colors": [
+      "white",
+      "red"
+    ],
+    "symbolism": "The cross honours St George, the country's patron saint, and the five crosses together reflect Georgia's Christian heritage."
+  },
+  "hook": "Georgia looks like England's St George's cross with four extra little red crosses in the corners, which is why it is called the Five Cross Flag.",
+  "lookalikes": [],
+  "trivia": [
+    "The Five Cross Flag is based on medieval Georgian banners and was popularised during the 2003 Rose Revolution before its official adoption in January 2004.",
+    "Georgians call their country Sakartvelo."
+  ]
+}

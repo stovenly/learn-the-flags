@@ -1,0 +1,45 @@
+{
+  "code": "kw",
+  "name": "Kuwait",
+  "officialName": "State of Kuwait",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Kuwait City",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "population": 4897263,
+  "area": 17818,
+  "languages": [
+    "Arabic"
+  ],
+  "currencies": [
+    "Kuwaiti dinar"
+  ],
+  "demonym": "Kuwaiti",
+  "latlng": [
+    29.5,
+    45.75
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of green, white and red, with a black trapezoid at the hoist whose shorter side faces the fly.",
+    "adopted": "1961",
+    "colors": [
+      "green",
+      "white",
+      "red",
+      "black"
+    ],
+    "symbolism": "The colours come from a poem by Safi al-Din al-Hilli: white for good deeds, black for battles, green for fertile land and red for the blood on swords."
+  },
+  "hook": "Kuwait's hoist is a black trapezoid, a triangle with its tip cut off; Jordan and Palestine have red triangles and the UAE a red bar.",
+  "lookalikes": [
+    "ae",
+    "jo",
+    "ps",
+    "sd"
+  ],
+  "trivia": [
+    "The flag was first raised on 24 November 1961, a few months after independence from Britain.",
+    "The Kuwaiti dinar is the highest-valued currency unit in the world."
+  ]
+}

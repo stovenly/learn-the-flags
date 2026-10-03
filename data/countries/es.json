@@ -1,0 +1,38 @@
+{
+  "code": "es",
+  "name": "Spain",
+  "officialName": "Kingdom of Spain",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Madrid",
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "population": 48848840,
+  "area": 505992,
+  "languages": [
+    "Spanish"
+  ],
+  "currencies": [
+    "Euro"
+  ],
+  "demonym": "Spanish",
+  "latlng": [
+    40,
+    -4
+  ],
+  "flag": {
+    "description": "A horizontal triband of red, yellow and red, with the yellow band twice the height of each red one and the national coat of arms on it towards the hoist.",
+    "adopted": "1981",
+    "colors": [
+      "yellow",
+      "red"
+    ],
+    "symbolism": "Red and yellow are the historic colours of the Crown of Aragon; the arms include the Pillars of Hercules with the motto 'Plus Ultra' ('Further beyond')."
+  },
+  "hook": "Spain's yellow band is twice as fat as each red one, with the crest nudged toward the flagpole: a broad golden road between two red stripes.",
+  "lookalikes": [],
+  "trivia": [
+    "The red and yellow design originated in 1785, when King Charles III chose it for warships so they could be recognised at sea.",
+    "Spain's national anthem, the 'Marcha Real', has no official lyrics."
+  ]
+}

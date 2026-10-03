@@ -1,0 +1,42 @@
+{
+  "code": "cr",
+  "name": "Costa Rica",
+  "officialName": "Republic of Costa Rica",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "San José",
+  "region": "Americas",
+  "subregion": "Central America",
+  "population": 5129910,
+  "area": 51100,
+  "languages": [
+    "Spanish"
+  ],
+  "currencies": [
+    "Costa Rican colón"
+  ],
+  "demonym": "Costa Rican",
+  "latlng": [
+    10,
+    -84
+  ],
+  "flag": {
+    "description": "Five horizontal bands of blue, white, red, white and blue, with the red band twice as tall as the others; the state flag places the coat of arms in a white oval on the red band toward the hoist.",
+    "adopted": "1848",
+    "colors": [
+      "red",
+      "blue",
+      "white"
+    ],
+    "symbolism": "Blue represents the sky and opportunity, white peace and wisdom, and red the warmth of the people and the blood shed for freedom."
+  },
+  "hook": "Costa Rica is Thailand inside out: a thick red middle band, white beside it, and blue on the outer edges.",
+  "lookalikes": [
+    "th",
+    "kp"
+  ],
+  "trivia": [
+    "The red band was added in 1848, inspired by the French tricolour; the design is credited to Pacífica Fernández, wife of President José María Castro Madriz.",
+    "Costa Rica abolished its army in 1948, a step written into its 1949 constitution."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "code": "ro",
+  "name": "Romania",
+  "officialName": "Romania",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Bucharest",
+  "region": "Europe",
+  "subregion": "Southeast Europe",
+  "population": 19051804,
+  "area": 238391,
+  "languages": [
+    "Romanian"
+  ],
+  "currencies": [
+    "Romanian leu"
+  ],
+  "demonym": "Romanian",
+  "latlng": [
+    46,
+    25
+  ],
+  "flag": {
+    "description": "Three equal vertical stripes of blue, yellow and red from the hoist.",
+    "adopted": "1989",
+    "colors": [
+      "blue",
+      "yellow",
+      "red"
+    ],
+    "symbolism": "The colours come from the historical principalities of Wallachia and Moldavia, and are popularly said to stand for liberty, justice and fraternity."
+  },
+  "hook": "Romania is plain blue-yellow-red with a bright cobalt blue; Chad's blue is a darker indigo, and Andorra and Moldova carry a crest.",
+  "lookalikes": [
+    "td",
+    "ad",
+    "md"
+  ],
+  "trivia": [
+    "During the 1989 revolution, protesters cut the communist coat of arms out of the centre of the flag.",
+    "Romania's flag is almost identical to Chad's; Chad raised the issue at the United Nations in 2004, but Romania kept its flag."
+  ]
+}

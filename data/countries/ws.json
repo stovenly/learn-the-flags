@@ -1,0 +1,45 @@
+{
+  "code": "ws",
+  "name": "Samoa",
+  "officialName": "Independent State of Samoa",
+  "aliases": [
+    "Western Samoa"
+  ],
+  "status": "un-member",
+  "capital": "Apia",
+  "region": "Oceania",
+  "subregion": "Polynesia",
+  "population": 218019,
+  "area": 2842,
+  "languages": [
+    "English",
+    "Samoan"
+  ],
+  "currencies": [
+    "Samoan tālā"
+  ],
+  "demonym": "Samoan",
+  "latlng": [
+    -13.58333333,
+    -172.33333333
+  ],
+  "flag": {
+    "description": "A red field with a blue rectangle in the upper hoist containing the Southern Cross as five white five-pointed stars, one of them smaller.",
+    "adopted": "1949",
+    "colors": [
+      "red",
+      "blue",
+      "white"
+    ],
+    "symbolism": "The Southern Cross marks Samoa's place in the southern sky; red is said to stand for courage, blue for freedom and white for purity."
+  },
+  "hook": "Samoa: a red flag with a blue corner holding the five white stars of the Southern Cross; Taiwan's blue corner holds a white sun instead.",
+  "lookalikes": [
+    "tw"
+  ],
+  "trivia": [
+    "Samoa skipped 30 December 2011 entirely when it moved to the west side of the International Date Line.",
+    "In 2009 Samoa switched from driving on the right to driving on the left.",
+    "The country was called Western Samoa until 1997."
+  ]
+}

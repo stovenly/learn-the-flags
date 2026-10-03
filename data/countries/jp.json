@@ -1,0 +1,41 @@
+{
+  "code": "jp",
+  "name": "Japan",
+  "officialName": "Japan",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Tokyo",
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "population": 123975371,
+  "area": 377930,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    "Japanese yen"
+  ],
+  "demonym": "Japanese",
+  "latlng": [
+    36,
+    138
+  ],
+  "flag": {
+    "description": "A white rectangular field with a single red disc in the exact centre.",
+    "adopted": "1999",
+    "colors": [
+      "white",
+      "red"
+    ],
+    "symbolism": "The red disc represents the sun, reflecting the country's name, Nihon, often translated as \"origin of the sun\"."
+  },
+  "hook": "Japan's red sun sits dead centre on white; Bangladesh puts its red disc off-centre on green, and Palau has a yellow moon on blue.",
+  "lookalikes": [
+    "bd",
+    "pw"
+  ],
+  "trivia": [
+    "The flag is called the Hinomaru, \"circle of the sun\".",
+    "It was used as a merchant flag from 1870, but only became the legally designated national flag in 1999, when its proportions were fixed and the disc was placed exactly in the centre."
+  ]
+}

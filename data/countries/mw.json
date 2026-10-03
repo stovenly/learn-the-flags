@@ -1,0 +1,43 @@
+{
+  "code": "mw",
+  "name": "Malawi",
+  "officialName": "Republic of Malawi",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Lilongwe",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "population": 21655286,
+  "area": 118484,
+  "languages": [
+    "English",
+    "Chewa"
+  ],
+  "currencies": [
+    "Malawian kwacha"
+  ],
+  "demonym": "Malawian",
+  "latlng": [
+    -13.5,
+    34
+  ],
+  "flag": {
+    "description": "Three horizontal stripes of black, red and green, with a red rising sun of 31 rays at the centre of the black stripe.",
+    "adopted": "2012",
+    "colors": [
+      "black",
+      "red",
+      "green"
+    ],
+    "symbolism": "Black stands for the African people, red for the blood of the martyrs and green for nature; the rising sun represents the dawn of hope and freedom."
+  },
+  "hook": "Malawi has a red sun rising out of the black top stripe; Kenya has the same colours but a shield in the middle.",
+  "lookalikes": [
+    "ke",
+    "ss"
+  ],
+  "trivia": [
+    "In 2010 Malawi switched to a red-black-green flag with a full white sun, but restored the original rising-sun design in 2012.",
+    "Lake Malawi is home to more fish species than any other lake, most of them cichlids."
+  ]
+}

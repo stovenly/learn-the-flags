@@ -1,0 +1,38 @@
+{
+  "code": "ua",
+  "name": "Ukraine",
+  "officialName": "Ukraine",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Kyiv",
+  "region": "Europe",
+  "subregion": "Eastern Europe",
+  "population": 37860221,
+  "area": 603500,
+  "languages": [
+    "Ukrainian"
+  ],
+  "currencies": [
+    "Ukrainian hryvnia"
+  ],
+  "demonym": "Ukrainian",
+  "latlng": [
+    49,
+    32
+  ],
+  "flag": {
+    "description": "Two equal horizontal bands, blue over yellow.",
+    "adopted": "1992",
+    "colors": [
+      "blue",
+      "yellow"
+    ],
+    "symbolism": "It is widely interpreted as a blue sky above golden fields of wheat."
+  },
+  "hook": "Blue sky over a golden wheat field: Ukraine is just two horizontal halves, while Sweden arranges the same colours as a cross.",
+  "lookalikes": [],
+  "trivia": [
+    "Blue-and-yellow banners were used by Ukrainians in Lviv during the revolutions of 1848.",
+    "Ukraine is the largest country lying entirely within Europe."
+  ]
+}

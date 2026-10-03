@@ -1,0 +1,44 @@
+{
+  "code": "tw",
+  "name": "Taiwan",
+  "officialName": "Republic of China (Taiwan)",
+  "aliases": [
+    "Republic of China",
+    "ROC"
+  ],
+  "status": "partially-recognized",
+  "capital": "Taipei",
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "population": 23400000,
+  "area": 36193,
+  "languages": [
+    "Chinese"
+  ],
+  "currencies": [
+    "New Taiwan dollar"
+  ],
+  "demonym": "Taiwanese",
+  "latlng": [
+    23.5,
+    121
+  ],
+  "flag": {
+    "description": "A red field with a blue canton containing a white sun with twelve triangular rays.",
+    "adopted": "1928",
+    "colors": [
+      "red",
+      "blue",
+      "white"
+    ],
+    "symbolism": "The colours are linked to Sun Yat-sen's Three Principles of the People: blue for nationalism and liberty, white for democracy and equality, and red for the people's livelihood; the sun's twelve rays represent the twelve months and twelve traditional two-hour periods of the day."
+  },
+  "hook": "Taiwan is red with a blue top-left corner holding a twelve-rayed white sun (\"blue sky, white sun\"); Samoa's blue corner holds the Southern Cross stars.",
+  "lookalikes": [
+    "ws"
+  ],
+  "trivia": [
+    "The blue canton with the white sun was designed by Lu Haodong in 1895.",
+    "At the Olympic Games, Taiwan competes as \"Chinese Taipei\" under a special flag rather than this one."
+  ]
+}

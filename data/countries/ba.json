@@ -1,0 +1,45 @@
+{
+  "code": "ba",
+  "name": "Bosnia and Herzegovina",
+  "officialName": "Bosnia and Herzegovina",
+  "aliases": [
+    "Bosnia"
+  ],
+  "status": "un-member",
+  "capital": "Sarajevo",
+  "region": "Europe",
+  "subregion": "Southeast Europe",
+  "population": 3164253,
+  "area": 51209,
+  "languages": [
+    "Bosnian",
+    "Croatian",
+    "Serbian"
+  ],
+  "currencies": [
+    "Bosnia and Herzegovina convertible mark"
+  ],
+  "demonym": "Bosnian, Herzegovinian",
+  "latlng": [
+    44,
+    18
+  ],
+  "flag": {
+    "description": "A blue field with a large yellow right-angled triangle near the fly side, and a diagonal line of white five-pointed stars (seven whole and two halved at the edges) running along its long side.",
+    "adopted": "1998",
+    "colors": [
+      "blue",
+      "yellow",
+      "white"
+    ],
+    "symbolism": "The triangle's three points stand for the three constituent peoples (Bosniaks, Croats and Serbs) and roughly echo the country's shape; the stars and blue recall the flag of Europe."
+  },
+  "hook": "A yellow triangle chased by a diagonal line of white stars that run off the edges: Bosnia's blue flag has no map or arc of stars like Kosovo's.",
+  "lookalikes": [
+    "xk"
+  ],
+  "trivia": [
+    "The flag was chosen by the international High Representative, Carlos Westendorp, after local politicians could not agree, and introduced in time for the 1998 Nagano Winter Olympics.",
+    "The half-stars at the top and bottom are meant to suggest the line of stars continues infinitely."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "code": "id",
+  "name": "Indonesia",
+  "officialName": "Republic of Indonesia",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Jakarta",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "population": 283487931,
+  "area": 1904569,
+  "languages": [
+    "Indonesian"
+  ],
+  "currencies": [
+    "Indonesian rupiah"
+  ],
+  "demonym": "Indonesian",
+  "latlng": [
+    -5,
+    120
+  ],
+  "flag": {
+    "description": "Two equal horizontal bands, red on top and white below, in a 2:3 proportion.",
+    "adopted": "1945",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "symbolism": "Red stands for courage and white for purity; the colours derive from the banner of the medieval Majapahit Empire."
+  },
+  "hook": "Indonesia is red over white, just like Monaco, but longer (2:3 versus Monaco's squarer 4:5); Poland flips it to white over red.",
+  "lookalikes": [
+    "mc",
+    "pl",
+    "sg"
+  ],
+  "trivia": [
+    "The flag is called Sang Saka Merah-Putih, \"the sacred red and white\", and was first officially raised on independence day, 17 August 1945.",
+    "Indonesia is the largest archipelagic country in the world, with more than 17,000 islands."
+  ]
+}

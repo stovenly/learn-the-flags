@@ -1,0 +1,41 @@
+{
+  "code": "bb",
+  "name": "Barbados",
+  "officialName": "Barbados",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Bridgetown",
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "population": 282467,
+  "area": 430,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    "Barbadian dollar"
+  ],
+  "demonym": "Barbadian",
+  "latlng": [
+    13.16666666,
+    -59.53333333
+  ],
+  "flag": {
+    "description": "Three equal vertical bands of ultramarine blue, gold and ultramarine blue, with a black trident head, its shaft broken off, in the centre of the gold band.",
+    "adopted": "1966",
+    "colors": [
+      "blue",
+      "yellow",
+      "black"
+    ],
+    "symbolism": "The blue bands represent the sea and sky and the gold band the sand; the broken trident, taken from the colonial badge of Britannia, symbolises the break from colonial rule."
+  },
+  "hook": "Barbados: a black trident with its shaft snapped off, standing on gold between two blue stripes, like Neptune breaking with the past.",
+  "lookalikes": [
+    "vc"
+  ],
+  "trivia": [
+    "The flag was designed by Grantley Prescod, whose entry won an open national competition before independence in 1966.",
+    "Barbados became a republic on 30 November 2021, replacing the British monarch as head of state with a president."
+  ]
+}

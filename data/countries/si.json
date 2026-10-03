@@ -1,0 +1,43 @@
+{
+  "code": "si",
+  "name": "Slovenia",
+  "officialName": "Republic of Slovenia",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Ljubljana",
+  "region": "Europe",
+  "subregion": "Central Europe",
+  "population": 2127400,
+  "area": 20273,
+  "languages": [
+    "Slovene"
+  ],
+  "currencies": [
+    "Euro"
+  ],
+  "demonym": "Slovene",
+  "latlng": [
+    46.11666666,
+    14.81666666
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of white, blue and red, with the coat of arms in the upper hoist side straddling the white and blue: a white three-peaked mountain over wavy blue lines, under three gold stars, on a blue shield edged in red.",
+    "adopted": "1991",
+    "colors": [
+      "white",
+      "blue",
+      "red"
+    ],
+    "symbolism": "White, blue and red are pan-Slavic colours; the mountain is Triglav, the country's highest peak, the wavy lines represent rivers and the sea, and the stars come from the Counts of Celje."
+  },
+  "hook": "Slovenia's small shield sits high and shows a three-peaked mountain with three stars; Slovakia's bigger shield has a white double cross, and Russia has no shield.",
+  "lookalikes": [
+    "sk",
+    "ru",
+    "rs"
+  ],
+  "trivia": [
+    "Mount Triglav, at 2,864 metres, is the highest mountain in Slovenia and appears on its coat of arms and euro coins.",
+    "Slovenia and Slovakia are mixed up so often that their embassies have reportedly met regularly to swap misdirected mail."
+  ]
+}

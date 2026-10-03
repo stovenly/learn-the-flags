@@ -1,0 +1,40 @@
+{
+  "code": "zm",
+  "name": "Zambia",
+  "officialName": "Republic of Zambia",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Lusaka",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "population": 21314956,
+  "area": 752612,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    "Zambian kwacha"
+  ],
+  "demonym": "Zambian",
+  "latlng": [
+    -15,
+    30
+  ],
+  "flag": {
+    "description": "A green field with a block of three vertical stripes, red, black and orange, in the lower fly, beneath an orange eagle in flight.",
+    "adopted": "1964",
+    "colors": [
+      "green",
+      "orange",
+      "red",
+      "black"
+    ],
+    "symbolism": "Green represents natural resources, red the struggle for freedom, black the people and orange the country's mineral wealth, especially copper; the eagle represents rising above the nation's problems."
+  },
+  "hook": "Zambia puts all its action in the fly corner: an orange fish eagle soaring over red, black and orange stripes on a green field.",
+  "lookalikes": [],
+  "trivia": [
+    "The eagle is an African fish eagle, the national bird.",
+    "Zambia shares Victoria Falls, locally Mosi-oa-Tunya, 'the smoke that thunders', with Zimbabwe."
+  ]
+}

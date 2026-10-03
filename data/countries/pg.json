@@ -1,0 +1,44 @@
+{
+  "code": "pg",
+  "name": "Papua New Guinea",
+  "officialName": "Independent State of Papua New Guinea",
+  "aliases": [
+    "PNG"
+  ],
+  "status": "un-member",
+  "capital": "Port Moresby",
+  "region": "Oceania",
+  "subregion": "Melanesia",
+  "population": 10576502,
+  "area": 462840,
+  "languages": [
+    "English",
+    "Hiri Motu",
+    "Tok Pisin"
+  ],
+  "currencies": [
+    "Papua New Guinean kina"
+  ],
+  "demonym": "Papua New Guinean",
+  "latlng": [
+    -6,
+    147
+  ],
+  "flag": {
+    "description": "Divided diagonally from upper hoist to lower fly: the upper fly triangle is red with a yellow bird-of-paradise, and the lower hoist triangle is black with the five white stars of the Southern Cross.",
+    "adopted": "1971",
+    "colors": [
+      "red",
+      "black",
+      "yellow",
+      "white"
+    ],
+    "symbolism": "Red and black are traditional colours in Papua New Guinean art; the bird-of-paradise symbolises the nation's emergence and the Southern Cross its place in the southern hemisphere."
+  },
+  "hook": "Split diagonally: a golden bird-of-paradise flies in the red half while the Southern Cross shines in the black half.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag was designed by Susan Karike, a 15-year-old schoolgirl, and chosen in 1971.",
+    "Papua New Guinea has over 800 living languages, more than any other country."
+  ]
+}

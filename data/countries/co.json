@@ -1,0 +1,42 @@
+{
+  "code": "co",
+  "name": "Colombia",
+  "officialName": "Republic of Colombia",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Bogotá",
+  "region": "Americas",
+  "subregion": "South America",
+  "population": 52886363,
+  "area": 1141748,
+  "languages": [
+    "Spanish"
+  ],
+  "currencies": [
+    "Colombian peso"
+  ],
+  "demonym": "Colombian",
+  "latlng": [
+    4,
+    -72
+  ],
+  "flag": {
+    "description": "Three horizontal bands of yellow, blue and red, with the yellow band taking up the top half and the blue and red each a quarter; there is no emblem.",
+    "adopted": "1861",
+    "colors": [
+      "yellow",
+      "blue",
+      "red"
+    ],
+    "symbolism": "Yellow is commonly said to represent the nation's wealth, blue its two seas and red the blood shed for independence."
+  },
+  "hook": "Colombia is the plain one: a double-height yellow band with no emblem; Ecuador adds a condor coat of arms and Venezuela an arc of stars.",
+  "lookalikes": [
+    "ec",
+    "ve"
+  ],
+  "trivia": [
+    "The yellow, blue and red colours come from the flag of independence leader Francisco de Miranda and are shared with Ecuador and Venezuela, the other heirs of Gran Colombia.",
+    "Colombia is named after Christopher Columbus and is the only South American country with coastlines on both the Pacific and the Caribbean."
+  ]
+}

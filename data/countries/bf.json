@@ -1,0 +1,39 @@
+{
+  "code": "bf",
+  "name": "Burkina Faso",
+  "officialName": "Burkina Faso",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Ouagadougou",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "population": 23548781,
+  "area": 272967,
+  "languages": [
+    "French"
+  ],
+  "currencies": [
+    "West African CFA franc"
+  ],
+  "demonym": "Burkinabe",
+  "latlng": [
+    13,
+    -2
+  ],
+  "flag": {
+    "description": "Two horizontal bands, red over green, with a yellow five-pointed star in the centre.",
+    "adopted": "1984",
+    "colors": [
+      "red",
+      "green",
+      "yellow"
+    ],
+    "symbolism": "Red recalls the revolution and the struggle for liberation, green the country's agricultural wealth and hope, and the yellow star the guiding light of the revolution."
+  },
+  "hook": "Burkina Faso is a red sky over green fields with one yellow star in the middle, as if Vietnam's flag were standing on a lawn.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag was introduced in 1984, when Thomas Sankara renamed Upper Volta to Burkina Faso, roughly 'land of upright people'.",
+    "It replaced a black-white-red tricolour whose stripes stood for the Black, White and Red Volta rivers."
+  ]
+}

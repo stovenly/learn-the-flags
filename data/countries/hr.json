@@ -1,0 +1,43 @@
+{
+  "code": "hr",
+  "name": "Croatia",
+  "officialName": "Republic of Croatia",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Zagreb",
+  "region": "Europe",
+  "subregion": "Southeast Europe",
+  "population": 3866200,
+  "area": 56594,
+  "languages": [
+    "Croatian"
+  ],
+  "currencies": [
+    "Euro"
+  ],
+  "demonym": "Croatian",
+  "latlng": [
+    45.16666666,
+    15.5
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of red, white and blue, with the coat of arms in the centre: a red-and-white checkerboard shield topped by a crown of five small historical shields.",
+    "adopted": "1990",
+    "colors": [
+      "red",
+      "white",
+      "blue"
+    ],
+    "symbolism": "Red, white and blue are pan-Slavic colours; the checkerboard is Croatia's traditional arms, and the five crown shields represent historic regions including Dubrovnik, Dalmatia, Istria and Slavonia."
+  },
+  "hook": "Red-white-blue with a red-and-white chessboard shield in the middle: Croatia plays chess, while the Netherlands is plain and Serbia runs red-blue-white.",
+  "lookalikes": [
+    "nl",
+    "py",
+    "rs"
+  ],
+  "trivia": [
+    "The checkerboard shield, called the šahovnica, has been a Croatian symbol since at least the 15th century.",
+    "The necktie takes its name, 'cravat', from the scarves worn by Croatian soldiers in 17th-century France."
+  ]
+}

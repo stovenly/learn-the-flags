@@ -1,0 +1,43 @@
+{
+  "code": "km",
+  "name": "Comoros",
+  "officialName": "Union of the Comoros",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Moroni",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "population": 866628,
+  "area": 1862,
+  "languages": [
+    "Arabic",
+    "French",
+    "Comorian"
+  ],
+  "currencies": [
+    "Comorian franc"
+  ],
+  "demonym": "Comoran",
+  "latlng": [
+    -12.16666666,
+    44.25
+  ],
+  "flag": {
+    "description": "Four horizontal stripes of yellow, white, red and blue, with a green triangle at the hoist containing a white crescent and four white five-pointed stars in a vertical line.",
+    "adopted": "2002",
+    "colors": [
+      "green",
+      "yellow",
+      "white",
+      "red",
+      "blue"
+    ],
+    "symbolism": "The four stripes and four stars represent the islands of Mohéli (yellow), Mayotte (white), Anjouan (red) and Grande Comore (blue); the green and crescent represent Islam."
+  },
+  "hook": "Comoros counts four stripes and four stars for four islands in a green hoist triangle, including Mayotte, which France still governs.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag still claims Mayotte, which voted to remain with France and is now a French department.",
+    "The waters off the Comoros are home to coelacanths, a 'living fossil' fish once thought extinct for millions of years."
+  ]
+}

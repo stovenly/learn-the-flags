@@ -1,0 +1,45 @@
+{
+  "code": "sg",
+  "name": "Singapore",
+  "officialName": "Republic of Singapore",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Singapore",
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "population": 6036860,
+  "area": 710,
+  "languages": [
+    "English",
+    "Malay",
+    "Tamil",
+    "Chinese"
+  ],
+  "currencies": [
+    "Singapore dollar"
+  ],
+  "demonym": "Singaporean",
+  "latlng": [
+    1.36666666,
+    103.8
+  ],
+  "flag": {
+    "description": "Two equal horizontal bands, red over white, with a white crescent and a ring of five small white five-pointed stars in the upper hoist of the red band.",
+    "adopted": "1959",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "symbolism": "Red represents universal brotherhood and equality, white purity and virtue; the crescent stands for a young nation and the five stars for democracy, peace, progress, justice and equality."
+  },
+  "hook": "Singapore is red over white like Indonesia, but with a white crescent and five stars in the top-left corner.",
+  "lookalikes": [
+    "id",
+    "mc",
+    "pl"
+  ],
+  "trivia": [
+    "The flag was adopted in 1959 when Singapore became self-governing and was kept at full independence in 1965.",
+    "Singapore is one of only a few city-states in the world, with the whole country governed as a single city."
+  ]
+}

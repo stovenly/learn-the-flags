@@ -1,0 +1,40 @@
+{
+  "code": "kz",
+  "name": "Kazakhstan",
+  "officialName": "Republic of Kazakhstan",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Astana",
+  "region": "Asia",
+  "subregion": "Central Asia",
+  "population": 20592571,
+  "area": 2724900,
+  "languages": [
+    "Kazakh",
+    "Russian"
+  ],
+  "currencies": [
+    "Kazakhstani tenge"
+  ],
+  "demonym": "Kazakhstani",
+  "latlng": [
+    48,
+    68
+  ],
+  "flag": {
+    "description": "A sky-blue field with a gold sun of 32 rays above a gold soaring steppe eagle in the centre, and a vertical gold ornamental pattern along the hoist.",
+    "adopted": "1992",
+    "colors": [
+      "light-blue",
+      "yellow"
+    ],
+    "symbolism": "Sky blue stands for peace, freedom and the Turkic heritage, the sun for life and abundance, the eagle for freedom and power, and the ornament for Kazakh culture."
+  },
+  "hook": "Kazakhstan is a golden sun and eagle soaring across a turquoise sky, with a golden folk-art ribbon down the hoist side.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag was designed by Shaken Niyazbekov.",
+    "Kazakhstan is the largest landlocked country in the world.",
+    "The Baikonur Cosmodrome, from which the first person in space was launched in 1961, is in Kazakhstan."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "code": "so",
+  "name": "Somalia",
+  "officialName": "Federal Republic of Somalia",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Mogadishu",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "population": 19009151,
+  "area": 637657,
+  "languages": [
+    "Arabic",
+    "Somali"
+  ],
+  "currencies": [
+    "Somali shilling"
+  ],
+  "demonym": "Somali",
+  "latlng": [
+    10,
+    49
+  ],
+  "flag": {
+    "description": "A light blue field with a large white five-pointed star in the centre.",
+    "adopted": "1954",
+    "colors": [
+      "light-blue",
+      "white"
+    ],
+    "symbolism": "The blue was inspired by the United Nations flag and represents the sky and ocean; the five points of the star represent the five regions inhabited by Somali people."
+  },
+  "hook": "Somalia is a single white star on UN sky blue, one point for each region where Somalis live.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag was designed in 1954 by Mohammed Awale Liban, while Somalia was a UN trust territory.",
+    "Somalia has the longest coastline of any country on mainland Africa."
+  ]
+}

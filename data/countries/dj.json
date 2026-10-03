@@ -1,0 +1,41 @@
+{
+  "code": "dj",
+  "name": "Djibouti",
+  "officialName": "Republic of Djibouti",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Djibouti",
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "population": 1168722,
+  "area": 23200,
+  "languages": [
+    "Arabic",
+    "French"
+  ],
+  "currencies": [
+    "Djiboutian franc"
+  ],
+  "demonym": "Djibouti",
+  "latlng": [
+    11.5,
+    43
+  ],
+  "flag": {
+    "description": "Two horizontal bands, light blue over green, with a white triangle at the hoist containing a red five-pointed star.",
+    "adopted": "1977",
+    "colors": [
+      "light-blue",
+      "green",
+      "white",
+      "red"
+    ],
+    "symbolism": "Blue stands for the sea and sky and the Issa people, green for the earth and the Afar people, white for peace, and the red star for unity."
+  },
+  "hook": "Djibouti sets a red star in a white hoist triangle over sky-blue and green halves: Issa sky above, Afar earth below.",
+  "lookalikes": [],
+  "trivia": [
+    "Lake Assal, about 155 m below sea level, is the lowest point in Africa.",
+    "Djibouti hosts China's first overseas military base, opened in 2017, alongside bases of the United States, France and others."
+  ]
+}

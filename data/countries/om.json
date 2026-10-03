@@ -1,0 +1,39 @@
+{
+  "code": "om",
+  "name": "Oman",
+  "officialName": "Sultanate of Oman",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Muscat",
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "population": 5281538,
+  "area": 309500,
+  "languages": [
+    "Arabic"
+  ],
+  "currencies": [
+    "Omani rial"
+  ],
+  "demonym": "Omani",
+  "latlng": [
+    21,
+    57
+  ],
+  "flag": {
+    "description": "A vertical red band at the hoist and a horizontal red band across the middle, with white above and green below on the fly side; the white national emblem of a khanjar dagger over two crossed swords sits in the upper hoist.",
+    "adopted": "1995",
+    "colors": [
+      "red",
+      "white",
+      "green"
+    ],
+    "symbolism": "White represents peace and prosperity, red the battles against invaders, and green the fertility of the land; the khanjar and swords are traditional symbols of the nation."
+  },
+  "hook": "Oman has a red band like a sideways \"T\" splitting white from green, with a curved khanjar dagger and crossed swords in the top-left corner.",
+  "lookalikes": [],
+  "trivia": [
+    "Before 1970 Oman used a plain red flag.",
+    "The khanjar dagger also appears on Omani banknotes and is still worn on formal occasions."
+  ]
+}

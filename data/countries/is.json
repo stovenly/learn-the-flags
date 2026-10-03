@@ -1,0 +1,41 @@
+{
+  "code": "is",
+  "name": "Iceland",
+  "officialName": "Iceland",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Reykjavik",
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "population": 386506,
+  "area": 103000,
+  "languages": [
+    "Icelandic"
+  ],
+  "currencies": [
+    "Icelandic króna"
+  ],
+  "demonym": "Icelander",
+  "latlng": [
+    65,
+    -18
+  ],
+  "flag": {
+    "description": "A blue field with a red Nordic cross outlined in white, its vertical arm shifted towards the hoist.",
+    "adopted": "1944",
+    "colors": [
+      "blue",
+      "red",
+      "white"
+    ],
+    "symbolism": "Red is for volcanic fire, white for ice and snow, and blue for the mountains and surrounding sea."
+  },
+  "hook": "Fire inside ice on a blue sea: Iceland's red cross edged in white on blue is Norway's flag with the red and blue swapped.",
+  "lookalikes": [
+    "no"
+  ],
+  "trivia": [
+    "The flag was first recognised by Denmark in 1915 and became the flag of the republic in 1944.",
+    "Iceland's parliament, the Althing, was founded in 930 and is one of the oldest in the world."
+  ]
+}

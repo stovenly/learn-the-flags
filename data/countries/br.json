@@ -1,0 +1,41 @@
+{
+  "code": "br",
+  "name": "Brazil",
+  "officialName": "Federative Republic of Brazil",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Brasília",
+  "region": "Americas",
+  "subregion": "South America",
+  "population": 211998573,
+  "area": 8515767,
+  "languages": [
+    "Portuguese"
+  ],
+  "currencies": [
+    "Brazilian real"
+  ],
+  "demonym": "Brazilian",
+  "latlng": [
+    -10,
+    -55
+  ],
+  "flag": {
+    "description": "A green field with a large yellow rhombus in the centre, holding a blue globe of the night sky with 27 white stars, crossed by a curved white band with the motto \"ORDEM E PROGRESSO\" in green.",
+    "adopted": "1992",
+    "colors": [
+      "green",
+      "yellow",
+      "blue",
+      "white"
+    ],
+    "symbolism": "Green and yellow come from the royal houses of Braganza and Habsburg of the first emperor and empress, and are popularly read as forests and gold; the 27 stars represent the states and the Federal District."
+  },
+  "hook": "Brazil is the only flag with a starry blue globe inside a yellow diamond on green, wrapped in the banner \"Ordem e Progresso\".",
+  "lookalikes": [],
+  "trivia": [
+    "The stars show the sky over Rio de Janeiro on the morning of 15 November 1889, when the republic was proclaimed.",
+    "The basic design dates from 1889; the star count has been updated as states were created, reaching 27 in 1992.",
+    "The motto \"Ordem e Progresso\" (Order and Progress) was inspired by the positivist philosopher Auguste Comte."
+  ]
+}

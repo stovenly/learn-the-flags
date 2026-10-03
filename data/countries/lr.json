@@ -1,0 +1,43 @@
+{
+  "code": "lr",
+  "name": "Liberia",
+  "officialName": "Republic of Liberia",
+  "aliases": [],
+  "status": "un-member",
+  "capital": "Monrovia",
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "population": 5612817,
+  "area": 111369,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    "Liberian dollar"
+  ],
+  "demonym": "Liberian",
+  "latlng": [
+    6.5,
+    -9.5
+  ],
+  "flag": {
+    "description": "Eleven horizontal stripes alternating red and white, with a blue square canton in the upper hoist bearing a single white five-pointed star.",
+    "adopted": "1847",
+    "colors": [
+      "red",
+      "white",
+      "blue"
+    ],
+    "symbolism": "The eleven stripes stand for the signatories of Liberia's Declaration of Independence; the lone star represents Liberia as Africa's first independent republic."
+  },
+  "hook": "Liberia is the 'Lone Star' flag: US-style red and white stripes but only eleven of them, and a single white star in the blue square.",
+  "lookalikes": [
+    "us",
+    "my",
+    "tg"
+  ],
+  "trivia": [
+    "Liberia was founded by the American Colonization Society as a home for freed African Americans, and its capital Monrovia is named after US President James Monroe.",
+    "Liberia runs one of the world's largest ship registries, so many ocean-going ships fly its flag."
+  ]
+}
