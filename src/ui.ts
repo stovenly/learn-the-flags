@@ -29,9 +29,33 @@ export function mapImg(c: Country, size: 'xs' | 'sm' | 'md' | 'lg' = 'md', plain
   return `<img class="map map-${size}" src="${mapSrc(c.code, plain)}" width="150" height="100" alt="Map showing where ${esc(c.name)} is" decoding="async" draggable="false">`;
 }
 
-export function differencesHtml(c: Country, others: Country[]) {
-  const items = others.filter((o) => c.differences[o.code]).map((o) => `<li>${esc(c.differences[o.code])}</li>`);
-  return items.length ? `<div class="tell"><span class="hook-label">How to tell them apart</span><ul>${items.join('')}</ul></div>` : '';
+const ICONS = {
+  hook: '<path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.8c.6.5 1 1.2 1 2V16h5.2v-.2c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z"/>',
+  tell: '<circle cx="12" cy="12" r="3"/><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/>',
+  check: '<path d="M5 12.5l4.5 4.5L19 7.5"/>',
+  cross: '<path d="M6 6l12 12M18 6L6 18"/>',
+  arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
+};
+
+export const icon = (name: keyof typeof ICONS, cls = 'icon') =>
+  `<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${ICONS[name]}</svg>`;
+
+// A flag centred in a fixed 3:2 frame, so rows and grids line up whatever the flag's proportions.
+export const thumb = (c: Country, lazy = false) => `<span class="thumb">${flagImg(c, { size: 'sm', lazy, alt: '' })}</span>`;
+
+export function hookHtml(c: Country, label = 'Memory hook') {
+  return c.hook ? `<div class="note note-hook">${icon('hook')}<div><span class="note-label">${label}</span><p>${esc(c.hook)}</p></div></div>` : '';
+}
+
+// One row per lookalike: its flag, its name, and how to tell it apart from `c`.
+export function pairList(c: Country, others: Country[], link = false) {
+  if (!others.length) return '';
+  return `<ul class="pairs">${others
+    .map((o) => {
+      const tag = link ? `a href="${countryLink(o)}"` : 'div';
+      return `<li><${tag} class="pair">${thumb(o)}<span><strong>${esc(o.name)}</strong>${c.differences[o.code] ? `<span class="pair-text">${esc(c.differences[o.code])}</span>` : ''}</span></${link ? 'a' : 'div'}></li>`;
+    })
+    .join('')}</ul>`;
 }
 
 export const countryLink = (c: Country) => `#/flag/${c.slug}`;

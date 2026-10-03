@@ -1,6 +1,6 @@
 import { ALL, currencyText, fmtNumber, fmtPopulation, localNameText, preload, preloadMap, STATUS_LABEL } from '../data';
 import { level } from '../store';
-import { countryLink, esc, flagImg, lookalikeList, mapImg, renderWhenReady } from '../ui';
+import { esc, flagImg, hookHtml, lookalikeList, mapImg, pairList, renderWhenReady } from '../ui';
 
 const SWATCH: Record<string, string> = {
   red: '#d62828', orange: '#f77f00', yellow: '#fcbf49', green: '#2a9d4b', blue: '#1d4e9e', 'light-blue': '#5fa8e0',
@@ -15,68 +15,68 @@ export function countryView(root: HTMLElement, slug: string) {
   }
   document.title = `Flag of ${c.name} · Learn the Flags`;
   const lv = level(c.code);
-  const badge = lv === 'new' ? '' : `<span class="badge badge-${lv}">${lv === 'learning' ? 'Learning' : 'Learned'}</span>`;
+  const tags = [
+    c.subregion || c.region,
+    c.status !== 'un-member' ? STATUS_LABEL[c.status] : '',
+  ].filter(Boolean);
   const facts: [string, string][] = [
-    ['Region', c.subregion || c.region],
     ['Population', fmtPopulation(c.population)],
     ['Area', c.area ? `${fmtNumber(Math.round(c.area))} km²` : '—'],
     ['Languages', c.languages.join(', ')],
     ['Currency', currencyText(c)],
+    ['Demonym', c.demonym],
   ];
   const looks = lookalikeList(c);
   const html = `
     <a class="back" href="#/browse">← All flags</a>
     <article class="country">
-      <div class="country-flag card">${flagImg(c, { size: 'lg' })}</div>
-      <header class="country-head">
-        <h1>${esc(c.name)} ${badge}</h1>
-        ${localNameText(c) ? `<p class="local-name">${esc(localNameText(c))}</p>` : ''}
-        ${(() => {
-          const sub = [c.officialName !== c.name ? c.officialName : '', c.status !== 'un-member' ? STATUS_LABEL[c.status] : ''].filter(Boolean).join(' · ');
-          return sub ? `<p class="muted">${esc(sub)}</p>` : '';
-        })()}
+      <header class="card country-hero">
+        <div class="country-flag">${flagImg(c, { size: 'lg' })}</div>
+        <div class="country-id">
+          <h1>${esc(c.name)}</h1>
+          ${localNameText(c) ? `<p class="local-name">${esc(localNameText(c))}</p>` : ''}
+          ${c.officialName !== c.name ? `<p class="muted">${esc(c.officialName)}</p>` : ''}
+          <div class="tags">
+            ${tags.map((t) => `<span class="tag">${esc(t)}</span>`).join('')}
+            ${lv === 'new' ? '' : `<span class="tag tag-${lv === 'learning' ? 'learning' : 'learned'}">${lv === 'learning' ? 'Learning' : 'Learned'}</span>`}
+          </div>
+        </div>
       </header>
 
-      <section class="card map-card">${mapImg(c, 'lg')}</section>
+      <div class="country-body">
+        <div class="country-main">
+          <section class="card">
+            <h2>About the flag</h2>
+            ${c.flag.description ? `<p>${esc(c.flag.description)}</p>` : ''}
+            ${c.flag.symbolism ? `<p class="muted">${esc(c.flag.symbolism)}</p>` : ''}
+            <div class="flag-meta">
+              ${c.flag.adopted ? `<span><span class="muted">Adopted</span> ${esc(c.flag.adopted)}</span>` : ''}
+              ${
+                c.flag.colors.length
+                  ? `<span class="swatches" aria-label="Colours: ${esc(c.flag.colors.join(', ').replace(/-/g, ' '))}">${c.flag.colors.map((col) => `<i style="background:${SWATCH[col]}" title="${col.replace('-', ' ')}"></i>`).join('')}</span>`
+                  : ''
+              }
+            </div>
+            ${hookHtml(c)}
+          </section>
 
-      <section class="card">
-        <h2>The flag</h2>
-        ${c.flag.description ? `<p>${esc(c.flag.description)}</p>` : ''}
-        ${c.flag.symbolism ? `<p class="muted">${esc(c.flag.symbolism)}</p>` : ''}
-        <div class="flag-meta">
-          ${c.flag.adopted ? `<span><span class="muted">Adopted</span> ${esc(c.flag.adopted)}</span>` : ''}
+          ${looks.length ? `<section class="card"><h2>Easy to confuse with</h2>${pairList(c, looks, true)}</section>` : ''}
+
           ${
-            c.flag.colors.length
-              ? `<span class="swatches">${c.flag.colors.map((col) => `<i style="background:${SWATCH[col]}" title="${col.replace('-', ' ')}"></i>`).join('')}</span>`
+            c.trivia.length
+              ? `<section class="card"><h2>Did you know?</h2><ul class="trivia">${c.trivia.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>`
               : ''
           }
         </div>
-        ${c.hook ? `<div class="hook"><span class="hook-label">Memory hook</span><p>${esc(c.hook)}</p></div>` : ''}
-      </section>
 
-      ${
-        c.trivia.length
-          ? `<section class="card"><h2>Did you know?</h2><ul class="trivia">${c.trivia.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>`
-          : ''
-      }
-
-      <section class="card">
-        <h2>Quick facts</h2>
-        <dl class="facts">${facts.map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v || '—')}</dd></div>`).join('')}</dl>
-      </section>
-
-      ${
-        looks.length
-          ? `<section class="card"><h2>Easy to confuse with</h2><div class="confusables">${looks
-              .map(
-                (o) => `<a class="confusable" href="${countryLink(o)}">
-                  <span class="mini-flag">${flagImg(o, { size: 'sm' })}</span>
-                  <span><strong>${esc(o.name)}</strong>${c.differences[o.code] ? `<span class="muted">${esc(c.differences[o.code])}</span>` : ''}</span>
-                </a>`,
-              )
-              .join('')}</div></section>`
-          : ''
-      }
+        <aside class="country-side">
+          <section class="card map-card">${mapImg(c, 'lg')}</section>
+          <section class="card">
+            <h2>Quick facts</h2>
+            <dl class="facts">${facts.filter(([, v]) => v).map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>
+          </section>
+        </aside>
+      </div>
     </article>`;
   renderWhenReady(root, html, [preload(c.code), preloadMap(c.code)]);
 }

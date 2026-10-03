@@ -15,16 +15,21 @@ function select<K extends keyof Settings>(key: K, label: string, options: [Setti
 export function settingsView(root: HTMLElement) {
   root.innerHTML = `
     <header class="page-head"><h1>Settings</h1></header>
+    <h2 class="group-title">Learning</h2>
     <section class="card form">
       ${select('lessonSize', 'New flags per lesson', [[3, '3'], [5, '5'], [8, '8'], [10, '10']])}
       ${select('focusRegion', 'Learn new flags from', [['all', 'Everywhere'], ...REGIONS.map((r) => [r, r] as [string, string])])}
       ${select('answerStyle', 'Answer by', [['auto', 'Mix of picking and typing'], ['choice', 'Picking only'], ['typing', 'Typing only']])}
       ${select('includePartial', 'Include Kosovo and Taiwan', [[false, 'No'], [true, 'Yes']], 'Partially recognized states')}
-      ${select('theme', 'Appearance', [['auto', 'Match system'], ['light', 'Light'], ['dark', 'Dark']])}
     </section>
 
+    <h2 class="group-title">Appearance</h2>
+    <section class="card form">
+      ${select('theme', 'Theme', [['auto', 'Match system'], ['light', 'Light'], ['dark', 'Dark']])}
+    </section>
+
+    <h2 class="group-title">Your data</h2>
     <section class="card">
-      <h2>Your progress</h2>
       <p class="muted">Progress is stored in this browser only. Save a backup to move it to another device.</p>
       <div class="actions left">
         <button class="btn ghost" data-act="export">Save backup</button>

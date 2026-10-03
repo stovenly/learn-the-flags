@@ -1,9 +1,12 @@
 import { byCode, Country, REGIONS } from '../data';
+import { onCleanup } from '../router';
+import { dayNumber } from '../srs';
 import { deck, level, Level, SessionLog, state, streak } from '../store';
-import { $, $$, countryLink, esc, flagImg, plural } from '../ui';
+import { $, $$, countryLink, esc, flagImg, plural, thumb } from '../ui';
 
 type Status = 'learned' | 'learning' | 'new';
 const statusOf = (lv: Level): Status => (lv === 'known' || lv === 'mastered' ? 'learned' : lv);
+const STATUS_TEXT: Record<Status, string> = { learned: 'Learned', learning: 'In progress', new: 'Not started' };
 
 const INFO = {
   learned: "You've got this flag right over several days. It's solid enough that it only comes back every week or more for a quick check.",
@@ -17,8 +20,8 @@ function info(label: string, text: string) {
 function meter(learned: number, learning: number, total: number) {
   const pct = (n: number) => (total ? (n / total) * 100 : 0);
   return `<div class="meter" role="img" aria-label="${learned} learned, ${learning} in progress, of ${total}">
-    ${learned ? `<span class="seg seg-learned" style="width:${pct(learned)}%" title="Learned: ${learned}"></span>` : ''}
-    ${learning ? `<span class="seg seg-learning" style="width:${pct(learning)}%" title="In progress: ${learning}"></span>` : ''}
+    ${learned ? `<span class="seg seg-learned" style="width:${pct(learned)}%"></span>` : ''}
+    ${learning ? `<span class="seg seg-learning" style="width:${pct(learning)}%"></span>` : ''}
   </div>`;
 }
 
@@ -34,23 +37,84 @@ function when(ms: number): string {
 
 const minutes = (ms: number) => (ms < 60000 ? '<1 min' : `${Math.round(ms / 60000)} min`);
 
+function fromNow(ms: number): string {
+  const d = dayNumber(ms) - dayNumber(Date.now());
+  if (d === 0) return 'today';
+  if (d === 1) return 'tomorrow';
+  if (d === -1) return 'yesterday';
+  return d > 0 ? `in ${plural(d, 'day')}` : `${plural(-d, 'day')} ago`;
+}
+
 function sessionRow(s: SessionLog) {
   const learned = s.learned.map((k) => byCode.get(k)).filter((c): c is Country => !!c);
   const pct = Math.round((s.correct / s.answered) * 100);
   return `<li class="history-row">
     <div class="history-main">
       <strong>${when(s.at)}</strong>
-      <span class="muted">${minutes(s.ms)} · ${plural(s.answered, 'answer')} · ${pct}% correct${learned.length ? ` · ${plural(learned.length, 'new flag')}` : ''}</span>
+      <span class="muted">${minutes(s.ms)} · ${plural(s.answered, 'answer')} · ${pct}% correct</span>
     </div>
     ${
       learned.length
         ? `<div class="history-flags">${learned
-            .slice(0, 8)
-            .map((c) => `<a href="${countryLink(c)}" title="${esc(c.name)}">${flagImg(c, { size: 'sm', lazy: true })}</a>`)
-            .join('')}${learned.length > 8 ? `<span class="muted">+${learned.length - 8}</span>` : ''}</div>`
+            .slice(0, 5)
+            .map((c) => `<a href="${countryLink(c)}" data-tip="${c.code}" aria-label="${esc(c.name)}">${flagImg(c, { size: 'sm', lazy: true, alt: '' })}</a>`)
+            .join('')}${learned.length > 5 ? `<span class="muted small">+${learned.length - 5}</span>` : ''}</div>`
         : ''
     }
   </li>`;
+}
+
+function tipHtml(c: Country) {
+  const s = statusOf(level(c.code));
+  const m = state.cards[c.code];
+  const lines = [c.subregion || c.region];
+  if (m) {
+    lines.push(`Practised ${fromNow(m.last)}`);
+    lines.push(m.due <= Date.now() ? 'Due for review now' : `Next review ${fromNow(m.due)}`);
+    if (m.lapses) lines.push(`Forgotten ${m.lapses === 1 ? 'once' : `${m.lapses} times`}`);
+  }
+  return `<div class="tip-head"><strong>${esc(c.name)}</strong><span class="tip-status is-${s}">${STATUS_TEXT[s]}</span></div>${lines
+    .map((l) => `<span>${esc(l)}</span>`)
+    .join('')}`;
+}
+
+function attachTips(root: HTMLElement) {
+  const tip = document.createElement('div');
+  tip.className = 'tip';
+  tip.setAttribute('role', 'tooltip');
+  tip.hidden = true;
+  root.append(tip);
+  let current: HTMLElement | null = null;
+  const show = (el: HTMLElement) => {
+    const c = byCode.get(el.dataset.tip!);
+    if (!c) return;
+    current = el;
+    tip.innerHTML = tipHtml(c);
+    tip.hidden = false;
+    const r = el.getBoundingClientRect();
+    const t = tip.getBoundingClientRect();
+    const above = r.top - t.height - 8;
+    tip.style.left = `${Math.min(Math.max(8, r.left + r.width / 2 - t.width / 2), innerWidth - t.width - 8)}px`;
+    tip.style.top = `${above >= 8 ? above : r.bottom + 8}px`;
+  };
+  const hide = () => {
+    current = null;
+    tip.hidden = true;
+  };
+  const tileOf = (e: Event) => (e.target as HTMLElement).closest<HTMLElement>('[data-tip]');
+  root.addEventListener('pointerover', (e) => {
+    const el = tileOf(e);
+    if (!el) hide();
+    else if (el !== current && e.pointerType === 'mouse') show(el);
+  });
+  root.addEventListener('pointerleave', hide);
+  root.addEventListener('focusin', (e) => {
+    const el = tileOf(e);
+    if (el) show(el);
+  });
+  root.addEventListener('focusout', hide);
+  addEventListener('scroll', hide, { passive: true });
+  onCleanup(() => removeEventListener('scroll', hide));
 }
 
 let gridFilter: Status | 'all' = 'all';
@@ -68,6 +132,19 @@ export function progressView(root: HTMLElement) {
     return { learned, learning, fresh: list.length - learned - learning, total: list.length };
   };
   const overall = count(all);
+  const sessions = state.sessions;
+
+  if (!overall.learned && !overall.learning) {
+    root.innerHTML = `
+      <header class="page-head"><h1>Progress</h1></header>
+      <section class="card empty-state">
+        <h2>Nothing here yet</h2>
+        <p class="muted">Finish your first lesson and your flags, streak and sessions will show up here.</p>
+        <a class="btn primary" href="#/study">Start learning</a>
+      </section>`;
+    return;
+  }
+
   const answers = Object.values(state.days).reduce((n, d) => n + d.reviews, 0);
   const correct = Object.values(state.days).reduce((n, d) => n + d.correct, 0);
   const tricky = Object.entries(state.cards)
@@ -76,34 +153,32 @@ export function progressView(root: HTMLElement) {
     .slice(0, 8)
     .map(([k]) => byCode.get(k))
     .filter((c): c is Country => !!c);
-  const sessions = state.sessions;
 
   root.innerHTML = `
     <header class="page-head"><h1>Progress</h1></header>
-    <section class="card">
-      <div class="stats">
-        <div><strong>${overall.learned}</strong><span>flags learned ${info('learned', INFO.learned)}</span></div>
-        <div><strong>${overall.learning}</strong><span>in progress ${info('in progress', INFO.learning)}</span></div>
-        <div><strong>${streak()}</strong><span>day streak</span></div>
-        <div><strong>${answers ? Math.round((correct / answers) * 100) + '%' : '—'}</strong><span>accuracy</span></div>
+    <section class="card overview">
+      <div class="overview-main">
+        <div class="big-number"><strong>${overall.learned}</strong><span>of ${overall.total} flags learned ${info("learned", INFO.learned)}</span></div>
+        ${meter(overall.learned, overall.learning, overall.total)}
+        <div class="legend">
+          <span><i class="seg-learned"></i>Learned ${overall.learned}</span>
+          <span><i class="seg-learning"></i>In progress ${overall.learning} ${info('in progress', INFO.learning)}</span>
+          <span><i class="seg-empty"></i>Not started ${overall.fresh}</span>
+        </div>
+        <div class="stats">
+          <div class="stat"><strong>${streak()}</strong><span>day streak</span></div>
+          <div class="stat"><strong>${answers ? Math.round((correct / answers) * 100) + '%' : '—'}</strong><span>accuracy</span></div>
+          <div class="stat"><strong>${sessions.length}</strong><span>${sessions.length === 1 ? 'session' : 'sessions'}</span></div>
+        </div>
       </div>
-      ${meter(overall.learned, overall.learning, overall.total)}
-      <div class="legend">
-        <span><i class="seg-learned"></i>Learned</span>
-        <span><i class="seg-learning"></i>In progress</span>
-        <span><i class="seg-empty"></i>Not started</span>
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>By region</h2>
-      <div class="regions">
+      <div class="overview-regions">
+        <h2 class="label">By region</h2>
         ${REGIONS.map((r) => {
           const s = count(all.filter((c) => c.region === r));
           return `<div class="region-row">
             <span class="region-name">${r}</span>
             ${meter(s.learned, s.learning, s.total)}
-            <span class="region-count muted">${s.learned} / ${s.total}</span>
+            <span class="region-count muted">${s.learned}/${s.total}</span>
           </div>`;
         }).join('')}
       </div>
@@ -115,10 +190,10 @@ export function progressView(root: HTMLElement) {
         <div class="chips" role="group" aria-label="Show">
           ${(
             [
-              ['all', `All ${overall.total}`],
-              ['learned', `Learned ${overall.learned}`],
-              ['learning', `In progress ${overall.learning}`],
-              ['new', `Not started ${overall.fresh}`],
+              ['all', 'All'],
+              ['learned', 'Learned'],
+              ['learning', 'In progress'],
+              ['new', 'Not started'],
             ] as const
           )
             .map(([k, label]) => `<button class="chip${gridFilter === k ? ' active' : ''}" data-filter="${k}">${label}</button>`)
@@ -129,31 +204,32 @@ export function progressView(root: HTMLElement) {
         ${all
           .map((c) => {
             const s = status.get(c.code)!;
-            const label = s === 'learned' ? 'learned' : s === 'learning' ? 'in progress' : 'not started';
-            return `<a class="wall-flag is-${s}" href="${countryLink(c)}" data-status="${s}" title="${esc(c.name)} · ${label}">${flagImg(c, { size: 'sm', lazy: true })}</a>`;
+            return `<a class="wall-flag is-${s}" href="${countryLink(c)}" data-tip="${c.code}" data-status="${s}" aria-label="${esc(c.name)}, ${STATUS_TEXT[s].toLowerCase()}">${flagImg(c, { size: 'sm', lazy: true, alt: '' })}</a>`;
           })
           .join('')}
       </div>
     </section>
 
-    ${
-      tricky.length
-        ? `<section class="card"><h2>Flags you mix up most</h2><div class="mini-grid">${tricky
-            .map((c) => `<a class="mini" href="${countryLink(c)}"><span class="mini-flag">${flagImg(c, { size: 'sm' })}</span><span>${esc(c.name)}</span></a>`)
-            .join('')}</div></section>`
-        : ''
-    }
-
-    <section class="card">
-      <h2>Session history</h2>
+    <div class="progress-cols${tricky.length ? '' : ' single'}">
       ${
-        sessions.length
-          ? `<ul class="history">${sessions.slice(0, 10).map(sessionRow).join('')}</ul>
-             ${sessions.length > 10 ? `<button class="btn ghost" data-act="more">Show all ${sessions.length} sessions</button>` : ''}`
-          : `<p class="muted">Your finished sessions will show up here.</p>`
+        tricky.length
+          ? `<section class="card"><h2>Flags you mix up most</h2><div class="thumb-grid">${tricky
+              .map((c) => `<a class="thumb-link" href="${countryLink(c)}">${thumb(c)}<span>${esc(c.name)}</span></a>`)
+              .join('')}</div></section>`
+          : ''
       }
-    </section>`;
+      <section class="card">
+        <h2>Recent sessions</h2>
+        ${
+          sessions.length
+            ? `<ul class="history">${sessions.slice(0, 6).map(sessionRow).join('')}</ul>
+               ${sessions.length > 6 ? `<button class="btn quiet" data-act="more">Show all ${sessions.length} sessions</button>` : ''}`
+            : `<p class="muted">Your finished sessions will show up here.</p>`
+        }
+      </section>
+    </div>`;
 
+  attachTips(root);
   const tiles = $$('.wall-flag', root);
   const apply = () => tiles.forEach((t) => (t.hidden = gridFilter !== 'all' && t.dataset.status !== gridFilter));
   for (const chip of $$('[data-filter]', root)) {

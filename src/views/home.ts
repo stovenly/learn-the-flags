@@ -1,6 +1,6 @@
 import { ALL, byCode, Country, preload } from '../data';
 import { deck, dueCards, level, newCards, state, streak } from '../store';
-import { countryLink, esc, flagImg, plural, renderWhenReady, sample } from '../ui';
+import { countryLink, esc, flagImg, icon, plural, renderWhenReady, sample, thumb } from '../ui';
 
 function ring(pct: number) {
   const r = 52;
@@ -21,59 +21,73 @@ function didYouKnow(images: Promise<void>[]): string {
   images.push(preload(c.code, 320));
   return `
     <a class="card trivia-card" href="${countryLink(c)}">
-      <div class="trivia-flag">${flagImg(c, { size: 'sm' })}</div>
+      ${thumb(c)}
       <div>
-        <p class="eyebrow">Did you know? · ${esc(c.name)}</p>
+        <p class="label">Did you know?</p>
         <p>${esc(sample(c.trivia))}</p>
+        <span class="more">More about ${esc(c.name)} ${icon('arrow', 'icon icon-sm')}</span>
       </div>
     </a>`;
+}
+
+function upNext(list: Country[], images: Promise<void>[]) {
+  if (!list.length) return '';
+  list.forEach((c) => images.push(preload(c.code, 320)));
+  return `<div class="up-next">
+    <span class="label">Up next</span>
+    <div class="up-next-flags">${list.map((c) => thumb(c)).join('')}</div>
+  </div>`;
 }
 
 export function homeView(root: HTMLElement) {
   const all = deck();
   const learned = all.filter((c) => level(c.code) !== 'new').length;
   const due = dueCards().length;
-  const remaining = newCards().length;
+  const upcoming = newCards();
+  const remaining = upcoming.length;
   const fresh = Math.min(remaining, state.settings.lessonSize);
   const started = Object.keys(state.cards).length > 0;
   const days = streak();
+  const images: Promise<void>[] = started ? [] : HERO.map((k) => preload(k, 320));
 
   let title: string;
   let detail: string;
   let cta: string;
+  let next = '';
   if (!started) {
     title = 'Learn every flag in the world';
-    detail = `Start from zero. In a few minutes a day you'll know all ${all.length} flags.`;
-    cta = `<a class="btn primary big" href="#/study">Start learning</a>`;
+    detail = `Start from zero. A few minutes a day and you'll know all ${all.length} flags, from Afghanistan to Zimbabwe.`;
+    cta = `<a class="btn primary big" href="#/study">Start learning ${icon('arrow')}</a>`;
   } else if (due) {
-    title = 'Time to practice';
-    detail = `${plural(due, 'flag')} to review${remaining ? ` · ${remaining} still to learn` : ''}`;
-    cta = `<a class="btn primary big" href="#/study">Continue</a>${remaining ? `<a class="btn ghost big" href="#/study/new">Learn new flags</a>` : ''}`;
+    title = due === 1 ? '1 flag to review' : `${due} flags to review`;
+    detail = 'A quick review now keeps them from slipping away.';
+    cta = `<a class="btn primary big" href="#/study">Start review ${icon('arrow')}</a>${remaining ? `<a class="btn ghost big" href="#/study/new">Learn new flags</a>` : ''}`;
   } else if (remaining) {
     title = 'Ready for new flags';
-    detail = `${plural(remaining, 'flag')} left to learn.`;
-    cta = `<a class="btn primary big" href="#/study">Learn ${plural(fresh, 'new flag')}</a>`;
+    detail = `You're all caught up on reviews. ${remaining} flags left to learn.`;
+    cta = `<a class="btn primary big" href="#/study">Learn ${plural(fresh, 'new flag')} ${icon('arrow')}</a>`;
+    next = upNext(upcoming.slice(0, fresh), images);
   } else {
     title = 'You know every flag';
-    detail = 'Keep coming back for short reviews so they stay locked in.';
-    cta = '';
+    detail = 'Come back for short reviews so they stay locked in.';
+    cta = `<a class="btn ghost big" href="#/browse">Browse all flags</a>`;
   }
 
-  const images: Promise<void>[] = started ? [] : HERO.map((k) => preload(k, 320));
   const html = `
-    <section class="today card${started ? ' started' : ''}">
+    <section class="card today${started ? ' started' : ''}">
       <div class="today-main">
         <h1>${esc(title)}</h1>
-        <p class="muted">${esc(detail)}</p>
+        <p class="lead">${esc(detail)}</p>
         <div class="today-cta">${cta}</div>
+        ${next}
       </div>
       ${
         started
-          ? `<div class="today-ring">
+          ? `<a class="today-ring" href="#/progress" aria-label="See your progress">
               ${ring(learned / all.length)}
-              <div class="ring-label"><strong>${learned}</strong><span>of ${all.length}</span></div>
+              <div class="ring-label"><strong>${learned}</strong><span>of ${all.length} flags</span></div>
               ${days > 1 ? `<p class="streak">${days}-day streak</p>` : ''}
-            </div>`
+            </a>`
           : `<div class="hero-flags" aria-hidden="true">${HERO
               .map((k) => byCode.get(k))
               .filter((c): c is Country => !!c)
@@ -84,14 +98,18 @@ export function homeView(root: HTMLElement) {
 
     ${didYouKnow(images)}
 
-    <section class="about">
-      <h2>How it works</h2>
-      <div class="features">
-        <div><h3>Small daily lessons</h3><p>Meet a handful of new flags at a time, each with a quick tip to make it stick.</p></div>
-        <div><h3>Reviews at the right moment</h3><p>Flags come back just before you'd forget them, so a few minutes a day is enough.</p></div>
-        <div><h3>No more mix-ups</h3><p>Chad or Romania? Indonesia or Monaco? Lookalike flags are practised side by side until you can tell them apart.</p></div>
-      </div>
-      <p class="muted small">Free, no account needed. Your progress is saved in this browser.</p>
-    </section>`;
+    ${
+      started
+        ? ''
+        : `<section class="about">
+            <h2>How it works</h2>
+            <div class="features">
+              <div><span class="step">1</span><h3>Meet a few flags</h3><p>Each lesson introduces a handful of flags, with a quick tip to make each one stick.</p></div>
+              <div><span class="step">2</span><h3>Practise at the right moment</h3><p>Flags come back just before you'd forget them, so a few minutes a day is enough.</p></div>
+              <div><span class="step">3</span><h3>Never mix them up</h3><p>Chad or Romania? Indonesia or Monaco? Lookalikes are practised side by side until you can tell them apart.</p></div>
+            </div>
+            <p class="muted small">Free, no account needed. Your progress is saved in this browser.</p>
+          </section>`
+    }`;
   renderWhenReady(root, html, images);
 }

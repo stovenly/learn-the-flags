@@ -1,7 +1,7 @@
 import { ALL, byCode, Country, localNameText, matchAnswer, preload, preloadMap } from '../data';
 import { Again, Easy, Good, Grade, Hard, Memory, review } from '../srs';
 import { logSession, save, state, today } from '../store';
-import { $, $$, countryLink, differencesHtml, nameLink, esc, flagImg, lookalikeList, mapImg, plural, shuffle } from '../ui';
+import { $, $$, countryLink, esc, flagImg, hookHtml, icon, lookalikeList, mapImg, nameLink, pairList, plural, shuffle, thumb } from '../ui';
 import { onCleanup } from '../router';
 
 export type Mode = 'pick-name' | 'pick-flag' | 'type-name';
@@ -259,29 +259,23 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
     const c = item.c;
     const looks = lookalikeList(c).slice(0, 3);
     stage.innerHTML = `
-      <article class="card intro split fade-in">
+      <article class="card stage intro split fade-in">
         <div class="pane-main">
-        <p class="eyebrow">New flag</p>
-        <div class="flag-stage">${flagImg(c, { size: 'lg' })}</div>
-        <h2 class="intro-name">${nameLink(c)}</h2>
-        ${localNameText(c) ? `<p class="local-name">${esc(localNameText(c))}</p>` : ''}
-        <p class="muted intro-meta">${esc(c.subregion || c.region)}</p>
-        ${mapImg(c, 'md')}
+          <span class="pill">New flag</span>
+          <div class="flag-stage">${flagImg(c, { size: 'lg' })}</div>
+          <h2 class="intro-name">${nameLink(c)}</h2>
+          ${localNameText(c) ? `<p class="local-name">${esc(localNameText(c))}</p>` : ''}
+          <p class="muted intro-meta">${esc(c.subregion || c.region)}</p>
+          ${mapImg(c, 'md')}
         </div>
         <div class="pane-side">
-        ${c.flag.description ? `<p class="intro-desc">${esc(c.flag.description)}</p>` : ''}
-        ${c.hook ? `<div class="hook"><span class="hook-label">Memory hook</span><p>${esc(c.hook)}</p></div>` : ''}
-        ${
-          looks.length
-            ? `<div class="contrast"><p class="eyebrow">Don't confuse with</p><div class="contrast-row">${looks
-                .map((o) => `<figure>${flagImg(o, { size: 'sm' })}<figcaption>${esc(o.name)}</figcaption></figure>`)
-                .join('')}</div>${differencesHtml(c, looks)}</div>`
-            : ''
-        }
-        <div class="actions">
-          ${cfg.scheduled ? `<button class="btn ghost" data-act="known">I already know this one</button>` : ''}
-          <button class="btn primary" data-act="next">Got it <kbd>Enter</kbd></button>
-        </div>
+          ${c.flag.description ? `<p class="intro-desc">${esc(c.flag.description)}</p>` : ''}
+          ${hookHtml(c)}
+          ${looks.length ? `<section class="lookalikes"><h3 class="label">Don't mix it up with</h3>${pairList(c, looks)}</section>` : ''}
+          <div class="actions">
+            ${cfg.scheduled ? `<button class="btn quiet" data-act="known">I already know this one</button>` : ''}
+            <button class="btn primary" data-act="next">Got it <kbd>Enter</kbd></button>
+          </div>
         </div>
       </article>`;
     const go = once(next);
@@ -304,23 +298,23 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
     $('[data-act=next]', stage).focus({ preventScroll: true });
   }
 
-  // `withMap` is false when the question itself already shows the map.
-  function feedbackHtml(c: Country, ok: boolean, chosen?: Country, note?: string, withMap = true) {
+  // `withMap` is false when the question already shows the map; `compare` is false when both flags are already on screen.
+  function feedbackHtml(c: Country, ok: boolean, chosen?: Country, note?: string, withMap = true, compare = true) {
     if (ok) {
-      return `<div class="feedback ok fb-head">${withMap ? mapImg(c, 'xs') : ''}<p><strong>Correct</strong> — ${nameLink(c)}${note ? `<span class="muted"> · ${esc(note)}</span>` : ''}</p></div>`;
+      return `<div class="result ok">${icon('check')}<p><strong>Correct</strong> · ${nameLink(c)}${note ? `<span class="muted"> · ${esc(note)}</span>` : ''}</p>${withMap ? mapImg(c, 'xs') : ''}</div>`;
     }
-    const compare = chosen
-      ? `<div class="compare">
-          <figure>${flagImg(c, { size: 'sm' })}<figcaption><strong>${esc(c.name)}</strong></figcaption></figure>
-          <figure>${flagImg(chosen, { size: 'sm' })}<figcaption>${esc(chosen.name)}</figcaption></figure>
-        </div>`
-      : '';
-    const tell = chosen ? differencesHtml(c, [chosen]) : '';
-    return `<div class="feedback bad">
-        <div class="fb-head">${withMap ? mapImg(c, 'sm') : ''}<p><strong>It's ${nameLink(c)}.</strong>${chosen ? ` You answered ${esc(chosen.name)}.` : ''}</p></div>
-        ${compare}
-        ${tell || (c.hook ? `<div class="hook"><span class="hook-label">Memory hook</span><p>${esc(c.hook)}</p></div>` : '')}
-      </div>`;
+    const tell = chosen && c.differences[chosen.code];
+    return `<div class="result bad">${icon('cross')}<p><strong>Not quite.</strong> It's ${nameLink(c)}${chosen ? `, not ${esc(chosen.name)}` : ''}.</p></div>
+      ${
+        chosen && compare
+          ? `<div class="versus">
+              <figure class="is-answer">${thumb(c)}<figcaption>${esc(c.name)}</figcaption></figure>
+              <figure>${thumb(chosen)}<figcaption>${esc(chosen.name)}</figcaption></figure>
+            </div>`
+          : ''
+      }
+      ${tell ? `<div class="note note-tell">${icon('tell')}<div><span class="note-label">How to tell them apart</span><p>${esc(tell)}</p></div></div>` : hookHtml(c)}
+      ${withMap ? `<div class="fb-map">${mapImg(c, 'md')}</div>` : ''}`;
   }
 
   function afterAnswer(item: Quiz, ok: boolean, extra = '') {
@@ -351,9 +345,9 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
 
     if (item.mode === 'pick-name') {
       stage.innerHTML = `
-        <article class="card quiz split fade-in">
+        <article class="card stage quiz split fade-in">
           <div class="pane-main">
-          <p class="eyebrow">Which country is this?</p>
+          <p class="prompt">Which country is this?</p>
           <div class="flag-stage">${flagImg(c, { size: 'lg', alt: 'Flag to identify' })}</div>
           </div>
           <div class="pane-side">
@@ -366,9 +360,9 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
         </article>`;
     } else if (item.mode === 'pick-flag') {
       stage.innerHTML = `
-        <article class="card quiz split fade-in">
+        <article class="card stage quiz split fade-in">
           <div class="pane-main">
-          <p class="eyebrow">Which is the flag of</p>
+          <p class="prompt">Which is the flag of</p>
           <h2 class="quiz-name">${esc(c.name)}</h2>${mapImg(c, 'sm', true)}
           </div>
           <div class="pane-side">
@@ -384,9 +378,9 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
         </article>`;
     } else {
       stage.innerHTML = `
-        <article class="card quiz split fade-in">
+        <article class="card stage quiz split fade-in">
           <div class="pane-main">
-          <p class="eyebrow">Name this country</p>
+          <p class="prompt">Name this country</p>
           <div class="flag-stage">${flagImg(c, { size: 'lg', alt: 'Flag to identify' })}</div>
           </div>
           <div class="pane-side">
@@ -395,7 +389,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
             <button class="btn primary" type="submit">Check</button>
           </form>
           <div class="feedback-slot"></div>
-          <div class="actions"><button class="btn ghost" data-act="unknown">I don't know</button></div>
+          <div class="actions"><button class="btn quiet" data-act="unknown">I don't know <kbd>Esc</kbd></button></div>
           </div>
         </article>`;
     }
@@ -420,7 +414,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
             $('.flag-option-name', b).textContent = byCode.get(b.dataset.code!)!.name;
           }
         }
-        slot.innerHTML = feedbackHtml(c, ok, ok ? undefined : chosen, undefined, item.mode !== 'pick-flag');
+        slot.innerHTML = feedbackHtml(c, ok, ok ? undefined : chosen, undefined, item.mode !== 'pick-flag', item.mode !== 'pick-flag');
         if (item.mode === 'pick-name') showAnswerMap(c);
         if (item.mode === 'pick-flag') $('.quiz-name', stage).innerHTML = nameLink(c);
         afterAnswer(item, ok);
@@ -452,7 +446,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
       slot.innerHTML = feedbackHtml(c, ok, ok ? undefined : guessed, match === 'typo' ? `spelled “${c.name}”` : undefined);
       showAnswerMap(c);
       if (!ok && text && !guessed) {
-        afterAnswer(item, false, `<button class="btn ghost" data-act="accept">I was right</button>`);
+        afterAnswer(item, false, `<button class="btn quiet" data-act="accept">I was right</button>`);
         $('[data-act=accept]', stage).addEventListener('click', once(() => {
           unschedule(item, prev, Good);
           next();
@@ -473,17 +467,29 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
     keyHandler = null;
     record();
     const pct = summary.answered ? Math.round((summary.correct / summary.answered) * 100) : 0;
-    const strip = (list: Country[]) =>
-      `<div class="mini-grid">${list
-        .map((c) => `<a class="mini" href="${countryLink(c)}"><span class="mini-flag">${flagImg(c, { size: 'sm' })}</span><span>${esc(c.name)}</span></a>`)
-        .join('')}</div>`;
+    const mins = Math.max(1, Math.round((Date.now() - startedAt) / 60000));
+    const strip = (title: string, list: Country[]) =>
+      list.length
+        ? `<section class="done-group"><h3 class="label">${title}</h3><div class="thumb-grid">${list
+            .map((c) => `<a class="thumb-link" href="${countryLink(c)}">${thumb(c)}<span>${esc(c.name)}</span></a>`)
+            .join('')}</div></section>`
+        : '';
     stage.innerHTML = `
-      <article class="card done fade-in">
-        <p class="eyebrow">${esc(cfg.title)} complete</p>
-        <h2>${summary.answered ? `${pct}% correct` : 'All done'}</h2>
-        <p class="muted">${plural(summary.answered, 'answer')}${summary.learned.length ? ` · ${plural(summary.learned.length, 'new flag')}` : ''}</p>
-        ${summary.learned.length ? `<h3>Learned today</h3>${strip(summary.learned)}` : ''}
-        ${summary.missed.length ? `<h3>Worth another look</h3>${strip(summary.missed)}` : ''}
+      <article class="card stage done fade-in">
+        <span class="pill">${esc(cfg.title)} complete</span>
+        <h2>${!summary.answered ? 'All done' : pct >= 90 ? 'Great work' : pct >= 70 ? 'Nice work' : 'Good practice'}</h2>
+        ${
+          summary.answered
+            ? `<div class="stats stats-inline">
+                <div class="stat"><strong>${pct}%</strong><span>correct</span></div>
+                <div class="stat"><strong>${summary.answered}</strong><span>${summary.answered === 1 ? 'answer' : 'answers'}</span></div>
+                <div class="stat"><strong>${summary.learned.length}</strong><span>new ${summary.learned.length === 1 ? 'flag' : 'flags'}</span></div>
+                <div class="stat"><strong>${mins}</strong><span>${mins === 1 ? 'minute' : 'minutes'}</span></div>
+              </div>`
+            : ''
+        }
+        ${strip('Learned today', summary.learned)}
+        ${strip('Worth another look', summary.missed)}
         <div class="actions">${cfg.onDone(summary)}</div>
       </article>`;
     $('.session-count', root).textContent = '';

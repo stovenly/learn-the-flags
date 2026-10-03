@@ -10,7 +10,7 @@ export function browseView(root: HTMLElement) {
   root.innerHTML = `
     <header class="page-head">
       <h1>All flags</h1>
-      <p class="muted">${list.length} sovereign states. Tap a flag to read about it.</p>
+      <p class="muted">${list.length} sovereign states. Pick one to see what its flag means and how to tell it from lookalikes.</p>
     </header>
     <div class="filters">
       <input class="search" type="search" placeholder="Search countries" aria-label="Search countries" value="${esc(lastQuery)}">
@@ -22,9 +22,8 @@ export function browseView(root: HTMLElement) {
       ${list
         .map(
           (c) => `<a class="tile" href="${countryLink(c)}" data-region="${c.region}" data-search="${esc(normalize(`${c.name} ${c.aliases.join(' ')} ${c.localNames.map((l) => `${l.name} ${l.romanized}`).join(' ')}`))}">
-            <div class="tile-flag">${flagImg(c, { size: 'sm', lazy: true })}</div>
-            <span class="tile-name">${esc(c.name)}</span>
-            ${level(c.code) === 'new' ? '' : `<span class="dot dot-${level(c.code)}" title="${level(c.code) === 'learning' ? 'Learning' : 'Learned'}"></span>`}
+            <div class="tile-flag">${flagImg(c, { size: 'sm', lazy: true, alt: '' })}</div>
+            <span class="tile-name">${esc(c.name)}${level(c.code) === 'new' ? '' : `<span class="dot dot-${level(c.code)}" title="${level(c.code) === 'learning' ? 'Learning' : 'Learned'}"></span>`}</span>
           </a>`,
         )
         .join('')}
