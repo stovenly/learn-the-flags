@@ -351,9 +351,9 @@ body[data-route='study'] #app { padding-top: 16px; }
 .name-row .intro-meta { margin: 0; }
 .quiz-name-row { margin: -2px 0 22px; }
 .globe { display: block; flex-shrink: 0; border-radius: 50%; user-select: none; filter: drop-shadow(0 2px 6px rgba(20, 30, 50, 0.22)); }
-.globe-sm { width: 64px; height: 64px; }
-.globe-md { width: 96px; height: 96px; }
-.globe-lg { width: 168px; height: 168px; }
+.globe-sm { width: 96px; height: 96px; }
+.globe-md { width: 150px; height: 150px; }
+.globe-lg { width: 240px; height: 240px; }
 .fb-head { display: flex; align-items: center; gap: 12px; }
 .fb-head p { margin: 0; }
 .feedback.ok.fb-head { padding: 10px 14px; }
@@ -645,8 +645,9 @@ body[data-route='flag'] #app { max-width: 752px; }
   .facts { grid-template-columns: 1fr; }
   .country-flag { padding: 20px; }
   .country-head { gap: 14px; }
-  .country-head .globe-lg { width: 112px; height: 112px; }
-  .globe-md { width: 80px; height: 80px; }
+  .country-head .globe-lg { width: 132px; height: 132px; }
+  .globe-md { width: 120px; height: 120px; }
+  .globe-sm { width: 80px; height: 80px; }
   .confusable { grid-template-columns: 80px 1fr; gap: 12px; }
   .compare figure { width: 120px; }
 }

@@ -84,12 +84,12 @@ for (const c of countries) {
       .clipAngle(90)
       .clipExtent([[0, 0], [SIZE, SIZE]]);
     draw = geoPath(projection).digits(1);
-    const base = scale / R < 2.5 ? world110 : world50;
-    others = base.filter((w) => !isTarget(w)).map((w) => simplify(draw(w), 0.7, 1)).join('');
+    const base = scale / R < 1.5 ? world110 : world50;
+    others = base.filter((w) => !isTarget(w)).map((w) => simplify(draw(w), 0.4, 0.6)).join('');
     if (others.length > 400 || scale <= R) break;
     scale = Math.max(R, scale / 1.6);
   }
-  const target = f ? simplify(draw(f), 0.35, 0) : '';
+  const target = f ? simplify(draw(f), 0.2, 0) : '';
   let marker = '';
   if (!f || draw.area(f) < 10) {
     const [x, y] = projection(markAt);
