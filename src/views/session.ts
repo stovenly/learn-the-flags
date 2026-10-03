@@ -259,13 +259,16 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
     const c = item.c;
     const looks = lookalikeList(c).slice(0, 3);
     stage.innerHTML = `
-      <article class="card intro fade-in">
+      <article class="card intro split fade-in">
+        <div class="pane-main">
         <p class="eyebrow">New flag</p>
         <div class="flag-stage">${flagImg(c, { size: 'lg' })}</div>
         <h2 class="intro-name">${nameLink(c)}</h2>
         ${localNameText(c) ? `<p class="local-name">${esc(localNameText(c))}</p>` : ''}
         <p class="muted intro-meta">${esc(c.subregion || c.region)}</p>
         ${mapImg(c, 'md')}
+        </div>
+        <div class="pane-side">
         ${c.flag.description ? `<p class="intro-desc">${esc(c.flag.description)}</p>` : ''}
         ${c.hook ? `<div class="hook"><span class="hook-label">Memory hook</span><p>${esc(c.hook)}</p></div>` : ''}
         ${
@@ -278,6 +281,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
         <div class="actions">
           ${cfg.scheduled ? `<button class="btn ghost" data-act="known">I already know this one</button>` : ''}
           <button class="btn primary" data-act="next">Got it <kbd>Enter</kbd></button>
+        </div>
         </div>
       </article>`;
     const go = once(next);
@@ -334,6 +338,11 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
     if (ok) timer = window.setTimeout(go, 900);
   }
 
+  // Wide screens show the answer's map under the flag instead of the thumbnail in the feedback.
+  function showAnswerMap(c: Country) {
+    $('.pane-main', stage).insertAdjacentHTML('beforeend', `<div class="answer-map">${mapImg(c, 'md')}</div>`);
+  }
+
   function renderQuiz(item: Quiz) {
     const c = item.c;
     const started = performance.now();
@@ -342,20 +351,27 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
 
     if (item.mode === 'pick-name') {
       stage.innerHTML = `
-        <article class="card quiz fade-in">
+        <article class="card quiz split fade-in">
+          <div class="pane-main">
           <p class="eyebrow">Which country is this?</p>
           <div class="flag-stage">${flagImg(c, { size: 'lg', alt: 'Flag to identify' })}</div>
+          </div>
+          <div class="pane-side">
           <div class="options">${item
             .options!.map((o, i) => `<button class="option" data-code="${o.code}"><kbd>${i + 1}</kbd><span>${esc(o.name)}</span></button>`)
             .join('')}</div>
           <div class="feedback-slot"></div>
           <div class="actions"></div>
+          </div>
         </article>`;
     } else if (item.mode === 'pick-flag') {
       stage.innerHTML = `
-        <article class="card quiz fade-in">
+        <article class="card quiz split fade-in">
+          <div class="pane-main">
           <p class="eyebrow">Which is the flag of</p>
           <h2 class="quiz-name">${esc(c.name)}</h2>${mapImg(c, 'sm', true)}
+          </div>
+          <div class="pane-side">
           <div class="flag-options">${item
             .options!.map(
               (o, i) =>
@@ -364,18 +380,23 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
             .join('')}</div>
           <div class="feedback-slot"></div>
           <div class="actions"></div>
+          </div>
         </article>`;
     } else {
       stage.innerHTML = `
-        <article class="card quiz fade-in">
+        <article class="card quiz split fade-in">
+          <div class="pane-main">
           <p class="eyebrow">Name this country</p>
           <div class="flag-stage">${flagImg(c, { size: 'lg', alt: 'Flag to identify' })}</div>
+          </div>
+          <div class="pane-side">
           <form class="type-form" autocomplete="off">
             <input class="type-input" type="text" placeholder="Type the country name…" aria-label="Country name" autocapitalize="words" spellcheck="false" enterkeyhint="done">
             <button class="btn primary" type="submit">Check</button>
           </form>
           <div class="feedback-slot"></div>
           <div class="actions"><button class="btn ghost" data-act="unknown">I don't know</button></div>
+          </div>
         </article>`;
     }
 
@@ -400,6 +421,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
           }
         }
         slot.innerHTML = feedbackHtml(c, ok, ok ? undefined : chosen, undefined, item.mode !== 'pick-flag');
+        if (item.mode === 'pick-name') showAnswerMap(c);
         if (item.mode === 'pick-flag') $('.quiz-name', stage).innerHTML = nameLink(c);
         afterAnswer(item, ok);
       };
@@ -428,6 +450,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
       input.classList.add(ok ? 'is-correct' : 'is-wrong');
       const guessed = ALL.find((o) => o.code !== c.code && matchAnswer(text, o) === 'exact');
       slot.innerHTML = feedbackHtml(c, ok, ok ? undefined : guessed, match === 'typo' ? `spelled “${c.name}”` : undefined);
+      showAnswerMap(c);
       if (!ok && text && !guessed) {
         afterAnswer(item, false, `<button class="btn ghost" data-act="accept">I was right</button>`);
         $('[data-act=accept]', stage).addEventListener('click', once(() => {

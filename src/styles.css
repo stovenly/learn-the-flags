@@ -685,6 +685,31 @@ body[data-route='flag'] #app { max-width: 752px; }
 .notice:empty { display: none; }
 .notice { margin: 12px 0 0; }
 
+@media (min-width: 1000px) {
+  .session { max-width: 1080px; }
+  .session .split {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 36px;
+    align-items: start;
+    text-align: left;
+    padding: 32px 36px;
+  }
+  .split .pane-main { text-align: center; position: sticky; top: 16px; }
+  .split .flag-stage { height: 260px; margin-bottom: 18px; }
+  .split .flag-lg { width: min(100%, calc(260px * var(--ratio)), 460px); max-height: 260px; }
+  .split .map-md, .split .map-sm { max-width: 100%; margin: 16px 0 0; }
+  .split.quiz .pane-side { padding-top: 34px; }
+  .split .intro-desc { margin: 0 0 4px; max-width: none; }
+  .split .hook { margin-top: 12px; }
+  .split .contrast-row { justify-content: flex-start; }
+  .split .contrast .eyebrow { text-align: left; }
+  .split .options { grid-template-columns: 1fr; }
+  .split .feedback-slot .compare { justify-content: flex-start; }
+  .split .fb-head .map { display: none; }
+  .split .answer-map { display: block; }
+}
+
 @media (max-width: 720px) {
   .today { flex-direction: column; align-items: flex-start; padding: 24px; }
   .today.started { flex-direction: row; gap: 16px; }
@@ -720,3 +745,6 @@ body[data-route='flag'] #app { max-width: 752px; }
   .confusable { grid-template-columns: 80px 1fr; gap: 12px; }
   .compare figure { width: 120px; }
 }
+
+.answer-map { display: none; }
+.session .done { max-width: 640px; margin: 0 auto; }
