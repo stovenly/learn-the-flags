@@ -1,6 +1,6 @@
-import { ALL, fmtNumber, fmtPopulation, preload, STATUS_LABEL } from '../data';
+import { ALL, fmtNumber, fmtPopulation, preload, preloadGlobe, STATUS_LABEL } from '../data';
 import { level } from '../store';
-import { countryLink, esc, flagImg, lookalikeList, renderWhenReady } from '../ui';
+import { countryLink, esc, flagImg, globeImg, lookalikeList, renderWhenReady } from '../ui';
 
 const SWATCH: Record<string, string> = {
   red: '#d62828', orange: '#f77f00', yellow: '#fcbf49', green: '#2a9d4b', blue: '#1d4e9e', 'light-blue': '#5fa8e0',
@@ -30,8 +30,11 @@ export function countryView(root: HTMLElement, slug: string) {
     <article class="country">
       <div class="country-flag card">${flagImg(c, { size: 'lg' })}</div>
       <header class="country-head">
-        <h1>${esc(c.name)} ${badge}</h1>
-        <p class="muted">${esc(c.officialName)}${c.status !== 'un-member' ? ` · ${STATUS_LABEL[c.status]}` : ''}</p>
+        ${globeImg(c, 'lg')}
+        <div>
+          <h1>${esc(c.name)} ${badge}</h1>
+          <p class="muted">${esc(c.officialName)}${c.status !== 'un-member' ? ` · ${STATUS_LABEL[c.status]}` : ''}</p>
+        </div>
       </header>
 
       <section class="card">
@@ -62,11 +65,16 @@ export function countryView(root: HTMLElement, slug: string) {
 
       ${
         looks.length
-          ? `<section class="card"><h2>Easy to confuse with</h2><div class="mini-grid">${looks
-              .map((o) => `<a class="mini" href="${countryLink(o)}"><span class="mini-flag">${flagImg(o, { size: 'sm' })}</span><span>${esc(o.name)}</span></a>`)
+          ? `<section class="card"><h2>Easy to confuse with</h2><div class="confusables">${looks
+              .map(
+                (o) => `<a class="confusable" href="${countryLink(o)}">
+                  <span class="mini-flag">${flagImg(o, { size: 'sm' })}</span>
+                  <span><strong>${esc(o.name)}</strong>${c.differences[o.code] ? `<span class="muted">${esc(c.differences[o.code])}</span>` : ''}</span>
+                </a>`,
+              )
               .join('')}</div></section>`
           : ''
       }
     </article>`;
-  renderWhenReady(root, html, [preload(c.code)]);
+  renderWhenReady(root, html, [preload(c.code), preloadGlobe(c.code)]);
 }

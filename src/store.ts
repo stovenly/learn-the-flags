@@ -2,7 +2,6 @@ import { ALL, Country, curriculum } from './data';
 import { dayNumber, endOfDay, Memory, retrievability } from './srs';
 
 export interface Settings {
-  newPerDay: number;
   lessonSize: number;
   retention: number; // target recall probability, 0.8..0.97
   answerStyle: 'auto' | 'choice' | 'typing';
@@ -26,7 +25,6 @@ interface State {
 
 const KEY = 'learn-the-flags:v1';
 const DEFAULTS: Settings = {
-  newPerDay: 10,
   lessonSize: 5,
   retention: 0.9,
   answerStyle: 'auto',
@@ -88,8 +86,6 @@ export function newCards(): Country[] {
   );
   return curriculum(pool);
 }
-
-export const newLeftToday = () => Math.max(0, state.settings.newPerDay - today().learned);
 
 export function streak(): number {
   let d = dayNumber(Date.now());

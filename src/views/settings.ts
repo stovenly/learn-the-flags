@@ -16,7 +16,7 @@ export function settingsView(root: HTMLElement) {
   root.innerHTML = `
     <header class="page-head"><h1>Settings</h1></header>
     <section class="card form">
-      ${select('newPerDay', 'New flags per day', [[5, '5'], [10, '10'], [15, '15'], [20, '20'], [30, '30']])}
+      ${select('lessonSize', 'New flags per lesson', [[3, '3'], [5, '5'], [8, '8'], [10, '10']])}
       ${select('focusRegion', 'Learn new flags from', [['all', 'Everywhere'], ...REGIONS.map((r) => [r, r] as [string, string])])}
       ${select('answerStyle', 'Answer by', [['auto', 'Mix of picking and typing'], ['choice', 'Picking only'], ['typing', 'Typing only']])}
       ${select('includePartial', 'Include Kosovo and Taiwan', [[false, 'No'], [true, 'Yes']], 'Partially recognized states')}

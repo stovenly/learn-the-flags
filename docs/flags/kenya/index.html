@@ -38,9 +38,11 @@ ul{padding-left:20px;margin:0}li{margin-bottom:6px}
 .grid a{color:var(--text);font-size:.88rem;display:flex;flex-direction:column;gap:6px}.grid a:hover{color:var(--accent);text-decoration:none}
 .grid .box{aspect-ratio:3/2;display:grid;place-items:center;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px}
 .grid .flag{width:auto;max-width:100%;max-height:100%}
+.head{display:flex;align-items:center;gap:18px;margin-top:8px}.head p{margin:0}.globe{width:96px;height:96px;flex-shrink:0}
+.pairs{display:flex;flex-direction:column;gap:14px}.pair{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center;color:var(--text)}.pair:hover{text-decoration:none}.pair .box{aspect-ratio:3/2;display:grid;place-items:center}.pair .flag{width:auto;max-width:100%;max-height:100%}.pair strong{display:block}
 .promo{text-align:center}.promo p{margin:0 0 14px}
 footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85rem;color:var(--muted)}
-@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}}</style>
+@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}.globe{width:64px;height:64px}.pair{grid-template-columns:80px 1fr;gap:12px}}</style>
 </head>
 <body>
 <header><div class="wrap">
@@ -50,8 +52,10 @@ footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85re
 <main class="wrap">
 <article>
 <div class="card hero"><img class="flag" src="../../img/flags/640/ke.webp" width="640" height="427" alt="Flag of Kenya" style="--r:1.4988" decoding="async"></div>
+<div class="head"><img class="globe" src="../../img/globes/ke.svg" width="100" height="100" alt="Where Kenya is on the globe"><div>
 <h1>Flag of Kenya</h1>
 <p class="muted">Republic of Kenya</p>
+</div></div>
 <section class="card">
 <h2>What the flag looks like</h2>
 <p>Three horizontal stripes of black, red and green separated by narrow white stripes, with a red, white and black Maasai shield and two crossed white spears in the centre.</p>
@@ -60,7 +64,7 @@ footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85re
 </section>
 <section class="card"><h2>Fun facts</h2><ul><li>The country takes its name from Mount Kenya, Africa&#39;s second-highest mountain at 5,199 m.</li><li>M-Pesa, the mobile-phone money service launched in Kenya in 2007, became a model for mobile banking worldwide.</li></ul></section>
 <section class="card"><h2>Kenya at a glance</h2><dl><div><dt>Capital</dt><dd>Nairobi</dd></div><div><dt>Region</dt><dd>Eastern Africa</dd></div><div><dt>Population</dt><dd>56 million</dd></div><div><dt>Area</dt><dd>580,367 km²</dd></div><div><dt>Languages</dt><dd>English, Swahili</dd></div><div><dt>Currency</dt><dd>Kenyan shilling</dd></div><div><dt>Flag adopted</dt><dd>1963</dd></div></dl></section>
-<section class="card"><h2>Flags often confused with Kenya</h2><div class="grid"><a href="../south-sudan/"><span class="box"><img class="flag" src="../../img/flags/320/ss.webp" width="640" height="320" alt="Flag of South Sudan" style="--r:2" loading="lazy" decoding="async"></span>South Sudan</a><a href="../malawi/"><span class="box"><img class="flag" src="../../img/flags/320/mw.webp" width="640" height="427" alt="Flag of Malawi" style="--r:1.4988" loading="lazy" decoding="async"></span>Malawi</a></div></section>
+<section class="card"><h2>Flags often confused with Kenya</h2><div class="pairs"><a class="pair" href="../south-sudan/"><span class="box"><img class="flag" src="../../img/flags/320/ss.webp" width="640" height="320" alt="Flag of South Sudan" style="--r:2" loading="lazy" decoding="async"></span><span><strong>South Sudan</strong><span class="muted">Kenya and South Sudan share black, red and green stripes separated by thin white lines. Kenya has a shield and spears in the centre; South Sudan has a blue triangle with a yellow star at the hoist.</span></span></a><a class="pair" href="../malawi/"><span class="box"><img class="flag" src="../../img/flags/320/mw.webp" width="640" height="427" alt="Flag of Malawi" style="--r:1.4988" loading="lazy" decoding="async"></span><span><strong>Malawi</strong><span class="muted">Kenya and Malawi both have black, red and green horizontal stripes. Kenya has thin white stripes and a shield with spears in the centre; Malawi has a red rising sun on the top black stripe.</span></span></a></div></section>
 <section class="card promo"><p>Learn the flag of Kenya and every other country with short daily lessons.</p><a class="cta" href="../../#/flag/kenya">Practice with Learn the Flags</a></section>
 <p><a href="../">← All flags of the world</a></p>
 </article></main>

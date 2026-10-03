@@ -38,9 +38,11 @@ ul{padding-left:20px;margin:0}li{margin-bottom:6px}
 .grid a{color:var(--text);font-size:.88rem;display:flex;flex-direction:column;gap:6px}.grid a:hover{color:var(--accent);text-decoration:none}
 .grid .box{aspect-ratio:3/2;display:grid;place-items:center;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px}
 .grid .flag{width:auto;max-width:100%;max-height:100%}
+.head{display:flex;align-items:center;gap:18px;margin-top:8px}.head p{margin:0}.globe{width:96px;height:96px;flex-shrink:0}
+.pairs{display:flex;flex-direction:column;gap:14px}.pair{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center;color:var(--text)}.pair:hover{text-decoration:none}.pair .box{aspect-ratio:3/2;display:grid;place-items:center}.pair .flag{width:auto;max-width:100%;max-height:100%}.pair strong{display:block}
 .promo{text-align:center}.promo p{margin:0 0 14px}
 footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85rem;color:var(--muted)}
-@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}}</style>
+@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}.globe{width:64px;height:64px}.pair{grid-template-columns:80px 1fr;gap:12px}}</style>
 </head>
 <body>
 <header><div class="wrap">
@@ -50,8 +52,10 @@ footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85re
 <main class="wrap">
 <article>
 <div class="card hero"><img class="flag" src="../../img/flags/640/us.webp" width="640" height="337" alt="Flag of United States" style="--r:1.8991" decoding="async"></div>
+<div class="head"><img class="globe" src="../../img/globes/us.svg" width="100" height="100" alt="Where United States is on the globe"><div>
 <h1>Flag of United States</h1>
 <p class="muted">United States of America</p>
+</div></div>
 <section class="card">
 <h2>What the flag looks like</h2>
 <p>Thirteen horizontal stripes alternating red and white, starting and ending with red, with a blue rectangle in the upper hoist holding 50 white five-pointed stars in nine offset rows of six and five.</p>
@@ -60,7 +64,7 @@ footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85re
 </section>
 <section class="card"><h2>Fun facts</h2><ul><li>The 50-star flag became official on 4 July 1960 and has been in use longer than any earlier version.</li><li>Six American flags were planted on the Moon during the Apollo landings between 1969 and 1972.</li></ul></section>
 <section class="card"><h2>United States at a glance</h2><dl><div><dt>Capital</dt><dd>Washington D.C.</dd></div><div><dt>Region</dt><dd>North America</dd></div><div><dt>Population</dt><dd>340 million</dd></div><div><dt>Area</dt><dd>9,372,610 km²</dd></div><div><dt>Languages</dt><dd>English</dd></div><div><dt>Currency</dt><dd>United States dollar</dd></div><div><dt>Flag adopted</dt><dd>1960</dd></div></dl></section>
-<section class="card"><h2>Flags often confused with United States</h2><div class="grid"><a href="../liberia/"><span class="box"><img class="flag" src="../../img/flags/320/lr.webp" width="640" height="337" alt="Flag of Liberia" style="--r:1.8991" loading="lazy" decoding="async"></span>Liberia</a><a href="../malaysia/"><span class="box"><img class="flag" src="../../img/flags/320/my.webp" width="640" height="320" alt="Flag of Malaysia" style="--r:2" loading="lazy" decoding="async"></span>Malaysia</a><a href="../chile/"><span class="box"><img class="flag" src="../../img/flags/320/cl.webp" width="640" height="427" alt="Flag of Chile" style="--r:1.4988" loading="lazy" decoding="async"></span>Chile</a></div></section>
+<section class="card"><h2>Flags often confused with United States</h2><div class="pairs"><a class="pair" href="../liberia/"><span class="box"><img class="flag" src="../../img/flags/320/lr.webp" width="640" height="337" alt="Flag of Liberia" style="--r:1.8991" loading="lazy" decoding="async"></span><span><strong>Liberia</strong><span class="muted">Liberia and the United States both have red and white stripes with a blue canton. Liberia&#39;s canton holds just one large white star; the US canton holds 50 small stars.</span></span></a><a class="pair" href="../malaysia/"><span class="box"><img class="flag" src="../../img/flags/320/my.webp" width="640" height="320" alt="Flag of Malaysia" style="--r:2" loading="lazy" decoding="async"></span><span><strong>Malaysia</strong><span class="muted">Malaysia and the United States both have red and white stripes with a blue canton. Malaysia&#39;s canton has a yellow crescent and star; the US canton has 50 white stars.</span></span></a><a class="pair" href="../chile/"><span class="box"><img class="flag" src="../../img/flags/320/cl.webp" width="640" height="427" alt="Flag of Chile" style="--r:1.4988" loading="lazy" decoding="async"></span><span><strong>Chile</strong><span class="muted">Chile and the United States both have a blue corner square with white stars over red and white. Chile has one star and two bands; the US has 50 stars and thirteen stripes.</span></span></a></div></section>
 <section class="card promo"><p>Learn the flag of United States and every other country with short daily lessons.</p><a class="cta" href="../../#/flag/united-states">Practice with Learn the Flags</a></section>
 <p><a href="../">← All flags of the world</a></p>
 </article></main>

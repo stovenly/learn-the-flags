@@ -1,7 +1,7 @@
-import { ALL, byCode, Country, matchAnswer, preload } from '../data';
+import { ALL, byCode, Country, matchAnswer, preload, preloadGlobe } from '../data';
 import { Again, Easy, Good, Grade, Hard, Memory, review } from '../srs';
 import { save, state, today } from '../store';
-import { $, $$, countryLink, esc, flagImg, lookalikeList, plural, shuffle } from '../ui';
+import { $, $$, countryLink, differencesHtml, esc, flagImg, globeImg, lookalikeList, plural, shuffle } from '../ui';
 import { onCleanup } from '../router';
 
 export type Mode = 'pick-name' | 'pick-flag' | 'type-name';
@@ -59,9 +59,11 @@ export function modeFor(c: Country, step?: number): Mode {
   if (style === 'typing') return 'type-name';
   if (style === 'choice') return pick();
   const m = state.cards[c.code];
-  if (!m || m.s < 2) return pick();
-  if (m.s < 10) return Math.random() < 0.6 ? 'type-name' : 'pick-flag';
-  return Math.random() < 0.8 ? 'type-name' : 'pick-flag';
+  if (!m) return pick();
+  const r = Math.random();
+  if (m.s < 2) return r < 0.4 ? 'type-name' : r < 0.7 ? 'pick-flag' : 'pick-name';
+  if (m.s < 10) return r < 0.65 ? 'type-name' : 'pick-flag';
+  return r < 0.8 ? 'type-name' : 'pick-flag';
 }
 
 // Reviews warm up first, then each new flag is introduced and quizzed one step behind the next introduction.
@@ -102,7 +104,7 @@ function ensureOptions(item: Item) {
 
 function preloadItem(item: Item): Promise<unknown> {
   ensureOptions(item);
-  const jobs = [preload(item.c.code)];
+  const jobs = [preload(item.c.code), preloadGlobe(item.c.code)];
   if (item.kind === 'quiz' && item.mode === 'pick-flag') item.options!.forEach((o) => jobs.push(preload(o.code)));
   if (item.kind === 'intro') lookalikeList(item.c).slice(0, 3).forEach((o) => jobs.push(preload(o.code, 320)));
   return Promise.all(jobs);
@@ -217,8 +219,10 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
       if (!cfg.scheduled) t.needed = Math.min(t.needed, 1);
     }
     if (t.needed > 0 && t.attempts < 6) {
-      const step = t.attempts;
-      const mode: Mode = item.mode === 'type-name' ? 'type-name' : step % 2 === 1 ? 'pick-flag' : 'pick-name';
+      const style = state.settings.answerStyle;
+      // In a lesson, a correct pick is followed by typing the name; a miss by picking among lookalikes.
+      const mode: Mode =
+        style === 'typing' ? 'type-name' : style === 'choice' ? (item.mode === 'pick-name' ? 'pick-flag' : 'pick-name') : correct ? 'type-name' : 'pick-flag';
       insertAt(correct ? 4 + Math.floor(Math.random() * 3) : 2 + Math.floor(Math.random() * 2), quiz(item.c, mode));
       total++;
     }
@@ -242,15 +246,20 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
       <article class="card intro fade-in">
         <p class="eyebrow">New flag</p>
         <div class="flag-stage">${flagImg(c, { size: 'lg' })}</div>
-        <h2 class="intro-name">${esc(c.name)}</h2>
-        <p class="muted intro-meta">${esc(c.subregion || c.region)}${c.capital ? ` · Capital: ${esc(c.capital)}` : ''}</p>
+        <div class="name-row">
+          ${globeImg(c, 'md')}
+          <div>
+            <h2 class="intro-name">${esc(c.name)}</h2>
+            <p class="muted intro-meta">${esc(c.subregion || c.region)}${c.capital ? ` · Capital: ${esc(c.capital)}` : ''}</p>
+          </div>
+        </div>
         ${c.flag.description ? `<p class="intro-desc">${esc(c.flag.description)}</p>` : ''}
         ${c.hook ? `<div class="hook"><span class="hook-label">Memory hook</span><p>${esc(c.hook)}</p></div>` : ''}
         ${
           looks.length
             ? `<div class="contrast"><p class="eyebrow">Don't confuse with</p><div class="contrast-row">${looks
                 .map((o) => `<figure>${flagImg(o, { size: 'sm' })}<figcaption>${esc(o.name)}</figcaption></figure>`)
-                .join('')}</div></div>`
+                .join('')}</div>${differencesHtml(c, looks)}</div>`
             : ''
         }
         <div class="actions">
@@ -280,7 +289,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
 
   function feedbackHtml(c: Country, ok: boolean, chosen?: Country, note?: string) {
     if (ok) {
-      return `<div class="feedback ok"><strong>Correct</strong> — ${esc(c.name)}${note ? `<span class="muted"> · ${esc(note)}</span>` : ''}</div>`;
+      return `<div class="feedback ok fb-head">${globeImg(c, 'sm')}<p><strong>Correct</strong> — ${esc(c.name)}${note ? `<span class="muted"> · ${esc(note)}</span>` : ''}</p></div>`;
     }
     const compare = chosen
       ? `<div class="compare">
@@ -288,10 +297,11 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
           <figure>${flagImg(chosen, { size: 'sm' })}<figcaption>${esc(chosen.name)}</figcaption></figure>
         </div>`
       : '';
+    const tell = chosen ? differencesHtml(c, [chosen]) : '';
     return `<div class="feedback bad">
-        <p><strong>It's ${esc(c.name)}.</strong>${chosen ? ` You answered ${esc(chosen.name)}.` : ''}</p>
+        <div class="fb-head">${globeImg(c, 'sm')}<p><strong>It's ${esc(c.name)}.</strong>${chosen ? ` You answered ${esc(chosen.name)}.` : ''}</p></div>
         ${compare}
-        ${c.hook ? `<div class="hook"><span class="hook-label">Memory hook</span><p>${esc(c.hook)}</p></div>` : ''}
+        ${tell || (c.hook ? `<div class="hook"><span class="hook-label">Memory hook</span><p>${esc(c.hook)}</p></div>` : '')}
         <p class="more"><a href="${countryLink(c)}" target="_blank" rel="noopener">More about ${esc(c.name)} ↗</a></p>
       </div>`;
   }
@@ -332,7 +342,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
       stage.innerHTML = `
         <article class="card quiz fade-in">
           <p class="eyebrow">Which is the flag of</p>
-          <h2 class="quiz-name">${esc(c.name)}</h2>
+          <div class="name-row quiz-name-row">${globeImg(c, 'md')}<h2 class="quiz-name">${esc(c.name)}</h2></div>
           <div class="flag-options">${item
             .options!.map(
               (o, i) =>

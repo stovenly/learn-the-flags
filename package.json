@@ -4,15 +4,19 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "node scripts/build-data.mjs && node scripts/build-globes.mjs && vite",
     "flags": "node scripts/fetch-flags.mjs",
     "data": "node scripts/build-data.mjs",
-    "build": "node scripts/build-data.mjs && tsc --noEmit && vite build && node scripts/build-pages.mjs",
+    "globes": "node scripts/build-globes.mjs",
+    "build": "node scripts/build-data.mjs && node scripts/build-globes.mjs && tsc --noEmit && vite build && node scripts/build-pages.mjs",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "d3-geo": "^3.1.1",
     "sharp": "^0.35.5",
+    "topojson-client": "^3.1.0",
     "typescript": "^7.0.2",
-    "vite": "^8.3.2"
+    "vite": "^8.3.2",
+    "world-atlas": "^2.0.2"
   }
 }

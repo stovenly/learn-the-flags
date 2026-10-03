@@ -1,5 +1,5 @@
 import { ALL, byCode, Country, preload } from '../data';
-import { deck, dueCards, dueLaterToday, level, newCards, newLeftToday, state, streak } from '../store';
+import { deck, dueCards, level, newCards, state, streak } from '../store';
 import { countryLink, esc, flagImg, plural, renderWhenReady, sample } from '../ui';
 
 function ring(pct: number) {
@@ -33,8 +33,8 @@ export function homeView(root: HTMLElement) {
   const all = deck();
   const learned = all.filter((c) => level(c.code) !== 'new').length;
   const due = dueCards().length;
-  const fresh = Math.min(newCards().length, newLeftToday(), state.settings.lessonSize);
   const remaining = newCards().length;
+  const fresh = Math.min(remaining, state.settings.lessonSize);
   const started = Object.keys(state.cards).length > 0;
   const days = streak();
 
@@ -45,15 +45,14 @@ export function homeView(root: HTMLElement) {
     title = 'Learn every flag in the world';
     detail = `Start from zero. In a few minutes a day you'll know all ${all.length} flags.`;
     cta = `<a class="btn primary big" href="#/study">Start learning</a>`;
-  } else if (due || fresh) {
-    title = due ? 'Time to practice' : 'Ready for new flags';
-    detail = [due ? plural(due, 'flag') + ' to review' : '', fresh ? plural(fresh, 'new flag') : ''].filter(Boolean).join(' · ');
-    cta = `<a class="btn primary big" href="#/study">Continue</a>`;
+  } else if (due) {
+    title = 'Time to practice';
+    detail = `${plural(due, 'flag')} to review${remaining ? ` · ${remaining} still to learn` : ''}`;
+    cta = `<a class="btn primary big" href="#/study">Continue</a>${remaining ? `<a class="btn ghost big" href="#/study/new">Learn new flags</a>` : ''}`;
   } else if (remaining) {
-    const later = dueLaterToday();
-    title = "You're all caught up";
-    detail = later ? `A few more flags will be ready later today.` : 'Come back tomorrow to keep your flags fresh.';
-    cta = `<a class="btn ghost big" href="#/study/more">Learn ${Math.min(state.settings.lessonSize, remaining)} more anyway</a>`;
+    title = 'Ready for new flags';
+    detail = `${plural(remaining, 'flag')} left to learn.`;
+    cta = `<a class="btn primary big" href="#/study">Learn ${plural(fresh, 'new flag')}</a>`;
   } else {
     title = 'You know every flag';
     detail = 'Keep coming back for short reviews so they stay locked in.';

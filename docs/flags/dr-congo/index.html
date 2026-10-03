@@ -38,9 +38,11 @@ ul{padding-left:20px;margin:0}li{margin-bottom:6px}
 .grid a{color:var(--text);font-size:.88rem;display:flex;flex-direction:column;gap:6px}.grid a:hover{color:var(--accent);text-decoration:none}
 .grid .box{aspect-ratio:3/2;display:grid;place-items:center;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px}
 .grid .flag{width:auto;max-width:100%;max-height:100%}
+.head{display:flex;align-items:center;gap:18px;margin-top:8px}.head p{margin:0}.globe{width:96px;height:96px;flex-shrink:0}
+.pairs{display:flex;flex-direction:column;gap:14px}.pair{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center;color:var(--text)}.pair:hover{text-decoration:none}.pair .box{aspect-ratio:3/2;display:grid;place-items:center}.pair .flag{width:auto;max-width:100%;max-height:100%}.pair strong{display:block}
 .promo{text-align:center}.promo p{margin:0 0 14px}
 footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85rem;color:var(--muted)}
-@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}}</style>
+@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}.globe{width:64px;height:64px}.pair{grid-template-columns:80px 1fr;gap:12px}}</style>
 </head>
 <body>
 <header><div class="wrap">
@@ -50,8 +52,10 @@ footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85re
 <main class="wrap">
 <article>
 <div class="card hero"><img class="flag" src="../../img/flags/640/cd.webp" width="640" height="480" alt="Flag of DR Congo" style="--r:1.3333" decoding="async"></div>
+<div class="head"><img class="globe" src="../../img/globes/cd.svg" width="100" height="100" alt="Where DR Congo is on the globe"><div>
 <h1>Flag of DR Congo</h1>
 <p class="muted">Democratic Republic of the Congo</p>
+</div></div>
 <section class="card">
 <h2>What the flag looks like</h2>
 <p>A sky-blue field with a red diagonal band, edged in yellow, running from the lower hoist to the upper fly, and a yellow five-pointed star in the upper hoist corner.</p>
@@ -60,7 +64,7 @@ footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85re
 </section>
 <section class="card"><h2>Fun facts</h2><ul><li>From 1971 to 1997 the country was called Zaire and flew a green flag showing a hand holding a flaming torch.</li><li>It is the second-largest country in Africa by area, after Algeria.</li></ul></section>
 <section class="card"><h2>DR Congo at a glance</h2><dl><div><dt>Capital</dt><dd>Kinshasa</dd></div><div><dt>Region</dt><dd>Middle Africa</dd></div><div><dt>Population</dt><dd>109 million</dd></div><div><dt>Area</dt><dd>2,344,858 km²</dd></div><div><dt>Languages</dt><dd>French, Kikongo, Lingala, Tshiluba, Swahili</dd></div><div><dt>Currency</dt><dd>Congolese franc</dd></div><div><dt>Flag adopted</dt><dd>2006</dd></div></dl></section>
-<section class="card"><h2>Flags often confused with DR Congo</h2><div class="grid"><a href="../republic-of-the-congo/"><span class="box"><img class="flag" src="../../img/flags/320/cg.webp" width="640" height="427" alt="Flag of Republic of the Congo" style="--r:1.4988" loading="lazy" decoding="async"></span>Republic of the Congo</a><a href="../tanzania/"><span class="box"><img class="flag" src="../../img/flags/320/tz.webp" width="640" height="427" alt="Flag of Tanzania" style="--r:1.4988" loading="lazy" decoding="async"></span>Tanzania</a><a href="../namibia/"><span class="box"><img class="flag" src="../../img/flags/320/na.webp" width="640" height="427" alt="Flag of Namibia" style="--r:1.4988" loading="lazy" decoding="async"></span>Namibia</a></div></section>
+<section class="card"><h2>Flags often confused with DR Congo</h2><div class="pairs"><a class="pair" href="../republic-of-the-congo/"><span class="box"><img class="flag" src="../../img/flags/320/cg.webp" width="640" height="427" alt="Flag of Republic of the Congo" style="--r:1.4988" loading="lazy" decoding="async"></span><span><strong>Republic of the Congo</strong><span class="muted">DR Congo and the Republic of the Congo both have a rising diagonal band. DR Congo is sky blue with a red band and a yellow star; the Republic of the Congo is green, yellow and red with no star.</span></span></a><a class="pair" href="../tanzania/"><span class="box"><img class="flag" src="../../img/flags/320/tz.webp" width="640" height="427" alt="Flag of Tanzania" style="--r:1.4988" loading="lazy" decoding="async"></span><span><strong>Tanzania</strong><span class="muted">DR Congo and Tanzania both have a yellow-edged diagonal band from bottom-left to top-right. DR Congo&#39;s band is red on sky blue with a star; Tanzania&#39;s is black, between green and blue triangles.</span></span></a><a class="pair" href="../namibia/"><span class="box"><img class="flag" src="../../img/flags/320/na.webp" width="640" height="427" alt="Flag of Namibia" style="--r:1.4988" loading="lazy" decoding="async"></span><span><strong>Namibia</strong><span class="muted">DR Congo and Namibia both have a red diagonal band from bottom-left to top-right. DR Congo is all sky blue with a yellow star; Namibia has blue and green triangles and a gold sun.</span></span></a></div></section>
 <section class="card promo"><p>Learn the flag of DR Congo and every other country with short daily lessons.</p><a class="cta" href="../../#/flag/dr-congo">Practice with Learn the Flags</a></section>
 <p><a href="../">← All flags of the world</a></p>
 </article></main>

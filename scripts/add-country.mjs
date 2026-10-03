@@ -38,6 +38,7 @@ for (const code of codes) {
   const status = PARTIAL.includes(code) ? 'partially-recognized' : OBSERVERS.includes(code) ? 'un-observer' : 'un-member';
   const entry = {
     code: code.toLowerCase(),
+    isoNumeric: c.ccn3 ?? '',
     name: c.name.common,
     officialName: c.name.official,
     aliases: [],

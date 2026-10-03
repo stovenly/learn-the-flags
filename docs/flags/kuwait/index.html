@@ -38,9 +38,11 @@ ul{padding-left:20px;margin:0}li{margin-bottom:6px}
 .grid a{color:var(--text);font-size:.88rem;display:flex;flex-direction:column;gap:6px}.grid a:hover{color:var(--accent);text-decoration:none}
 .grid .box{aspect-ratio:3/2;display:grid;place-items:center;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px}
 .grid .flag{width:auto;max-width:100%;max-height:100%}
+.head{display:flex;align-items:center;gap:18px;margin-top:8px}.head p{margin:0}.globe{width:96px;height:96px;flex-shrink:0}
+.pairs{display:flex;flex-direction:column;gap:14px}.pair{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center;color:var(--text)}.pair:hover{text-decoration:none}.pair .box{aspect-ratio:3/2;display:grid;place-items:center}.pair .flag{width:auto;max-width:100%;max-height:100%}.pair strong{display:block}
 .promo{text-align:center}.promo p{margin:0 0 14px}
 footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85rem;color:var(--muted)}
-@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}}</style>
+@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}.globe{width:64px;height:64px}.pair{grid-template-columns:80px 1fr;gap:12px}}</style>
 </head>
 <body>
 <header><div class="wrap">
@@ -50,8 +52,10 @@ footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85re
 <main class="wrap">
 <article>
 <div class="card hero"><img class="flag" src="../../img/flags/640/kw.webp" width="640" height="320" alt="Flag of Kuwait" style="--r:2" decoding="async"></div>
+<div class="head"><img class="globe" src="../../img/globes/kw.svg" width="100" height="100" alt="Where Kuwait is on the globe"><div>
 <h1>Flag of Kuwait</h1>
 <p class="muted">State of Kuwait</p>
+</div></div>
 <section class="card">
 <h2>What the flag looks like</h2>
 <p>Three equal horizontal stripes of green, white and red, with a black trapezoid at the hoist whose shorter side faces the fly.</p>
@@ -60,7 +64,7 @@ footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85re
 </section>
 <section class="card"><h2>Fun facts</h2><ul><li>The flag was first raised on 24 November 1961, a few months after independence from Britain.</li><li>The Kuwaiti dinar is the highest-valued currency unit in the world.</li></ul></section>
 <section class="card"><h2>Kuwait at a glance</h2><dl><div><dt>Capital</dt><dd>Kuwait City</dd></div><div><dt>Region</dt><dd>Western Asia</dd></div><div><dt>Population</dt><dd>4.9 million</dd></div><div><dt>Area</dt><dd>17,818 km²</dd></div><div><dt>Languages</dt><dd>Arabic</dd></div><div><dt>Currency</dt><dd>Kuwaiti dinar</dd></div><div><dt>Flag adopted</dt><dd>1961</dd></div></dl></section>
-<section class="card"><h2>Flags often confused with Kuwait</h2><div class="grid"><a href="../united-arab-emirates/"><span class="box"><img class="flag" src="../../img/flags/320/ae.webp" width="640" height="320" alt="Flag of United Arab Emirates" style="--r:2" loading="lazy" decoding="async"></span>United Arab Emirates</a><a href="../jordan/"><span class="box"><img class="flag" src="../../img/flags/320/jo.webp" width="640" height="320" alt="Flag of Jordan" style="--r:2" loading="lazy" decoding="async"></span>Jordan</a><a href="../palestine/"><span class="box"><img class="flag" src="../../img/flags/320/ps.webp" width="640" height="320" alt="Flag of Palestine" style="--r:2" loading="lazy" decoding="async"></span>Palestine</a><a href="../sudan/"><span class="box"><img class="flag" src="../../img/flags/320/sd.webp" width="640" height="320" alt="Flag of Sudan" style="--r:2" loading="lazy" decoding="async"></span>Sudan</a></div></section>
+<section class="card"><h2>Flags often confused with Kuwait</h2><div class="pairs"><a class="pair" href="../united-arab-emirates/"><span class="box"><img class="flag" src="../../img/flags/320/ae.webp" width="640" height="320" alt="Flag of United Arab Emirates" style="--r:2" loading="lazy" decoding="async"></span><span><strong>United Arab Emirates</strong><span class="muted">The UAE and Kuwait both have green, white and a fourth colour beside a hoist shape. The UAE has a red rectangle and black bottom stripe; Kuwait has a black trapezoid and red bottom stripe.</span></span></a><a class="pair" href="../jordan/"><span class="box"><img class="flag" src="../../img/flags/320/jo.webp" width="640" height="320" alt="Flag of Jordan" style="--r:2" loading="lazy" decoding="async"></span><span><strong>Jordan</strong><span class="muted">Jordan and Kuwait both use black, white, green and red. Jordan has black on top with a red triangle holding a white star; Kuwait has green on top with a black trapezoid at the hoist.</span></span></a><a class="pair" href="../palestine/"><span class="box"><img class="flag" src="../../img/flags/320/ps.webp" width="640" height="320" alt="Flag of Palestine" style="--r:2" loading="lazy" decoding="async"></span><span><strong>Palestine</strong><span class="muted">Kuwait and Palestine both have three stripes with a shape at the hoist. Kuwait is green on top with a black trapezoid; Palestine is black on top with a red triangle.</span></span></a><a class="pair" href="../sudan/"><span class="box"><img class="flag" src="../../img/flags/320/sd.webp" width="640" height="320" alt="Flag of Sudan" style="--r:2" loading="lazy" decoding="async"></span><span><strong>Sudan</strong><span class="muted">Kuwait and Sudan both use green, white, red and black. Kuwait has green on top and a black trapezoid at the hoist; Sudan has red on top and a green triangle at the hoist.</span></span></a></div></section>
 <section class="card promo"><p>Learn the flag of Kuwait and every other country with short daily lessons.</p><a class="cta" href="../../#/flag/kuwait">Practice with Learn the Flags</a></section>
 <p><a href="../">← All flags of the world</a></p>
 </article></main>

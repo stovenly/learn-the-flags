@@ -6,8 +6,6 @@ import sharp from 'sharp';
 const ROOT = path.resolve(import.meta.dirname, '..');
 const COLORS = ['red', 'orange', 'yellow', 'green', 'blue', 'light-blue', 'white', 'black', 'maroon', 'brown', 'purple'];
 const STATUSES = ['un-member', 'un-observer', 'partially-recognized'];
-// Mean CIE76 ΔE over a 32×20 thumbnail; below this two flags count as visually similar.
-const SIMILAR_DE = 24;
 
 const dir = path.join(ROOT, 'data/countries');
 const files = (await fs.readdir(dir)).filter((f) => f.endsWith('.json')).sort();
@@ -34,6 +32,18 @@ for (const f of files) {
 const codes = new Set(countries.map((c) => c.code));
 for (const c of countries) {
   for (const l of c.lookalikes ?? []) if (!codes.has(l)) errors.push(`${c.code}.json: lookalike "${l}" is not a known country`);
+}
+
+// data/lookalikes.json: "<code>-<code>" (alphabetical) → how to tell the two flags apart.
+const pairKey = (a, b) => [a, b].sort().join('-');
+const differences = JSON.parse(await fs.readFile(path.join(ROOT, 'data/lookalikes.json'), 'utf8'));
+for (const [k, v] of Object.entries(differences)) {
+  const [a, b] = k.split('-');
+  if (!codes.has(a) || !codes.has(b) || k !== pairKey(a, b)) errors.push(`lookalikes.json: bad key "${k}"`);
+  else if (typeof v !== 'string' || !v) errors.push(`lookalikes.json: "${k}" needs a sentence`);
+}
+for (const c of countries) {
+  for (const l of c.lookalikes ?? []) if (!differences[pairKey(c.code, l)]) warnings.push(`lookalikes.json: no explanation for ${pairKey(c.code, l)}`);
 }
 
 function toLab([r, g, b]) {
@@ -85,9 +95,13 @@ const out = countries
       .filter((o) => o.code !== c.code && images[o.code])
       .map((o) => ({ code: o.code, d: distance(images[c.code].lab, images[o.code].lab) }))
       .sort((a, b) => a.d - b.d);
-    const similar = near.filter((n) => n.d < SIMILAR_DE).slice(0, 4).map((n) => n.code);
     const reverse = countries.filter((o) => o.lookalikes?.includes(c.code)).map((o) => o.code);
-    const lookalikes = [...new Set([...(c.lookalikes ?? []), ...reverse, ...similar])].slice(0, 6);
+    const fromPairs = Object.keys(differences)
+      .map((k) => k.split('-'))
+      .filter((p) => p.includes(c.code))
+      .map((p) => (p[0] === c.code ? p[1] : p[0]));
+    const lookalikes = [...new Set([...(c.lookalikes ?? []), ...reverse, ...fromPairs])];
+    const diffs = Object.fromEntries(lookalikes.filter((l) => differences[pairKey(c.code, l)]).map((l) => [l, differences[pairKey(c.code, l)]]));
     const { ratio, transparent, color } = images[c.code];
     return {
       code: c.code,
@@ -108,6 +122,7 @@ const out = countries
       hook: c.hook,
       trivia: c.trivia ?? [],
       lookalikes,
+      differences: diffs,
       nearest: near.slice(0, 12).map((n) => n.code),
       ratio,
       transparent,

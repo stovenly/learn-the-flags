@@ -38,9 +38,11 @@ ul{padding-left:20px;margin:0}li{margin-bottom:6px}
 .grid a{color:var(--text);font-size:.88rem;display:flex;flex-direction:column;gap:6px}.grid a:hover{color:var(--accent);text-decoration:none}
 .grid .box{aspect-ratio:3/2;display:grid;place-items:center;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px}
 .grid .flag{width:auto;max-width:100%;max-height:100%}
+.head{display:flex;align-items:center;gap:18px;margin-top:8px}.head p{margin:0}.globe{width:96px;height:96px;flex-shrink:0}
+.pairs{display:flex;flex-direction:column;gap:14px}.pair{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center;color:var(--text)}.pair:hover{text-decoration:none}.pair .box{aspect-ratio:3/2;display:grid;place-items:center}.pair .flag{width:auto;max-width:100%;max-height:100%}.pair strong{display:block}
 .promo{text-align:center}.promo p{margin:0 0 14px}
 footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85rem;color:var(--muted)}
-@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}}</style>
+@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}.globe{width:64px;height:64px}.pair{grid-template-columns:80px 1fr;gap:12px}}</style>
 </head>
 <body>
 <header><div class="wrap">
@@ -50,8 +52,10 @@ footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85re
 <main class="wrap">
 <article>
 <div class="card hero"><img class="flag" src="../../img/flags/640/ye.webp" width="640" height="427" alt="Flag of Yemen" style="--r:1.4988" decoding="async"></div>
+<div class="head"><img class="globe" src="../../img/globes/ye.svg" width="100" height="100" alt="Where Yemen is on the globe"><div>
 <h1>Flag of Yemen</h1>
 <p class="muted">Republic of Yemen</p>
+</div></div>
 <section class="card">
 <h2>What the flag looks like</h2>
 <p>Three equal horizontal stripes of red, white and black, with no emblem.</p>
@@ -60,7 +64,7 @@ footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85re
 </section>
 <section class="card"><h2>Fun facts</h2><ul><li>The flag was adopted on 22 May 1990, when North and South Yemen unified.</li><li>The old walled city of Shibam, with its mud-brick tower houses, is sometimes called the &quot;Manhattan of the Desert&quot;.</li><li>Yemen&#39;s Socotra archipelago is home to the dragon&#39;s blood tree, found nowhere else.</li></ul></section>
 <section class="card"><h2>Yemen at a glance</h2><dl><div><dt>Capital</dt><dd>Sana&#39;a</dd></div><div><dt>Region</dt><dd>Western Asia</dd></div><div><dt>Population</dt><dd>41 million</dd></div><div><dt>Area</dt><dd>527,968 km²</dd></div><div><dt>Languages</dt><dd>Arabic</dd></div><div><dt>Currency</dt><dd>Yemeni rial</dd></div><div><dt>Flag adopted</dt><dd>1990</dd></div></dl></section>
-<section class="card"><h2>Flags often confused with Yemen</h2><div class="grid"><a href="../egypt/"><span class="box"><img class="flag" src="../../img/flags/320/eg.webp" width="640" height="427" alt="Flag of Egypt" style="--r:1.4988" loading="lazy" decoding="async"></span>Egypt</a><a href="../iraq/"><span class="box"><img class="flag" src="../../img/flags/320/iq.webp" width="640" height="427" alt="Flag of Iraq" style="--r:1.4988" loading="lazy" decoding="async"></span>Iraq</a><a href="../syria/"><span class="box"><img class="flag" src="../../img/flags/320/sy.webp" width="640" height="427" alt="Flag of Syria" style="--r:1.4988" loading="lazy" decoding="async"></span>Syria</a><a href="../sudan/"><span class="box"><img class="flag" src="../../img/flags/320/sd.webp" width="640" height="320" alt="Flag of Sudan" style="--r:2" loading="lazy" decoding="async"></span>Sudan</a><a href="../hungary/"><span class="box"><img class="flag" src="../../img/flags/320/hu.webp" width="640" height="320" alt="Flag of Hungary" style="--r:2" loading="lazy" decoding="async"></span>Hungary</a></div></section>
+<section class="card"><h2>Flags often confused with Yemen</h2><div class="pairs"><a class="pair" href="../egypt/"><span class="box"><img class="flag" src="../../img/flags/320/eg.webp" width="640" height="427" alt="Flag of Egypt" style="--r:1.4988" loading="lazy" decoding="async"></span><span><strong>Egypt</strong><span class="muted">Egypt and Yemen are both red, white and black. Egypt has a gold eagle in the centre; Yemen&#39;s flag is plain.</span></span></a><a class="pair" href="../iraq/"><span class="box"><img class="flag" src="../../img/flags/320/iq.webp" width="640" height="427" alt="Flag of Iraq" style="--r:1.4988" loading="lazy" decoding="async"></span><span><strong>Iraq</strong><span class="muted">Iraq and Yemen are both red, white and black horizontal stripes. Iraq has green Arabic script (&quot;Allahu akbar&quot;) across the white stripe; Yemen&#39;s flag is completely plain.</span></span></a><a class="pair" href="../syria/"><span class="box"><img class="flag" src="../../img/flags/320/sy.webp" width="640" height="427" alt="Flag of Syria" style="--r:1.4988" loading="lazy" decoding="async"></span><span><strong>Syria</strong><span class="muted">Syria and Yemen both have horizontal stripes with white in the middle and black at the bottom. Syria has green on top and three red stars; Yemen has red on top and no emblem.</span></span></a></div></section>
 <section class="card promo"><p>Learn the flag of Yemen and every other country with short daily lessons.</p><a class="cta" href="../../#/flag/yemen">Practice with Learn the Flags</a></section>
 <p><a href="../">← All flags of the world</a></p>
 </article></main>

@@ -38,9 +38,11 @@ ul{padding-left:20px;margin:0}li{margin-bottom:6px}
 .grid a{color:var(--text);font-size:.88rem;display:flex;flex-direction:column;gap:6px}.grid a:hover{color:var(--accent);text-decoration:none}
 .grid .box{aspect-ratio:3/2;display:grid;place-items:center;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px}
 .grid .flag{width:auto;max-width:100%;max-height:100%}
+.head{display:flex;align-items:center;gap:18px;margin-top:8px}.head p{margin:0}.globe{width:96px;height:96px;flex-shrink:0}
+.pairs{display:flex;flex-direction:column;gap:14px}.pair{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center;color:var(--text)}.pair:hover{text-decoration:none}.pair .box{aspect-ratio:3/2;display:grid;place-items:center}.pair .flag{width:auto;max-width:100%;max-height:100%}.pair strong{display:block}
 .promo{text-align:center}.promo p{margin:0 0 14px}
 footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85rem;color:var(--muted)}
-@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}}</style>
+@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}.globe{width:64px;height:64px}.pair{grid-template-columns:80px 1fr;gap:12px}}</style>
 </head>
 <body>
 <header><div class="wrap">
@@ -50,8 +52,10 @@ footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85re
 <main class="wrap">
 <article>
 <div class="card hero"><img class="flag" src="../../img/flags/640/py.webp" width="640" height="352" alt="Flag of Paraguay" style="--r:1.8182" decoding="async"></div>
+<div class="head"><img class="globe" src="../../img/globes/py.svg" width="100" height="100" alt="Where Paraguay is on the globe"><div>
 <h1>Flag of Paraguay</h1>
 <p class="muted">Republic of Paraguay</p>
+</div></div>
 <section class="card">
 <h2>What the flag looks like</h2>
 <p>Three equal horizontal bands of red, white and blue, with the national coat of arms in the centre of the white band on the front and the treasury seal, a lion with a cap of liberty, on the back.</p>
@@ -60,7 +64,7 @@ footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85re
 </section>
 <section class="card"><h2>Fun facts</h2><ul><li>Paraguay&#39;s flag is the only national flag whose two sides differ: the front shows the national arms and the back the treasury seal.</li><li>Guaraní, an Indigenous language, is spoken by most Paraguayans and is an official language alongside Spanish.</li></ul></section>
 <section class="card"><h2>Paraguay at a glance</h2><dl><div><dt>Capital</dt><dd>Asunción</dd></div><div><dt>Region</dt><dd>South America</dd></div><div><dt>Population</dt><dd>6.9 million</dd></div><div><dt>Area</dt><dd>406,752 km²</dd></div><div><dt>Languages</dt><dd>Guaraní, Spanish</dd></div><div><dt>Currency</dt><dd>Paraguayan guaraní</dd></div><div><dt>Flag adopted</dt><dd>1842</dd></div></dl></section>
-<section class="card"><h2>Flags often confused with Paraguay</h2><div class="grid"><a href="../netherlands/"><span class="box"><img class="flag" src="../../img/flags/320/nl.webp" width="640" height="427" alt="Flag of Netherlands" style="--r:1.4988" loading="lazy" decoding="async"></span>Netherlands</a><a href="../luxembourg/"><span class="box"><img class="flag" src="../../img/flags/320/lu.webp" width="640" height="384" alt="Flag of Luxembourg" style="--r:1.6667" loading="lazy" decoding="async"></span>Luxembourg</a><a href="../croatia/"><span class="box"><img class="flag" src="../../img/flags/320/hr.webp" width="640" height="320" alt="Flag of Croatia" style="--r:2" loading="lazy" decoding="async"></span>Croatia</a></div></section>
+<section class="card"><h2>Flags often confused with Paraguay</h2><div class="pairs"><a class="pair" href="../netherlands/"><span class="box"><img class="flag" src="../../img/flags/320/nl.webp" width="640" height="427" alt="Flag of Netherlands" style="--r:1.4988" loading="lazy" decoding="async"></span><span><strong>Netherlands</strong><span class="muted">The Netherlands and Paraguay are both red, white and blue horizontal stripes. Paraguay has a round emblem in the centre of the white stripe; the Dutch flag is plain.</span></span></a><a class="pair" href="../luxembourg/"><span class="box"><img class="flag" src="../../img/flags/320/lu.webp" width="640" height="384" alt="Flag of Luxembourg" style="--r:1.6667" loading="lazy" decoding="async"></span><span><strong>Luxembourg</strong><span class="muted">Luxembourg and Paraguay are both red, white and blue horizontal stripes. Paraguay has a round emblem in the centre and a darker blue; Luxembourg&#39;s is plain, with light sky blue.</span></span></a><a class="pair" href="../croatia/"><span class="box"><img class="flag" src="../../img/flags/320/hr.webp" width="640" height="320" alt="Flag of Croatia" style="--r:2" loading="lazy" decoding="async"></span><span><strong>Croatia</strong><span class="muted">Croatia and Paraguay are both red, white and blue with a central emblem. Croatia has a large checkerboard shield spilling over the stripes; Paraguay has a small round seal inside the white band.</span></span></a></div></section>
 <section class="card promo"><p>Learn the flag of Paraguay and every other country with short daily lessons.</p><a class="cta" href="../../#/flag/paraguay">Practice with Learn the Flags</a></section>
 <p><a href="../">← All flags of the world</a></p>
 </article></main>

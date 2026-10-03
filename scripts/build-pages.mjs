@@ -38,9 +38,11 @@ ul{padding-left:20px;margin:0}li{margin-bottom:6px}
 .grid a{color:var(--text);font-size:.88rem;display:flex;flex-direction:column;gap:6px}.grid a:hover{color:var(--accent);text-decoration:none}
 .grid .box{aspect-ratio:3/2;display:grid;place-items:center;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px}
 .grid .flag{width:auto;max-width:100%;max-height:100%}
+.head{display:flex;align-items:center;gap:18px;margin-top:8px}.head p{margin:0}.globe{width:96px;height:96px;flex-shrink:0}
+.pairs{display:flex;flex-direction:column;gap:14px}.pair{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center;color:var(--text)}.pair:hover{text-decoration:none}.pair .box{aspect-ratio:3/2;display:grid;place-items:center}.pair .flag{width:auto;max-width:100%;max-height:100%}.pair strong{display:block}
 .promo{text-align:center}.promo p{margin:0 0 14px}
 footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85rem;color:var(--muted)}
-@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}}
+@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}.globe{width:64px;height:64px}.pair{grid-template-columns:80px 1fr;gap:12px}}
 `.trim();
 
 function page({ title, description, canonical, image, depth, body, jsonld }) {
@@ -98,8 +100,10 @@ for (const c of countries) {
   const body = `
 <article>
 <div class="card hero">${img(c, up)}</div>
+<div class="head"><img class="globe" src="${up}img/globes/${c.code}.svg" width="100" height="100" alt="Where ${esc(c.name)} is on the globe"><div>
 <h1>Flag of ${esc(c.name)}</h1>
 <p class="muted">${esc(c.officialName)}${STATUS[c.status] ? ` · ${STATUS[c.status]}` : ''}</p>
+</div></div>
 <section class="card">
 <h2>What the flag looks like</h2>
 <p>${esc(c.flag.description)}</p>
@@ -108,7 +112,7 @@ ${c.hook ? `<div class="hook"><span class="label">How to remember it</span><p st
 </section>
 ${c.trivia.length ? `<section class="card"><h2>Fun facts</h2><ul>${c.trivia.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>` : ''}
 <section class="card"><h2>${esc(c.name)} at a glance</h2><dl>${facts.map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v || '—')}</dd></div>`).join('')}</dl></section>
-${looks.length ? `<section class="card"><h2>Flags often confused with ${esc(c.name)}</h2><div class="grid">${looks.map((o) => tile(o, up, `../${o.slug}/`)).join('')}</div></section>` : ''}
+${looks.length ? `<section class="card"><h2>Flags often confused with ${esc(c.name)}</h2><div class="pairs">${looks.map((o) => `<a class="pair" href="../${o.slug}/"><span class="box">${img(o, up, 320)}</span><span><strong>${esc(o.name)}</strong>${c.differences[o.code] ? `<span class="muted">${esc(c.differences[o.code])}</span>` : ''}</span></a>`).join('')}</div></section>` : ''}
 <section class="card promo"><p>Learn the flag of ${esc(c.name)} and every other country with short daily lessons.</p><a class="cta" href="${up}#/flag/${c.slug}">Practice with ${esc(site.name)}</a></section>
 <p><a href="../">← All flags of the world</a></p>
 </article>`;

@@ -38,9 +38,11 @@ ul{padding-left:20px;margin:0}li{margin-bottom:6px}
 .grid a{color:var(--text);font-size:.88rem;display:flex;flex-direction:column;gap:6px}.grid a:hover{color:var(--accent);text-decoration:none}
 .grid .box{aspect-ratio:3/2;display:grid;place-items:center;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px}
 .grid .flag{width:auto;max-width:100%;max-height:100%}
+.head{display:flex;align-items:center;gap:18px;margin-top:8px}.head p{margin:0}.globe{width:96px;height:96px;flex-shrink:0}
+.pairs{display:flex;flex-direction:column;gap:14px}.pair{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center;color:var(--text)}.pair:hover{text-decoration:none}.pair .box{aspect-ratio:3/2;display:grid;place-items:center}.pair .flag{width:auto;max-width:100%;max-height:100%}.pair strong{display:block}
 .promo{text-align:center}.promo p{margin:0 0 14px}
 footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85rem;color:var(--muted)}
-@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}}</style>
+@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}.globe{width:64px;height:64px}.pair{grid-template-columns:80px 1fr;gap:12px}}</style>
 </head>
 <body>
 <header><div class="wrap">
@@ -50,8 +52,10 @@ footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85re
 <main class="wrap">
 <article>
 <div class="card hero"><img class="flag" src="../../img/flags/640/pl.webp" width="640" height="400" alt="Flag of Poland" style="--r:1.6" decoding="async"></div>
+<div class="head"><img class="globe" src="../../img/globes/pl.svg" width="100" height="100" alt="Where Poland is on the globe"><div>
 <h1>Flag of Poland</h1>
 <p class="muted">Republic of Poland</p>
+</div></div>
 <section class="card">
 <h2>What the flag looks like</h2>
 <p>Two equal horizontal bands, white over red.</p>
@@ -60,7 +64,7 @@ footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85re
 </section>
 <section class="card"><h2>Fun facts</h2><ul><li>Poland celebrates Flag Day on 2 May, between Labour Day and Constitution Day.</li><li>Upside down, the Polish flag looks almost exactly like the flags of Indonesia and Monaco.</li></ul></section>
 <section class="card"><h2>Poland at a glance</h2><dl><div><dt>Capital</dt><dd>Warsaw</dd></div><div><dt>Region</dt><dd>Central Europe</dd></div><div><dt>Population</dt><dd>37 million</dd></div><div><dt>Area</dt><dd>312,679 km²</dd></div><div><dt>Languages</dt><dd>Polish</dd></div><div><dt>Currency</dt><dd>Polish złoty</dd></div><div><dt>Flag adopted</dt><dd>1919</dd></div></dl></section>
-<section class="card"><h2>Flags often confused with Poland</h2><div class="grid"><a href="../indonesia/"><span class="box"><img class="flag" src="../../img/flags/320/id.webp" width="640" height="427" alt="Flag of Indonesia" style="--r:1.4988" loading="lazy" decoding="async"></span>Indonesia</a><a href="../monaco/"><span class="box"><img class="flag" src="../../img/flags/320/mc.webp" width="640" height="512" alt="Flag of Monaco" style="--r:1.25" loading="lazy" decoding="async"></span>Monaco</a><a href="../singapore/"><span class="box"><img class="flag" src="../../img/flags/320/sg.webp" width="640" height="427" alt="Flag of Singapore" style="--r:1.4988" loading="lazy" decoding="async"></span>Singapore</a><a href="../czechia/"><span class="box"><img class="flag" src="../../img/flags/320/cz.webp" width="640" height="427" alt="Flag of Czechia" style="--r:1.4988" loading="lazy" decoding="async"></span>Czechia</a></div></section>
+<section class="card"><h2>Flags often confused with Poland</h2><div class="pairs"><a class="pair" href="../indonesia/"><span class="box"><img class="flag" src="../../img/flags/320/id.webp" width="640" height="427" alt="Flag of Indonesia" style="--r:1.4988" loading="lazy" decoding="async"></span><span><strong>Indonesia</strong><span class="muted">Indonesia and Poland both have two bands of red and white. Indonesia has red on top; Poland has white on top.</span></span></a><a class="pair" href="../monaco/"><span class="box"><img class="flag" src="../../img/flags/320/mc.webp" width="640" height="512" alt="Flag of Monaco" style="--r:1.25" loading="lazy" decoding="async"></span><span><strong>Monaco</strong><span class="muted">Monaco and Poland are both two bands of red and white. Monaco has red on top; Poland has white on top.</span></span></a><a class="pair" href="../singapore/"><span class="box"><img class="flag" src="../../img/flags/320/sg.webp" width="640" height="427" alt="Flag of Singapore" style="--r:1.4988" loading="lazy" decoding="async"></span><span><strong>Singapore</strong><span class="muted">Poland and Singapore are both red and white halves. Poland has white on top and no emblem; Singapore has red on top with a white crescent and five stars.</span></span></a><a class="pair" href="../czechia/"><span class="box"><img class="flag" src="../../img/flags/320/cz.webp" width="640" height="427" alt="Flag of Czechia" style="--r:1.4988" loading="lazy" decoding="async"></span><span><strong>Czechia</strong><span class="muted">Czechia and Poland are both white over red. Czechia adds a blue triangle at the hoist; Poland has just the two plain bands.</span></span></a></div></section>
 <section class="card promo"><p>Learn the flag of Poland and every other country with short daily lessons.</p><a class="cta" href="../../#/flag/poland">Practice with Learn the Flags</a></section>
 <p><a href="../">← All flags of the world</a></p>
 </article></main>

@@ -1,4 +1,4 @@
-import { byCode, Country, flagSrc } from './data';
+import { byCode, Country, flagSrc, globeSrc } from './data';
 
 export const esc = (s: unknown) =>
   String(s ?? '').replace(/[&<>"']/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch]!);
@@ -22,6 +22,15 @@ export function flagImg(c: Country, opts: { size?: 'sm' | 'md' | 'lg'; lazy?: bo
   const src = size === 'sm' ? flagSrc(c.code, 320) : flagSrc(c.code, 640);
   const srcset = size === 'sm' ? `${flagSrc(c.code, 320)} 1x, ${flagSrc(c.code, 640)} 2x` : '';
   return `<img class="flag flag-${size}${c.transparent ? ' flag-shaped' : ''}" src="${src}"${srcset ? ` srcset="${srcset}"` : ''} width="${w}" height="${h}" alt="${esc(alt)}" style="--ratio:${c.ratio}${lazy && !c.transparent ? `;background-color:${c.color}` : ''}"${lazy ? ' loading="lazy"' : ''} decoding="async" draggable="false">`;
+}
+
+export function globeImg(c: Country, size: 'sm' | 'md' | 'lg' = 'md') {
+  return `<img class="globe globe-${size}" src="${globeSrc(c.code)}" width="100" height="100" alt="Where ${esc(c.name)} is on the globe" decoding="async" draggable="false">`;
+}
+
+export function differencesHtml(c: Country, others: Country[]) {
+  const items = others.filter((o) => c.differences[o.code]).map((o) => `<li>${esc(c.differences[o.code])}</li>`);
+  return items.length ? `<div class="tell"><span class="hook-label">How to tell them apart</span><ul>${items.join('')}</ul></div>` : '';
 }
 
 export const countryLink = (c: Country) => `#/flag/${c.slug}`;

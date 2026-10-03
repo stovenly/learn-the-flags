@@ -1,16 +1,14 @@
-import { dueCards, newCards, newLeftToday, state } from '../store';
+import { dueCards, newCards, state } from '../store';
 import { buildStudy, runSession } from './session';
 
-// Long backlogs are split into several short sittings; new flags wait until the backlog is small.
+// Long backlogs are split into several short sittings; new flags join once the backlog fits in one.
 const MAX_REVIEWS = 30;
-const BACKLOG_BLOCKS_NEW = 40;
 
 export function studyView(root: HTMLElement, param: string) {
-  const extra = param === 'more';
+  const onlyNew = param === 'new';
   const allDue = dueCards();
-  const due = allDue.slice(0, MAX_REVIEWS);
-  const room = extra ? state.settings.lessonSize : allDue.length > BACKLOG_BLOCKS_NEW ? 0 : Math.min(newLeftToday(), state.settings.lessonSize);
-  const fresh = newCards().slice(0, room);
+  const due = onlyNew ? [] : allDue.slice(0, MAX_REVIEWS);
+  const fresh = onlyNew || allDue.length <= MAX_REVIEWS ? newCards().slice(0, state.settings.lessonSize) : [];
 
   if (!due.length && !fresh.length) {
     location.replace('#/');
@@ -22,7 +20,7 @@ export function studyView(root: HTMLElement, param: string) {
     scheduled: true,
     title: fresh.length && !due.length ? 'Lesson' : 'Session',
     onDone: () => {
-      const more = dueCards().length > 0 || (newLeftToday() > 0 && newCards().length > 0);
+      const more = dueCards().length > 0 || newCards().length > 0;
       return `<a class="btn ghost" href="#/">Home</a>${more ? `<a class="btn primary" href="#/study">Keep going</a>` : ''}`;
     },
   });

@@ -19,13 +19,14 @@ export interface Country {
   hook: string;
   trivia: string[];
   lookalikes: string[];
+  differences: Record<string, string>; // lookalike code → how to tell the two apart
   nearest: string[];
   ratio: number;
   transparent: boolean;
   color: string;
 }
 
-export const ALL: Country[] = raw as Country[];
+export const ALL = raw as unknown as Country[];
 export const byCode = new Map(ALL.map((c) => [c.code, c]));
 export const REGIONS = ['Europe', 'Asia', 'Africa', 'Americas', 'Oceania'];
 
@@ -53,19 +54,21 @@ export function curriculum(list: Country[]): Country[] {
 }
 
 export const flagSrc = (code: string, w: 320 | 640 = 640) => `img/flags/${w}/${code}.webp`;
+export const globeSrc = (code: string) => `img/globes/${code}.svg`;
 
 const imageCache = new Map<string, Promise<void>>();
-export function preload(code: string, w: 320 | 640 = 640): Promise<void> {
-  const key = `${w}/${code}`;
-  let p = imageCache.get(key);
+function preloadSrc(src: string): Promise<void> {
+  let p = imageCache.get(src);
   if (!p) {
     const img = new Image();
-    img.src = flagSrc(code, w);
+    img.src = src;
     p = img.decode().catch(() => {});
-    imageCache.set(key, p);
+    imageCache.set(src, p);
   }
   return p;
 }
+export const preload = (code: string, w: 320 | 640 = 640) => preloadSrc(flagSrc(code, w));
+export const preloadGlobe = (code: string) => preloadSrc(globeSrc(code));
 
 export function normalize(s: string): string {
   return s

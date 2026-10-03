@@ -38,9 +38,11 @@ ul{padding-left:20px;margin:0}li{margin-bottom:6px}
 .grid a{color:var(--text);font-size:.88rem;display:flex;flex-direction:column;gap:6px}.grid a:hover{color:var(--accent);text-decoration:none}
 .grid .box{aspect-ratio:3/2;display:grid;place-items:center;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px}
 .grid .flag{width:auto;max-width:100%;max-height:100%}
+.head{display:flex;align-items:center;gap:18px;margin-top:8px}.head p{margin:0}.globe{width:96px;height:96px;flex-shrink:0}
+.pairs{display:flex;flex-direction:column;gap:14px}.pair{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center;color:var(--text)}.pair:hover{text-decoration:none}.pair .box{aspect-ratio:3/2;display:grid;place-items:center}.pair .flag{width:auto;max-width:100%;max-height:100%}.pair strong{display:block}
 .promo{text-align:center}.promo p{margin:0 0 14px}
 footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85rem;color:var(--muted)}
-@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}}</style>
+@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}.globe{width:64px;height:64px}.pair{grid-template-columns:80px 1fr;gap:12px}}</style>
 </head>
 <body>
 <header><div class="wrap">
@@ -50,8 +52,10 @@ footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85re
 <main class="wrap">
 <article>
 <div class="card hero"><img class="flag" src="../../img/flags/640/gb.webp" width="640" height="320" alt="Flag of United Kingdom" style="--r:2" decoding="async"></div>
+<div class="head"><img class="globe" src="../../img/globes/gb.svg" width="100" height="100" alt="Where United Kingdom is on the globe"><div>
 <h1>Flag of United Kingdom</h1>
 <p class="muted">United Kingdom of Great Britain and Northern Ireland</p>
+</div></div>
 <section class="card">
 <h2>What the flag looks like</h2>
 <p>The Union Jack: a blue field with the red cross of St George edged in white, over the white diagonal cross of St Andrew combined with the offset red diagonal cross of St Patrick.</p>
@@ -60,7 +64,7 @@ footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85re
 </section>
 <section class="card"><h2>Fun facts</h2><ul><li>Wales is not represented on the flag because it was already united with England when the first Union Flag was created in 1606.</li><li>The flag is not symmetrical: correctly flown, the broader white diagonal is above the red one on the half nearest the flagpole.</li></ul></section>
 <section class="card"><h2>United Kingdom at a glance</h2><dl><div><dt>Capital</dt><dd>London</dd></div><div><dt>Region</dt><dd>Northern Europe</dd></div><div><dt>Population</dt><dd>69 million</dd></div><div><dt>Area</dt><dd>242,900 km²</dd></div><div><dt>Languages</dt><dd>English</dd></div><div><dt>Currency</dt><dd>British pound</dd></div><div><dt>Flag adopted</dt><dd>1801</dd></div></dl></section>
-<section class="card"><h2>Flags often confused with United Kingdom</h2><div class="grid"><a href="../australia/"><span class="box"><img class="flag" src="../../img/flags/320/au.webp" width="640" height="320" alt="Flag of Australia" style="--r:2" loading="lazy" decoding="async"></span>Australia</a><a href="../new-zealand/"><span class="box"><img class="flag" src="../../img/flags/320/nz.webp" width="640" height="320" alt="Flag of New Zealand" style="--r:2" loading="lazy" decoding="async"></span>New Zealand</a><a href="../tuvalu/"><span class="box"><img class="flag" src="../../img/flags/320/tv.webp" width="640" height="320" alt="Flag of Tuvalu" style="--r:2" loading="lazy" decoding="async"></span>Tuvalu</a><a href="../fiji/"><span class="box"><img class="flag" src="../../img/flags/320/fj.webp" width="640" height="320" alt="Flag of Fiji" style="--r:2" loading="lazy" decoding="async"></span>Fiji</a></div></section>
+<section class="card"><h2>Flags often confused with United Kingdom</h2><div class="pairs"><a class="pair" href="../australia/"><span class="box"><img class="flag" src="../../img/flags/320/au.webp" width="640" height="320" alt="Flag of Australia" style="--r:2" loading="lazy" decoding="async"></span><span><strong>Australia</strong><span class="muted">Australia&#39;s flag has the United Kingdom&#39;s Union Jack in its upper-left corner. The UK flag is the Union Jack alone, while Australia adds a dark blue field with white stars.</span></span></a><a class="pair" href="../new-zealand/"><span class="box"><img class="flag" src="../../img/flags/320/nz.webp" width="640" height="320" alt="Flag of New Zealand" style="--r:2" loading="lazy" decoding="async"></span><span><strong>New Zealand</strong><span class="muted">New Zealand uses the United Kingdom&#39;s Union Jack in its corner. The UK flag is the Union Jack alone; New Zealand&#39;s has a dark blue field with four red stars on the right.</span></span></a><a class="pair" href="../tuvalu/"><span class="box"><img class="flag" src="../../img/flags/320/tv.webp" width="640" height="320" alt="Flag of Tuvalu" style="--r:2" loading="lazy" decoding="async"></span><span><strong>Tuvalu</strong><span class="muted">Tuvalu uses the United Kingdom&#39;s Union Jack in its corner. The UK flag is the Union Jack alone; Tuvalu&#39;s has a light blue field with nine yellow stars.</span></span></a><a class="pair" href="../fiji/"><span class="box"><img class="flag" src="../../img/flags/320/fj.webp" width="640" height="320" alt="Flag of Fiji" style="--r:2" loading="lazy" decoding="async"></span><span><strong>Fiji</strong><span class="muted">Fiji uses the United Kingdom&#39;s Union Jack in its corner. The UK flag is the Union Jack alone; Fiji&#39;s has a light blue field with a shield on the right.</span></span></a></div></section>
 <section class="card promo"><p>Learn the flag of United Kingdom and every other country with short daily lessons.</p><a class="cta" href="../../#/flag/united-kingdom">Practice with Learn the Flags</a></section>
 <p><a href="../">← All flags of the world</a></p>
 </article></main>

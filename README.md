@@ -7,9 +7,9 @@ Live site: https://stovenly.github.io/learn-the-flags/
 Learners get short daily lessons and reviews. Under the hood:
 
 - **FSRS-6 spaced repetition** decides when each flag comes back, aiming at roughly 90% recall at review time.
-- **Active recall** questions get harder as a memory gets stronger: pick the name, pick the flag, then type the name.
+- **Active recall** questions get harder as a memory gets stronger: pick the name, pick the flag, then type the name. A new flag's second check in a lesson is already typed.
 - **Successive relearning** brings a missed flag back later in the same session until it is answered correctly.
-- **Lookalike contrast**: similar flags (Chad and Romania, Indonesia and Monaco) are introduced side by side and used as each other's wrong answers. Lookalikes are hand-curated, then extended by pixel similarity.
+- **Lookalike contrast**: similar flags (Chad and Romania, Indonesia and Monaco) are introduced side by side, explained ("how to tell them apart") and used as each other's wrong answers. Wrong answers are also drawn from pixel-similar flags.
 - **Memory hooks** give every flag a one-line way to remember it.
 
 Progress is kept in the browser's `localStorage`. Settings can export and import it.
@@ -34,12 +34,15 @@ Each country is one file in `data/countries/<iso-alpha-2>.json`. That file is th
 - **Remove a country:** delete its JSON file and its images in `public/img/flags/*/`.
 - **Recognition status:** `status` is one of `un-member`, `un-observer` or `partially-recognized`. Partially recognized states are left out of lessons unless the learner opts in.
 
+Lookalike pairs live in `data/lookalikes.json`, keyed by the two codes in alphabetical order (`"id-mc"`), with one or two sentences on how to tell the flags apart. Every pair listed there is shown as a lookalike for both countries; a country's own `lookalikes` array should have a matching entry.
+
 `npm run build` validates every file and fails on unknown colours, broken lookalike codes or missing images.
 
 ## Other scripts
 
 - `scripts/build-assets.mjs` re-renders the favicon, the touch icon and the `og.png` social preview.
+- `scripts/build-globes.mjs` runs as part of the build. It renders `img/globes/<code>.svg`, a small globe centred and zoomed on each country with it highlighted, from Natural Earth data (`world-atlas`). It matches countries by `isoNumeric`, or by name when that is empty (Kosovo).
 - `scripts/build-pages.mjs` runs as part of the build. It writes a static, crawlable page per country (`docs/flags/<slug>/`), the flag index, `sitemap.xml` and `robots.txt`.
 - `site.config.json` holds the site URL, name and description used for SEO tags.
 
-Flag images come from Wikimedia Commons via [flagcdn.com](https://flagcdn.com) and are public domain. Base country facts come from [mledoze/countries](https://github.com/mledoze/countries) (ODbL), and population figures from the World Bank.
+Flag images come from Wikimedia Commons via [flagcdn.com](https://flagcdn.com) and are public domain. Globe outlines come from [Natural Earth](https://www.naturalearthdata.com) (public domain). Base country facts come from [mledoze/countries](https://github.com/mledoze/countries) (ODbL), and population figures from the World Bank.

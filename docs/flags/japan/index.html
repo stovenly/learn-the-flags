@@ -38,9 +38,11 @@ ul{padding-left:20px;margin:0}li{margin-bottom:6px}
 .grid a{color:var(--text);font-size:.88rem;display:flex;flex-direction:column;gap:6px}.grid a:hover{color:var(--accent);text-decoration:none}
 .grid .box{aspect-ratio:3/2;display:grid;place-items:center;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px}
 .grid .flag{width:auto;max-width:100%;max-height:100%}
+.head{display:flex;align-items:center;gap:18px;margin-top:8px}.head p{margin:0}.globe{width:96px;height:96px;flex-shrink:0}
+.pairs{display:flex;flex-direction:column;gap:14px}.pair{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center;color:var(--text)}.pair:hover{text-decoration:none}.pair .box{aspect-ratio:3/2;display:grid;place-items:center}.pair .flag{width:auto;max-width:100%;max-height:100%}.pair strong{display:block}
 .promo{text-align:center}.promo p{margin:0 0 14px}
 footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85rem;color:var(--muted)}
-@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}}</style>
+@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}.globe{width:64px;height:64px}.pair{grid-template-columns:80px 1fr;gap:12px}}</style>
 </head>
 <body>
 <header><div class="wrap">
@@ -50,8 +52,10 @@ footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85re
 <main class="wrap">
 <article>
 <div class="card hero"><img class="flag" src="../../img/flags/640/jp.webp" width="640" height="427" alt="Flag of Japan" style="--r:1.4988" decoding="async"></div>
+<div class="head"><img class="globe" src="../../img/globes/jp.svg" width="100" height="100" alt="Where Japan is on the globe"><div>
 <h1>Flag of Japan</h1>
 <p class="muted">Japan</p>
+</div></div>
 <section class="card">
 <h2>What the flag looks like</h2>
 <p>A white rectangular field with a single red disc in the exact centre.</p>
@@ -60,7 +64,7 @@ footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85re
 </section>
 <section class="card"><h2>Fun facts</h2><ul><li>The flag is called the Hinomaru, &quot;circle of the sun&quot;.</li><li>It was used as a merchant flag from 1870, but only became the legally designated national flag in 1999, when its proportions were fixed and the disc was placed exactly in the centre.</li></ul></section>
 <section class="card"><h2>Japan at a glance</h2><dl><div><dt>Capital</dt><dd>Tokyo</dd></div><div><dt>Region</dt><dd>Eastern Asia</dd></div><div><dt>Population</dt><dd>124 million</dd></div><div><dt>Area</dt><dd>377,930 km²</dd></div><div><dt>Languages</dt><dd>Japanese</dd></div><div><dt>Currency</dt><dd>Japanese yen</dd></div><div><dt>Flag adopted</dt><dd>1999</dd></div></dl></section>
-<section class="card"><h2>Flags often confused with Japan</h2><div class="grid"><a href="../bangladesh/"><span class="box"><img class="flag" src="../../img/flags/320/bd.webp" width="640" height="384" alt="Flag of Bangladesh" style="--r:1.6667" loading="lazy" decoding="async"></span>Bangladesh</a><a href="../palau/"><span class="box"><img class="flag" src="../../img/flags/320/pw.webp" width="640" height="400" alt="Flag of Palau" style="--r:1.6" loading="lazy" decoding="async"></span>Palau</a><a href="../cyprus/"><span class="box"><img class="flag" src="../../img/flags/320/cy.webp" width="640" height="427" alt="Flag of Cyprus" style="--r:1.4988" loading="lazy" decoding="async"></span>Cyprus</a><a href="../south-korea/"><span class="box"><img class="flag" src="../../img/flags/320/kr.webp" width="640" height="427" alt="Flag of South Korea" style="--r:1.4988" loading="lazy" decoding="async"></span>South Korea</a></div></section>
+<section class="card"><h2>Flags often confused with Japan</h2><div class="pairs"><a class="pair" href="../bangladesh/"><span class="box"><img class="flag" src="../../img/flags/320/bd.webp" width="640" height="384" alt="Flag of Bangladesh" style="--r:1.6667" loading="lazy" decoding="async"></span><span><strong>Bangladesh</strong><span class="muted">Bangladesh and Japan both show a red disc. Japan&#39;s field is white with the disc exactly centred; Bangladesh&#39;s field is dark green with the disc slightly towards the hoist.</span></span></a><a class="pair" href="../palau/"><span class="box"><img class="flag" src="../../img/flags/320/pw.webp" width="640" height="400" alt="Flag of Palau" style="--r:1.6" loading="lazy" decoding="async"></span><span><strong>Palau</strong><span class="muted">Japan and Palau both show a single disc. Japan&#39;s is a red disc centred on white; Palau&#39;s is a yellow disc on light blue, set slightly towards the hoist.</span></span></a></div></section>
 <section class="card promo"><p>Learn the flag of Japan and every other country with short daily lessons.</p><a class="cta" href="../../#/flag/japan">Practice with Learn the Flags</a></section>
 <p><a href="../">← All flags of the world</a></p>
 </article></main>

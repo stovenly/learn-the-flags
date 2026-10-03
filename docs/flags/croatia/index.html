@@ -38,9 +38,11 @@ ul{padding-left:20px;margin:0}li{margin-bottom:6px}
 .grid a{color:var(--text);font-size:.88rem;display:flex;flex-direction:column;gap:6px}.grid a:hover{color:var(--accent);text-decoration:none}
 .grid .box{aspect-ratio:3/2;display:grid;place-items:center;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px}
 .grid .flag{width:auto;max-width:100%;max-height:100%}
+.head{display:flex;align-items:center;gap:18px;margin-top:8px}.head p{margin:0}.globe{width:96px;height:96px;flex-shrink:0}
+.pairs{display:flex;flex-direction:column;gap:14px}.pair{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center;color:var(--text)}.pair:hover{text-decoration:none}.pair .box{aspect-ratio:3/2;display:grid;place-items:center}.pair .flag{width:auto;max-width:100%;max-height:100%}.pair strong{display:block}
 .promo{text-align:center}.promo p{margin:0 0 14px}
 footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85rem;color:var(--muted)}
-@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}}</style>
+@media (max-width:520px){dl{grid-template-columns:1fr}.hero{padding:18px}.globe{width:64px;height:64px}.pair{grid-template-columns:80px 1fr;gap:12px}}</style>
 </head>
 <body>
 <header><div class="wrap">
@@ -50,8 +52,10 @@ footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85re
 <main class="wrap">
 <article>
 <div class="card hero"><img class="flag" src="../../img/flags/640/hr.webp" width="640" height="320" alt="Flag of Croatia" style="--r:2" decoding="async"></div>
+<div class="head"><img class="globe" src="../../img/globes/hr.svg" width="100" height="100" alt="Where Croatia is on the globe"><div>
 <h1>Flag of Croatia</h1>
 <p class="muted">Republic of Croatia</p>
+</div></div>
 <section class="card">
 <h2>What the flag looks like</h2>
 <p>Three equal horizontal stripes of red, white and blue, with the coat of arms in the centre: a red-and-white checkerboard shield topped by a crown of five small historical shields.</p>
@@ -60,7 +64,7 @@ footer{border-top:1px solid var(--border);padding:20px 16px 32px;font-size:.85re
 </section>
 <section class="card"><h2>Fun facts</h2><ul><li>The checkerboard shield, called the šahovnica, has been a Croatian symbol since at least the 15th century.</li><li>The necktie takes its name, &#39;cravat&#39;, from the scarves worn by Croatian soldiers in 17th-century France.</li></ul></section>
 <section class="card"><h2>Croatia at a glance</h2><dl><div><dt>Capital</dt><dd>Zagreb</dd></div><div><dt>Region</dt><dd>Southeast Europe</dd></div><div><dt>Population</dt><dd>3.9 million</dd></div><div><dt>Area</dt><dd>56,594 km²</dd></div><div><dt>Languages</dt><dd>Croatian</dd></div><div><dt>Currency</dt><dd>Euro</dd></div><div><dt>Flag adopted</dt><dd>1990</dd></div></dl></section>
-<section class="card"><h2>Flags often confused with Croatia</h2><div class="grid"><a href="../netherlands/"><span class="box"><img class="flag" src="../../img/flags/320/nl.webp" width="640" height="427" alt="Flag of Netherlands" style="--r:1.4988" loading="lazy" decoding="async"></span>Netherlands</a><a href="../paraguay/"><span class="box"><img class="flag" src="../../img/flags/320/py.webp" width="640" height="352" alt="Flag of Paraguay" style="--r:1.8182" loading="lazy" decoding="async"></span>Paraguay</a><a href="../serbia/"><span class="box"><img class="flag" src="../../img/flags/320/rs.webp" width="640" height="427" alt="Flag of Serbia" style="--r:1.4988" loading="lazy" decoding="async"></span>Serbia</a><a href="../luxembourg/"><span class="box"><img class="flag" src="../../img/flags/320/lu.webp" width="640" height="384" alt="Flag of Luxembourg" style="--r:1.6667" loading="lazy" decoding="async"></span>Luxembourg</a></div></section>
+<section class="card"><h2>Flags often confused with Croatia</h2><div class="pairs"><a class="pair" href="../netherlands/"><span class="box"><img class="flag" src="../../img/flags/320/nl.webp" width="640" height="427" alt="Flag of Netherlands" style="--r:1.4988" loading="lazy" decoding="async"></span><span><strong>Netherlands</strong><span class="muted">Croatia and the Netherlands are both red, white and blue horizontal stripes. Croatia has a red-and-white checkerboard shield in the centre; the Netherlands is plain.</span></span></a><a class="pair" href="../paraguay/"><span class="box"><img class="flag" src="../../img/flags/320/py.webp" width="640" height="352" alt="Flag of Paraguay" style="--r:1.8182" loading="lazy" decoding="async"></span><span><strong>Paraguay</strong><span class="muted">Croatia and Paraguay are both red, white and blue with a central emblem. Croatia has a large checkerboard shield spilling over the stripes; Paraguay has a small round seal inside the white band.</span></span></a><a class="pair" href="../serbia/"><span class="box"><img class="flag" src="../../img/flags/320/rs.webp" width="640" height="427" alt="Flag of Serbia" style="--r:1.4988" loading="lazy" decoding="async"></span><span><strong>Serbia</strong><span class="muted">Croatia and Serbia both use red, white and blue with a coat of arms. Croatia&#39;s order is red-white-blue with a checkerboard shield; Serbia&#39;s is red-blue-white with an eagle shield towards the hoist.</span></span></a><a class="pair" href="../luxembourg/"><span class="box"><img class="flag" src="../../img/flags/320/lu.webp" width="640" height="384" alt="Flag of Luxembourg" style="--r:1.6667" loading="lazy" decoding="async"></span><span><strong>Luxembourg</strong><span class="muted">Croatia and Luxembourg are both red, white and blue. Croatia has a large checkerboard shield in the centre; Luxembourg is plain with a lighter blue.</span></span></a></div></section>
 <section class="card promo"><p>Learn the flag of Croatia and every other country with short daily lessons.</p><a class="cta" href="../../#/flag/croatia">Practice with Learn the Flags</a></section>
 <p><a href="../">← All flags of the world</a></p>
 </article></main>
