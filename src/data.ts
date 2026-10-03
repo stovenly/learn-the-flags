@@ -7,7 +7,6 @@ export interface Country {
   officialName: string;
   aliases: string[];
   status: 'un-member' | 'un-observer' | 'partially-recognized';
-  capital: string;
   region: string;
   subregion: string;
   population: number | null;

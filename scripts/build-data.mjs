@@ -110,7 +110,6 @@ const out = countries
       officialName: c.officialName,
       aliases: c.aliases ?? [],
       status: c.status,
-      capital: c.capital,
       region: c.region,
       subregion: c.subregion,
       population: c.population,

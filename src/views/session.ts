@@ -250,7 +250,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
           ${globeImg(c, 'md')}
           <div>
             <h2 class="intro-name">${esc(c.name)}</h2>
-            <p class="muted intro-meta">${esc(c.subregion || c.region)}${c.capital ? ` · Capital: ${esc(c.capital)}` : ''}</p>
+            <p class="muted intro-meta">${esc(c.subregion || c.region)}</p>
           </div>
         </div>
         ${c.flag.description ? `<p class="intro-desc">${esc(c.flag.description)}</p>` : ''}

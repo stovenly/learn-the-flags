@@ -89,7 +89,6 @@ for (const c of countries) {
   const up = '../../';
   const looks = c.lookalikes.map((k) => byCode.get(k)).filter(Boolean);
   const facts = [
-    ['Capital', c.capital],
     ['Region', c.subregion || c.region],
     ['Population', fmtPop(c.population)],
     ['Area', c.area ? `${Math.round(c.area).toLocaleString('en-US')} km²` : '—'],

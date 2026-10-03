@@ -17,7 +17,6 @@ export function countryView(root: HTMLElement, slug: string) {
   const lv = level(c.code);
   const badge = lv === 'new' ? '' : `<span class="badge badge-${lv}">${lv === 'learning' ? 'Learning' : 'Learned'}</span>`;
   const facts: [string, string][] = [
-    ['Capital', c.capital],
     ['Region', c.subregion || c.region],
     ['Population', fmtPopulation(c.population)],
     ['Area', c.area ? `${fmtNumber(Math.round(c.area))} km²` : '—'],
