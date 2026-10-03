@@ -1,5 +1,5 @@
-// Renders public/img/maps/<code>.svg: a regional map zoomed on each country, highlighted, neighbours labelled with their
-// flags, and a locator globe inset. maps/plain/<code>.svg leaves out neighbour flags, for questions they'd give away.
+// Renders public/img/maps/<code>.svg: a regional map zoomed on each country, highlighted, it and its neighbours labelled
+// with their flags where they fit, and a locator globe inset. maps/plain/<code>.svg leaves out every flag, for questions.
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { geoArea, geoAzimuthalEqualArea, geoCentroid, geoContains, geoDistance, geoGraticule10, geoOrthographic, geoPath } from 'd3-geo';
@@ -116,14 +116,15 @@ function labelCandidates(base, draw) {
 }
 
 // Places each label (the name, plus its flag below when wanted and there's room) wholly on that country's land,
-// off the highlighted country, and clear of everything already placed.
-function labels(candidates, targetRings, avoid, withFlags) {
-  const placed = [...avoid];
+// off the highlighted country (unless it is the highlighted one), and clear of everything in `placed`, which it extends.
+function labels(candidates, targetRings, placed, withFlags, onTarget = false) {
   const hits = (r) => placed.some((q) => r.x0 < q.x1 && r.x1 > q.x0 && r.y0 < q.y1 && r.y1 > q.y0);
   const out = [];
   for (const k of candidates) {
     const thumb = withFlags && k.code ? thumbs.get(k.code) : null;
     const variants = k.names.flatMap((n) => [
+      ...(onTarget && thumb ? [[n, FONT * 1.15, true]] : []),
+      ...(onTarget ? [[n, FONT * 1.15, false]] : []),
       ...(thumb ? [[n, FONT, true]] : []),
       [n, FONT, false],
       ...(thumb ? [[n, FONT * 0.78, true]] : []),
@@ -139,9 +140,9 @@ function labels(candidates, targetRings, avoid, withFlags) {
         if (r.x0 < 1 || r.x1 > W - 1 || r.y0 < 1 || r.y1 > H - 1 || hits(r)) continue;
         const mid = (r.y0 + r.y1) / 2;
         const probe = [[r.x0, r.y0], [x, r.y0], [r.x1, r.y0], [r.x0, mid], [x, mid], [r.x1, mid], [r.x0, r.y1], [x, r.y1], [r.x1, r.y1]];
-        if (!probe.every(([px, py]) => inside(k.rings, px, py) && !inside(targetRings, px, py))) continue;
+        if (!probe.every(([px, py]) => inside(k.rings, px, py) && (onTarget || !inside(targetRings, px, py)))) continue;
         placed.push(r);
-        const small = size < FONT ? ` font-size="${size.toFixed(2)}"` : '';
+        const small = size !== FONT ? ` font-size="${size.toFixed(2)}"` : '';
         out.push(`<text x="${x.toFixed(1)}" y="${(y + size * 0.35).toFixed(1)}"${small}>${esc(name)}</text>`);
         if (flag) {
           const fx = (x - fw / 2).toFixed(2), fy = (y + size * 0.75).toFixed(2), fwS = fw.toFixed(2), fhS = fh.toFixed(2);
@@ -153,7 +154,7 @@ function labels(candidates, targetRings, avoid, withFlags) {
       if (done) break;
     }
   }
-  return out.length ? `<g class="n">${out.join('')}</g>` : '';
+  return out.length ? `<g class="${onTarget ? 'n tn' : 'n'}">${out.join('')}</g>` : '';
 }
 
 // Azimuthal equal-area maps a point θ radians from the centre to 2·sin(θ/2)·scale.
@@ -167,7 +168,7 @@ function locator(center) {
   return `<circle class="io" cx="${cx}" cy="${cy}" r="${r}"/><path class="il" d="${land}"/><circle class="id" cx="${cx}" cy="${cy}" r="1.7"/><circle class="ir" cx="${cx}" cy="${cy}" r="${r}"/>`;
 }
 
-const STYLE = `<style>.o{fill:#b5d7ef}.g{fill:none;stroke:#fff;stroke-opacity:.45;stroke-width:.3}.l{fill:#f3ecd2;stroke:#ad9f78;stroke-width:.3}.t{fill:#d9302b;stroke:#7a1512;stroke-width:.45}.mh{fill:none;stroke:#fff;stroke-width:3}.m{fill:none;stroke:#d9302b;stroke-width:1.6}.io{fill:#4f93c9}.il{fill:#f3ecd2}.id{fill:#d9302b;stroke:#fff;stroke-width:.6}.ir{fill:none;stroke:#fff;stroke-width:1.2}.n{font:500 ${FONT}px system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;fill:#6b6249;text-anchor:middle;paint-order:stroke;stroke:#f3ecd2;stroke-width:.9;stroke-linejoin:round}.fb{fill:none;stroke:#00000040;stroke-width:.15}</style>`;
+const STYLE = `<style>.o{fill:#b5d7ef}.g{fill:none;stroke:#fff;stroke-opacity:.45;stroke-width:.3}.l{fill:#f3ecd2;stroke:#ad9f78;stroke-width:.3}.t{fill:#d9302b;stroke:#7a1512;stroke-width:.45}.mh{fill:none;stroke:#fff;stroke-width:3}.m{fill:none;stroke:#d9302b;stroke-width:1.6}.io{fill:#4f93c9}.il{fill:#f3ecd2}.id{fill:#d9302b;stroke:#fff;stroke-width:.6}.ir{fill:none;stroke:#fff;stroke-width:1.2}.n{font:500 ${FONT}px system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;fill:#6b6249;text-anchor:middle;paint-order:stroke;stroke:#f3ecd2;stroke-width:.9;stroke-linejoin:round}.fb{fill:none;stroke:#00000040;stroke-width:.15}.tn{font-weight:650;fill:#fff;stroke:#a51f1b;stroke-width:.7}.tn .fb{stroke:#ffffffb0;stroke-width:.3}</style>`;
 
 await fs.mkdir(path.join(OUT, 'plain'), { recursive: true });
 let total = 0;
@@ -206,11 +207,18 @@ for (const c of countries) {
     marker = `<circle class="mh" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6"/><circle class="m" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6"/>`;
   }
   const candidates = labelCandidates(base.filter((w) => !isTarget(w)), draw);
+  const own = f ? labelCandidates([f], draw) : [];
   const targetRings = parseRings(target);
+  // The target's own label goes first so neighbours make room for it; plain maps never show its flag.
+  const annotate = (withFlags) => {
+    const placed = [...avoid];
+    const self = labels(own, targetRings, placed, withFlags, true);
+    return self + labels(candidates, targetRings, placed, withFlags);
+  };
   const render = (names) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}">${STYLE}<rect class="o" width="${W}" height="${H}"/><path class="g" d="${simplify(draw(geoGraticule10()), 1.5, 0)}"/><path class="l" d="${others}"/>${target ? `<path class="t" d="${target}"/>` : ''}${marker}${names}${locator(center)}</svg>\n`;
-  const full = render(labels(candidates, targetRings, avoid, true));
+  const full = render(annotate(true));
   await fs.writeFile(path.join(OUT, `${c.code}.svg`), full);
-  await fs.writeFile(path.join(OUT, 'plain', `${c.code}.svg`), render(labels(candidates, targetRings, avoid, false)));
+  await fs.writeFile(path.join(OUT, 'plain', `${c.code}.svg`), render(annotate(false)));
   total += full.length;
 }
 console.log(`Wrote ${countries.length} maps (${Math.round(total / 1024)} KB total) to public/img/maps`);

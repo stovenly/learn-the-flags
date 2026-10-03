@@ -65,7 +65,7 @@ export function homeView(root: HTMLElement) {
   } else if (remaining) {
     title = 'Ready for new flags';
     detail = `You're all caught up on reviews. ${remaining} flags left to learn.`;
-    cta = `<a class="btn primary big" href="#/study">Learn ${plural(fresh, 'new flag')} ${icon('arrow')}</a>`;
+    cta = `<a class="btn primary big" href="#/study">Learn today's flags ${icon('arrow')}</a>`;
     next = upNext(upcoming.slice(0, fresh), images);
   } else {
     title = 'You know every flag';
