@@ -59,7 +59,7 @@ function simplify(d, tol = 0.6, minSpan = 0.8) {
   return out.join('');
 }
 
-const STYLE = `<style>.o{fill:#e3e9f0}.l{fill:#c5ccd5;stroke:#fff;stroke-width:.35}.g{fill:none;stroke:#d3dbe5;stroke-width:.3}.t{fill:#e8590c;stroke:#fff;stroke-width:.35}.m{fill:none;stroke:#e8590c;stroke-width:1.6}.r{fill:none;stroke:#b5bfcb;stroke-width:.6}@media(prefers-color-scheme:dark){.o{fill:#283141}.l{fill:#4b5567;stroke:#283141}.g{stroke:#323c4e}.t{fill:#ff922b;stroke:#283141}.m{stroke:#ff922b}.r{stroke:#4b5567}}</style>`;
+const STYLE = `<style>.l{fill:#efe6c8;stroke:#a89c78;stroke-width:.3}.g{fill:none;stroke:#fff;stroke-opacity:.28;stroke-width:.35}.t{fill:#d9302b;stroke:#7a1512;stroke-width:.4}.mh{fill:none;stroke:#fff;stroke-width:3.2}.m{fill:none;stroke:#d9302b;stroke-width:1.8}.r{fill:none;stroke:#1d3a5c;stroke-width:1.4}</style>`;
 
 await fs.mkdir(OUT, { recursive: true });
 let total = 0;
@@ -93,9 +93,10 @@ for (const c of countries) {
   let marker = '';
   if (!f || draw.area(f) < 10) {
     const [x, y] = projection(markAt);
-    marker = `<circle class="m" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6"/>`;
+    marker = `<circle class="mh" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6"/><circle class="m" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6"/>`;
   }
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${SIZE} ${SIZE}">${STYLE}<defs><clipPath id="c"><circle cx="50" cy="50" r="${R}"/></clipPath><radialGradient id="s" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset=".6" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".18"/></radialGradient></defs><g clip-path="url(#c)"><circle class="o" cx="50" cy="50" r="${R}"/><path class="g" d="${simplify(draw(geoGraticule10()), 1.5, 0)}"/><path class="l" d="${others}"/>${target ? `<path class="t" d="${target}"/>` : ''}${marker}<circle cx="50" cy="50" r="${R}" fill="url(#s)"/></g><circle class="r" cx="50" cy="50" r="${R}"/></svg>\n`;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${SIZE} ${SIZE}">${STYLE}<defs><clipPath id="c"><circle cx="50" cy="50" r="${R}"/></clipPath><radialGradient id="o" cx="42%" cy="38%" r="65%"><stop offset="0" stop-color="#5aa4dc"/><stop offset="1" stop-color="#21609e"/></radialGradient><radialGradient id="s" cx="34%" cy="28%" r="80%"><stop offset="0" stop-color="#fff" stop-opacity=".38"/><stop offset=".35" stop-color="#fff" stop-opacity="0"/><stop offset=".8" stop-color="#000" stop-opacity=".05"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></radialGradient></defs><g clip-path="url(#c)"><circle cx="50" cy="50" r="${R}" fill="url(#o)"/><path class="g" d="${simplify(draw(geoGraticule10()), 1.5, 0)}"/><path class="l" d="${others}"/>${target ? `<path class="t" d="${target}"/>` : ''}${marker}<circle cx="50" cy="50" r="${R}" fill="url(#s)"/></g><circle class="r" cx="50" cy="50" r="${R}"/></svg>
+`;
   await fs.writeFile(path.join(OUT, `${c.code}.svg`), svg);
   total += svg.length;
 }
