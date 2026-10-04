@@ -183,21 +183,7 @@ function paint(root: HTMLElement, keepScroll?: number, focus?: string) {
       </section>
     </div>
 
-    ${didYouKnow(images)}
-
-    ${
-      started
-        ? ''
-        : `<section class="about">
-            <h2>How it works</h2>
-            <div class="features">
-              <div><span class="step">1</span><h3>Meet a few flags</h3><p>A handful at a time, with a tip for each.</p></div>
-              <div><span class="step">2</span><h3>Review them</h3><p>Just before you'd forget.</p></div>
-              <div><span class="step">3</span><h3>Tell lookalikes apart</h3><p>Chad or Romania? You'll know.</p></div>
-            </div>
-            <p class="muted small">Free. No account needed.</p>
-          </section>`
-    }`;
+    ${didYouKnow(images)}`;
   renderWhenReady(root, html, images, keepScroll === undefined ? 350 : 0).then((shown) => {
     if (!shown) return;
     bindPicker(root);

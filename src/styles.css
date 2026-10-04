@@ -527,24 +527,6 @@ a.mode-meta:hover { color: var(--text); }
   .continents { flex-basis: 100%; margin-left: 4px; }
 }
 
-.about { margin-top: 44px; }
-.features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 16px 0 20px; }
-.features > div { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
-.step {
-  display: inline-grid;
-  place-items: center;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-weight: 700;
-  font-size: 0.85rem;
-  margin-bottom: 12px;
-}
-.features h3 { margin: 0 0 4px; }
-.features p { color: var(--muted); font-size: 0.93rem; margin: 0; }
-
 /* Study session */
 body[data-route='study'] #app { padding-top: 16px; }
 .session { max-width: 620px; margin: 0 auto; }
@@ -913,7 +895,6 @@ body[data-route='settings'] #app { max-width: 720px; }
   .mode-actions .btn { flex: 1 1 auto; }
   .trivia-card { gap: 16px; padding: 18px; align-items: flex-start; }
   .trivia-card .thumb { width: 72px; }
-  .features { grid-template-columns: 1fr; }
   .grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 18px 12px; }
   .stats-inline { grid-template-columns: repeat(2, 1fr); row-gap: 16px; }
 }

@@ -153,17 +153,7 @@
       </section>
     </div>
 
-    ${st(u)}
-
-    ${s?``:`<section class="about">
-            <h2>How it works</h2>
-            <div class="features">
-              <div><span class="step">1</span><h3>Meet a few flags</h3><p>A handful at a time, with a tip for each.</p></div>
-              <div><span class="step">2</span><h3>Review them</h3><p>Just before you'd forget.</p></div>
-              <div><span class="step">3</span><h3>Tell lookalikes apart</h3><p>Chad or Romania? You'll know.</p></div>
-            </div>
-            <p class="muted small">Free. No account needed.</p>
-          </section>`}`,u,t===void 0?350:0).then(r=>{r&&(ht(e),t!==void 0&&scrollTo(0,t),n&&e.querySelector(n)?.focus({preventScroll:!0}))})}var vt=30;function yt(e,t){let n=t===`new`,r=ke(),i=n?[]:r.slice(0,vt),a=n||r.length<=vt?Ae().slice(0,M.settings.lessonSize):[];if(!i.length&&!a.length){E(p(),!0);return}tt(e,{items:Ze(i,a),scheduled:!0,title:a.length&&!i.length?`Lesson`:`Session`,onDone:()=>{let e=ke().length>0||Ae().length>0;return`<a class="btn ghost" href="${p()}">Home</a>${e?`<a class="btn primary" href="${p(`study/`)}">Keep going</a>`:``}`}})}var bt=``,Z=`all`,Q=`all`;function xt(e){let t=(e,t,n,r)=>`<button class="chip${r?` active`:``}" data-${e}="${L(t)}">${L(n)}</button>`;e.innerHTML=`
+    ${st(u)}`,u,t===void 0?350:0).then(r=>{r&&(ht(e),t!==void 0&&scrollTo(0,t),n&&e.querySelector(n)?.focus({preventScroll:!0}))})}var vt=30;function yt(e,t){let n=t===`new`,r=ke(),i=n?[]:r.slice(0,vt),a=n||r.length<=vt?Ae().slice(0,M.settings.lessonSize):[];if(!i.length&&!a.length){E(p(),!0);return}tt(e,{items:Ze(i,a),scheduled:!0,title:a.length&&!i.length?`Lesson`:`Session`,onDone:()=>{let e=ke().length>0||Ae().length>0;return`<a class="btn ghost" href="${p()}">Home</a>${e?`<a class="btn primary" href="${p(`study/`)}">Keep going</a>`:``}`}})}var bt=``,Z=`all`,Q=`all`;function xt(e){let t=(e,t,n,r)=>`<button class="chip${r?` active`:``}" data-${e}="${L(t)}">${L(n)}</button>`;e.innerHTML=`
     <header class="page-head">
       <h1>All flags</h1>
       <p class="muted">${n.length} flags in ${i.length} sets. Pick one to see what it means and how to tell it from lookalikes.</p>
