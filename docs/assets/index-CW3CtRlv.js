@@ -179,7 +179,7 @@
         <div class="country-flag">${R(r,{size:`lg`})}</div>
         <div class="country-id">
           <h1>${I(r.name)}</h1>
-          ${r.officialName&&r.officialName!==r.name?`<p class="local-name">${I(r.officialName)}</p>`:``}
+          ${r.officialName&&r.officialName!==r.name?`<p class="local-name"><span class="name-label">Officially</span> ${I(r.officialName)}</p>`:``}
           ${x(r)&&x(r)!==r.officialName?`<p class="local-name">${I(x(r))}</p>`:``}
           <div class="tags">
             ${a.map(e=>`<span class="tag">${I(e)}</span>`).join(``)}

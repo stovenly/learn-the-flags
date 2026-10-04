@@ -558,6 +558,7 @@ body[data-route='study'] #app { padding-top: 16px; }
 .intro-name { font-size: 2.1rem; margin-bottom: 4px; letter-spacing: -0.025em; }
 .quiz-name { font-size: 2rem; margin: -6px 0 16px; letter-spacing: -0.025em; }
 .local-name { font-size: 1.1rem; margin: 0 0 2px; white-space: pre-wrap; }
+.name-label { color: var(--muted); font-size: 0.8rem; margin-right: 4px; }
 .intro-meta { margin: 0; font-size: 0.95rem; }
 .intro-desc { margin: 0; font-size: 1.02rem; }
 .lookalikes { margin-top: 24px; }

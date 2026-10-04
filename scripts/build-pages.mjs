@@ -76,7 +76,7 @@ for (const c of countries) {
 <article>
 <div class="card">${img(c)}</div>
 <h1>Flag of ${esc(c.theName)}</h1>
-${c.officialName && c.officialName !== c.name ? `<p class="local-name">${esc(c.officialName)}</p>` : ''}
+${c.officialName && c.officialName !== c.name ? `<p class="local-name"><span class="name-label">Officially</span> ${esc(c.officialName)}</p>` : ''}
 ${localName(c) && localName(c) !== c.officialName ? `<p class="local-name">${esc(localName(c))}</p>` : ''}
 ${c.hasMap ? `<div class="card"><img class="map map-lg" src="img/maps/${c.code}.svg" width="150" height="100" alt="Map showing where ${esc(c.name)} is" loading="lazy"></div>` : ''}
 <section class="card">
