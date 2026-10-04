@@ -93,8 +93,8 @@
       </article>`,K(`.session-count`,e).textContent=``,K(`.progress-fill`,e).style.width=`100%`}S()}var nt=[{slug:`name-to-flag`,mode:`pick-flag`,title:e=>`${e} → flag`,detail:`See a name, pick its flag from four.`},{slug:`flag-to-name`,mode:`pick-name`,title:e=>`Flag → ${e.toLowerCase()}`,detail:`See a flag, pick its name from four.`},{slug:`typed`,mode:`type-name`,title:e=>`Flag → ${e.toLowerCase()}, typed`,detail:`See a flag, type its name.`}],rt=e=>e[0].toUpperCase()+e.slice(1);function it(e,t){let n=P(),r=nt.find(e=>e.slug===t);if(!r)return at(e,n.length);tt(e,{items:R(n).map(e=>Y(e,r.mode)),scheduled:!1,test:{key:`${I()}:${r.slug}`},title:`Quiz`,onDone:()=>`<a class="btn ghost" href="${p()}">Home</a><a class="btn primary" href="${p(`quiz/${r.slug}/`)}">Try again</a>`})}function at(e,t){let{set:n,continents:r}=M.settings,i=o.get(n),a=i.noun.includes(` `)?`Name`:rt(i.noun);e.innerHTML=`
     <article class="card stage quiz-kind fade-in">
       <span class="pill">Quiz</span>
-      <h1>All ${t} flags</h1>
-      <p class="muted">${L(n===`sovereign`&&r.length<c.length?r.join(`, `):i.name)}, each once.</p>
+      <h1>${L(n===`sovereign`&&r.length<c.length?(e=>e.length<2?e.join(``):`${e.slice(0,-1).join(`, `)} and ${e[e.length-1]}`)(r):i.name)}</h1>
+      <p class="muted">${t} flags</p>
       <div class="kinds">
         ${nt.map(e=>{let t=M.quizzes[`${I()}:${e.slug}`];return`<a class="kind" href="${p(`quiz/${e.slug}/`)}">
             <strong>${L(e.title(a))}</strong>

@@ -30,12 +30,13 @@ function chooseKind(root: HTMLElement, size: number) {
   const { set, continents } = state.settings;
   const s = setById.get(set)!;
   const noun = s.noun.includes(' ') ? 'Name' : cap(s.noun);
-  const scope = set === SOVEREIGN && continents.length < CONTINENTS.length ? continents.join(', ') : s.name;
+  const list = (xs: string[]) => (xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
+  const scope = set === SOVEREIGN && continents.length < CONTINENTS.length ? list(continents) : s.name;
   root.innerHTML = `
     <article class="card stage quiz-kind fade-in">
       <span class="pill">Quiz</span>
-      <h1>All ${size} flags</h1>
-      <p class="muted">${esc(scope)}, each once.</p>
+      <h1>${esc(scope)}</h1>
+      <p class="muted">${size} flags</p>
       <div class="kinds">
         ${KINDS.map((k) => {
           const best = state.quizzes[`${deckKey()}:${k.slug}`];
