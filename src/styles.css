@@ -519,7 +519,7 @@ a.mode-meta:hover { color: var(--text); }
 .set-count { color: var(--muted); font-size: 0.8rem; font-variant-numeric: tabular-nums; }
 .continents { display: flex; flex-wrap: wrap; gap: 6px; padding-left: 12px; border-left: 2px solid var(--accent); }
 .chip-sm { padding: 4px 10px; font-size: 0.82rem; }
-.chip-divider { align-self: stretch; width: 2px; margin: 0 14px; border-radius: 2px; background: color-mix(in srgb, var(--muted) 55%, transparent); }
+.chip-divider { align-self: stretch; width: 1px; margin: 4px 8px; background: color-mix(in srgb, var(--muted) 45%, transparent); }
 @media (max-width: 640px) {
   .continents { flex-basis: 100%; margin-left: 4px; }
 }
