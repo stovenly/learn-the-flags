@@ -3,7 +3,13 @@
   "isoNumeric": "562",
   "name": "Niger",
   "officialName": "Republic of Niger",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "French",
+      "name": "République du Niger",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Niamey",

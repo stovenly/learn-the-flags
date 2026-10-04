@@ -4,7 +4,13 @@
   "name": "Francophonie",
   "the": true,
   "officialName": "Organisation internationale de la Francophonie",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "French",
+      "name": "Organisation internationale de la Francophonie",
+      "romanized": ""
+    }
+  ],
   "aliases": [
     "OIF",
     "La Francophonie",

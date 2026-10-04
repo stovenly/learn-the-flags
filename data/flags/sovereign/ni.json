@@ -3,7 +3,13 @@
   "isoNumeric": "558",
   "name": "Nicaragua",
   "officialName": "Republic of Nicaragua",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "Spanish",
+      "name": "República de Nicaragua",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Managua",

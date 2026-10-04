@@ -3,7 +3,13 @@
   "isoNumeric": "",
   "name": "Sikkim",
   "officialName": "Kingdom of Sikkim",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "Sikkimese",
+      "name": "འབྲས་ལྗོངས",
+      "romanized": "Drenjong"
+    }
+  ],
   "aliases": [
     "Kingdom of Sikkim"
   ],

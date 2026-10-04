@@ -3,7 +3,13 @@
   "isoNumeric": "492",
   "name": "Monaco",
   "officialName": "Principality of Monaco",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "French",
+      "name": "Principauté de Monaco",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Monaco",

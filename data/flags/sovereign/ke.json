@@ -3,7 +3,13 @@
   "isoNumeric": "404",
   "name": "Kenya",
   "officialName": "Republic of Kenya",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "Swahili",
+      "name": "Jamhuri ya Kenya",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Nairobi",

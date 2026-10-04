@@ -3,7 +3,13 @@
   "isoNumeric": "152",
   "name": "Chile",
   "officialName": "Republic of Chile",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "Spanish",
+      "name": "República de Chile",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Santiago",

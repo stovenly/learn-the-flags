@@ -3,7 +3,13 @@
   "isoNumeric": "250",
   "name": "France",
   "officialName": "French Republic",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "French",
+      "name": "République française",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Paris",

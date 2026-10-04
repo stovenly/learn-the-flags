@@ -3,7 +3,13 @@
   "isoNumeric": "466",
   "name": "Mali",
   "officialName": "Republic of Mali",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "French",
+      "name": "République du Mali",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Bamako",

@@ -3,7 +3,13 @@
   "isoNumeric": "516",
   "name": "Namibia",
   "officialName": "Republic of Namibia",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "Afrikaans",
+      "name": "Namibië",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Windhoek",

@@ -3,7 +3,13 @@
   "isoNumeric": "388",
   "name": "Jamaica",
   "officialName": "Jamaica",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "Jamaican Patois",
+      "name": "Jamieka",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Kingston",

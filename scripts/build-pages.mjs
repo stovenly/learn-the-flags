@@ -54,11 +54,7 @@ async function write(route, html) {
   await fs.writeFile(path.join(OUT, route, 'index.html'), rooted(html, '../'.repeat(route.split('/').filter(Boolean).length) || './'));
 }
 
-const localName = (c) =>
-  c.localNames
-    .filter((l) => l.name !== c.name || l.romanized)
-    .map((l) => [l.name, l.romanized].filter(Boolean).join(' · '))
-    .join('  /  ');
+const localName = (c) => c.localLine;
 const subtitle = (c) => [c.officialName !== c.name ? c.officialName : '', STATUS[c.status] ?? '', c.set === 'sovereign' ? '' : setName[c.set]].filter(Boolean).join(' · ');
 const flagHref = (c) => `flags/${c.slug}/`;
 const img = (c, size = 640) =>

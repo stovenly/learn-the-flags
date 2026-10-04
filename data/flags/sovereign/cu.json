@@ -3,7 +3,13 @@
   "isoNumeric": "192",
   "name": "Cuba",
   "officialName": "Republic of Cuba",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "Spanish",
+      "name": "República de Cuba",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Havana",

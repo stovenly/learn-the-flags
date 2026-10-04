@@ -17,6 +17,7 @@ export interface Country {
   population: number | null;
   area: number | null;
   localNames: { language: string; name: string; romanized: string }[];
+  localLine: string; // "Nippon · 日本", built by build-data.mjs
   languages: string[];
   currencies: { name: string; code: string; symbol: string }[];
   demonym: string;
@@ -135,13 +136,7 @@ export function matchAnswer(input: string, c: Country): Match {
   return targets.some((t) => editDistance(guess, t) <= tolerance(t)) ? 'typo' : 'wrong';
 }
 
-// "日本 · Nippon": the name in each language the place uses for itself, native script first, skipping its English name.
-export function localNameText(c: Country): string {
-  return c.localNames
-    .filter((l) => l.name !== c.name || l.romanized)
-    .map((l) => [l.name, l.romanized].filter(Boolean).join(' · '))
-    .join('  /  ');
-}
+export const localNameText = (c: Country) => c.localLine;
 
 export const currencyText = (c: Country) =>
   c.currencies.map((x) => (x.symbol && x.symbol !== x.code ? `${x.name} (${x.symbol})` : x.name)).join(', ');

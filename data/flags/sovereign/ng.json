@@ -3,7 +3,13 @@
   "isoNumeric": "566",
   "name": "Nigeria",
   "officialName": "Federal Republic of Nigeria",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "Hausa",
+      "name": "Najeriya",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Abuja",

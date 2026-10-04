@@ -3,7 +3,13 @@
   "isoNumeric": "296",
   "name": "Kiribati",
   "officialName": "Independent and Sovereign Republic of Kiribati",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "Gilbertese",
+      "name": "Ribaberiki Kiribati",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "South Tarawa",

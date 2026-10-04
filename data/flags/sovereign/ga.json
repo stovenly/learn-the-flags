@@ -3,7 +3,13 @@
   "isoNumeric": "266",
   "name": "Gabon",
   "officialName": "Gabonese Republic",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "French",
+      "name": "République gabonaise",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Libreville",

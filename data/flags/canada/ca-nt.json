@@ -4,7 +4,13 @@
   "name": "Northwest Territories",
   "the": true,
   "officialName": "Northwest Territories",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "French",
+      "name": "Territoires du Nord-Ouest",
+      "romanized": ""
+    }
+  ],
   "aliases": [
     "NT",
     "NWT"

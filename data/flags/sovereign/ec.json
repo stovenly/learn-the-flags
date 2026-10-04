@@ -3,7 +3,13 @@
   "isoNumeric": "218",
   "name": "Ecuador",
   "officialName": "Republic of Ecuador",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "Spanish",
+      "name": "República del Ecuador",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Quito",

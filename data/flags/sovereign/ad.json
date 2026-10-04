@@ -3,7 +3,13 @@
   "isoNumeric": "020",
   "name": "Andorra",
   "officialName": "Principality of Andorra",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "Catalan",
+      "name": "Principat d'Andorra",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Andorra la Vella",

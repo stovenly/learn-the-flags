@@ -3,7 +3,13 @@
   "isoNumeric": "694",
   "name": "Sierra Leone",
   "officialName": "Republic of Sierra Leone",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "Krio",
+      "name": "Salone",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Freetown",

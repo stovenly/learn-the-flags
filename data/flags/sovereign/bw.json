@@ -3,7 +3,13 @@
   "isoNumeric": "072",
   "name": "Botswana",
   "officialName": "Republic of Botswana",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "Tswana",
+      "name": "Lefatshe la Botswana",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Gaborone",

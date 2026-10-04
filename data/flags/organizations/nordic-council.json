@@ -4,7 +4,13 @@
   "name": "Nordic Council",
   "the": true,
   "officialName": "Nordic Council",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "Danish",
+      "name": "Nordisk Råd",
+      "romanized": ""
+    }
+  ],
   "aliases": [
     "Norden"
   ],

@@ -3,7 +3,13 @@
   "isoNumeric": "188",
   "name": "Costa Rica",
   "officialName": "Republic of Costa Rica",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "Spanish",
+      "name": "República de Costa Rica",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "San José",

@@ -3,7 +3,13 @@
   "isoNumeric": "340",
   "name": "Honduras",
   "officialName": "Republic of Honduras",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "Spanish",
+      "name": "República de Honduras",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Tegucigalpa",

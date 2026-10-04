@@ -3,7 +3,13 @@
   "isoNumeric": "458",
   "name": "Malaysia",
   "officialName": "Malaysia",
-  "localNames": [],
+  "localNames": [
+    {
+      "language": "Malay",
+      "name": "Persekutuan Malaysia",
+      "romanized": ""
+    }
+  ],
   "aliases": [],
   "status": "un-member",
   "capital": "Kuala Lumpur (official), Putrajaya (administrative)",

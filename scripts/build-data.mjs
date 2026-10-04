@@ -106,6 +106,12 @@ function distance(a, b) {
 
 const slugify = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
+// "Nippon · 日本": the place's first own-language name that differs from its English one, romanization first when it has one.
+function localLine(c) {
+  const l = (c.localNames ?? []).find((x) => x.name !== c.name);
+  return l ? [l.romanized, l.name].filter(Boolean).join(' · ') : '';
+}
+
 const continent = (c) => (c.region !== 'Americas' ? c.region : c.subregion === 'South America' ? 'South America' : 'North America');
 const order = new Map(sets.flatMap((s) => (s.order ?? []).map((code, i) => [code, i])));
 
@@ -141,6 +147,7 @@ const out = countries
       population: c.population ?? null,
       area: c.area ?? null,
       localNames: c.localNames ?? [],
+      localLine: localLine(c),
       languages: c.languages ?? [],
       currencies: c.currencies ?? [],
       demonym: c.demonym ?? '',
