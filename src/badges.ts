@@ -1,6 +1,7 @@
 import { ALL, byCode, CONTINENTS, Country, flagSrc, SETS, SOVEREIGN } from './data';
 import { bestStreak, level, save, state, streak } from './store';
-import { esc } from './ui';
+import continents from './generated/continents.json';
+import { esc, SET_ICONS } from './ui';
 
 export interface Badge {
   id: string; // "learn:<set id or continent>" and "quiz:<…>" key state.badges; "streak:now" and "streak:best" are worked out live
@@ -57,7 +58,7 @@ const MOSAIC: Record<string, string[]> = {
 function mosaic(cat: Category) {
   const picks = MOSAIC[cat.key]?.map((k) => byCode.get(k)!) ??
     [...cat.list].sort((a, b) => (a.rank ?? Infinity) - (b.rank ?? Infinity) || (b.population ?? 0) - (a.population ?? 0)).slice(0, 4);
-  return `<span class="badge-mosaic">${picks.map((c) => `<img src="${flagSrc(c.code, 320)}" alt="" loading="lazy" decoding="async">`).join('')}<span class="badge-sheen badge-glint"></span></span>`;
+  return `<span class="badge-mosaic">${picks.map((c) => `<img src="${flagSrc(c.code, 320)}" alt="" loading="lazy" decoding="async">`).join('')}${cat === EVERY ? '<span class="badge-sheen badge-glint"></span>' : ''}</span>`;
 }
 
 const FRAME = {
@@ -68,6 +69,20 @@ const FRAME = {
 
 const hex = (r: number) => Array.from({ length: 6 }, (_, i) => at(r, -90 + i * 60).join(',')).join(' ');
 const sparkle = (x: number, y: number, s: number) => `<path class="badge-twinkle" d="${burst(s, s / 4, 4, x, y)}"/>`;
+
+// A white mark on a disc at the centre: the set's picker icon or cover flag, a continent's outline, or the site's flag logo.
+function symbol(cat: Category, id: string, lo: string) {
+  const set = SETS.find((s) => s.id === cat.key);
+  const glyph =
+    cat === EVERY
+      ? '<g transform="translate(38 38) scale(.75)" fill="#fff"><rect x="5" y="3" width="2.5" height="26" rx="1.25"/><path d="M8.5 5h17l-3.5 5.5 3.5 5.5h-17z"/></g>'
+      : cat.continent
+        ? `<path transform="translate(38.6 38.6) scale(.95)" d="${(continents as Record<string, string>)[cat.continent]}" fill="#fff"/>`
+        : set?.cover.startsWith('icon:')
+          ? `<g transform="translate(39.2 39.2) scale(.9)" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">${SET_ICONS[set.cover.slice(5)]}</g>`
+          : `<clipPath id="${id}-${cat.key}"><circle cx="50" cy="50" r="13.4"/></clipPath><image href="${flagSrc(set!.cover, 320)}" x="30" y="36.6" width="40" height="26.8" preserveAspectRatio="xMidYMid slice" clip-path="url(#${id}-${cat.key})"/>`;
+  return `<circle cx="50" cy="50" r="16.5" fill="url(#${id})" stroke="${lo}" stroke-width="1"/><circle cx="50" cy="50" r="14.2" fill="${lo}" opacity=".35"/>${glyph}`;
+}
 
 // The flags sit in an HTML mosaic between two SVG layers; the mosaic's box in styles.css matches the hex(35) and r=33.5 openings.
 function categoryArt(kind: 'learn' | 'quiz', cat: Category) {
@@ -105,6 +120,7 @@ function categoryArt(kind: 'learn' | 'quiz', cat: Category) {
     ${mosaic(cat)}
     <svg class="badge-decor" viewBox="0 0 100 100" aria-hidden="true">
       <g fill="none" stroke="${lo}" stroke-width="1.2">${edge}</g>
+      ${symbol(cat, id, lo)}
       ${top}
     </svg>
   </span>`;
@@ -223,6 +239,7 @@ function streakArt(n: number) {
       <linearGradient id="${id}-rim" x1="0" y1="0" x2=".8" y2="1">${stops(t.rim)}</linearGradient>
       <linearGradient id="${id}-face" x1="0" y1="0" x2=".7" y2="1">${stops(t.face)}</linearGradient>
       <clipPath id="${id}-clip"><circle cx="50" cy="50" r="${fr}"/></clipPath>
+      <linearGradient id="${id}-shine"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".4" stop-color="#fff" stop-opacity=".25"/><stop offset=".5" stop-color="#fff" stop-opacity=".8"/><stop offset=".6" stop-color="#fff" stop-opacity=".25"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
     </defs>
     ${t.ribbon ? ribbon((v) => v) + ribbon((v) => 100 - v) : ''}
     ${t.wreath ? wreath(R + 6, t.wreath) : ''}
@@ -231,7 +248,7 @@ function streakArt(n: number) {
     <circle cx="50" cy="50" r="${fr}" fill="url(#${id}-face)"/>
     <g clip-path="url(#${id}-clip)">
       <ellipse cx="42" cy="${50 - fr * 0.6}" rx="${fr * 0.95}" ry="${fr * 0.5}" fill="#fff" opacity=".2"/>
-      <path class="badge-sheen" d="M30 0h9L25 100h-9z" fill="#fff" opacity=".45"/>
+      ${ti >= 4 ? `<g class="badge-sheen"><rect x="-10" y="-10" width="36" height="120" fill="url(#${id}-shine)" transform="skewX(-22)"/></g>` : ''}
     </g>
     <path d="M50 ${r2(50 - fr * 0.78)}c2.6 2.6 4 4.6 4 6.6a4 4 0 0 1-8 0c0-1.6.9-2.8 1.9-3.9.2 1.3.8 2 1.6 2.2-.5-1.6-.3-3.2.5-4.9z" fill="${t.ink}" opacity=".9"/>
     <text x="50" y="${r2(50 + size * 0.36)}" text-anchor="middle" font-size="${size}" font-weight="800" fill="${t.ink}">${n}</text>
