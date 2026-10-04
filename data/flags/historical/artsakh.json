@@ -50,7 +50,6 @@
       "Part of Azerbaijan"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "Three equal horizontal stripes of red, blue and orange, broken by a white stepped chevron, like a carpet pattern, that is cut into the fly and points toward the hoist.",
     "adopted": "1992",
@@ -69,5 +68,13 @@
   "trivia": [
     "The Republic of Artsakh was not recognized by any member state of the United Nations, including Armenia.",
     "After an Azerbaijani military offensive in September 2023, its leaders signed a decree dissolving the republic, and most of its ethnic Armenian population left for Armenia."
-  ]
+  ],
+  "pin": {
+    "city": "Stepanakert",
+    "label": "Capital",
+    "latlng": [
+      39.82,
+      46.75
+    ]
+  }
 }

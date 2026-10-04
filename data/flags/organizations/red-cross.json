@@ -36,7 +36,6 @@
       "Geneva"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "A red cross with arms of equal length in the center of a white field.",
     "adopted": "1864",
@@ -53,5 +52,13 @@
   "trivia": [
     "The ICRC was founded in Geneva after Henry Dunant saw the wounded left on the battlefield of Solferino in 1859.",
     "The ICRC has won the Nobel Peace Prize three times, in 1917, 1944 and 1963."
-  ]
+  ],
+  "pin": {
+    "city": "Geneva",
+    "label": "Headquarters",
+    "latlng": [
+      46.2,
+      6.15
+    ]
+  }
 }

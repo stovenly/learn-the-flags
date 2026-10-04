@@ -42,7 +42,6 @@
       "Italy"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "A red banner edged with gold ornament, bearing the golden winged Lion of Saint Mark with a paw on an open book, and a fly cut into six tails.",
     "adopted": "Middle Ages",
@@ -57,5 +56,13 @@
   "trivia": [
     "The six tails are often said to represent the six sestieri, or districts, of the city of Venice.",
     "The Republic ended in 1797, when the last doge, Ludovico Manin, abdicated as Napoleon's army approached."
-  ]
+  ],
+  "pin": {
+    "city": "Venice",
+    "label": "Capital",
+    "latlng": [
+      45.44,
+      12.33
+    ]
+  }
 }

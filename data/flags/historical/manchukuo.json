@@ -45,7 +45,6 @@
       "Northeast China"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "A yellow field with a canton of four equal horizontal stripes, red, blue, white and black, in the upper hoist corner.",
     "adopted": "1932",
@@ -65,5 +64,13 @@
   "trivia": [
     "Its head of state was Puyi, the last Qing emperor, who was enthroned as Emperor of Manchukuo in 1934.",
     "Manchukuo was recognized by only a few countries and was dissolved in 1945, after the Soviet invasion of Manchuria and Japan's surrender."
-  ]
+  ],
+  "pin": {
+    "city": "Hsinking",
+    "label": "Capital",
+    "latlng": [
+      43.82,
+      125.32
+    ]
+  }
 }

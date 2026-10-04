@@ -44,7 +44,6 @@
       "Nationalist government in Nanjing"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "Five equal horizontal stripes of red, yellow, blue, white and black.",
     "adopted": "1912",
@@ -64,5 +63,13 @@
   "trivia": [
     "It was replaced nationally in 1928 by the Kuomintang's flag with the white sun on a blue canton, after the Northern Expedition reunified the country.",
     "The five-colored flag was revived in the late 1930s by the Japanese-backed Reformed Government of the Republic of China."
-  ]
+  ],
+  "pin": {
+    "city": "Beijing",
+    "label": "Capital",
+    "latlng": [
+      39.9,
+      116.4
+    ]
+  }
 }

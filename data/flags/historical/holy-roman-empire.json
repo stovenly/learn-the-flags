@@ -51,7 +51,6 @@
       "Germany, Austria, Czechia and neighbours"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "A gold field with a black double-headed eagle, each head surrounded by a halo, with red beaks, tongues and talons.",
     "adopted": "c. 1430",
@@ -70,5 +69,13 @@
   "trivia": [
     "Voltaire quipped that the Holy Roman Empire was \"neither holy, nor Roman, nor an empire\".",
     "The empire was dissolved in 1806, when Francis II laid down the crown after Napoleon's victories; he continued to reign as Emperor of Austria."
-  ]
+  ],
+  "pin": {
+    "city": "Vienna",
+    "label": "Imperial seat",
+    "latlng": [
+      48.21,
+      16.37
+    ]
+  }
 }

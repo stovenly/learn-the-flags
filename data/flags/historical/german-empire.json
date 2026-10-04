@@ -51,7 +51,6 @@
       "Germany, with parts now in Poland and other neighbours"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "Three equal horizontal stripes of black, white and red.",
     "adopted": "1867",
@@ -71,5 +70,13 @@
   "trivia": [
     "The tricolor was first adopted by the North German Confederation in 1867 and kept when the empire was founded in 1871.",
     "The Nazi regime brought back the black-white-red tricolor in 1933, flying it alongside the swastika flag until 1935."
-  ]
+  ],
+  "pin": {
+    "city": "Berlin",
+    "label": "Capital",
+    "latlng": [
+      52.52,
+      13.4
+    ]
+  }
 }

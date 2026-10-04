@@ -43,7 +43,6 @@
       "Southeastern Nigeria"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "Three equal horizontal stripes of red, black and green, with a yellow rising half sun of eleven rays in the center of the black stripe.",
     "adopted": "1967",
@@ -62,5 +61,13 @@
   "trivia": [
     "Chimamanda Ngozi Adichie's novel \"Half of a Yellow Sun\", set during the war, takes its title from the flag.",
     "Estimates of the civilian dead range from about 500,000 to two million, most of them from famine under the Nigerian blockade."
-  ]
+  ],
+  "pin": {
+    "city": "Enugu",
+    "label": "Capital",
+    "latlng": [
+      6.45,
+      7.51
+    ]
+  }
 }

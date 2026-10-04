@@ -44,7 +44,6 @@
       "The pan-Arab colors"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "Three equal horizontal stripes of black, green and white, with a red triangle at the hoist.",
     "adopted": "1916",
@@ -65,5 +64,13 @@
   "trivia": [
     "Its colors became the pan-Arab colors, used today in the flags of Jordan, Palestine, Sudan, Kuwait and the United Arab Emirates, among others.",
     "The design is usually credited to the British diplomat Sir Mark Sykes."
-  ]
+  ],
+  "pin": {
+    "city": "Mecca",
+    "label": "Led from",
+    "latlng": [
+      21.42,
+      39.83
+    ]
+  }
 }

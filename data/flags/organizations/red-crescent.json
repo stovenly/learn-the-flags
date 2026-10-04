@@ -33,7 +33,6 @@
       "Geneva"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "A red crescent in the center of a white field, its horns opening towards the fly.",
     "adopted": "1929",
@@ -50,5 +49,13 @@
   "trivia": [
     "The crescent was first used by the Ottoman Empire during the Russo-Turkish War of 1876–1878 and was formally recognized in the 1929 Geneva Convention.",
     "A third, religiously neutral emblem, the Red Crystal, was added in 2005."
-  ]
+  ],
+  "pin": {
+    "city": "Geneva",
+    "label": "Headquarters",
+    "latlng": [
+      46.2,
+      6.15
+    ]
+  }
 }

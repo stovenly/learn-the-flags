@@ -52,7 +52,6 @@
       "Netherlands"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "Three equal horizontal stripes of orange, white and blue.",
     "adopted": "1570s",
@@ -71,5 +70,13 @@
   "trivia": [
     "During the 17th century the orange stripe gradually gave way to red, producing the red, white and blue flag of the Netherlands.",
     "Its colors live on in places with Dutch roots: the flag of New York City is blue, white and orange."
-  ]
+  ],
+  "pin": {
+    "city": "The Hague",
+    "label": "Seat of government",
+    "latlng": [
+      52.08,
+      4.3
+    ]
+  }
 }

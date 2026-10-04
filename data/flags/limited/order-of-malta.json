@@ -45,7 +45,6 @@
       "Observer since 1994"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "A red field with a white cross whose arms run to the edges, centered on the flag.",
     "adopted": "",
@@ -63,5 +62,13 @@
   "trivia": [
     "The Order was founded in Jerusalem around 1099 and later ruled Rhodes and then Malta, until Napoleon took the island in 1798.",
     "Its headquarters, Palazzo Malta on Rome's Via Condotti, has extraterritorial status in Italy."
-  ]
+  ],
+  "pin": {
+    "city": "Rome",
+    "label": "Headquarters",
+    "latlng": [
+      41.9,
+      12.48
+    ]
+  }
 }

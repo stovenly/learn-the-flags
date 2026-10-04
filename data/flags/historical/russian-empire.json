@@ -50,7 +50,6 @@
       "Russia and its neighbours"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "Three equal horizontal stripes of black, gold and white.",
     "adopted": "1858",
@@ -69,5 +68,13 @@
   "trivia": [
     "From 1896 the white-blue-red tricolor, which Russia flies again today, replaced it as the national flag.",
     "Russian monarchist and nationalist groups still fly the black-gold-white flag."
-  ]
+  ],
+  "pin": {
+    "city": "Saint Petersburg",
+    "label": "Capital",
+    "latlng": [
+      59.94,
+      30.31
+    ]
+  }
 }

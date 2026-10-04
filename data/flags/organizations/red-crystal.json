@@ -33,7 +33,6 @@
       "Geneva"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "A white field with a hollow red square standing on one corner, like a diamond, in the center.",
     "adopted": "2005",
@@ -51,5 +50,13 @@
   "trivia": [
     "It was created by the Third Additional Protocol to the Geneva Conventions, adopted in December 2005, which came into force in January 2007.",
     "Israel's Magen David Adom uses the crystal abroad with its own red Star of David set inside it."
-  ]
+  ],
+  "pin": {
+    "city": "Geneva",
+    "label": "Headquarters",
+    "latlng": [
+      46.2,
+      6.15
+    ]
+  }
 }

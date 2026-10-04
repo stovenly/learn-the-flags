@@ -49,7 +49,6 @@
       "Southern Vietnam, reunified in 1976"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "A yellow field with three thin horizontal red stripes across the center.",
     "adopted": "1949",
@@ -64,5 +63,13 @@
   "trivia": [
     "The flag is still widely flown by Vietnamese communities abroad, especially in the United States, as the \"Heritage and Freedom Flag\".",
     "After reunification, Saigon was renamed Ho Chi Minh City in 1976."
-  ]
+  ],
+  "pin": {
+    "city": "Saigon",
+    "label": "Capital",
+    "latlng": [
+      10.82,
+      106.63
+    ]
+  }
 }

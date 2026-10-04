@@ -49,7 +49,6 @@
       "Germany, Austria and parts of Poland and Russia"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "A red field with a white disc, set slightly towards the hoist, bearing a black swastika turned at 45 degrees.",
     "adopted": "1935",
@@ -65,5 +64,13 @@
   "trivia": [
     "It became the sole national flag under the Reich Flag Law of September 1935, one of the Nuremberg Laws.",
     "Displaying the swastika flag is a criminal offence in Germany, with exceptions for purposes such as education, research and art."
-  ]
+  ],
+  "pin": {
+    "city": "Berlin",
+    "label": "Capital",
+    "latlng": [
+      52.52,
+      13.4
+    ]
+  }
 }

@@ -38,7 +38,6 @@
       "Geneva"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "A light blue field with the white UN emblem, a world map framed by olive branches, overlaid by a gold staff with a serpent coiled round it.",
     "adopted": "1961",
@@ -56,5 +55,13 @@
   "trivia": [
     "The emblem was chosen by the first World Health Assembly in 1948.",
     "WHO's constitution came into force on 7 April 1948, the date now marked every year as World Health Day."
-  ]
+  ],
+  "pin": {
+    "city": "Geneva",
+    "label": "Headquarters",
+    "latlng": [
+      46.2,
+      6.15
+    ]
+  }
 }

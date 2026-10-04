@@ -56,7 +56,6 @@
       "Austria, Hungary, Czechia and others"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "Austria's red-white-red stripes in the hoist half and Hungary's red, white and green in the fly half, with the crowned coats of arms of Austria and of Hungary side by side across the white stripe.",
     "adopted": "1869",
@@ -76,5 +75,13 @@
   "trivia": [
     "Austria-Hungary never had a single national flag; this was the civil ensign flown by its merchant ships from 1869, while each half used its own colors on land.",
     "The monarchy was created by the Compromise of 1867, which split the Habsburg empire into Austrian and Hungarian halves sharing a monarch, an army and a foreign policy."
-  ]
+  ],
+  "pin": {
+    "city": "Vienna",
+    "label": "Capital",
+    "latlng": [
+      48.21,
+      16.37
+    ]
+  }
 }

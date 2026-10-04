@@ -41,7 +41,6 @@
       "Paris"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "A white field with a ring of five curved segments in the center, colored green, purple, red, blue and yellow clockwise from the top.",
     "adopted": "1987",
@@ -62,5 +61,13 @@
   "trivia": [
     "The emblem began as the logo of the 1987 summit in Quebec City and was made permanent on a proposal from Niger.",
     "The OIF's roots go back to the Agency for Cultural and Technical Co-operation, founded in Niamey in 1970."
-  ]
+  ],
+  "pin": {
+    "city": "Paris",
+    "label": "Headquarters",
+    "latlng": [
+      48.86,
+      2.35
+    ]
+  }
 }

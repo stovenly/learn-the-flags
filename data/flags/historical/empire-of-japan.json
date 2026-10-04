@@ -51,7 +51,6 @@
       "Japan"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "A white field with a red disc set towards the hoist, from which sixteen red rays spread out to the edges.",
     "adopted": "1889",
@@ -68,5 +67,13 @@
   "trivia": [
     "Japan's Maritime Self-Defense Force has used the same sixteen-ray design as its ensign since 1954.",
     "The flag is highly controversial in South Korea and China, where many see it as a symbol of Japanese wartime aggression and colonial rule."
-  ]
+  ],
+  "pin": {
+    "city": "Tokyo",
+    "label": "Capital",
+    "latlng": [
+      35.68,
+      139.69
+    ]
+  }
 }

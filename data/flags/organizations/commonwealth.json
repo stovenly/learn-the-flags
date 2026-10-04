@@ -37,7 +37,6 @@
       "London"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "A dark blue field with a gold globe in the center, surrounded by gold rays that curve round it in the shape of a letter C.",
     "adopted": "2013",
@@ -52,5 +51,13 @@
   "trivia": [
     "The flag was first adopted in 1976; the 2013 redesign cut the number of rays and tilted the globe.",
     "Mozambique, Rwanda, Gabon and Togo joined even though none of them was ever ruled by Britain."
-  ]
+  ],
+  "pin": {
+    "city": "London",
+    "label": "Headquarters",
+    "latlng": [
+      51.51,
+      -0.13
+    ]
+  }
 }

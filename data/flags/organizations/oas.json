@@ -37,7 +37,6 @@
       "Washington D.C."
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "A blue field with the seal of the Organization in the center: a white disc edged in gold holding a fan of the flags of the member states on gold-tipped poles.",
     "adopted": "1965",
@@ -57,5 +56,13 @@
   "trivia": [
     "The seal was last redrawn in 1991, when the flags of Belize and Guyana were added.",
     "The OAS Charter was signed in Bogotá in 1948, but its roots go back to the First International Conference of American States in 1889–1890."
-  ]
+  ],
+  "pin": {
+    "city": "Washington, D.C.",
+    "label": "Headquarters",
+    "latlng": [
+      38.9,
+      -77.04
+    ]
+  }
 }

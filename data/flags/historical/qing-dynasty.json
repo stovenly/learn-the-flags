@@ -48,7 +48,6 @@
       "China, Mongolia and Taiwan"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "A yellow field with a blue dragon stretched across it, its head turned towards a red pearl in the upper hoist corner.",
     "adopted": "1889",
@@ -66,5 +65,13 @@
   "trivia": [
     "The Yellow Dragon Flag was first triangular and was made rectangular in 1889.",
     "It was China's first national flag, created when the Qing navy needed an ensign for dealings with foreign powers."
-  ]
+  ],
+  "pin": {
+    "city": "Beijing",
+    "label": "Capital",
+    "latlng": [
+      39.9,
+      116.4
+    ]
+  }
 }

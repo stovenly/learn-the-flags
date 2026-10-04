@@ -37,7 +37,6 @@
       "Lausanne"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "A white field with five interlocking rings in the center: blue, black and red on top, yellow and green below.",
     "adopted": "1914",
@@ -56,5 +55,13 @@
   "trivia": [
     "Pierre de Coubertin designed the flag in 1913, and it was first flown at the Games in Antwerp in 1920.",
     "At each closing ceremony the flag is handed from the host city's mayor to the mayor of the next host city."
-  ]
+  ],
+  "pin": {
+    "city": "Lausanne",
+    "label": "Headquarters",
+    "latlng": [
+      46.52,
+      6.63
+    ]
+  }
 }

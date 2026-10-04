@@ -45,7 +45,6 @@
       "1814–1848"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "A white field strewn with gold fleurs-de-lis, with the royal arms in the center: a blue shield with three gold fleurs-de-lis under the royal crown, held by two angels and encircled by the collars of the Orders of Saint Michael and the Holy Spirit.",
     "adopted": "c. 1638",
@@ -61,5 +60,13 @@
   "trivia": [
     "The Order of the Holy Spirit, whose collar hangs around the shield, was founded by Henry III in 1578 and was the highest order of chivalry in the French monarchy.",
     "A royal restoration in 1873 failed partly because the Count of Chambord, the Bourbon claimant, refused to give up the white flag for the tricolor."
-  ]
+  ],
+  "pin": {
+    "city": "Paris",
+    "label": "Capital",
+    "latlng": [
+      48.86,
+      2.35
+    ]
+  }
 }

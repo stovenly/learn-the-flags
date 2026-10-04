@@ -13,6 +13,7 @@ const H = 100;
 const DEG = Math.PI / 180;
 const MIN_HALF_VIEW = 4.5 * DEG; // never zoom in further than this, so neighbours stay in view
 const MAX_HALF_VIEW = 75 * DEG;
+const PIN_HALF_VIEW = 9 * DEG; // a pinned city (a capital or headquarters) shows its surrounding countries
 const NEAR = 0.45; // radians; parts further than this from the main landmass don't steer the view
 
 const load = async (res) => {
@@ -181,7 +182,7 @@ function locator(center) {
   return `<circle class="io" cx="${cx}" cy="${cy}" r="${r}"/><path class="il" d="${land}"/><circle class="id" cx="${cx}" cy="${cy}" r="2"/><circle class="ir" cx="${cx}" cy="${cy}" r="${r}"/>`;
 }
 
-const STYLE = `<style>.o{fill:#b5d7ef}.g{fill:none;stroke:#fff;stroke-opacity:.45;stroke-width:.3}.l{fill:#f3ecd2;stroke:#ad9f78;stroke-width:.3}.t{fill:#d9302b;stroke:#7a1512;stroke-width:.45}.mh{fill:none;stroke:#fff;stroke-width:3}.m{fill:none;stroke:#d9302b;stroke-width:1.6}.io{fill:#4f93c9}.il{fill:#f3ecd2}.id{fill:#d9302b;stroke:#fff;stroke-width:.6}.ir{fill:none;stroke:#fff;stroke-width:1.2}.n{font:500 ${FONT}px system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;fill:#6b6249;text-anchor:middle;paint-order:stroke;stroke:#f3ecd2;stroke-width:.9;stroke-linejoin:round}.fb{fill:none;stroke:#00000040;stroke-width:.15}.tn{font-weight:650;fill:#fff;stroke:#a51f1b;stroke-width:.7}.tn .fb{stroke:#ffffffb0;stroke-width:.3}</style>`;
+const STYLE = `<style>.o{fill:#b5d7ef}.g{fill:none;stroke:#fff;stroke-opacity:.45;stroke-width:.3}.l{fill:#f3ecd2;stroke:#ad9f78;stroke-width:.3}.t{fill:#d9302b;stroke:#7a1512;stroke-width:.45}.mh{fill:none;stroke:#fff;stroke-width:3}.m{fill:none;stroke:#d9302b;stroke-width:1.6}.io{fill:#4f93c9}.il{fill:#f3ecd2}.id{fill:#d9302b;stroke:#fff;stroke-width:.6}.ir{fill:none;stroke:#fff;stroke-width:1.2}.n{font:500 ${FONT}px system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;fill:#6b6249;text-anchor:middle;paint-order:stroke;stroke:#f3ecd2;stroke-width:.9;stroke-linejoin:round}.fb{fill:none;stroke:#00000040;stroke-width:.15}.tn{font-weight:650;fill:#fff;stroke:#a51f1b;stroke-width:.7}.tn .fb{stroke:#ffffffb0;stroke-width:.3}.pin{fill:#d9302b;stroke:#7a1512;stroke-width:.5}.pd{fill:#fff}.pc{font-weight:700;fill:#8a1814;stroke-width:1.1}</style>`;
 
 // A flag's outline: its own extra outline, else its world-atlas country (for a union member code too).
 function outline(key) {
@@ -196,9 +197,10 @@ await fs.mkdir(path.join(OUT, 'plain'), { recursive: true });
 let total = 0;
 for (const c of countries) {
   if (c.shape === false) continue;
-  const members = (Array.isArray(c.shape) ? c.shape : [c.code]).map(outline).filter(Boolean);
+  // A place with no outline of its own (an organization, a former state) is pinned at its city instead.
+  const members = c.pin ? [] : (Array.isArray(c.shape) ? c.shape : [c.code]).map(outline).filter(Boolean);
   const f = members.length ? { type: 'Feature', id: c.code, properties: { name: c.name }, geometry: asFeature(members.flatMap(polygons)).geometry } : null;
-  const fallback = [c.latlng[1], c.latlng[0]];
+  const fallback = c.pin ? [c.pin.latlng[1], c.pin.latlng[0]] : [c.latlng[1], c.latlng[0]];
   const parts = members.map(focus);
   const near = parts.length ? asFeature(parts.flatMap((p) => polygons(p.near))) : null;
   const center = near ? geoCentroid(near) : fallback;
@@ -209,7 +211,7 @@ for (const c of countries) {
   const withParts = (world) => (swap.length ? [...world.filter((w) => !swap.includes(w.id)), ...extra.filter((x) => swap.includes(x.parent))] : world);
 
   const projection = geoAzimuthalEqualArea().rotate([-center[0], -center[1]]);
-  let scale = scaleForHalfView(MIN_HALF_VIEW);
+  let scale = scaleForHalfView(c.pin ? PIN_HALF_VIEW : MIN_HALF_VIEW);
   if (near) {
     projection.fitExtent([[W * 0.2, H * 0.17], [W * 0.8, H * 0.83]], near);
     scale = Math.min(scale, projection.scale());
@@ -230,7 +232,14 @@ for (const c of countries) {
   const target = f ? simplify(draw(f), 0.2, 0) : '';
   let marker = '';
   const avoid = [{ x0: INSET.x0, y0: INSET.y0, x1: W, y1: H }];
-  if (!f || draw.area(f) < 12) {
+  if (c.pin) {
+    const [x, y] = projection(markAt);
+    const size = FONT * 1.15, hw = textWidth(c.pin.city, size) / 2 + 0.8;
+    const above = y - 13 > size;
+    const tx = Math.min(Math.max(x, hw + 1), W - hw - 1), ty = above ? y - 12.5 : y + 4 + size;
+    avoid.push({ x0: x - 5, y0: y - 11, x1: x + 5, y1: y + 1 }, { x0: tx - hw, y0: ty - size, x1: tx + hw, y1: ty + size * 0.4 });
+    marker = `<path class="pin" d="M${x.toFixed(1)} ${y.toFixed(1)}c-1.3-3.4-4.3-5.4-4.3-8.4a4.3 4.3 0 1 1 8.6 0c0 3-3 5-4.3 8.4z"/><circle class="pd" cx="${x.toFixed(1)}" cy="${(y - 8.4).toFixed(1)}" r="1.6"/><g class="n pc"><text x="${tx.toFixed(1)}" y="${ty.toFixed(1)}" font-size="${size.toFixed(2)}">${esc(c.pin.city)}</text></g>`;
+  } else if (!f || draw.area(f) < 12) {
     const [x, y] = projection(markAt);
     avoid.push({ x0: x - 8, y0: y - 8, x1: x + 8, y1: y + 8 });
     marker = `<circle class="mh" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6"/><circle class="m" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6"/>`;

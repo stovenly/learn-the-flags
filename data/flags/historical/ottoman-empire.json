@@ -51,7 +51,6 @@
       "Turkey and much of the Balkans, Middle East and North Africa"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "A red field with a white crescent, opening towards the fly, and a white five-pointed star just beyond it.",
     "adopted": "1844",
@@ -70,5 +69,13 @@
   "trivia": [
     "The flag was adopted in 1844, during the Tanzimat reforms that modernised the Ottoman state.",
     "The Republic of Turkey kept the flag and fixed its exact proportions in the Turkish Flag Law of 1936."
-  ]
+  ],
+  "pin": {
+    "city": "Constantinople",
+    "label": "Capital",
+    "latlng": [
+      41.01,
+      28.98
+    ]
+  }
 }

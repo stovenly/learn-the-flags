@@ -42,7 +42,6 @@
       "New York City"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "A light blue field with the white emblem of the United Nations in the center: a world map seen from above the North Pole, framed by two olive branches.",
     "adopted": "1947",
@@ -60,5 +59,13 @@
   "trivia": [
     "The emblem's map is an azimuthal projection centered on the North Pole and cut off at 60° south, so Antarctica does not appear.",
     "Outside the headquarters in New York, the flags of the member states fly in English alphabetical order, from Afghanistan to Zimbabwe."
-  ]
+  ],
+  "pin": {
+    "city": "New York City",
+    "label": "Headquarters",
+    "latlng": [
+      40.71,
+      -74.01
+    ]
+  }
 }

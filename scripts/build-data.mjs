@@ -191,6 +191,7 @@ const out = countries
       differences: diffs,
       nearest: near.slice(0, 12).map((n) => n.code),
       hasMap: c.shape !== false,
+      pin: c.pin ? { city: c.pin.city, label: c.pin.label } : null,
       rank: order.get(c.code) ?? null,
       ratio,
       transparent,

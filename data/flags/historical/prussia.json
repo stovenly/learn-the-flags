@@ -43,7 +43,6 @@
       "Mainly Germany and Poland"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "A white field with a narrow black stripe along the top and bottom edges and, in the center, the crowned black Prussian eagle holding a sceptre and an orb.",
     "adopted": "1892",
@@ -60,5 +59,13 @@
   "trivia": [
     "Prussia's black and white supplied the black and white of the German Empire's black-white-red flag, with the red taken from the Hanseatic cities.",
     "The Allied Control Council formally abolished the state of Prussia in 1947."
-  ]
+  ],
+  "pin": {
+    "city": "Berlin",
+    "label": "Capital",
+    "latlng": [
+      52.52,
+      13.4
+    ]
+  }
 }

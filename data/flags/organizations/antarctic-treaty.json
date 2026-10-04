@@ -1,6 +1,6 @@
 {
   "code": "antarctic-treaty",
-  "isoNumeric": "",
+  "isoNumeric": "010",
   "name": "Antarctica",
   "officialName": "Antarctic Treaty System",
   "endonyms": [],
@@ -35,7 +35,6 @@
       "Buenos Aires"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "A dark blue field with a white map of Antarctica in the center, set in a white grid of lines of latitude and longitude.",
     "adopted": "2002",

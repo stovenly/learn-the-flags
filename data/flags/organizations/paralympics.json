@@ -37,7 +37,6 @@
       "Bonn"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "A white field with three crescent-shaped swooshes, red, blue and green, curving around a central point.",
     "adopted": "2019",
@@ -56,5 +55,13 @@
   "trivia": [
     "The first Paralympic logo, made for the 1988 Seoul Games, used five Korean-style teardrop shapes arranged like the Olympic rings.",
     "The three-agitos design was introduced in 2004 and refreshed in 2019 with brighter colors matching the Olympic rings."
-  ]
+  ],
+  "pin": {
+    "city": "Bonn",
+    "label": "Headquarters",
+    "latlng": [
+      50.74,
+      7.1
+    ]
+  }
 }

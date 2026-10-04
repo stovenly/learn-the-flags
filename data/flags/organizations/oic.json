@@ -41,7 +41,6 @@
       "Jeddah"
     ]
   ],
-  "shape": false,
   "flag": {
     "description": "A white field with the OIC emblem in the center: a green crescent curving round a globe drawn in green lines, with the black Kaaba at its heart.",
     "adopted": "2011",
@@ -57,5 +56,13 @@
   "trivia": [
     "The flag was introduced in 2011, when the Organisation of the Islamic Conference renamed itself the Organisation of Islamic Cooperation.",
     "Founded in Rabat in 1969, the OIC has 57 member states across four continents."
-  ]
+  ],
+  "pin": {
+    "city": "Jeddah",
+    "label": "Headquarters",
+    "latlng": [
+      21.49,
+      39.19
+    ]
+  }
 }

@@ -31,6 +31,7 @@ export interface Country {
   differences: Record<string, string>; // lookalike code → how to tell the two apart
   nearest: string[];
   hasMap: boolean;
+  pin: { city: string; label: string } | null; // mapped by its capital or headquarters rather than an outline
   rank: number | null;
   ratio: number;
   transparent: boolean;
