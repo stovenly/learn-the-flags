@@ -43,6 +43,8 @@ export interface FlagSet {
   noun: string; // "Which <noun> is this?"
   description: string;
   cover: string; // a flag code, or "icon:<name>" for a drawn icon (see SET_ICONS in home.ts)
+  badge: string; // "History" → "History Scholar", "History Quiz Master"
+  flags: string; // "historical flags", as in "all 44 historical flags"
 }
 
 export const ALL = raw as unknown as Country[];
@@ -103,7 +105,7 @@ export function normalize(s: string): string {
     .toLowerCase()
     .replace(/&/g, 'and')
     .replace(/\bst\b\.?/g, 'saint')
-    .replace(/^the\s+/, '')
+    .replace(/\b(the|and|of)\b/g, ' ')
     .replace(/[^a-z0-9]/g, '');
 }
 
@@ -129,12 +131,14 @@ export function matchAnswer(input: string, c: Country): Match {
   const local = c.endonyms.flatMap((l) => [l.name, l.romanized]).filter(Boolean);
   const targets = [c.name, c.officialName, ...c.aliases, ...local].map(normalize).filter(Boolean);
   if (targets.includes(guess)) return 'exact';
-  // A typo must not land on a different country's name ("Niger" vs "Nigeria").
+  // Roughly one slip per four letters, but never toward a name that belongs to a different flag ("Niger" vs "Nigeria").
+  const tolerance = (t: string) => (t.length <= 3 ? 0 : Math.max(1, Math.floor(t.length / 4)));
+  const best = Math.min(...targets.map((t) => editDistance(guess, t)).map((d, i) => (d <= tolerance(targets[i]) ? d : Infinity)));
+  if (best === Infinity) return 'wrong';
   for (const other of ALL) {
-    if (other.code !== c.code && [other.name, ...other.aliases].map(normalize).includes(guess)) return 'wrong';
+    if (other.code !== c.code && [other.name, ...other.aliases].some((n) => editDistance(guess, normalize(n)) < best || normalize(n) === guess)) return 'wrong';
   }
-  const tolerance = (t: string) => (t.length <= 4 ? 0 : t.length <= 8 ? 1 : 2);
-  return targets.some((t) => editDistance(guess, t) <= tolerance(t)) ? 'typo' : 'wrong';
+  return 'typo';
 }
 
 export const endonymText = (c: Country) => c.endonym;

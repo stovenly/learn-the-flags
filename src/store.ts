@@ -33,6 +33,7 @@ interface State {
   days: Record<string, DayLog>; // keyed by dayNumber()
   sessions: SessionLog[]; // newest first
   quizzes: Record<string, QuizBest>; // keyed by deckKey()
+  badges: Record<string, number>; // badge id (see badges.ts) → ms epoch earned
   settings: Settings;
 }
 
@@ -72,9 +73,9 @@ function settingsFrom(saved: Record<string, unknown> = {}): Settings {
 function load(): State {
   try {
     const s = JSON.parse(localStorage.getItem(KEY) ?? '');
-    if (s?.version === 1) return { ...s, sessions: s.sessions ?? [], quizzes: s.quizzes ?? {}, settings: settingsFrom(s.settings) };
+    if (s?.version === 1) return { ...s, sessions: s.sessions ?? [], quizzes: s.quizzes ?? {}, badges: s.badges ?? {}, settings: settingsFrom(s.settings) };
   } catch {}
-  return { version: 1, cards: {}, days: {}, sessions: [], quizzes: {}, settings: settingsFrom() };
+  return { version: 1, cards: {}, days: {}, sessions: [], quizzes: {}, badges: {}, settings: settingsFrom() };
 }
 
 export const state = load();
@@ -139,6 +140,17 @@ export function streak(): number {
   return n;
 }
 
+export function bestStreak(): number {
+  let best = 0, run = 0, prev = NaN;
+  for (const d of Object.keys(state.days).map(Number).sort((a, b) => a - b)) {
+    if (!state.days[d].reviews) continue;
+    run = d === prev + 1 ? run + 1 : 1;
+    prev = d;
+    best = Math.max(best, run);
+  }
+  return best;
+}
+
 export function logSession(log: SessionLog) {
   state.sessions.unshift(log);
   state.sessions.length = Math.min(state.sessions.length, 500);
@@ -156,6 +168,7 @@ export function importProgress(json: string) {
   state.days = s.days ?? {};
   state.sessions = s.sessions ?? [];
   state.quizzes = s.quizzes ?? {};
+  state.badges = s.badges ?? {};
   state.settings = settingsFrom(s.settings);
   save();
 }
@@ -165,6 +178,7 @@ export function resetProgress() {
   state.days = {};
   state.sessions = [];
   state.quizzes = {};
+  state.badges = {};
   save();
 }
 

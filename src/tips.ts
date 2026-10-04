@@ -1,3 +1,4 @@
+import { badgeTip } from './badges';
 import { byCode, Country } from './data';
 import { onCleanup } from './router';
 import { dayNumber } from './srs';
@@ -30,7 +31,7 @@ function tipHtml(c: Country) {
     .join('')}`;
 }
 
-// One tooltip for every [data-tip="<code>"] inside root, on mouse hover and keyboard focus; removed when the view changes.
+// One tooltip for every [data-tip="<code>"] and [data-badge="<id>"] inside root, on mouse hover and keyboard focus; removed when the view changes.
 export function attachTips(root: HTMLElement) {
   const tip = document.createElement('div');
   tip.className = 'tip';
@@ -45,10 +46,11 @@ export function attachTips(root: HTMLElement) {
   });
   let current: HTMLElement | null = null;
   const show = (el: HTMLElement) => {
-    const c = byCode.get(el.dataset.tip!);
-    if (!c) return;
+    const c = byCode.get(el.dataset.tip ?? '');
+    const html = el.dataset.badge ? badgeTip(el.dataset.badge) : c && tipHtml(c);
+    if (!html) return;
     current = el;
-    tip.innerHTML = tipHtml(c);
+    tip.innerHTML = html;
     tip.hidden = false;
     const r = el.getBoundingClientRect();
     const t = tip.getBoundingClientRect();
@@ -60,7 +62,7 @@ export function attachTips(root: HTMLElement) {
     current = null;
     tip.hidden = true;
   };
-  const tileOf = (e: Event) => (e.target as HTMLElement).closest<HTMLElement>('[data-tip]');
+  const tileOf = (e: Event) => (e.target as HTMLElement).closest<HTMLElement>('[data-tip], [data-badge]');
   root.addEventListener(
     'pointerover',
     (e) => {

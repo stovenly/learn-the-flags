@@ -4,35 +4,45 @@
     "name": "Sovereign states",
     "noun": "country",
     "description": "The 193 UN member states, plus Vatican City and Palestine.",
-    "cover": "icon:globe"
+    "cover": "icon:globe",
+    "badge": "World",
+    "flags": "country flags"
   },
   {
     "id": "us-states",
     "name": "US states",
     "noun": "state",
     "description": "All 50 states, plus Washington, D.C.",
-    "cover": "us"
+    "cover": "us",
+    "badge": "US States",
+    "flags": "US state flags"
   },
   {
     "id": "canada",
     "name": "Canadian provinces",
     "noun": "province or territory",
     "description": "The 10 provinces and 3 territories of Canada.",
-    "cover": "ca"
+    "cover": "ca",
+    "badge": "Canada",
+    "flags": "Canadian provincial and territorial flags"
   },
   {
     "id": "territories",
     "name": "Territories",
     "noun": "territory",
     "description": "Overseas territories, crown dependencies, autonomous regions and the UK's home nations.",
-    "cover": "icon:island"
+    "cover": "icon:island",
+    "badge": "Territories",
+    "flags": "territory flags"
   },
   {
     "id": "limited",
     "name": "Limited recognition",
     "noun": "state",
     "description": "Places that govern themselves but are recognized by few or no other countries, plus a few famous micronations.",
-    "cover": "icon:contested"
+    "cover": "icon:contested",
+    "badge": "Limited Recognition",
+    "flags": "flags of limited recognition"
   },
   {
     "id": "historical",
@@ -40,6 +50,8 @@
     "noun": "historical state",
     "description": "Iconic flags of states that no longer exist.",
     "cover": "icon:hourglass",
+    "badge": "History",
+    "flags": "historical flags",
     "order": [
       "ussr",
       "nazi-germany",
@@ -93,6 +105,8 @@
     "noun": "organization",
     "description": "The flags of international organizations and movements.",
     "cover": "un",
+    "badge": "Organizations",
+    "flags": "organization flags",
     "order": [
       "un",
       "eu",

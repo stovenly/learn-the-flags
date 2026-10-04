@@ -1,3 +1,4 @@
+import { awardBadges, badgeNews } from '../badges';
 import { ALL, url, byCode, Country, endonymText, matchAnswer, preload, preloadMap, setById, SOVEREIGN } from '../data';
 import { Again, Easy, Good, Grade, Hard, Memory, review } from '../srs';
 import { logSession, recordQuiz, save, state, today } from '../store';
@@ -488,6 +489,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
               </div>`
             : ''
         }
+        ${badgeNews(awardBadges())}
         ${strip('New today', summary.learned)}
         ${strip('Worth another look', summary.missed)}
         <div class="actions">${cfg.onDone(summary)}</div>
@@ -521,6 +523,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
                 .join('')}</div></section>`
             : ''
         }
+        ${badgeNews(awardBadges())}
         <div class="actions">${cfg.onDone(summary)}</div>
       </article>`;
     $('.session-count', root).textContent = '';

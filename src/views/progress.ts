@@ -1,4 +1,5 @@
 import { ALL, url, byCode, CONTINENTS, Country, inSet, SETS, SOVEREIGN } from '../data';
+import { awardBadges, badgeTile, shownBadges } from '../badges';
 import { attachTips, Status, STATUS_TEXT, statusOf } from '../tips';
 import { exportProgress, importProgress, level, resetProgress, SessionLog, state, streak } from '../store';
 import { applyTheme } from '../theme';
@@ -126,6 +127,8 @@ export function progressView(root: HTMLElement) {
     return;
   }
 
+  awardBadges();
+  const badges = shownBadges();
   const answers = Object.values(state.days).reduce((n, d) => n + d.reviews, 0);
   const correct = Object.values(state.days).reduce((n, d) => n + d.correct, 0);
   const tricky = Object.entries(state.cards)
@@ -184,6 +187,11 @@ export function progressView(root: HTMLElement) {
           </div>`;
         }).join('')}
       </div>
+    </section>
+
+    <section class="card badges-card">
+      <div class="wall-head"><h2>Badges</h2><span class="muted small">${plural(badges.filter((b) => b.earned).length, 'badge')} earned</span></div>
+      <div class="badge-grid">${badges.map((b) => badgeTile(b.badge, b.earned)).join('')}</div>
     </section>
 
     <div class="section-head wall-toolbar">
