@@ -20,7 +20,7 @@
       </div>
       <div class="set-others">${i.filter(e=>e.id!==a).map(t=>Je(t.id,e)).join(``)}</div>
     </div>
-  </section>`}function Xe(e){let t=t=>Qe(e,scrollY,t);for(let n of K(`[data-set]`,e))n.addEventListener(`click`,()=>{n.dataset.set!==N.settings.set&&(De(n.dataset.set),t(`[data-set="${n.dataset.set}"]`))});for(let n of K(`[data-continent]`,e))n.addEventListener(`click`,()=>{let e=n.dataset.continent,r=N.settings.continents,i=e===`all`?c:r.length===c.length?[e]:r.includes(e)?r.filter(t=>t!==e):[...r,e];i.length||(i=c),De(a,c.filter(e=>i.includes(e))),t(`[data-continent="${e}"]`)})}function Ze(e){J=null,Qe(e)}function Qe(e,t,n){let r=Ee(),i=qe(r),a=ke().length,o=Ae(),s=Object.keys(N.cards).length>0,c=je(),l=N.quizzes[Ie()],u=[],d,f,m=``;a?(d=`${q(a,`flag`)} to review`,f=`<a class="btn primary" href="${p(`study/`)}">Review ${B(`arrow`)}</a>${o.length?`<a class="btn ghost" href="${p(`study/new/`)}">Learn new flags</a>`:``}`):o.length?(d=`Today's flags`,f=`<a class="btn primary" href="${p(`study/`)}">${s?`Start`:`Start learning`} ${B(`arrow`)}</a>`,m=Ke(o.slice(0,N.settings.lessonSize),u)):(d=`All learned`,f=`<a class="btn ghost" href="${p(`flags/`)}">Browse flags</a>`);let h=L(r).slice(0,4);h.forEach(e=>u.push(v(e.code,320))),Ue(e,`
+  </section>`}function Xe(e){let t=t=>Qe(e,scrollY,t);for(let n of K(`[data-set]`,e))n.addEventListener(`click`,()=>{n.dataset.set!==N.settings.set&&(De(n.dataset.set),t(`[data-set="${n.dataset.set}"]`))});for(let n of K(`[data-continent]`,e))n.addEventListener(`click`,()=>{let e=n.dataset.continent,r=N.settings.continents,i=e===`all`?c:r.length===c.length?[e]:r.includes(e)?r.filter(t=>t!==e):[...r,e];i.length||(i=c),De(a,c.filter(e=>i.includes(e))),t(`[data-continent="${e}"]`)})}function Ze(e){J=null,Qe(e)}function Qe(e,t,n){let r=Ee(),i=qe(r),a=ke().length,o=Ae(),s=Object.keys(N.cards).length>0,c=je(),l=N.quizzes[Ie()],u=[],d,f,m=``;a?(d=`${q(a,`flag`)} to review`,f=`<a class="btn primary" href="${p(`study/`)}">Review ${B(`arrow`)}</a>${o.length?`<a class="btn ghost" href="${p(`study/new/`)}">Learn new flags</a>`:``}`):o.length?(d=`Today's flags`,f=`<a class="btn primary" href="${p(`study/`)}">${s?`Start`:`Start learning`} ${B(`arrow`)}</a>`,m=Ke(o.slice(0,N.settings.lessonSize),u)):(d=`All learned`,f=`<a class="btn ghost" href="${p(`flags/`)}">Browse flags</a>`);let h=L(r).slice(0,15);h.forEach(e=>u.push(v(e.code,320))),Ue(e,`
     ${s?`<h1 class="sr-only">Learn the Flags</h1>`:`<h1 class="home-title">Learn every flag in the world</h1>`}
 
     ${Ye(u)}
@@ -42,7 +42,7 @@
           ${l?`<span class="mode-meta">Best ${Math.round(l.correct/l.total*100)}%</span>`:``}
         </div>
         <p class="mode-status">All ${r.length} flags, once each</p>
-        <div class="up-next-flags">${h.map(e=>V(e)).join(``)}</div>
+        <div class="quiz-flags" aria-hidden="true">${h.map(e=>V(e)).join(``)}</div>
         <div class="mode-actions"><a class="btn ${a||o.length?`ghost`:`primary`}" href="${p(`quiz/`)}">Start quiz ${B(`arrow`)}</a></div>
       </section>
     </div>

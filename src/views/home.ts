@@ -127,7 +127,7 @@ function paint(root: HTMLElement, keepScroll?: number, focus?: string) {
     status = 'All learned';
     actions = `<a class="btn ghost" href="${url('flags/')}">Browse flags</a>`;
   }
-  const preview = shuffle(all).slice(0, 4);
+  const preview = shuffle(all).slice(0, 15);
   preview.forEach((c) => images.push(preload(c.code, 320)));
 
   const html = `
@@ -152,7 +152,7 @@ function paint(root: HTMLElement, keepScroll?: number, focus?: string) {
           ${best ? `<span class="mode-meta">Best ${Math.round((best.correct / best.total) * 100)}%</span>` : ''}
         </div>
         <p class="mode-status">All ${all.length} flags, once each</p>
-        <div class="up-next-flags">${preview.map((c) => thumb(c)).join('')}</div>
+        <div class="quiz-flags" aria-hidden="true">${preview.map((c) => thumb(c)).join('')}</div>
         <div class="mode-actions"><a class="btn ${due || upcoming.length ? 'ghost' : 'primary'}" href="${url('quiz/')}">Start quiz ${icon('arrow')}</a></div>
       </section>
     </div>

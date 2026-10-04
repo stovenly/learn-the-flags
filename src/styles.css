@@ -459,9 +459,9 @@ a.pair:hover strong { color: var(--accent); }
 
 /* Home */
 .home-title { font-size: clamp(1.7rem, 4vw, 2.4rem); margin: 8px 0 18px; }
-.modes { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+.modes { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; margin-bottom: 16px; }
 .modes .card { margin: 0; }
-.mode { display: flex; flex-direction: column; gap: 12px; padding: 22px; }
+.mode { display: flex; flex-direction: column; gap: 12px; padding: 22px; min-width: 0; }
 .mode-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
 .mode-head h2 { margin: 0; font-size: 1.3rem; }
 .mode-meta { color: var(--muted); font-size: 0.85rem; font-variant-numeric: tabular-nums; }
@@ -472,6 +472,13 @@ a.mode-meta:hover { color: var(--text); }
 .up-next .label { display: none; }
 .up-next-flags { display: flex; gap: 8px; flex-wrap: wrap; }
 .up-next-flags .thumb { width: 48px; }
+.quiz-flags { display: flex; flex-wrap: wrap; gap: 8px; }
+.quiz-flags .thumb { width: 44px; }
+/* The last few fade out, hinting at the rest of the set. */
+.quiz-flags .thumb:nth-last-child(4) { opacity: 0.75; }
+.quiz-flags .thumb:nth-last-child(3) { opacity: 0.5; }
+.quiz-flags .thumb:nth-last-child(2) { opacity: 0.3; }
+.quiz-flags .thumb:nth-last-child(1) { opacity: 0.15; }
 
 .trivia-card { display: flex; gap: 22px; align-items: center; color: var(--text); }
 .trivia-card:hover { text-decoration: none; border-color: color-mix(in srgb, var(--accent) 40%, var(--border)); }
@@ -873,7 +880,7 @@ body[data-route='settings'] #app { max-width: 720px; }
 }
 
 @media (max-width: 720px) {
-  .modes { grid-template-columns: 1fr; }
+  .modes { grid-template-columns: minmax(0, 1fr); }
   .mode-actions .btn { flex: 1 1 auto; }
   .trivia-card { gap: 16px; padding: 18px; align-items: flex-start; }
   .trivia-card .thumb { width: 72px; }
