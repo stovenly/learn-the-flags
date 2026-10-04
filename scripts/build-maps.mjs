@@ -35,6 +35,7 @@ const extra = Object.entries(JSON.parse(await fs.readFile(path.join(ROOT, 'data/
   ([key, x]) => ({ type: 'Feature', id: key, parent: x.parent, properties: { name: x.name }, geometry: x.geometry }),
 );
 const extraByKey = new Map(extra.map((x) => [x.id, x]));
+const lakes = JSON.parse(await fs.readFile(path.join(ROOT, 'data/geo/lakes.json'), 'utf8')).map((geometry) => ({ type: 'Feature', geometry }));
 // Natural Earth names for flags whose world-atlas feature has no ISO number.
 const NE_NAME = { Kosovo: 'xk', Somaliland: 'somaliland', 'N. Cyprus': 'northern-cyprus' };
 const byIso = new Map(countries.filter((c) => c.isoNumeric).map((c) => [c.isoNumeric, c.code]));
@@ -131,7 +132,7 @@ function labelCandidates(base, draw) {
 
 // Places each label (the name, plus its flag below when wanted and there's room) wholly on that country's land,
 // off the highlighted country (unless it is the highlighted one), and clear of everything in `placed`, which it extends.
-function labels(candidates, targetRings, placed, withFlags, onTarget = false) {
+function labels(candidates, targetRings, lakeRings, placed, withFlags, onTarget = false) {
   const hits = (r) => placed.some((q) => r.x0 < q.x1 && r.x1 > q.x0 && r.y0 < q.y1 && r.y1 > q.y0);
   const out = [];
   for (const k of candidates) {
@@ -154,7 +155,7 @@ function labels(candidates, targetRings, placed, withFlags, onTarget = false) {
         if (r.x0 < 1 || r.x1 > W - 1 || r.y0 < 1 || r.y1 > H - 1 || hits(r)) continue;
         const mid = (r.y0 + r.y1) / 2;
         const probe = [[r.x0, r.y0], [x, r.y0], [r.x1, r.y0], [r.x0, mid], [x, mid], [r.x1, mid], [r.x0, r.y1], [x, r.y1], [r.x1, r.y1]];
-        if (!probe.every(([px, py]) => inside(k.rings, px, py) && (onTarget || !inside(targetRings, px, py)))) continue;
+        if (!probe.every(([px, py]) => inside(k.rings, px, py) && !inside(lakeRings, px, py) && (onTarget || !inside(targetRings, px, py)))) continue;
         placed.push(r);
         const small = size !== FONT ? ` font-size="${size.toFixed(2)}"` : '';
         out.push(`<text x="${x.toFixed(1)}" y="${(y + size * 0.35).toFixed(1)}"${small}>${esc(name)}</text>`);
@@ -182,7 +183,7 @@ function locator(center) {
   return `<circle class="io" cx="${cx}" cy="${cy}" r="${r}"/><path class="il" d="${land}"/><circle class="id" cx="${cx}" cy="${cy}" r="2"/><circle class="ir" cx="${cx}" cy="${cy}" r="${r}"/>`;
 }
 
-const STYLE = `<style>.o{fill:#b5d7ef}.g{fill:none;stroke:#fff;stroke-opacity:.45;stroke-width:.3}.l{fill:#f3ecd2;stroke:#ad9f78;stroke-width:.3}.t{fill:#d9302b;stroke:#7a1512;stroke-width:.45}.mh{fill:none;stroke:#fff;stroke-width:3}.m{fill:none;stroke:#d9302b;stroke-width:1.6}.io{fill:#4f93c9}.il{fill:#f3ecd2}.id{fill:#d9302b;stroke:#fff;stroke-width:.6}.ir{fill:none;stroke:#fff;stroke-width:1.2}.n{font:500 ${FONT}px system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;fill:#6b6249;text-anchor:middle;paint-order:stroke;stroke:#f3ecd2;stroke-width:.9;stroke-linejoin:round}.fb{fill:none;stroke:#00000040;stroke-width:.15}.tn{font-weight:650;fill:#fff;stroke:#a51f1b;stroke-width:.7}.tn .fb{stroke:#ffffffb0;stroke-width:.3}.pin{fill:#d9302b;stroke:#7a1512;stroke-width:.5}.pd{fill:#fff}.pc{font-weight:700;fill:#8a1814;stroke-width:1.1}</style>`;
+const STYLE = `<style>.o{fill:#b5d7ef}.g{fill:none;stroke:#fff;stroke-opacity:.45;stroke-width:.3}.l{fill:#f3ecd2;stroke:#ad9f78;stroke-width:.3}.t{fill:#d9302b;stroke:#7a1512;stroke-width:.45}.mh{fill:none;stroke:#fff;stroke-width:3}.m{fill:none;stroke:#d9302b;stroke-width:1.6}.io{fill:#4f93c9}.il{fill:#f3ecd2}.id{fill:#d9302b;stroke:#fff;stroke-width:.6}.ir{fill:none;stroke:#fff;stroke-width:1.2}.n{font:500 ${FONT}px system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;fill:#6b6249;text-anchor:middle;paint-order:stroke;stroke:#f3ecd2;stroke-width:.9;stroke-linejoin:round}.fb{fill:none;stroke:#00000040;stroke-width:.15}.tn{font-weight:650;fill:#fff;stroke:#a51f1b;stroke-width:.7}.tn .fb{stroke:#ffffffb0;stroke-width:.3}.lk{fill:#b5d7ef;stroke:#ad9f78;stroke-width:.3}.pin{fill:#d9302b;stroke:#7a1512;stroke-width:.5}.pd{fill:#fff}.pc{font-weight:700;fill:#8a1814;stroke-width:1.1}</style>`;
 
 // A flag's outline: its own extra outline, else its world-atlas country (for a union member code too).
 function outline(key) {
@@ -247,13 +248,15 @@ for (const c of countries) {
   const candidates = labelCandidates(base.filter((w) => !isTarget(w)), draw);
   const own = f ? labelCandidates([f], draw) : [];
   const targetRings = parseRings(target);
+  const water = lakes.map((x) => simplify(draw(x), 0.3, 0.6)).join('');
+  const lakeRings = parseRings(water);
   // The target's own label goes first so neighbours make room for it; plain maps never show its flag.
   const annotate = (withFlags) => {
     const placed = [...avoid];
-    const self = labels(own, targetRings, placed, withFlags, true);
-    return self + labels(candidates, targetRings, placed, withFlags && c.set !== 'historical');
+    const self = labels(own, targetRings, lakeRings, placed, withFlags, true);
+    return self + labels(candidates, targetRings, lakeRings, placed, withFlags && c.set !== 'historical');
   };
-  const render = (names) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}">${STYLE}<rect class="o" width="${W}" height="${H}"/><path class="g" d="${simplify(draw(geoGraticule10()), 1.5, 0)}"/><path class="l" d="${others}"/>${target ? `<path class="t" d="${target}"/>` : ''}${marker}${names}${locator(center)}</svg>\n`;
+  const render = (names) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}">${STYLE}<rect class="o" width="${W}" height="${H}"/><path class="g" d="${simplify(draw(geoGraticule10()), 1.5, 0)}"/><path class="l" d="${others}"/>${target ? `<path class="t" d="${target}"/>` : ''}${water ? `<path class="lk" d="${water}"/>` : ''}${marker}${names}${locator(center)}</svg>\n`;
   const full = render(annotate(true));
   await fs.writeFile(path.join(OUT, `${c.code}.svg`), full);
   await fs.writeFile(path.join(OUT, 'plain', `${c.code}.svg`), render(annotate(false)));

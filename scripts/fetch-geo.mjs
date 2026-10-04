@@ -1,5 +1,6 @@
 // Writes data/geo/extra.json: outlines that world-atlas lacks (US states, Canadian provinces, UK nations, breakaway
-// states, a few historical building blocks), keyed by flag code, from Natural Earth 10m (public domain). Run rarely.
+// states, a few historical building blocks), keyed by flag code, and data/geo/lakes.json, from Natural Earth 10m
+// (public domain). Run rarely.
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { geoArea } from 'd3-geo';
@@ -121,3 +122,9 @@ await fs.mkdir(path.join(ROOT, 'data/geo'), { recursive: true });
 const json = JSON.stringify(out);
 await fs.writeFile(path.join(ROOT, 'data/geo/extra.json'), json);
 console.log(`Wrote ${Object.keys(out).length} outlines (${Math.round(json.length / 1024)} KB) to data/geo/extra.json`);
+
+const LAKE_RANK = 5; // Natural Earth scalerank; smaller lakes vanish at map size
+const lakes = (await load('ne_10m_lakes')).filter((f) => f.properties.scalerank <= LAKE_RANK).map((f) => compact(f.geometry));
+const lakeJson = JSON.stringify(lakes);
+await fs.writeFile(path.join(ROOT, 'data/geo/lakes.json'), lakeJson);
+console.log(`Wrote ${lakes.length} lakes (${Math.round(lakeJson.length / 1024)} KB) to data/geo/lakes.json`);
