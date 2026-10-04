@@ -6,7 +6,6 @@ import path from 'node:path';
 const ROOT = path.resolve(import.meta.dirname, '..');
 const OUT = path.join(ROOT, 'docs');
 const site = JSON.parse(await fs.readFile(path.join(ROOT, 'site.config.json'), 'utf8'));
-const BASE = new URL(site.siteUrl).pathname;
 const countries = JSON.parse(await fs.readFile(path.join(ROOT, 'src/generated/countries.json'), 'utf8'));
 const sets = JSON.parse(await fs.readFile(path.join(ROOT, 'src/generated/sets.json'), 'utf8'));
 const setName = Object.fromEntries(sets.map((s) => [s.id, s.name]));
@@ -47,9 +46,12 @@ function shell(route, { title, description, image, type = 'website', jsonld, bod
   return html;
 }
 
+// Each page's <base> points back to the site root, so relative links and assets work at any depth.
+const rooted = (html, base) => html.replace(/<base href="[^"]*">/, `<base href="${base}">`);
+
 async function write(route, html) {
   await fs.mkdir(path.join(OUT, route), { recursive: true });
-  await fs.writeFile(path.join(OUT, route, 'index.html'), html);
+  await fs.writeFile(path.join(OUT, route, 'index.html'), rooted(html, '../'.repeat(route.split('/').filter(Boolean).length) || './'));
 }
 
 const localName = (c) =>
@@ -58,9 +60,9 @@ const localName = (c) =>
     .map((l) => [l.romanized, l.name].filter(Boolean).join(' · '))
     .join('  /  ');
 const subtitle = (c) => [c.officialName !== c.name ? c.officialName : '', STATUS[c.status] ?? '', c.set === 'sovereign' ? '' : setName[c.set]].filter(Boolean).join(' · ');
-const flagHref = (c) => `${BASE}flags/${c.slug}/`;
+const flagHref = (c) => `flags/${c.slug}/`;
 const img = (c, size = 640) =>
-  `<img class="flag flag-${size === 320 ? 'sm' : 'lg'}" src="${BASE}img/flags/${size}/${c.code}.webp" width="640" height="${Math.round(640 / c.ratio)}" alt="Flag of ${esc(c.theName)}" style="--ratio:${c.ratio}"${size === 320 ? ' loading="lazy"' : ''} decoding="async">`;
+  `<img class="flag flag-${size === 320 ? 'sm' : 'lg'}" src="img/flags/${size}/${c.code}.webp" width="640" height="${Math.round(640 / c.ratio)}" alt="Flag of ${esc(c.theName)}" style="--ratio:${c.ratio}"${size === 320 ? ' loading="lazy"' : ''} decoding="async">`;
 const tile = (c) => `<a class="tile" href="${flagHref(c)}"><div class="tile-flag">${img(c, 320)}</div><span class="tile-name">${esc(c.name)}</span></a>`;
 
 for (const c of countries) {
@@ -81,7 +83,7 @@ for (const c of countries) {
 <h1>Flag of ${esc(c.theName)}</h1>
 ${localName(c) ? `<p class="local-name">${esc(localName(c))}</p>` : ''}
 ${subtitle(c) ? `<p class="muted">${esc(subtitle(c))}</p>` : ''}
-${c.hasMap ? `<div class="card"><img class="map map-lg" src="${BASE}img/maps/${c.code}.svg" width="150" height="100" alt="Map showing where ${esc(c.name)} is" loading="lazy"></div>` : ''}
+${c.hasMap ? `<div class="card"><img class="map map-lg" src="img/maps/${c.code}.svg" width="150" height="100" alt="Map showing where ${esc(c.name)} is" loading="lazy"></div>` : ''}
 <section class="card">
 <h2>What the flag looks like</h2>
 <p>${esc(c.flag.description)}</p>
@@ -91,7 +93,7 @@ ${c.hook ? `<h2>How to remember it</h2><p>${esc(c.hook)}</p>` : ''}
 ${c.trivia.length ? `<section class="card"><h2>Fun facts</h2><ul>${c.trivia.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>` : ''}
 <section class="card"><h2>${esc(c.name)} at a glance</h2><dl class="facts">${facts.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl></section>
 ${looks.length ? `<section class="card"><h2>Flags often confused with ${esc(c.theName)}</h2><ul>${looks.map((o) => `<li><a href="${flagHref(o)}">${esc(o.name)}</a>${c.differences[o.code] ? `: ${esc(c.differences[o.code])}` : ''}</li>`).join('')}</ul></section>` : ''}
-<p><a href="${BASE}flags/">← All flags</a></p>
+<p><a href="flags/">← All flags</a></p>
 </article>`;
   const description = `${c.flag.description} Meaning, history and fun facts about the flag of ${c.theName}.`.slice(0, 300);
   const route = `flags/${c.slug}/`;
@@ -142,7 +144,8 @@ const APP_PAGES = { 'study/': 'Study', 'study/new/': 'Study', 'quiz/': 'Quiz', '
 for (const [route, name] of Object.entries(APP_PAGES)) {
   await write(route, shell(route, { title: `${name} · ${site.name}`, description: site.description, noindex: true }));
 }
-await fs.writeFile(path.join(OUT, '404.html'), shell('', { title: site.name, description: site.description, noindex: true }));
+// GitHub Pages serves 404.html at any depth, so its <base> must be absolute.
+await fs.writeFile(path.join(OUT, '404.html'), rooted(shell('', { title: site.name, description: site.description, noindex: true }), new URL(site.siteUrl).pathname));
 
 const urls = ['', 'flags/', ...countries.map((c) => `flags/${c.slug}/`)];
 await fs.writeFile(

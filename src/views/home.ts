@@ -3,6 +3,9 @@ import { chooseDeck, deck, deckKey, dueCards, level, newCards, state, streak } f
 import { attachTips } from '../tips';
 import { $$, countryLink, esc, flagImg, icon, plural, renderWhenReady, sample, shuffle, thumb } from '../ui';
 
+// Quiz card flags per selection, so going back to a selection shows the same ones.
+const previews = new Map<string, Country[]>();
+
 // One pick per visit, so changing the set doesn't swap the card and jolt the page.
 let fact: { c: Country; text: string } | null = null;
 
@@ -109,6 +112,7 @@ function bindPicker(root: HTMLElement) {
       const cur = state.settings.continents;
       let next = k === 'all' ? CONTINENTS : cur.length === CONTINENTS.length ? [k] : cur.includes(k) ? cur.filter((x) => x !== k) : [...cur, k];
       if (!next.length) next = CONTINENTS;
+      if (state.settings.set === SOVEREIGN && next.length === cur.length && next.every((x) => cur.includes(x))) return;
       chooseDeck(SOVEREIGN, CONTINENTS.filter((x) => next.includes(x)));
       refresh(`[data-continent="${k}"]`);
     });
@@ -145,7 +149,9 @@ function paint(root: HTMLElement, keepScroll?: number, focus?: string) {
     status = 'All learned';
     actions = `<a class="btn ghost" href="${url('flags/')}">Browse flags</a>`;
   }
-  const preview = shuffle(all).slice(0, 15);
+  const key = deckKey();
+  if (previews.get(key)?.length !== Math.min(15, all.length)) previews.set(key, shuffle(all).slice(0, 15));
+  const preview = previews.get(key)!;
   preview.forEach((c) => images.push(preload(c.code, 320)));
 
   const html = `

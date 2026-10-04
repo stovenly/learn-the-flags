@@ -24,7 +24,7 @@ npm run build    # build data, typecheck, build the site into docs/
 
 GitHub Pages serves the `docs/` folder on `main`. Commit `docs/` after building.
 
-The app uses clean URLs under the site's base path, taken from `siteUrl` in `site.config.json` (`/learn-the-flags/`). Locally that is http://localhost:5173/learn-the-flags/ for `npm run dev` and http://localhost:4173/learn-the-flags/ for `npm run preview`. Static hosting can't rewrite unknown paths to the app, so the build writes a copy of the app shell for every route (`flags/<slug>/`, `progress/`, …). Old `#/` links are redirected on load.
+The app uses clean URLs (`/flags/texas/`, `/progress/`). Every page carries a `<base>` tag pointing at the site root, so the same build works at `/` (http://localhost:5173/ for `npm run dev`, http://localhost:4173/ for `npm run preview`) or under a sub-path such as a GitHub project page. Static hosting can't rewrite unknown paths to the app, so the build writes a copy of the app shell for every route (`flags/<slug>/`, `progress/`, …) and a `404.html` whose `<base>` is the path of `siteUrl`. Old `#/` links are redirected on load.
 
 ## Editing flags
 

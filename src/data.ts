@@ -74,8 +74,8 @@ export function curriculum(list: Country[]): Country[] {
   return [...list].sort((a, b) => group(a) - group(b) || (b.population ?? 0) - (a.population ?? 0));
 }
 
-// Site root path ("/learn-the-flags/"); every app URL is built from it.
-export const BASE = import.meta.env.BASE_URL;
+// Site root path from the page's <base> tag ("/" locally, "/<repo>/" on a project page); every app URL is built from it.
+export const BASE = new URL(document.baseURI).pathname;
 export const url = (path = '') => BASE + path;
 export const flagSrc = (code: string, w: 320 | 640 = 640) => url(`img/flags/${w}/${code}.webp`);
 export const mapSrc = (code: string, plain = false) => url(`img/maps/${plain ? 'plain/' : ''}${code}.svg`);
