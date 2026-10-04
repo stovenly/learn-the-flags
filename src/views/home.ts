@@ -150,7 +150,7 @@ function paint(root: HTMLElement, keepScroll?: number, focus?: string) {
     status = `${plural(due, 'flag')} to review`;
     actions = `<a class="btn primary" href="${url('study/')}">Start ${icon('arrow')}</a><button type="button" class="btn ghost btn-icon" data-options="lesson" aria-label="Lesson options" title="Lesson options">${icon('gear')}</button>`;
   } else if (upcoming.length) {
-    status = "Today's flags";
+    status = 'Up next';
     actions = `<a class="btn primary" href="${url('study/')}">${started ? 'Start' : 'Start learning'} ${icon('arrow')}</a><button type="button" class="btn ghost btn-icon" data-options="lesson" aria-label="Lesson options" title="Lesson options">${icon('gear')}</button>`;
     next = upNext(upcoming.slice(0, state.settings.lessonSize), images);
   } else {
