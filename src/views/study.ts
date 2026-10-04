@@ -1,3 +1,5 @@
+import { url } from '../data';
+import { navigate } from '../router';
 import { dueCards, newCards, state } from '../store';
 import { buildStudy, runSession } from './session';
 
@@ -11,7 +13,7 @@ export function studyView(root: HTMLElement, param: string) {
   const fresh = onlyNew || allDue.length <= MAX_REVIEWS ? newCards().slice(0, state.settings.lessonSize) : [];
 
   if (!due.length && !fresh.length) {
-    location.replace('#/');
+    navigate(url(), true);
     return;
   }
 
@@ -21,7 +23,7 @@ export function studyView(root: HTMLElement, param: string) {
     title: fresh.length && !due.length ? 'Lesson' : 'Session',
     onDone: () => {
       const more = dueCards().length > 0 || newCards().length > 0;
-      return `<a class="btn ghost" href="#/">Home</a>${more ? `<a class="btn primary" href="#/study">Keep going</a>` : ''}`;
+      return `<a class="btn ghost" href="${url()}">Home</a>${more ? `<a class="btn primary" href="${url('study/')}">Keep going</a>` : ''}`;
     },
   });
 }

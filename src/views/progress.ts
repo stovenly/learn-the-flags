@@ -1,4 +1,4 @@
-import { ALL, byCode, CONTINENTS, Country, inSet, SETS, SOVEREIGN } from '../data';
+import { ALL, url, byCode, CONTINENTS, Country, inSet, SETS, SOVEREIGN } from '../data';
 import { onCleanup } from '../router';
 import { dayNumber } from '../srs';
 import { level, Level, SessionLog, state, streak } from '../store';
@@ -140,7 +140,7 @@ export function progressView(root: HTMLElement) {
       <section class="card empty-state">
         <h2>Nothing here yet</h2>
         <p class="muted">Finish your first lesson and your flags, streak and sessions will show up here.</p>
-        <a class="btn primary" href="#/study">Start learning</a>
+        <a class="btn primary" href="${url('study/')}">Start learning</a>
       </section>`;
     return;
   }

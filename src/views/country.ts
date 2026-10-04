@@ -1,4 +1,4 @@
-import { ALL, currencyText, fmtNumber, fmtPopulation, localNameText, preload, preloadMap, setById, SOVEREIGN, STATUS_LABEL } from '../data';
+import { ALL, url, currencyText, fmtNumber, fmtPopulation, localNameText, preload, preloadMap, setById, SOVEREIGN, STATUS_LABEL } from '../data';
 import { level } from '../store';
 import { esc, flagImg, hookHtml, lookalikeList, mapImg, pairList, renderWhenReady } from '../ui';
 
@@ -10,7 +10,7 @@ const SWATCH: Record<string, string> = {
 export function countryView(root: HTMLElement, slug: string) {
   const c = ALL.find((x) => x.slug === slug || x.code === slug);
   if (!c) {
-    root.innerHTML = `<div class="card"><h1>Not found</h1><p><a href="#/browse">See all flags</a></p></div>`;
+    root.innerHTML = `<div class="card"><h1>Not found</h1><p><a href="${url('flags/')}">See all flags</a></p></div>`;
     return;
   }
   document.title = `Flag of ${c.theName} · Learn the Flags`;
@@ -32,7 +32,7 @@ export function countryView(root: HTMLElement, slug: string) {
   const shownFacts = facts.filter(([k, v], i) => v && facts.findIndex(([k2]) => k2 === k) === i);
   const looks = lookalikeList(c);
   const html = `
-    <a class="back" href="#/browse">← All flags</a>
+    <a class="back" href="${url('flags/')}">← All flags</a>
     <article class="country">
       <header class="card country-hero">
         <div class="country-flag">${flagImg(c, { size: 'lg' })}</div>

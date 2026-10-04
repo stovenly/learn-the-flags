@@ -74,8 +74,11 @@ export function curriculum(list: Country[]): Country[] {
   return [...list].sort((a, b) => group(a) - group(b) || (b.population ?? 0) - (a.population ?? 0));
 }
 
-export const flagSrc = (code: string, w: 320 | 640 = 640) => `img/flags/${w}/${code}.webp`;
-export const mapSrc = (code: string, plain = false) => `img/maps/${plain ? 'plain/' : ''}${code}.svg`;
+// Site root path ("/learn-the-flags/"); every app URL is built from it.
+export const BASE = import.meta.env.BASE_URL;
+export const url = (path = '') => BASE + path;
+export const flagSrc = (code: string, w: 320 | 640 = 640) => url(`img/flags/${w}/${code}.webp`);
+export const mapSrc = (code: string, plain = false) => url(`img/maps/${plain ? 'plain/' : ''}${code}.svg`);
 
 const imageCache = new Map<string, Promise<void>>();
 function preloadSrc(src: string): Promise<void> {

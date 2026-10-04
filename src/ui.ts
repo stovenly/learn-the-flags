@@ -1,4 +1,4 @@
-import { byCode, Country, flagSrc, mapSrc } from './data';
+import { byCode, Country, flagSrc, mapSrc, url } from './data';
 
 export const esc = (s: unknown) =>
   String(s ?? '').replace(/[&<>"']/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch]!);
@@ -59,7 +59,7 @@ export function pairList(c: Country, others: Country[], link = false) {
     .join('')}</ul>`;
 }
 
-export const countryLink = (c: Country) => `#/flag/${c.slug}`;
+export const countryLink = (c: Country) => url(`flags/${c.slug}/`);
 
 export function nameLink(c: Country) {
   return `<a class="name-link" href="${countryLink(c)}" target="_blank" rel="noopener" title="Read about ${esc(c.name)} in a new tab">${esc(c.name)}<svg class="ext" viewBox="0 0 16 16" aria-hidden="true"><path d="M7 3H3.5A.5.5 0 0 0 3 3.5v9a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V9M10 3h3v3M13 3 7.5 8.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sr-only"> (opens in a new tab)</span></a>`;
@@ -81,9 +81,9 @@ export const plural = (n: number, word: string, many = word + 's') => `${n} ${n 
 
 // Holds a render until its key images are decoded (capped), so flags never pop in; skips if the route changed meanwhile.
 export async function renderWhenReady(root: HTMLElement, html: string, images: Promise<void>[], maxWait = 350) {
-  const hash = location.hash;
+  const path = location.pathname;
   await Promise.race([Promise.all(images), new Promise((r) => setTimeout(r, maxWait))]);
-  if (location.hash !== hash) return false;
+  if (location.pathname !== path) return false;
   root.innerHTML = html;
   return true;
 }

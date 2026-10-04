@@ -929,3 +929,8 @@ body[data-route='settings'] #app { max-width: 720px; }
   .big-number strong { font-size: 2.6rem; }
   .form { padding: 4px 20px; }
 }
+
+/* Crawlable copy built into each flag page; the app replaces it as soon as it runs. */
+.js .prerendered { display: none; }
+.prerendered .flag { display: block; max-width: 100%; height: auto; }
+.prerendered .map { display: block; width: 100%; height: auto; }

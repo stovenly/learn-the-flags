@@ -24,6 +24,8 @@ npm run build    # build data, typecheck, build the site into docs/
 
 GitHub Pages serves the `docs/` folder on `main`. Commit `docs/` after building.
 
+The app uses clean URLs under the site's base path, taken from `siteUrl` in `site.config.json` (`/learn-the-flags/`). Locally that is http://localhost:5173/learn-the-flags/ for `npm run dev` and http://localhost:4173/learn-the-flags/ for `npm run preview`. Static hosting can't rewrite unknown paths to the app, so the build writes a copy of the app shell for every route (`flags/<slug>/`, `progress/`, …). Old `#/` links are redirected on load.
+
 ## Editing flags
 
 Flags are grouped into sets, listed in `data/sets.json` (id, display name, the noun used in questions, a description, a cover flag and an optional curated learning order). Learners pick one set to learn new flags from; the sovereign set can be narrowed to continents. Reviews always cover every flag already started.
@@ -53,7 +55,7 @@ Lookalike pairs live in `data/lookalikes/*.json`, keyed by the two codes in sort
 - `scripts/build-assets.mjs` re-renders the favicon, the touch icon and the `og.png` social preview.
 - `scripts/build-maps.mjs` runs as part of the build. It renders `img/maps/<code>.svg`: a regional map zoomed on each flag's place with it highlighted and labelled, neighbours labelled with their name and flag where they fit, and a locator globe inset. `img/maps/plain/` has the same maps without flags, used on "Which is the flag of…" questions so the map does not give options away. Countries come from Natural Earth via `world-atlas`, matched by `isoNumeric` or name.
 - `scripts/fetch-geo.mjs` writes `data/geo/extra.json`, the outlines `world-atlas` lacks (US states, Canadian provinces, the UK's nations, breakaway states), from Natural Earth 10m. Run it only to change that list.
-- `scripts/build-pages.mjs` runs as part of the build. It writes a static, crawlable page per country (`docs/flags/<slug>/`), the flag index, `sitemap.xml` and `robots.txt`.
+- `scripts/build-pages.mjs` runs as part of the build. It copies the built app shell to every route, so each URL loads directly, and pre-fills each flag page and the flag index with crawlable content and meta tags (hidden once the app runs). It also writes `404.html`, `sitemap.xml` and `robots.txt`.
 - `site.config.json` holds the site URL, name and description used for SEO tags.
 
 Flag images come from Wikimedia Commons, directly or via [flagcdn.com](https://flagcdn.com). Map outlines come from [Natural Earth](https://www.naturalearthdata.com) (public domain). Base country facts come from [mledoze/countries](https://github.com/mledoze/countries) (ODbL), and population figures from the World Bank.

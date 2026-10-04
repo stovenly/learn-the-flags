@@ -8,17 +8,17 @@
     <link rel="canonical" href="https://stovenly.github.io/learn-the-flags/">
     <meta name="theme-color" content="#f6f6f3" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#121316" media="(prefers-color-scheme: dark)">
-    <link rel="icon" href="icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="preload" as="image" href="img/flags/320/jp.webp" fetchpriority="low">
-    <link rel="preload" as="image" href="img/flags/320/br.webp" fetchpriority="low">
-    <link rel="preload" as="image" href="img/flags/320/ca.webp" fetchpriority="low">
-    <link rel="preload" as="image" href="img/flags/320/za.webp" fetchpriority="low">
-    <link rel="preload" as="image" href="img/flags/320/np.webp" fetchpriority="low">
-    <link rel="preload" as="image" href="img/flags/320/ch.webp" fetchpriority="low">
-    <link rel="preload" as="image" href="img/flags/320/kr.webp" fetchpriority="low">
-    <link rel="preload" as="image" href="img/flags/320/bt.webp" fetchpriority="low">
-    <link rel="preload" as="image" href="img/flags/320/gb.webp" fetchpriority="low">
+    <link rel="icon" href="/learn-the-flags/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/learn-the-flags/apple-touch-icon.png">
+    <link rel="preload" as="image" href="/learn-the-flags/img/flags/320/jp.webp" fetchpriority="low">
+    <link rel="preload" as="image" href="/learn-the-flags/img/flags/320/br.webp" fetchpriority="low">
+    <link rel="preload" as="image" href="/learn-the-flags/img/flags/320/ca.webp" fetchpriority="low">
+    <link rel="preload" as="image" href="/learn-the-flags/img/flags/320/za.webp" fetchpriority="low">
+    <link rel="preload" as="image" href="/learn-the-flags/img/flags/320/np.webp" fetchpriority="low">
+    <link rel="preload" as="image" href="/learn-the-flags/img/flags/320/ch.webp" fetchpriority="low">
+    <link rel="preload" as="image" href="/learn-the-flags/img/flags/320/kr.webp" fetchpriority="low">
+    <link rel="preload" as="image" href="/learn-the-flags/img/flags/320/bt.webp" fetchpriority="low">
+    <link rel="preload" as="image" href="/learn-the-flags/img/flags/320/gb.webp" fetchpriority="low">
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Learn the Flags">
@@ -52,22 +52,23 @@
         const t = JSON.parse(localStorage.getItem('learn-the-flags:v1') || '{}').settings?.theme;
         if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
       } catch {}
+      document.documentElement.classList.add('js');
     </script>
-    <script type="module" crossorigin src="./assets/index-D4Co5b8Y.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-kXyR8EA6.css">
+    <script type="module" crossorigin src="/learn-the-flags/assets/index-PXzeW0m6.js"></script>
+    <link rel="stylesheet" crossorigin href="/learn-the-flags/assets/index-d6AXbT3J.css">
   </head>
   <body>
     <header class="site-header">
       <div class="wrap header-inner">
-        <a class="logo" href="#/" aria-label="Learn the Flags home">
+        <a class="logo" href="/learn-the-flags/" aria-label="Learn the Flags home">
           <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><rect x="5" y="3" width="2.5" height="26" rx="1.25" fill="currentColor"/><path d="M8.5 5h17l-3.5 5.5 3.5 5.5h-17z" fill="var(--accent)"/></svg>
           <span>Learn the Flags</span>
         </a>
         <nav class="nav" aria-label="Main">
-          <a href="#/">Learn</a>
-          <a href="#/browse">All flags</a>
-          <a href="#/progress">Progress</a>
-          <a href="#/settings" aria-label="Settings" title="Settings">
+          <a href="/learn-the-flags/">Learn</a>
+          <a href="/learn-the-flags/flags/">All flags</a>
+          <a href="/learn-the-flags/progress/">Progress</a>
+          <a href="/learn-the-flags/settings/" aria-label="Settings" title="Settings">
             <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="10" cy="17" r="2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
           </a>
         </nav>
@@ -78,14 +79,14 @@
       <noscript>
         <h1>Learn the Flags</h1>
         <p>A free, science-backed trainer for learning the flags of all 195 sovereign states, plus US states, Canadian provinces, territories, historical flags and international organizations. Spaced repetition, active recall and lookalike drills, with descriptions, symbolism and trivia for every flag. No account needed.</p>
-        <p>This learning app needs JavaScript. You can still <a href="flags/">browse every flag of the world</a>.</p>
+        <p>This learning app needs JavaScript. You can still <a href="/learn-the-flags/flags/">browse every flag of the world</a>.</p>
       </noscript>
     </main>
 
     <footer class="site-footer wrap">
-      <p>Learn the Flags is a free tool for memorizing flags: every sovereign state, plus US states, Canadian provinces, territories, historical flags and international organizations. <a href="flags/">Flag index</a></p>
+      <p>Learn the Flags is a free tool for memorizing flags: every sovereign state, plus US states, Canadian provinces, territories, historical flags and international organizations. <a href="/learn-the-flags/flags/">Flag index</a></p>
       <p class="muted">Flag images from Wikimedia Commons, directly and via flagcdn.com.</p>
     </footer>
-
+
   </body>
 </html>

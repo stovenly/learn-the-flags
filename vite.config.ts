@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import site from './site.config.json' with { type: 'json' };
 
 export default defineConfig({
-  base: './',
+  base: new URL(site.siteUrl).pathname,
   build: {
     outDir: 'docs',
     emptyOutDir: true,
@@ -11,7 +11,8 @@ export default defineConfig({
   plugins: [
     {
       name: 'site-config',
-      transformIndexHtml: (html) => html.replace(/\{\{(\w+)\}\}/g, (_, k: keyof typeof site) => site[k] ?? ''),
+      transformIndexHtml: (html) =>
+        html.replace(/\{\{(\w+)\}\}/g, (_, k: string) => (k === 'base' ? new URL(site.siteUrl).pathname : (site[k as keyof typeof site] ?? ''))),
     },
   ],
 });

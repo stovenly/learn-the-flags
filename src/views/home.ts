@@ -1,4 +1,4 @@
-import { byCode, CONTINENTS, Country, curriculum, inSet, preload, SETS, SOVEREIGN } from '../data';
+import { byCode, url, CONTINENTS, Country, curriculum, inSet, preload, SETS, SOVEREIGN } from '../data';
 import { chooseDeck, deck, dueCards, level, newCards, state, streak } from '../store';
 import { $$, countryLink, esc, flagImg, icon, plural, renderWhenReady, sample, thumb } from '../ui';
 
@@ -128,17 +128,17 @@ function paint(root: HTMLElement, keepScroll?: number, focus?: string) {
   let next = '';
   if (!started) {
     title = 'Learn every flag in the world';
-    cta = `<a class="btn primary big" href="#/study">Start learning ${icon('arrow')}</a>`;
+    cta = `<a class="btn primary big" href="${url('study/')}">Start learning ${icon('arrow')}</a>`;
   } else if (due) {
     title = plural(due, 'flag') + ' to review';
-    cta = `<a class="btn primary big" href="#/study">Review ${icon('arrow')}</a>${remaining ? `<a class="btn ghost big" href="#/study/new">Learn new flags</a>` : ''}`;
+    cta = `<a class="btn primary big" href="${url('study/')}">Review ${icon('arrow')}</a>${remaining ? `<a class="btn ghost big" href="${url('study/new/')}">Learn new flags</a>` : ''}`;
   } else if (remaining) {
     title = "Today's flags";
-    cta = `<a class="btn primary big" href="#/study">Start ${icon('arrow')}</a>`;
+    cta = `<a class="btn primary big" href="${url('study/')}">Start ${icon('arrow')}</a>`;
     next = upNext(upcoming.slice(0, fresh), images);
   } else {
     title = 'All learned';
-    cta = `<a class="btn ghost big" href="#/browse">Browse all flags</a>`;
+    cta = `<a class="btn ghost big" href="${url('flags/')}">Browse all flags</a>`;
   }
 
   const html = `
@@ -150,7 +150,7 @@ function paint(root: HTMLElement, keepScroll?: number, focus?: string) {
       </div>
       ${
         started
-          ? `<a class="today-ring" href="#/progress" aria-label="See your progress">
+          ? `<a class="today-ring" href="${url('progress/')}" aria-label="See your progress">
               ${ring(learned / all.length)}
               <div class="ring-label"><strong>${learned}</strong><span>of ${all.length} flags</span></div>
               ${days > 1 ? `<p class="streak">${days}-day streak</p>` : ''}
