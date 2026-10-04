@@ -57,7 +57,7 @@ const DEFAULTS: Settings = {
 };
 
 function settingsFrom(saved: Record<string, unknown> = {}): Settings {
-  const { includePartial, focusRegion, repeat, ...rest } = saved;
+  const { includePartial, focusRegion, ...rest } = saved;
   const s = { ...DEFAULTS, ...rest } as Settings;
   if (!saved.continents && typeof focusRegion === 'string' && focusRegion !== 'all') {
     s.continents = focusRegion === 'Americas' ? ['North America', 'South America'] : [focusRegion];
@@ -65,8 +65,7 @@ function settingsFrom(saved: Record<string, unknown> = {}): Settings {
   if (!setById.has(s.set)) s.set = SOVEREIGN;
   s.continents = CONTINENTS.filter((k) => s.continents.includes(k));
   if (!s.continents.length) s.continents = CONTINENTS;
-  const nearest = (xs: number[], v: number) => xs.reduce((a, b) => (Math.abs(b - v) < Math.abs(a - v) ? b : a));
-  s.lessonSize = nearest(LESSON_SIZES, Number(s.lessonSize) || DEFAULTS.lessonSize);
+  if (!LESSON_SIZES.includes(s.lessonSize)) s.lessonSize = DEFAULTS.lessonSize;
   return s;
 }
 

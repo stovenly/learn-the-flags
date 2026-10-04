@@ -1,5 +1,6 @@
 import { byCode, url, CONTINENTS, Country, FlagSet, inSet, preload, setById, SETS, SOVEREIGN } from '../data';
 import { chooseDeck, deck, deckKey, dueCards, level, newCards, state, streak } from '../store';
+import { onCleanup } from '../router';
 import { attachTips } from '../tips';
 import { KINDS, quizKind } from './quiz';
 import { openOptions } from './options';
@@ -42,7 +43,7 @@ function upNext(list: Country[], images: Promise<void>[]) {
   list.forEach((c) => images.push(preload(c.code, 320)));
   return `<div class="up-next">
     <span class="label">Up next</span>
-    <div class="up-next-flags">${list.map((c) => `<span class="tip-target" tabindex="0" data-tip="${c.code}" aria-label="${esc(c.name)}">${thumb(c)}</span>`).join('')}</div>
+    <div class="up-next-flags flag-strip">${list.map((c) => `<span class="tip-target" tabindex="0" data-tip="${c.code}" aria-label="${esc(c.name)}">${thumb(c)}</span>`).join('')}</div>
   </div>`;
 }
 
@@ -128,6 +129,14 @@ function bindPicker(root: HTMLElement) {
 export function homeView(root: HTMLElement) {
   paint(root);
   attachTips(root);
+  const resize = () => markClipped(root);
+  addEventListener('resize', resize);
+  onCleanup(() => removeEventListener('resize', resize));
+}
+
+// Flag strips show two rows; one that holds more fades out across the second row.
+function markClipped(root: HTMLElement) {
+  for (const s of $$('.flag-strip', root)) s.classList.toggle('clipped', s.scrollHeight > s.clientHeight + 1);
 }
 
 function paint(root: HTMLElement, keepScroll?: number, focus?: string) {
@@ -157,7 +166,7 @@ function paint(root: HTMLElement, keepScroll?: number, focus?: string) {
     actions = `<a class="btn ghost" href="${url('flags/')}">Browse flags</a>`;
   }
   const key = deckKey();
-  if (previews.get(key)?.length !== Math.min(15, all.length)) previews.set(key, shuffle(all).slice(0, 15));
+  if (previews.get(key)?.length !== Math.min(30, all.length)) previews.set(key, shuffle(all).slice(0, 30));
   const preview = previews.get(key)!;
   preview.forEach((c) => images.push(preload(c.code, 320)));
 
@@ -183,7 +192,7 @@ function paint(root: HTMLElement, keepScroll?: number, focus?: string) {
           ${best ? `<span class="mode-meta">Best ${Math.round((best.correct / best.total) * 100)}%</span>` : ''}
         </div>
         <p class="mode-status">All ${all.length} flags, once each</p>
-        <div class="quiz-flags" aria-hidden="true">${preview.map((c) => thumb(c)).join('')}</div>
+        <div class="quiz-flags flag-strip" aria-hidden="true">${preview.map((c) => thumb(c)).join('')}</div>
         <div class="mode-actions"><a class="btn primary" href="${url(`quiz/${quizKind().slug}/`)}">Start quiz ${icon('arrow')}</a><button type="button" class="btn ghost btn-icon" data-options="quiz" aria-label="Quiz options" title="Quiz options">${icon('gear')}</button></div>
       </section>
     </div>
@@ -192,6 +201,7 @@ function paint(root: HTMLElement, keepScroll?: number, focus?: string) {
   renderWhenReady(root, html, images, keepScroll === undefined ? 350 : 0).then((shown) => {
     if (!shown) return;
     bindPicker(root);
+    markClipped(root);
     if (keepScroll !== undefined) scrollTo(0, keepScroll);
     if (focus) root.querySelector<HTMLElement>(focus)?.focus({ preventScroll: true });
   });

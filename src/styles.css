@@ -551,18 +551,15 @@ a.mode-meta:hover { color: var(--text); }
 .mode-status { margin: 4px 0 0; font-size: 1.1rem; font-weight: 600; }
 .mode-actions { margin-top: auto; padding-top: 6px; display: flex; gap: 10px; flex-wrap: wrap; }
 .up-next .label { display: none; }
-.up-next-flags { display: flex; gap: 8px; flex-wrap: wrap; }
-.up-next-flags .thumb { width: 48px; }
-.quiz-flags { display: flex; flex-wrap: wrap; gap: 8px; }
-.quiz-flags .thumb { width: 44px; }
-/* The last six fade out, each also fading left to right, hinting at the rest of the set. */
-.quiz-flags .thumb:nth-last-child(-n + 6) { mask-image: linear-gradient(to right, #000, rgb(0 0 0 / 0.55)); }
-.quiz-flags .thumb:nth-last-child(6) { opacity: 0.85; }
-.quiz-flags .thumb:nth-last-child(5) { opacity: 0.65; }
-.quiz-flags .thumb:nth-last-child(4) { opacity: 0.47; }
-.quiz-flags .thumb:nth-last-child(3) { opacity: 0.3; }
-.quiz-flags .thumb:nth-last-child(2) { opacity: 0.16; }
-.quiz-flags .thumb:nth-last-child(1) { opacity: 0.06; }
+.flag-strip { --w: 48px; --gap: 8px; display: flex; flex-wrap: wrap; gap: var(--gap); max-height: calc(2 * var(--w) / 1.5 + var(--gap)); overflow: hidden; }
+.flag-strip .thumb { width: var(--w); }
+.quiz-flags { --w: 44px; }
+.flag-strip.clipped {
+  mask-image: linear-gradient(#000, #000), linear-gradient(to right, #000 50%, transparent);
+  mask-size: 100% 50%;
+  mask-position: top, bottom;
+  mask-repeat: no-repeat;
+}
 
 .trivia-card { display: flex; gap: 22px; align-items: center; color: var(--text); }
 .trivia-card:hover { text-decoration: none; border-color: color-mix(in srgb, var(--accent) 40%, var(--border)); }
