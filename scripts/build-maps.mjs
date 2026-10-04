@@ -74,7 +74,8 @@ function simplify(d, tol = 0.6, minSpan = 0.8) {
 const FONT = 3.8; // label size in viewBox units
 const textWidth = (t, size) => t.length * size * 0.56;
 const esc = (t) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;');
-const INSET = { x0: W - 30, y0: H - 30 };
+const GLOBE = 13.2; // locator globe radius, viewBox units
+const INSET = { x0: W - 2 * GLOBE - 8, y0: H - 2 * GLOBE - 8 };
 
 const parseRings = (d) =>
   d ? d.split('M').filter(Boolean).map((sub) => sub.replace(/Z$/, '').split('L').map((p) => p.split(/[ ,]/).map(Number))) : [];
@@ -173,11 +174,11 @@ function labels(candidates, targetRings, placed, withFlags, onTarget = false) {
 const scaleForHalfView = (theta) => W / 2 / (2 * Math.sin(theta / 2));
 
 function locator(center) {
-  const r = 11, cx = W - r - 4, cy = H - r - 4;
+  const r = GLOBE, cx = W - r - 4, cy = H - r - 4;
   const proj = geoOrthographic().rotate([-center[0], -center[1]]).scale(r).translate([cx, cy]).clipAngle(90);
   const draw = geoPath(proj).digits(1);
   const land = world110.map((w) => simplify(draw(w), 0.5, 0.6)).join('');
-  return `<circle class="io" cx="${cx}" cy="${cy}" r="${r}"/><path class="il" d="${land}"/><circle class="id" cx="${cx}" cy="${cy}" r="1.7"/><circle class="ir" cx="${cx}" cy="${cy}" r="${r}"/>`;
+  return `<circle class="io" cx="${cx}" cy="${cy}" r="${r}"/><path class="il" d="${land}"/><circle class="id" cx="${cx}" cy="${cy}" r="2"/><circle class="ir" cx="${cx}" cy="${cy}" r="${r}"/>`;
 }
 
 const STYLE = `<style>.o{fill:#b5d7ef}.g{fill:none;stroke:#fff;stroke-opacity:.45;stroke-width:.3}.l{fill:#f3ecd2;stroke:#ad9f78;stroke-width:.3}.t{fill:#d9302b;stroke:#7a1512;stroke-width:.45}.mh{fill:none;stroke:#fff;stroke-width:3}.m{fill:none;stroke:#d9302b;stroke-width:1.6}.io{fill:#4f93c9}.il{fill:#f3ecd2}.id{fill:#d9302b;stroke:#fff;stroke-width:.6}.ir{fill:none;stroke:#fff;stroke-width:1.2}.n{font:500 ${FONT}px system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;fill:#6b6249;text-anchor:middle;paint-order:stroke;stroke:#f3ecd2;stroke-width:.9;stroke-linejoin:round}.fb{fill:none;stroke:#00000040;stroke-width:.15}.tn{font-weight:650;fill:#fff;stroke:#a51f1b;stroke-width:.7}.tn .fb{stroke:#ffffffb0;stroke-width:.3}</style>`;
