@@ -5,6 +5,11 @@
   "officialName": "Plurinational State of Bolivia",
   "localNames": [
     {
+      "language": "Spanish",
+      "name": "Bolivia",
+      "romanized": ""
+    },
+    {
       "language": "Quechua",
       "name": "Buliwya",
       "romanized": ""

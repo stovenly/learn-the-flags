@@ -3,13 +3,7 @@
   "isoNumeric": "084",
   "name": "Belize",
   "officialName": "Belize",
-  "localNames": [
-    {
-      "language": "Spanish",
-      "name": "Belice",
-      "romanized": ""
-    }
-  ],
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Belmopan",

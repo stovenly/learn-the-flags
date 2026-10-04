@@ -38,7 +38,8 @@ export function countryView(root: HTMLElement, slug: string) {
         <div class="country-flag">${flagImg(c, { size: 'lg' })}</div>
         <div class="country-id">
           <h1>${esc(c.name)}</h1>
-          ${localNameText(c) ? `<p class="local-name">${esc(localNameText(c))}</p>` : ''}
+          ${c.officialName && c.officialName !== c.name ? `<p class="local-name">${esc(c.officialName)}</p>` : ''}
+          ${localNameText(c) && localNameText(c) !== c.officialName ? `<p class="local-name">${esc(localNameText(c))}</p>` : ''}
           <div class="tags">
             ${tags.map((t) => `<span class="tag">${esc(t)}</span>`).join('')}
             ${lv === 'new' ? '' : `<span class="tag tag-${lv === 'learning' ? 'learning' : 'learned'}">${lv === 'learning' ? 'Learning' : 'Learned'}</span>`}
