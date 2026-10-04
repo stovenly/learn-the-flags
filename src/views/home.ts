@@ -1,6 +1,7 @@
 import { byCode, url, CONTINENTS, Country, FlagSet, inSet, preload, setById, SETS, SOVEREIGN } from '../data';
 import { chooseDeck, deck, deckKey, dueCards, level, newCards, state, streak } from '../store';
 import { attachTips } from '../tips';
+import { KINDS } from './quiz';
 import { $$, countryLink, esc, flagImg, icon, plural, renderWhenReady, sample, shuffle, thumb } from '../ui';
 
 // Quiz card flags per selection, so going back to a selection shows the same ones.
@@ -132,7 +133,9 @@ function paint(root: HTMLElement, keepScroll?: number, focus?: string) {
   const upcoming = newCards();
   const started = Object.keys(state.cards).length > 0;
   const days = streak();
-  const best = state.quizzes[deckKey()];
+  const best = KINDS.map((k) => state.quizzes[`${deckKey()}:${k.slug}`])
+    .filter((q) => !!q)
+    .sort((a, b) => b.correct / b.total - a.correct / a.total)[0];
   const images: Promise<void>[] = [];
 
   let status: string;
@@ -177,7 +180,7 @@ function paint(root: HTMLElement, keepScroll?: number, focus?: string) {
         </div>
         <p class="mode-status">All ${all.length} flags, once each</p>
         <div class="quiz-flags" aria-hidden="true">${preview.map((c) => thumb(c)).join('')}</div>
-        <div class="mode-actions"><a class="btn ${due || upcoming.length ? 'ghost' : 'primary'}" href="${url('quiz/')}">Start quiz ${icon('arrow')}</a></div>
+        <div class="mode-actions"><a class="btn primary" href="${url('quiz/')}">Start quiz ${icon('arrow')}</a></div>
       </section>
     </div>
 
