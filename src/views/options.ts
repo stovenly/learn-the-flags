@@ -3,14 +3,15 @@ import { deckKey, save, Settings, state } from '../store';
 import { esc, icon } from '../ui';
 import { KINDS } from './quiz';
 
-const SIZES = [3, 5, 8, 10];
+const SIZES = [3, 5, 8, 10, 20, 30];
+const REPEATS = [1, 2, 3, 4];
 const STYLES: [Settings['answerStyle'], string][] = [
   ['auto', 'Mix'],
   ['choice', 'Picking'],
   ['typing', 'Typing'],
 ];
 
-type Key = 'lessonSize' | 'answerStyle' | 'quizKind';
+type Key = 'lessonSize' | 'repeat' | 'answerStyle' | 'quizKind';
 
 const chips = (key: Key, label: string, options: [string | number, string][]) =>
   `<div class="option-row">
@@ -45,7 +46,9 @@ export function openOptions(which: 'lesson' | 'quiz', onClose: () => void) {
     </div>
     ${
       which === 'lesson'
-        ? chips('lessonSize', 'New flags', SIZES.map((n) => [n, String(n)])) + chips('answerStyle', 'Answer by', STYLES)
+        ? chips('lessonSize', 'New flags', SIZES.map((n) => [n, String(n)])) +
+          chips('repeat', 'Questions', REPEATS.map((n) => [n, `${n}×`])) +
+          chips('answerStyle', 'Answer by', STYLES)
         : quizKinds()
     }`;
   const sync = () => {
@@ -61,7 +64,7 @@ export function openOptions(which: 'lesson' | 'quiz', onClose: () => void) {
     const b = t.closest<HTMLElement>('[data-key]');
     if (!b) return;
     const key = b.dataset.key as Key;
-    (state.settings as unknown as Record<string, unknown>)[key] = key === 'lessonSize' ? Number(b.dataset.value) : b.dataset.value;
+    (state.settings as unknown as Record<string, unknown>)[key] = key === 'lessonSize' || key === 'repeat' ? Number(b.dataset.value) : b.dataset.value;
     save();
     sync();
   });

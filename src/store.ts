@@ -3,6 +3,7 @@ import { dayNumber, endOfDay, Memory, retrievability } from './srs';
 
 export interface Settings {
   lessonSize: number;
+  repeat: number; // multiplies how many times each flag is asked in a lesson
   retention: number; // target recall probability, 0.8..0.97
   answerStyle: 'auto' | 'choice' | 'typing';
   set: string; // the set new flags come from
@@ -45,6 +46,7 @@ export interface QuizBest {
 const KEY = 'learn-the-flags:v1';
 const DEFAULTS: Settings = {
   lessonSize: 5,
+  repeat: 1,
   retention: 0.9,
   answerStyle: 'auto',
   set: SOVEREIGN,

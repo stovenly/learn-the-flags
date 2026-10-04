@@ -138,7 +138,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
   for (const item of queue) {
     if (tracks.has(item.c.code)) continue;
     const isNew = cfg.scheduled && !state.cards[item.c.code];
-    tracks.set(item.c.code, { isNew, graded: false, needed: isNew ? 2 : 1, attempts: 0, missed: false });
+    tracks.set(item.c.code, { isNew, graded: false, needed: (isNew ? 2 : 1) * (cfg.test ? 1 : state.settings.repeat), attempts: 0, missed: false });
   }
 
   root.innerHTML = `
@@ -231,9 +231,9 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
     if (correct) t.needed--;
     else {
       t.needed = Math.max(t.needed, 1) + (t.isNew && t.needed < 2 ? 1 : 0);
-      if (!cfg.scheduled) t.needed = Math.min(t.needed, 1);
+      if (!cfg.scheduled) t.needed = Math.min(t.needed, state.settings.repeat);
     }
-    if (t.needed > 0 && t.attempts < 6) {
+    if (t.needed > 0 && t.attempts < 6 * state.settings.repeat) {
       const style = state.settings.answerStyle;
       // In a lesson, a correct pick is followed by typing the name; a miss by picking among lookalikes.
       const mode: Mode =
