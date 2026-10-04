@@ -135,7 +135,7 @@ await write(
   }),
 );
 
-const APP_PAGES = { 'study/': 'Study', 'study/go/': 'Study', 'quiz/': 'Quiz', 'quiz/name-to-flag/': 'Quiz', 'quiz/flag-to-name/': 'Quiz', 'quiz/typed/': 'Quiz', 'progress/': 'Progress' };
+const APP_PAGES = { 'study/': 'Study', 'quiz/': 'Quiz', 'quiz/name-to-flag/': 'Quiz', 'quiz/flag-to-name/': 'Quiz', 'quiz/typed/': 'Quiz', 'progress/': 'Progress' };
 for (const [route, name] of Object.entries(APP_PAGES)) {
   await write(route, shell(route, { title: `${name} · ${site.name}`, description: site.description, noindex: true }));
 }

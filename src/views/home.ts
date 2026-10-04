@@ -1,7 +1,8 @@
 import { byCode, url, CONTINENTS, Country, FlagSet, inSet, preload, setById, SETS, SOVEREIGN } from '../data';
 import { chooseDeck, deck, deckKey, dueCards, level, newCards, state, streak } from '../store';
 import { attachTips } from '../tips';
-import { KINDS } from './quiz';
+import { KINDS, quizKind } from './quiz';
+import { openOptions } from './options';
 import { $$, countryLink, esc, flagImg, icon, plural, renderWhenReady, sample, shuffle, thumb } from '../ui';
 
 // Quiz card flags per selection, so going back to a selection shows the same ones.
@@ -99,6 +100,10 @@ function filter(images: Promise<void>[]) {
 
 function bindPicker(root: HTMLElement) {
   const refresh = (focus: string) => paint(root, scrollY, focus);
+  for (const b of $$('[data-options]', root)) {
+    const which = b.dataset.options as 'lesson' | 'quiz';
+    b.addEventListener('click', () => openOptions(which, () => refresh(`[data-options="${which}"]`)));
+  }
   for (const b of $$('[data-set]', root)) {
     b.addEventListener('click', () => {
       if (b.dataset.set === state.settings.set) return;
@@ -142,10 +147,10 @@ function paint(root: HTMLElement, keepScroll?: number, focus?: string) {
   let next = '';
   if (due) {
     status = `${plural(due, 'flag')} to review`;
-    actions = `<a class="btn primary" href="${url('study/')}">Start ${icon('arrow')}</a>`;
+    actions = `<a class="btn primary" href="${url('study/')}">Start ${icon('arrow')}</a><button type="button" class="btn ghost btn-icon" data-options="lesson" aria-label="Lesson options" title="Lesson options">${icon('gear')}</button>`;
   } else if (upcoming.length) {
     status = "Today's flags";
-    actions = `<a class="btn primary" href="${url('study/')}">${started ? 'Start' : 'Start learning'} ${icon('arrow')}</a>`;
+    actions = `<a class="btn primary" href="${url('study/')}">${started ? 'Start' : 'Start learning'} ${icon('arrow')}</a><button type="button" class="btn ghost btn-icon" data-options="lesson" aria-label="Lesson options" title="Lesson options">${icon('gear')}</button>`;
     next = upNext(upcoming.slice(0, state.settings.lessonSize), images);
   } else {
     status = 'All learned';
@@ -179,7 +184,7 @@ function paint(root: HTMLElement, keepScroll?: number, focus?: string) {
         </div>
         <p class="mode-status">All ${all.length} flags, once each</p>
         <div class="quiz-flags" aria-hidden="true">${preview.map((c) => thumb(c)).join('')}</div>
-        <div class="mode-actions"><a class="btn primary" href="${url('quiz/')}">Start quiz ${icon('arrow')}</a></div>
+        <div class="mode-actions"><a class="btn primary" href="${url(`quiz/${quizKind().slug}/`)}">Start quiz ${icon('arrow')}</a><button type="button" class="btn ghost btn-icon" data-options="quiz" aria-label="Quiz options" title="Quiz options">${icon('gear')}</button></div>
       </section>
     </div>
 

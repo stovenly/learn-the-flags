@@ -9,6 +9,7 @@ export interface Settings {
   continents: string[]; // narrows the sovereign set
   theme: 'auto' | 'light' | 'dark';
   dyslexic: boolean;
+  quizKind: string; // a KINDS slug in views/quiz.ts
 }
 
 export interface DayLog {
@@ -50,6 +51,7 @@ const DEFAULTS: Settings = {
   continents: CONTINENTS,
   theme: 'auto',
   dyslexic: false,
+  quizKind: 'name-to-flag',
 };
 
 function settingsFrom(saved: Record<string, unknown> = {}): Settings {
