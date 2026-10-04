@@ -1,5 +1,5 @@
-import { byCode, url, CONTINENTS, Country, curriculum, inSet, preload, SETS, SOVEREIGN } from '../data';
-import { chooseDeck, deck, dueCards, level, newCards, state, streak } from '../store';
+import { byCode, url, CONTINENTS, Country, curriculum, inSet, preload, setById, SETS, SOVEREIGN } from '../data';
+import { chooseDeck, deck, deckKey, dueCards, level, newCards, state, streak } from '../store';
 import { $$, countryLink, esc, flagImg, icon, plural, renderWhenReady, sample, thumb } from '../ui';
 
 function ring(pct: number) {
@@ -54,32 +54,42 @@ function upNext(list: Country[], images: Promise<void>[]) {
 // "Learned" means held over several days (Progress uses the same rule), not merely introduced.
 const learnedIn = (list: Country[]) => list.filter((c) => ['known', 'mastered'].includes(level(c.code))).length;
 
+function setOption(id: string, images: Promise<void>[]) {
+  const s = setById.get(id)!;
+  const list = inSet(id);
+  const done = learnedIn(list);
+  const cover = byCode.get(s.cover);
+  if (cover) images.push(preload(cover.code, 320));
+  return `<button class="set-option" role="radio" aria-checked="${id === state.settings.set}" data-set="${id}">
+    ${cover ? thumb(cover) : ''}<span class="set-name">${esc(s.name)}</span><span class="set-count">${done ? `${done}/${list.length}` : list.length}</span>
+  </button>`;
+}
+
 function picker(images: Promise<void>[]) {
   const { set, continents } = state.settings;
+  const all = continents.length === CONTINENTS.length;
+  const chip = (value: string, label: string, on: boolean) =>
+    `<button class="chip chip-sm${on ? ' active' : ''}" aria-pressed="${on}" data-continent="${value}">${label}</button>`;
+  const best = state.quizzes[deckKey()];
+  const size = deck().length;
   return `<section class="card picker">
-    <h2>What to learn</h2>
-    <div class="sets" role="radiogroup" aria-label="Flag set">
-      ${SETS.map((s) => {
-        const list = inSet(s.id);
-        const done = learnedIn(list);
-        const cover = byCode.get(s.cover);
-        if (cover) images.push(preload(cover.code, 320));
-        return `<button class="set-option" role="radio" aria-checked="${s.id === set}" data-set="${s.id}">
-          ${cover ? thumb(cover) : ''}
-          <span class="set-text">
-            <strong>${esc(s.name)}</strong>
-            <span class="muted small">${done ? `${done} of ${list.length} learned` : plural(list.length, 'flag')}</span>
-          </span>
-          ${icon('check', 'icon set-check')}
-        </button>`;
-      }).join('')}
+    <div class="picker-head">
+      <h2>What to learn</h2>
+      <div class="quiz-cta">
+        ${best ? `<span class="muted small">Best ${Math.round((best.correct / best.total) * 100)}%</span>` : ''}
+        <a class="btn ghost small" href="${url('quiz/')}">Quiz me on all ${size}</a>
+      </div>
     </div>
-    <div class="continents">
-      <span class="label">Sovereign states by continent</span>
-      <div class="chips" role="group" aria-label="Sovereign states by continent">${CONTINENTS.map((k) => {
-        const on = set === SOVEREIGN && continents.includes(k);
-        return `<button class="chip${on ? ' active' : ''}" aria-pressed="${on}" data-continent="${k}">${k}</button>`;
-      }).join('')}</div>
+    <div class="sets" role="radiogroup" aria-label="Flag set">
+      <div class="set-main">
+        ${setOption(SOVEREIGN, images)}
+        ${
+          set === SOVEREIGN
+            ? `<div class="continents" role="group" aria-label="Continents">${chip('all', 'All', all)}${CONTINENTS.map((k) => chip(k, k, !all && continents.includes(k))).join('')}</div>`
+            : ''
+        }
+      </div>
+      <div class="set-others">${SETS.filter((s) => s.id !== SOVEREIGN).map((s) => setOption(s.id, images)).join('')}</div>
     </div>
   </section>`;
 }
@@ -93,12 +103,13 @@ function bindPicker(root: HTMLElement) {
       refresh(`[data-set="${b.dataset.set}"]`);
     });
   }
+  // "All" covers every continent; picking a continent from "All" narrows to it, and emptying the list goes back to "All".
   for (const b of $$('[data-continent]', root)) {
     b.addEventListener('click', () => {
       const k = b.dataset.continent!;
-      const cur = state.settings.set === SOVEREIGN ? state.settings.continents : [];
-      const next = cur.includes(k) ? cur.filter((x) => x !== k) : [...cur, k];
-      if (!next.length) return;
+      const cur = state.settings.continents;
+      let next = k === 'all' ? CONTINENTS : cur.length === CONTINENTS.length ? [k] : cur.includes(k) ? cur.filter((x) => x !== k) : [...cur, k];
+      if (!next.length) next = CONTINENTS;
       chooseDeck(SOVEREIGN, CONTINENTS.filter((x) => next.includes(x)));
       refresh(`[data-continent="${k}"]`);
     });

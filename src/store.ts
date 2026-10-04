@@ -30,7 +30,14 @@ interface State {
   cards: Record<string, Memory>;
   days: Record<string, DayLog>; // keyed by dayNumber()
   sessions: SessionLog[]; // newest first
+  quizzes: Record<string, QuizBest>; // keyed by deckKey()
   settings: Settings;
+}
+
+export interface QuizBest {
+  correct: number;
+  total: number;
+  at: number; // ms epoch
 }
 
 const KEY = 'learn-the-flags:v1';
@@ -58,9 +65,9 @@ function settingsFrom(saved: Record<string, unknown> = {}): Settings {
 function load(): State {
   try {
     const s = JSON.parse(localStorage.getItem(KEY) ?? '');
-    if (s?.version === 1) return { ...s, sessions: s.sessions ?? [], settings: settingsFrom(s.settings) };
+    if (s?.version === 1) return { ...s, sessions: s.sessions ?? [], quizzes: s.quizzes ?? {}, settings: settingsFrom(s.settings) };
   } catch {}
-  return { version: 1, cards: {}, days: {}, sessions: [], settings: settingsFrom() };
+  return { version: 1, cards: {}, days: {}, sessions: [], quizzes: {}, settings: settingsFrom() };
 }
 
 export const state = load();
@@ -141,6 +148,7 @@ export function importProgress(json: string) {
   state.cards = s.cards;
   state.days = s.days ?? {};
   state.sessions = s.sessions ?? [];
+  state.quizzes = s.quizzes ?? {};
   state.settings = settingsFrom(s.settings);
   save();
 }
@@ -149,5 +157,19 @@ export function resetProgress() {
   state.cards = {};
   state.days = {};
   state.sessions = [];
+  state.quizzes = {};
   save();
+}
+
+// Identifies the chosen flags, so quiz scores on different selections are kept apart.
+export function deckKey(set = state.settings.set, continents = state.settings.continents): string {
+  return set === SOVEREIGN && continents.length < CONTINENTS.length ? `${set}:${continents.join(',')}` : set;
+}
+
+// Saves a finished quiz and returns the best score before it.
+export function recordQuiz(key: string, correct: number, total: number): QuizBest | undefined {
+  const prev = state.quizzes[key];
+  if (!prev || correct / total > prev.correct / prev.total) state.quizzes[key] = { correct, total, at: Date.now() };
+  save();
+  return prev;
 }

@@ -1,6 +1,6 @@
 import { ALL, url, byCode, Country, localNameText, matchAnswer, preload, preloadMap, setById, SOVEREIGN } from '../data';
 import { Again, Easy, Good, Grade, Hard, Memory, review } from '../srs';
-import { logSession, save, state, today } from '../store';
+import { logSession, recordQuiz, save, state, today } from '../store';
 import { $, $$, countryLink, esc, flagImg, hookHtml, icon, lookalikeList, mapImg, nameLink, pairList, plural, shuffle, thumb } from '../ui';
 import { onCleanup } from '../router';
 
@@ -30,6 +30,7 @@ export interface SessionConfig {
   items: Item[];
   scheduled: boolean; // false for practice: answers do not touch the review schedule
   title: string;
+  test?: { key: string }; // a quiz: one question per flag, no retries, scored at the end
   onDone: (summary: Summary) => string; // returns HTML for the end screen actions
 }
 
@@ -229,6 +230,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
   function schedule(item: Quiz, correct: boolean) {
     const t = tracks.get(item.c.code)!;
     done++;
+    if (cfg.test) return;
     if (correct) t.needed--;
     else {
       t.needed = Math.max(t.needed, 1) + (t.isNew && t.needed < 2 ? 1 : 0);
@@ -467,6 +469,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
   function finish() {
     keyHandler = null;
     record();
+    if (cfg.test) return finishTest(cfg.test.key);
     const pct = summary.answered ? Math.round((summary.correct / summary.answered) * 100) : 0;
     const mins = Math.max(1, Math.round((Date.now() - startedAt) / 60000));
     const strip = (title: string, list: Country[]) =>
@@ -491,6 +494,37 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
         }
         ${strip('New today', summary.learned)}
         ${strip('Worth another look', summary.missed)}
+        <div class="actions">${cfg.onDone(summary)}</div>
+      </article>`;
+    $('.session-count', root).textContent = '';
+    $('.progress-fill', root).style.width = '100%';
+  }
+
+  function finishTest(key: string) {
+    const total = summary.answered;
+    const pct = total ? Math.round((summary.correct / total) * 100) : 0;
+    const prev = total ? recordQuiz(key, summary.correct, total) : undefined;
+    const prevPct = prev ? Math.round((prev.correct / prev.total) * 100) : null;
+    const verdict = pct === 100 ? 'Perfect score' : pct >= 90 ? 'Outstanding' : pct >= 75 ? 'Great work' : pct >= 50 ? 'Good effort' : 'Keep practising';
+    stage.innerHTML = `
+      <article class="card stage done quiz-result fade-in">
+        <span class="pill">${esc(cfg.title)} complete</span>
+        <h2>${verdict}</h2>
+        <div class="score"><strong>${summary.correct}</strong><span>of ${total} correct</span></div>
+        <p class="score-meta muted">${[
+          `${pct}%`,
+          plural(Math.max(1, Math.round((Date.now() - startedAt) / 60000)), 'minute'),
+          prevPct === null ? '' : pct > prevPct ? `New best (was ${prevPct}%)` : `Best ${prevPct}%`,
+        ]
+          .filter(Boolean)
+          .join(' · ')}</p>
+        ${
+          summary.missed.length
+            ? `<section class="done-group"><h3 class="label">Missed</h3><div class="thumb-grid">${summary.missed
+                .map((c) => `<a class="thumb-link" href="${countryLink(c)}">${thumb(c)}<span>${esc(c.name)}</span></a>`)
+                .join('')}</div></section>`
+            : ''
+        }
         <div class="actions">${cfg.onDone(summary)}</div>
       </article>`;
     $('.session-count', root).textContent = '';
