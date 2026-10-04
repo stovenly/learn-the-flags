@@ -4,7 +4,7 @@ import continents from './generated/continents.json';
 import { esc, SET_ICONS } from './ui';
 
 export interface Badge {
-  id: string; // "learn:<set id or continent>" and "quiz:<…>" key state.badges; "streak:now" and "streak:best" are worked out live
+  id: string; // "learn:<set id or continent>" and "quiz:<…>" key state.badges; "streak:now", "streak:best" and "learned:now" are worked out live
   name: string;
   goal: string;
   done: string;
@@ -207,7 +207,9 @@ const TIERS: Tier[] = [
   { from: 300, rim: GOLD, face: ['#ff7ad9', '#7b5cff', '#22c8ff'], ink: '#ffffff', edge: 'burst', points: 24, wreath: '#f3c74a', ribbon: true, crown: true },
 ];
 
-const tierOf = (n: number) => TIERS.filter((t) => n >= t.from).length - 1;
+// The first look starts at `first` instead (1 for flags learned); the rest follow TIERS.
+const tierOf = (n: number, first = TIERS[0].from) => TIERS.filter((t, i) => n >= (i ? t.from : first)).length - 1;
+const nextLook = (n: number) => TIERS.slice(1).find((t) => t.from > n)?.from;
 
 function wreath(R: number, color: string) {
   const leaves: string[] = [];
@@ -229,7 +231,6 @@ function streakArt(n: number) {
   const fr = R - 9;
   const digits = String(n).length;
   const size = r2(fr * (digits <= 2 ? 0.8 : digits === 3 ? 0.62 : 0.5));
-  const stops = (cs: string[]) => cs.map((c, i) => `<stop offset="${i / (cs.length - 1)}" stop-color="${c}"/>`).join('');
   const edge =
     t.edge === 'circle' ? `<circle cx="50" cy="50" r="${R}"/>` : `<path d="${t.edge === 'scallop' ? scallop(R, t.points) : burst(R, R - 6, t.points)}"/>`;
   const ribbon = (x: (v: number) => number) =>
@@ -262,6 +263,57 @@ function streakArt(n: number) {
   </svg>`;
 }
 
+const stops = (cs: string[]) => cs.map((c, i) => `<stop offset="${i / (cs.length - 1)}" stop-color="${c}"/>`).join('');
+
+// A waving flag on a pole, dressed up tier by tier like the streak medal: gilt trim, a swallowtail, a laurel, a tassel, a crown.
+function flagArt(n: number) {
+  const ti = tierOf(n, 1);
+  const t = TIERS[ti];
+  const id = `flag-tier-${ti}`;
+  const digits = String(n).length;
+  const size = digits <= 2 ? 24 : digits === 3 ? 19 : 15;
+  const fly = t.edge === 'burst' ? 'L73 41.5L84 65' : t.edge === 'scallop' ? 'Q89 30 84 41.5T84 65' : 'L84 65';
+  const cloth = `M27 20C41 13 55 27 84 18${fly}C57 74 41 60 27 67Z`;
+  return `<svg class="badge-art badge-flag tier-${ti}" viewBox="0 0 100 100" aria-hidden="true">
+    <defs>
+      <linearGradient id="${id}-rim" x1="0" y1="0" x2=".8" y2="1">${stops(t.rim)}</linearGradient>
+      <linearGradient id="${id}-face" x1="0" y1="0" x2=".7" y2="1">${stops(t.face)}</linearGradient>
+      <clipPath id="${id}-clip"><path d="${cloth}"/></clipPath>
+      <linearGradient id="${id}-shine"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".4" stop-color="#fff" stop-opacity=".25"/><stop offset=".5" stop-color="#fff" stop-opacity=".8"/><stop offset=".6" stop-color="#fff" stop-opacity=".25"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    </defs>
+    ${t.wreath ? wreath(44, t.wreath) : ''}
+    <ellipse cx="24.3" cy="91.5" rx="12" ry="3.6" fill="url(#${id}-rim)" stroke="${t.rim[2]}" stroke-width=".7"/>
+    <rect x="22" y="10" width="4.6" height="82" rx="2.3" fill="url(#${id}-rim)" stroke="${t.rim[2]}" stroke-width=".7"/>
+    <path d="${cloth}" fill="url(#${id}-face)" stroke="${ti >= 2 ? `url(#${id}-rim)` : t.rim[2]}" stroke-width="${ti >= 2 ? 2.2 : 0.8}" stroke-linejoin="round"/>
+    <g clip-path="url(#${id}-clip)">
+      <path d="M27 20C41 13 55 27 84 18V30C55 39 41 25 27 32Z" fill="#fff" opacity=".18"/>
+      ${ti >= 4 ? `<g class="badge-sheen"><rect x="-10" y="-10" width="36" height="120" fill="url(#${id}-shine)" transform="skewX(-22)"/></g>` : ''}
+    </g>
+    <text x="55" y="${r2(41 + size * 0.36)}" text-anchor="middle" font-size="${size}" font-weight="800" fill="${t.ink}">${n}</text>
+    <text x="55" y="58.5" text-anchor="middle" font-size="5.6" font-weight="700" letter-spacing=".9" fill="${t.ink}" opacity=".85">${n === 1 ? 'FLAG' : 'FLAGS'}</text>
+    ${t.ribbon ? `<path d="M26.6 19q6 7 3.4 17" fill="none" stroke="${t.rim[1]}" stroke-width="1.3"/><path d="M28 35.5h4.2l1.4 7h-7z" fill="url(#${id}-rim)" stroke="${t.rim[2]}" stroke-width=".5"/>` : ''}
+    ${
+      t.crown
+        ? `<path d="M17.3 11L15.8 2L20.5 5.6L24.3 0L28.1 5.6L32.8 2L31.3 11Z" fill="url(#${id}-rim)" stroke="${t.rim[2]}" stroke-width=".7" stroke-linejoin="round"/><circle cx="24.3" cy="7.4" r="1.4" fill="${t.face[0]}"/>`
+        : `<circle cx="24.3" cy="9" r="3.6" fill="url(#${id}-rim)" stroke="${t.rim[2]}" stroke-width=".7"/>`
+    }
+  </svg>`;
+}
+
+function learnedBadge(): Badge {
+  const n = learnedIn(EVERY);
+  const next = nextLook(n);
+  return {
+    id: 'learned:now',
+    name: n > 1 ? `${n} Flags Learned` : '1 Flag Learned',
+    goal: n ? 'Flags you’ve learned.' : 'Learn your first flag.',
+    done: `${n} ${n === 1 ? 'flag' : 'flags'} learned.`,
+    art: flagArt(Math.max(n, 1)),
+    qualifies: () => n >= 1,
+    progress: () => (!n ? 'None learned yet' : next ? `New look at ${next} flags` : ''),
+  };
+}
+
 function scallop(R: number, n: number) {
   const p = (i: number) => at(R - 2.6, -90 + (i * 360) / n);
   const bump = r2((R - 2.6) * Math.sin(Math.PI / n) * 1.08);
@@ -271,7 +323,7 @@ function scallop(R: number, n: number) {
 // "now" is the running streak, whose number changes daily and whose look follows TIERS; "best" shows only once it beats "now".
 function streakBadge(which: 'now' | 'best'): Badge {
   const n = which === 'now' ? streak() : bestStreak();
-  const next = TIERS.find((t) => t.from > n)?.from;
+  const next = nextLook(n);
   return {
     id: `streak:${which}`,
     name: which === 'best' ? `Best: ${n} Days` : `${Math.max(n, 3)}-Day Streak`,
@@ -286,6 +338,7 @@ function streakBadge(which: 'now' | 'best'): Badge {
 export function badgeById(id: string): Badge | undefined {
   const [kind, key] = id.split(':');
   if (kind === 'streak') return streakBadge(key === 'best' ? 'best' : 'now');
+  if (kind === 'learned') return learnedBadge();
   const cat = [...CATEGORIES, EVERY].find((c) => c.key === key);
   return cat && (kind === 'learn' || kind === 'quiz') ? categoryBadge(kind, cat) : undefined;
 }
@@ -293,8 +346,8 @@ export function badgeById(id: string): Badge | undefined {
 const categoryBadges = () => [...(['learn', 'quiz'] as const).flatMap((kind) => [...CATEGORIES, EVERY].map((c) => categoryBadge(kind, c)))];
 
 // Earned badges are kept for good, even if a flag slips back to "in progress"; live ones are not.
-// With withStreak, every new streak day from 3 on is news too, once.
-export function awardBadges(withStreak = false): Badge[] {
+// With withCounts, each new streak day from 3 on and each new high in flags learned is news too, once.
+export function awardBadges(withCounts = false): Badge[] {
   const all = categoryBadges();
   const lost = all.filter((b) => b.live && state.badges[b.id] && !b.qualifies());
   const won = all.filter((b) => !state.badges[b.id] && b.qualifies());
@@ -302,16 +355,20 @@ export function awardBadges(withStreak = false): Badge[] {
   for (const b of lost) delete state.badges[b.id];
   for (const b of won) state.badges[b.id] = now;
   const days = streak();
-  const streakNews = withStreak && days >= 3 && days !== state.streakSeen;
+  const streakNews = withCounts && days >= 3 && days !== state.streakSeen;
   if (streakNews) state.streakSeen = days;
-  if (won.length || lost.length || streakNews) save();
-  return [...(streakNews ? [streakBadge('now')] : []), ...won];
+  const learned = learnedIn(EVERY);
+  const learnedNews = withCounts && learned > state.learnedSeen;
+  if (learnedNews) state.learnedSeen = learned;
+  if (won.length || lost.length || streakNews || learnedNews) save();
+  return [...(streakNews ? [streakBadge('now')] : []), ...(learnedNews ? [learnedBadge()] : []), ...won];
 }
 
 export function shownBadges(): { badge: Badge; earned: boolean }[] {
   const now = streakBadge('now');
   const best = bestStreak() > streak() && bestStreak() >= 3 ? [{ badge: streakBadge('best'), earned: true }] : [];
-  return [{ badge: now, earned: now.qualifies() }, ...best, ...categoryBadges().map((badge) => ({ badge, earned: !!state.badges[badge.id] }))];
+  const learned = learnedBadge();
+  return [{ badge: now, earned: now.qualifies() }, ...best, { badge: learned, earned: learned.qualifies() }, ...categoryBadges().map((badge) => ({ badge, earned: !!state.badges[badge.id] }))];
 }
 
 export const badgeTile = (b: Badge, earned: boolean) =>

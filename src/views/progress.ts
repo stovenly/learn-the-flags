@@ -190,7 +190,7 @@ export function progressView(root: HTMLElement) {
     </section>
 
     <section class="card badges-card">
-      <div class="wall-head"><h2>Badges</h2><span class="muted small">${plural(badges.filter((b) => b.earned).length, 'badge')} earned</span></div>
+      <h2>Badges</h2>
       ${badges.some((b) => b.earned) ? '' : '<p class="muted small badge-hint">Unlock badges by keeping a streak, learning every flag in a set or continent, and scoring 100% on quizzes.</p>'}
       <div class="badge-grid">${badges.map((b) => badgeTile(b.badge, b.earned)).join('')}</div>
     </section>

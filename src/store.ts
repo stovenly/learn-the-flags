@@ -36,6 +36,7 @@ interface State {
   quizzes: Record<string, QuizBest>; // keyed by deckKey()
   badges: Record<string, number>; // badge id (see badges.ts) → ms epoch earned
   streakSeen: number; // the streak length last announced at the end of a session
+  learnedSeen: number; // the learned-flag count last announced, likewise
   settings: Settings;
 }
 
@@ -75,9 +76,9 @@ function settingsFrom(saved: Record<string, unknown> = {}): Settings {
 function load(): State {
   try {
     const s = JSON.parse(localStorage.getItem(KEY) ?? '');
-    if (s?.version === 1) return { ...s, sessions: s.sessions ?? [], quizzes: s.quizzes ?? {}, badges: s.badges ?? {}, streakSeen: s.streakSeen ?? 0, settings: settingsFrom(s.settings) };
+    if (s?.version === 1) return { ...s, sessions: s.sessions ?? [], quizzes: s.quizzes ?? {}, badges: s.badges ?? {}, streakSeen: s.streakSeen ?? 0, learnedSeen: s.learnedSeen ?? 0, settings: settingsFrom(s.settings) };
   } catch {}
-  return { version: 1, cards: {}, days: {}, sessions: [], quizzes: {}, badges: {}, streakSeen: 0, settings: settingsFrom() };
+  return { version: 1, cards: {}, days: {}, sessions: [], quizzes: {}, badges: {}, streakSeen: 0, learnedSeen: 0, settings: settingsFrom() };
 }
 
 export const state = load();
@@ -172,6 +173,7 @@ export function importProgress(json: string) {
   state.quizzes = s.quizzes ?? {};
   state.badges = s.badges ?? {};
   state.streakSeen = s.streakSeen ?? 0;
+  state.learnedSeen = s.learnedSeen ?? 0;
   state.settings = settingsFrom(s.settings);
   save();
 }
@@ -183,6 +185,7 @@ export function resetProgress() {
   state.quizzes = {};
   state.badges = {};
   state.streakSeen = 0;
+  state.learnedSeen = 0;
   save();
 }
 

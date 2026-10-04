@@ -1011,9 +1011,9 @@ body[data-route='settings'] #app { max-width: 720px; }
 .badge.locked .badge-art { filter: grayscale(1); opacity: 0.3; }
 .badge.locked .badge-name { color: var(--muted); font-weight: 500; }
 .badge-art { position: relative; display: block; flex: none; width: 76px; height: 76px; }
-.badge-streak { overflow: visible; filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.18)); }
-.badge-streak text { font-family: var(--font); }
-.badge-streak.tier-9 { filter: drop-shadow(0 0 6px rgba(160, 110, 255, 0.55)) drop-shadow(0 2px 3px rgba(0, 0, 0, 0.2)); }
+.badge-streak, .badge-flag { overflow: visible; filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.18)); }
+.badge-streak text, .badge-flag text { font-family: var(--font); }
+.badge-streak.tier-9, .badge-flag.tier-9 { filter: drop-shadow(0 0 6px rgba(160, 110, 255, 0.55)) drop-shadow(0 2px 3px rgba(0, 0, 0, 0.2)); }
 .badge-sheen { mix-blend-mode: overlay; animation: badge-sheen 3.2s cubic-bezier(0.45, 0, 0.25, 1) infinite; }
 @keyframes badge-sheen {
   0%, 30% { transform: translateX(-40px); opacity: 0; }
