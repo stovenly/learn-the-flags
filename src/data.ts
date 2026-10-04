@@ -135,11 +135,11 @@ export function matchAnswer(input: string, c: Country): Match {
   return targets.some((t) => editDistance(guess, t) <= tolerance(t)) ? 'typo' : 'wrong';
 }
 
-// "Nippon · 日本" for each language the country uses for itself, skipping its English name.
+// "日本 · Nippon": the name in each language the place uses for itself, native script first, skipping its English name.
 export function localNameText(c: Country): string {
   return c.localNames
     .filter((l) => l.name !== c.name || l.romanized)
-    .map((l) => [l.romanized, l.name].filter(Boolean).join(' · '))
+    .map((l) => [l.name, l.romanized].filter(Boolean).join(' · '))
     .join('  /  ');
 }
 

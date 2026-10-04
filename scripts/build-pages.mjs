@@ -57,7 +57,7 @@ async function write(route, html) {
 const localName = (c) =>
   c.localNames
     .filter((l) => l.name !== c.name || l.romanized)
-    .map((l) => [l.romanized, l.name].filter(Boolean).join(' · '))
+    .map((l) => [l.name, l.romanized].filter(Boolean).join(' · '))
     .join('  /  ');
 const subtitle = (c) => [c.officialName !== c.name ? c.officialName : '', STATUS[c.status] ?? '', c.set === 'sovereign' ? '' : setName[c.set]].filter(Boolean).join(' · ');
 const flagHref = (c) => `flags/${c.slug}/`;
