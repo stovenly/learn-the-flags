@@ -8,6 +8,7 @@ export interface Settings {
   set: string; // the set new flags come from
   continents: string[]; // narrows the sovereign set
   theme: 'auto' | 'light' | 'dark';
+  dyslexic: boolean;
 }
 
 export interface DayLog {
@@ -48,6 +49,7 @@ const DEFAULTS: Settings = {
   set: SOVEREIGN,
   continents: CONTINENTS,
   theme: 'auto',
+  dyslexic: false,
 };
 
 function settingsFrom(saved: Record<string, unknown> = {}): Settings {

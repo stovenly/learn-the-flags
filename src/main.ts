@@ -1,6 +1,7 @@
 import './styles.css';
 import { route, startRouter } from './router';
 import { applyTheme } from './theme';
+import { mountCorners } from './corners';
 import { homeView } from './views/home';
 import { studyView } from './views/study';
 import { browseView } from './views/browse';
@@ -16,6 +17,7 @@ const titled = (title: string | null, view: (root: HTMLElement, param: string) =
 };
 
 applyTheme();
+mountCorners();
 route('', titled(null, homeView));
 route('study', titled('Study', studyView));
 const allFlags = titled('All flags', browseView);

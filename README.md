@@ -58,4 +58,4 @@ Lookalike pairs live in `data/lookalikes/*.json`, keyed by the two codes in sort
 - `scripts/build-pages.mjs` runs as part of the build. It copies the built app shell to every route, so each URL loads directly, and pre-fills each flag page and the flag index with crawlable content and meta tags (hidden once the app runs). It also writes `404.html`, `sitemap.xml` and `robots.txt`.
 - `site.config.json` holds the site URL, name and description used for SEO tags.
 
-Flag images come from Wikimedia Commons, directly or via [flagcdn.com](https://flagcdn.com). Map outlines come from [Natural Earth](https://www.naturalearthdata.com) (public domain). Base country facts come from [mledoze/countries](https://github.com/mledoze/countries) (ODbL), and population figures from the World Bank.
+Flag images come from Wikimedia Commons, directly or via [flagcdn.com](https://flagcdn.com). Map outlines come from [Natural Earth](https://www.naturalearthdata.com) (public domain). Base country facts come from [mledoze/countries](https://github.com/mledoze/countries) (ODbL), and population figures from the World Bank. See [CREDITS.md](CREDITS.md) for everything else.
