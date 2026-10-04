@@ -4,43 +4,65 @@
     "name": "Sovereign states",
     "noun": "country",
     "description": "The 193 UN member states, plus Vatican City and Palestine.",
-    "cover": "jp"
+    "cover": "icon:globe"
   },
   {
     "id": "us-states",
     "name": "US states",
     "noun": "state",
     "description": "All 50 states, plus Washington, D.C.",
-    "cover": "us-tx"
+    "cover": "us"
   },
   {
     "id": "canada",
     "name": "Canadian provinces",
     "noun": "province or territory",
     "description": "The 10 provinces and 3 territories of Canada.",
-    "cover": "ca-bc"
+    "cover": "ca"
   },
   {
     "id": "territories",
     "name": "Territories",
     "noun": "territory",
     "description": "Overseas territories, crown dependencies and the UK's home nations.",
-    "cover": "gb-wls"
+    "cover": "icon:island"
   },
   {
     "id": "limited",
     "name": "Limited recognition",
     "noun": "state",
     "description": "Places that govern themselves but are recognized by few or no other countries.",
-    "cover": "tw"
+    "cover": "icon:contested"
   },
   {
     "id": "historical",
     "name": "Historical flags",
     "noun": "historical state",
     "description": "Iconic flags of states that no longer exist.",
-    "cover": "ussr",
-    "order": ["ussr", "nazi-germany", "empire-of-japan", "yugoslavia", "east-germany", "czechoslovakia", "confederacy", "ottoman-empire", "russian-empire", "german-empire", "rhodesia", "old-south-africa", "south-vietnam", "imperial-iran", "libyan-jamahiriya", "zaire", "tibet", "qing-dynasty", "spanish-republic", "biafra", "united-arab-republic"]
+    "cover": "icon:hourglass",
+    "order": [
+      "ussr",
+      "nazi-germany",
+      "empire-of-japan",
+      "yugoslavia",
+      "east-germany",
+      "czechoslovakia",
+      "confederacy",
+      "ottoman-empire",
+      "russian-empire",
+      "german-empire",
+      "rhodesia",
+      "old-south-africa",
+      "south-vietnam",
+      "imperial-iran",
+      "libyan-jamahiriya",
+      "zaire",
+      "tibet",
+      "qing-dynasty",
+      "spanish-republic",
+      "biafra",
+      "united-arab-republic"
+    ]
   },
   {
     "id": "organizations",
@@ -48,6 +70,20 @@
     "noun": "organization",
     "description": "The flags of international organizations and movements.",
     "cover": "un",
-    "order": ["un", "eu", "olympics", "nato", "red-cross", "african-union", "red-crescent", "asean", "commonwealth", "arab-league", "oas", "mercosur", "caricom"]
+    "order": [
+      "un",
+      "eu",
+      "olympics",
+      "nato",
+      "red-cross",
+      "african-union",
+      "red-crescent",
+      "asean",
+      "commonwealth",
+      "arab-league",
+      "oas",
+      "mercosur",
+      "caricom"
+    ]
   }
 ]

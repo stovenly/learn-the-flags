@@ -1,5 +1,6 @@
-import { byCode, url, CONTINENTS, Country, inSet, preload, setById, SETS, SOVEREIGN } from '../data';
+import { byCode, url, CONTINENTS, Country, FlagSet, inSet, preload, setById, SETS, SOVEREIGN } from '../data';
 import { chooseDeck, deck, deckKey, dueCards, level, newCards, state, streak } from '../store';
+import { attachTips } from '../tips';
 import { $$, countryLink, esc, icon, plural, renderWhenReady, sample, shuffle, thumb } from '../ui';
 
 // One pick per visit, so changing the set doesn't swap the card and jolt the page.
@@ -36,21 +37,37 @@ function upNext(list: Country[], images: Promise<void>[]) {
   list.forEach((c) => images.push(preload(c.code, 320)));
   return `<div class="up-next">
     <span class="label">Up next</span>
-    <div class="up-next-flags">${list.map((c) => thumb(c)).join('')}</div>
+    <div class="up-next-flags">${list.map((c) => `<span class="tip-target" tabindex="0" data-tip="${c.code}" aria-label="${esc(c.name)}">${thumb(c)}</span>`).join('')}</div>
   </div>`;
 }
 
 // "Learned" means held over several days (Progress uses the same rule), not merely introduced.
 const learnedIn = (list: Country[]) => list.filter((c) => ['known', 'mastered'].includes(level(c.code))).length;
 
+// Sets that no single flag stands for get a drawn icon instead (24×24, stroked).
+const SET_ICONS: Record<string, string> = {
+  globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.7 3.9 5.7 3.9 9s-1.3 6.3-3.9 9c-2.6-2.7-3.9-5.7-3.9-9S9.4 5.7 12 3z"/>',
+  island: '<path d="M2 20c3.3-1.6 6.7-1.6 10 0s6.7 1.6 10 0"/><path d="M12 18.5c-.2-4 .6-7.3 2.5-10"/><path d="M14.5 8.5C13 6.3 10 5.8 7.5 7.3M14.5 8.5c1.8-2 4.6-2.1 6.5-.3M14.5 8.5c-.3-2.4 1-4.4 3.3-5.3M14.5 8.5c-2.6-.8-5.3.4-6.4 2.8"/>',
+  contested: '<path d="M5 21V3"/><path d="M5 4h13l-3 4.5 3 4.5H5" stroke-dasharray="2.6 2.4"/>',
+  hourglass: '<path d="M6 3h12M6 21h12"/><path d="M7.5 3c0 4.5 9 5 9 9s-9 4.5-9 9M16.5 3c0 4.5-9 5-9 9s9 4.5 9 9"/>',
+};
+
+function cover(s: FlagSet, images: Promise<void>[]) {
+  if (s.cover.startsWith('icon:')) {
+    return `<span class="thumb set-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${SET_ICONS[s.cover.slice(5)]}</svg></span>`;
+  }
+  const c = byCode.get(s.cover);
+  if (!c) return '';
+  images.push(preload(c.code, 320));
+  return thumb(c);
+}
+
 function setOption(id: string, images: Promise<void>[]) {
   const s = setById.get(id)!;
   const list = inSet(id);
   const done = learnedIn(list);
-  const cover = byCode.get(s.cover);
-  if (cover) images.push(preload(cover.code, 320));
   return `<button class="set-option" role="radio" aria-checked="${id === state.settings.set}" data-set="${id}">
-    ${cover ? thumb(cover) : ''}<span class="set-name">${esc(s.name)}</span><span class="set-count">${done ? `${done}/${list.length}` : list.length}</span>
+    ${cover(s, images)}<span class="set-name">${esc(s.name)}</span><span class="set-count">${done ? `${done}/${list.length}` : list.length}</span>
   </button>`;
 }
 
@@ -101,6 +118,7 @@ function bindPicker(root: HTMLElement) {
 export function homeView(root: HTMLElement) {
   fact = null;
   paint(root);
+  attachTips(root);
 }
 
 function paint(root: HTMLElement, keepScroll?: number, focus?: string) {

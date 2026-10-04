@@ -506,6 +506,10 @@ a.mode-meta:hover { color: var(--text); }
 .set-option:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .set-option .thumb { width: 36px; flex-shrink: 0; }
 .set-name { font-weight: 550; }
+.set-icon { aspect-ratio: 3 / 2; display: grid; place-items: center; border-radius: 4px; background: color-mix(in srgb, var(--accent) 12%, var(--surface)); color: var(--accent); }
+.set-icon svg { width: 18px; height: 18px; }
+.tip-target { display: inline-block; border-radius: 4px; }
+.tip-target:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .set-count { color: var(--muted); font-size: 0.8rem; font-variant-numeric: tabular-nums; }
 .continents { display: flex; flex-wrap: wrap; gap: 6px; padding-left: 12px; border-left: 2px solid var(--accent); }
 .chip-sm { padding: 4px 10px; font-size: 0.82rem; }

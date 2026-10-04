@@ -1,12 +1,8 @@
 import { ALL, url, byCode, CONTINENTS, Country, inSet, SETS, SOVEREIGN } from '../data';
-import { onCleanup } from '../router';
-import { dayNumber } from '../srs';
-import { level, Level, SessionLog, state, streak } from '../store';
+import { attachTips, Status, STATUS_TEXT, statusOf } from '../tips';
+import { level, SessionLog, state, streak } from '../store';
 import { $, $$, countryLink, esc, flagImg, plural, thumb } from '../ui';
 
-type Status = 'learned' | 'learning' | 'new';
-const statusOf = (lv: Level): Status => (lv === 'known' || lv === 'mastered' ? 'learned' : lv);
-const STATUS_TEXT: Record<Status, string> = { learned: 'Learned', learning: 'In progress', new: 'Not started' };
 
 const INFO = {
   learned: "You've got this flag right over several days. It's solid enough that it only comes back every week or more for a quick check.",
@@ -37,14 +33,6 @@ function when(ms: number): string {
 
 const minutes = (ms: number) => (ms < 60000 ? '<1 min' : `${Math.round(ms / 60000)} min`);
 
-function fromNow(ms: number): string {
-  const d = dayNumber(ms) - dayNumber(Date.now());
-  if (d === 0) return 'today';
-  if (d === 1) return 'tomorrow';
-  if (d === -1) return 'yesterday';
-  return d > 0 ? `in ${plural(d, 'day')}` : `${plural(-d, 'day')} ago`;
-}
-
 function sessionRow(s: SessionLog) {
   const learned = s.learned.map((k) => byCode.get(k)).filter((c): c is Country => !!c);
   const pct = Math.round((s.correct / s.answered) * 100);
@@ -62,59 +50,6 @@ function sessionRow(s: SessionLog) {
         : ''
     }
   </li>`;
-}
-
-function tipHtml(c: Country) {
-  const s = statusOf(level(c.code));
-  const m = state.cards[c.code];
-  const lines = [c.subregion || c.region];
-  if (m) {
-    lines.push(`Practised ${fromNow(m.last)}`);
-    lines.push(m.due <= Date.now() ? 'Due for review now' : `Next review ${fromNow(m.due)}`);
-    if (m.lapses) lines.push(`Forgotten ${m.lapses === 1 ? 'once' : `${m.lapses} times`}`);
-  }
-  return `<div class="tip-head"><strong>${esc(c.name)}</strong><span class="tip-status is-${s}">${STATUS_TEXT[s]}</span></div>${lines
-    .map((l) => `<span>${esc(l)}</span>`)
-    .join('')}`;
-}
-
-function attachTips(root: HTMLElement) {
-  const tip = document.createElement('div');
-  tip.className = 'tip';
-  tip.setAttribute('role', 'tooltip');
-  tip.hidden = true;
-  root.append(tip);
-  let current: HTMLElement | null = null;
-  const show = (el: HTMLElement) => {
-    const c = byCode.get(el.dataset.tip!);
-    if (!c) return;
-    current = el;
-    tip.innerHTML = tipHtml(c);
-    tip.hidden = false;
-    const r = el.getBoundingClientRect();
-    const t = tip.getBoundingClientRect();
-    const above = r.top - t.height - 8;
-    tip.style.left = `${Math.min(Math.max(8, r.left + r.width / 2 - t.width / 2), innerWidth - t.width - 8)}px`;
-    tip.style.top = `${above >= 8 ? above : r.bottom + 8}px`;
-  };
-  const hide = () => {
-    current = null;
-    tip.hidden = true;
-  };
-  const tileOf = (e: Event) => (e.target as HTMLElement).closest<HTMLElement>('[data-tip]');
-  root.addEventListener('pointerover', (e) => {
-    const el = tileOf(e);
-    if (!el) hide();
-    else if (el !== current && e.pointerType === 'mouse') show(el);
-  });
-  root.addEventListener('pointerleave', hide);
-  root.addEventListener('focusin', (e) => {
-    const el = tileOf(e);
-    if (el) show(el);
-  });
-  root.addEventListener('focusout', hide);
-  addEventListener('scroll', hide, { passive: true });
-  onCleanup(() => removeEventListener('scroll', hide));
 }
 
 let gridFilter: Status | 'all' = 'all';

@@ -40,7 +40,7 @@ export interface FlagSet {
   name: string;
   noun: string; // "Which <noun> is this?"
   description: string;
-  cover: string;
+  cover: string; // a flag code, or "icon:<name>" for a drawn icon (see SET_ICONS in home.ts)
 }
 
 export const ALL = raw as unknown as Country[];
