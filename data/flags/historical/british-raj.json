@@ -52,7 +52,7 @@
     "bd"
   ],
   "flag": {
-    "description": "The Union Jack with the Star of India in the centre: a silver five-pointed star inside a blue garter, ringed by golden rays and topped by the Imperial Crown.",
+    "description": "The Union Jack with the Star of India in the center: a silver five-pointed star inside a blue garter, ringed by golden rays and topped by the Imperial Crown.",
     "adopted": "1885",
     "colors": [
       "blue",
@@ -68,6 +68,6 @@
   ],
   "trivia": [
     "British India never had a single national flag: this was the flag of the Viceroy and Governor-General, the Union Jack served as the official flag, and blue and red ensigns bearing the Star of India were flown at sea.",
-    "At independence in 1947, India adopted its saffron, white and green tricolour and Pakistan its green and white flag with a crescent and star."
+    "At independence in 1947, India adopted its saffron, white and green tricolor and Pakistan its green and white flag with a crescent and star."
   ]
 }

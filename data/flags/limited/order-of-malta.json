@@ -47,7 +47,7 @@
   ],
   "shape": false,
   "flag": {
-    "description": "A red field with a white cross whose arms run to the edges, centred on the flag.",
+    "description": "A red field with a white cross whose arms run to the edges, centered on the flag.",
     "adopted": "",
     "colors": [
       "red",
@@ -55,7 +55,7 @@
     ],
     "symbolism": "The white cross on red has been the Order's emblem since the Middle Ages and recalls its origins as a crusader-era hospital order."
   },
-  "hook": "The Order of Malta is a plain white cross dead centre on red, running to every edge; Denmark pushes its cross towards the pole and Switzerland keeps its cross short on a square.",
+  "hook": "The Order of Malta is a plain white cross dead center on red, running to every edge; Denmark pushes its cross towards the pole and Switzerland keeps its cross short on a square.",
   "lookalikes": [
     "dk",
     "ch"

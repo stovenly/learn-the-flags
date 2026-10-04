@@ -45,7 +45,7 @@
     ]
   ],
   "flag": {
-    "description": "A blue saltire on a white field, with a gold shield bearing a red rampant lion at the centre.",
+    "description": "A blue saltire on a white field, with a gold shield bearing a red rampant lion at the center.",
     "adopted": "1929",
     "colors": [
       "white",
@@ -53,7 +53,7 @@
       "yellow",
       "red"
     ],
-    "symbolism": "The saltire is Scotland's St Andrew's cross with its colours reversed, and the shield bears the royal arms of Scotland, recalling the colony granted by King James VI to Sir William Alexander in 1621."
+    "symbolism": "The saltire is Scotland's St Andrew's cross with its colors reversed, and the shield bears the royal arms of Scotland, recalling the colony granted by King James VI to Sir William Alexander in 1621."
   },
   "hook": "Nova Scotia means \"New Scotland\", so it flips Scotland's flag: a blue X on white, with Scotland's red lion on a gold shield where the arms cross.",
   "lookalikes": [],

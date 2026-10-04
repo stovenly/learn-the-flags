@@ -17,12 +17,12 @@
   "latlng": [38.4, -92.5],
   "facts": [["Nickname", "The Show-Me State"], ["Statehood", "1821"]],
   "flag": {
-    "description": "Three equal horizontal stripes of red, white and blue, with the state coat of arms in the centre inside a blue ring of 24 white stars.",
+    "description": "Three equal horizontal stripes of red, white and blue, with the state coat of arms in the center inside a blue ring of 24 white stars.",
     "adopted": "1913",
     "colors": ["red", "white", "blue", "brown", "yellow"],
     "symbolism": "The 24 stars show that Missouri was the 24th state; the two grizzly bears holding the shield stand for strength and bravery."
   },
-  "hook": "Missouri is a red-white-blue tricolour with two grizzly bears holding a shield in the middle, ringed by 24 stars.",
+  "hook": "Missouri is a red-white-blue tricolor with two grizzly bears holding a shield in the middle, ringed by 24 stars.",
   "lookalikes": ["nl", "lu"],
   "trivia": [
     "It was designed by Marie Elizabeth Watkins Oliver and adopted in 1913.",

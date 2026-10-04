@@ -46,7 +46,7 @@
     8
   ],
   "flag": {
-    "description": "A square red flag with a white cross in the centre whose arms do not touch the edges; each arm is one-sixth longer than it is wide.",
+    "description": "A square red flag with a white cross in the center whose arms do not touch the edges; each arm is one-sixth longer than it is wide.",
     "adopted": "1889",
     "colors": [
       "red",
@@ -61,6 +61,6 @@
   ],
   "trivia": [
     "Switzerland and Vatican City have the only square national flags; Swiss boats use a rectangular version.",
-    "The Red Cross emblem, created in 1864 in Geneva, reverses the colours of the Swiss flag in honour of Switzerland."
+    "The Red Cross emblem, created in 1864 in Geneva, reverses the colors of the Swiss flag in honor of Switzerland."
   ]
 }

@@ -17,10 +17,10 @@
   "latlng": [34.3, -111.7],
   "facts": [["Nickname", "The Grand Canyon State"], ["Statehood", "1912"]],
   "flag": {
-    "description": "A blue lower half; the upper half has 13 alternating red and yellow rays fanning out from a copper-coloured star in the centre.",
+    "description": "A blue lower half; the upper half has 13 alternating red and yellow rays fanning out from a copper-colored star in the center.",
     "adopted": "1917",
     "colors": ["red", "yellow", "blue", "orange"],
-    "symbolism": "The 13 rays recall the original colonies and a western sunset, red and yellow are the colours of Spain, blue matches the US flag, and the copper star stands for the state's copper mining."
+    "symbolism": "The 13 rays recall the original colonies and a western sunset, red and yellow are the colors of Spain, blue matches the US flag, and the copper star stands for the state's copper mining."
   },
   "hook": "Arizona is a desert sunset: 13 red and gold rays fanning up from a copper star over a plain blue lower half.",
   "lookalikes": [],

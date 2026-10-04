@@ -39,14 +39,14 @@
     33
   ],
   "flag": {
-    "description": "A white field with a copper-orange silhouette of the island in the centre, above two crossed green olive branches.",
+    "description": "A white field with a copper-orange silhouette of the island in the center, above two crossed green olive branches.",
     "adopted": "1960",
     "colors": [
       "white",
       "orange",
       "green"
     ],
-    "symbolism": "The copper colour refers to the island's rich copper deposits, from which its name is often derived; the olive branches and white field stand for peace between Greek and Turkish Cypriots."
+    "symbolism": "The copper color refers to the island's rich copper deposits, from which its name is often derived; the olive branches and white field stand for peace between Greek and Turkish Cypriots."
   },
   "hook": "A copper map of the island floating over olive branches on white: Cyprus shows its own outline, like Kosovo, but on white instead of blue.",
   "lookalikes": [
@@ -54,6 +54,6 @@
   ],
   "trivia": [
     "Cyprus and Kosovo are the only countries whose national flags show a map of the country.",
-    "The colours were deliberately chosen to avoid the blue of Greece and the red of Turkey."
+    "The colors were deliberately chosen to avoid the blue of Greece and the red of Turkey."
   ]
 }

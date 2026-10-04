@@ -17,7 +17,7 @@
   "latlng": [38.5, -98.4],
   "facts": [["Nickname", "The Sunflower State"], ["Statehood", "1861"]],
   "flag": {
-    "description": "A dark blue field with the state seal in the centre, a sunflower on a twisted blue and gold bar above it, and KANSAS in gold letters below.",
+    "description": "A dark blue field with the state seal in the center, a sunflower on a twisted blue and gold bar above it, and KANSAS in gold letters below.",
     "adopted": "1961",
     "colors": ["blue", "yellow", "white", "green", "brown"],
     "symbolism": "The seal shows a settler ploughing, a wagon train and bison under a rising sun, with 34 stars because Kansas was the 34th state."

@@ -31,20 +31,20 @@
     ]
   ],
   "flag": {
-    "description": "A buff (pale yellow-tan) field with the state coat of arms in the centre: a blue shield with three ploughs, topped by a horse's head, supported by the goddesses Liberty and Ceres, above a ribbon reading \"Liberty and Prosperity\" and the date 1776.",
+    "description": "A buff (pale yellow-tan) field with the state coat of arms in the center: a blue shield with three ploughs, topped by a horse's head, supported by the goddesses Liberty and Ceres, above a ribbon reading \"Liberty and Prosperity\" and the date 1776.",
     "adopted": "1896",
     "colors": [
       "yellow",
       "blue"
     ],
-    "symbolism": "Buff and Jersey blue were the colours George Washington chose for New Jersey's Continental Army uniforms; the ploughs and Ceres stand for agriculture."
+    "symbolism": "Buff and Jersey blue were the colors George Washington chose for New Jersey's Continental Army uniforms; the ploughs and Ceres stand for agriculture."
   },
   "hook": "New Jersey is the buff one: a pale tan field instead of blue, with three ploughs on the shield.",
   "lookalikes": [
     "us-ny"
   ],
   "trivia": [
-    "Washington ordered buff and blue facings for New Jersey's regiments in 1779, and the flag still uses those colours.",
+    "Washington ordered buff and blue facings for New Jersey's regiments in 1779, and the flag still uses those colors.",
     "New Jersey was the third state to ratify the Constitution, in December 1787."
   ]
 }

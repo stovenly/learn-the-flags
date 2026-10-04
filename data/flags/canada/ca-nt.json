@@ -57,7 +57,7 @@
     ]
   ],
   "flag": {
-    "description": "A blue vertical band at each end, each a quarter of the width, with a white square in the centre holding the territorial shield: a wavy blue line on white above a green and red field with gold bars and a white fox's head.",
+    "description": "A blue vertical band at each end, each a quarter of the width, with a white square in the center holding the territorial shield: a wavy blue line on white above a green and red field with gold bars and a white fox's head.",
     "adopted": "1969",
     "colors": [
       "blue",
@@ -68,13 +68,13 @@
     ],
     "symbolism": "Blue stands for the lakes and waters and white for snow and ice; on the shield, the wavy line is the Northwest Passage, green and red are the forest and tundra split by the tree line, and the gold bars and fox stand for minerals and furs."
   },
-  "hook": "The Northwest Territories borrow Canada's layout in blue: blue bands either side of a white centre holding a shield with a fox's head instead of a maple leaf.",
+  "hook": "The Northwest Territories borrow Canada's layout in blue: blue bands either side of a white center holding a shield with a fox's head instead of a maple leaf.",
   "lookalikes": [
     "ca",
     "ca-yt"
   ],
   "trivia": [
-    "The Northwest Territories recognise eleven official languages, more than any other province or territory in Canada.",
+    "The Northwest Territories recognize eleven official languages, more than any other province or territory in Canada.",
     "The flag was chosen in a design competition and adopted by the territorial legislature in 1969."
   ]
 }

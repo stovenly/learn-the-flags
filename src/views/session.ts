@@ -514,7 +514,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
     const pct = total ? Math.round((summary.correct / total) * 100) : 0;
     const prev = total ? recordQuiz(key, summary.correct, total) : undefined;
     const prevPct = prev ? Math.round((prev.correct / prev.total) * 100) : null;
-    const verdict = pct === 100 ? 'Perfect score' : pct >= 90 ? 'Outstanding' : pct >= 75 ? 'Great work' : pct >= 50 ? 'Good effort' : 'Keep practising';
+    const verdict = pct === 100 ? 'Perfect score' : pct >= 90 ? 'Outstanding' : pct >= 75 ? 'Great work' : pct >= 50 ? 'Good effort' : 'Keep practicing';
     stage.innerHTML = `
       <article class="card stage done quiz-result fade-in">
         <span class="pill">${esc(cfg.title)} complete</span>

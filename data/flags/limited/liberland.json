@@ -23,7 +23,7 @@
   "facts": [
     [
       "Status",
-      "Unrecognised micronation"
+      "Unrecognized micronation"
     ],
     [
       "Proclaimed",
@@ -31,7 +31,7 @@
     ]
   ],
   "flag": {
-    "description": "A yellow field with a black horizontal stripe across the middle and a coat of arms in the centre: a shield with a tree on dark red above a black bird and an orange sun on white, over a band of blue.",
+    "description": "A yellow field with a black horizontal stripe across the middle and a coat of arms in the center: a shield with a tree on dark red above a black bird and an orange sun on white, over a band of blue.",
     "adopted": "2015",
     "colors": [
       "yellow",
@@ -47,6 +47,6 @@
   "lookalikes": [],
   "trivia": [
     "Vít Jedlička proclaimed Liberland on 13 April 2015 on Gornja Siga, a strip of Danube floodplain that neither Croatia nor Serbia claims.",
-    "No state recognises Liberland, and Croatian police control access to the land it claims."
+    "No state recognizes Liberland, and Croatian police control access to the land it claims."
   ]
 }

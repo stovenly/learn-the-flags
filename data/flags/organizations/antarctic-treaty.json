@@ -37,7 +37,7 @@
   ],
   "shape": false,
   "flag": {
-    "description": "A dark blue field with a white map of Antarctica in the centre, set in a white grid of lines of latitude and longitude.",
+    "description": "A dark blue field with a white map of Antarctica in the center, set in a white grid of lines of latitude and longitude.",
     "adopted": "2002",
     "colors": [
       "blue",

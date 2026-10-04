@@ -57,7 +57,7 @@ export function countryView(root: HTMLElement, slug: string) {
               ${c.flag.adopted ? `<span><span class="muted">Adopted</span> ${esc(c.flag.adopted)}</span>` : ''}
               ${
                 c.flag.colors.length
-                  ? `<span class="swatches" aria-label="Colours: ${esc(c.flag.colors.join(', ').replace(/-/g, ' '))}">${c.flag.colors.map((col) => `<i style="background:${SWATCH[col]}" title="${col.replace('-', ' ')}"></i>`).join('')}</span>`
+                  ? `<span class="swatches" aria-label="Colors: ${esc(c.flag.colors.join(', ').replace(/-/g, ' '))}">${c.flag.colors.map((col) => `<i style="background:${SWATCH[col]}" title="${col.replace('-', ' ')}"></i>`).join('')}</span>`
                   : ''
               }
             </div>

@@ -39,7 +39,7 @@
   ],
   "shape": false,
   "flag": {
-    "description": "A white field with five interlocking rings in the centre: blue, black and red on top, yellow and green below.",
+    "description": "A white field with five interlocking rings in the center: blue, black and red on top, yellow and green below.",
     "adopted": "1914",
     "colors": [
       "white",
@@ -49,7 +49,7 @@
       "green",
       "red"
     ],
-    "symbolism": "The five rings stand for the union of the five inhabited continents; Pierre de Coubertin said the six colours, white included, could reproduce every national flag of his day."
+    "symbolism": "The five rings stand for the union of the five inhabited continents; Pierre de Coubertin said the six colors, white included, could reproduce every national flag of his day."
   },
   "hook": "Five linked rings on white, three on top and two below: blue, black and red over yellow and green.",
   "lookalikes": [],

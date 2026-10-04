@@ -43,7 +43,7 @@
   ],
   "shape": false,
   "flag": {
-    "description": "A white field with a ring of five curved segments in the centre, coloured green, purple, red, blue and yellow clockwise from the top.",
+    "description": "A white field with a ring of five curved segments in the center, colored green, purple, red, blue and yellow clockwise from the top.",
     "adopted": "1987",
     "colors": [
       "white",
@@ -53,9 +53,9 @@
       "blue",
       "yellow"
     ],
-    "symbolism": "The five coloured arcs stand for the five continents where French-speaking countries are found."
+    "symbolism": "The five colored arcs stand for the five continents where French-speaking countries are found."
   },
-  "hook": "The Francophonie is one ring broken into five coloured arcs on white, a single circle where the Olympics link five.",
+  "hook": "The Francophonie is one ring broken into five colored arcs on white, a single circle where the Olympics link five.",
   "lookalikes": [
     "olympics"
   ],

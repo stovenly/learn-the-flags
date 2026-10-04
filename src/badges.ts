@@ -275,7 +275,7 @@ function streakBadge(which: 'now' | 'best'): Badge {
   return {
     id: `streak:${which}`,
     name: which === 'best' ? `Best: ${n} Days` : `${Math.max(n, 3)}-Day Streak`,
-    goal: which === 'best' ? 'Your longest streak.' : n >= 3 ? 'Days in a row you’ve practised.' : 'Practise 3 days in a row.',
+    goal: which === 'best' ? 'Your longest streak.' : n >= 3 ? 'Days in a row you’ve practiced.' : 'Practice 3 days in a row.',
     done: `${n} days in a row.`,
     art: streakArt(Math.max(n, 3)),
     qualifies: () => n >= 3,

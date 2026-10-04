@@ -33,7 +33,7 @@
     90
   ],
   "flag": {
-    "description": "A dark green field with a large red disc placed slightly towards the hoist from the centre.",
+    "description": "A dark green field with a large red disc placed slightly towards the hoist from the center.",
     "adopted": "1972",
     "colors": [
       "green",
@@ -48,6 +48,6 @@
   ],
   "trivia": [
     "The first flag of 1971 had a yellow map of the country inside the red disc; it was removed in 1972, partly because it was hard to render correctly on both sides.",
-    "The disc is offset towards the hoist so that it appears centred when the flag is flying."
+    "The disc is offset towards the hoist so that it appears centered when the flag is flying."
   ]
 }

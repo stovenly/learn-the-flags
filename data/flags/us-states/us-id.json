@@ -17,7 +17,7 @@
   "latlng": [44.4, -114.6],
   "facts": [["Nickname", "The Gem State"], ["Statehood", "1890"]],
   "flag": {
-    "description": "A blue field with the state seal in the centre, above a red scroll edged in gold reading STATE OF IDAHO.",
+    "description": "A blue field with the state seal in the center, above a red scroll edged in gold reading STATE OF IDAHO.",
     "adopted": "1957",
     "colors": ["blue", "red", "yellow", "white", "green", "brown"],
     "symbolism": "The seal shows a woman for liberty and justice and a miner for the state's mining, either side of a shield with mountains, a river and a pine tree."

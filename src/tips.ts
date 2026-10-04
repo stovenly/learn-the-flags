@@ -22,7 +22,7 @@ function tipHtml(c: Country) {
   const m = state.cards[c.code];
   const lines = [c.subregion || c.region];
   if (m) {
-    lines.push(`Practised ${fromNow(m.last)}`);
+    lines.push(`Practiced ${fromNow(m.last)}`);
     lines.push(m.due <= Date.now() ? 'Due for review now' : `Next review ${fromNow(m.due)}`);
     if (m.lapses) lines.push(`Forgotten ${m.lapses === 1 ? 'once' : `${m.lapses} times`}`);
   }

@@ -39,7 +39,7 @@
   ],
   "shape": false,
   "flag": {
-    "description": "A blue field with the seal of the Organization in the centre: a white disc edged in gold holding a fan of the flags of the member states on gold-tipped poles.",
+    "description": "A blue field with the seal of the Organization in the center: a white disc edged in gold holding a fan of the flags of the member states on gold-tipped poles.",
     "adopted": "1965",
     "colors": [
       "blue",
@@ -50,7 +50,7 @@
     ],
     "symbolism": "The fan of flags shows the member states standing together, and a new flag is added to the seal whenever a country joins."
   },
-  "hook": "The OAS seal is a colourful fan of member flags inside a white disc on blue; the UN's emblem is a plain white world map on paler blue.",
+  "hook": "The OAS seal is a colorful fan of member flags inside a white disc on blue; the UN's emblem is a plain white world map on paler blue.",
   "lookalikes": [
     "un"
   ],

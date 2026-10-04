@@ -28,7 +28,7 @@
       "1863"
     ],
     [
-      "Emblem recognised",
+      "Emblem recognized",
       "1864"
     ],
     [
@@ -38,13 +38,13 @@
   ],
   "shape": false,
   "flag": {
-    "description": "A red cross with arms of equal length in the centre of a white field.",
+    "description": "A red cross with arms of equal length in the center of a white field.",
     "adopted": "1864",
     "colors": [
       "white",
       "red"
     ],
-    "symbolism": "The emblem reverses the colours of Switzerland's flag in honour of the country where the movement was founded; it marks people and places protected in war."
+    "symbolism": "The emblem reverses the colors of Switzerland's flag in honor of the country where the movement was founded; it marks people and places protected in war."
   },
   "hook": "The Red Cross is Switzerland turned inside out: a red cross on white instead of Switzerland's white cross on a square red flag.",
   "lookalikes": [

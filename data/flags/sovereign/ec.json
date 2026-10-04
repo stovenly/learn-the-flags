@@ -27,7 +27,7 @@
     -77.5
   ],
   "flag": {
-    "description": "Three horizontal bands of yellow, blue and red, with the yellow band taking up the top half; the coat of arms, topped by an Andean condor, sits in the centre.",
+    "description": "Three horizontal bands of yellow, blue and red, with the yellow band taking up the top half; the coat of arms, topped by an Andean condor, sits in the center.",
     "adopted": "1860",
     "colors": [
       "yellow",
@@ -36,13 +36,13 @@
     ],
     "symbolism": "Yellow is commonly read as the nation's wealth, blue the sky and sea, and red the blood of its heroes; the condor represents power and courage."
   },
-  "hook": "Ecuador is Colombia plus a condor: the same double-height yellow tricolour, but with a coat of arms where an Andean condor spreads its wings.",
+  "hook": "Ecuador is Colombia plus a condor: the same double-height yellow tricolor, but with a coat of arms where an Andean condor spreads its wings.",
   "lookalikes": [
     "co",
     "ve"
   ],
   "trivia": [
-    "The coat of arms shows Mount Chimborazo, whose summit is the farthest point on Earth from the planet's centre.",
+    "The coat of arms shows Mount Chimborazo, whose summit is the farthest point on Earth from the planet's center.",
     "Ecuador is named after the equator, which runs through the country just north of Quito."
   ]
 }
