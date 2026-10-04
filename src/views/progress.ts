@@ -1,8 +1,8 @@
 import { ALL, url, byCode, CONTINENTS, Country, inSet, SETS, SOVEREIGN } from '../data';
 import { attachTips, Status, STATUS_TEXT, statusOf } from '../tips';
-import { level, SessionLog, state, streak } from '../store';
+import { exportProgress, importProgress, level, resetProgress, SessionLog, state, streak } from '../store';
+import { applyTheme } from '../theme';
 import { $, $$, countryLink, esc, flagImg, plural, thumb } from '../ui';
-
 
 const INFO = {
   learned: "You've got this flag right over several days. It's solid enough that it only comes back every week or more for a quick check.",
@@ -52,6 +52,50 @@ function sessionRow(s: SessionLog) {
   </li>`;
 }
 
+const DATA = `
+  <h2 class="group-title">Your data</h2>
+  <section class="card">
+    <p class="muted">Progress is stored in this browser only. Save a backup to move it to another device.</p>
+    <div class="actions left">
+      <button class="btn ghost" data-act="export">Save backup</button>
+      <label class="btn ghost">Restore backup<input type="file" accept="application/json,.json" hidden data-act="import"></label>
+      <button class="btn ghost danger" data-act="reset">Start over</button>
+    </div>
+    <p class="notice muted" aria-live="polite"></p>
+  </section>`;
+
+function bindData(root: HTMLElement) {
+  const rerender = (message: string) => {
+    applyTheme();
+    progressView(root);
+    $('.notice', root).textContent = message;
+  };
+  $('[data-act=export]', root).addEventListener('click', () => {
+    const blob = new Blob([exportProgress()], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `learn-the-flags-${new Date().toISOString().slice(0, 10)}.json`;
+    a.click();
+    URL.revokeObjectURL(a.href);
+  });
+  $('[data-act=import]', root).addEventListener('change', async (e) => {
+    const file = (e.target as HTMLInputElement).files?.[0];
+    if (!file) return;
+    try {
+      importProgress(await file.text());
+      rerender('Backup restored.');
+    } catch (err) {
+      $('.notice', root).textContent = (err as Error).message;
+    }
+  });
+  $('[data-act=reset]', root).addEventListener('click', () => {
+    if (confirm('Erase all progress and start from scratch?')) {
+      resetProgress();
+      rerender('Progress erased.');
+    }
+  });
+}
+
 let gridFilter: Status | 'all' = 'all';
 
 export function progressView(root: HTMLElement) {
@@ -76,7 +120,9 @@ export function progressView(root: HTMLElement) {
         <h2>Nothing here yet</h2>
         <p class="muted">Finish your first lesson and your flags, streak and sessions will show up here.</p>
         <a class="btn primary" href="${url('study/')}">Start learning</a>
-      </section>`;
+      </section>
+      ${DATA}`;
+    bindData(root);
     return;
   }
 
@@ -175,9 +221,11 @@ export function progressView(root: HTMLElement) {
             : `<p class="muted">Your finished sessions will show up here.</p>`
         }
       </section>
-    </div>`;
+    </div>
+    ${DATA}`;
 
   attachTips(root);
+  bindData(root);
   const tiles = $$('.wall-flag', root);
   const apply = () => {
     tiles.forEach((t) => (t.hidden = gridFilter !== 'all' && t.dataset.status !== gridFilter));

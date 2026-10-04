@@ -16,17 +16,6 @@
 | [mledoze/countries](https://github.com/mledoze/countries) country facts | Mohammed Le Doze and contributors | [ODbL 1.0](https://opendatacommons.org/licenses/odbl/1-0/) |
 | [Population, total (SP.POP.TOTL)](https://data.worldbank.org/indicator/SP.POP.TOTL) | The World Bank | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 
-## Software
-
-| Work | Author | Licence |
-|---|---|---|
-| [FSRS](https://github.com/open-spaced-repetition/ts-fsrs) scheduling algorithm and default parameters | Open Spaced Repetition | MIT |
-| [d3-geo](https://github.com/d3/d3-geo) | Mike Bostock | ISC |
-| [topojson-client](https://github.com/topojson/topojson-client) | Mike Bostock | ISC |
-| [sharp](https://sharp.pixelplumbing.com) | Lovell Fuller | Apache 2.0 |
-| [Vite](https://vite.dev) | VoidZero and Vite contributors | MIT |
-| [TypeScript](https://www.typescriptlang.org) | Microsoft | Apache 2.0 |
-
 ## Typeface
 
 | Face | Copyright | Licence |
@@ -37,4 +26,3 @@
 
 - [Wikipedia](https://en.wikipedia.org), for checking official names, endonyms and flag histories.
 - The [Wikimedia Commons API](https://commons.wikimedia.org/w/api.php), for confirming each flag file is the current design.
-- [Playwright](https://playwright.dev), for checking every page in a real browser.

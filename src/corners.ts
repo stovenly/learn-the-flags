@@ -35,21 +35,41 @@ function corner(side: 'left' | 'right', label: string, face: string, body: strin
 }
 
 export function mountCorners() {
-  const sync = () => toggle.setAttribute('aria-checked', String(state.settings.dyslexic));
+  const THEMES = [
+    ['auto', 'System'],
+    ['light', 'Light'],
+    ['dark', 'Dark'],
+  ] as const;
   const gear = corner(
     'left',
-    'Accessibility',
+    'Display settings',
     GEAR,
-    '<button type="button" class="switch" role="switch"><span>Dyslexia-friendly font</span><span class="switch-track"></span></button>',
+    `<div class="gear-row"><span>Theme</span><div class="segmented" role="radiogroup" aria-label="Theme">${THEMES.map(
+      ([v, label]) => `<button type="button" role="radio" data-theme-value="${v}">${label}</button>`,
+    ).join('')}</div></div>
+    <button type="button" class="switch" role="switch"><span>Dyslexia-friendly font</span><span class="switch-track"></span></button>`,
     () => sync(),
   );
   const toggle = gear.querySelector<HTMLButtonElement>('.switch')!;
+  const themes = [...gear.querySelectorAll<HTMLButtonElement>('[data-theme-value]')];
+  const sync = () => {
+    toggle.setAttribute('aria-checked', String(state.settings.dyslexic));
+    for (const b of themes) b.setAttribute('aria-checked', String(b.dataset.themeValue === state.settings.theme));
+  };
   toggle.addEventListener('click', () => {
     state.settings.dyslexic = !state.settings.dyslexic;
     save();
     applyTheme();
     sync();
   });
+  for (const b of themes) {
+    b.addEventListener('click', () => {
+      state.settings.theme = b.dataset.themeValue as typeof state.settings.theme;
+      save();
+      applyTheme();
+      sync();
+    });
+  }
   sync();
 
   corner(
