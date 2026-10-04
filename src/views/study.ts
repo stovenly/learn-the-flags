@@ -14,23 +14,21 @@ const STYLES: [Settings['answerStyle'], string][] = [
   ['typing', 'Typing'],
 ];
 
-// "study/" and "study/new/" ask for lesson settings first; a trailing "go/" starts straight away.
+// "study/" asks for lesson settings first; "study/go/" starts straight away.
 export function studyView(root: HTMLElement, param: string) {
-  const parts = param.split('/');
-  const onlyNew = parts[0] === 'new';
   const plan = () => {
     const allDue = dueCards();
-    const due = onlyNew ? [] : allDue.slice(0, MAX_REVIEWS);
-    const fresh = onlyNew || allDue.length <= MAX_REVIEWS ? newCards().slice(0, state.settings.lessonSize) : [];
-    return { due, fresh, canLearn: onlyNew || allDue.length <= MAX_REVIEWS };
+    const due = allDue.slice(0, MAX_REVIEWS);
+    const fresh = allDue.length <= MAX_REVIEWS ? newCards().slice(0, state.settings.lessonSize) : [];
+    return { due, fresh, canLearn: allDue.length <= MAX_REVIEWS };
   };
   const { due, fresh } = plan();
   if (!due.length && !fresh.length) {
     navigate(url(), true);
     return;
   }
-  if (parts.includes('go')) start(root, due, fresh);
-  else setup(root, onlyNew, plan);
+  if (param === 'go') start(root, due, fresh);
+  else setup(root, plan);
 }
 
 function start(root: HTMLElement, due: ReturnType<typeof dueCards>, fresh: ReturnType<typeof newCards>) {
@@ -46,7 +44,7 @@ function start(root: HTMLElement, due: ReturnType<typeof dueCards>, fresh: Retur
   });
 }
 
-function setup(root: HTMLElement, onlyNew: boolean, plan: () => { due: unknown[]; fresh: unknown[]; canLearn: boolean }) {
+function setup(root: HTMLElement, plan: () => { due: unknown[]; fresh: unknown[]; canLearn: boolean }) {
   document.body.dataset.route = 'setup';
   const radios = <T,>(key: keyof Settings, label: string, options: [T, string][]) =>
     `<div class="setup-row">
@@ -62,7 +60,7 @@ function setup(root: HTMLElement, onlyNew: boolean, plan: () => { due: unknown[]
   const { canLearn, due } = plan();
   root.innerHTML = `
     <article class="card stage quiz-kind fade-in">
-      <span class="pill">${onlyNew || !due.length ? 'Lesson' : 'Session'}</span>
+      <span class="pill">${due.length ? 'Session' : 'Lesson'}</span>
       <h1>Today's flags</h1>
       <p class="muted setup-summary">${summary()}</p>
       <div class="setup">
@@ -71,7 +69,7 @@ function setup(root: HTMLElement, onlyNew: boolean, plan: () => { due: unknown[]
       </div>
       <div class="setup-actions">
         <a class="back" href="${url()}">← Back</a>
-        <a class="btn primary" href="${url(onlyNew ? 'study/new/go/' : 'study/go/')}">Start ${icon('arrow')}</a>
+        <a class="btn primary" href="${url('study/go/')}">Start ${icon('arrow')}</a>
       </div>
     </article>`;
   for (const b of $$('[data-key]', root)) {

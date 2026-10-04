@@ -142,7 +142,7 @@ function paint(root: HTMLElement, keepScroll?: number, focus?: string) {
   let next = '';
   if (due) {
     status = `${plural(due, 'flag')} to review`;
-    actions = `<a class="btn primary" href="${url('study/')}">Review ${icon('arrow')}</a>${upcoming.length ? `<a class="btn ghost" href="${url('study/new/')}">Learn new flags</a>` : ''}`;
+    actions = `<a class="btn primary" href="${url('study/')}">Start ${icon('arrow')}</a>`;
   } else if (upcoming.length) {
     status = "Today's flags";
     actions = `<a class="btn primary" href="${url('study/')}">${started ? 'Start' : 'Start learning'} ${icon('arrow')}</a>`;

@@ -130,7 +130,7 @@
       </div>
       <div class="set-others">${i.filter(e=>e.id!==a).map(t=>xt(t.id,e)).join(``)}</div>
     </div>
-  </section>`}function Ct(e){let t=t=>Tt(e,scrollY,t);for(let n of q(`[data-set]`,e))n.addEventListener(`click`,()=>{n.dataset.set!==N.settings.set&&(Ee(n.dataset.set),t(`[data-set="${n.dataset.set}"]`))});for(let n of q(`[data-continent]`,e))n.addEventListener(`click`,()=>{let e=n.dataset.continent,r=N.settings.continents,i=e===`all`?c:r.length===c.length?[e]:r.includes(e)?r.filter(t=>t!==e):[...r,e];i.length||(i=c),!(N.settings.set===`sovereign`&&i.length===r.length&&i.every(e=>r.includes(e)))&&(Ee(a,c.filter(e=>i.includes(e))),t(`[data-continent="${e}"]`))})}function wt(e){Tt(e),tt(e)}function Tt(e,t,n){let r=F(),i=vt(r),a=Oe().length,o=ke(),s=Object.keys(N.cards).length>0,c=Ae(),l=ut.map(e=>N.quizzes[`${Fe()}:${e.slug}`]).filter(e=>!!e).sort((e,t)=>t.correct/t.total-e.correct/e.total)[0],u=[],d,f,m=``;a?(d=`${J(a,`flag`)} to review`,f=`<a class="btn primary" href="${p(`study/`)}">Review ${U(`arrow`)}</a>${o.length?`<a class="btn ghost" href="${p(`study/new/`)}">Learn new flags</a>`:``}`):o.length?(d=`Today's flags`,f=`<a class="btn primary" href="${p(`study/`)}">${s?`Start`:`Start learning`} ${U(`arrow`)}</a>`,m=_t(o.slice(0,N.settings.lessonSize),u)):(d=`All learned`,f=`<a class="btn ghost" href="${p(`flags/`)}">Browse flags</a>`);let h=Fe();mt.get(h)?.length!==Math.min(15,r.length)&&mt.set(h,B(r).slice(0,15));let g=mt.get(h);g.forEach(e=>u.push(v(e.code,320))),Xe(e,`
+  </section>`}function Ct(e){let t=t=>Tt(e,scrollY,t);for(let n of q(`[data-set]`,e))n.addEventListener(`click`,()=>{n.dataset.set!==N.settings.set&&(Ee(n.dataset.set),t(`[data-set="${n.dataset.set}"]`))});for(let n of q(`[data-continent]`,e))n.addEventListener(`click`,()=>{let e=n.dataset.continent,r=N.settings.continents,i=e===`all`?c:r.length===c.length?[e]:r.includes(e)?r.filter(t=>t!==e):[...r,e];i.length||(i=c),!(N.settings.set===`sovereign`&&i.length===r.length&&i.every(e=>r.includes(e)))&&(Ee(a,c.filter(e=>i.includes(e))),t(`[data-continent="${e}"]`))})}function wt(e){Tt(e),tt(e)}function Tt(e,t,n){let r=F(),i=vt(r),a=Oe().length,o=ke(),s=Object.keys(N.cards).length>0,c=Ae(),l=ut.map(e=>N.quizzes[`${Fe()}:${e.slug}`]).filter(e=>!!e).sort((e,t)=>t.correct/t.total-e.correct/e.total)[0],u=[],d,f,m=``;a?(d=`${J(a,`flag`)} to review`,f=`<a class="btn primary" href="${p(`study/`)}">Start ${U(`arrow`)}</a>`):o.length?(d=`Today's flags`,f=`<a class="btn primary" href="${p(`study/`)}">${s?`Start`:`Start learning`} ${U(`arrow`)}</a>`,m=_t(o.slice(0,N.settings.lessonSize),u)):(d=`All learned`,f=`<a class="btn ghost" href="${p(`flags/`)}">Browse flags</a>`);let h=Fe();mt.get(h)?.length!==Math.min(15,r.length)&&mt.set(h,B(r).slice(0,15));let g=mt.get(h);g.forEach(e=>u.push(v(e.code,320))),Xe(e,`
     ${s?`<h1 class="sr-only">Learn the Flags</h1>`:`<h1 class="home-title">Learn every flag in the world</h1>`}
 
     ${St(u)}
@@ -157,23 +157,23 @@
       </section>
     </div>
 
-    ${ht(u)}`,u,t===void 0?350:0).then(r=>{r&&(Ct(e),t!==void 0&&scrollTo(0,t),n&&e.querySelector(n)?.focus({preventScroll:!0}))})}var Et=30,Dt=[3,5,8,10],Ot=[[`auto`,`Mix`],[`choice`,`Picking`],[`typing`,`Typing`]];function kt(e,t){let n=t.split(`/`),r=n[0]===`new`,i=()=>{let e=Oe();return{due:r?[]:e.slice(0,Et),fresh:r||e.length<=Et?ke().slice(0,N.settings.lessonSize):[],canLearn:r||e.length<=Et}},{due:a,fresh:o}=i();if(!a.length&&!o.length){E(p(),!0);return}n.includes(`go`)?At(e,a,o):jt(e,r,i)}function At(e,t,n){document.body.dataset.route=`study`,lt(e,{items:at(t,n),scheduled:!0,title:n.length&&!t.length?`Lesson`:`Session`,onDone:()=>{let e=Oe().length>0||ke().length>0;return`<a class="btn ghost" href="${p()}">Home</a>${e?`<a class="btn primary" href="${p(`study/go/`)}">Keep going</a>`:``}`}})}function jt(e,t,n){document.body.dataset.route=`setup`;let r=(e,t,n)=>`<div class="setup-row">
+    ${ht(u)}`,u,t===void 0?350:0).then(r=>{r&&(Ct(e),t!==void 0&&scrollTo(0,t),n&&e.querySelector(n)?.focus({preventScroll:!0}))})}var Et=30,Dt=[3,5,8,10],Ot=[[`auto`,`Mix`],[`choice`,`Picking`],[`typing`,`Typing`]];function kt(e,t){let n=()=>{let e=Oe();return{due:e.slice(0,Et),fresh:e.length<=Et?ke().slice(0,N.settings.lessonSize):[],canLearn:e.length<=Et}},{due:r,fresh:i}=n();if(!r.length&&!i.length){E(p(),!0);return}t===`go`?At(e,r,i):jt(e,n)}function At(e,t,n){document.body.dataset.route=`study`,lt(e,{items:at(t,n),scheduled:!0,title:n.length&&!t.length?`Lesson`:`Session`,onDone:()=>{let e=Oe().length>0||ke().length>0;return`<a class="btn ghost" href="${p()}">Home</a>${e?`<a class="btn primary" href="${p(`study/go/`)}">Keep going</a>`:``}`}})}function jt(e,t){document.body.dataset.route=`setup`;let n=(e,t,n)=>`<div class="setup-row">
       <span class="setup-label">${t}</span>
       <div class="chips" role="radiogroup" aria-label="${t}">${n.map(([t,n])=>`<button class="chip${N.settings[e]===t?` active`:``}" role="radio" aria-checked="${N.settings[e]===t}" data-key="${e}" data-value="${t}">${n}</button>`).join(``)}</div>
-    </div>`,i=()=>{let{due:e,fresh:t}=n();return[e.length?J(e.length,`review`):``,t.length?`${J(t.length,`new flag`)}`:``].filter(Boolean).join(` · `)},{canLearn:a,due:o}=n();e.innerHTML=`
+    </div>`,r=()=>{let{due:e,fresh:n}=t();return[e.length?J(e.length,`review`):``,n.length?`${J(n.length,`new flag`)}`:``].filter(Boolean).join(` · `)},{canLearn:i,due:a}=t();e.innerHTML=`
     <article class="card stage quiz-kind fade-in">
-      <span class="pill">${t||!o.length?`Lesson`:`Session`}</span>
+      <span class="pill">${a.length?`Session`:`Lesson`}</span>
       <h1>Today's flags</h1>
-      <p class="muted setup-summary">${i()}</p>
+      <p class="muted setup-summary">${r()}</p>
       <div class="setup">
-        ${a?r(`lessonSize`,`New flags`,Dt.map(e=>[e,String(e)])):``}
-        ${r(`answerStyle`,`Answer by`,Ot)}
+        ${i?n(`lessonSize`,`New flags`,Dt.map(e=>[e,String(e)])):``}
+        ${n(`answerStyle`,`Answer by`,Ot)}
       </div>
       <div class="setup-actions">
         <a class="back" href="${p()}">← Back</a>
-        <a class="btn primary" href="${p(t?`study/new/go/`:`study/go/`)}">Start ${U(`arrow`)}</a>
+        <a class="btn primary" href="${p(`study/go/`)}">Start ${U(`arrow`)}</a>
       </div>
-    </article>`;for(let t of q(`[data-key]`,e))t.addEventListener(`click`,()=>{let n=t.dataset.key,r=n===`lessonSize`?Number(t.dataset.value):t.dataset.value;N.settings[n]=r,P();for(let r of q(`[data-key="${n}"]`,e)){let e=r===t;r.classList.toggle(`active`,e),r.setAttribute(`aria-checked`,String(e))}K(`.setup-summary`,e).textContent=i()});K(`.btn.primary`,e).focus({preventScroll:!0})}var Mt=``,Z=`all`,Q=`all`;function Nt(e){let t=(e,t,n,r)=>`<button class="chip${r?` active`:``}" data-${e}="${z(t)}">${z(n)}</button>`;e.innerHTML=`
+    </article>`;for(let t of q(`[data-key]`,e))t.addEventListener(`click`,()=>{let n=t.dataset.key,i=n===`lessonSize`?Number(t.dataset.value):t.dataset.value;N.settings[n]=i,P();for(let r of q(`[data-key="${n}"]`,e)){let e=r===t;r.classList.toggle(`active`,e),r.setAttribute(`aria-checked`,String(e))}K(`.setup-summary`,e).textContent=r()});K(`.btn.primary`,e).focus({preventScroll:!0})}var Mt=``,Z=`all`,Q=`all`;function Nt(e){let t=(e,t,n,r)=>`<button class="chip${r?` active`:``}" data-${e}="${z(t)}">${z(n)}</button>`;e.innerHTML=`
     <header class="page-head">
       <h1>All flags</h1>
       <p class="muted">${n.length} flags in ${i.length} sets. Pick one to see what it means and how to tell it from lookalikes.</p>
