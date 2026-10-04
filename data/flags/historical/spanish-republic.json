@@ -4,7 +4,7 @@
   "name": "Second Spanish Republic",
   "the": true,
   "officialName": "Spanish Republic",
-  "localNames": [
+  "endonyms": [
     {
       "language": "Spanish",
       "name": "República Española",

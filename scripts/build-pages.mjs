@@ -54,7 +54,7 @@ async function write(route, html) {
   await fs.writeFile(path.join(OUT, route, 'index.html'), rooted(html, '../'.repeat(route.split('/').filter(Boolean).length) || './'));
 }
 
-const localName = (c) => c.localLine;
+const endonymLine = (c) => c.endonym;
 const flagHref = (c) => `flags/${c.slug}/`;
 const img = (c, size = 640) =>
   `<img class="flag flag-${size === 320 ? 'sm' : 'lg'}" src="img/flags/${size}/${c.code}.webp" width="640" height="${Math.round(640 / c.ratio)}" alt="Flag of ${esc(c.theName)}" style="--ratio:${c.ratio}"${size === 320 ? ' loading="lazy"' : ''} decoding="async">`;
@@ -76,8 +76,8 @@ for (const c of countries) {
 <article>
 <div class="card">${img(c)}</div>
 <h1>Flag of ${esc(c.theName)}</h1>
-${c.officialName && c.officialName !== c.name ? `<p class="local-name"><span class="name-label">Officially</span> ${esc(c.officialName)}</p>` : ''}
-${localName(c) && localName(c) !== c.officialName ? `<p class="local-name">${esc(localName(c))}</p>` : ''}
+${c.officialName && c.officialName !== c.name ? `<p class="official-name"><span class="name-label">Officially</span> ${esc(c.officialName)}</p>` : ''}
+${endonymLine(c) && endonymLine(c) !== c.officialName ? `<p class="endonym">${esc(endonymLine(c))}</p>` : ''}
 ${c.hasMap ? `<div class="card"><img class="map map-lg" src="img/maps/${c.code}.svg" width="150" height="100" alt="Map showing where ${esc(c.name)} is" loading="lazy"></div>` : ''}
 <section class="card">
 <h2>What the flag looks like</h2>

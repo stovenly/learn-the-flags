@@ -4,7 +4,7 @@
   "name": "Holy Roman Empire",
   "the": true,
   "officialName": "Holy Roman Empire",
-  "localNames": [
+  "endonyms": [
     {
       "language": "German",
       "name": "Heiliges Römisches Reich",

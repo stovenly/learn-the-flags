@@ -4,7 +4,7 @@
   "name": "Empire of Japan",
   "the": true,
   "officialName": "Empire of Great Japan",
-  "localNames": [
+  "endonyms": [
     {
       "language": "Japanese",
       "name": "大日本帝国",

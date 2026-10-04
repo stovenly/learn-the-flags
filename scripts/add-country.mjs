@@ -39,7 +39,7 @@ for (const code of codes) {
     isoNumeric: c.ccn3 ?? '',
     name: c.name.common,
     officialName: c.name.official,
-    localNames: Object.entries(c.name.native ?? {}).map(([k, v]) => ({ language: c.languages?.[k] ?? k, name: v.common, romanized: '' })),
+    endonyms: Object.entries(c.name.native ?? {}).map(([k, v]) => ({ language: c.languages?.[k] ?? k, name: v.common, romanized: '' })),
     aliases: [],
     status,
     capital: c.capital?.join(', ') ?? '',

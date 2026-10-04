@@ -4,7 +4,7 @@
   "name": "Philippines",
   "the": true,
   "officialName": "Republic of the Philippines",
-  "localNames": [
+  "endonyms": [
     {
       "language": "Filipino",
       "name": "Pilipinas",

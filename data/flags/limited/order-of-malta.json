@@ -4,7 +4,7 @@
   "name": "Order of Malta",
   "the": true,
   "officialName": "Sovereign Military Hospitaller Order of Saint John of Jerusalem, of Rhodes and of Malta",
-  "localNames": [
+  "endonyms": [
     {
       "language": "Italian",
       "name": "Sovrano Militare Ordine di Malta",

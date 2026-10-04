@@ -29,7 +29,7 @@ export function browseView(root: HTMLElement) {
         <div class="grid">
           ${inSet(s.id)
             .map(
-              (c) => `<a class="tile" href="${countryLink(c)}" data-continent="${c.continent ?? ''}" data-search="${esc(normalize(`${c.name} ${c.aliases.join(' ')} ${c.localNames.map((l) => `${l.name} ${l.romanized}`).join(' ')}`))}">
+              (c) => `<a class="tile" href="${countryLink(c)}" data-continent="${c.continent ?? ''}" data-search="${esc(normalize(`${c.name} ${c.aliases.join(' ')} ${c.endonyms.map((l) => `${l.name} ${l.romanized}`).join(' ')}`))}">
                 <div class="tile-flag">${flagImg(c, { size: 'sm', lazy: true, alt: '' })}</div>
                 <span class="tile-name">${esc(c.name)}${level(c.code) === 'new' ? '' : `<span class="dot dot-${level(c.code)}" aria-label="${level(c.code) === 'learning' ? 'Learning' : 'Learned'}"></span>`}</span>
               </a>`,

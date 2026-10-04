@@ -4,7 +4,7 @@
   "name": "Republic of Venice",
   "the": true,
   "officialName": "Most Serene Republic of Venice",
-  "localNames": [
+  "endonyms": [
     {
       "language": "Italian",
       "name": "Serenissima Repubblica di Venezia",

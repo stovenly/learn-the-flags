@@ -108,8 +108,8 @@ const slugify = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().
 
 // "Nippon · 日本": the place's own name in its first language, romanization first when it has one; empty when it
 // would only repeat the English name.
-function localLine(c) {
-  const l = c.localNames?.[0];
+function endonym(c) {
+  const l = c.endonyms?.[0];
   const line = l ? [l.romanized, l.name].filter(Boolean).join(' · ') : '';
   return line === c.name ? '' : line;
 }
@@ -148,8 +148,8 @@ const out = countries
       capital: c.capital ?? '',
       population: c.population ?? null,
       area: c.area ?? null,
-      localNames: c.localNames ?? [],
-      localLine: localLine(c),
+      endonyms: c.endonyms ?? [],
+      endonym: endonym(c),
       languages: c.languages ?? [],
       currencies: c.currencies ?? [],
       demonym: c.demonym ?? '',

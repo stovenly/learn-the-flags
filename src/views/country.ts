@@ -1,4 +1,4 @@
-import { ALL, url, currencyText, fmtNumber, fmtPopulation, localNameText, preload, preloadMap, setById, SOVEREIGN, STATUS_LABEL } from '../data';
+import { ALL, url, currencyText, fmtNumber, fmtPopulation, endonymText, preload, preloadMap, setById, SOVEREIGN, STATUS_LABEL } from '../data';
 import { level } from '../store';
 import { esc, flagImg, hookHtml, lookalikeList, mapImg, pairList, renderWhenReady } from '../ui';
 
@@ -38,8 +38,8 @@ export function countryView(root: HTMLElement, slug: string) {
         <div class="country-flag">${flagImg(c, { size: 'lg' })}</div>
         <div class="country-id">
           <h1>${esc(c.name)}</h1>
-          ${c.officialName && c.officialName !== c.name ? `<p class="local-name"><span class="name-label">Officially</span> ${esc(c.officialName)}</p>` : ''}
-          ${localNameText(c) && localNameText(c) !== c.officialName ? `<p class="local-name">${esc(localNameText(c))}</p>` : ''}
+          ${c.officialName && c.officialName !== c.name ? `<p class="official-name"><span class="name-label">Officially</span> ${esc(c.officialName)}</p>` : ''}
+          ${endonymText(c) && endonymText(c) !== c.officialName ? `<p class="endonym">${esc(endonymText(c))}</p>` : ''}
           <div class="tags">
             ${tags.map((t) => `<span class="tag">${esc(t)}</span>`).join('')}
             ${lv === 'new' ? '' : `<span class="tag tag-${lv === 'learning' ? 'learning' : 'learned'}">${lv === 'learning' ? 'Learning' : 'Learned'}</span>`}

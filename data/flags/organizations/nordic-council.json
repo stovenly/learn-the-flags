@@ -4,7 +4,7 @@
   "name": "Nordic Council",
   "the": true,
   "officialName": "Nordic Council",
-  "localNames": [
+  "endonyms": [
     {
       "language": "Danish",
       "name": "Nordisk Råd",

@@ -4,7 +4,7 @@
   "name": "Russian Empire",
   "the": true,
   "officialName": "Russian Empire",
-  "localNames": [
+  "endonyms": [
     {
       "language": "Russian",
       "name": "Российская империя",

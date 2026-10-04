@@ -4,7 +4,7 @@
   "name": "Dutch Republic",
   "the": true,
   "officialName": "Republic of the Seven United Netherlands",
-  "localNames": [
+  "endonyms": [
     {
       "language": "Dutch",
       "name": "Republiek der Zeven Verenigde Nederlanden",

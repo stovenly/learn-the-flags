@@ -4,7 +4,7 @@
   "name": "Kingdom of France",
   "the": true,
   "officialName": "Kingdom of France",
-  "localNames": [
+  "endonyms": [
     {
       "language": "French",
       "name": "Royaume de France",

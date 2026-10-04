@@ -4,7 +4,7 @@
   "name": "Arab Revolt",
   "the": true,
   "officialName": "Great Arab Revolt",
-  "localNames": [
+  "endonyms": [
     {
       "language": "Arabic",
       "name": "الثورة العربية الكبرى",

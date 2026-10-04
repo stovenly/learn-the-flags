@@ -1,4 +1,4 @@
-import { ALL, url, byCode, Country, localNameText, matchAnswer, preload, preloadMap, setById, SOVEREIGN } from '../data';
+import { ALL, url, byCode, Country, endonymText, matchAnswer, preload, preloadMap, setById, SOVEREIGN } from '../data';
 import { Again, Easy, Good, Grade, Hard, Memory, review } from '../srs';
 import { logSession, recordQuiz, save, state, today } from '../store';
 import { $, $$, countryLink, esc, flagImg, hookHtml, icon, lookalikeList, mapImg, nameLink, pairList, plural, shuffle, thumb } from '../ui';
@@ -266,7 +266,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
           <span class="pill">New flag</span>
           <div class="flag-stage">${flagImg(c, { size: 'lg' })}</div>
           <h2 class="intro-name">${nameLink(c)}</h2>
-          ${localNameText(c) ? `<p class="local-name">${esc(localNameText(c))}</p>` : ''}
+          ${endonymText(c) ? `<p class="endonym">${esc(endonymText(c))}</p>` : ''}
           <p class="muted intro-meta">${esc(c.subregion || c.region)}</p>
           ${mapImg(c, 'md')}
         </div>

@@ -4,7 +4,7 @@
   "name": "German Empire",
   "the": true,
   "officialName": "German Empire",
-  "localNames": [
+  "endonyms": [
     {
       "language": "German",
       "name": "Deutsches Kaiserreich",

@@ -4,7 +4,7 @@
   "name": "Soviet Union",
   "the": true,
   "officialName": "Union of Soviet Socialist Republics",
-  "localNames": [
+  "endonyms": [
     {
       "language": "Russian",
       "name": "Союз Советских Социалистических Республик",

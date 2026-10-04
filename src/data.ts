@@ -16,8 +16,8 @@ export interface Country {
   capital: string;
   population: number | null;
   area: number | null;
-  localNames: { language: string; name: string; romanized: string }[];
-  localLine: string; // "Nippon · 日本", built by build-data.mjs
+  endonyms: { language: string; name: string; romanized: string }[];
+  endonym: string; // "Nippon · 日本", built by build-data.mjs
   languages: string[];
   currencies: { name: string; code: string; symbol: string }[];
   demonym: string;
@@ -125,7 +125,7 @@ export type Match = 'exact' | 'typo' | 'wrong';
 export function matchAnswer(input: string, c: Country): Match {
   const guess = normalize(input);
   if (!guess) return 'wrong';
-  const local = c.localNames.flatMap((l) => [l.name, l.romanized]).filter(Boolean);
+  const local = c.endonyms.flatMap((l) => [l.name, l.romanized]).filter(Boolean);
   const targets = [c.name, c.officialName, ...c.aliases, ...local].map(normalize).filter(Boolean);
   if (targets.includes(guess)) return 'exact';
   // A typo must not land on a different country's name ("Niger" vs "Nigeria").
@@ -136,7 +136,7 @@ export function matchAnswer(input: string, c: Country): Match {
   return targets.some((t) => editDistance(guess, t) <= tolerance(t)) ? 'typo' : 'wrong';
 }
 
-export const localNameText = (c: Country) => c.localLine;
+export const endonymText = (c: Country) => c.endonym;
 
 export const currencyText = (c: Country) =>
   c.currencies.map((x) => (x.symbol && x.symbol !== x.code ? `${x.name} (${x.symbol})` : x.name)).join(', ');
