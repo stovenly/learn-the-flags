@@ -1,7 +1,7 @@
 import { byCode, url, CONTINENTS, Country, FlagSet, inSet, preload, setById, SETS, SOVEREIGN } from '../data';
 import { chooseDeck, deck, deckKey, dueCards, level, newCards, state, streak } from '../store';
 import { attachTips } from '../tips';
-import { $$, countryLink, esc, icon, plural, renderWhenReady, sample, shuffle, thumb } from '../ui';
+import { $$, countryLink, esc, flagImg, icon, plural, renderWhenReady, sample, shuffle, thumb } from '../ui';
 
 // One pick per visit, so changing the set doesn't swap the card and jolt the page.
 let fact: { c: Country; text: string } | null = null;
@@ -54,12 +54,12 @@ const SET_ICONS: Record<string, string> = {
 
 function cover(s: FlagSet, images: Promise<void>[]) {
   if (s.cover.startsWith('icon:')) {
-    return `<span class="thumb set-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${SET_ICONS[s.cover.slice(5)]}</svg></span>`;
+    return `<span class="set-cover set-icon icon-${s.cover.slice(5)}"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${SET_ICONS[s.cover.slice(5)]}</svg></span>`;
   }
   const c = byCode.get(s.cover);
   if (!c) return '';
   images.push(preload(c.code, 320));
-  return thumb(c);
+  return `<span class="set-cover">${flagImg(c, { size: 'sm', alt: '' })}</span>`;
 }
 
 function setOption(id: string, images: Promise<void>[]) {

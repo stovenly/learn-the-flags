@@ -504,10 +504,16 @@ a.mode-meta:hover { color: var(--text); }
 .set-option:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--border)); }
 .set-option[aria-checked="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); background: color-mix(in srgb, var(--accent) 8%, var(--surface)); }
 .set-option:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-.set-option .thumb { width: 36px; flex-shrink: 0; }
 .set-name { font-weight: 550; }
-.set-icon { aspect-ratio: 3 / 2; display: grid; place-items: center; border-radius: 4px; background: color-mix(in srgb, var(--accent) 12%, var(--surface)); color: var(--accent); }
-.set-icon svg { width: 18px; height: 18px; }
+/* Every cover fills the same 3:2 box: flags are cropped to it, icons sit on a solid colour like a flag would. */
+.set-cover { width: 36px; aspect-ratio: 3 / 2; flex-shrink: 0; border-radius: 4px; overflow: hidden; box-shadow: 0 0 0 1px var(--flag-edge); }
+.set-cover .flag { width: 100%; height: 100%; object-fit: cover; border-radius: 0; box-shadow: none; }
+.set-icon { display: grid; place-items: center; color: #fff; }
+.set-icon svg { width: 17px; height: 17px; }
+.icon-globe { background: #2f6fd6; }
+.icon-island { background: #0f9488; }
+.icon-contested { background: #d9622b; }
+.icon-hourglass { background: #8a6a3a; }
 .tip-target { display: inline-block; border-radius: 4px; }
 .tip-target:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .set-count { color: var(--muted); font-size: 0.8rem; font-variant-numeric: tabular-nums; }
