@@ -120,7 +120,6 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
   let done = 0;
   let current: Item | undefined;
   let keyHandler: ((e: KeyboardEvent) => void) | null = null;
-  let timer = 0;
   const startedAt = Date.now();
   let logged = false;
   const record = () => {
@@ -159,7 +158,6 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
   document.addEventListener('keydown', onKey);
   onCleanup(() => {
     document.removeEventListener('keydown', onKey);
-    clearTimeout(timer);
     record();
   });
 
@@ -177,7 +175,6 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
   async function next() {
     if (advancing) return;
     advancing = true;
-    clearTimeout(timer);
     keyHandler = null;
     current = queue.shift();
     updateBar();
@@ -319,7 +316,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
       ${withMap && c.hasMap ? `<div class="fb-map">${mapImg(c, 'md')}</div>` : ''}`;
   }
 
-  function afterAnswer(item: Quiz, ok: boolean, extra = '') {
+  function afterAnswer(extra = '') {
     const actions = $('.actions', stage);
     actions.innerHTML = `${extra}<button class="btn primary" data-act="continue">Continue <kbd>Enter</kbd></button>`;
     const go = once(next);
@@ -331,7 +328,6 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
         go();
       }
     };
-    if (ok) timer = window.setTimeout(go, 900);
   }
 
   // Wide screens show the answer's map under the flag instead of the thumbnail in the feedback.
@@ -420,7 +416,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
         slot.innerHTML = feedbackHtml(c, ok, ok ? undefined : chosen, undefined, item.mode !== 'pick-flag', item.mode !== 'pick-flag');
         if (item.mode === 'pick-name') showAnswerMap(c);
         if (item.mode === 'pick-flag') $('.quiz-name', stage).innerHTML = nameLink(c);
-        afterAnswer(item, ok);
+        afterAnswer();
       };
       buttons.forEach((b) => b.addEventListener('click', () => choose(b.dataset.code!)));
       keyHandler = (e) => {
@@ -449,12 +445,12 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
       slot.innerHTML = feedbackHtml(c, ok, ok ? undefined : guessed, match === 'typo' ? `spelled “${c.name}”` : undefined);
       showAnswerMap(c);
       if (!ok && text && !guessed) {
-        afterAnswer(item, false, `<button class="btn quiet" data-act="accept">I was right</button>`);
+        afterAnswer(`<button class="btn quiet" data-act="accept">I was right</button>`);
         $('[data-act=accept]', stage).addEventListener('click', once(() => {
           unschedule(item, prev, Good);
           next();
         }));
-      } else afterAnswer(item, ok && match === 'exact');
+      } else afterAnswer();
     };
     $('.type-form', stage).addEventListener('submit', (e) => {
       e.preventDefault();

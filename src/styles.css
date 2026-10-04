@@ -383,6 +383,7 @@ kbd {
 }
 
 /* Callouts: a memory hook, or how to tell two flags apart */
+.inline-flag { display: inline-block; height: 0.8em; width: auto; margin: 0 0.15em 0 0.3em; vertical-align: -0.04em; border-radius: 2px; box-shadow: 0 0 0 1px var(--flag-edge); }
 .note {
   display: flex;
   gap: 12px;

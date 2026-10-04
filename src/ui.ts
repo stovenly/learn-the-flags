@@ -45,8 +45,12 @@ export const icon = (name: keyof typeof ICONS, cls = 'icon') =>
 // A flag centred in a fixed 3:2 frame, so rows and grids line up whatever the flag's proportions.
 export const thumb = (c: Country, lazy = false) => `<span class="thumb">${flagImg(c, { size: 'sm', lazy, alt: '' })}</span>`;
 
+// Each flag the hook names gets a small copy of itself right after the name.
+export const hookText = (c: Country) =>
+  c.hookParts.map((p) => (typeof p === 'string' ? esc(p) : `${esc(p[0])}<img class="inline-flag" src="${flagSrc(p[1], 320)}" alt="" decoding="async">`)).join('');
+
 export function hookHtml(c: Country, label = 'Memory hook') {
-  return c.hook ? `<div class="note note-hook">${icon('hook')}<div><span class="note-label">${label}</span><p>${esc(c.hook)}</p></div></div>` : '';
+  return c.hook ? `<div class="note note-hook">${icon('hook')}<div><span class="note-label">${label}</span><p>${hookText(c)}</p></div></div>` : '';
 }
 
 // One row per lookalike: its flag, its name, and how to tell it apart from `c`.

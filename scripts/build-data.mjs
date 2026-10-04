@@ -114,6 +114,34 @@ function endonym(c) {
   return line === c.name ? '' : line;
 }
 
+// Every flag's name (and name-like aliases) longest first, so "Equatorial Guinea" wins over "Guinea" and "New Jersey" over "Jersey".
+const named = new Map();
+for (const o of countries.filter((o) => images[o.code])) {
+  const abbrev = (a) => /^[A-Z]{2,}$/.test(a) && !['us-states', 'canada'].includes(o.set);
+  for (const n of [o.name, ...(o.aliases ?? []).filter((a) => (/^[A-Z][a-z]/.test(a) && a.length > 3) || abbrev(a))]) named.set(n, [...(named.get(n) ?? []), o]);
+}
+// Place names that contain a flag's name without meaning it.
+for (const n of ['North America', 'South America', 'Central America', 'Latin America', 'New Guinea', 'Northern Ireland']) if (!named.has(n)) named.set(n, []);
+const escRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const mention = new RegExp(`(?<![\\w-])(${[...named.keys()].sort((a, b) => b.length - a.length).map(escRe).join('|')})(?:'s)?(?![\\w-])`, 'g');
+
+// The hook as plain strings and [text, code] for the first mention of each flag; same-set and sovereign flags win name clashes.
+function hookParts(c) {
+  const parts = [];
+  const seen = new Set();
+  let at = 0;
+  for (const m of c.hook.matchAll(mention)) {
+    const pool = named.get(m[1]);
+    const o = pool.find((o) => o.code === c.code) ?? pool.find((o) => o.set === c.set) ?? pool.find((o) => o.set === 'sovereign') ?? pool[0];
+    if (!o || seen.has(o.code)) continue;
+    seen.add(o.code);
+    parts.push(c.hook.slice(at, m.index), [m[0], o.code]);
+    at = m.index + m[0].length;
+  }
+  parts.push(c.hook.slice(at));
+  return parts.filter((p) => p !== '');
+}
+
 const continent = (c) => (c.region !== 'Americas' ? c.region : c.subregion === 'South America' ? 'South America' : 'North America');
 const order = new Map(sets.flatMap((s) => (s.order ?? []).map((code, i) => [code, i])));
 
@@ -156,6 +184,7 @@ const out = countries
       facts: c.facts ?? [],
       flag: c.flag,
       hook: c.hook,
+      hookParts: c.hook ? hookParts(c) : [],
       trivia: c.trivia ?? [],
       lookalikes,
       identical: countries.filter((o) => o.code !== c.code && ((c.identical ?? []).includes(o.code) || (o.identical ?? []).includes(c.code))).map((o) => o.code),

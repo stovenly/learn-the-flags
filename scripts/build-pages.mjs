@@ -55,6 +55,8 @@ async function write(route, html) {
 }
 
 const endonymLine = (c) => c.endonym;
+const hookText = (c) =>
+  c.hookParts.map((p) => (typeof p === 'string' ? esc(p) : `${esc(p[0])}<img class="inline-flag" src="img/flags/320/${p[1]}.webp" alt="">`)).join('');
 const flagHref = (c) => `flags/${c.slug}/`;
 const img = (c, size = 640) =>
   `<img class="flag flag-${size === 320 ? 'sm' : 'lg'}" src="img/flags/${size}/${c.code}.webp" width="640" height="${Math.round(640 / c.ratio)}" alt="Flag of ${esc(c.theName)}" style="--ratio:${c.ratio}"${size === 320 ? ' loading="lazy"' : ''} decoding="async">`;
@@ -83,7 +85,7 @@ ${c.hasMap ? `<div class="card"><img class="map map-lg" src="img/maps/${c.code}.
 <h2>What the flag looks like</h2>
 <p>${esc(c.flag.description)}</p>
 ${c.flag.symbolism ? `<h2>What it means</h2><p>${esc(c.flag.symbolism)}</p>` : ''}
-${c.hook ? `<h2>How to remember it</h2><p>${esc(c.hook)}</p>` : ''}
+${c.hook ? `<h2>How to remember it</h2><p>${hookText(c)}</p>` : ''}
 </section>
 ${c.trivia.length ? `<section class="card"><h2>Fun facts</h2><ul>${c.trivia.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></section>` : ''}
 <section class="card"><h2>${esc(c.name)} at a glance</h2><dl class="facts">${facts.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl></section>

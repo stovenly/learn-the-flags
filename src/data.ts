@@ -24,6 +24,7 @@ export interface Country {
   facts: [string, string][];
   flag: { description: string; adopted: string; colors: string[]; symbolism: string };
   hook: string;
+  hookParts: (string | [string, string])[]; // [text, flag code] marks a mention of that flag
   trivia: string[];
   lookalikes: string[];
   identical: string[]; // flags with the same design, never offered as each other's wrong answer
