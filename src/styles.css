@@ -163,8 +163,7 @@ a:hover { text-decoration: underline; }
 .nav a:hover { color: var(--text); text-decoration: none; background: var(--surface-2); }
 .nav a.active { color: var(--text); background: var(--surface-2); }
 
-body[data-route='study'] .site-header,
-body[data-route='study'] .corner { display: none; }
+body[data-route='study'] .site-header { display: none; }
 
 #app { flex: 1; padding-top: 32px; padding-bottom: 88px; }
 
@@ -610,7 +609,7 @@ a.mode-meta:hover { color: var(--text); }
 }
 
 /* Study session */
-body[data-route='study'] #app { padding-top: 16px; }
+body[data-route='study'] #app { padding-top: clamp(28px, 7vh, 64px); }
 .session { max-width: 620px; margin: 0 auto; }
 .session-bar { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
 .progress { flex: 1; height: 8px; border-radius: 99px; background: var(--surface-2); overflow: hidden; }

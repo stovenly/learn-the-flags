@@ -39,7 +39,7 @@ export function countryView(root: HTMLElement, slug: string) {
         <div class="country-id">
           <h1>${esc(c.name)}</h1>
           ${c.officialName && c.officialName !== c.name ? `<p class="official-name"><span class="name-label">Officially</span> ${esc(c.officialName)}</p>` : ''}
-          ${endonymText(c) && endonymText(c) !== c.officialName ? `<p class="endonym">${esc(endonymText(c))}</p>` : ''}
+          ${endonymText(c) && endonymText(c) !== c.officialName ? `<p class="endonym"><span class="name-label">Locally</span> ${esc(endonymText(c))}</p>` : ''}
           <div class="tags">
             ${tags.map((t) => `<span class="tag">${esc(t)}</span>`).join('')}
             ${lv === 'new' ? '' : `<span class="tag tag-${lv === 'learning' ? 'learning' : 'learned'}">${lv === 'learning' ? 'Learning' : 'Learned'}</span>`}

@@ -186,7 +186,7 @@
         <div class="country-id">
           <h1>${I(r.name)}</h1>
           ${r.officialName&&r.officialName!==r.name?`<p class="official-name"><span class="name-label">Officially</span> ${I(r.officialName)}</p>`:``}
-          ${x(r)&&x(r)!==r.officialName?`<p class="endonym">${I(x(r))}</p>`:``}
+          ${x(r)&&x(r)!==r.officialName?`<p class="endonym"><span class="name-label">Locally</span> ${I(x(r))}</p>`:``}
           <div class="tags">
             ${a.map(e=>`<span class="tag">${I(e)}</span>`).join(``)}
             ${i===`new`?``:`<span class="tag tag-${i===`learning`?`learning`:`learned`}">${i===`learning`?`Learning`:`Learned`}</span>`}
