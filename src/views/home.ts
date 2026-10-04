@@ -7,7 +7,7 @@ import { $$, countryLink, esc, flagImg, icon, plural, renderWhenReady, sample, s
 // Quiz card flags per selection, so going back to a selection shows the same ones.
 const previews = new Map<string, Country[]>();
 
-// One pick per visit, so changing the set doesn't swap the card and jolt the page.
+// One pick per page load, so re-rendering home (changing the set, clicking the logo) keeps the same card.
 let fact: { c: Country; text: string } | null = null;
 
 function didYouKnow(images: Promise<void>[]): string {
@@ -88,7 +88,7 @@ function filter(images: Promise<void>[]) {
         ${setOption(SOVEREIGN, images)}
         ${
           set === SOVEREIGN
-            ? `<div class="continents" role="group" aria-label="Continents">${chip('all', 'All', all)}${CONTINENTS.map((k) => chip(k, k, !all && continents.includes(k))).join('')}</div>`
+            ? `<div class="continents" role="group" aria-label="Continents">${chip('all', 'All', all)}<span class="chip-divider" aria-hidden="true"></span>${CONTINENTS.map((k) => chip(k, k, !all && continents.includes(k))).join('')}</div>`
             : ''
         }
       </div>
@@ -121,7 +121,6 @@ function bindPicker(root: HTMLElement) {
 }
 
 export function homeView(root: HTMLElement) {
-  fact = null;
   paint(root);
   attachTips(root);
 }
