@@ -1,0 +1,57 @@
+{
+  "code": "es-ce",
+  "isoNumeric": "",
+  "name": "Ceuta",
+  "officialName": "Autonomous City of Ceuta",
+  "localNames": [],
+  "aliases": [],
+  "image": "Flag_of_Ceuta.svg",
+  "capital": "Ceuta",
+  "region": "Northern Africa",
+  "subregion": "Autonomous city of Spain",
+  "population": 84222,
+  "area": 18.5,
+  "languages": [
+    "Spanish"
+  ],
+  "currencies": [
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
+  ],
+  "demonym": "Ceutan",
+  "latlng": [
+    35.9,
+    -5.3
+  ],
+  "facts": [
+    [
+      "Status",
+      "Autonomous city of Spain"
+    ],
+    [
+      "Sovereign state",
+      "Spain"
+    ]
+  ],
+  "flag": {
+    "description": "A field divided into eight triangles alternating black and white, like a pinwheel, with Ceuta's coat of arms in the centre: the crowned shield of Portugal.",
+    "adopted": "1995",
+    "colors": [
+      "black",
+      "white",
+      "red",
+      "blue",
+      "yellow"
+    ],
+    "symbolism": "The black-and-white gyronny is the flag of Lisbon and the shield is Portugal's, a legacy of the Portuguese capture of Ceuta in 1415."
+  },
+  "hook": "Ceuta flies Lisbon's black-and-white pinwheel with Portugal's shield in the middle: a Spanish city in Portuguese colours.",
+  "lookalikes": [],
+  "trivia": [
+    "Portugal captured Ceuta in 1415; the city stayed with the Spanish crown when Portugal regained its independence in 1640.",
+    "It is one of two Spanish cities on the North African mainland, the other being Melilla."
+  ]
+}

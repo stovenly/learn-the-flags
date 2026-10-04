@@ -1,0 +1,57 @@
+{
+  "code": "antarctic-treaty",
+  "isoNumeric": "",
+  "name": "Antarctica",
+  "officialName": "Antarctic Treaty System",
+  "localNames": [],
+  "aliases": [
+    "Antarctic Treaty",
+    "Antarctic Treaty System"
+  ],
+  "image": "Flag_of_the_Antarctic_Treaty.svg",
+  "capital": "Buenos Aires",
+  "region": "Antarctica",
+  "subregion": "Founded 1959",
+  "population": null,
+  "area": 14200000,
+  "languages": [],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    -80,
+    0
+  ],
+  "facts": [
+    [
+      "Treaty signed",
+      "1959"
+    ],
+    [
+      "Parties",
+      "58 states"
+    ],
+    [
+      "Secretariat",
+      "Buenos Aires"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "A dark blue field with a white map of Antarctica in the centre, set in a white grid of lines of latitude and longitude.",
+    "adopted": "2002",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "symbolism": "The map and its grid show the continent that the treaty sets aside for peace and science."
+  },
+  "hook": "Antarctica's treaty flag is a white map of the continent caught in a web of latitude and longitude lines on dark blue.",
+  "lookalikes": [
+    "un",
+    "nato"
+  ],
+  "trivia": [
+    "The Antarctic Treaty was signed in Washington, D.C. on 1 December 1959 by twelve countries and came into force in 1961.",
+    "Antarctica has no single official flag; this emblem of the treaty system is the one most often flown for it."
+  ]
+}

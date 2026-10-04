@@ -1,0 +1,66 @@
+{
+  "code": "gg-ald",
+  "isoNumeric": "",
+  "name": "Alderney",
+  "officialName": "States of Alderney",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "Aurigny",
+      "romanized": ""
+    }
+  ],
+  "aliases": [],
+  "image": "Flag_of_Alderney.svg",
+  "capital": "St Anne",
+  "region": "Northern Europe",
+  "subregion": "Part of a Crown Dependency",
+  "population": 2167,
+  "area": 8,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "British pound",
+      "code": "GBP",
+      "symbol": "£"
+    }
+  ],
+  "demonym": "Ridunian",
+  "latlng": [
+    49.71,
+    -2.2
+  ],
+  "facts": [
+    [
+      "Status",
+      "Self-governing part of the Bailiwick of Guernsey"
+    ],
+    [
+      "Head of state",
+      "King Charles III, as Duke of Normandy"
+    ]
+  ],
+  "flag": {
+    "description": "A white field with the red cross of St George, with a green disc edged in gold at the centre showing a gold lion holding a sprig of leaves.",
+    "adopted": "1993",
+    "colors": [
+      "white",
+      "red",
+      "green",
+      "yellow"
+    ],
+    "symbolism": "The St George's cross reflects the island's loyalty to the English Crown, and the lion on its green disc comes from Alderney's old island seal."
+  },
+  "hook": "Alderney is England's cross with a green coin at the crossing, a gold lion inside it waving a sprig of leaves.",
+  "lookalikes": [
+    "gb-eng",
+    "gg",
+    "gg-srk"
+  ],
+  "trivia": [
+    "The green disc with the lion and gold scrollwork is taken from a seal used by the island since the 18th century.",
+    "Alderney is the northernmost inhabited Channel Island, about 15 km off the coast of Normandy."
+  ]
+}

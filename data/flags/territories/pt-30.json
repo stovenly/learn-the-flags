@@ -1,0 +1,64 @@
+{
+  "code": "pt-30",
+  "isoNumeric": "",
+  "name": "Madeira",
+  "officialName": "Autonomous Region of Madeira",
+  "localNames": [
+    {
+      "language": "Portuguese",
+      "name": "Região Autónoma da Madeira",
+      "romanized": ""
+    }
+  ],
+  "aliases": [],
+  "image": "Flag_of_Madeira.svg",
+  "capital": "Funchal",
+  "region": "Southern Europe",
+  "subregion": "Autonomous region of Portugal",
+  "population": 250769,
+  "area": 801,
+  "languages": [
+    "Portuguese"
+  ],
+  "currencies": [
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
+  ],
+  "demonym": "Madeiran",
+  "latlng": [
+    32.7,
+    -16.9
+  ],
+  "facts": [
+    [
+      "Status",
+      "Autonomous region of Portugal"
+    ],
+    [
+      "Sovereign state",
+      "Portugal"
+    ]
+  ],
+  "flag": {
+    "description": "A vertical triband of blue, gold and blue, with the red-and-white cross of the Order of Christ in the centre of the gold band.",
+    "adopted": "1978",
+    "colors": [
+      "blue",
+      "yellow",
+      "red",
+      "white"
+    ],
+    "symbolism": "Blue is said to stand for the ocean around the islands and gold for their warmth; the cross of the Order of Christ recalls the Portuguese voyages of discovery that reached Madeira in the 15th century."
+  },
+  "hook": "Madeira is blue-gold-blue like Barbados, but the gold stripe carries a red cross of the Order of Christ instead of a black trident.",
+  "lookalikes": [
+    "bb"
+  ],
+  "trivia": [
+    "The name means \"wood\" in Portuguese, after the dense forests the first Portuguese settlers found there around 1420.",
+    "The cross of the Order of Christ was painted on the sails of Portuguese caravels during the Age of Discovery."
+  ]
+}

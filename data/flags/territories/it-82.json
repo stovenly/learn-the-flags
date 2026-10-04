@@ -1,0 +1,70 @@
+{
+  "code": "it-82",
+  "isoNumeric": "",
+  "name": "Sicily",
+  "officialName": "Sicilian Region",
+  "localNames": [
+    {
+      "language": "Italian",
+      "name": "Sicilia",
+      "romanized": ""
+    },
+    {
+      "language": "Sicilian",
+      "name": "Sicilia",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Sicilia"
+  ],
+  "image": "Flag_of_Sicily.svg",
+  "capital": "Palermo",
+  "region": "Southern Europe",
+  "subregion": "Autonomous region of Italy",
+  "population": 4775194,
+  "area": 25832,
+  "languages": [
+    "Italian",
+    "Sicilian"
+  ],
+  "currencies": [
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
+  ],
+  "demonym": "Sicilian",
+  "latlng": [
+    37.6,
+    14.0
+  ],
+  "facts": [
+    [
+      "Status",
+      "Autonomous region of Italy"
+    ],
+    [
+      "Sovereign state",
+      "Italy"
+    ]
+  ],
+  "flag": {
+    "description": "Divided diagonally from the upper hoist, red above and yellow below, with the trinacria in the centre: the winged head of Medusa with three bent running legs and three ears of wheat.",
+    "adopted": "2000",
+    "colors": [
+      "red",
+      "yellow"
+    ],
+    "symbolism": "The three legs stand for the island's three capes and the wheat for its fertile land; red and yellow are said to be the colours of Palermo and Corleone, allies in the Sicilian Vespers revolt of 1282."
+  },
+  "hook": "Sicily is three running legs around Medusa's face on red and yellow halves; the Isle of Man's three armoured legs run on plain red.",
+  "lookalikes": [
+    "im"
+  ],
+  "trivia": [
+    "Trinacria, \"three-pointed\" in Greek, was an ancient name for triangular Sicily.",
+    "Although the trinacria is ancient, the flag only became official by regional law in 2000."
+  ]
+}

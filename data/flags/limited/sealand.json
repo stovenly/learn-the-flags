@@ -1,0 +1,54 @@
+{
+  "code": "sealand",
+  "isoNumeric": "",
+  "name": "Sealand",
+  "officialName": "Principality of Sealand",
+  "localNames": [],
+  "aliases": [
+    "Principality of Sealand",
+    "Roughs Tower"
+  ],
+  "image": "Flag_of_Sealand.svg",
+  "capital": "",
+  "region": "Europe",
+  "subregion": "Micronation",
+  "population": null,
+  "area": null,
+  "languages": [
+    "English"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    51.9,
+    1.48
+  ],
+  "facts": [
+    [
+      "Status",
+      "Unrecognised micronation"
+    ],
+    [
+      "Proclaimed",
+      "1967"
+    ]
+  ],
+  "flag": {
+    "description": "A red triangle at the upper hoist and a black triangle at the lower fly, divided by a broad white diagonal band rising from the lower hoist to the upper fly.",
+    "adopted": "",
+    "colors": [
+      "red",
+      "white",
+      "black"
+    ],
+    "symbolism": "Red is said to stand for the founder, Roy Bates, black for his pirate-radio past, and the white band for a path of virtue."
+  },
+  "hook": "Sealand splits red from black with a white band climbing to the top right; Trinidad and Tobago runs a white-edged black band down across all-red.",
+  "lookalikes": [
+    "tt"
+  ],
+  "trivia": [
+    "Sealand occupies HM Fort Roughs, a Second World War sea fort in the North Sea about 11 km off the coast of Suffolk.",
+    "Roy Bates, a pirate radio broadcaster, proclaimed the platform a principality in 1967; no state recognises it."
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "code": "andean-community",
+  "isoNumeric": "",
+  "name": "Andean Community",
+  "the": true,
+  "officialName": "Andean Community",
+  "localNames": [
+    {
+      "language": "Spanish",
+      "name": "Comunidad Andina",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "CAN",
+    "Comunidad Andina",
+    "Andean Pact"
+  ],
+  "image": "Flag_of_the_Andean_Community_of_Nations.svg",
+  "capital": "Lima",
+  "region": "Americas",
+  "subregion": "Founded 1969",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Spanish"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    -12.05,
+    -77.04
+  ],
+  "facts": [
+    [
+      "Founded",
+      "1969"
+    ],
+    [
+      "Members",
+      "4 states"
+    ],
+    [
+      "Headquarters",
+      "Lima"
+    ]
+  ],
+  "shape": [
+    "bo",
+    "co",
+    "ec",
+    "pe"
+  ],
+  "flag": {
+    "description": "A white field with the community's gold emblem below the centre: a half-disc arch enclosing a stepped pattern.",
+    "adopted": "",
+    "colors": [
+      "white",
+      "yellow"
+    ],
+    "symbolism": "The stepped motif is drawn from the patterns of indigenous Andean textiles."
+  },
+  "hook": "The Andean Community is almost all white, with a low golden half-circle full of stepped patterns, like a sunrise over Andean stairs.",
+  "lookalikes": [],
+  "trivia": [
+    "The community began as the Andean Pact under the Cartagena Agreement of 1969.",
+    "Chile, a founding member, withdrew in 1976, and Venezuela left in 2006."
+  ]
+}

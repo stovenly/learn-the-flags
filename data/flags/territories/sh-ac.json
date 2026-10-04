@@ -1,0 +1,62 @@
+{
+  "code": "sh-ac",
+  "isoNumeric": "",
+  "name": "Ascension Island",
+  "officialName": "Ascension Island",
+  "localNames": [],
+  "aliases": [
+    "Ascension"
+  ],
+  "image": "Flag_of_Ascension_Island.svg",
+  "capital": "Georgetown",
+  "region": "Western Africa",
+  "subregion": "Part of a British Overseas Territory",
+  "population": 806,
+  "area": 88,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "Saint Helena pound",
+      "code": "SHP",
+      "symbol": "£"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    -7.94,
+    -14.36
+  ],
+  "facts": [
+    [
+      "Status",
+      "Part of the British Overseas Territory of Saint Helena, Ascension and Tristan da Cunha"
+    ],
+    [
+      "Sovereign state",
+      "United Kingdom"
+    ]
+  ],
+  "flag": {
+    "description": "A Blue Ensign with the island's coat of arms in the fly: a shield of wavy blue and white stripes with a green chevron and three white terns, held by two green sea turtles, under a sailing ship.",
+    "adopted": "2013",
+    "colors": [
+      "blue",
+      "red",
+      "white",
+      "green"
+    ],
+    "symbolism": "The terns are the sooty terns, or \"wideawakes\", that nest on the island in huge numbers, the turtles are the green turtles that lay their eggs on its beaches, and the ship recalls its history as a stop for sailing ships."
+  },
+  "hook": "Ascension's Blue Ensign has two green sea turtles standing on their tails to hold up a shield of seabirds over the waves.",
+  "lookalikes": [
+    "sh",
+    "sh-ta",
+    "gs"
+  ],
+  "trivia": [
+    "Ascension used the Union Jack for official purposes until its own flag was first raised on 11 May 2013.",
+    "Ascension has never had an indigenous population; its residents are workers and their families on fixed-term contracts."
+  ]
+}

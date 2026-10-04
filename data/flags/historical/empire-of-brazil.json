@@ -1,0 +1,70 @@
+{
+  "code": "empire-of-brazil",
+  "isoNumeric": "",
+  "name": "Empire of Brazil",
+  "the": true,
+  "officialName": "Empire of Brazil",
+  "localNames": [
+    {
+      "language": "Portuguese",
+      "name": "Império do Brasil",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Império do Brasil",
+    "Brazilian Empire"
+  ],
+  "image": "Flag_of_Brazil_(1870–1889).svg",
+  "capital": "Rio de Janeiro",
+  "region": "South America",
+  "subregion": "1822–1889",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Portuguese"
+  ],
+  "currencies": [],
+  "demonym": "Brazilian",
+  "latlng": [
+    -10,
+    -55
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1822–1889"
+    ],
+    [
+      "Flag used",
+      "1822–1889"
+    ],
+    [
+      "Today",
+      "Brazil"
+    ]
+  ],
+  "shape": [
+    "br"
+  ],
+  "flag": {
+    "description": "A green field with a large yellow rhombus bearing the imperial arms: a green shield with a gold armillary sphere on the cross of the Order of Christ, ringed in blue with silver stars, framed by coffee and tobacco branches and topped by the imperial crown.",
+    "adopted": "1822",
+    "colors": [
+      "green",
+      "yellow",
+      "blue",
+      "red",
+      "white"
+    ],
+    "symbolism": "Green is said to represent Emperor Pedro I's House of Braganza and yellow Empress Maria Leopoldina's House of Habsburg; the stars stood for the provinces of the empire."
+  },
+  "hook": "Imperial Brazil already had the green field and yellow diamond, but with a crowned coat of arms where today's blue starry globe sits.",
+  "lookalikes": [
+    "br"
+  ],
+  "trivia": [
+    "The flag was designed by the French painter Jean-Baptiste Debret.",
+    "When the monarchy fell in 1889, the republic kept the green and yellow and replaced the arms with a blue globe and the motto \"Ordem e Progresso\"."
+  ]
+}

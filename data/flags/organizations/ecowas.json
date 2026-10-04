@@ -1,0 +1,73 @@
+{
+  "code": "ecowas",
+  "isoNumeric": "",
+  "name": "ECOWAS",
+  "officialName": "Economic Community of West African States",
+  "localNames": [],
+  "aliases": [
+    "Economic Community of West African States",
+    "CEDEAO"
+  ],
+  "image": "ECOWAS_Flag.png",
+  "capital": "Abuja",
+  "region": "Africa",
+  "subregion": "Founded 1975",
+  "population": null,
+  "area": null,
+  "languages": [
+    "English",
+    "French",
+    "Portuguese"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    9.06,
+    7.49
+  ],
+  "facts": [
+    [
+      "Founded",
+      "1975"
+    ],
+    [
+      "Members",
+      "12 states"
+    ],
+    [
+      "Headquarters",
+      "Abuja"
+    ]
+  ],
+  "shape": [
+    "bj",
+    "ci",
+    "cv",
+    "gh",
+    "gm",
+    "gn",
+    "gw",
+    "lr",
+    "ng",
+    "sl",
+    "sn",
+    "tg"
+  ],
+  "flag": {
+    "description": "A white field with the ECOWAS emblem in the centre: a green ring lettered CEDEAO above and ECOWAS below, around a brown horseshoe and a map of Africa with West Africa picked out in green.",
+    "adopted": "",
+    "colors": [
+      "white",
+      "green",
+      "brown",
+      "yellow"
+    ],
+    "symbolism": "The map picks out West Africa within the continent, and the ring carries the community's initials in French and Portuguese (CEDEAO) and in English (ECOWAS)."
+  },
+  "hook": "ECOWAS puts a green-highlighted map of West Africa inside a green ring, CEDEAO on top and ECOWAS underneath, on plain white.",
+  "lookalikes": [],
+  "trivia": [
+    "ECOWAS was founded by the Treaty of Lagos on 28 May 1975.",
+    "Burkina Faso, Mali and Niger left in January 2025, cutting the membership from 15 states to 12."
+  ]
+}

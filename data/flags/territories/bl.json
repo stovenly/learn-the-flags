@@ -1,0 +1,71 @@
+{
+  "code": "bl",
+  "isoNumeric": "652",
+  "name": "Saint Barthélemy",
+  "officialName": "Territorial Collectivity of Saint Barthélemy",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "Saint-Barthélemy",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Saint Barthelemy",
+    "St Barthélemy",
+    "St. Barthélemy",
+    "St Barts",
+    "St Barths",
+    "Saint Barts"
+  ],
+  "image": "Flag_of_Saint_Barthélemy_(local).svg",
+  "capital": "Gustavia",
+  "region": "Caribbean",
+  "subregion": "French overseas collectivity",
+  "population": 10660,
+  "area": 25,
+  "languages": [
+    "French"
+  ],
+  "currencies": [
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
+  ],
+  "demonym": "Barthélemois",
+  "latlng": [
+    17.9,
+    -62.83
+  ],
+  "facts": [
+    [
+      "Status",
+      "Overseas collectivity of France"
+    ],
+    [
+      "Sovereign state",
+      "France"
+    ]
+  ],
+  "flag": {
+    "description": "An unofficial local flag: a white field with the island's coat of arms, a shield of three gold fleurs-de-lis on blue, a white Maltese cross on red and three gold crowns on blue, topped by a mural crown, held by two pelicans above a scroll reading OUANALAO. The official flag is the French tricolour.",
+    "adopted": "",
+    "colors": [
+      "white",
+      "blue",
+      "red",
+      "yellow"
+    ],
+    "symbolism": "The fleurs-de-lis stand for France, the Maltese cross for the Knights Hospitaller who owned the island in the 17th century, and the three crowns for its century under Swedish rule."
+  },
+  "hook": "Saint Barthélemy is the white flag where two pelicans hold a shield with a Swedish souvenir: three gold crowns under a Maltese cross.",
+  "lookalikes": [
+    "yt"
+  ],
+  "trivia": [
+    "Ouanalao, written on the scroll, is the island's old Amerindian name.",
+    "Sweden ruled the island from 1784 to 1878, and its capital, Gustavia, is named after King Gustav III."
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "code": "nordic-council",
+  "isoNumeric": "",
+  "name": "Nordic Council",
+  "the": true,
+  "officialName": "Nordic Council",
+  "localNames": [],
+  "aliases": [
+    "Norden"
+  ],
+  "image": "Flag_of_the_Nordic_Council_2016.svg",
+  "capital": "Copenhagen",
+  "region": "Europe",
+  "subregion": "Founded 1952",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Danish",
+    "Norwegian",
+    "Swedish"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    55.68,
+    12.58
+  ],
+  "facts": [
+    [
+      "Founded",
+      "1952"
+    ],
+    [
+      "Members",
+      "5 states and 3 autonomous areas"
+    ],
+    [
+      "Headquarters",
+      "Copenhagen"
+    ]
+  ],
+  "shape": [
+    "dk",
+    "fi",
+    "is",
+    "no",
+    "se"
+  ],
+  "flag": {
+    "description": "A blue field with a white swan in flight inside a white ring in the centre.",
+    "adopted": "2016",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "symbolism": "The flying swan is the shared symbol of official Nordic co-operation, used by both the Nordic Council and the Nordic Council of Ministers."
+  },
+  "hook": "The Nordic Council flies a white swan, wings swept back in long feathers, inside a white ring on blue.",
+  "lookalikes": [],
+  "trivia": [
+    "The swan was redrawn in 2016 as part of a common visual identity for official Nordic co-operation.",
+    "The Faroe Islands, Greenland and Åland sit in the council alongside Denmark, Finland, Iceland, Norway and Sweden."
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "code": "canadian-red-ensign",
+  "isoNumeric": "",
+  "name": "Canadian Red Ensign",
+  "the": true,
+  "officialName": "Canadian Red Ensign",
+  "localNames": [],
+  "aliases": [
+    "Red Ensign"
+  ],
+  "image": "Flag_of_Canada_(1957–1965).svg",
+  "capital": "Ottawa",
+  "region": "North America",
+  "subregion": "1957–1965",
+  "population": null,
+  "area": null,
+  "languages": [
+    "English",
+    "French"
+  ],
+  "currencies": [
+    {
+      "name": "Canadian dollar",
+      "code": "CAD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Canadian",
+  "latlng": [
+    56,
+    -106
+  ],
+  "facts": [
+    [
+      "Flag used",
+      "1957–1965"
+    ],
+    [
+      "Replaced by",
+      "Maple Leaf flag (1965)"
+    ],
+    [
+      "Today",
+      "Canada"
+    ]
+  ],
+  "shape": [
+    "ca"
+  ],
+  "flag": {
+    "description": "A red field with the Union Jack in the canton and, in the fly, the shield of Canada: the royal arms of England, Scotland, Ireland and France above a sprig of three red maple leaves on white.",
+    "adopted": "1957",
+    "colors": [
+      "red",
+      "white",
+      "blue",
+      "yellow"
+    ],
+    "symbolism": "The shield combines the arms of England, Scotland and Ireland with the fleurs-de-lis of royal France, for Canada's founding peoples, and maple leaves for Canada itself."
+  },
+  "hook": "Before the Maple Leaf, Canada flew a British red ensign: the Union Jack in the corner and the Canadian shield, with three red maple leaves at its foot, in the fly.",
+  "lookalikes": [],
+  "trivia": [
+    "Canada flew versions of the Red Ensign from the late 19th century; the 1957 version changed the maple leaves on the shield from green to red.",
+    "After the Great Flag Debate of 1964, the Maple Leaf flag replaced the Red Ensign on 15 February 1965."
+  ]
+}

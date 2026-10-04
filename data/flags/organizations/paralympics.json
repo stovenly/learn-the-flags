@@ -1,0 +1,60 @@
+{
+  "code": "paralympics",
+  "isoNumeric": "",
+  "name": "Paralympics",
+  "the": true,
+  "officialName": "Paralympic flag",
+  "localNames": [],
+  "aliases": [
+    "Paralympic flag",
+    "Paralympic Games",
+    "Agitos",
+    "IPC",
+    "International Paralympic Committee"
+  ],
+  "image": "Paralympic_flag_(2019).svg",
+  "capital": "Bonn",
+  "region": "International",
+  "subregion": "Founded 1989",
+  "population": null,
+  "area": null,
+  "languages": [
+    "English"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    50.72,
+    7.12
+  ],
+  "facts": [
+    [
+      "Founded",
+      "1989"
+    ],
+    [
+      "Headquarters",
+      "Bonn"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "A white field with three crescent-shaped swooshes, red, blue and green, curving around a central point.",
+    "adopted": "2019",
+    "colors": [
+      "white",
+      "red",
+      "blue",
+      "green"
+    ],
+    "symbolism": "The three agitos (Latin for 'I move') stand for movement and the spirit of Paralympic athletes; red, blue and green are the colours most widely found in national flags."
+  },
+  "hook": "The Paralympic flag has three swooshes, red, blue and green, swirling round an empty centre; the Olympic flag has five interlocking rings.",
+  "lookalikes": [
+    "olympics"
+  ],
+  "trivia": [
+    "The first Paralympic logo, made for the 1988 Seoul Games, used five Korean-style teardrop shapes arranged like the Olympic rings.",
+    "The three-agitos design was introduced in 2004 and refreshed in 2019 with brighter colours matching the Olympic rings."
+  ]
+}

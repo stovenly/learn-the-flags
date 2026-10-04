@@ -1,0 +1,76 @@
+{
+  "code": "kingdom-of-italy",
+  "isoNumeric": "",
+  "name": "Kingdom of Italy",
+  "the": true,
+  "officialName": "Kingdom of Italy",
+  "localNames": [
+    {
+      "language": "Italian",
+      "name": "Regno d'Italia",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Regno d'Italia",
+    "Royal Italy"
+  ],
+  "image": "Flag_of_Italy_(1861–1946).svg",
+  "capital": "Rome",
+  "region": "Europe",
+  "subregion": "1861–1946",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Italian"
+  ],
+  "currencies": [
+    {
+      "name": "Italian lira",
+      "code": "ITL",
+      "symbol": "L"
+    }
+  ],
+  "demonym": "Italian",
+  "latlng": [
+    42.8,
+    12.8
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1861–1946"
+    ],
+    [
+      "Flag used",
+      "1861–1946"
+    ],
+    [
+      "Today",
+      "Italy"
+    ]
+  ],
+  "shape": [
+    "it"
+  ],
+  "flag": {
+    "description": "Three equal vertical stripes of green, white and red, with the arms of the House of Savoy, a white cross on a red shield edged in blue, in the centre of the white stripe.",
+    "adopted": "1848",
+    "colors": [
+      "green",
+      "white",
+      "red",
+      "blue"
+    ],
+    "symbolism": "The green, white and red are Italy's national colours; the shield is the arms of the House of Savoy, the dynasty that unified Italy, edged in Savoy blue."
+  },
+  "hook": "The Kingdom of Italy's tricolour has the Savoy shield, a white cross on red, in the middle; the Republic dropped it in 1946, and Mexico's green-white-red carries an eagle instead.",
+  "lookalikes": [
+    "it",
+    "mx"
+  ],
+  "trivia": [
+    "The Savoy shield was removed after the referendum of 2 June 1946, in which Italians voted to abolish the monarchy.",
+    "The plain shield was the civil flag; state and military versions placed a royal crown above it."
+  ]
+}

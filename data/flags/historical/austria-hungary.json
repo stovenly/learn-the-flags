@@ -1,0 +1,80 @@
+{
+  "code": "austria-hungary",
+  "isoNumeric": "",
+  "name": "Austria-Hungary",
+  "officialName": "Austro-Hungarian Monarchy",
+  "localNames": [
+    {
+      "language": "German",
+      "name": "Österreich-Ungarn",
+      "romanized": ""
+    },
+    {
+      "language": "Hungarian",
+      "name": "Osztrák–Magyar Monarchia",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Austro-Hungarian Empire",
+    "Austro-Hungarian Monarchy",
+    "Dual Monarchy"
+  ],
+  "image": "Ensign_of_Austro-Hungarian_civil_fleet_(1869-1918).svg",
+  "capital": "Vienna",
+  "region": "Europe",
+  "subregion": "1867–1918",
+  "population": null,
+  "area": null,
+  "languages": [
+    "German",
+    "Hungarian"
+  ],
+  "currencies": [
+    {
+      "name": "Austro-Hungarian krone",
+      "code": "",
+      "symbol": "K"
+    }
+  ],
+  "demonym": "Austro-Hungarian",
+  "latlng": [
+    47.5,
+    17
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1867–1918"
+    ],
+    [
+      "Flag used",
+      "1869–1918"
+    ],
+    [
+      "Today",
+      "Austria, Hungary, Czechia and others"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "Austria's red-white-red stripes in the hoist half and Hungary's red, white and green in the fly half, with the crowned coats of arms of Austria and of Hungary side by side across the white stripe.",
+    "adopted": "1869",
+    "colors": [
+      "red",
+      "white",
+      "green",
+      "yellow"
+    ],
+    "symbolism": "The ensign joined the colours and arms of the two halves of the Dual Monarchy, which shared one ruler but kept their own governments."
+  },
+  "hook": "Austria-Hungary's ensign is two flags stitched together: Austria's red-white-red on the left and Hungary's red-white-green on the right, each with its own crowned shield.",
+  "lookalikes": [
+    "at",
+    "hu"
+  ],
+  "trivia": [
+    "Austria-Hungary never had a single national flag; this was the civil ensign flown by its merchant ships from 1869, while each half used its own colours on land.",
+    "The monarchy was created by the Compromise of 1867, which split the Habsburg empire into Austrian and Hungarian halves sharing a monarch, an army and a foreign policy."
+  ]
+}

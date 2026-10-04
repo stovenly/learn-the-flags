@@ -1,0 +1,57 @@
+{
+  "code": "es-ml",
+  "isoNumeric": "",
+  "name": "Melilla",
+  "officialName": "Autonomous City of Melilla",
+  "localNames": [],
+  "aliases": [],
+  "image": "Flag_of_Melilla.svg",
+  "capital": "Melilla",
+  "region": "Northern Africa",
+  "subregion": "Autonomous city of Spain",
+  "population": 87067,
+  "area": 12.3,
+  "languages": [
+    "Spanish"
+  ],
+  "currencies": [
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
+  ],
+  "demonym": "Melillan",
+  "latlng": [
+    35.3,
+    -2.9
+  ],
+  "facts": [
+    [
+      "Status",
+      "Autonomous city of Spain"
+    ],
+    [
+      "Sovereign state",
+      "Spain"
+    ]
+  ],
+  "flag": {
+    "description": "A light blue field with Melilla's coat of arms in the centre: a crowned shield flanked by the two Pillars of Hercules, under a scroll bearing a Latin motto.",
+    "adopted": "1995",
+    "colors": [
+      "light-blue",
+      "red",
+      "yellow",
+      "white",
+      "green"
+    ],
+    "symbolism": "The coat of arms comes from the Dukes of Medina Sidonia, whose forces took Melilla for Spain in 1497; the Pillars of Hercules are the old symbol of the Strait of Gibraltar."
+  },
+  "hook": "Melilla is a busy crowned shield between two white columns on a plain sky-blue field.",
+  "lookalikes": [],
+  "trivia": [
+    "The motto Praeferre patriam liberis parentem decet, \"a parent should put the homeland before his children\", comes from the house of Medina Sidonia.",
+    "The coat of arms was granted by King Alfonso XIII in 1913; the flag itself became official with Melilla's autonomy statute in 1995."
+  ]
+}

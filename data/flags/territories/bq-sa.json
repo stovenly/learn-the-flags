@@ -1,0 +1,59 @@
+{
+  "code": "bq-sa",
+  "isoNumeric": "",
+  "name": "Saba",
+  "officialName": "Saba",
+  "localNames": [],
+  "aliases": [],
+  "image": "Flag_of_Saba.svg",
+  "capital": "The Bottom",
+  "region": "Caribbean",
+  "subregion": "Special municipality of the Netherlands",
+  "population": 2158,
+  "area": 13,
+  "languages": [
+    "English",
+    "Dutch"
+  ],
+  "currencies": [
+    {
+      "name": "United States dollar",
+      "code": "USD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Saban",
+  "latlng": [
+    17.63,
+    -63.24
+  ],
+  "facts": [
+    [
+      "Status",
+      "Special municipality of the Netherlands"
+    ],
+    [
+      "Sovereign state",
+      "Kingdom of the Netherlands"
+    ]
+  ],
+  "flag": {
+    "description": "A white diamond touching the middle of each edge, with a yellow five-pointed star at its centre; the two top corners are red and the two bottom corners blue.",
+    "adopted": "1985",
+    "colors": [
+      "red",
+      "white",
+      "blue",
+      "yellow"
+    ],
+    "symbolism": "Red, white and blue show Saba's ties to the Netherlands; red also stands for courage, unity and strength, white for peace, blue for the sea, and the yellow star for the island itself."
+  },
+  "hook": "Saba is the Dutch red, white and blue folded into a diamond, with a single gold star in the middle and nothing else.",
+  "lookalikes": [
+    "bq-se"
+  ],
+  "trivia": [
+    "The design was chosen in 1985 from about 130 entries and was the work of 18-year-old islander Edmond Johnson.",
+    "Saba's Mount Scenery, at 870 m, is the highest point in the whole Kingdom of the Netherlands."
+  ]
+}

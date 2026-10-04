@@ -1,0 +1,73 @@
+{
+  "code": "cis",
+  "isoNumeric": "",
+  "name": "Commonwealth of Independent States",
+  "the": true,
+  "officialName": "Commonwealth of Independent States",
+  "localNames": [
+    {
+      "language": "Russian",
+      "name": "Содружество Независимых Государств",
+      "romanized": "Sodruzhestvo Nezavisimykh Gosudarstv"
+    }
+  ],
+  "aliases": [
+    "CIS"
+  ],
+  "image": "Flag_of_the_CIS.svg",
+  "capital": "Minsk",
+  "region": "Europe",
+  "subregion": "Founded 1991",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Russian"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    53.9,
+    27.56
+  ],
+  "facts": [
+    [
+      "Founded",
+      "1991"
+    ],
+    [
+      "Members",
+      "9 states"
+    ],
+    [
+      "Headquarters",
+      "Minsk"
+    ]
+  ],
+  "shape": [
+    "am",
+    "az",
+    "by",
+    "kg",
+    "kz",
+    "md",
+    "ru",
+    "tj",
+    "uz"
+  ],
+  "flag": {
+    "description": "A blue field with a white emblem in the centre: a yellow disc held in a cup of curling white arcs that rise from a row of upright white bars.",
+    "adopted": "1996",
+    "colors": [
+      "blue",
+      "white",
+      "yellow"
+    ],
+    "symbolism": "The emblem is meant to express equal partnership, unity, peace and stability; the yellow disc stands for light and warmth."
+  },
+  "hook": "The CIS holds a yellow sun in a white cup of curling arcs on blue, like a fountain catching the light.",
+  "lookalikes": [],
+  "trivia": [
+    "The CIS was founded in December 1991 as the Soviet Union broke up; Georgia left in 2009 and Ukraine ended its participation in 2018.",
+    "Moldova's parliament voted in April 2026 to withdraw from the CIS founding agreements."
+  ]
+}

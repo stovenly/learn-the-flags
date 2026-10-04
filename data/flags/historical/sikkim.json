@@ -1,0 +1,60 @@
+{
+  "code": "sikkim",
+  "isoNumeric": "",
+  "name": "Sikkim",
+  "officialName": "Kingdom of Sikkim",
+  "localNames": [],
+  "aliases": [
+    "Kingdom of Sikkim"
+  ],
+  "image": "Flag_of_Sikkim_(1967-1975).svg",
+  "capital": "Gangtok",
+  "region": "Asia",
+  "subregion": "1642–1975",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Sikkimese",
+    "Nepali",
+    "Lepcha"
+  ],
+  "currencies": [],
+  "demonym": "Sikkimese",
+  "latlng": [
+    27.5,
+    88.5
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1642–1975"
+    ],
+    [
+      "Flag used",
+      "1967–1975"
+    ],
+    [
+      "Today",
+      "Sikkim, a state of India"
+    ]
+  ],
+  "shape": [
+    "in-sk"
+  ],
+  "flag": {
+    "description": "A white field with a broad red border, bearing a golden khorlo, the Buddhist Wheel of Dharma, in the centre.",
+    "adopted": "1967",
+    "colors": [
+      "white",
+      "red",
+      "yellow"
+    ],
+    "symbolism": "The khorlo, or Wheel of Dharma, represents Buddhism, the religion of Sikkim's Chogyal kings."
+  },
+  "hook": "Sikkim's flag is a golden Buddhist wheel on white inside a thick red frame.",
+  "lookalikes": [],
+  "trivia": [
+    "After a referendum in 1975 the monarchy was abolished and Sikkim became India's 22nd state.",
+    "Sikkim's kings bore the title Chogyal, \"righteous ruler\"; the last, Palden Thondup Namgyal, married the American Hope Cooke in 1963."
+  ]
+}

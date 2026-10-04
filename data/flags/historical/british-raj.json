@@ -1,0 +1,73 @@
+{
+  "code": "british-raj",
+  "isoNumeric": "",
+  "name": "British Raj",
+  "the": true,
+  "officialName": "Indian Empire",
+  "localNames": [],
+  "aliases": [
+    "British India",
+    "Indian Empire",
+    "Star of India"
+  ],
+  "image": "Flag_of_the_Governor-General_of_India_(1885–1947).svg",
+  "capital": "New Delhi",
+  "region": "Asia",
+  "subregion": "1858–1947",
+  "population": null,
+  "area": null,
+  "languages": [
+    "English",
+    "Hindustani"
+  ],
+  "currencies": [
+    {
+      "name": "Indian rupee",
+      "code": "INR",
+      "symbol": "Rs"
+    }
+  ],
+  "demonym": "Indian",
+  "latlng": [
+    23,
+    80
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1858–1947"
+    ],
+    [
+      "Flag used",
+      "1885–1947"
+    ],
+    [
+      "Today",
+      "India, Pakistan, Bangladesh and Myanmar"
+    ]
+  ],
+  "shape": [
+    "in",
+    "pk",
+    "bd"
+  ],
+  "flag": {
+    "description": "The Union Jack with the Star of India in the centre: a silver five-pointed star inside a blue garter, ringed by golden rays and topped by the Imperial Crown.",
+    "adopted": "1885",
+    "colors": [
+      "blue",
+      "red",
+      "white",
+      "yellow"
+    ],
+    "symbolism": "The Star of India was the emblem of the Order of the Star of India, founded in 1861; the garter carries its motto, \"Heaven's Light Our Guide\"."
+  },
+  "hook": "The Star of India flag is the Union Jack with a crowned golden sunburst in the middle; it was the Viceroy's flag, and the plain Union Jack has no badge.",
+  "lookalikes": [
+    "gb"
+  ],
+  "trivia": [
+    "British India never had a single national flag: this was the flag of the Viceroy and Governor-General, the Union Jack served as the official flag, and blue and red ensigns bearing the Star of India were flown at sea.",
+    "At independence in 1947, India adopted its saffron, white and green tricolour and Pakistan its green and white flag with a crescent and star."
+  ]
+}

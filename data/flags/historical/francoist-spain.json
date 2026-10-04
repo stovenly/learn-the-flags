@@ -1,0 +1,75 @@
+{
+  "code": "francoist-spain",
+  "isoNumeric": "",
+  "name": "Francoist Spain",
+  "officialName": "Spanish State",
+  "localNames": [
+    {
+      "language": "Spanish",
+      "name": "Estado Español",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Spanish State",
+    "Franco's Spain",
+    "Estado Español"
+  ],
+  "image": "Flag_of_Spain_(1945–1977).svg",
+  "capital": "Madrid",
+  "region": "Europe",
+  "subregion": "1939–1975",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Spanish"
+  ],
+  "currencies": [
+    {
+      "name": "Spanish peseta",
+      "code": "ESP",
+      "symbol": "Pta"
+    }
+  ],
+  "demonym": "Spanish",
+  "latlng": [
+    40,
+    -4
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1939–1975"
+    ],
+    [
+      "Flag used",
+      "1945–1977"
+    ],
+    [
+      "Today",
+      "Spain"
+    ]
+  ],
+  "shape": [
+    "es"
+  ],
+  "flag": {
+    "description": "Horizontal stripes of red, a double-width yellow and red, with a coat of arms on the yellow: the shield of Spain held by the black Eagle of Saint John, between the Pillars of Hercules and beneath a scroll reading \"Una, Grande, Libre\".",
+    "adopted": "1945",
+    "colors": [
+      "red",
+      "yellow",
+      "black"
+    ],
+    "symbolism": "The Eagle of Saint John and the yoke and arrows on the arms were taken from the badges of the Catholic Monarchs, Ferdinand and Isabella; the motto means \"One, Great, Free\"."
+  },
+  "hook": "Under Franco, Spain's red-yellow-red flag carried a large black eagle spreading its wings behind the shield; today's flag has a smaller crowned shield and no eagle.",
+  "lookalikes": [
+    "es",
+    "spanish-republic"
+  ],
+  "trivia": [
+    "A modified eagle design was adopted in 1977, and the eagle was dropped in 1981, when Spain's present coat of arms was introduced.",
+    "The red-yellow-red stripes go back to a naval ensign chosen by King Charles III in 1785."
+  ]
+}

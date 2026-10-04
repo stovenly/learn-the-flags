@@ -1,0 +1,75 @@
+{
+  "code": "dutch-republic",
+  "isoNumeric": "",
+  "name": "Dutch Republic",
+  "the": true,
+  "officialName": "Republic of the Seven United Netherlands",
+  "localNames": [
+    {
+      "language": "Dutch",
+      "name": "Republiek der Zeven Verenigde Nederlanden",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Republic of the Seven United Netherlands",
+    "United Provinces",
+    "Prince's Flag",
+    "Prinsenvlag"
+  ],
+  "image": "Prinsenvlag.svg",
+  "capital": "The Hague",
+  "region": "Europe",
+  "subregion": "1581–1795",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Dutch"
+  ],
+  "currencies": [
+    {
+      "name": "Dutch guilder",
+      "code": "",
+      "symbol": "ƒ"
+    }
+  ],
+  "demonym": "Dutch",
+  "latlng": [
+    52.1,
+    5.3
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1581–1795"
+    ],
+    [
+      "Flag used",
+      "16th–17th century"
+    ],
+    [
+      "Today",
+      "Netherlands"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "Three equal horizontal stripes of orange, white and blue.",
+    "adopted": "1570s",
+    "colors": [
+      "orange",
+      "white",
+      "blue"
+    ],
+    "symbolism": "The colours come from the livery of William of Orange, who led the Dutch Revolt against Spanish rule; the flag is known as the Prinsenvlag, the Prince's Flag."
+  },
+  "hook": "The Prince's Flag is the Dutch flag with orange where the red is; South Africa's old flag kept the orange too but added three small flags in the middle.",
+  "lookalikes": [
+    "nl",
+    "old-south-africa"
+  ],
+  "trivia": [
+    "During the 17th century the orange stripe gradually gave way to red, producing the red, white and blue flag of the Netherlands.",
+    "Its colours live on in places with Dutch roots: the flag of New York City is blue, white and orange."
+  ]
+}

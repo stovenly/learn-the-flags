@@ -1,0 +1,73 @@
+{
+  "code": "kingdom-of-egypt",
+  "isoNumeric": "",
+  "name": "Kingdom of Egypt",
+  "the": true,
+  "officialName": "Kingdom of Egypt",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "المملكة المصرية",
+      "romanized": "al-Mamlaka al-Miṣriyya"
+    }
+  ],
+  "aliases": [
+    "Egyptian Kingdom"
+  ],
+  "image": "Flag_of_Egypt_(1922-1958).svg",
+  "capital": "Cairo",
+  "region": "Africa",
+  "subregion": "1922–1953",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Arabic"
+  ],
+  "currencies": [
+    {
+      "name": "Egyptian pound",
+      "code": "EGP",
+      "symbol": "£E"
+    }
+  ],
+  "demonym": "Egyptian",
+  "latlng": [
+    27,
+    30
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1922–1953"
+    ],
+    [
+      "Flag used",
+      "1923–1958"
+    ],
+    [
+      "Today",
+      "Egypt"
+    ]
+  ],
+  "shape": [
+    "eg"
+  ],
+  "flag": {
+    "description": "A green field with a white crescent, opening toward the fly, enclosing three white five-pointed stars.",
+    "adopted": "1923",
+    "colors": [
+      "green",
+      "white"
+    ],
+    "symbolism": "The three stars are usually said to stand for Egypt, Nubia and Sudan; another reading links them to the country's Muslims, Christians and Jews."
+  },
+  "hook": "Royal Egypt's flag is green with a white crescent cradling three white stars; Pakistan has a single star and a white stripe at the hoist.",
+  "lookalikes": [
+    "pk",
+    "mr"
+  ],
+  "trivia": [
+    "The green flag stayed in use after Egypt became a republic in 1953, until it joined Syria in the United Arab Republic in 1958.",
+    "Britain declared Egypt independent in 1922, and the sultan, Fuad I, took the title of king."
+  ]
+}

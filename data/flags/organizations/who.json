@@ -1,0 +1,60 @@
+{
+  "code": "who",
+  "isoNumeric": "",
+  "name": "World Health Organization",
+  "the": true,
+  "officialName": "World Health Organization",
+  "localNames": [],
+  "aliases": [
+    "WHO"
+  ],
+  "image": "Flag_of_WHO.svg",
+  "capital": "Geneva",
+  "region": "International",
+  "subregion": "Founded 1948",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Arabic",
+    "Chinese",
+    "English",
+    "French",
+    "Russian",
+    "Spanish"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    46.23,
+    6.13
+  ],
+  "facts": [
+    [
+      "Founded",
+      "1948"
+    ],
+    [
+      "Headquarters",
+      "Geneva"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "A light blue field with the white UN emblem, a world map framed by olive branches, overlaid by a gold staff with a serpent coiled round it.",
+    "adopted": "1961",
+    "colors": [
+      "light-blue",
+      "white",
+      "yellow"
+    ],
+    "symbolism": "The UN emblem marks WHO as part of the UN family, and the serpent-entwined staff of Asclepius is an ancient symbol of medicine."
+  },
+  "hook": "WHO is the UN flag with a gold snake-wrapped staff standing up through the middle of the world map.",
+  "lookalikes": [
+    "un"
+  ],
+  "trivia": [
+    "The emblem was chosen by the first World Health Assembly in 1948.",
+    "WHO's constitution came into force on 7 April 1948, the date now marked every year as World Health Day."
+  ]
+}

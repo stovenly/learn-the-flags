@@ -1,0 +1,62 @@
+{
+  "code": "sh-ta",
+  "isoNumeric": "",
+  "name": "Tristan da Cunha",
+  "officialName": "Tristan da Cunha",
+  "localNames": [],
+  "aliases": [
+    "Tristan"
+  ],
+  "image": "Flag_of_Tristan_da_Cunha.svg",
+  "capital": "Edinburgh of the Seven Seas",
+  "region": "Western Africa",
+  "subregion": "Part of a British Overseas Territory",
+  "population": 222,
+  "area": 207,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "British pound",
+      "code": "GBP",
+      "symbol": "£"
+    }
+  ],
+  "demonym": "Tristanian",
+  "latlng": [
+    -37.1,
+    -12.28
+  ],
+  "facts": [
+    [
+      "Status",
+      "Part of the British Overseas Territory of Saint Helena, Ascension and Tristan da Cunha"
+    ],
+    [
+      "Sovereign state",
+      "United Kingdom"
+    ]
+  ],
+  "flag": {
+    "description": "A Blue Ensign with the island's coat of arms in the fly: a shield with four albatrosses around a central diamond, held by two rock lobsters, topped by a naval crown and a longboat, with the motto \"Our faith is our strength\".",
+    "adopted": "2002",
+    "colors": [
+      "blue",
+      "red",
+      "white",
+      "yellow"
+    ],
+    "symbolism": "The albatrosses and rock lobsters represent the island's wildlife and fishing, and the longboat its seafaring islanders."
+  },
+  "hook": "Tristan da Cunha's Blue Ensign is guarded by two upright red rock lobsters, the catch the island lives on.",
+  "lookalikes": [
+    "sh",
+    "sh-ac",
+    "gs"
+  ],
+  "trivia": [
+    "Tristan rock lobster, shown holding the shield, is the island's main export.",
+    "With no airstrip and a voyage of about six days from Cape Town, Tristan is often called the most remote inhabited island in the world."
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "code": "holy-roman-empire",
+  "isoNumeric": "",
+  "name": "Holy Roman Empire",
+  "the": true,
+  "officialName": "Holy Roman Empire",
+  "localNames": [
+    {
+      "language": "German",
+      "name": "Heiliges Römisches Reich",
+      "romanized": ""
+    },
+    {
+      "language": "Latin",
+      "name": "Sacrum Imperium Romanum",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "HRE",
+    "Sacrum Imperium Romanum",
+    "Holy Roman Empire of the German Nation"
+  ],
+  "image": "Banner_of_the_Holy_Roman_Emperor_with_haloes_(1430-1806).svg",
+  "capital": "",
+  "region": "Europe",
+  "subregion": "962–1806",
+  "population": null,
+  "area": null,
+  "languages": [
+    "German",
+    "Latin"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    50,
+    10
+  ],
+  "facts": [
+    [
+      "Existed",
+      "962–1806"
+    ],
+    [
+      "Flag used",
+      "c. 1430–1806"
+    ],
+    [
+      "Today",
+      "Germany, Austria, Czechia and neighbours"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "A gold field with a black double-headed eagle, each head surrounded by a halo, with red beaks, tongues and talons.",
+    "adopted": "c. 1430",
+    "colors": [
+      "yellow",
+      "black",
+      "red"
+    ],
+    "symbolism": "Black and gold were the imperial colours, and the double-headed eagle became the emblem of the emperor in the 15th century, while a single-headed eagle stood for the King of the Romans."
+  },
+  "hook": "The Holy Roman Empire's banner is a black two-headed eagle with haloes on gold; Albania's black two-headed eagle sits on red, and Prussia's single-headed eagle on white.",
+  "lookalikes": [
+    "al",
+    "prussia"
+  ],
+  "trivia": [
+    "Voltaire quipped that the Holy Roman Empire was \"neither holy, nor Roman, nor an empire\".",
+    "The empire was dissolved in 1806, when Francis II laid down the crown after Napoleon's victories; he continued to reign as Emperor of Austria."
+  ]
+}

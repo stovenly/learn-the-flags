@@ -1,0 +1,56 @@
+{
+  "code": "cx",
+  "isoNumeric": "162",
+  "name": "Christmas Island",
+  "officialName": "Territory of Christmas Island",
+  "localNames": [],
+  "aliases": [],
+  "image": "Flag_of_Christmas_Island.svg",
+  "capital": "Flying Fish Cove",
+  "region": "Australia and New Zealand",
+  "subregion": "Australian external territory",
+  "population": 1692,
+  "area": 135,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "Australian dollar",
+      "code": "AUD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Christmas Islander",
+  "latlng": [
+    -10.49,
+    105.62
+  ],
+  "facts": [
+    [
+      "Status",
+      "External territory of Australia"
+    ],
+    [
+      "Sovereign state",
+      "Australia"
+    ]
+  ],
+  "flag": {
+    "description": "Divided diagonally from the upper hoist to the lower fly, blue below with the white stars of the Southern Cross and green above with a golden bird, and a gold disc in the centre with a green map of the island.",
+    "adopted": "2002",
+    "colors": [
+      "blue",
+      "green",
+      "yellow",
+      "white"
+    ],
+    "symbolism": "Blue is the sea and green the island's forest; the Southern Cross stands for Australia, and the bird is the golden bosun, a form of white-tailed tropicbird found only on Christmas Island."
+  },
+  "hook": "Christmas Island is blue sea and green jungle split on the diagonal, with the island's own map in a gold coin and a golden bosun bird in the green.",
+  "lookalikes": [],
+  "trivia": [
+    "Tony Couch of Sydney designed it for a 1986 competition; the territory declared it official in 2002, though the Australian Government describes it as used in the community rather than formally adopted.",
+    "Every year tens of millions of red crabs migrate from the forest to the sea to breed."
+  ]
+}

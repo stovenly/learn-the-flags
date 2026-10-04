@@ -1,0 +1,73 @@
+{
+  "code": "it-88",
+  "isoNumeric": "",
+  "name": "Sardinia",
+  "officialName": "Autonomous Region of Sardinia",
+  "localNames": [
+    {
+      "language": "Italian",
+      "name": "Sardegna",
+      "romanized": ""
+    },
+    {
+      "language": "Sardinian",
+      "name": "Sardigna",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Sardegna"
+  ],
+  "image": "Flag_of_Sardinia,_Italy.svg",
+  "capital": "Cagliari",
+  "region": "Southern Europe",
+  "subregion": "Autonomous region of Italy",
+  "population": 1554490,
+  "area": 24100,
+  "languages": [
+    "Italian",
+    "Sardinian"
+  ],
+  "currencies": [
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
+  ],
+  "demonym": "Sardinian",
+  "latlng": [
+    40.0,
+    9.0
+  ],
+  "facts": [
+    [
+      "Status",
+      "Autonomous region of Italy"
+    ],
+    [
+      "Sovereign state",
+      "Italy"
+    ]
+  ],
+  "flag": {
+    "description": "A white field with a red cross, and in each quarter a black Moor's head in profile wearing a white headband tied at the back.",
+    "adopted": "1999",
+    "colors": [
+      "white",
+      "red",
+      "black"
+    ],
+    "symbolism": "The Four Moors come from the arms of the Crown of Aragon, which ruled Sardinia from the 14th century; their origin is often linked to the Battle of Alcoraz in 1096."
+  },
+  "hook": "Sardinia is England's red cross with a Moor's head in every corner; Corsica keeps just one head and drops the cross.",
+  "lookalikes": [
+    "fr-20r",
+    "gb-eng",
+    "ge"
+  ],
+  "trivia": [
+    "For centuries the Moors were often shown blindfolded; the 1999 regional law fixed the bands on their foreheads.",
+    "The Four Moors also appear in the coat of arms of Aragon in Spain."
+  ]
+}

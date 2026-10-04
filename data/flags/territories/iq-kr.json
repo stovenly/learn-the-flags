@@ -1,0 +1,78 @@
+{
+  "code": "iq-kr",
+  "isoNumeric": "",
+  "name": "Kurdistan Region",
+  "the": true,
+  "officialName": "Kurdistan Region",
+  "localNames": [
+    {
+      "language": "Kurdish",
+      "name": "هەرێمی کوردستان",
+      "romanized": "Herêmî Kurdistan"
+    },
+    {
+      "language": "Arabic",
+      "name": "إقليم كوردستان",
+      "romanized": "Iqlīm Kurdistān"
+    }
+  ],
+  "aliases": [
+    "Kurdistan",
+    "Iraqi Kurdistan",
+    "Kurdistan Region of Iraq",
+    "KRI"
+  ],
+  "image": "Flag_of_Kurdistan.svg",
+  "capital": "Erbil",
+  "region": "Western Asia",
+  "subregion": "Autonomous region of Iraq",
+  "population": 6370668,
+  "area": 46862,
+  "languages": [
+    "Kurdish",
+    "Arabic"
+  ],
+  "currencies": [
+    {
+      "name": "Iraqi dinar",
+      "code": "IQD",
+      "symbol": "ع.د"
+    }
+  ],
+  "demonym": "Kurdish",
+  "latlng": [
+    36.4,
+    44.4
+  ],
+  "facts": [
+    [
+      "Status",
+      "Autonomous region of Iraq"
+    ],
+    [
+      "Sovereign state",
+      "Iraq"
+    ]
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of red, white and green, with a golden sun of 21 rays in the centre.",
+    "adopted": "1992",
+    "colors": [
+      "red",
+      "white",
+      "green",
+      "yellow"
+    ],
+    "symbolism": "The sun is an ancient symbol in Kurdish culture, and its 21 rays are usually linked to 21 March, Newroz, the Kurdish new year; red is commonly said to stand for sacrifice, white for peace and green for the land."
+  },
+  "hook": "Kurdistan is red-white-green with a blazing 21-rayed gold sun; Tajikistan has a crown under stars, and Iran puts green on top.",
+  "lookalikes": [
+    "tj",
+    "hu",
+    "ir"
+  ],
+  "trivia": [
+    "A similar flag was used by the short-lived Republic of Ararat around 1927, and the Kurdistan Region adopted it in 1992.",
+    "Kurds in neighbouring countries also fly it as a symbol of Kurdish identity, but it has official status only in Iraq's Kurdistan Region."
+  ]
+}

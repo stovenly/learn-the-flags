@@ -1,0 +1,76 @@
+{
+  "code": "upper-volta",
+  "isoNumeric": "",
+  "name": "Upper Volta",
+  "officialName": "Republic of Upper Volta",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "Haute-Volta",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Haute-Volta",
+    "Republic of Upper Volta"
+  ],
+  "image": "Flag_of_Upper_Volta.svg",
+  "capital": "Ouagadougou",
+  "region": "Africa",
+  "subregion": "1958–1984",
+  "population": null,
+  "area": null,
+  "languages": [
+    "French"
+  ],
+  "currencies": [
+    {
+      "name": "West African CFA franc",
+      "code": "XOF",
+      "symbol": "Fr"
+    }
+  ],
+  "demonym": "Upper Voltan",
+  "latlng": [
+    12.3,
+    -1.5
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1958–1984"
+    ],
+    [
+      "Flag used",
+      "1959–1984"
+    ],
+    [
+      "Today",
+      "Burkina Faso"
+    ]
+  ],
+  "shape": [
+    "bf"
+  ],
+  "identical": [
+    "german-empire"
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of black, white and red; it is identical to the flag of the German Empire.",
+    "adopted": "1959",
+    "colors": [
+      "black",
+      "white",
+      "red"
+    ],
+    "symbolism": "The stripes stood for the three branches of the Volta River that cross the country: the Black, White and Red Volta."
+  },
+  "hook": "Upper Volta's black, white and red stripes are its three rivers, the Black, White and Red Volta; the German Empire flew exactly the same stripes, and Yemen has them upside down.",
+  "lookalikes": [
+    "ye"
+  ],
+  "trivia": [
+    "On 4 August 1984, under Thomas Sankara, the country was renamed Burkina Faso, \"land of upright people\", and given its red and green flag with a yellow star.",
+    "The flag is identical to that of the German Empire of 1867–1918, though the two designs have no connection."
+  ]
+}

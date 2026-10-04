@@ -1,0 +1,67 @@
+{
+  "code": "opec",
+  "isoNumeric": "",
+  "name": "OPEC",
+  "officialName": "Organization of the Petroleum Exporting Countries",
+  "localNames": [],
+  "aliases": [
+    "Organization of the Petroleum Exporting Countries"
+  ],
+  "image": "Flag_of_OPEC.svg",
+  "capital": "Vienna",
+  "region": "International",
+  "subregion": "Founded 1960",
+  "population": null,
+  "area": null,
+  "languages": [
+    "English"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    48.21,
+    16.37
+  ],
+  "facts": [
+    [
+      "Founded",
+      "1960"
+    ],
+    [
+      "Members",
+      "11 states"
+    ],
+    [
+      "Headquarters",
+      "Vienna"
+    ]
+  ],
+  "shape": [
+    "cg",
+    "dz",
+    "ga",
+    "gq",
+    "iq",
+    "ir",
+    "kw",
+    "ly",
+    "ng",
+    "sa",
+    "ve"
+  ],
+  "flag": {
+    "description": "A light blue field with the white OPEC logo in the centre: the lower-case letters o, p, e and c set in a square around a long, tapering vertical stroke.",
+    "adopted": "1970",
+    "colors": [
+      "light-blue",
+      "white"
+    ],
+    "symbolism": "The logo is built from the organisation's own initials, OPEC."
+  },
+  "hook": "OPEC spells out its own name in fat white letters on sky blue, o and p over e and c, threaded on one tall stroke.",
+  "lookalikes": [],
+  "trivia": [
+    "OPEC was founded in Baghdad in September 1960 by Iran, Iraq, Kuwait, Saudi Arabia and Venezuela, and moved its headquarters from Geneva to Vienna in 1965.",
+    "The United Arab Emirates left OPEC on 1 May 2026, after Angola had left in January 2024."
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "code": "manchukuo",
+  "isoNumeric": "",
+  "name": "Manchukuo",
+  "officialName": "Empire of Manchuria",
+  "localNames": [
+    {
+      "language": "Chinese",
+      "name": "滿洲國",
+      "romanized": "Mǎnzhōuguó"
+    }
+  ],
+  "aliases": [
+    "Manchoukuo",
+    "Manchutikuo",
+    "Empire of Manchuria"
+  ],
+  "image": "Flag_of_Manchukuo.svg",
+  "capital": "Hsinking",
+  "region": "Asia",
+  "subregion": "1932–1945",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Chinese",
+    "Japanese"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    45,
+    125
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1932–1945"
+    ],
+    [
+      "Flag used",
+      "1932–1945"
+    ],
+    [
+      "Today",
+      "Northeast China"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "A yellow field with a canton of four equal horizontal stripes, red, blue, white and black, in the upper hoist corner.",
+    "adopted": "1932",
+    "colors": [
+      "yellow",
+      "red",
+      "blue",
+      "white",
+      "black"
+    ],
+    "symbolism": "The yellow field represented the Manchus and the ruler; the stripes are usually said to stand for the Japanese (red), Han Chinese (blue), Mongols (white) and Koreans (black)."
+  },
+  "hook": "Manchukuo, the state Japan set up in northeast China, flew a yellow flag with four thin stripes of red, blue, white and black in the corner; the early Republic of China spread its five stripes across the whole flag.",
+  "lookalikes": [
+    "beiyang-china"
+  ],
+  "trivia": [
+    "Its head of state was Puyi, the last Qing emperor, who was enthroned as Emperor of Manchukuo in 1934.",
+    "Manchukuo was recognised by only a few countries and was dissolved in 1945, after the Soviet invasion of Manchuria and Japan's surrender."
+  ]
+}

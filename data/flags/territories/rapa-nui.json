@@ -1,0 +1,69 @@
+{
+  "code": "rapa-nui",
+  "isoNumeric": "",
+  "name": "Easter Island",
+  "officialName": "Easter Island",
+  "localNames": [
+    {
+      "language": "Rapa Nui",
+      "name": "Rapa Nui",
+      "romanized": ""
+    },
+    {
+      "language": "Spanish",
+      "name": "Isla de Pascua",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Rapa Nui",
+    "Isla de Pascua"
+  ],
+  "image": "Flag_of_Rapa_Nui,_Chile.svg",
+  "capital": "Hanga Roa",
+  "region": "Polynesia",
+  "subregion": "Special territory of Chile",
+  "population": 7750,
+  "area": 163.6,
+  "languages": [
+    "Spanish",
+    "Rapa Nui"
+  ],
+  "currencies": [
+    {
+      "name": "Chilean peso",
+      "code": "CLP",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Rapa Nui",
+  "latlng": [
+    -27.1,
+    -109.4
+  ],
+  "facts": [
+    [
+      "Status",
+      "Special territory of Chile"
+    ],
+    [
+      "Sovereign state",
+      "Chile"
+    ]
+  ],
+  "flag": {
+    "description": "A white field with a large red reimiro in the centre: a crescent-shaped breastplate whose two upturned tips end in carved heads.",
+    "adopted": "2006",
+    "colors": [
+      "white",
+      "red"
+    ],
+    "symbolism": "The reimiro is a wooden pectoral ornament once worn by the island's chiefs and nobles, and the heads at its tips represent the ariki, the chiefs."
+  },
+  "hook": "Easter Island is a big red smile on white: the reimiro breastplate, with a tiny head on each upturned tip.",
+  "lookalikes": [],
+  "trivia": [
+    "A reimiro flag was flown by the island's king in the 1880s; the modern version was first raised officially beside Chile's flag in 2006.",
+    "The Dutch explorer Jacob Roggeveen named it Easter Island because he arrived on Easter Sunday in 1722."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "code": "liberland",
+  "isoNumeric": "",
+  "name": "Liberland",
+  "officialName": "Free Republic of Liberland",
+  "localNames": [],
+  "aliases": [
+    "Free Republic of Liberland"
+  ],
+  "image": "Flag_of_Liberland.svg",
+  "capital": "",
+  "region": "Europe",
+  "subregion": "Micronation",
+  "population": null,
+  "area": 7,
+  "languages": [],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    45.77,
+    18.88
+  ],
+  "facts": [
+    [
+      "Status",
+      "Unrecognised micronation"
+    ],
+    [
+      "Proclaimed",
+      "2015"
+    ]
+  ],
+  "flag": {
+    "description": "A yellow field with a black horizontal stripe across the middle and a coat of arms in the centre: a shield with a tree on dark red above a black bird and an orange sun on white, over a band of blue.",
+    "adopted": "2015",
+    "colors": [
+      "yellow",
+      "black",
+      "maroon",
+      "white",
+      "orange",
+      "blue"
+    ],
+    "symbolism": "Yellow is said to stand for libertarianism and the black stripe for rebellion; in the arms, the blue stands for the Danube."
+  },
+  "hook": "Liberland is golden yellow with a black stripe through the middle and a small shield of tree, bird and sun pinned on top.",
+  "lookalikes": [],
+  "trivia": [
+    "Vít Jedlička proclaimed Liberland on 13 April 2015 on Gornja Siga, a strip of Danube floodplain that neither Croatia nor Serbia claims.",
+    "No state recognises Liberland, and Croatian police control access to the land it claims."
+  ]
+}

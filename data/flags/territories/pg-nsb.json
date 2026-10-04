@@ -1,0 +1,60 @@
+{
+  "code": "pg-nsb",
+  "isoNumeric": "",
+  "name": "Bougainville",
+  "officialName": "Autonomous Region of Bougainville",
+  "localNames": [],
+  "aliases": [
+    "North Solomons"
+  ],
+  "image": "Flag_of_Bougainville.svg",
+  "capital": "Buka",
+  "region": "Melanesia",
+  "subregion": "Autonomous region of Papua New Guinea",
+  "population": 367093,
+  "area": 9384,
+  "languages": [
+    "English",
+    "Tok Pisin"
+  ],
+  "currencies": [
+    {
+      "name": "Papua New Guinean kina",
+      "code": "PGK",
+      "symbol": "K"
+    }
+  ],
+  "demonym": "Bougainvillean",
+  "latlng": [
+    -6.2,
+    155.4
+  ],
+  "facts": [
+    [
+      "Status",
+      "Autonomous region of Papua New Guinea"
+    ],
+    [
+      "Sovereign state",
+      "Papua New Guinea"
+    ]
+  ],
+  "flag": {
+    "description": "A dark blue field with a central black disc showing a red-and-white upe headdress, ringed by green and white triangles and an outer white circle.",
+    "adopted": "1975",
+    "colors": [
+      "blue",
+      "black",
+      "red",
+      "white",
+      "green"
+    ],
+    "symbolism": "The upe is a woven hat worn by young men during initiation, and the ring around it is a kapkap, a carved shell ornament worn by chiefs."
+  },
+  "hook": "Bougainville is a red-and-white striped hat inside a toothed green ring, floating on deep blue.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag was designed by the Havini family and first used in 1975, the year Bougainville's leaders declared the short-lived Republic of the North Solomons.",
+    "In a 2019 referendum 97.7% of voters chose independence; the result is non-binding and must be ratified by Papua New Guinea's National Parliament before it can take effect."
+  ]
+}

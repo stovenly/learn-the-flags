@@ -1,0 +1,73 @@
+{
+  "code": "central-america",
+  "isoNumeric": "",
+  "name": "Federal Republic of Central America",
+  "the": true,
+  "officialName": "Federal Republic of Central America",
+  "localNames": [
+    {
+      "language": "Spanish",
+      "name": "República Federal de Centroamérica",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "United Provinces of Central America",
+    "Central American Federation",
+    "Central America"
+  ],
+  "image": "Flag_of_the_Federal_Republic_of_Central_America.svg",
+  "capital": "Guatemala City",
+  "region": "North America",
+  "subregion": "1823–1841",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Spanish"
+  ],
+  "currencies": [],
+  "demonym": "Central American",
+  "latlng": [
+    14,
+    -87
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1823–1841"
+    ],
+    [
+      "Today",
+      "Guatemala, El Salvador, Honduras, Nicaragua and Costa Rica"
+    ]
+  ],
+  "shape": [
+    "gt",
+    "sv",
+    "hn",
+    "ni",
+    "cr"
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of blue, white and blue, with the coat of arms in the centre: a triangle showing five volcanoes between two seas under a rainbow and a red cap of liberty, inside a ring reading \"República Federal de Centro América\".",
+    "adopted": "1823",
+    "colors": [
+      "light-blue",
+      "white",
+      "green",
+      "yellow",
+      "red"
+    ],
+    "symbolism": "The blue stripes stand for the Pacific Ocean and the Caribbean Sea and the white for the land between them; the five volcanoes represent the five member states."
+  },
+  "hook": "The Central American federation flew blue-white-blue with five volcanoes in a triangle; Nicaragua and El Salvador still use almost the same triangle, and Honduras turned the five states into five stars.",
+  "lookalikes": [
+    "ni",
+    "sv",
+    "hn"
+  ],
+  "trivia": [
+    "All five of its former member states still have blue and white in their flags.",
+    "The federation fell apart as its states left one by one between 1838 and 1841."
+  ]
+}

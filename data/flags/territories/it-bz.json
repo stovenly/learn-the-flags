@@ -1,0 +1,84 @@
+{
+  "code": "it-bz",
+  "isoNumeric": "",
+  "name": "South Tyrol",
+  "officialName": "Autonomous Province of Bolzano – South Tyrol",
+  "localNames": [
+    {
+      "language": "German",
+      "name": "Südtirol",
+      "romanized": ""
+    },
+    {
+      "language": "Italian",
+      "name": "Alto Adige",
+      "romanized": ""
+    },
+    {
+      "language": "Ladin",
+      "name": "Südtirol",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Alto Adige",
+    "Südtirol",
+    "Sudtirol",
+    "Bolzano"
+  ],
+  "image": "Flag_of_South_Tyrol.svg",
+  "capital": "Bolzano",
+  "region": "Southern Europe",
+  "subregion": "Autonomous province of Italy",
+  "population": 542134,
+  "area": 7398,
+  "languages": [
+    "German",
+    "Italian",
+    "Ladin"
+  ],
+  "currencies": [
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
+  ],
+  "demonym": "South Tyrolean",
+  "latlng": [
+    46.7,
+    11.4
+  ],
+  "facts": [
+    [
+      "Status",
+      "Autonomous province of Italy"
+    ],
+    [
+      "Sovereign state",
+      "Italy"
+    ],
+    [
+      "Region",
+      "Trentino-Alto Adige/Südtirol"
+    ]
+  ],
+  "flag": {
+    "description": "Two equal horizontal bands of white over red, with the provincial coat of arms in the centre: a red eagle with gold beak and claws on a white shield.",
+    "adopted": "1995",
+    "colors": [
+      "white",
+      "red",
+      "yellow"
+    ],
+    "symbolism": "The red eagle is the Tyrolean eagle, shared with the Austrian state of Tyrol, and white and red are the Tyrolean colours."
+  },
+  "hook": "South Tyrol is Poland's white-over-red with a red Tyrolean eagle standing on a shield in the middle.",
+  "lookalikes": [
+    "pl"
+  ],
+  "trivia": [
+    "The flag was created in 1995 so it could be displayed at the Quirinal Palace in Rome alongside those of all Italy's regions, and it has never been formally recognised in law.",
+    "The coat of arms on it was adopted in 1983 and closely resembles that of the Austrian state of Tyrol."
+  ]
+}

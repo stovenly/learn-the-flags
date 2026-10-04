@@ -1,0 +1,75 @@
+{
+  "code": "islamic-emirate",
+  "isoNumeric": "",
+  "name": "Islamic Emirate of Afghanistan",
+  "the": true,
+  "officialName": "Islamic Emirate of Afghanistan",
+  "localNames": [
+    {
+      "language": "Pashto",
+      "name": "د افغانستان اسلامي امارت",
+      "romanized": "Da Afġānistān Islāmī Imārat"
+    },
+    {
+      "language": "Dari",
+      "name": "امارت اسلامی افغانستان",
+      "romanized": "Imārat-i Islāmī-yi Afghānistān"
+    }
+  ],
+  "aliases": [
+    "Islamic Emirate",
+    "Taliban"
+  ],
+  "image": "Flag_of_the_Taliban.svg",
+  "capital": "Kabul",
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "population": 42647492,
+  "area": 652230,
+  "languages": [
+    "Pashto",
+    "Dari"
+  ],
+  "currencies": [
+    {
+      "name": "Afghan afghani",
+      "code": "AFN",
+      "symbol": "؋"
+    }
+  ],
+  "demonym": "Afghan",
+  "latlng": [
+    33,
+    65
+  ],
+  "facts": [
+    [
+      "Recognised by",
+      "Russia (since July 2025)"
+    ],
+    [
+      "In power since",
+      "2021"
+    ]
+  ],
+  "shape": [
+    "af"
+  ],
+  "flag": {
+    "description": "A white field with the Shahada, the Islamic declaration of faith, written across the centre in black Arabic script.",
+    "adopted": "1997",
+    "colors": [
+      "white",
+      "black"
+    ],
+    "symbolism": "The Shahada declares that there is no god but God and that Muhammad is the messenger of God; the white field is said to stand for the purity of the faith."
+  },
+  "hook": "The Islamic Emirate is nothing but black Arabic calligraphy on plain white; Saudi Arabia writes the same words in white on green above a sword.",
+  "lookalikes": [
+    "sa"
+  ],
+  "trivia": [
+    "The Taliban first flew a plain white flag after taking Kabul in 1996 and added the black Shahada in 1997.",
+    "Russia became the first country to formally recognise the Taliban government, in July 2025."
+  ]
+}

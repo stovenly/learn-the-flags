@@ -1,0 +1,64 @@
+{
+  "code": "gf",
+  "isoNumeric": "254",
+  "name": "French Guiana",
+  "officialName": "French Guiana",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "Guyane",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Guyane"
+  ],
+  "image": "Flag_of_French_Guiana.svg",
+  "capital": "Cayenne",
+  "region": "South America",
+  "subregion": "French overseas region",
+  "population": 298554,
+  "area": 83534,
+  "languages": [
+    "French",
+    "French Guianese Creole"
+  ],
+  "currencies": [
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
+  ],
+  "demonym": "French Guianese",
+  "latlng": [
+    4,
+    -53
+  ],
+  "facts": [
+    [
+      "Status",
+      "Overseas department and region of France"
+    ],
+    [
+      "Sovereign state",
+      "France"
+    ]
+  ],
+  "flag": {
+    "description": "Divided diagonally from the upper hoist to the lower fly, green above and yellow below, with a red five-pointed star in the centre. It has no official status; the French tricolour is the official flag.",
+    "adopted": "2010",
+    "colors": [
+      "green",
+      "yellow",
+      "red"
+    ],
+    "symbolism": "Green stands for the forest that covers almost all of the territory, yellow for its gold and mineral wealth, and the red star for the blood of its people or for socialism."
+  },
+  "hook": "French Guiana is a diagonal of rainforest green over gold, pinned in the middle by a single red star.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag was created by Guianese students in Paris in the 1960s and taken up by the Union of Guianese Workers in 1967; the General Council of French Guiana adopted it in 2010.",
+    "French Guiana is home to the Guiana Space Centre at Kourou, Europe's main spaceport."
+  ]
+}

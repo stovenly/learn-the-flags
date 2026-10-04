@@ -1,0 +1,69 @@
+{
+  "code": "ethiopian-empire",
+  "isoNumeric": "",
+  "name": "Ethiopian Empire",
+  "the": true,
+  "officialName": "Ethiopian Empire",
+  "localNames": [
+    {
+      "language": "Amharic",
+      "name": "ኢትዮጵያ",
+      "romanized": "Ityop'iya"
+    }
+  ],
+  "aliases": [
+    "Abyssinia",
+    "Empire of Ethiopia"
+  ],
+  "image": "Flag_of_Ethiopia_(1897–1974).svg",
+  "capital": "Addis Ababa",
+  "region": "Africa",
+  "subregion": "1270–1974",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Amharic"
+  ],
+  "currencies": [],
+  "demonym": "Ethiopian",
+  "latlng": [
+    9,
+    39
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1270–1974"
+    ],
+    [
+      "Flag used",
+      "until 1974"
+    ],
+    [
+      "Today",
+      "Ethiopia and Eritrea"
+    ]
+  ],
+  "shape": [
+    "et"
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of green, yellow and red, with the crowned Lion of Judah in the centre, carrying a staff topped by a cross and a small pennant in the same colours.",
+    "adopted": "1897",
+    "colors": [
+      "green",
+      "yellow",
+      "red"
+    ],
+    "symbolism": "The Lion of Judah stood for the emperors, who claimed descent from King Solomon and the Queen of Sheba."
+  },
+  "hook": "Imperial Ethiopia's green-yellow-red flag has a crowned lion carrying a cross-topped staff; today's Ethiopia swaps the lion for a blue disc and star, and Bolivia has the stripes the other way up.",
+  "lookalikes": [
+    "et",
+    "bo"
+  ],
+  "trivia": [
+    "Ghana borrowed Ethiopia's red, gold and green for its flag in 1957, and so many newly independent states followed that they became known as the pan-African colours.",
+    "The lion flag remains a symbol of the Rastafari movement, which reveres Emperor Haile Selassie."
+  ]
+}

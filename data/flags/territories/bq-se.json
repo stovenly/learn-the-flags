@@ -1,0 +1,63 @@
+{
+  "code": "bq-se",
+  "isoNumeric": "",
+  "name": "Sint Eustatius",
+  "officialName": "Sint Eustatius",
+  "localNames": [],
+  "aliases": [
+    "Statia",
+    "Saint Eustatius"
+  ],
+  "image": "Flag_of_Sint_Eustatius.svg",
+  "capital": "Oranjestad",
+  "region": "Caribbean",
+  "subregion": "Special municipality of the Netherlands",
+  "population": 3270,
+  "area": 21,
+  "languages": [
+    "Dutch",
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "United States dollar",
+      "code": "USD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Statian",
+  "latlng": [
+    17.49,
+    -62.97
+  ],
+  "facts": [
+    [
+      "Status",
+      "Special municipality of the Netherlands"
+    ],
+    [
+      "Sovereign state",
+      "Kingdom of the Netherlands"
+    ]
+  ],
+  "flag": {
+    "description": "Four blue panels in the corners, each outlined in red, surround a white diamond in the centre that holds a green silhouette of the island beneath a gold star.",
+    "adopted": "2004",
+    "colors": [
+      "blue",
+      "red",
+      "white",
+      "green",
+      "yellow"
+    ],
+    "symbolism": "Blue is the surrounding sea, red the flamboyant tree, green the island with its Quill volcano, white its legendary waterfall, and the gold star unity."
+  },
+  "hook": "Sint Eustatius puts a green map of the island inside its white diamond, where neighbouring Saba has only a star.",
+  "lookalikes": [
+    "bq-sa"
+  ],
+  "trivia": [
+    "Designed by Zuwena Suares, the flag was adopted in 2004 and first flown on Statia Day, 16 November.",
+    "On 16 November 1776 the island's fort fired a salute to an American ship, one of the first foreign acknowledgements of the United States."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "code": "gp",
+  "isoNumeric": "312",
+  "name": "Guadeloupe",
+  "officialName": "Guadeloupe",
+  "localNames": [
+    {
+      "language": "Antillean Creole",
+      "name": "Gwadloup",
+      "romanized": ""
+    }
+  ],
+  "aliases": [],
+  "image": "Unofficial_flag_of_Guadeloupe_(local).svg",
+  "capital": "Basse-Terre",
+  "region": "Caribbean",
+  "subregion": "French overseas region",
+  "population": 378561,
+  "area": 1628,
+  "languages": [
+    "French",
+    "Antillean Creole"
+  ],
+  "currencies": [
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
+  ],
+  "demonym": "Guadeloupean",
+  "latlng": [
+    16.25,
+    -61.58
+  ],
+  "facts": [
+    [
+      "Status",
+      "Overseas department and region of France"
+    ],
+    [
+      "Sovereign state",
+      "France"
+    ]
+  ],
+  "flag": {
+    "description": "An unofficial but widely used local flag: a black field with a large yellow sun in front of green sugarcane, under a blue band across the top bearing three yellow fleurs-de-lis. The official flag is the French tricolour.",
+    "adopted": "",
+    "colors": [
+      "black",
+      "yellow",
+      "green",
+      "blue"
+    ],
+    "symbolism": "It is based on the coat of arms of the town of Basse-Terre: the fleurs-de-lis are usually taken to stand for France, and the sun and sugarcane for the island's climate and its sugar plantations."
+  },
+  "hook": "Guadeloupe is a blazing yellow sun rising out of sugarcane on a black night, with a blue ceiling of three golden fleurs-de-lis.",
+  "lookalikes": [],
+  "trivia": [
+    "Guadeloupe has no official flag of its own; the Regional Council flies its logo on a white field instead.",
+    "Seen from above, Guadeloupe's two main islands, Basse-Terre and Grande-Terre, form the shape of a butterfly."
+  ]
+}

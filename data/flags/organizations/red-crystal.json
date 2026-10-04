@@ -1,0 +1,55 @@
+{
+  "code": "red-crystal",
+  "isoNumeric": "",
+  "name": "Red Crystal",
+  "the": true,
+  "officialName": "Red Crystal",
+  "localNames": [],
+  "aliases": [],
+  "image": "Flag_of_the_Red_Crystal.svg",
+  "capital": "Geneva",
+  "region": "International",
+  "subregion": "Founded 2005",
+  "population": null,
+  "area": null,
+  "languages": [],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    46.23,
+    6.14
+  ],
+  "facts": [
+    [
+      "Adopted",
+      "2005"
+    ],
+    [
+      "In force",
+      "2007"
+    ],
+    [
+      "Headquarters",
+      "Geneva"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "A white field with a hollow red square standing on one corner, like a diamond, in the centre.",
+    "adopted": "2005",
+    "colors": [
+      "white",
+      "red"
+    ],
+    "symbolism": "The crystal was designed to carry no national, political or religious meaning, so it can mark the wounded and those who help them anywhere."
+  },
+  "hook": "The Red Crystal is a hollow red diamond on white, with no cross or crescent in sight.",
+  "lookalikes": [
+    "red-cross",
+    "red-crescent"
+  ],
+  "trivia": [
+    "It was created by the Third Additional Protocol to the Geneva Conventions, adopted in December 2005, which came into force in January 2007.",
+    "Israel's Magen David Adom uses the crystal abroad with its own red Star of David set inside it."
+  ]
+}

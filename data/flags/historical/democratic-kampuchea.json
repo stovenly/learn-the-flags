@@ -1,0 +1,67 @@
+{
+  "code": "democratic-kampuchea",
+  "isoNumeric": "",
+  "name": "Democratic Kampuchea",
+  "officialName": "Democratic Kampuchea",
+  "localNames": [
+    {
+      "language": "Khmer",
+      "name": "កម្ពុជាប្រជាធិបតេយ្យ",
+      "romanized": "Kâmpŭchéa Prâchéathĭpâtéyy"
+    }
+  ],
+  "aliases": [
+    "Khmer Rouge",
+    "Kampuchea"
+  ],
+  "image": "Flag_of_Democratic_Kampuchea.svg",
+  "capital": "Phnom Penh",
+  "region": "Asia",
+  "subregion": "1975–1979",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Khmer"
+  ],
+  "currencies": [],
+  "demonym": "Kampuchean",
+  "latlng": [
+    12.5,
+    105
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1975–1979"
+    ],
+    [
+      "Flag used",
+      "1976–1979"
+    ],
+    [
+      "Today",
+      "Cambodia"
+    ]
+  ],
+  "shape": [
+    "kh"
+  ],
+  "flag": {
+    "description": "A red field with a yellow three-towered outline of Angkor Wat in the centre.",
+    "adopted": "1976",
+    "colors": [
+      "red",
+      "yellow"
+    ],
+    "symbolism": "Red stood for the revolution; Angkor Wat, the national symbol of Cambodia, has appeared in some form on almost every Cambodian national flag."
+  },
+  "hook": "The Khmer Rouge state showed a yellow Angkor Wat outline on plain red; Cambodia today has a white Angkor Wat on a red band between two blue ones.",
+  "lookalikes": [
+    "kh",
+    "vn"
+  ],
+  "trivia": [
+    "Under Khmer Rouge rule from 1975 to 1979, an estimated 1.5 to 2 million people died from execution, forced labour, starvation and disease.",
+    "Vietnamese forces took Phnom Penh in January 1979, ending the regime, but its representatives kept Cambodia's seat at the United Nations through the 1980s."
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "code": "fr-20r",
+  "isoNumeric": "",
+  "name": "Corsica",
+  "officialName": "Collectivity of Corsica",
+  "localNames": [
+    {
+      "language": "Corsican",
+      "name": "Corsica",
+      "romanized": ""
+    },
+    {
+      "language": "French",
+      "name": "Corse",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Corse"
+  ],
+  "image": "Flag_of_Corsica.svg",
+  "capital": "Ajaccio",
+  "region": "Southern Europe",
+  "subregion": "Territorial collectivity of France",
+  "population": 365636,
+  "area": 8680,
+  "languages": [
+    "French",
+    "Corsican"
+  ],
+  "currencies": [
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
+  ],
+  "demonym": "Corsican",
+  "latlng": [
+    42.2,
+    9.1
+  ],
+  "facts": [
+    [
+      "Status",
+      "Territorial collectivity of France"
+    ],
+    [
+      "Sovereign state",
+      "France"
+    ]
+  ],
+  "flag": {
+    "description": "A white field with a black Moor's head in profile, facing the hoist, wearing a white headband tied at the back of the head.",
+    "adopted": "1755",
+    "colors": [
+      "white",
+      "black"
+    ],
+    "symbolism": "The Moor's head is an old Corsican emblem; Pasquale Paoli is said to have raised the band from the Moor's eyes to his forehead as a sign of the island's liberation."
+  },
+  "hook": "Corsica is a single Moor's head alone on white; Sardinia shows four of them, split by a red cross.",
+  "lookalikes": [
+    "it-88"
+  ],
+  "trivia": [
+    "Pasquale Paoli made it the flag of the independent Corsican Republic in 1755; it fell out of use after France took the island and was re-adopted as the regional flag in 1980.",
+    "Napoleon Bonaparte was born in Ajaccio in 1769, the year French troops completed their conquest of the island."
+  ]
+}

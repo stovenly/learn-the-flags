@@ -1,0 +1,58 @@
+{
+  "code": "zanzibar",
+  "isoNumeric": "",
+  "name": "Zanzibar",
+  "officialName": "Zanzibar",
+  "localNames": [],
+  "aliases": [],
+  "image": "Flag_of_Zanzibar.svg",
+  "capital": "Zanzibar City",
+  "region": "Eastern Africa",
+  "subregion": "Semi-autonomous region of Tanzania",
+  "population": 1889773,
+  "area": 2462,
+  "languages": [
+    "Swahili"
+  ],
+  "currencies": [
+    {
+      "name": "Tanzanian shilling",
+      "code": "TZS",
+      "symbol": "TSh"
+    }
+  ],
+  "demonym": "Zanzibari",
+  "latlng": [
+    -6.1,
+    39.3
+  ],
+  "facts": [
+    [
+      "Status",
+      "Semi-autonomous region of Tanzania"
+    ],
+    [
+      "Sovereign state",
+      "Tanzania"
+    ]
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of blue, black and green, with the flag of Tanzania in the canton.",
+    "adopted": "2005",
+    "colors": [
+      "blue",
+      "black",
+      "green",
+      "yellow"
+    ],
+    "symbolism": "Blue stands for the Indian Ocean, black for the people and green for the land, while the Tanzanian flag in the corner marks Zanzibar's union with the mainland."
+  },
+  "hook": "Zanzibar is stripes of blue, black and green with a miniature Tanzania flag tucked into the corner.",
+  "lookalikes": [
+    "tz"
+  ],
+  "trivia": [
+    "The name Tanzania blends Tanganyika and Zanzibar, which united in 1964; Zanzibar keeps its own president and House of Representatives.",
+    "The Anglo-Zanzibar War of 1896 is often cited as the shortest war in recorded history, lasting under an hour."
+  ]
+}

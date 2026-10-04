@@ -1,0 +1,60 @@
+{
+  "code": "io",
+  "isoNumeric": "086",
+  "name": "British Indian Ocean Territory",
+  "the": true,
+  "officialName": "British Indian Ocean Territory",
+  "localNames": [],
+  "aliases": [
+    "BIOT",
+    "Chagos Islands",
+    "Chagos Archipelago"
+  ],
+  "image": "Flag_of_the_British_Indian_Ocean_Territory_2025.svg",
+  "capital": "",
+  "region": "Eastern Africa",
+  "subregion": "British Overseas Territory",
+  "population": null,
+  "area": 60,
+  "languages": [
+    "English"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    -6.3,
+    71.8
+  ],
+  "facts": [
+    [
+      "Status",
+      "British Overseas Territory"
+    ],
+    [
+      "Sovereign state",
+      "United Kingdom"
+    ],
+    [
+      "Sovereignty",
+      "Claimed by Mauritius; a treaty signed in 2025 to transfer the islands had not been ratified as of 2026"
+    ]
+  ],
+  "flag": {
+    "description": "The Union Jack in the canton on a field of wavy dark blue and white horizontal lines, with a green palm tree rising behind a gold crown in the fly.",
+    "adopted": "1990",
+    "colors": [
+      "white",
+      "blue",
+      "red",
+      "green",
+      "yellow"
+    ],
+    "symbolism": "The wavy lines are the Indian Ocean around the islands, the palm tree stands for the islands themselves, and the crown for British sovereignty."
+  },
+  "hook": "The British Indian Ocean Territory is the Union Jack floating on rolling waves, with a palm tree sprouting out of a crown.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag was granted in 1990 to mark the territory's 25th anniversary.",
+    "The islands have had no permanent civilian population since the Chagossians were removed in the late 1960s and early 1970s to make way for the military base on Diego Garcia."
+  ]
+}

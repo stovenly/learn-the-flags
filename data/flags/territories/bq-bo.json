@@ -1,0 +1,64 @@
+{
+  "code": "bq-bo",
+  "isoNumeric": "",
+  "name": "Bonaire",
+  "officialName": "Bonaire",
+  "localNames": [
+    {
+      "language": "Papiamentu",
+      "name": "Boneiru",
+      "romanized": ""
+    }
+  ],
+  "aliases": [],
+  "image": "Flag_of_Bonaire.svg",
+  "capital": "Kralendijk",
+  "region": "Caribbean",
+  "subregion": "Special municipality of the Netherlands",
+  "population": 26552,
+  "area": 288,
+  "languages": [
+    "Papiamentu",
+    "Dutch"
+  ],
+  "currencies": [
+    {
+      "name": "United States dollar",
+      "code": "USD",
+      "symbol": "$"
+    }
+  ],
+  "demonym": "Bonairean",
+  "latlng": [
+    12.2,
+    -68.26
+  ],
+  "facts": [
+    [
+      "Status",
+      "Special municipality of the Netherlands"
+    ],
+    [
+      "Sovereign state",
+      "Kingdom of the Netherlands"
+    ]
+  ],
+  "flag": {
+    "description": "A small yellow triangle in the upper hoist and a large blue triangle in the lower fly, separated by a broad white diagonal band holding a black compass ring with a red six-pointed star inside.",
+    "adopted": "1981",
+    "colors": [
+      "yellow",
+      "white",
+      "blue",
+      "black",
+      "red"
+    ],
+    "symbolism": "Yellow is the sun, white the sky and blue the sea; the compass recalls the islanders' seafaring skill, and the six points of the red star stand for Bonaire's six original villages."
+  },
+  "hook": "Bonaire is a sailor's compass with a red star in it, steering diagonally between a yellow sun corner and a blue sea.",
+  "lookalikes": [],
+  "trivia": [
+    "The red star's six points stand for the six original villages of Antriol, Nikiboko, Nort Saliña, Playa, Rincon and Tera Korá.",
+    "Bonaire is one of the few places in the Caribbean where flamingos breed, at the Pekelmeer salt pans in the south."
+  ]
+}

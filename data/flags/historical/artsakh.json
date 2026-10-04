@@ -1,0 +1,73 @@
+{
+  "code": "artsakh",
+  "isoNumeric": "",
+  "name": "Artsakh",
+  "officialName": "Republic of Artsakh",
+  "localNames": [
+    {
+      "language": "Armenian",
+      "name": "Արցախ",
+      "romanized": "Artsakh"
+    }
+  ],
+  "aliases": [
+    "Nagorno-Karabakh",
+    "Nagorno-Karabakh Republic",
+    "Republic of Artsakh"
+  ],
+  "image": "Flag_of_Artsakh.svg",
+  "capital": "Stepanakert",
+  "region": "Asia",
+  "subregion": "1991–2023",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Armenian"
+  ],
+  "currencies": [
+    {
+      "name": "Armenian dram",
+      "code": "AMD",
+      "symbol": "֏"
+    }
+  ],
+  "demonym": "Artsakhi",
+  "latlng": [
+    39.8,
+    46.7
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1991–2023"
+    ],
+    [
+      "Flag used",
+      "1992–2023"
+    ],
+    [
+      "Today",
+      "Part of Azerbaijan"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "Three equal horizontal stripes of red, blue and orange, broken by a white stepped chevron, like a carpet pattern, that is cut into the fly and points toward the hoist.",
+    "adopted": "1992",
+    "colors": [
+      "red",
+      "blue",
+      "orange",
+      "white"
+    ],
+    "symbolism": "The red, blue and orange are the colours of Armenia; the white stepped arrow is said to stand for the region's separation from Armenia and its hope of union, and its shape echoes local carpet designs."
+  },
+  "hook": "Artsakh took Armenia's red-blue-orange tricolour and cut a white zigzag arrow, like a carpet pattern, into the fly.",
+  "lookalikes": [
+    "am"
+  ],
+  "trivia": [
+    "The Republic of Artsakh was not recognised by any member state of the United Nations, including Armenia.",
+    "After an Azerbaijani military offensive in September 2023, its leaders signed a decree dissolving the republic, and most of its ethnic Armenian population left for Armenia."
+  ]
+}

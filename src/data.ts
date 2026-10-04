@@ -67,7 +67,7 @@ const SUBREGION_ORDER = [
 // Other sets go in their curated order, else best-known (most populous) first.
 export function curriculum(list: Country[]): Country[] {
   const group = (c: Country) => {
-    if (c.set !== SOVEREIGN) return c.rank ?? 0;
+    if (c.set !== SOVEREIGN) return c.rank ?? Infinity;
     const i = SUBREGION_ORDER.indexOf(c.subregion);
     return i === -1 ? SUBREGION_ORDER.length : i;
   };

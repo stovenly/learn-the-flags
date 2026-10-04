@@ -1,7 +1,12 @@
 {
+  "ch|order-of-malta": "The Order of Malta and Switzerland are both a white cross on red. Switzerland's flag is square and its short cross stops well before the edges; the Order of Malta's flag is rectangular and its cross runs right to the edges.",
+  "dk|order-of-malta": "The Order of Malta and Denmark are both a white cross on red running to the edges. Denmark's cross is shifted towards the hoist; the Order of Malta's sits in the exact centre.",
   "eh|jo": "Western Sahara and Jordan both have black, white and green stripes with a red triangle at the hoist. Jordan has a small white star in the triangle; Western Sahara has a red crescent and star on the white stripe.",
   "eh|ps": "Western Sahara and Palestine both have black, white and green stripes with a red triangle at the hoist. Western Sahara adds a red crescent and star on the white stripe; Palestine's stripes are plain.",
   "ir|somaliland": "Iran and Somaliland are both green, white and red horizontal stripes with Arabic writing. Iran has a red emblem in the centre and script along the stripe edges; Somaliland has white script on the green and a black star in the centre.",
+  "islamic-emirate|sa": "The Islamic Emirate and Saudi Arabia both carry the Shahada in Arabic script. Saudi Arabia writes it in white on green above a sword; the Islamic Emirate writes it in black on plain white.",
+  "molossia|sl": "Molossia and Sierra Leone are the same three stripes in reverse order. Sierra Leone has green on top and blue at the bottom; Molossia has blue on top and green at the bottom.",
   "northern-cyprus|tn": "Northern Cyprus and Tunisia both show a red crescent and star on white. Tunisia's sit in a white disc on a red field; Northern Cyprus is white all over with two thin red stripes.",
-  "northern-cyprus|tr": "Northern Cyprus and Turkey both show a crescent and star. Turkey is a white crescent and star on red; Northern Cyprus reverses it to red on white and adds two thin red stripes."
+  "northern-cyprus|tr": "Northern Cyprus and Turkey both show a crescent and star. Turkey is a white crescent and star on red; Northern Cyprus reverses it to red on white and adds two thin red stripes.",
+  "sealand|tt": "Sealand and Trinidad and Tobago both cross red with a diagonal of black and white. Trinidad and Tobago has a white-edged black band running down from the top left; Sealand has a white band rising to the top right, with red above it and black below."
 }

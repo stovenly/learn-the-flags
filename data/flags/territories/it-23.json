@@ -1,0 +1,71 @@
+{
+  "code": "it-23",
+  "isoNumeric": "",
+  "name": "Aosta Valley",
+  "the": true,
+  "officialName": "Autonomous Region of Aosta Valley",
+  "localNames": [
+    {
+      "language": "Italian",
+      "name": "Valle d'Aosta",
+      "romanized": ""
+    },
+    {
+      "language": "French",
+      "name": "Vallée d'Aoste",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Valle d'Aosta",
+    "Vallée d'Aoste",
+    "Aosta"
+  ],
+  "image": "Flag_of_Valle_d'Aosta.svg",
+  "capital": "Aosta",
+  "region": "Southern Europe",
+  "subregion": "Autonomous region of Italy",
+  "population": 122554,
+  "area": 3261,
+  "languages": [
+    "Italian",
+    "French"
+  ],
+  "currencies": [
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
+  ],
+  "demonym": "Valdostan",
+  "latlng": [
+    45.7,
+    7.4
+  ],
+  "facts": [
+    [
+      "Status",
+      "Autonomous region of Italy"
+    ],
+    [
+      "Sovereign state",
+      "Italy"
+    ]
+  ],
+  "flag": {
+    "description": "A vertical bicolour of black at the hoist and red in the fly.",
+    "adopted": "2006",
+    "colors": [
+      "black",
+      "red"
+    ],
+    "symbolism": "Black and red are the traditional colours of the Aosta Valley."
+  },
+  "hook": "The Aosta Valley is the plainest flag in Italy: just a black half and a red half side by side.",
+  "lookalikes": [],
+  "trivia": [
+    "It is the smallest and least populous region of Italy, and both Italian and French are official there.",
+    "Its capital, Aosta, was founded by the Romans as Augusta Praetoria in 25 BC."
+  ]
+}

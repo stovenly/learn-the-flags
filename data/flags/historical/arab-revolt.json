@@ -1,0 +1,69 @@
+{
+  "code": "arab-revolt",
+  "isoNumeric": "",
+  "name": "Arab Revolt",
+  "the": true,
+  "officialName": "Great Arab Revolt",
+  "localNames": [
+    {
+      "language": "Arabic",
+      "name": "الثورة العربية الكبرى",
+      "romanized": "al-Thawra al-ʿArabiyya al-Kubrā"
+    }
+  ],
+  "aliases": [
+    "Great Arab Revolt",
+    "Flag of the Arab Revolt"
+  ],
+  "image": "Flag_of_Hejaz_(1917).svg",
+  "capital": "Mecca",
+  "region": "Asia",
+  "subregion": "1916–1918",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Arabic"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    21.4,
+    39.8
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1916–1918"
+    ],
+    [
+      "Led by",
+      "Sharif Hussein bin Ali"
+    ],
+    [
+      "Legacy",
+      "The pan-Arab colours"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "Three equal horizontal stripes of black, green and white, with a red triangle at the hoist.",
+    "adopted": "1916",
+    "colors": [
+      "black",
+      "green",
+      "white",
+      "red"
+    ],
+    "symbolism": "The stripes are said to recall the Abbasid (black), Fatimid (green) and Umayyad (white) caliphates, and the red the Hashemite family that led the revolt."
+  },
+  "hook": "The Arab Revolt flag runs black, green, white with a red triangle; Palestine swaps the green and white, and Jordan does the same and adds a white star.",
+  "lookalikes": [
+    "ps",
+    "jo",
+    "sd"
+  ],
+  "trivia": [
+    "Its colours became the pan-Arab colours, used today in the flags of Jordan, Palestine, Sudan, Kuwait and the United Arab Emirates, among others.",
+    "The design is usually credited to the British diplomat Sir Mark Sykes."
+  ]
+}

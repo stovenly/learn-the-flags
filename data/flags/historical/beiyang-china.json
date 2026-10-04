@@ -1,0 +1,68 @@
+{
+  "code": "beiyang-china",
+  "isoNumeric": "",
+  "name": "Republic of China (1912–1928)",
+  "the": true,
+  "officialName": "Republic of China",
+  "localNames": [
+    {
+      "language": "Chinese",
+      "name": "中華民國",
+      "romanized": "Zhōnghuá Mínguó"
+    }
+  ],
+  "aliases": [
+    "Five Races Under One Union",
+    "Beiyang government"
+  ],
+  "image": "Flag_of_China_(1912–1928).svg",
+  "capital": "Beijing",
+  "region": "Asia",
+  "subregion": "1912–1928",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Chinese"
+  ],
+  "currencies": [],
+  "demonym": "Chinese",
+  "latlng": [
+    35,
+    105
+  ],
+  "facts": [
+    [
+      "Existed",
+      "1912–1928"
+    ],
+    [
+      "Flag used",
+      "1912–1928"
+    ],
+    [
+      "Succeeded by",
+      "Nationalist government in Nanjing"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "Five equal horizontal stripes of red, yellow, blue, white and black.",
+    "adopted": "1912",
+    "colors": [
+      "red",
+      "yellow",
+      "blue",
+      "white",
+      "black"
+    ],
+    "symbolism": "The five colours are usually said to stand for the five major peoples of the republic: the Han (red), Manchus (yellow), Mongols (blue), Hui (white) and Tibetans (black)."
+  },
+  "hook": "The early Republic of China flew five plain stripes, red, yellow, blue, white and black, one for each of its \"five races\"; Manchukuo squeezed four of them into the corner of a yellow flag.",
+  "lookalikes": [
+    "manchukuo"
+  ],
+  "trivia": [
+    "It was replaced nationally in 1928 by the Kuomintang's flag with the white sun on a blue canton, after the Northern Expedition reunified the country.",
+    "The five-coloured flag was revived in the late 1930s by the Japanese-backed Reformed Government of the Republic of China."
+  ]
+}

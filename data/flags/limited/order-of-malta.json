@@ -1,0 +1,67 @@
+{
+  "code": "order-of-malta",
+  "isoNumeric": "",
+  "name": "Order of Malta",
+  "the": true,
+  "officialName": "Sovereign Military Hospitaller Order of Saint John of Jerusalem, of Rhodes and of Malta",
+  "localNames": [
+    {
+      "language": "Italian",
+      "name": "Sovrano Militare Ordine di Malta",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Sovereign Military Order of Malta",
+    "SMOM",
+    "Knights of Malta"
+  ],
+  "image": "Flag_of_the_Order_of_St._John_(various).svg",
+  "capital": "Rome",
+  "region": "Europe",
+  "subregion": "Sovereign entity",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Italian"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    41.9,
+    12.48
+  ],
+  "facts": [
+    [
+      "Status",
+      "Sovereign entity without territory"
+    ],
+    [
+      "Diplomatic relations",
+      "114 states"
+    ],
+    [
+      "UN status",
+      "Observer since 1994"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "A red field with a white cross whose arms run to the edges, centred on the flag.",
+    "adopted": "",
+    "colors": [
+      "red",
+      "white"
+    ],
+    "symbolism": "The white cross on red has been the Order's emblem since the Middle Ages and recalls its origins as a crusader-era hospital order."
+  },
+  "hook": "The Order of Malta is a plain white cross dead centre on red, running to every edge; Denmark pushes its cross towards the pole and Switzerland keeps its cross short on a square.",
+  "lookalikes": [
+    "dk",
+    "ch"
+  ],
+  "trivia": [
+    "The Order was founded in Jerusalem around 1099 and later ruled Rhodes and then Malta, until Napoleon took the island in 1798.",
+    "Its headquarters, Palazzo Malta on Rome's Via Condotti, has extraterritorial status in Italy."
+  ]
+}

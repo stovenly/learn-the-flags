@@ -1,0 +1,70 @@
+{
+  "code": "pt-20",
+  "isoNumeric": "",
+  "name": "Azores",
+  "the": true,
+  "officialName": "Autonomous Region of the Azores",
+  "localNames": [
+    {
+      "language": "Portuguese",
+      "name": "Açores",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Acores",
+    "Açores"
+  ],
+  "image": "Flag_of_the_Azores.svg",
+  "capital": "Ponta Delgada",
+  "region": "Southern Europe",
+  "subregion": "Autonomous region of Portugal",
+  "population": 236440,
+  "area": 2351,
+  "languages": [
+    "Portuguese"
+  ],
+  "currencies": [
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
+  ],
+  "demonym": "Azorean",
+  "latlng": [
+    38.5,
+    -28.0
+  ],
+  "facts": [
+    [
+      "Status",
+      "Autonomous region of Portugal"
+    ],
+    [
+      "Sovereign state",
+      "Portugal"
+    ],
+    [
+      "Islands",
+      "9 inhabited"
+    ]
+  ],
+  "flag": {
+    "description": "A vertical bicolour of dark blue at the hoist and a wider white field, with a gold goshawk with spread wings beneath an arc of nine gold stars, and the Portuguese shield in the upper hoist.",
+    "adopted": "1979",
+    "colors": [
+      "blue",
+      "white",
+      "yellow",
+      "red"
+    ],
+    "symbolism": "The goshawk (açor in Portuguese) gives the islands their name, the nine stars are the nine inhabited islands, and blue and white were the colours of Portugal's constitutional monarchy."
+  },
+  "hook": "The Azores is a gold hawk spreading its wings under an arch of nine stars, straddling a blue-and-white split.",
+  "lookalikes": [],
+  "trivia": [
+    "The birds the first settlers took for goshawks were probably common buzzards, but the name Açores stuck.",
+    "Blue and white recall the flag Portugal flew under its constitutional monarchy, a cause the island of Terceira championed in the civil war of 1828 to 1834."
+  ]
+}

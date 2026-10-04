@@ -1,0 +1,70 @@
+{
+  "code": "yt",
+  "isoNumeric": "175",
+  "name": "Mayotte",
+  "officialName": "Department of Mayotte",
+  "localNames": [
+    {
+      "language": "Shimaore",
+      "name": "Maore",
+      "romanized": ""
+    }
+  ],
+  "aliases": [],
+  "image": "Flag_of_Mayotte_(local).svg",
+  "capital": "Mamoudzou",
+  "region": "Eastern Africa",
+  "subregion": "French overseas region",
+  "population": 320901,
+  "area": 374,
+  "languages": [
+    "French",
+    "Shimaore",
+    "Kibushi"
+  ],
+  "currencies": [
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
+  ],
+  "demonym": "Mahoran",
+  "latlng": [
+    -12.8,
+    45.15
+  ],
+  "facts": [
+    [
+      "Status",
+      "Overseas department and region of France"
+    ],
+    [
+      "Sovereign state",
+      "France"
+    ],
+    [
+      "Claimed by",
+      "Comoros"
+    ]
+  ],
+  "flag": {
+    "description": "A local flag with no official status: a white field with Mayotte's coat of arms in the centre, a shield held by two seahorses above the motto \"Ra Hachiri\", under the word MAYOTTE in red. The official flag is the French tricolour.",
+    "adopted": "",
+    "colors": [
+      "white",
+      "red",
+      "blue",
+      "yellow"
+    ],
+    "symbolism": "The crescent reflects the island's Muslim faith and the two yellow flowers are ylang-ylang, grown on Mayotte for perfume; the seahorses are said to echo the shape of the island."
+  },
+  "hook": "Mayotte is the white flag with seahorses: two silver seahorses guard a blue-and-red shield, with MAYOTTE spelled out in red above them.",
+  "lookalikes": [
+    "bl"
+  ],
+  "trivia": [
+    "The motto \"Ra Hachiri\" means \"We are vigilant\" in Shimaore; the coat of arms was adopted in 1982.",
+    "Mayotte chose to stay French when the rest of the Comoros became independent in 1975; Comoros still claims it."
+  ]
+}

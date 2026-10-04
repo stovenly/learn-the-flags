@@ -1,0 +1,69 @@
+{
+  "code": "gcc",
+  "isoNumeric": "",
+  "name": "Gulf Cooperation Council",
+  "the": true,
+  "officialName": "Cooperation Council for the Arab States of the Gulf",
+  "localNames": [],
+  "aliases": [
+    "GCC",
+    "Cooperation Council for the Arab States of the Gulf"
+  ],
+  "image": "Flag_of_the_Cooperation_Council_for_the_Arab_States_of_the_Gulf.svg",
+  "capital": "Riyadh",
+  "region": "Asia",
+  "subregion": "Founded 1981",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Arabic"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    24.71,
+    46.68
+  ],
+  "facts": [
+    [
+      "Founded",
+      "1981"
+    ],
+    [
+      "Members",
+      "6 states"
+    ],
+    [
+      "Headquarters",
+      "Riyadh"
+    ]
+  ],
+  "shape": [
+    "ae",
+    "bh",
+    "kw",
+    "om",
+    "qa",
+    "sa"
+  ],
+  "flag": {
+    "description": "A green field with the council's circular emblem in the centre: a black ring of gold Arabic script around a hexagon framing a map of the Arabian Peninsula.",
+    "adopted": "",
+    "colors": [
+      "green",
+      "black",
+      "yellow",
+      "white",
+      "blue"
+    ],
+    "symbolism": "The hexagon stands for the six member states and the map for the peninsula they share; the script reads 'In the name of God' above the council's name."
+  },
+  "hook": "The GCC sets a map of the Arabian Peninsula inside a six-sided frame, one side per member, in a black ring on green.",
+  "lookalikes": [
+    "arab-league"
+  ],
+  "trivia": [
+    "The council was founded in Abu Dhabi on 25 May 1981 by Bahrain, Kuwait, Oman, Qatar, Saudi Arabia and the United Arab Emirates.",
+    "In May 2011, the council's 30th anniversary, the six members agreed to fly its flag alongside their national flags."
+  ]
+}

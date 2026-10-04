@@ -1,0 +1,75 @@
+{
+  "code": "sadc",
+  "isoNumeric": "",
+  "name": "SADC",
+  "officialName": "Southern African Development Community",
+  "localNames": [],
+  "aliases": [
+    "Southern African Development Community"
+  ],
+  "image": "Flag_of_SADC.svg",
+  "capital": "Gaborone",
+  "region": "Africa",
+  "subregion": "Founded 1992",
+  "population": null,
+  "area": null,
+  "languages": [
+    "English",
+    "French",
+    "Portuguese"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    -24.65,
+    25.91
+  ],
+  "facts": [
+    [
+      "Founded",
+      "1992"
+    ],
+    [
+      "Members",
+      "16 states"
+    ],
+    [
+      "Headquarters",
+      "Gaborone"
+    ]
+  ],
+  "shape": [
+    "ao",
+    "bw",
+    "cd",
+    "km",
+    "ls",
+    "mg",
+    "mu",
+    "mw",
+    "mz",
+    "na",
+    "sc",
+    "sz",
+    "tz",
+    "za",
+    "zm",
+    "zw"
+  ],
+  "flag": {
+    "description": "A dark blue field with a large green disc in the centre carrying the interlaced gold letters of the SADC logo.",
+    "adopted": "1995",
+    "colors": [
+      "blue",
+      "green",
+      "yellow"
+    ],
+    "symbolism": "Blue stands for the sky and oceans that provide water, green for the region's plants, wildlife and farming, and gold for its mineral wealth."
+  },
+  "hook": "SADC is a big green disc on navy blue with its four gold letters woven together inside.",
+  "lookalikes": [],
+  "trivia": [
+    "The design was chosen through a public competition that drew more than 1,000 entries, and the flag was launched at the 1995 summit.",
+    "SADC grew out of the Southern African Development Coordination Conference, founded in 1980, and took its present form in 1992."
+  ]
+}

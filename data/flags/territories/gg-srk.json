@@ -1,0 +1,74 @@
+{
+  "code": "gg-srk",
+  "isoNumeric": "",
+  "name": "Sark",
+  "officialName": "Sark",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "Sercq",
+      "romanized": ""
+    },
+    {
+      "language": "Sercquiais",
+      "name": "Sèr",
+      "romanized": ""
+    }
+  ],
+  "aliases": [],
+  "image": "Flag_of_Sark.svg",
+  "capital": "",
+  "region": "Northern Europe",
+  "subregion": "Part of a Crown Dependency",
+  "population": 562,
+  "area": 5.45,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "British pound",
+      "code": "GBP",
+      "symbol": "£"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    49.43,
+    -2.36
+  ],
+  "facts": [
+    [
+      "Status",
+      "Self-governing part of the Bailiwick of Guernsey"
+    ],
+    [
+      "Head of state",
+      "King Charles III, as Duke of Normandy"
+    ],
+    [
+      "Legislature",
+      "Chief Pleas"
+    ]
+  ],
+  "flag": {
+    "description": "A white field with the red cross of St George and a red canton in the upper hoist bearing two gold lions, one above the other.",
+    "adopted": "2020",
+    "colors": [
+      "white",
+      "red",
+      "yellow"
+    ],
+    "symbolism": "The two gold lions come from the arms of the Duchy of Normandy, recalling Sark's Norman heritage, while the cross of St George reflects its ties to the English Crown."
+  },
+  "hook": "Sark is England's cross with a red corner patch where two gold Norman lions prowl, one above the other.",
+  "lookalikes": [
+    "gb-eng",
+    "gg-ald",
+    "gg"
+  ],
+  "trivia": [
+    "The flag was designed in 1938 for the Dame of Sark, Sibyl Hathaway, and flown for decades before it was formally granted in 2020.",
+    "Cars are banned on Sark's roads; islanders get around by bicycle, tractor and horse-drawn carriage."
+  ]
+}

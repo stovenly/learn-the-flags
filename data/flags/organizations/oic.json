@@ -1,0 +1,61 @@
+{
+  "code": "oic",
+  "isoNumeric": "",
+  "name": "Organisation of Islamic Cooperation",
+  "the": true,
+  "officialName": "Organisation of Islamic Cooperation",
+  "localNames": [],
+  "aliases": [
+    "OIC",
+    "Organization of Islamic Cooperation",
+    "Organisation of the Islamic Conference"
+  ],
+  "image": "Flag_of_the_Organisation_of_Islamic_Cooperation_(OIC).svg",
+  "capital": "Jeddah",
+  "region": "International",
+  "subregion": "Founded 1969",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Arabic",
+    "English",
+    "French"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    21.54,
+    39.17
+  ],
+  "facts": [
+    [
+      "Founded",
+      "1969"
+    ],
+    [
+      "Members",
+      "57 states"
+    ],
+    [
+      "Headquarters",
+      "Jeddah"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "A white field with the OIC emblem in the centre: a green crescent curving round a globe drawn in green lines, with the black Kaaba at its heart.",
+    "adopted": "2011",
+    "colors": [
+      "white",
+      "green",
+      "black"
+    ],
+    "symbolism": "The Kaaba, the globe and the crescent are the three elements the organisation chose to reflect the vision and mission of its new charter."
+  },
+  "hook": "The OIC is a green crescent cradling a line-drawn globe with the small black cube of the Kaaba in the middle, all on plain white.",
+  "lookalikes": [],
+  "trivia": [
+    "The flag was introduced in 2011, when the Organisation of the Islamic Conference renamed itself the Organisation of Islamic Cooperation.",
+    "Founded in Rabat in 1969, the OIC has 57 member states across four continents."
+  ]
+}

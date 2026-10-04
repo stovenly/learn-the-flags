@@ -1,0 +1,65 @@
+{
+  "code": "mq",
+  "isoNumeric": "474",
+  "name": "Martinique",
+  "officialName": "Territorial Collectivity of Martinique",
+  "localNames": [
+    {
+      "language": "Antillean Creole",
+      "name": "Matinik",
+      "romanized": ""
+    }
+  ],
+  "aliases": [],
+  "image": "Flag-of-Martinique.svg",
+  "capital": "Fort-de-France",
+  "region": "Caribbean",
+  "subregion": "French overseas region",
+  "population": 349925,
+  "area": 1128,
+  "languages": [
+    "French",
+    "Antillean Creole"
+  ],
+  "currencies": [
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
+  ],
+  "demonym": "Martinican",
+  "latlng": [
+    14.65,
+    -61
+  ],
+  "facts": [
+    [
+      "Status",
+      "Overseas department and region of France"
+    ],
+    [
+      "Sovereign state",
+      "France"
+    ]
+  ],
+  "flag": {
+    "description": "Two equal horizontal bands of green over black, with a red triangle at the hoist reaching to the centre of the flag. It is the flag of the Territorial Collectivity of Martinique; the French tricolour remains the official national flag.",
+    "adopted": "2023",
+    "colors": [
+      "red",
+      "green",
+      "black"
+    ],
+    "symbolism": "Known as the rouge-vert-noir, it uses pan-African colours chosen by Martinican nationalists in the 1960s to honour the island's African heritage and the struggle for liberation."
+  },
+  "hook": "Martinique is the Palestinian flag with the white stripe taken out: a red triangle pushing into just two bands, green over black.",
+  "lookalikes": [
+    "ps",
+    "jo"
+  ],
+  "trivia": [
+    "The design was created by Martinican nationalists in 1968 and adopted by the Assembly of Martinique on 2 February 2023, after the hummingbird design that had won the public vote was withdrawn over plagiarism claims.",
+    "Before 2023 the flag most often shown for Martinique was the colonial \"snake flag\": a white cross on blue with a white snake in each quarter."
+  ]
+}

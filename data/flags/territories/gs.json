@@ -1,0 +1,67 @@
+{
+  "code": "gs",
+  "isoNumeric": "239",
+  "name": "South Georgia and the South Sandwich Islands",
+  "officialName": "South Georgia and the South Sandwich Islands",
+  "localNames": [],
+  "aliases": [
+    "South Georgia",
+    "SGSSI"
+  ],
+  "image": "Flag_of_South_Georgia_and_the_South_Sandwich_Islands.svg",
+  "capital": "King Edward Point",
+  "region": "South America",
+  "subregion": "British Overseas Territory",
+  "population": null,
+  "area": 3903,
+  "languages": [
+    "English"
+  ],
+  "currencies": [
+    {
+      "name": "British pound",
+      "code": "GBP",
+      "symbol": "£"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    -54.4,
+    -36.6
+  ],
+  "facts": [
+    [
+      "Status",
+      "British Overseas Territory"
+    ],
+    [
+      "Sovereign state",
+      "United Kingdom"
+    ],
+    [
+      "Population",
+      "No permanent residents; about 20 officials and scientists"
+    ]
+  ],
+  "flag": {
+    "description": "A Blue Ensign with the territory's coat of arms in the fly: a shield with a golden lion holding a torch, supported by a fur seal and a macaroni penguin, with a reindeer standing on top and the motto below.",
+    "adopted": "1999",
+    "colors": [
+      "blue",
+      "red",
+      "white",
+      "yellow"
+    ],
+    "symbolism": "The lion stands for Britain and the torch for exploration; the seal, penguin and reindeer are animals of South Georgia, where reindeer were brought by Norwegian whalers."
+  },
+  "hook": "South Georgia's Blue Ensign carries a whole sub-Antarctic zoo: a fur seal and a penguin hold up the shield while a reindeer stands on top.",
+  "lookalikes": [
+    "fk",
+    "sh-ta",
+    "sh-ac"
+  ],
+  "trivia": [
+    "The motto \"Leo Terram Propriam Protegat\" means \"Let the lion protect its own land\".",
+    "The explorer Ernest Shackleton is buried at Grytviken on South Georgia."
+  ]
+}

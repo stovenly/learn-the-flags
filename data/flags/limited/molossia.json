@@ -1,0 +1,53 @@
+{
+  "code": "molossia",
+  "isoNumeric": "",
+  "name": "Molossia",
+  "officialName": "Republic of Molossia",
+  "localNames": [],
+  "aliases": [
+    "Republic of Molossia"
+  ],
+  "image": "Flag_of_the_Republic_of_Molossia.svg",
+  "capital": "",
+  "region": "Americas",
+  "subregion": "Micronation",
+  "population": null,
+  "area": 0.046,
+  "languages": [
+    "English"
+  ],
+  "currencies": [],
+  "demonym": "",
+  "latlng": [
+    39.32,
+    -119.54
+  ],
+  "facts": [
+    [
+      "Status",
+      "Unrecognised micronation"
+    ],
+    [
+      "Location",
+      "Near Dayton, Nevada"
+    ]
+  ],
+  "flag": {
+    "description": "Three equal horizontal stripes of blue, white and green.",
+    "adopted": "",
+    "colors": [
+      "blue",
+      "white",
+      "green"
+    ],
+    "symbolism": "Known as the Grand Triune, the flag is Sierra Leone's tricolour turned upside down."
+  },
+  "hook": "Molossia is blue-white-green from the top, exactly Sierra Leone's flag flipped over.",
+  "lookalikes": [
+    "sl"
+  ],
+  "trivia": [
+    "Kevin Baugh runs the micronation from his property of about 4.6 hectares near Dayton, Nevada, and calls the property taxes he pays to Storey County foreign aid.",
+    "Molossia issues its own currency, the valora."
+  ]
+}

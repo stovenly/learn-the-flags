@@ -54,6 +54,45 @@ for (const f of admin1) {
   else if (p.iso_3166_2 === 'CN-XZ') add('cn-xz', p.name, PARENT.CHN, f.geometry);
 }
 
+// Regions made of one or more admin-1 units: flag code → [country, test on the unit's properties].
+const REGIONS = {
+  mq: ['FRA', (p) => p.iso_3166_2 === 'FR-MQ'],
+  gp: ['FRA', (p) => p.iso_3166_2 === 'FR-GP'],
+  gf: ['FRA', (p) => p.iso_3166_2 === 'FR-GF'],
+  re: ['FRA', (p) => p.iso_3166_2 === 'FR-RE'],
+  yt: ['FRA', (p) => p.iso_3166_2 === 'FR-YT'],
+  'fr-20r': ['FRA', (p) => p.region === 'Corse'],
+  'fr-bre': ['FRA', (p) => p.region === 'Bretagne'],
+  'es-cn': ['ESP', (p) => p.region === 'Canary Is.'],
+  'es-ct': ['ESP', (p) => p.region === 'Cataluña'],
+  'es-pv': ['ESP', (p) => p.region === 'País Vasco'],
+  'es-ce': ['ESP', (p) => p.iso_3166_2 === 'ES-CE'],
+  'es-ml': ['ESP', (p) => p.iso_3166_2 === 'ES-ML'],
+  'pt-20': ['PRT', (p) => p.iso_3166_2 === 'PT-20'],
+  'pt-30': ['PRT', (p) => p.iso_3166_2 === 'PT-30'],
+  'it-88': ['ITA', (p) => p.region === 'Sardegna'],
+  'it-82': ['ITA', (p) => p.region === 'Sicily'],
+  'it-bz': ['ITA', (p) => p.iso_3166_2 === 'IT-BZ'],
+  'it-23': ['ITA', (p) => p.iso_3166_2 === 'IT-AO'],
+  'bq-bo': ['NLD', (p) => p.iso_3166_2 === 'NL-BQ1'],
+  'bq-sa': ['NLD', (p) => p.iso_3166_2 === 'NL-BQ2'],
+  'bq-se': ['NLD', (p) => p.iso_3166_2 === 'NL-BQ3'],
+  'sh-ac': ['SHN', (p) => p.iso_3166_2 === 'SH-AC'],
+  'sh-ta': ['SHN', (p) => p.iso_3166_2 === 'SH-TA'],
+  'gg-srk': ['GGY', (p) => p.name === 'Sark'],
+  'iq-kr': ['IRQ', (p) => p.region === 'Kurdistan'],
+  zanzibar: ['TZA', (p) => ['TZ-06', 'TZ-07', 'TZ-10', 'TZ-11', 'TZ-15'].includes(p.iso_3166_2)],
+  'pg-nsb': ['PNG', (p) => p.iso_3166_2 === 'PG-NSB'],
+  'in-sk': ['IND', (p) => p.iso_3166_2 === 'IN-SK'],
+};
+const ISO_NUM = { FRA: '250', ESP: '724', PRT: '620', ITA: '380', NLD: '528', SHN: '654', GGY: '831', IRQ: '368', TZA: '834', PNG: '598', IND: '356' };
+for (const [key, [adm0, test]] of Object.entries(REGIONS)) {
+  const units = admin1.filter((f) => f.properties.adm0_a3 === adm0 && test(f.properties));
+  if (!units.length) throw new Error(`${key}: no admin-1 units matched`);
+  const polys = units.flatMap((f) => (f.geometry.type === 'Polygon' ? [f.geometry.coordinates] : f.geometry.coordinates));
+  add(key, units.length === 1 ? units[0].properties.name : key, ISO_NUM[adm0], { type: 'MultiPolygon', coordinates: polys });
+}
+
 const NATIONS = { ENG: 'gb-eng', SCT: 'gb-sct', WLS: 'gb-wls', NIR: 'gb-nir' };
 for (const f of await load('ne_10m_admin_0_map_units')) {
   const key = NATIONS[f.properties.GU_A3];

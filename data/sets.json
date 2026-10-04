@@ -24,14 +24,14 @@
     "id": "territories",
     "name": "Territories",
     "noun": "territory",
-    "description": "Overseas territories, crown dependencies and the UK's home nations.",
+    "description": "Overseas territories, crown dependencies, autonomous regions and the UK's home nations.",
     "cover": "icon:island"
   },
   {
     "id": "limited",
     "name": "Limited recognition",
     "noun": "state",
-    "description": "Places that govern themselves but are recognized by few or no other countries.",
+    "description": "Places that govern themselves but are recognized by few or no other countries, plus a few famous micronations.",
     "cover": "icon:contested"
   },
   {
@@ -44,6 +44,9 @@
       "ussr",
       "nazi-germany",
       "empire-of-japan",
+      "holy-roman-empire",
+      "austria-hungary",
+      "british-raj",
       "yugoslavia",
       "east-germany",
       "czechoslovakia",
@@ -61,7 +64,27 @@
       "qing-dynasty",
       "spanish-republic",
       "biafra",
-      "united-arab-republic"
+      "united-arab-republic",
+      "empire-of-brazil",
+      "kingdom-of-france",
+      "dutch-republic",
+      "prussia",
+      "kingdom-of-italy",
+      "francoist-spain",
+      "republic-of-venice",
+      "gran-colombia",
+      "canadian-red-ensign",
+      "arab-revolt",
+      "ethiopian-empire",
+      "kingdom-of-egypt",
+      "manchukuo",
+      "beiyang-china",
+      "democratic-kampuchea",
+      "central-america",
+      "katanga",
+      "upper-volta",
+      "sikkim",
+      "artsakh"
     ]
   },
   {
@@ -74,16 +97,29 @@
       "un",
       "eu",
       "olympics",
+      "paralympics",
       "nato",
       "red-cross",
-      "african-union",
       "red-crescent",
+      "red-crystal",
+      "african-union",
+      "who",
       "asean",
       "commonwealth",
       "arab-league",
+      "opec",
       "oas",
+      "nordic-council",
+      "francophonie",
+      "antarctic-treaty",
       "mercosur",
-      "caricom"
+      "caricom",
+      "gcc",
+      "oic",
+      "ecowas",
+      "sadc",
+      "cis",
+      "andean-community"
     ]
   }
 ]

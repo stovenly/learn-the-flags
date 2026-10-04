@@ -1,0 +1,61 @@
+{
+  "code": "republic-of-venice",
+  "isoNumeric": "",
+  "name": "Republic of Venice",
+  "the": true,
+  "officialName": "Most Serene Republic of Venice",
+  "localNames": [
+    {
+      "language": "Italian",
+      "name": "Serenissima Repubblica di Venezia",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Venice",
+    "Serenissima",
+    "Most Serene Republic of Venice",
+    "Venetian Republic"
+  ],
+  "image": "Flag_of_Most_Serene_Republic_of_Venice.svg",
+  "capital": "Venice",
+  "region": "Europe",
+  "subregion": "697–1797",
+  "population": null,
+  "area": null,
+  "languages": [
+    "Venetian"
+  ],
+  "currencies": [],
+  "demonym": "Venetian",
+  "latlng": [
+    45.4,
+    12.3
+  ],
+  "facts": [
+    [
+      "Existed",
+      "697–1797"
+    ],
+    [
+      "Today",
+      "Italy"
+    ]
+  ],
+  "shape": false,
+  "flag": {
+    "description": "A red banner edged with gold ornament, bearing the golden winged Lion of Saint Mark with a paw on an open book, and a fly cut into six tails.",
+    "adopted": "Middle Ages",
+    "colors": [
+      "red",
+      "yellow"
+    ],
+    "symbolism": "The winged lion is the symbol of Saint Mark the Evangelist, the city's patron saint; the book is traditionally inscribed \"Pax tibi Marce, evangelista meus\" (Peace to you, Mark, my evangelist)."
+  },
+  "hook": "Venice flew a golden winged lion on red, its paw on an open book, with the fly split into six tails; no modern national flag looks anything like it.",
+  "lookalikes": [],
+  "trivia": [
+    "The six tails are often said to represent the six sestieri, or districts, of the city of Venice.",
+    "The Republic ended in 1797, when the last doge, Ludovico Manin, abdicated as Napoleon's army approached."
+  ]
+}

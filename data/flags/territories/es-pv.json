@@ -1,0 +1,75 @@
+{
+  "code": "es-pv",
+  "isoNumeric": "",
+  "name": "Basque Country",
+  "the": true,
+  "officialName": "Basque Autonomous Community",
+  "localNames": [
+    {
+      "language": "Basque",
+      "name": "Euskadi",
+      "romanized": ""
+    },
+    {
+      "language": "Spanish",
+      "name": "País Vasco",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Euskadi",
+    "País Vasco",
+    "Pais Vasco",
+    "Basque Autonomous Community"
+  ],
+  "image": "Flag_of_the_Basque_Country.svg",
+  "capital": "Vitoria-Gasteiz",
+  "region": "Southern Europe",
+  "subregion": "Autonomous community of Spain",
+  "population": 2242343,
+  "area": 7230,
+  "languages": [
+    "Basque",
+    "Spanish"
+  ],
+  "currencies": [
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
+  ],
+  "demonym": "Basque",
+  "latlng": [
+    43.0,
+    -2.6
+  ],
+  "facts": [
+    [
+      "Status",
+      "Autonomous community of Spain"
+    ],
+    [
+      "Sovereign state",
+      "Spain"
+    ]
+  ],
+  "flag": {
+    "description": "A red field with a green diagonal cross (saltire), overlaid by a white upright cross.",
+    "adopted": "1894",
+    "colors": [
+      "red",
+      "green",
+      "white"
+    ],
+    "symbolism": "Red stands for the Basque people, the green saltire for the Cross of St Andrew and the oak of Gernika, symbol of Basque self-government, and the white cross for the Christian faith."
+  },
+  "hook": "The Basque Ikurriña is the Union Jack's layout repainted: a green X under a white cross, all on red.",
+  "lookalikes": [
+    "gb"
+  ],
+  "trivia": [
+    "It was designed in 1894 by the brothers Sabino and Luis Arana, originally for the province of Biscay.",
+    "Ikurriña comes from the Basque ikur, \"sign\" or \"symbol\"; the flag was banned under Franco and legalised again in 1977."
+  ]
+}

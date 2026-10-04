@@ -1,0 +1,66 @@
+{
+  "code": "re",
+  "isoNumeric": "638",
+  "name": "Réunion",
+  "officialName": "Réunion",
+  "localNames": [
+    {
+      "language": "French",
+      "name": "La Réunion",
+      "romanized": ""
+    }
+  ],
+  "aliases": [
+    "Reunion",
+    "La Réunion",
+    "La Reunion"
+  ],
+  "image": "Proposed_flag_of_Réunion_(VAR).svg",
+  "capital": "Saint-Denis",
+  "region": "Eastern Africa",
+  "subregion": "French overseas region",
+  "population": 910985,
+  "area": 2511,
+  "languages": [
+    "French",
+    "Réunion Creole"
+  ],
+  "currencies": [
+    {
+      "name": "Euro",
+      "code": "EUR",
+      "symbol": "€"
+    }
+  ],
+  "demonym": "Réunionese",
+  "latlng": [
+    -21.1,
+    55.5
+  ],
+  "facts": [
+    [
+      "Status",
+      "Overseas department and region of France"
+    ],
+    [
+      "Sovereign state",
+      "France"
+    ]
+  ],
+  "flag": {
+    "description": "Lo Mahavéli, an unofficial flag: a blue field with a red triangle rising from the whole bottom edge to the centre, and five yellow rays fanning out from its peak to the top and sides. The official flag is the French tricolour.",
+    "adopted": "",
+    "colors": [
+      "blue",
+      "red",
+      "yellow"
+    ],
+    "symbolism": "The red triangle is the island's volcano, Piton de la Fournaise, and the five yellow rays are sunbeams, said to stand for the peoples who converged on the island from different parts of the world."
+  },
+  "hook": "Réunion is a red volcano erupting five golden sunbeams into a blue sky, like a child's drawing of a sunrise over a mountain.",
+  "lookalikes": [],
+  "trivia": [
+    "Lo Mahavéli was designed in 1974 by Guy Pignolet and has no official status, though several town halls, including Saint-Denis's, have flown it since 2014.",
+    "Piton de la Fournaise, the volcano on the flag, is one of the most active volcanoes on Earth."
+  ]
+}
