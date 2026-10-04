@@ -489,7 +489,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
               </div>`
             : ''
         }
-        ${badgeNews(awardBadges())}
+        ${badgeNews(awardBadges(true))}
         ${strip('New today', summary.learned)}
         ${strip('Worth another look', summary.missed)}
         <div class="actions">${cfg.onDone(summary)}</div>
@@ -523,7 +523,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
                 .join('')}</div></section>`
             : ''
         }
-        ${badgeNews(awardBadges())}
+        ${badgeNews(awardBadges(true))}
         <div class="actions">${cfg.onDone(summary)}</div>
       </article>`;
     $('.session-count', root).textContent = '';
