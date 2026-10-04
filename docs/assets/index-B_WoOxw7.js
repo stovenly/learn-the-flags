@@ -117,7 +117,7 @@
           <div class="feedback-slot"></div>
           <div class="actions"><button class="btn quiet" data-act="unknown">I don't know <kbd>Esc</kbd></button></div>
           </div>
-        </article>`;let l=V(`.feedback-slot`,g);if(e.mode!==`type-name`){let n=H(`[data-code]`,g),i=i=>{if(c)return;c=!0;let a=i===t.code,o=r.get(i),u=a?s()>10?2:3:1;te(t,u,a),re(e,a);for(let a of n)a.setAttribute(`disabled`,``),a.dataset.code===t.code?a.classList.add(`is-correct`):a.dataset.code===i&&a.classList.add(`is-wrong`),e.mode===`pick-flag`&&(V(`.flag-option-name`,a).textContent=r.get(a.dataset.code).name);l.innerHTML=w(t,a,a?void 0:o,void 0,e.mode!==`pick-flag`,e.mode!==`pick-flag`),e.mode===`pick-name`&&oe(t),e.mode===`pick-flag`&&(V(`.quiz-name`,g).innerHTML=Ze(t)),T()};n.forEach(e=>e.addEventListener(`click`,()=>i(e.dataset.code))),d=e=>{let t=Number(e.key);t>=1&&t<=n.length&&i(n[t-1].dataset.code)};return}let u=V(`.type-input`,g);u.focus({preventScroll:!0});let f=r=>{if(c)return;let i=u.value.trim();if(!r&&!i)return;c=!0,u.disabled=!0,V(`.type-form button`,g).setAttribute(`disabled`,``);let a=r?`wrong`:ee(i,t),o=a!==`wrong`,d=o?s()>15?2:3:1,f=te(t,d,o);re(e,o),u.classList.add(o?`is-correct`:`is-wrong`);let p=n.find(e=>e.code!==t.code&&[t.set,`sovereign`].includes(e.set)&&ee(i,e)===`exact`);l.innerHTML=w(t,o,o?void 0:p,a===`typo`?`spelled “${t.name}”`:void 0),oe(t),!o&&i&&!p?(T(`<button class="btn quiet" data-act="accept">I was right</button>`),V(`[data-act=accept]`,g).addEventListener(`click`,Bt(()=>{C(e,f,3),x()}))):T()};V(`.type-form`,g).addEventListener(`submit`,e=>{e.preventDefault(),f(!1)}),V(`[data-act=unknown]`,g).addEventListener(`click`,()=>f(!0)),d=e=>{e.key===`Escape`&&f(!0)}}function ce(){if(d=null,h(),t.test)return le(t.test.key);let n=s.answered?Math.round(s.correct/s.answered*100):0,r=Math.max(1,Math.round((Date.now()-f)/6e4)),i=(e,t)=>t.length?`<section class="done-group"><h3 class="label">${e}</h3><div class="thumb-grid">${t.map(e=>`<a class="thumb-link" href="${B(e)}">${z(e)}<span>${P(e.name)}</span></a>`).join(``)}</div></section>`:``;g.innerHTML=`
+        </article>`;let l=V(`.feedback-slot`,g);if(e.mode!==`type-name`){let n=H(`[data-code]`,g),i=i=>{if(c)return;c=!0;let a=i===t.code,o=r.get(i),u=a?s()>10?2:3:1;te(t,u,a),re(e,a);for(let a of n)a.setAttribute(`disabled`,``),a.dataset.code===t.code?a.classList.add(`is-correct`):a.dataset.code===i&&a.classList.add(`is-wrong`),e.mode===`pick-flag`&&(V(`.flag-option-name`,a).textContent=r.get(a.dataset.code).name);l.innerHTML=w(t,a,a?void 0:o,void 0,e.mode!==`pick-flag`,e.mode!==`pick-flag`),e.mode===`pick-name`&&oe(t),e.mode===`pick-flag`&&(V(`.quiz-name`,g).innerHTML=Ze(t)),T()};n.forEach(e=>e.addEventListener(`click`,()=>i(e.dataset.code))),d=e=>{let t=Number(e.key);t>=1&&t<=n.length&&i(n[t-1].dataset.code)};return}let u=V(`.type-input`,g);u.focus({preventScroll:!0});let f=r=>{if(c)return;let i=u.value.trim();if(!r&&!i)return;c=!0,u.disabled=!0,V(`.type-form button`,g).setAttribute(`disabled`,``);let a=r?`wrong`:ee(i,t),o=a!==`wrong`,d=o?s()>15?2:3:1,f=te(t,d,o);re(e,o),u.classList.add(o?`is-correct`:`is-wrong`);let p=n.find(e=>e.code!==t.code&&[t.set,`sovereign`].includes(e.set)&&ee(i,e)===`exact`);l.innerHTML=w(t,o,o?void 0:p,a===`typo`?`spelled “${t.name}”`:void 0),oe(t),!o&&i&&!p?(T(`<button class="btn quiet" data-act="accept">I was right</button>`),V(`[data-act=accept]`,g).addEventListener(`click`,Bt(()=>{C(e,f,3),x()}))):T()};V(`.type-form`,g).addEventListener(`submit`,e=>{e.preventDefault(),f(!1)}),V(`[data-act=unknown]`,g).addEventListener(`click`,()=>f(!0)),d=e=>{e.key===`Escape`&&f(!0)}}function ce(){if(d=null,h(),t.test)return le(t.test);let n=s.answered?Math.round(s.correct/s.answered*100):0,r=Math.max(1,Math.round((Date.now()-f)/6e4)),i=(e,t)=>t.length?`<section class="done-group"><h3 class="label">${e}</h3><div class="thumb-grid">${t.map(e=>`<a class="thumb-link" href="${B(e)}">${z(e)}<span>${P(e.name)}</span></a>`).join(``)}</div></section>`:``;g.innerHTML=`
       <article class="card stage done fade-in">
         <span class="pill">${P(t.title)} complete</span>
         <h2>${s.answered?n>=90?`Great work`:n>=70?`Nice work`:`Good practice`:`All done`}</h2>
@@ -131,28 +131,28 @@
         ${i(`New today`,s.learned)}
         ${i(`Worth another look`,s.missed)}
         <div class="actions">${t.onDone(s)}</div>
-      </article>`,V(`.session-count`,e).textContent=``,V(`.progress-fill`,e).style.width=`100%`}function le(n){let r=s.answered,i=r?Math.round(s.correct/r*100):0,a=r?He(n,s.correct,r):void 0,o=a?Math.round(a.correct/a.total*100):null,c=i===100?`Perfect score`:i>=90?`Outstanding`:i>=75?`Great work`:i>=50?`Good effort`:`Keep practising`;g.innerHTML=`
+      </article>`,V(`.session-count`,e).textContent=``,V(`.progress-fill`,e).style.width=`100%`}function le({key:n,label:r}){let i=s.answered;i&&Le({at:f,ms:Date.now()-f,answered:i,correct:s.correct,learned:[],missed:s.missed.map(e=>e.code),quiz:r});let a=i?Math.round(s.correct/i*100):0,o=i?He(n,s.correct,i):void 0,c=o?Math.round(o.correct/o.total*100):null,l=a===100?`Perfect score`:a>=90?`Outstanding`:a>=75?`Great work`:a>=50?`Good effort`:`Keep practising`;g.innerHTML=`
       <article class="card stage done quiz-result fade-in">
         <span class="pill">${P(t.title)} complete</span>
-        <h2>${c}</h2>
-        <div class="score"><strong>${s.correct}</strong><span>of ${r} correct</span></div>
-        <p class="score-meta muted">${[`${i}%`,U(Math.max(1,Math.round((Date.now()-f)/6e4)),`minute`),o===null?``:i>o?`New best (was ${o}%)`:`Best ${o}%`].filter(Boolean).join(` · `)}</p>
+        <h2>${l}</h2>
+        <div class="score"><strong>${s.correct}</strong><span>of ${i} correct</span></div>
+        <p class="score-meta muted">${[`${a}%`,U(Math.max(1,Math.round((Date.now()-f)/6e4)),`minute`),c===null?``:a>c?`New best (was ${c}%)`:`Best ${c}%`].filter(Boolean).join(` · `)}</p>
         ${s.missed.length?`<section class="done-group"><h3 class="label">Missed</h3><div class="thumb-grid">${s.missed.map(e=>`<a class="thumb-link" href="${B(e)}">${z(e)}<span>${P(e.name)}</span></a>`).join(``)}</div></section>`:``}
         ${Pt(At(!0))}
         <div class="actions">${t.onDone(s)}</div>
-      </article>`,V(`.session-count`,e).textContent=``,V(`.progress-fill`,e).style.width=`100%`}x()}var X=[{slug:`name-to-flag`,mode:`pick-flag`,title:e=>`${e} → flag`,detail:`See a name, pick its flag from four.`},{slug:`flag-to-name`,mode:`pick-name`,title:e=>`Flag → ${e.toLowerCase()}`,detail:`See a flag, pick its name from four.`},{slug:`typed`,mode:`type-name`,title:e=>`Flag → ${e.toLowerCase()}, typed`,detail:`See a flag, type its name.`}],Jt=()=>X.find(e=>e.slug===k.settings.quizKind)??X[0];function Yt(e,t){let n=X.find(e=>e.slug===t)??Jt();qt(e,{items:F(je()).map(e=>Y(e,n.mode)),scheduled:!1,test:{key:`${Ve()}:${n.slug}`},title:`Quiz`,onDone:()=>`<a class="btn ghost" href="${p()}">Home</a><a class="btn primary" href="${p(`quiz/${n.slug}/`)}">Try again</a>`})}var Xt=[[`auto`,`Mix`],[`choice`,`Picking`],[`typing`,`Typing`]],Zt=(e,t,n)=>`<div class="option-row">
+      </article>`,V(`.session-count`,e).textContent=``,V(`.progress-fill`,e).style.width=`100%`}x()}var X=[{slug:`name-to-flag`,mode:`pick-flag`,title:e=>`${e} → flag`,detail:`See a name, pick its flag from four.`},{slug:`flag-to-name`,mode:`pick-name`,title:e=>`Flag → ${e.toLowerCase()}`,detail:`See a flag, pick its name from four.`},{slug:`typed`,mode:`type-name`,title:e=>`Flag → ${e.toLowerCase()}, typed`,detail:`See a flag, type its name.`}],Jt=()=>X.find(e=>e.slug===k.settings.quizKind)??X[0];function Yt(){let e=o.get(k.settings.set).noun;return e.includes(` `)?`Name`:e[0].toUpperCase()+e.slice(1)}function Xt(){let{set:e,continents:t}=k.settings;return e===`sovereign`&&t.length<c.length?t.join(`, `):o.get(e).name}function Zt(e,t){let n=X.find(e=>e.slug===t)??Jt();qt(e,{items:F(je()).map(e=>Y(e,n.mode)),scheduled:!1,test:{key:`${Ve()}:${n.slug}`,label:`${Xt()} · ${n.title(Yt())}`},title:`Quiz`,onDone:()=>`<a class="btn ghost" href="${p()}">Home</a><a class="btn primary" href="${p(`quiz/${n.slug}/`)}">Try again</a>`})}var Qt=[[`auto`,`Mix`],[`choice`,`Picking`],[`typing`,`Typing`]],$t=(e,t,n)=>`<div class="option-row">
     <span class="option-label">${t}</span>
     <div class="chips" role="radiogroup" aria-label="${t}">${n.map(([t,n])=>`<button type="button" class="chip" role="radio" data-key="${e}" data-value="${t}">${n}</button>`).join(``)}</div>
-  </div>`;function Qt(){let e=o.get(k.settings.set).noun,t=e.includes(` `)?`Name`:e[0].toUpperCase()+e.slice(1);return`<div class="kinds" role="radiogroup" aria-label="Question type">${X.map(e=>{let n=k.quizzes[`${Ve()}:${e.slug}`];return`<button type="button" class="kind" role="radio" data-key="quizKind" data-value="${e.slug}">
-      <strong>${P(e.title(t))}</strong>
-      <span class="muted">${e.detail}</span>
+  </div>`;function en(){let e=Yt();return`<div class="kinds" role="radiogroup" aria-label="Question type">${X.map(t=>{let n=k.quizzes[`${Ve()}:${t.slug}`];return`<button type="button" class="kind" role="radio" data-key="quizKind" data-value="${t.slug}">
+      <strong>${P(t.title(e))}</strong>
+      <span class="muted">${t.detail}</span>
       ${n?`<span class="kind-best">Best ${Math.round(n.correct/n.total*100)}%</span>`:``}
-    </button>`}).join(``)}</div>`}function $t(e,t){let n=document.createElement(`dialog`);n.className=`options-modal`,n.setAttribute(`aria-labelledby`,`options-title`),n.innerHTML=`
+    </button>`}).join(``)}</div>`}function tn(e,t){let n=document.createElement(`dialog`);n.className=`options-modal`,n.setAttribute(`aria-labelledby`,`options-title`),n.innerHTML=`
     <div class="options-head">
       <h2 id="options-title">${e===`lesson`?`Lesson options`:`Quiz options`}</h2>
       <button type="button" class="icon-btn" data-close aria-label="Close">${R(`cross`)}</button>
     </div>
-    ${e===`lesson`?Zt(`lessonSize`,`New flags`,Ee.map(e=>[e,String(e)]))+Zt(`answerStyle`,`Answer by`,Xt):Qt()}`;let r=()=>{for(let e of n.querySelectorAll(`[data-key]`)){let t=String(k.settings[e.dataset.key])===e.dataset.value;e.classList.toggle(`active`,t),e.setAttribute(`aria-checked`,String(t))}};n.addEventListener(`click`,e=>{let t=e.target;if(t===n||t.closest(`[data-close]`))return n.close();let i=t.closest(`[data-key]`);if(!i)return;let a=i.dataset.key;k.settings[a]=a===`lessonSize`?Number(i.dataset.value):i.dataset.value,A(),r()}),n.addEventListener(`close`,()=>{n.remove(),t()}),r(),document.body.append(n),n.showModal(),n.querySelector(`[aria-checked="true"]`)?.focus()}var en=new Map,Z=null;function tn(e){if(Z)return e.push(v(Z.c.code,320)),nn(Z.c,Z.text);let t=Object.keys(k.cards).map(e=>r.get(e)).filter(e=>!!e&&e.trivia.length>0),n=t.length>=3?t:je().filter(e=>e.trivia.length);if(!n.length)return``;let i=Ke(n);return Z={c:i,text:Ke(i.trivia)},e.push(v(i.code,320)),nn(i,Z.text)}function nn(e,t){return`
+    ${e===`lesson`?$t(`lessonSize`,`New flags`,Ee.map(e=>[e,String(e)]))+$t(`answerStyle`,`Answer by`,Qt):en()}`;let r=()=>{for(let e of n.querySelectorAll(`[data-key]`)){let t=String(k.settings[e.dataset.key])===e.dataset.value;e.classList.toggle(`active`,t),e.setAttribute(`aria-checked`,String(t))}};n.addEventListener(`click`,e=>{let t=e.target;if(t===n||t.closest(`[data-close]`))return n.close();let i=t.closest(`[data-key]`);if(!i)return;let a=i.dataset.key;k.settings[a]=a===`lessonSize`?Number(i.dataset.value):i.dataset.value,A(),r()}),n.addEventListener(`close`,()=>{n.remove(),t()}),r(),document.body.append(n),n.showModal(),n.querySelector(`[aria-checked="true"]`)?.focus()}var nn=new Map,Z=null;function rn(e){if(Z)return e.push(v(Z.c.code,320)),an(Z.c,Z.text);let t=Object.keys(k.cards).map(e=>r.get(e)).filter(e=>!!e&&e.trivia.length>0),n=t.length>=3?t:je().filter(e=>e.trivia.length);if(!n.length)return``;let i=Ke(n);return Z={c:i,text:Ke(i.trivia)},e.push(v(i.code,320)),an(i,Z.text)}function an(e,t){return`
     <a class="card trivia-card" href="${B(e)}">
       ${z(e)}
       <div>
@@ -160,24 +160,24 @@
         <p>${P(t)}</p>
         <span class="more">More about ${P(e.name)} ${R(`arrow`,`icon icon-sm`)}</span>
       </div>
-    </a>`}function rn(e,t){return e.length?(e.forEach(e=>t.push(v(e.code,320))),`<div class="up-next">
+    </a>`}function on(e,t){return e.length?(e.forEach(e=>t.push(v(e.code,320))),`<div class="up-next">
     <span class="label">Up next</span>
     <div class="up-next-flags flag-strip">${e.map(e=>`<span class="tip-target" tabindex="0" data-tip="${e.code}" aria-label="${P(e.name)}">${z(e)}</span>`).join(``)}</div>
-  </div>`):``}var an=e=>e.filter(e=>[`known`,`mastered`].includes(j(e.code))).length;function on(e,t){if(e.cover.startsWith(`icon:`))return`<span class="set-cover set-icon icon-${e.cover.slice(5)}"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">${et[e.cover.slice(5)]}</svg></span>`;let n=r.get(e.cover);return n?(t.push(v(n.code,320)),`<span class="set-cover">${I(n,{size:`sm`,alt:``})}</span>`):``}function sn(e,t){let n=o.get(e),r=s(e),i=an(r);return`<button class="set-option" role="radio" aria-checked="${e===k.settings.set}" data-set="${e}">
-    ${on(n,t)}<span class="set-name">${P(n.name)}</span><span class="set-count">${i?`${i}/${r.length}`:r.length}</span>
-  </button>`}function cn(e){let{set:t,continents:n}=k.settings,r=n.length===c.length,o=(e,t,n)=>`<button class="chip chip-sm${n?` active`:``}" aria-pressed="${n}" data-continent="${e}">${t}</button>`;return`<section class="card picker" aria-labelledby="picker-title">
+  </div>`):``}var sn=e=>e.filter(e=>[`known`,`mastered`].includes(j(e.code))).length;function cn(e,t){if(e.cover.startsWith(`icon:`))return`<span class="set-cover set-icon icon-${e.cover.slice(5)}"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">${et[e.cover.slice(5)]}</svg></span>`;let n=r.get(e.cover);return n?(t.push(v(n.code,320)),`<span class="set-cover">${I(n,{size:`sm`,alt:``})}</span>`):``}function ln(e,t){let n=o.get(e),r=s(e),i=sn(r);return`<button class="set-option" role="radio" aria-checked="${e===k.settings.set}" data-set="${e}">
+    ${cn(n,t)}<span class="set-name">${P(n.name)}</span><span class="set-count">${i?`${i}/${r.length}`:r.length}</span>
+  </button>`}function un(e){let{set:t,continents:n}=k.settings,r=n.length===c.length,o=(e,t,n)=>`<button class="chip chip-sm${n?` active`:``}" aria-pressed="${n}" data-continent="${e}">${t}</button>`;return`<section class="card picker" aria-labelledby="picker-title">
     <h2 class="label" id="picker-title">Choose your flags</h2>
     <div class="sets" role="radiogroup" aria-label="Flag set">
       <div class="set-main">
-        ${sn(a,e)}
+        ${ln(a,e)}
         ${t===`sovereign`?`<div class="continents" role="group" aria-label="Continents">${o(`all`,`All`,r)}<span class="chip-divider" aria-hidden="true"></span>${c.map(e=>o(e,e,!r&&n.includes(e))).join(``)}</div>`:``}
       </div>
-      <div class="set-others">${i.filter(e=>e.id!==a).map(t=>sn(t.id,e)).join(``)}</div>
+      <div class="set-others">${i.filter(e=>e.id!==a).map(t=>ln(t.id,e)).join(``)}</div>
     </div>
-  </section>`}function ln(e){let t=t=>fn(e,scrollY,t);for(let n of H(`[data-options]`,e)){let e=n.dataset.options;n.addEventListener(`click`,()=>$t(e,()=>t(`[data-options="${e}"]`)))}for(let n of H(`[data-set]`,e))n.addEventListener(`click`,()=>{n.dataset.set!==k.settings.set&&(Me(n.dataset.set),t(`[data-set="${n.dataset.set}"]`))});for(let n of H(`[data-continent]`,e))n.addEventListener(`click`,()=>{let e=n.dataset.continent,r=k.settings.continents,i=e===`all`?c:r.length===c.length?[e]:r.includes(e)?r.filter(t=>t!==e):[...r,e];i.length||(i=c),!(k.settings.set===`sovereign`&&i.length===r.length&&i.every(e=>r.includes(e)))&&(Me(a,c.filter(e=>i.includes(e))),t(`[data-continent="${e}"]`))})}function un(e){fn(e),zt(e);let t=()=>dn(e);addEventListener(`resize`,t),ae(()=>removeEventListener(`resize`,t))}function dn(e){for(let t of H(`.flag-strip`,e))t.classList.toggle(`clipped`,t.scrollHeight>t.clientHeight+1)}function fn(e,t,n){let r=je(),i=an(r),a=Pe().length,o=Fe(),s=Object.keys(k.cards).length>0,c=M(),l=X.map(e=>k.quizzes[`${Ve()}:${e.slug}`]).filter(e=>!!e).sort((e,t)=>t.correct/t.total-e.correct/e.total)[0],u=[],d,f,m=``;a?(d=`${U(a,`flag`)} to review`,f=`<a class="btn primary" href="${p(`study/`)}">Start ${R(`arrow`)}</a><button type="button" class="btn ghost btn-icon" data-options="lesson" aria-label="Lesson options" title="Lesson options">${R(`gear`)}</button>`):o.length?(d=`Today's flags`,f=`<a class="btn primary" href="${p(`study/`)}">${s?`Start`:`Start learning`} ${R(`arrow`)}</a><button type="button" class="btn ghost btn-icon" data-options="lesson" aria-label="Lesson options" title="Lesson options">${R(`gear`)}</button>`,m=rn(o.slice(0,k.settings.lessonSize),u)):(d=`All learned`,f=`<a class="btn ghost" href="${p(`flags/`)}">Browse flags</a>`);let h=Ve();en.get(h)?.length!==Math.min(30,r.length)&&en.set(h,F(r).slice(0,30));let g=en.get(h);g.forEach(e=>u.push(v(e.code,320))),$e(e,`
+  </section>`}function dn(e){let t=t=>mn(e,scrollY,t);for(let n of H(`[data-options]`,e)){let e=n.dataset.options;n.addEventListener(`click`,()=>tn(e,()=>t(`[data-options="${e}"]`)))}for(let n of H(`[data-set]`,e))n.addEventListener(`click`,()=>{n.dataset.set!==k.settings.set&&(Me(n.dataset.set),t(`[data-set="${n.dataset.set}"]`))});for(let n of H(`[data-continent]`,e))n.addEventListener(`click`,()=>{let e=n.dataset.continent,r=k.settings.continents,i=e===`all`?c:r.length===c.length?[e]:r.includes(e)?r.filter(t=>t!==e):[...r,e];i.length||(i=c),!(k.settings.set===`sovereign`&&i.length===r.length&&i.every(e=>r.includes(e)))&&(Me(a,c.filter(e=>i.includes(e))),t(`[data-continent="${e}"]`))})}function fn(e){mn(e),zt(e);let t=()=>pn(e);addEventListener(`resize`,t),ae(()=>removeEventListener(`resize`,t))}function pn(e){for(let t of H(`.flag-strip`,e))t.classList.toggle(`clipped`,t.scrollHeight>t.clientHeight+1)}function mn(e,t,n){let r=je(),i=sn(r),a=Pe().length,o=Fe(),s=Object.keys(k.cards).length>0,c=M(),l=X.map(e=>k.quizzes[`${Ve()}:${e.slug}`]).filter(e=>!!e).sort((e,t)=>t.correct/t.total-e.correct/e.total)[0],u=[],d,f,m=``;a?(d=`${U(a,`flag`)} to review`,f=`<a class="btn primary" href="${p(`study/`)}">Start ${R(`arrow`)}</a><button type="button" class="btn ghost btn-icon" data-options="lesson" aria-label="Lesson options" title="Lesson options">${R(`gear`)}</button>`):o.length?(d=`Today's flags`,f=`<a class="btn primary" href="${p(`study/`)}">${s?`Start`:`Start learning`} ${R(`arrow`)}</a><button type="button" class="btn ghost btn-icon" data-options="lesson" aria-label="Lesson options" title="Lesson options">${R(`gear`)}</button>`,m=on(o.slice(0,k.settings.lessonSize),u)):(d=`All learned`,f=`<a class="btn ghost" href="${p(`flags/`)}">Browse flags</a>`);let h=Ve();nn.get(h)?.length!==Math.min(30,r.length)&&nn.set(h,F(r).slice(0,30));let g=nn.get(h);g.forEach(e=>u.push(v(e.code,320))),$e(e,`
     ${s?`<h1 class="sr-only">Learn the Flags</h1>`:`<h1 class="home-title">Learn every flag in the world</h1>`}
 
-    ${cn(u)}
+    ${un(u)}
 
     <div class="modes">
       <section class="card mode">
@@ -201,18 +201,18 @@
       </section>
     </div>
 
-    ${tn(u)}`,u,t===void 0?350:0).then(r=>{r&&(ln(e),dn(e),t!==void 0&&scrollTo(0,t),n&&e.querySelector(n)?.focus({preventScroll:!0}))})}var pn=30,mn=null;function hn(e,t){let n=t===`again`;if(n&&!mn)return T(p(`study/`),!0);let r=Pe(),{due:i,fresh:a}=n?mn:{due:r.slice(0,pn),fresh:r.length<=pn?Fe().slice(0,k.settings.lessonSize):[]};if(!i.length&&!a.length){T(p(),!0);return}mn={due:i,fresh:a},qt(e,{items:Ut(i,a),scheduled:!n,title:a.length&&!i.length?`Lesson`:`Session`,onDone:()=>{let e=Pe().length>0||Fe().length>0;return`<a class="btn ghost" href="${p()}">Home</a><a class="btn ghost" href="${p(`study/again/`)}">Restart lesson</a>${e?`<a class="btn primary" href="${p(`study/`)}">Keep going</a>`:``}`}})}var gn=``,Q=`all`,_n=`all`;function vn(e){let t=(e,t,n,r)=>`<button class="chip${r?` active`:``}" data-${e}="${P(t)}">${P(n)}</button>`;e.innerHTML=`
+    ${rn(u)}`,u,t===void 0?350:0).then(r=>{r&&(dn(e),pn(e),t!==void 0&&scrollTo(0,t),n&&e.querySelector(n)?.focus({preventScroll:!0}))})}var hn=30,gn=null;function _n(e,t){let n=t===`again`;if(n&&!gn)return T(p(`study/`),!0);let r=Pe(),{due:i,fresh:a}=n?gn:{due:r.slice(0,hn),fresh:r.length<=hn?Fe().slice(0,k.settings.lessonSize):[]};if(!i.length&&!a.length){T(p(),!0);return}gn={due:i,fresh:a},qt(e,{items:Ut(i,a),scheduled:!n,title:a.length&&!i.length?`Lesson`:`Session`,onDone:()=>{let e=Pe().length>0||Fe().length>0;return`<a class="btn ghost" href="${p()}">Home</a><a class="btn ghost" href="${p(`study/again/`)}">Restart lesson</a>${e?`<a class="btn primary" href="${p(`study/`)}">Keep going</a>`:``}`}})}var vn=``,Q=`all`,yn=`all`;function bn(e){let t=(e,t,n,r)=>`<button class="chip${r?` active`:``}" data-${e}="${P(t)}">${P(n)}</button>`;e.innerHTML=`
     <header class="page-head">
       <h1>All flags</h1>
       <p class="muted">${n.length} flags in ${i.length} sets. Pick one to see what it means and how to tell it from lookalikes.</p>
     </header>
     <div class="filters">
-      <input class="search" type="search" placeholder="Search flags" aria-label="Search flags" value="${P(gn)}">
+      <input class="search" type="search" placeholder="Search flags" aria-label="Search flags" value="${P(vn)}">
       <div class="chips" role="group" aria-label="Set">
         ${t(`set`,`all`,`All`,Q===`all`)}${i.map(e=>t(`set`,e.id,e.name,e.id===Q)).join(``)}
       </div>
       <div class="chips continent-chips" role="group" aria-label="Continent">
-        ${t(`continent`,`all`,`All continents`,_n===`all`)}${c.map(e=>t(`continent`,e,e,e===_n)).join(``)}
+        ${t(`continent`,`all`,`All continents`,yn===`all`)}${c.map(e=>t(`continent`,e,e,e===yn)).join(``)}
       </div>
     </div>
     ${i.map(e=>`<section class="browse-set" data-set="${e.id}">
@@ -224,7 +224,7 @@
               </a>`).join(``)}
         </div>
       </section>`).join(``)}
-    <p class="empty muted" hidden>No flags match.</p>`;let r=V(`.search`,e),o=H(`.browse-set`,e),l=()=>{let t=b(gn),n=Q===a;V(`.continent-chips`,e).hidden=!n;let r=0;for(let e of o){let i=0,a=Q===`all`||e.dataset.set===Q;for(let r of H(`.tile`,e)){let e=a&&(!n||_n===`all`||r.dataset.continent===_n)&&(!t||r.dataset.search.includes(t));r.hidden=!e,e&&i++}e.hidden=!i,V(`h2`,e).hidden=Q!==`all`,r+=i}V(`.empty`,e).hidden=r>0};r.addEventListener(`input`,()=>{gn=r.value,l()});for(let t of[`set`,`continent`]){let n=H(`.chip[data-${t}]`,e);for(let e of n)e.addEventListener(`click`,()=>{t===`set`?Q=e.dataset.set:_n=e.dataset.continent,n.forEach(t=>t.classList.toggle(`active`,t===e)),l()})}l()}var yn={red:`#d62828`,orange:`#f77f00`,yellow:`#fcbf49`,green:`#2a9d4b`,blue:`#1d4e9e`,"light-blue":`#5fa8e0`,white:`#ffffff`,black:`#111111`,maroon:`#7a1f2b`,brown:`#7b4a2a`,purple:`#6a3d9a`};function bn(e,t){let r=n.find(e=>e.slug===t||e.code===t);if(!r){e.innerHTML=`<div class="card"><h1>Not found</h1><p><a href="${p(`flags/`)}">See all flags</a></p></div>`;return}document.title=`Flag of ${r.theName} · Learn the Flags`;let i=j(r.code),a=[r.set===`sovereign`?``:o.get(r.set).name,r.subregion||r.region,r.status?l[r.status]??``:``].filter(Boolean),s=[...r.facts,[r.set===`organizations`?`Headquarters`:`Capital`,r.capital],[`Population`,r.population==null?``:re(r.population)],[`Area`,r.area?`${ne(Math.round(r.area))} km²`:``],[`Languages`,r.languages.join(`, `)],[`Currency`,te(r)],[`Demonym`,r.demonym]],c=s.filter(([e,t],n)=>t&&s.findIndex(([t])=>t===e)===n),u=Qe(r);$e(e,`
+    <p class="empty muted" hidden>No flags match.</p>`;let r=V(`.search`,e),o=H(`.browse-set`,e),l=()=>{let t=b(vn),n=Q===a;V(`.continent-chips`,e).hidden=!n;let r=0;for(let e of o){let i=0,a=Q===`all`||e.dataset.set===Q;for(let r of H(`.tile`,e)){let e=a&&(!n||yn===`all`||r.dataset.continent===yn)&&(!t||r.dataset.search.includes(t));r.hidden=!e,e&&i++}e.hidden=!i,V(`h2`,e).hidden=Q!==`all`,r+=i}V(`.empty`,e).hidden=r>0};r.addEventListener(`input`,()=>{vn=r.value,l()});for(let t of[`set`,`continent`]){let n=H(`.chip[data-${t}]`,e);for(let e of n)e.addEventListener(`click`,()=>{t===`set`?Q=e.dataset.set:yn=e.dataset.continent,n.forEach(t=>t.classList.toggle(`active`,t===e)),l()})}l()}var xn={red:`#d62828`,orange:`#f77f00`,yellow:`#fcbf49`,green:`#2a9d4b`,blue:`#1d4e9e`,"light-blue":`#5fa8e0`,white:`#ffffff`,black:`#111111`,maroon:`#7a1f2b`,brown:`#7b4a2a`,purple:`#6a3d9a`};function Sn(e,t){let r=n.find(e=>e.slug===t||e.code===t);if(!r){e.innerHTML=`<div class="card"><h1>Not found</h1><p><a href="${p(`flags/`)}">See all flags</a></p></div>`;return}document.title=`Flag of ${r.theName} · Learn the Flags`;let i=j(r.code),a=[r.set===`sovereign`?``:o.get(r.set).name,r.subregion||r.region,r.status?l[r.status]??``:``].filter(Boolean),s=[...r.facts,[r.set===`organizations`?`Headquarters`:`Capital`,r.capital],[`Population`,r.population==null?``:re(r.population)],[`Area`,r.area?`${ne(Math.round(r.area))} km²`:``],[`Languages`,r.languages.join(`, `)],[`Currency`,te(r)],[`Demonym`,r.demonym]],c=s.filter(([e,t],n)=>t&&s.findIndex(([t])=>t===e)===n),u=Qe(r);$e(e,`
     <a class="back" href="${p(`flags/`)}">← All flags</a>
     <article class="country">
       <header class="card country-hero">
@@ -248,7 +248,7 @@
             ${r.flag.symbolism?`<p class="muted">${P(r.flag.symbolism)}</p>`:``}
             <div class="flag-meta">
               ${r.flag.adopted?`<span><span class="muted">Adopted</span> ${P(r.flag.adopted)}</span>`:``}
-              ${r.flag.colors.length?`<span class="swatches" aria-label="Colours: ${P(r.flag.colors.join(`, `).replace(/-/g,` `))}">${r.flag.colors.map(e=>`<i style="background:${yn[e]}" title="${e.replace(`-`,` `)}"></i>`).join(``)}</span>`:``}
+              ${r.flag.colors.length?`<span class="swatches" aria-label="Colours: ${P(r.flag.colors.join(`, `).replace(/-/g,` `))}">${r.flag.colors.map(e=>`<i style="background:${xn[e]}" title="${e.replace(`-`,` `)}"></i>`).join(``)}</span>`:``}
             </div>
             ${Ye(r)}
           </section>
@@ -266,16 +266,16 @@
                 </section>`:``}
         </aside>
       </div>
-    </article>`,[v(r.code),y(r)])}var xn={learned:`You've got this flag right over several days. It's solid enough that it only comes back every week or more for a quick check.`,learning:`You've met this flag, but it still needs a few more reviews before it sticks.`};function Sn(e,t){return`<details class="info"><summary aria-label="What does “${e}” mean?">?</summary><p class="info-pop">${P(t)}</p></details>`}function Cn(e,t,n){let r=e=>n?e/n*100:0;return`<div class="meter" role="img" aria-label="${e} learned, ${t} in progress, of ${n}">
+    </article>`,[v(r.code),y(r)])}var Cn={learned:`You've got this flag right over several days. It's solid enough that it only comes back every week or more for a quick check.`,learning:`You've met this flag, but it still needs a few more reviews before it sticks.`};function wn(e,t){return`<details class="info"><summary aria-label="What does “${e}” mean?">?</summary><p class="info-pop">${P(t)}</p></details>`}function Tn(e,t,n){let r=e=>n?e/n*100:0;return`<div class="meter" role="img" aria-label="${e} learned, ${t} in progress, of ${n}">
     ${e?`<span class="seg seg-learned" style="width:${r(e)}%"></span>`:``}
     ${t?`<span class="seg seg-learning" style="width:${r(t)}%"></span>`:``}
-  </div>`}function wn(e){let t=new Date(e),n=t.toLocaleTimeString(void 0,{hour:`numeric`,minute:`2-digit`}),r=Math.floor((new Date().setHours(0,0,0,0)-new Date(e).setHours(0,0,0,0))/864e5);return r===0?`Today, ${n}`:r===1?`Yesterday, ${n}`:`${t.toLocaleDateString(void 0,{weekday:`short`,day:`numeric`,month:`short`,year:r>300?`numeric`:void 0})}, ${n}`}var Tn=e=>e<6e4?`<1 min`:`${Math.round(e/6e4)} min`;function En(e){let t=e.learned.map(e=>r.get(e)).filter(e=>!!e),n=Math.round(e.correct/e.answered*100);return`<li class="history-row">
+  </div>`}function En(e){let t=new Date(e),n=t.toLocaleTimeString(void 0,{hour:`numeric`,minute:`2-digit`}),r=Math.floor((new Date().setHours(0,0,0,0)-new Date(e).setHours(0,0,0,0))/864e5);return r===0?`Today, ${n}`:r===1?`Yesterday, ${n}`:`${t.toLocaleDateString(void 0,{weekday:`short`,day:`numeric`,month:`short`,year:r>300?`numeric`:void 0})}, ${n}`}var Dn=e=>e<6e4?`<1 min`:`${Math.round(e/6e4)} min`;function On(e){let t=e.learned.map(e=>r.get(e)).filter(e=>!!e),n=Math.round(e.correct/e.answered*100);return`<li class="history-row">
     <div class="history-main">
-      <strong>${wn(e.at)}</strong>
-      <span class="muted">${Tn(e.ms)} · ${U(e.answered,`answer`)} · ${n}% correct</span>
+      <strong>${En(e.at)}</strong>
+      <span class="muted">${e.quiz?`Quiz: ${P(e.quiz)} · `:``}${Dn(e.ms)} · ${U(e.answered,`answer`)} · ${n}% correct</span>
     </div>
     ${t.length?`<div class="history-flags">${t.slice(0,5).map(e=>`<a href="${B(e)}" data-tip="${e.code}" aria-label="${P(e.name)}">${I(e,{size:`sm`,lazy:!0,alt:``})}</a>`).join(``)}${t.length>5?`<span class="muted small">+${t.length-5}</span>`:``}</div>`:``}
-  </li>`}var Dn=`
+  </li>`}var kn=`
   <h2 class="group-title">Your data</h2>
   <section class="card">
     <p class="muted">Progress is stored in this browser only. Save a backup to move it to another device.</p>
@@ -285,21 +285,21 @@
       <button class="btn ghost danger" data-act="reset">Start over</button>
     </div>
     <p class="notice muted" aria-live="polite"></p>
-  </section>`;function On(e){let t=t=>{We(),An(e),V(`.notice`,e).textContent=t};V(`[data-act=export]`,e).addEventListener(`click`,()=>{let e=new Blob([Re()],{type:`application/json`}),t=document.createElement(`a`);t.href=URL.createObjectURL(e),t.download=`learn-the-flags-${new Date().toISOString().slice(0,10)}.json`,t.click(),URL.revokeObjectURL(t.href)}),V(`[data-act=import]`,e).addEventListener(`change`,async n=>{let r=n.target.files?.[0];if(r)try{ze(await r.text()),t(`Backup restored.`)}catch(t){V(`.notice`,e).textContent=t.message}}),V(`[data-act=reset]`,e).addEventListener(`click`,()=>{confirm(`Erase all progress and start from scratch?`)&&(Be(),t(`Progress erased.`))})}var kn=`all`;function An(e){let t=n,a=new Map(t.map(e=>[e.code,Ft(j(e.code))])),o=e=>{let t=0,n=0;for(let r of e){let e=a.get(r.code);e===`learned`?t++:e===`learning`&&n++}return{learned:t,learning:n,fresh:e.length-t-n,total:e.length}},l=o(t),u=k.sessions;if(!l.learned&&!l.learning){e.innerHTML=`
+  </section>`;function An(e){let t=t=>{We(),Mn(e),V(`.notice`,e).textContent=t};V(`[data-act=export]`,e).addEventListener(`click`,()=>{let e=new Blob([Re()],{type:`application/json`}),t=document.createElement(`a`);t.href=URL.createObjectURL(e),t.download=`learn-the-flags-${new Date().toISOString().slice(0,10)}.json`,t.click(),URL.revokeObjectURL(t.href)}),V(`[data-act=import]`,e).addEventListener(`change`,async n=>{let r=n.target.files?.[0];if(r)try{ze(await r.text()),t(`Backup restored.`)}catch(t){V(`.notice`,e).textContent=t.message}}),V(`[data-act=reset]`,e).addEventListener(`click`,()=>{confirm(`Erase all progress and start from scratch?`)&&(Be(),t(`Progress erased.`))})}var jn=`all`;function Mn(e){let t=n,a=new Map(t.map(e=>[e.code,Ft(j(e.code))])),o=e=>{let t=0,n=0;for(let r of e){let e=a.get(r.code);e===`learned`?t++:e===`learning`&&n++}return{learned:t,learning:n,fresh:e.length-t-n,total:e.length}},l=o(t),u=k.sessions;if(!l.learned&&!l.learning&&!u.length){e.innerHTML=`
       <header class="page-head"><h1>Progress</h1></header>
       <section class="card empty-state">
         <h2>Nothing here yet</h2>
         <p class="muted">Finish your first lesson and your flags, streak and sessions will show up here.</p>
         <a class="btn primary" href="${p(`study/`)}">Start learning</a>
       </section>
-      ${Dn}`,On(e);return}At();let d=jt(),f=Object.values(k.days).reduce((e,t)=>e+t.reviews,0),m=Object.values(k.days).reduce((e,t)=>e+t.correct,0),h=Object.entries(k.cards).filter(([,e])=>e.lapses>=2).sort((e,t)=>t[1].lapses-e[1].lapses).slice(0,8).map(([e])=>r.get(e)).filter(e=>!!e),g=e=>`<div class="flag-wall">${e.map(e=>{let t=a.get(e.code);return`<a class="wall-flag is-${t}" href="${B(e)}" data-tip="${e.code}" data-status="${t}" aria-label="${P(e.name)}, ${It[t].toLowerCase()}">${I(e,{size:`sm`,lazy:!0,alt:``})}</a>`}).join(``)}</div>`,_=(e,t,n=`h2`)=>{let r=o(t);return`<div class="wall-head"><${n}>${P(e)}</${n}><span class="muted small">${r.learned} of ${r.total} learned</span></div>`},v=i.map(e=>{let t=s(e.id),n=e.id===`sovereign`?c.map(e=>{let n=t.filter(t=>t.continent===e);return`<div class="wall-group">${_(e,n,`h3`)}${g(n)}</div>`}).join(``):g(t);return`<section class="card wall-card" data-set="${e.id}">${_(e.name,t)}${n}</section>`}).join(``);e.innerHTML=`
+      ${kn}`,An(e);return}At();let d=jt(),f=Object.values(k.days).reduce((e,t)=>e+t.reviews,0),m=Object.values(k.days).reduce((e,t)=>e+t.correct,0),h=Object.entries(k.cards).filter(([,e])=>e.lapses>=2).sort((e,t)=>t[1].lapses-e[1].lapses).slice(0,8).map(([e])=>r.get(e)).filter(e=>!!e),g=e=>`<div class="flag-wall">${e.map(e=>{let t=a.get(e.code);return`<a class="wall-flag is-${t}" href="${B(e)}" data-tip="${e.code}" data-status="${t}" aria-label="${P(e.name)}, ${It[t].toLowerCase()}">${I(e,{size:`sm`,lazy:!0,alt:``})}</a>`}).join(``)}</div>`,_=(e,t,n=`h2`)=>{let r=o(t);return`<div class="wall-head"><${n}>${P(e)}</${n}><span class="muted small">${r.learned} of ${r.total} learned</span></div>`},v=i.map(e=>{let t=s(e.id),n=e.id===`sovereign`?c.map(e=>{let n=t.filter(t=>t.continent===e);return`<div class="wall-group">${_(e,n,`h3`)}${g(n)}</div>`}).join(``):g(t);return`<section class="card wall-card" data-set="${e.id}">${_(e.name,t)}${n}</section>`}).join(``);e.innerHTML=`
     <header class="page-head"><h1>Progress</h1></header>
     <section class="card overview">
       <div class="overview-main">
-        <div class="big-number"><strong>${l.learned}</strong><span>${l.learned===1?`flag`:`flags`} learned ${Sn(`learned`,xn.learned)}</span></div>
+        <div class="big-number"><strong>${l.learned}</strong><span>${l.learned===1?`flag`:`flags`} learned ${wn(`learned`,Cn.learned)}</span></div>
         <div class="legend">
           <span><i class="seg-learned"></i>Learned ${l.learned}</span>
-          <span><i class="seg-learning"></i>In progress ${l.learning} ${Sn(`in progress`,xn.learning)}</span>
+          <span><i class="seg-learning"></i>In progress ${l.learning} ${wn(`in progress`,Cn.learning)}</span>
         </div>
         <div class="stats">
           <div class="stat"><strong>${M()}</strong><span>day streak</span></div>
@@ -311,7 +311,7 @@
         <h2 class="label">By set</h2>
         ${i.map(e=>{let t=o(s(e.id));return`<div class="region-row">
             <span class="region-name">${P(e.name)}</span>
-            ${Cn(t.learned,t.learning,t.total)}
+            ${Tn(t.learned,t.learning,t.total)}
             <span class="region-count muted">${t.learned}/${t.total}</span>
           </div>`}).join(``)}
       </div>
@@ -319,13 +319,14 @@
 
     <section class="card badges-card">
       <div class="wall-head"><h2>Badges</h2><span class="muted small">${U(d.filter(e=>e.earned).length,`badge`)} earned</span></div>
+      ${d.some(e=>e.earned)?``:`<p class="muted small badge-hint">Unlock badges by keeping a streak, learning every flag in a set or continent, and scoring 100% on quizzes.</p>`}
       <div class="badge-grid">${d.map(e=>Mt(e.badge,e.earned)).join(``)}</div>
     </section>
 
     <div class="section-head wall-toolbar">
       <h2>Your flags</h2>
       <div class="chips" role="group" aria-label="Show">
-        ${[[`all`,`All`],[`learned`,`Learned`],[`learning`,`In progress`],[`new`,`Not started`]].map(([e,t])=>`<button class="chip${kn===e?` active`:``}" data-filter="${e}">${t}</button>`).join(``)}
+        ${[[`all`,`All`],[`learned`,`Learned`],[`learning`,`In progress`],[`new`,`Not started`]].map(([e,t])=>`<button class="chip${jn===e?` active`:``}" data-filter="${e}">${t}</button>`).join(``)}
       </div>
     </div>
     ${v}
@@ -335,8 +336,8 @@
       ${h.length?`<section class="card"><h2>Flags you mix up most</h2><div class="thumb-grid">${h.map(e=>`<a class="thumb-link" href="${B(e)}">${z(e)}<span>${P(e.name)}</span></a>`).join(``)}</div></section>`:``}
       <section class="card">
         <h2>Recent sessions</h2>
-        ${u.length?`<ul class="history">${u.slice(0,6).map(En).join(``)}</ul>
+        ${u.length?`<ul class="history">${u.slice(0,6).map(On).join(``)}</ul>
                ${u.length>6?`<button class="btn quiet" data-act="more">Show all ${u.length} sessions</button>`:``}`:`<p class="muted">Your finished sessions will show up here.</p>`}
       </section>
     </div>
-    ${Dn}`,zt(e),On(e);let y=H(`.wall-flag`,e),b=()=>{y.forEach(e=>e.hidden=kn!==`all`&&e.dataset.status!==kn);for(let t of H(`.wall-group, .wall-card`,e))t.hidden=!H(`.wall-flag`,t).some(e=>!e.hidden);V(`.empty`,e).hidden=y.some(e=>!e.hidden)};for(let t of H(`[data-filter]`,e))t.addEventListener(`click`,()=>{kn=t.dataset.filter,H(`[data-filter]`,e).forEach(e=>e.classList.toggle(`active`,e===t)),b()});b(),V(`[data-act=more]`,e)?.addEventListener(`click`,t=>{V(`.history`,e).innerHTML=u.map(En).join(``),t.currentTarget.remove()})}var jn=`Learn the Flags`,$=(e,t)=>(n,r)=>{document.title=e?`${e} · Learn the Flags`:jn,t(n,r)};We(),it(),w(``,$(null,un)),w(`study`,$(`Study`,hn));var Mn=$(`All flags`,vn),Nn=$(null,bn);w(`flags`,(e,t)=>t?Nn(e,t):Mn(e,t)),w(`quiz`,$(`Quiz`,Yt)),w(`progress`,$(`Progress`,An)),ue();
+    ${kn}`,zt(e),An(e);let y=H(`.wall-flag`,e),b=()=>{y.forEach(e=>e.hidden=jn!==`all`&&e.dataset.status!==jn);for(let t of H(`.wall-group, .wall-card`,e))t.hidden=!H(`.wall-flag`,t).some(e=>!e.hidden);V(`.empty`,e).hidden=y.some(e=>!e.hidden)};for(let t of H(`[data-filter]`,e))t.addEventListener(`click`,()=>{jn=t.dataset.filter,H(`[data-filter]`,e).forEach(e=>e.classList.toggle(`active`,e===t)),b()});b(),V(`[data-act=more]`,e)?.addEventListener(`click`,t=>{V(`.history`,e).innerHTML=u.map(On).join(``),t.currentTarget.remove()})}var Nn=`Learn the Flags`,$=(e,t)=>(n,r)=>{document.title=e?`${e} · Learn the Flags`:Nn,t(n,r)};We(),it(),w(``,$(null,fn)),w(`study`,$(`Study`,_n));var Pn=$(`All flags`,bn),Fn=$(null,Sn);w(`flags`,(e,t)=>t?Fn(e,t):Pn(e,t)),w(`quiz`,$(`Quiz`,Zt)),w(`progress`,$(`Progress`,Mn)),ue();

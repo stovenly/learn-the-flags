@@ -31,7 +31,7 @@ export interface SessionConfig {
   items: Item[];
   scheduled: boolean; // false for practice: answers do not touch the review schedule
   title: string;
-  test?: { key: string }; // a quiz: one question per flag, no retries, scored at the end
+  test?: { key: string; label: string }; // a quiz: one question per flag, no retries, scored at the end
   onDone: (summary: Summary) => string; // returns HTML for the end screen actions
 }
 
@@ -466,7 +466,7 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
   function finish() {
     keyHandler = null;
     record();
-    if (cfg.test) return finishTest(cfg.test.key);
+    if (cfg.test) return finishTest(cfg.test);
     const pct = summary.answered ? Math.round((summary.correct / summary.answered) * 100) : 0;
     const mins = Math.max(1, Math.round((Date.now() - startedAt) / 60000));
     const strip = (title: string, list: Country[]) =>
@@ -498,8 +498,19 @@ export function runSession(root: HTMLElement, cfg: SessionConfig) {
     $('.progress-fill', root).style.width = '100%';
   }
 
-  function finishTest(key: string) {
+  function finishTest({ key, label }: { key: string; label: string }) {
     const total = summary.answered;
+    if (total) {
+      logSession({
+        at: startedAt,
+        ms: Date.now() - startedAt,
+        answered: total,
+        correct: summary.correct,
+        learned: [],
+        missed: summary.missed.map((c) => c.code),
+        quiz: label,
+      });
+    }
     const pct = total ? Math.round((summary.correct / total) * 100) : 0;
     const prev = total ? recordQuiz(key, summary.correct, total) : undefined;
     const prevPct = prev ? Math.round((prev.correct / prev.total) * 100) : null;

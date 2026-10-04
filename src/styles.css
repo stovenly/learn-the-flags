@@ -1061,3 +1061,4 @@ body[data-route='settings'] #app { max-width: 720px; }
 .badge:nth-child(4n + 3) .badge-sheen { animation-delay: -1.5s; }
 .badge:nth-child(4n) .badge-sheen { animation-delay: -2.25s; }
 .badge.locked .badge-sheen { display: none; }
+.badge-hint { margin: 6px 0 0; }

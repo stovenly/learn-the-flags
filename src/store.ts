@@ -25,6 +25,7 @@ export interface SessionLog {
   correct: number;
   learned: string[];
   missed: string[];
+  quiz?: string; // what a quiz covered, e.g. "Africa · Country → flag"; absent for lessons
 }
 
 interface State {

@@ -40,7 +40,7 @@ function sessionRow(s: SessionLog) {
   return `<li class="history-row">
     <div class="history-main">
       <strong>${when(s.at)}</strong>
-      <span class="muted">${minutes(s.ms)} · ${plural(s.answered, 'answer')} · ${pct}% correct</span>
+      <span class="muted">${s.quiz ? `Quiz: ${esc(s.quiz)} · ` : ''}${minutes(s.ms)} · ${plural(s.answered, 'answer')} · ${pct}% correct</span>
     </div>
     ${
       learned.length
@@ -114,7 +114,7 @@ export function progressView(root: HTMLElement) {
   const overall = count(all);
   const sessions = state.sessions;
 
-  if (!overall.learned && !overall.learning) {
+  if (!overall.learned && !overall.learning && !sessions.length) {
     root.innerHTML = `
       <header class="page-head"><h1>Progress</h1></header>
       <section class="card empty-state">
@@ -191,6 +191,7 @@ export function progressView(root: HTMLElement) {
 
     <section class="card badges-card">
       <div class="wall-head"><h2>Badges</h2><span class="muted small">${plural(badges.filter((b) => b.earned).length, 'badge')} earned</span></div>
+      ${badges.some((b) => b.earned) ? '' : '<p class="muted small badge-hint">Unlock badges by keeping a streak, learning every flag in a set or continent, and scoring 100% on quizzes.</p>'}
       <div class="badge-grid">${badges.map((b) => badgeTile(b.badge, b.earned)).join('')}</div>
     </section>
 

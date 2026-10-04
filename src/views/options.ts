@@ -1,7 +1,6 @@
-import { setById } from '../data';
 import { deckKey, LESSON_SIZES, save, Settings, state } from '../store';
 import { esc, icon } from '../ui';
-import { KINDS } from './quiz';
+import { KINDS, kindNoun } from './quiz';
 
 const STYLES: [Settings['answerStyle'], string][] = [
   ['auto', 'Mix'],
@@ -20,8 +19,7 @@ const chips = (key: Key, label: string, options: [string | number, string][]) =>
   </div>`;
 
 function quizKinds() {
-  const noun = setById.get(state.settings.set)!.noun;
-  const name = noun.includes(' ') ? 'Name' : noun[0].toUpperCase() + noun.slice(1);
+  const name = kindNoun();
   return `<div class="kinds" role="radiogroup" aria-label="Question type">${KINDS.map((k) => {
     const best = state.quizzes[`${deckKey()}:${k.slug}`];
     return `<button type="button" class="kind" role="radio" data-key="quizKind" data-value="${k.slug}">
