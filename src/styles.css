@@ -22,12 +22,11 @@
   --radius: 18px;
   --radius-sm: 12px;
   --font: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --font-size: 16px;
   color-scheme: light;
 }
 
 /* OpenDyslexic draws about a fifth larger at the same size. */
-:root.dyslexic { --font: 'OpenDyslexic', ui-sans-serif, system-ui, sans-serif; --font-size: 14px; }
+:root.dyslexic { --font: 'OpenDyslexic', ui-sans-serif, system-ui, sans-serif; font-size: 14px; }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
@@ -93,7 +92,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: var(--font-size) / 1.55 var(--font);
+  font: 1rem / 1.55 var(--font);
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
   display: flex;
