@@ -1,17 +1,6 @@
-import { byCode, url, CONTINENTS, Country, curriculum, inSet, preload, setById, SETS, SOVEREIGN } from '../data';
+import { byCode, url, CONTINENTS, Country, inSet, preload, setById, SETS, SOVEREIGN } from '../data';
 import { chooseDeck, deck, deckKey, dueCards, level, newCards, state, streak } from '../store';
-import { $$, countryLink, esc, flagImg, icon, plural, renderWhenReady, sample, thumb } from '../ui';
-
-function ring(pct: number) {
-  const r = 52;
-  const c = 2 * Math.PI * r;
-  return `<svg class="ring" viewBox="0 0 120 120" aria-hidden="true">
-    <circle cx="60" cy="60" r="${r}" class="ring-track"/>
-    <circle cx="60" cy="60" r="${r}" class="ring-fill" stroke-dasharray="${c}" stroke-dashoffset="${c * (1 - pct)}"/>
-  </svg>`;
-}
-
-const HERO = ['jp', 'br', 'ca', 'za', 'np', 'ch', 'kr', 'bt', 'gb'];
+import { $$, countryLink, esc, icon, plural, renderWhenReady, sample, shuffle, thumb } from '../ui';
 
 // One pick per visit, so changing the set doesn't swap the card and jolt the page.
 let fact: { c: Country; text: string } | null = null;
@@ -65,21 +54,14 @@ function setOption(id: string, images: Promise<void>[]) {
   </button>`;
 }
 
-function picker(images: Promise<void>[]) {
+// The chosen flags: a set, narrowed by continent for sovereign states. Learn and Quiz below both follow it.
+function filter(images: Promise<void>[]) {
   const { set, continents } = state.settings;
   const all = continents.length === CONTINENTS.length;
   const chip = (value: string, label: string, on: boolean) =>
     `<button class="chip chip-sm${on ? ' active' : ''}" aria-pressed="${on}" data-continent="${value}">${label}</button>`;
-  const best = state.quizzes[deckKey()];
-  const size = deck().length;
-  return `<section class="card picker">
-    <div class="picker-head">
-      <h2>What to learn</h2>
-      <div class="quiz-cta">
-        ${best ? `<span class="muted small">Best ${Math.round((best.correct / best.total) * 100)}%</span>` : ''}
-        <a class="btn ghost small" href="${url('quiz/')}">Quiz me on all ${size}</a>
-      </div>
-    </div>
+  return `<section class="card picker" aria-labelledby="picker-title">
+    <h2 class="label" id="picker-title">Choose your flags</h2>
     <div class="sets" role="radiogroup" aria-label="Flag set">
       <div class="set-main">
         ${setOption(SOVEREIGN, images)}
@@ -124,55 +106,56 @@ export function homeView(root: HTMLElement) {
 function paint(root: HTMLElement, keepScroll?: number, focus?: string) {
   const all = deck();
   const learned = learnedIn(all);
-  const everything = state.settings.set === SOVEREIGN && state.settings.continents.length === CONTINENTS.length;
   const due = dueCards().length;
   const upcoming = newCards();
-  const remaining = upcoming.length;
-  const fresh = Math.min(remaining, state.settings.lessonSize);
   const started = Object.keys(state.cards).length > 0;
   const days = streak();
-  const hero = everything ? HERO.map((k) => byCode.get(k)).filter((c): c is Country => !!c) : curriculum(all).slice(0, 9);
-  const images: Promise<void>[] = started ? [] : hero.map((c) => preload(c.code, 320));
+  const best = state.quizzes[deckKey()];
+  const images: Promise<void>[] = [];
 
-  let title: string;
-  let cta: string;
+  let status: string;
+  let actions: string;
   let next = '';
-  if (!started) {
-    title = 'Learn every flag in the world';
-    cta = `<a class="btn primary big" href="${url('study/')}">Start learning ${icon('arrow')}</a>`;
-  } else if (due) {
-    title = plural(due, 'flag') + ' to review';
-    cta = `<a class="btn primary big" href="${url('study/')}">Review ${icon('arrow')}</a>${remaining ? `<a class="btn ghost big" href="${url('study/new/')}">Learn new flags</a>` : ''}`;
-  } else if (remaining) {
-    title = "Today's flags";
-    cta = `<a class="btn primary big" href="${url('study/')}">Start ${icon('arrow')}</a>`;
-    next = upNext(upcoming.slice(0, fresh), images);
+  if (due) {
+    status = `${plural(due, 'flag')} to review`;
+    actions = `<a class="btn primary" href="${url('study/')}">Review ${icon('arrow')}</a>${upcoming.length ? `<a class="btn ghost" href="${url('study/new/')}">Learn new flags</a>` : ''}`;
+  } else if (upcoming.length) {
+    status = "Today's flags";
+    actions = `<a class="btn primary" href="${url('study/')}">${started ? 'Start' : 'Start learning'} ${icon('arrow')}</a>`;
+    next = upNext(upcoming.slice(0, state.settings.lessonSize), images);
   } else {
-    title = 'All learned';
-    cta = `<a class="btn ghost big" href="${url('flags/')}">Browse all flags</a>`;
+    status = 'All learned';
+    actions = `<a class="btn ghost" href="${url('flags/')}">Browse flags</a>`;
   }
+  const preview = shuffle(all).slice(0, 4);
+  preview.forEach((c) => images.push(preload(c.code, 320)));
 
   const html = `
-    <section class="card today${started ? ' started' : ''}">
-      <div class="today-main">
-        <h1>${esc(title)}</h1>
-        <div class="today-cta">${cta}</div>
-        ${next}
-      </div>
-      ${
-        started
-          ? `<a class="today-ring" href="${url('progress/')}" aria-label="See your progress">
-              ${ring(learned / all.length)}
-              <div class="ring-label"><strong>${learned}</strong><span>of ${all.length} flags</span></div>
-              ${days > 1 ? `<p class="streak">${days}-day streak</p>` : ''}
-            </a>`
-          : `<div class="hero-flags" aria-hidden="true">${hero
-              .map((c) => flagImg(c, { size: 'sm', alt: '' }))
-              .join('')}</div>`
-      }
-    </section>
+    ${started ? '<h1 class="sr-only">Learn the Flags</h1>' : '<h1 class="home-title">Learn every flag in the world</h1>'}
 
-    ${picker(images)}
+    ${filter(images)}
+
+    <div class="modes">
+      <section class="card mode">
+        <div class="mode-head">
+          <h2>Learn</h2>
+          <a class="mode-meta" href="${url('progress/')}">${learned} of ${all.length} learned${days > 1 ? ` · ${days}-day streak` : ''}</a>
+        </div>
+        <div class="meter" aria-hidden="true"><span class="seg seg-learned" style="width:${(learned / all.length) * 100}%"></span></div>
+        <p class="mode-status">${esc(status)}</p>
+        ${next}
+        <div class="mode-actions">${actions}</div>
+      </section>
+      <section class="card mode">
+        <div class="mode-head">
+          <h2>Quiz</h2>
+          ${best ? `<span class="mode-meta">Best ${Math.round((best.correct / best.total) * 100)}%</span>` : ''}
+        </div>
+        <p class="mode-status">All ${all.length} flags, once each</p>
+        <div class="up-next-flags">${preview.map((c) => thumb(c)).join('')}</div>
+        <div class="mode-actions"><a class="btn ${due || upcoming.length ? 'ghost' : 'primary'}" href="${url('quiz/')}">Start quiz ${icon('arrow')}</a></div>
+      </section>
+    </div>
 
     ${didYouKnow(images)}
 
