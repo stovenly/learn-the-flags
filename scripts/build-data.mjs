@@ -106,10 +106,12 @@ function distance(a, b) {
 
 const slugify = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
-// "Nippon · 日本": the place's first own-language name that differs from its English one, romanization first when it has one.
+// "Nippon · 日本": the place's own name in its first language, romanization first when it has one. A place
+// with no other local name (Texas, Australia) shows its English name; organisations have no local name.
 function localLine(c) {
-  const l = (c.localNames ?? []).find((x) => x.name !== c.name);
-  return l ? [l.romanized, l.name].filter(Boolean).join(' · ') : '';
+  const l = c.localNames?.[0];
+  if (l) return [l.romanized, l.name].filter(Boolean).join(' · ');
+  return c.set === 'organizations' ? '' : c.name;
 }
 
 const continent = (c) => (c.region !== 'Americas' ? c.region : c.subregion === 'South America' ? 'South America' : 'North America');

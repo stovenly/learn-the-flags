@@ -3,13 +3,7 @@
   "isoNumeric": "170",
   "name": "Colombia",
   "officialName": "Republic of Colombia",
-  "localNames": [
-    {
-      "language": "Spanish",
-      "name": "República de Colombia",
-      "romanized": ""
-    }
-  ],
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Bogotá",

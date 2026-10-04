@@ -3,13 +3,7 @@
   "isoNumeric": "032",
   "name": "Argentina",
   "officialName": "Argentine Republic",
-  "localNames": [
-    {
-      "language": "Spanish",
-      "name": "República Argentina",
-      "romanized": ""
-    }
-  ],
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Buenos Aires",

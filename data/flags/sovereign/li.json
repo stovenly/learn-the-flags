@@ -3,13 +3,7 @@
   "isoNumeric": "438",
   "name": "Liechtenstein",
   "officialName": "Principality of Liechtenstein",
-  "localNames": [
-    {
-      "language": "German",
-      "name": "Fürstentum Liechtenstein",
-      "romanized": ""
-    }
-  ],
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Vaduz",

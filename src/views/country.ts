@@ -39,7 +39,6 @@ export function countryView(root: HTMLElement, slug: string) {
         <div class="country-id">
           <h1>${esc(c.name)}</h1>
           ${localNameText(c) ? `<p class="local-name">${esc(localNameText(c))}</p>` : ''}
-          ${c.officialName !== c.name ? `<p class="muted">${esc(c.officialName)}</p>` : ''}
           <div class="tags">
             ${tags.map((t) => `<span class="tag">${esc(t)}</span>`).join('')}
             ${lv === 'new' ? '' : `<span class="tag tag-${lv === 'learning' ? 'learning' : 'learned'}">${lv === 'learning' ? 'Learning' : 'Learned'}</span>`}

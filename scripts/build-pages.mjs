@@ -55,7 +55,6 @@ async function write(route, html) {
 }
 
 const localName = (c) => c.localLine;
-const subtitle = (c) => [c.officialName !== c.name ? c.officialName : '', STATUS[c.status] ?? '', c.set === 'sovereign' ? '' : setName[c.set]].filter(Boolean).join(' · ');
 const flagHref = (c) => `flags/${c.slug}/`;
 const img = (c, size = 640) =>
   `<img class="flag flag-${size === 320 ? 'sm' : 'lg'}" src="img/flags/${size}/${c.code}.webp" width="640" height="${Math.round(640 / c.ratio)}" alt="Flag of ${esc(c.theName)}" style="--ratio:${c.ratio}"${size === 320 ? ' loading="lazy"' : ''} decoding="async">`;
@@ -78,7 +77,6 @@ for (const c of countries) {
 <div class="card">${img(c)}</div>
 <h1>Flag of ${esc(c.theName)}</h1>
 ${localName(c) ? `<p class="local-name">${esc(localName(c))}</p>` : ''}
-${subtitle(c) ? `<p class="muted">${esc(subtitle(c))}</p>` : ''}
 ${c.hasMap ? `<div class="card"><img class="map map-lg" src="img/maps/${c.code}.svg" width="150" height="100" alt="Map showing where ${esc(c.name)} is" loading="lazy"></div>` : ''}
 <section class="card">
 <h2>What the flag looks like</h2>

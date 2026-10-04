@@ -3,13 +3,7 @@
   "isoNumeric": "320",
   "name": "Guatemala",
   "officialName": "Republic of Guatemala",
-  "localNames": [
-    {
-      "language": "Spanish",
-      "name": "República de Guatemala",
-      "romanized": ""
-    }
-  ],
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Guatemala City",

@@ -3,13 +3,7 @@
   "isoNumeric": "800",
   "name": "Uganda",
   "officialName": "Republic of Uganda",
-  "localNames": [
-    {
-      "language": "Swahili",
-      "name": "Jamhuri ya Uganda",
-      "romanized": ""
-    }
-  ],
+  "localNames": [],
   "aliases": [],
   "status": "un-member",
   "capital": "Kampala",

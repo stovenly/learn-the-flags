@@ -4,13 +4,7 @@
   "name": "Solomon Islands",
   "the": true,
   "officialName": "Solomon Islands",
-  "localNames": [
-    {
-      "language": "Pijin",
-      "name": "Solomon Aelan",
-      "romanized": ""
-    }
-  ],
+  "localNames": [],
   "aliases": [
     "Solomons"
   ],
