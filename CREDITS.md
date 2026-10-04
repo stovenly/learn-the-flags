@@ -11,7 +11,7 @@
 
 | Work | Author | Licence |
 |---|---|---|
-| [Natural Earth](https://www.naturalearthdata.com) country and admin-1 outlines | Natural Earth contributors | Public domain |
+| [Natural Earth](https://www.naturalearthdata.com) country and admin-1 outlines, lakes | Natural Earth contributors | Public domain |
 | [world-atlas](https://github.com/topojson/world-atlas) | Mike Bostock | ISC (data from Natural Earth) |
 | [mledoze/countries](https://github.com/mledoze/countries) country facts | Mohammed Le Doze and contributors | [ODbL 1.0](https://opendatacommons.org/licenses/odbl/1-0/) |
 | [Population, total (SP.POP.TOTL)](https://data.worldbank.org/indicator/SP.POP.TOTL) | The World Bank | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
