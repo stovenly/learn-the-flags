@@ -3,7 +3,6 @@ import { dayNumber, endOfDay, Memory, retrievability } from './srs';
 
 export interface Settings {
   lessonSize: number;
-  repeat: number; // multiplies how many times each flag is asked in a lesson
   retention: number; // target recall probability, 0.8..0.97
   answerStyle: 'auto' | 'choice' | 'typing';
   set: string; // the set new flags come from
@@ -43,10 +42,11 @@ export interface QuizBest {
   at: number; // ms epoch
 }
 
+export const LESSON_SIZES = [5, 10, 15, 20, 25];
+
 const KEY = 'learn-the-flags:v1';
 const DEFAULTS: Settings = {
   lessonSize: 5,
-  repeat: 1,
   retention: 0.9,
   answerStyle: 'auto',
   set: SOVEREIGN,
@@ -57,7 +57,7 @@ const DEFAULTS: Settings = {
 };
 
 function settingsFrom(saved: Record<string, unknown> = {}): Settings {
-  const { includePartial, focusRegion, ...rest } = saved;
+  const { includePartial, focusRegion, repeat, ...rest } = saved;
   const s = { ...DEFAULTS, ...rest } as Settings;
   if (!saved.continents && typeof focusRegion === 'string' && focusRegion !== 'all') {
     s.continents = focusRegion === 'Americas' ? ['North America', 'South America'] : [focusRegion];
@@ -65,6 +65,8 @@ function settingsFrom(saved: Record<string, unknown> = {}): Settings {
   if (!setById.has(s.set)) s.set = SOVEREIGN;
   s.continents = CONTINENTS.filter((k) => s.continents.includes(k));
   if (!s.continents.length) s.continents = CONTINENTS;
+  const nearest = (xs: number[], v: number) => xs.reduce((a, b) => (Math.abs(b - v) < Math.abs(a - v) ? b : a));
+  s.lessonSize = nearest(LESSON_SIZES, Number(s.lessonSize) || DEFAULTS.lessonSize);
   return s;
 }
 
