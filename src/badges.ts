@@ -169,11 +169,11 @@ function categoryBadge(kind: 'learn' | 'quiz', cat: Category): Badge {
     : {
         id: `quiz:${cat.key}`,
         name: `${cat.badge} Quiz Master`,
-        goal: every ? 'Score 100% on quizzes covering every flag.' : `Score 100% on a quiz of ${what}.`,
-        done: every ? 'Scored 100% on quizzes covering every flag.' : `Scored 100% on ${what}.`,
+        goal: every ? 'Score 100% on a quiz of each flag set, one set at a time. There is no single quiz of every flag.' : `Score 100% on a quiz of ${what}.`,
+        done: every ? 'Scored 100% on a quiz of each flag set.' : `Scored 100% on ${what}.`,
         art: categoryArt(kind, cat),
         qualifies: () => (every ? perfectlyQuizzed(ALL) === n : quizBest(cat) === 1),
-        progress: () => (every ? `${perfectlyQuizzed(ALL)}/${n} covered` : quizBest(cat) < 0 ? 'No quiz yet' : `Best: ${Math.round(quizBest(cat) * 100)}%`),
+        progress: () => (every ? `${perfectlyQuizzed(ALL)}/${n} flags covered` : quizBest(cat) < 0 ? 'No quiz yet' : `Best: ${Math.round(quizBest(cat) * 100)}%`),
         live: every,
       };
 }
