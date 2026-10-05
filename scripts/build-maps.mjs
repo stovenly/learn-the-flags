@@ -79,13 +79,21 @@ const esc = (t) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const GLOBE = 13.2; // locator globe radius, viewBox units
 const INSET = { x0: W - 2 * GLOBE - 8, y0: H - 2 * GLOBE - 8 };
 
+// Each ring carries its bounding box, so inside() can skip rings that can't contain the point.
 const parseRings = (d) =>
-  d ? d.split('M').filter(Boolean).map((sub) => sub.replace(/Z$/, '').split('L').map((p) => p.split(/[ ,]/).map(Number))) : [];
+  d
+    ? d.split('M').filter(Boolean).map((sub) => {
+        const r = sub.replace(/Z$/, '').split('L').map((p) => p.split(/[ ,]/).map(Number));
+        const xs = r.map((p) => p[0]), ys = r.map((p) => p[1]);
+        return Object.assign(r, { box: [Math.min(...xs), Math.min(...ys), Math.max(...xs), Math.max(...ys)] });
+      })
+    : [];
 
 // Even-odd point-in-polygon over all rings, in screen space (holes such as Lesotho inside South Africa work).
 function inside(rings, x, y) {
   let c = false;
   for (const r of rings) {
+    if (x < r.box[0] || x > r.box[2] || y < r.box[1] || y > r.box[3]) continue;
     for (let i = 0, j = r.length - 1; i < r.length; j = i++) {
       const [xi, yi] = r[i], [xj, yj] = r[j];
       if (yi > y !== yj > y && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) c = !c;
@@ -146,16 +154,22 @@ function labels(candidates, targetRings, lakeRings, placed, withFlags, onTarget 
       [n, FONT * 0.78, false],
     ]);
     let done = false;
-    for (const [name, size, flag] of variants) {
+    // A place's own name may, failing a clean fit, let up to 1 in 8 of its sample points fall off its land.
+    const tries = (onTarget ? [0, 0.125] : [0]).flatMap((slack) => variants.map((v) => [...v, slack]));
+    for (const [name, size, flag, slack] of tries) {
       const fh = size * 1.3;
       const fw = flag ? Math.min(fh * thumb.ratio, fh * 1.9) : 0;
-      const hw = Math.max(textWidth(name, size), fw) / 2 + 0.8;
+      const hw = Math.max(textWidth(name, size) * (onTarget ? 1.08 : 1), fw) / 2 + 0.8;
       for (const [x, y] of k.pts) {
         const r = { x0: x - hw, x1: x + hw, y0: y - size * 0.7, y1: y + size * 0.55 + (flag ? fh + size * 0.35 : 0) };
         if (r.x0 < 1 || r.x1 > W - 1 || r.y0 < 1 || r.y1 > H - 1 || hits(r)) continue;
         const mid = (r.y0 + r.y1) / 2;
-        const probe = [[r.x0, r.y0], [x, r.y0], [r.x1, r.y0], [r.x0, mid], [x, mid], [r.x1, mid], [r.x0, r.y1], [x, r.y1], [r.x1, r.y1]];
-        if (!probe.every(([px, py]) => inside(k.rings, px, py) && !inside(lakeRings, px, py) && (onTarget || !inside(targetRings, px, py)))) continue;
+        // Every 1.5 units along the box, so a narrow bay or lake between sample points can't slip under a letter.
+        const n = Math.ceil((r.x1 - r.x0) / 1.5);
+        const probe = Array.from({ length: n + 1 }, (_, i) => r.x0 + ((r.x1 - r.x0) * i) / n).flatMap((px) => [[px, r.y0], [px, mid], [px, r.y1]]);
+        let misses = Math.floor(slack * probe.length);
+        const fits = probe.every(([px, py]) => (inside(k.rings, px, py) && !inside(lakeRings, px, py) && (onTarget || !inside(targetRings, px, py))) || misses-- > 0);
+        if (!fits) continue;
         placed.push(r);
         const small = size !== FONT ? ` font-size="${size.toFixed(2)}"` : '';
         out.push(`<text x="${x.toFixed(1)}" y="${(y + size * 0.35).toFixed(1)}"${small}>${esc(name)}</text>`);
