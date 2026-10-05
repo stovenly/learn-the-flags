@@ -550,12 +550,15 @@ a.mode-meta:hover { color: var(--text); }
 .mode .meter { height: 6px; }
 .mode-status { margin: 4px 0 0; font-size: 1.1rem; font-weight: 600; }
 .mode-actions { margin-top: auto; padding-top: 6px; display: flex; gap: 10px; flex-wrap: wrap; }
-.up-next .label { display: none; }
+.up-next { display: flex; flex-direction: column; gap: 8px; }
+.strip-wrap { position: relative; }
+.strip-more { position: absolute; display: grid; place-items: center; font-size: 0.95rem; font-weight: 700; color: var(--text); pointer-events: none; }
+.strip-more[hidden] { display: none; }
 .flag-strip { --w: 48px; --gap: 8px; display: flex; flex-wrap: wrap; gap: var(--gap); max-height: calc(2 * var(--w) / 1.5 + var(--gap)); overflow: hidden; }
 .flag-strip .thumb { width: var(--w); }
 .quiz-flags { --w: 44px; }
 .flag-strip.clipped {
-  mask-image: linear-gradient(#000, #000), linear-gradient(to right, #000 50%, transparent);
+  mask-image: linear-gradient(#000, #000), linear-gradient(to right, #000 calc(var(--fade-end) - 2 * var(--w)), rgb(0 0 0 / 0.08) calc(var(--fade-end) - var(--w) / 2));
   mask-size: 100% 50%;
   mask-position: top, bottom;
   mask-repeat: no-repeat;

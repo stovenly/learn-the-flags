@@ -4,7 +4,7 @@ import { dueCards, newCards, state } from '../store';
 import { buildStudy, runSession } from './session';
 
 // Long backlogs are split into several short sittings; new flags join once the backlog fits in one.
-const MAX_REVIEWS = 30;
+export const MAX_REVIEWS = 30;
 
 let last: { due: Country[]; fresh: Country[] } | null = null;
 

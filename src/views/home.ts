@@ -3,6 +3,7 @@ import { chooseDeck, deck, deckKey, dueCards, level, newCards, state, streak } f
 import { onCleanup } from '../router';
 import { attachTips } from '../tips';
 import { KINDS, quizKind } from './quiz';
+import { MAX_REVIEWS } from './study';
 import { openOptions } from './options';
 import { $$, countryLink, esc, flagImg, icon, plural, renderWhenReady, sample, SET_ICONS, shuffle, thumb } from '../ui';
 
@@ -38,12 +39,17 @@ function triviaCard(c: Country, text: string) {
     </a>`;
 }
 
-function upNext(list: Country[], images: Promise<void>[]) {
-  if (!list.length) return '';
+// `total` can exceed the flags drawn: the quiz preview stands for the whole deck.
+const strip = (cls: string, flags: string[], total = flags.length) =>
+  `<div class="strip-wrap"><div class="flag-strip ${cls}" data-total="${total}">${flags.join('')}</div><span class="strip-more" aria-hidden="true" hidden></span></div>`;
+
+const tipped = (c: Country) => `<span class="tip-target" tabindex="0" data-tip="${c.code}" aria-label="${esc(c.name)}">${thumb(c)}</span>`;
+
+function flagRow(title: string, list: Country[], images: Promise<void>[]) {
   list.forEach((c) => images.push(preload(c.code, 320)));
   return `<div class="up-next">
-    <span class="label">Up next</span>
-    <div class="up-next-flags flag-strip">${list.map((c) => `<span class="tip-target" tabindex="0" data-tip="${c.code}" aria-label="${esc(c.name)}">${thumb(c)}</span>`).join('')}</div>
+    <p class="mode-status">${esc(title)}</p>
+    ${strip('up-next-flags', list.map(tipped))}
   </div>`;
 }
 
@@ -126,16 +132,38 @@ export function homeView(root: HTMLElement) {
   onCleanup(() => removeEventListener('resize', resize));
 }
 
-// Flag strips show two rows; one that holds more fades out across the second row.
+// Flag strips show two rows. When flags are left over, the second row fades out and its last flag
+// carries a "+N" that counts itself and everything past it; flags under the "+N" or past it get no tooltip.
 function markClipped(root: HTMLElement) {
-  for (const s of $$('.flag-strip', root)) s.classList.toggle('clipped', s.scrollHeight > s.clientHeight + 1);
+  for (const s of $$('.flag-strip', root)) {
+    const more = s.nextElementSibling as HTMLElement;
+    const kids = [...s.children] as HTMLElement[];
+    const shown = kids.filter((k) => k.offsetTop < s.clientHeight);
+    const last = shown.at(-1);
+    const hidden = Number(s.dataset.total) - shown.length;
+    const clipped = !!last && hidden > 0;
+    kids.forEach((k, i) => {
+      const off = clipped && i >= shown.length - 1;
+      if (off && k.dataset.tip) [k.dataset.tipOff, k.tabIndex] = [k.dataset.tip, -1];
+      if (off) delete k.dataset.tip;
+      else if (k.dataset.tipOff) [k.dataset.tip, k.tabIndex] = [k.dataset.tipOff, 0];
+      k.setAttribute('aria-hidden', String(off));
+    });
+    s.classList.toggle('clipped', clipped);
+    more.hidden = !clipped;
+    if (!clipped) continue;
+    s.style.setProperty('--fade-end', `${last.offsetLeft + last.offsetWidth}px`);
+    Object.assign(more.style, { left: `${last.offsetLeft}px`, top: `${last.offsetTop}px`, width: `${last.offsetWidth}px`, height: `${last.offsetHeight}px` });
+    more.textContent = `+${hidden + 1}`;
+  }
 }
 
 function paint(root: HTMLElement, keepScroll?: number, focus?: string) {
   const all = deck();
   const learned = learnedIn(all);
-  const due = dueCards().length;
+  const due = dueCards();
   const upcoming = newCards();
+  const fresh = due.length <= MAX_REVIEWS ? upcoming.slice(0, state.settings.lessonSize) : [];
   const started = Object.keys(state.cards).length > 0;
   const days = streak();
   const best = KINDS.map((k) => state.quizzes[`${deckKey()}:${k.slug}`])
@@ -143,18 +171,15 @@ function paint(root: HTMLElement, keepScroll?: number, focus?: string) {
     .sort((a, b) => b.correct / b.total - a.correct / a.total)[0];
   const images: Promise<void>[] = [];
 
-  let status: string;
+  let rows: string;
   let actions: string;
-  let next = '';
-  if (due) {
-    status = `${plural(due, 'flag')} to review`;
-    actions = `<a class="btn primary" href="${url('study/')}">Start ${icon('arrow')}</a><button type="button" class="btn ghost btn-icon" data-options="lesson" aria-label="Lesson options" title="Lesson options">${icon('gear')}</button>`;
-  } else if (upcoming.length) {
-    status = 'Up next';
+  if (due.length || fresh.length) {
+    rows =
+      (due.length ? flagRow(`${plural(due.length, 'flag')} to review`, due, images) : '') +
+      (fresh.length ? flagRow(due.length ? `${plural(fresh.length, 'new flag')} to learn` : 'Up next', fresh, images) : '');
     actions = `<a class="btn primary" href="${url('study/')}">${started ? 'Start' : 'Start learning'} ${icon('arrow')}</a><button type="button" class="btn ghost btn-icon" data-options="lesson" aria-label="Lesson options" title="Lesson options">${icon('gear')}</button>`;
-    next = upNext(upcoming.slice(0, state.settings.lessonSize), images);
   } else {
-    status = 'All learned';
+    rows = '<p class="mode-status">All learned</p>';
     actions = `<a class="btn ghost" href="${url('flags/')}">Browse flags</a>`;
   }
   const key = deckKey();
@@ -174,8 +199,7 @@ function paint(root: HTMLElement, keepScroll?: number, focus?: string) {
           <a class="mode-meta" href="${url('progress/')}">${learned} of ${all.length} learned${days > 1 ? ` · ${days}-day streak` : ''}</a>
         </div>
         <div class="meter" aria-hidden="true"><span class="seg seg-learned" style="width:${(learned / all.length) * 100}%"></span></div>
-        <p class="mode-status">${esc(status)}</p>
-        ${next}
+        ${rows}
         <div class="mode-actions">${actions}</div>
       </section>
       <section class="card mode">
@@ -184,7 +208,7 @@ function paint(root: HTMLElement, keepScroll?: number, focus?: string) {
           ${best ? `<span class="mode-meta">Best ${Math.round((best.correct / best.total) * 100)}%</span>` : ''}
         </div>
         <p class="mode-status">All ${all.length} flags, once each</p>
-        <div class="quiz-flags flag-strip" aria-hidden="true">${preview.map((c) => thumb(c)).join('')}</div>
+        ${strip('quiz-flags', preview.map(tipped), all.length)}
         <div class="mode-actions"><a class="btn primary" href="${url(`quiz/${quizKind().slug}/`)}">Start quiz ${icon('arrow')}</a><button type="button" class="btn ghost btn-icon" data-options="quiz" aria-label="Quiz options" title="Quiz options">${icon('gear')}</button></div>
       </section>
     </div>
