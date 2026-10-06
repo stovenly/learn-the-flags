@@ -116,9 +116,9 @@ export function today(): DayLog {
   return (state.days[k] ??= { reviews: 0, correct: 0, learned: 0 });
 }
 
-// Reviews cover every flag ever started, whatever set is chosen now.
+// Reviews follow the chosen set (and continents), like new flags; other sets' flags wait until they are chosen again.
 export function dueCards(now = Date.now()): Country[] {
-  return ALL
+  return deck()
     .filter((c) => state.cards[c.code] && state.cards[c.code].due <= now)
     .sort((a, b) => retrievability(state.cards[a.code], now) - retrievability(state.cards[b.code], now));
 }

@@ -28,7 +28,7 @@ The app uses clean URLs (`/flags/texas/`, `/progress/`). Every page carries a `<
 
 ## Editing flags
 
-Flags are grouped into sets, listed in `data/sets.json` (id, display name, the noun used in questions, a description, a cover flag and an optional curated learning order). Learners pick one set to learn new flags from; the sovereign set can be narrowed to continents. Reviews always cover every flag already started.
+Flags are grouped into sets, listed in `data/sets.json` (id, display name, the noun used in questions, a description, a cover flag and an optional curated learning order). Learners pick one set to learn new flags from; the sovereign set can be narrowed to continents. Reviews cover only the started flags in the chosen set (and continents); the rest wait until that set is chosen again.
 
 Each flag is one file in `data/flags/<set>/<code>.json`. Sovereign states use their ISO alpha-2 code; others use ISO 3166-2 (`us-tx`, `ca-on`, `gb-sct`) or a readable code (`ussr`, `nato`). That file is the source of truth for names (`name`, `officialName`, and `endonyms`: the place's own name in its languages, first one shown on its page), accepted answers (`aliases`), facts, the flag description, the memory hook, curated `lookalikes` and trivia. Optional fields:
 
