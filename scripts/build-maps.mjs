@@ -15,6 +15,9 @@ const MIN_HALF_VIEW = 4.5 * DEG; // never zoom in further than this, so neighbou
 const MAX_HALF_VIEW = 75 * DEG;
 const PIN_HALF_VIEW = 9 * DEG; // a pinned city (a capital or headquarters) shows its surrounding countries
 const NEAR = 0.45; // radians; parts further than this from the main landmass don't steer the view
+// Prefectures are small and packed together: their maps zoom closer, only nearby islands of some size (a share of the
+// main island's area) steer the view, and they never zoom out to find other land.
+const CLOSE = { japan: { minHalfView: 1.2 * DEG, near: 0.07, minShare: 0.12 } };
 
 const load = async (res) => {
   const topo = JSON.parse(await fs.readFile(path.join(ROOT, `node_modules/world-atlas/countries-${res}.json`), 'utf8'));
@@ -30,7 +33,7 @@ for (const set of await fs.readdir(path.join(ROOT, 'data/flags'))) {
 }
 const byCode = new Map(countries.map((c) => [c.code, c]));
 
-// Outlines world-atlas lacks (states, provinces, UK nations, breakaway regions), keyed by flag code; see fetch-geo.mjs.
+// Outlines world-atlas lacks (states, provinces, prefectures, UK nations, breakaway regions), keyed by flag code; see fetch-geo.mjs.
 const extra = Object.entries(JSON.parse(await fs.readFile(path.join(ROOT, 'data/geo/extra.json'), 'utf8'))).map(
   ([key, x]) => ({ type: 'Feature', id: key, parent: x.parent, properties: { name: x.name }, geometry: x.geometry }),
 );
@@ -45,10 +48,10 @@ const polygons = (f) =>
   f.geometry.type === 'Polygon' ? [f.geometry.coordinates] : f.geometry.type === 'MultiPolygon' ? f.geometry.coordinates : [];
 const asFeature = (polys) => ({ type: 'Feature', geometry: { type: 'MultiPolygon', coordinates: polys } });
 
-function focus(f) {
+function focus(f, nearBy = NEAR, minShare = 0) {
   const parts = polygons(f).map((p) => ({ p, area: geoArea(asFeature([p])), c: geoCentroid(asFeature([p])) }));
   const main = parts.reduce((a, b) => (b.area > a.area ? b : a));
-  const near = asFeature(parts.filter((x) => geoDistance(x.c, main.c) < NEAR).map((x) => x.p));
+  const near = asFeature(parts.filter((x) => geoDistance(x.c, main.c) < nearBy && x.area >= main.area * minShare).map((x) => x.p));
   return { near, center: geoCentroid(near), markAt: main.c };
 }
 
@@ -203,10 +206,10 @@ const STYLE = `<style>.o{fill:#b5d7ef}.g{fill:none;stroke:#fff;stroke-opacity:.4
 function outline(key) {
   if (extraByKey.has(key)) return extraByKey.get(key);
   const c = byCode.get(key);
-  return world50.find((w) => codeOf(w) === key || (c && !c.isoNumeric && c.set !== 'us-states' && c.set !== 'canada' && w.properties.name === c.name));
+  return world50.find((w) => codeOf(w) === key || (c && !c.isoNumeric && !['us-states', 'canada', 'japan'].includes(c.set) && w.properties.name === c.name));
 }
 // Countries drawn as their subdivisions when a map highlights one of those (neighbouring states and provinces get labelled).
-const SUBDIVIDED = { 840: ['840', '124'], 124: ['840', '124'], 826: ['826'] };
+const SUBDIVIDED = { 840: ['840', '124'], 124: ['840', '124'], 392: ['392'], 826: ['826'] };
 
 await fs.mkdir(path.join(OUT, 'plain'), { recursive: true });
 let total = 0;
@@ -216,7 +219,7 @@ for (const c of countries) {
   const members = c.pin ? [] : (Array.isArray(c.shape) ? c.shape : [c.code]).map(outline).filter(Boolean);
   const f = members.length ? { type: 'Feature', id: c.code, properties: { name: c.name }, geometry: asFeature(members.flatMap(polygons)).geometry } : null;
   const fallback = c.pin ? [c.pin.latlng[1], c.pin.latlng[0]] : [c.latlng[1], c.latlng[0]];
-  const parts = members.map(focus);
+  const parts = members.map((m) => focus(m, CLOSE[c.set]?.near, CLOSE[c.set]?.minShare));
   const near = parts.length ? asFeature(parts.flatMap((p) => polygons(p.near))) : null;
   const center = near ? geoCentroid(near) : fallback;
   const markAt = parts.length ? parts.reduce((a, b) => (geoArea(b.near) > geoArea(a.near) ? b : a)).markAt : fallback;
@@ -226,7 +229,7 @@ for (const c of countries) {
   const withParts = (world) => (swap.length ? [...world.filter((w) => !swap.includes(w.id)), ...extra.filter((x) => swap.includes(x.parent))] : world);
 
   const projection = geoAzimuthalEqualArea().rotate([-center[0], -center[1]]);
-  let scale = scaleForHalfView(c.pin ? PIN_HALF_VIEW : MIN_HALF_VIEW);
+  let scale = scaleForHalfView(c.pin ? PIN_HALF_VIEW : (CLOSE[c.set]?.minHalfView ?? MIN_HALF_VIEW));
   if (near) {
     projection.fitExtent([[W * 0.2, H * 0.17], [W * 0.8, H * 0.83]], near);
     scale = Math.min(scale, projection.scale());
@@ -241,7 +244,7 @@ for (const c of countries) {
     base = withParts(scale < scaleForHalfView(40 * DEG) ? world110 : world50);
     others = base.filter((w) => !isTarget(w)).map((w) => simplify(draw(w), 0.4, 0.6)).join('');
     const land = base.reduce((sum, w) => sum + (isTarget(w) ? 0 : draw.area(w) || 0), 0);
-    if (land > W * H * 0.04 || scale <= scaleForHalfView(MAX_HALF_VIEW)) break;
+    if (CLOSE[c.set] || land > W * H * 0.04 || scale <= scaleForHalfView(MAX_HALF_VIEW)) break;
     scale /= 1.5;
   }
   const target = f ? simplify(draw(f), 0.2, 0) : '';

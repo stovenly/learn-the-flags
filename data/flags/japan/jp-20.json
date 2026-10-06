@@ -1,0 +1,60 @@
+{
+  "code": "jp-20",
+  "isoNumeric": "",
+  "name": "Nagano",
+  "officialName": "Nagano Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "長野県",
+      "romanized": "Nagano-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Nagano Prefecture.svg",
+  "capital": "Nagano",
+  "region": "Japan",
+  "subregion": "Chūbu",
+  "population": 1954950,
+  "area": 13562,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    36.1,
+    138
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white disc on an orange field, split by orange curves into the katakana ナ (na).",
+    "adopted": "1967",
+    "colors": [
+      "orange",
+      "white"
+    ],
+    "symbolism": "ナ, the first sound of Nagano, is drawn as a bird in flight and as mountains mirrored in a lake; orange is sunlight and white the snow of the \"Roof of Japan\"."
+  },
+  "hook": "Nagano's white disc on orange is cut into a ナ (na); Fukushima's white emblem on orange is an open ring.",
+  "lookalikes": [],
+  "trivia": [
+    "Nagano borders eight prefectures, more than any other.",
+    "The orange of the 1998 Nagano Winter Olympics emblem comes from the flag."
+  ]
+}

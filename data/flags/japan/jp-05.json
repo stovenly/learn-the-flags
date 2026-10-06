@@ -1,0 +1,60 @@
+{
+  "code": "jp-05",
+  "isoNumeric": "",
+  "name": "Akita",
+  "officialName": "Akita Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "秋田県",
+      "romanized": "Akita-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Akita Prefecture.svg",
+  "capital": "Akita",
+  "region": "Japan",
+  "subregion": "Tōhoku",
+  "population": 882100,
+  "area": 11638,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    39.7,
+    140.4
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white emblem on a dark red field: the katakana ア (a) stretched into a swoosh with a dot.",
+    "adopted": "1959",
+    "colors": [
+      "maroon",
+      "white"
+    ],
+    "symbolism": "ア is the first sound of Akita, drawn in motion to show the prefecture leaping ahead."
+  },
+  "hook": "Akita's white swoosh on dark red is a katakana ア (a), for Akita, tipped on its side with a ball at the end.",
+  "lookalikes": [],
+  "trivia": [
+    "The Akita dog breed comes from the prefecture's mountains.",
+    "Lake Tazawa, at 423 m, is the deepest lake in Japan."
+  ]
+}

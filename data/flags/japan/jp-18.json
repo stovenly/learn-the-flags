@@ -1,0 +1,60 @@
+{
+  "code": "jp-18",
+  "isoNumeric": "",
+  "name": "Fukui",
+  "officialName": "Fukui Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "福井県",
+      "romanized": "Fukui-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Fukui Prefecture.svg",
+  "capital": "Fukui",
+  "region": "Japan",
+  "subregion": "Chūbu",
+  "population": 729386,
+  "area": 4191,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    35.8,
+    136.2
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white disc on a dark navy field, holding the katakana フクイ (Fukui) drawn as a young sprout between two leaves.",
+    "adopted": "1952",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "symbolism": "The prefecture says the sprout rising between two leaves carries its hope for growth."
+  },
+  "hook": "Fukui's white disc on navy holds a sprouting leaf spelling フクイ (Fukui); Ibaraki's white disc holds a spiral rose bud.",
+  "lookalikes": [],
+  "trivia": [
+    "Sabae, in Fukui, makes about 95% of Japan's eyeglass frames.",
+    "Fukui has yielded more dinosaur fossils than anywhere else in Japan."
+  ]
+}

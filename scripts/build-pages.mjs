@@ -132,8 +132,8 @@ await write(
   'flags/',
   shell('flags/', {
     title: `All ${countries.length} flags: countries, states, territories and more · ${site.name}`,
-    description: `Every flag of the world's 195 sovereign states, plus US states, Canadian provinces, territories, historical flags and international organizations, with what each flag looks like, what it means and fun facts.`,
-    body: `<h1>All flags</h1><p class="muted">Every sovereign state, plus US states, Canadian provinces, territories, states with limited recognition, historical flags and international organizations.</p>${sections}`,
+    description: `Every flag of the world's 195 sovereign states, plus US states, Canadian provinces, Japanese prefectures, territories, historical flags and international organizations, with what each flag looks like, what it means and fun facts.`,
+    body: `<h1>All flags</h1><p class="muted">Every sovereign state, plus US states, Canadian provinces, Japanese prefectures, territories, states with limited recognition, historical flags and international organizations.</p>${sections}`,
   }),
 );
 

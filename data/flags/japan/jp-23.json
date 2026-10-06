@@ -1,0 +1,60 @@
+{
+  "code": "jp-23",
+  "isoNumeric": "",
+  "name": "Aichi",
+  "officialName": "Aichi Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "愛知県",
+      "romanized": "Aichi-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Aichi Prefecture.svg",
+  "capital": "Nagoya",
+  "region": "Japan",
+  "subregion": "Chūbu",
+  "population": 7449403,
+  "area": 5173,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    35,
+    137.2
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white emblem on a muted red field: the hiragana あいち (Aichi) combined into a rising sun over waves.",
+    "adopted": "1950",
+    "colors": [
+      "maroon",
+      "white"
+    ],
+    "symbolism": "The sun over waves shows a prefecture facing the Pacific and the world beyond it."
+  },
+  "hook": "Aichi's white emblem on muted red is あいち (Aichi) drawn as a sun rising over waves; Hiroshima's white emblem on the same red is a crescent.",
+  "lookalikes": [],
+  "trivia": [
+    "Toyota is headquartered in Aichi, in a city renamed Toyota after the company.",
+    "Aichi hosted the 2005 World Expo."
+  ]
+}

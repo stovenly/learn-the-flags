@@ -1,0 +1,60 @@
+{
+  "code": "jp-29",
+  "isoNumeric": "",
+  "name": "Nara",
+  "officialName": "Nara Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "奈良県",
+      "romanized": "Nara-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Nara Prefecture.svg",
+  "capital": "Nara",
+  "region": "Japan",
+  "subregion": "Kansai",
+  "population": 1269180,
+  "area": 3691,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    34.3,
+    135.9
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A dark red, nearly round emblem on a white field: the katakana ナ (na) drawn as a circle crossed by a bar.",
+    "adopted": "1968",
+    "colors": [
+      "white",
+      "maroon"
+    ],
+    "symbolism": "ナ is the first sound of Nara; the outer circle is the nature of old Yamato, the inner circle harmony, and the bar steady progress."
+  },
+  "hook": "Nara's flag is a dark red ball on white with a bar poking out on each side: a rounded ナ (na).",
+  "lookalikes": [],
+  "trivia": [
+    "Nara was Japan's capital from 710 to 784.",
+    "Tōdai-ji, home to a giant bronze Buddha, is in Nara, where deer roam the park freely."
+  ]
+}

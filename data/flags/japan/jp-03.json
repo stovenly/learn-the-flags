@@ -1,0 +1,60 @@
+{
+  "code": "jp-03",
+  "isoNumeric": "",
+  "name": "Iwate",
+  "officialName": "Iwate Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "岩手県",
+      "romanized": "Iwate-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Iwate Prefecture.svg",
+  "capital": "Morioka",
+  "region": "Japan",
+  "subregion": "Tōhoku",
+  "population": 1125502,
+  "area": 15275,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    39.6,
+    141.4
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white emblem on a dark blue-green field: the kanji 岩 (iwa, \"rock\") drawn symmetrically top to bottom and side to side.",
+    "adopted": "1965",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "symbolism": "The character 岩 begins the prefecture's name, drawn to show a prefecture leaping forward."
+  },
+  "hook": "Iwate's white emblem is the kanji 岩 (iwa, \"rock\"), squared off so it reads the same upside down and in a mirror.",
+  "lookalikes": [],
+  "trivia": [
+    "Iwate is the second-largest prefecture after Hokkaido.",
+    "Hiraizumi, once the seat of the Northern Fujiwara clan, is a UNESCO World Heritage Site."
+  ]
+}

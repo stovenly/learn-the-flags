@@ -1,0 +1,60 @@
+{
+  "code": "jp-09",
+  "isoNumeric": "",
+  "name": "Tochigi",
+  "officialName": "Tochigi Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "栃木県",
+      "romanized": "Tochigi-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Tochigi Prefecture.svg",
+  "capital": "Utsunomiya",
+  "region": "Japan",
+  "subregion": "Kantō",
+  "population": 1864833,
+  "area": 6408,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    36.7,
+    139.8
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white emblem on a light green field: the kanji 栃 (tochi) squared into a blocky shape, with three upward arrows at the top left.",
+    "adopted": "1964",
+    "colors": [
+      "green",
+      "white"
+    ],
+    "symbolism": "The arrows are an ancient form of 木 (\"tree\"), the left part of 栃, pointing upward for energy and progress."
+  },
+  "hook": "Tochigi's blocky white emblem on light green is the kanji 栃 (tochi), with three little arrows pointing up in the corner.",
+  "lookalikes": [],
+  "trivia": [
+    "Nikkō's Tōshō-gū, the lavish shrine of Tokugawa Ieyasu, is in Tochigi.",
+    "Tochigi has grown more strawberries than any other prefecture for over 50 years."
+  ]
+}

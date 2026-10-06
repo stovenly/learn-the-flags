@@ -1,0 +1,61 @@
+{
+  "code": "jp-12",
+  "isoNumeric": "",
+  "name": "Chiba",
+  "officialName": "Chiba Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "千葉県",
+      "romanized": "Chiba-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Chiba Prefecture.svg",
+  "capital": "Chiba",
+  "region": "Japan",
+  "subregion": "Kantō",
+  "population": 6258512,
+  "area": 5158,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    35.5,
+    140.2
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white four-pointed emblem edged in pale yellow on a sky-blue field: the katakana チ (chi) and ハ (ha) combined.",
+    "adopted": "1963",
+    "colors": [
+      "blue",
+      "white",
+      "yellow"
+    ],
+    "symbolism": "チハ spells Chiba; the yellow edge recalls the rapeseed blossom, the prefectural flower, and the sky blue stands for hope."
+  },
+  "hook": "Chiba's white star on blue is チ (chi) stacked on ハ (ha), edged in rapeseed yellow.",
+  "lookalikes": [],
+  "trivia": [
+    "Narita International Airport and Tokyo Disney Resort are both in Chiba, not Tokyo.",
+    "Its emblem, from 1909, is the oldest prefectural emblem still in use apart from Tokyo's."
+  ]
+}

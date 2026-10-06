@@ -117,7 +117,7 @@ function endonym(c) {
 // Every flag's name (and name-like aliases) longest first, so "Equatorial Guinea" wins over "Guinea" and "New Jersey" over "Jersey".
 const named = new Map();
 for (const o of countries.filter((o) => images[o.code])) {
-  const abbrev = (a) => /^[A-Z]{2,}$/.test(a) && !['us-states', 'canada'].includes(o.set);
+  const abbrev = (a) => /^[A-Z]{2,}$/.test(a) && !['us-states', 'canada', 'japan'].includes(o.set);
   for (const n of [o.name, ...(o.aliases ?? []).filter((a) => (/^[A-Z][a-z]/.test(a) && a.length > 3) || abbrev(a))]) named.set(n, [...(named.get(n) ?? []), o]);
 }
 // Place names that contain a flag's name without meaning it.

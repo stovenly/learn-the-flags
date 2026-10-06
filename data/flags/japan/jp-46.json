@@ -1,0 +1,61 @@
+{
+  "code": "jp-46",
+  "isoNumeric": "",
+  "name": "Kagoshima",
+  "officialName": "Kagoshima Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "鹿児島県",
+      "romanized": "Kagoshima-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Kagoshima Prefecture.svg",
+  "capital": "Kagoshima",
+  "region": "Japan",
+  "subregion": "Kyūshū",
+  "population": 1512969,
+  "area": 9187,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    31.6,
+    130.6
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Kyūshū"
+    ]
+  ],
+  "flag": {
+    "description": "A black horseshoe around a red disc on a white field: a map of the prefecture around Sakurajima.",
+    "adopted": "1967",
+    "colors": [
+      "white",
+      "black",
+      "red"
+    ],
+    "symbolism": "The black ring is the Satsuma and Ōsumi peninsulas, with a dent for Shibushi Bay, and the red disc is the volcano Sakurajima."
+  },
+  "hook": "Kagoshima's black horseshoe holds a red ball: two peninsulas hugging the Sakurajima volcano.",
+  "lookalikes": [],
+  "trivia": [
+    "Sakurajima, facing the capital across the bay, is one of Japan's most active volcanoes.",
+    "The flag is now rarely flown: its map leaves out the prefecture's many islands, and a separate symbol flag is used instead."
+  ]
+}

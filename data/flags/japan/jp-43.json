@@ -1,0 +1,60 @@
+{
+  "code": "jp-43",
+  "isoNumeric": "",
+  "name": "Kumamoto",
+  "officialName": "Kumamoto Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "熊本県",
+      "romanized": "Kumamoto-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Kumamoto Prefecture.svg",
+  "capital": "Kumamoto",
+  "region": "Japan",
+  "subregion": "Kyūshū",
+  "population": 1678090,
+  "area": 7409,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    32.6,
+    130.8
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Kyūshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white ring with a flat side at the hoist, on a dark red field: the katakana ク (ku) drawn as the island of Kyūshū.",
+    "adopted": "1966",
+    "colors": [
+      "maroon",
+      "white"
+    ],
+    "symbolism": "ク is the first sound of Kumamoto, and the shape is Kyūshū, with the hole marking Kumamoto at its heart."
+  },
+  "hook": "Kumamoto's white ク (ku) on dark red is also the outline of Kyūshū, with a hole where Kumamoto sits.",
+  "lookalikes": [],
+  "trivia": [
+    "Mount Aso has one of the largest volcanic calderas in the world.",
+    "Kumamon, the black bear mascot, is Kumamoto's best-known ambassador."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "code": "jp-39",
+  "isoNumeric": "",
+  "name": "Kochi",
+  "officialName": "Kochi Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "高知県",
+      "romanized": "Kōchi-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Kochi Prefecture.svg",
+  "capital": "Kōchi",
+  "region": "Japan",
+  "subregion": "Shikoku",
+  "population": 643437,
+  "area": 7104,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    33.4,
+    133.3
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Shikoku"
+    ]
+  ],
+  "flag": {
+    "description": "A white ring on a dark red field, with a red blade pointing up into its center: 土 (to), とさ (Tosa) and コ (ko) combined.",
+    "adopted": "1953",
+    "colors": [
+      "maroon",
+      "white"
+    ],
+    "symbolism": "土 and とさ stand for Tosa, the old province, and コ for Kōchi; the blade points upward for progress, and the ring stands for peace and cooperation."
+  },
+  "hook": "Kochi's white ring on dark red has a blade pointing up inside it; Kumamoto's white ring is open at the left.",
+  "lookalikes": [],
+  "trivia": [
+    "Sakamoto Ryōma, a hero of the Meiji Restoration, was born in Kōchi.",
+    "The Shimanto River is often called the last clear stream in Japan."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "code": "jp-42",
+  "isoNumeric": "",
+  "name": "Nagasaki",
+  "officialName": "Nagasaki Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "長崎県",
+      "romanized": "Nagasaki-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Nagasaki Prefecture.svg",
+  "capital": "Nagasaki",
+  "region": "Japan",
+  "subregion": "Kyūshū",
+  "population": 1232190,
+  "area": 4131,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    32.9,
+    129.9
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Kyūshū"
+    ]
+  ],
+  "flag": {
+    "description": "A blue letter N drawn as a dove in flight on a white field.",
+    "adopted": "1991",
+    "colors": [
+      "white",
+      "light-blue"
+    ],
+    "symbolism": "N is for Nagasaki and the dove for peace; the light-blue globe shape stands for the bright sea and sky and for Nagasaki's ties with the world."
+  },
+  "hook": "Nagasaki's blue N on white is a dove, for peace; Wakayama's navy emblem on white is a fan.",
+  "lookalikes": [],
+  "trivia": [
+    "Dejima, in Nagasaki harbor, was Japan's only window on Europe for two centuries of isolation.",
+    "Nagasaki has more islands than any other prefecture."
+  ]
+}

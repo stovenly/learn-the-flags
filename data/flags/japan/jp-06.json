@@ -1,0 +1,60 @@
+{
+  "code": "jp-06",
+  "isoNumeric": "",
+  "name": "Yamagata",
+  "officialName": "Yamagata Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "山形県",
+      "romanized": "Yamagata-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Yamagata Prefecture.svg",
+  "capital": "Yamagata",
+  "region": "Japan",
+  "subregion": "Tōhoku",
+  "population": 993127,
+  "area": 9323,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    38.4,
+    140.1
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "Three white mountain peaks in a row on a blue field, each with a notch at its foot.",
+    "adopted": "1963",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "symbolism": "The peaks stand for the 山 (yama, \"mountain\") in Yamagata and for the Mogami River, the sharp points for progress, and the white for the snow on Mount Zaō's frost-covered trees."
+  },
+  "hook": "Yamagata means \"mountain shape\", and its flag is exactly that: three white mountains on blue.",
+  "lookalikes": [],
+  "trivia": [
+    "Yamagata grows about three-quarters of Japan's cherries.",
+    "The field was first a dark blue-green, chosen to set off the red of Japan's flag; it became a brighter blue in 1971."
+  ]
+}

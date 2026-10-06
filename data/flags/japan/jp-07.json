@@ -1,0 +1,60 @@
+{
+  "code": "jp-07",
+  "isoNumeric": "",
+  "name": "Fukushima",
+  "officialName": "Fukushima Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "福島県",
+      "romanized": "Fukushima-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Fukushima Prefecture.svg",
+  "capital": "Fukushima",
+  "region": "Japan",
+  "subregion": "Tōhoku",
+  "population": 1711937,
+  "area": 13784,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    37.4,
+    140.2
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white hiragana ふ (fu) curled into a ring, set toward the hoist on an orange field.",
+    "adopted": "1968",
+    "colors": [
+      "orange",
+      "white"
+    ],
+    "symbolism": "ふ is the first sound of Fukushima, rounded for unity and steady progress; its designer said she also drew it as a peach."
+  },
+  "hook": "Fukushima's white ふ (fu) curls into a peach-shaped ring on orange; Nagano's white disc on orange is cut by curves.",
+  "lookalikes": [],
+  "trivia": [
+    "Fukushima is the third-largest prefecture by area, after Hokkaido and Iwate.",
+    "It is one of Japan's leading peach growers."
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "code": "jp-19",
+  "isoNumeric": "",
+  "name": "Yamanashi",
+  "officialName": "Yamanashi Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "山梨県",
+      "romanized": "Yamanashi-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Yamanashi Prefecture.svg",
+  "capital": "Kōfu",
+  "region": "Japan",
+  "subregion": "Chūbu",
+  "population": 779912,
+  "area": 4465,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    35.6,
+    138.6
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white Mount Fuji outline on a magenta field, enclosing three orange 人 (people) joined into the character 山 (yama).",
+    "adopted": "1966",
+    "colors": [
+      "purple",
+      "white",
+      "orange"
+    ],
+    "symbolism": "Three 人 joined into 山 stand for the people working together; the white Fuji stands for purity, and the purple is the color of Yamanashi's grapes."
+  },
+  "hook": "Yamanashi puts Mount Fuji on grape purple, with three little orange people inside forming 山 (yama, \"mountain\").",
+  "lookalikes": [],
+  "trivia": [
+    "Mount Fuji stands on the border of Yamanashi and Shizuoka.",
+    "Yamanashi grows more grapes and peaches than any other prefecture."
+  ]
+}

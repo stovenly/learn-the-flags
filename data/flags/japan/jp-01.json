@@ -1,0 +1,66 @@
+{
+  "code": "jp-01",
+  "isoNumeric": "",
+  "name": "Hokkaido",
+  "officialName": "Hokkaido",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "北海道",
+      "romanized": "Hokkaidō"
+    },
+    {
+      "language": "Ainu",
+      "name": "アイヌモシㇼ",
+      "romanized": "Aynu Mosir"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Hokkaido Prefecture.svg",
+  "capital": "Sapporo",
+  "region": "Japan",
+  "subregion": "Hokkaidō",
+  "population": 4985419,
+  "area": 83424,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    43.4,
+    142.6
+  ],
+  "facts": [
+    [
+      "Type",
+      "Circuit (dō)"
+    ],
+    [
+      "Island",
+      "Hokkaidō"
+    ]
+  ],
+  "flag": {
+    "description": "A seven-pointed red star edged in white on a dark navy field.",
+    "adopted": "1967",
+    "colors": [
+      "blue",
+      "white",
+      "red"
+    ],
+    "symbolism": "The seven-pointed star updates the five-pointed North Star of the Meiji-era Development Commission and stands for the pioneer spirit; navy is the northern sea and sky, red the people's unyielding energy, and white the light and the snow."
+  },
+  "hook": "Hokkaido flies a red seven-pointed star rimmed in white on navy: a North Star for the far north.",
+  "lookalikes": [],
+  "trivia": [
+    "Hokkaido covers about a fifth of Japan's land area, making it by far the largest prefecture.",
+    "Sapporo Beer's red star comes from the same North Star of the Development Commission that inspired the flag."
+  ]
+}

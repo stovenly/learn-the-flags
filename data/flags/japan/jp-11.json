@@ -1,0 +1,60 @@
+{
+  "code": "jp-11",
+  "isoNumeric": "",
+  "name": "Saitama",
+  "officialName": "Saitama Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "埼玉県",
+      "romanized": "Saitama-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Saitama Prefecture.svg",
+  "capital": "Saitama",
+  "region": "Japan",
+  "subregion": "Kantō",
+  "population": 7287169,
+  "area": 3798,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    36,
+    139.3
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A ring of sixteen red curved jewels (magatama) on a white field.",
+    "adopted": "1964",
+    "colors": [
+      "white",
+      "red"
+    ],
+    "symbolism": "The magatama, ancient comma-shaped jewels, stand for sakimitama, the blessing spirit the name Saitama is said to come from; their ring stands for the sun, growth and passion."
+  },
+  "hook": "Saitama's red ring on white is sixteen magatama jewels, and the 玉 (tama) in Saitama means \"jewel\".",
+  "lookalikes": [],
+  "trivia": [
+    "The capital, Saitama City, is written in hiragana (さいたま) rather than kanji.",
+    "The Sakitama Kofun burial mounds gave the prefecture its name."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "code": "jp-32",
+  "isoNumeric": "",
+  "name": "Shimane",
+  "officialName": "Shimane Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "島根県",
+      "romanized": "Shimane-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Shimane Prefecture.svg",
+  "capital": "Matsue",
+  "region": "Japan",
+  "subregion": "Chūgoku",
+  "population": 629460,
+  "area": 6708,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    35,
+    132.5
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "Four yellow katakana マ (ma) curled into rings and joined in a clover-like cloud, on a dark red field.",
+    "adopted": "1968",
+    "colors": [
+      "maroon",
+      "yellow"
+    ],
+    "symbolism": "Four マ read as \"shi-ma\", since shi means four: a pun on Shimane. The cloud-shaped ring stands for unity and growth."
+  },
+  "hook": "Shimane's yellow clover on dark red is four マ (ma): four is \"shi\", so it reads \"shi-ma\" for Shimane.",
+  "lookalikes": [],
+  "trivia": [
+    "Izumo Taisha is one of Japan's oldest and most important Shinto shrines.",
+    "The Iwami Ginzan silver mine once produced a large share of the world's silver."
+  ]
+}

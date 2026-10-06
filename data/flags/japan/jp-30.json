@@ -1,0 +1,60 @@
+{
+  "code": "jp-30",
+  "isoNumeric": "",
+  "name": "Wakayama",
+  "officialName": "Wakayama Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "和歌山県",
+      "romanized": "Wakayama-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Wakayama Prefecture.svg",
+  "capital": "Wakayama",
+  "region": "Japan",
+  "subregion": "Kansai",
+  "population": 864262,
+  "area": 4725,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    33.9,
+    135.5
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A navy emblem on a white field: the katakana ワ (wa) drawn as an open folding fan.",
+    "adopted": "1969",
+    "colors": [
+      "white",
+      "blue"
+    ],
+    "symbolism": "ワ is the first sound of Wakayama, and the widening fan stands for endless growth."
+  },
+  "hook": "Wakayama's navy ワ (wa) on white opens like a fan; Nagasaki's blue N on white is a dove.",
+  "lookalikes": [],
+  "trivia": [
+    "The Kumano Kodō pilgrimage routes and Mount Kōya are UNESCO World Heritage Sites.",
+    "Wakayama grows more mandarin oranges than any other prefecture."
+  ]
+}

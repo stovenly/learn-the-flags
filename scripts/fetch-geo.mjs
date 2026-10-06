@@ -1,6 +1,6 @@
-// Writes data/geo/extra.json: outlines that world-atlas lacks (US states, Canadian provinces, UK nations, breakaway
-// states, a few historical building blocks), keyed by flag code, and data/geo/lakes.json, from Natural Earth 10m
-// (public domain). Run rarely.
+// Writes data/geo/extra.json: outlines that world-atlas lacks (US states, Canadian provinces, Japanese prefectures, UK nations,
+// breakaway states, a few historical building blocks), keyed by flag code, and data/geo/lakes.json, from Natural Earth 10m
+// (public domain) plus Japan's lakes from OpenStreetMap. Run rarely.
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { geoArea } from 'd3-geo';
@@ -42,7 +42,7 @@ function compact(geometry) {
   return { type: 'MultiPolygon', coordinates: out.map((p) => (geoArea({ type: 'Polygon', coordinates: p }) > 2 * Math.PI ? p.map((r) => [...r].reverse()) : p)) };
 }
 
-const PARENT = { MAR: '504', USA: '840', CAN: '124', GBR: '826', DEU: '276', CHN: '156', GEO: '268', MDA: '498', SOM: '706', CYP: '196' };
+const PARENT = { MAR: '504', USA: '840', CAN: '124', JPN: '392', GBR: '826', DEU: '276', CHN: '156', GEO: '268', MDA: '498', SOM: '706', CYP: '196' };
 const out = {};
 const add = (key, name, parent, geometry) => (out[key] = { name, parent, geometry: compact(geometry) });
 
@@ -51,6 +51,7 @@ for (const f of admin1) {
   const p = f.properties;
   if (p.adm0_a3 === 'USA') add(`us-${p.postal.toLowerCase()}`, p.name, PARENT.USA, f.geometry);
   else if (p.adm0_a3 === 'CAN') add(p.iso_3166_2.toLowerCase(), p.name, PARENT.CAN, f.geometry);
+  else if (p.adm0_a3 === 'JPN') add(p.iso_3166_2.toLowerCase(), p.name, PARENT.JPN, f.geometry);
   else if (p.adm0_a3 === 'DEU') add(p.iso_3166_2.toLowerCase(), p.name, PARENT.DEU, f.geometry);
   else if (p.iso_3166_2 === 'CN-XZ') add('cn-xz', p.name, PARENT.CHN, f.geometry);
 }
@@ -123,8 +124,58 @@ const json = JSON.stringify(out);
 await fs.writeFile(path.join(ROOT, 'data/geo/extra.json'), json);
 console.log(`Wrote ${Object.keys(out).length} outlines (${Math.round(json.length / 1024)} KB) to data/geo/extra.json`);
 
+// Natural Earth has no Japanese lake big enough to keep, so Japan's larger lakes come from OpenStreetMap (ODbL), by element id.
+const OSM_LAKES = {
+  relation: [63499, 253637, 19725922, 1341598, 253753, 2420244, 284148, 2416328, 7658552, 2344533, 253961, 253938, 1344683, 1341602, 1341592, 1341743, 10387454, 282182, 284145],
+  way: [41889876, 7883645],
+};
+
+async function osmLakes() {
+  const file = path.join(CACHE, 'osm-lakes-jp.json');
+  let data;
+  try {
+    data = JSON.parse(await fs.readFile(file, 'utf8'));
+  } catch {
+    const query = `[out:json][timeout:180];(${Object.entries(OSM_LAKES).flatMap(([type, ids]) => ids.map((id) => `${type}(${id});`)).join('')});out geom;`;
+    const res = await fetch('https://overpass-api.de/api/interpreter', { method: 'POST', body: new URLSearchParams({ data: query }), headers: { 'User-Agent': 'learn-the-flags-build/1.0 (https://github.com/stovenly/learn-the-flags)' } });
+    if (!res.ok) throw new Error(`overpass: ${res.status}`);
+    data = await res.json();
+    await fs.writeFile(file, JSON.stringify(data));
+  }
+  // A relation's outer ways join end to end into rings; islands (inner rings) are too small to show and are left out.
+  const join = (ways) => {
+    const key = (p) => `${p.lon},${p.lat}`;
+    const rings = [];
+    const left = ways.map((w) => w.map((p) => ({ lon: p.lon, lat: p.lat })));
+    while (left.length) {
+      let ring = left.shift();
+      for (let grew = true; grew && key(ring[0]) !== key(ring.at(-1)); ) {
+        grew = false;
+        for (let i = 0; i < left.length; i++) {
+          const w = left[i];
+          const next = key(w[0]) === key(ring.at(-1)) ? w : key(w.at(-1)) === key(ring.at(-1)) ? [...w].reverse() : null;
+          if (!next) continue;
+          ring = [...ring, ...next.slice(1)];
+          left.splice(i, 1);
+          grew = true;
+          break;
+        }
+      }
+      if (key(ring[0]) === key(ring.at(-1))) rings.push(ring.map((p) => [p.lon, p.lat]));
+    }
+    return rings;
+  };
+  return data.elements.map((e) => {
+    const outer = e.type === 'way' ? [e.geometry] : e.members.filter((m) => m.type === 'way' && m.role === 'outer').map((m) => m.geometry);
+    return { type: 'MultiPolygon', coordinates: join(outer).map((r) => [r]) };
+  });
+}
+
 const LAKE_RANK = 5; // Natural Earth scalerank; smaller lakes vanish at map size
-const lakes = (await load('ne_10m_lakes')).filter((f) => f.properties.scalerank <= LAKE_RANK).map((f) => compact(f.geometry));
+const lakes = [
+  ...(await load('ne_10m_lakes')).filter((f) => f.properties.scalerank <= LAKE_RANK),
+  ...(await osmLakes()).map((geometry) => ({ geometry })),
+].map((f) => compact(f.geometry));
 const lakeJson = JSON.stringify(lakes);
 await fs.writeFile(path.join(ROOT, 'data/geo/lakes.json'), lakeJson);
 console.log(`Wrote ${lakes.length} lakes (${Math.round(lakeJson.length / 1024)} KB) to data/geo/lakes.json`);

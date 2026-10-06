@@ -1,0 +1,60 @@
+{
+  "code": "jp-27",
+  "isoNumeric": "",
+  "name": "Osaka",
+  "officialName": "Osaka Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "大阪府",
+      "romanized": "Ōsaka-fu"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Osaka Prefecture.svg",
+  "capital": "Ōsaka",
+  "region": "Japan",
+  "subregion": "Kansai",
+  "population": 8764578,
+  "area": 1905,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    34.6,
+    135.5
+  ],
+  "facts": [
+    [
+      "Type",
+      "Urban prefecture (fu)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white emblem on a blue field: four small rings joined to a central knot, like a gourd on a vine.",
+    "adopted": "1968",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "symbolism": "The O for Osaka is drawn from the gourd standard of Toyotomi Hideyoshi, who built Osaka Castle; the branching O's stand for hope, prosperity and harmony."
+  },
+  "hook": "Osaka's white emblem on blue is four O's on a vine: O for Osaka, and a nod to Hideyoshi's gourd banner.",
+  "lookalikes": [],
+  "trivia": [
+    "Osaka is the second-smallest prefecture by area but the third most populous.",
+    "The flag was green until 1984, when it turned blue."
+  ]
+}

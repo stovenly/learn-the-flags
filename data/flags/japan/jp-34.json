@@ -1,0 +1,60 @@
+{
+  "code": "jp-34",
+  "isoNumeric": "",
+  "name": "Hiroshima",
+  "officialName": "Hiroshima Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "広島県",
+      "romanized": "Hiroshima-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Hiroshima Prefecture.svg",
+  "capital": "Hiroshima",
+  "region": "Japan",
+  "subregion": "Chūgoku",
+  "population": 2683399,
+  "area": 8480,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    34.6,
+    132.8
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white crescent and disc on a muted red field: the katakana ヒ (hi) drawn as two linked circles.",
+    "adopted": "1966",
+    "colors": [
+      "maroon",
+      "white"
+    ],
+    "symbolism": "ヒ is the first sound of Hiroshima; the rounded form stands for harmony and the overlapping circles for progress."
+  },
+  "hook": "Hiroshima's white crescent on muted red is a rounded ヒ (hi); Aichi's white emblem on the same red is a sun over waves.",
+  "lookalikes": [],
+  "trivia": [
+    "The Itsukushima Shrine, with its torii gate standing in the sea, is on Miyajima in Hiroshima.",
+    "The Hiroshima Peace Memorial, the Atomic Bomb Dome, is a UNESCO World Heritage Site."
+  ]
+}

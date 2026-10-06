@@ -1,0 +1,60 @@
+{
+  "code": "jp-33",
+  "isoNumeric": "",
+  "name": "Okayama",
+  "officialName": "Okayama Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "岡山県",
+      "romanized": "Okayama-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Okayama Prefecture.svg",
+  "capital": "Okayama",
+  "region": "Japan",
+  "subregion": "Chūgoku",
+  "population": 1808664,
+  "area": 7114,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    34.9,
+    133.8
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A yellow ring on a dark purple field, with a wing-like bar across the top: the kanji 岡 (oka) drawn in a circle.",
+    "adopted": "1967",
+    "colors": [
+      "purple",
+      "yellow"
+    ],
+    "symbolism": "岡 is the first character of Okayama, rounded into a ring for unity and progress."
+  },
+  "hook": "Okayama's yellow emblem on dark purple is 岡 (oka) bent into a ring with wings.",
+  "lookalikes": [],
+  "trivia": [
+    "Kōraku-en in Okayama is one of the Three Great Gardens of Japan.",
+    "Okayama is the home of the folk hero Momotarō, the Peach Boy."
+  ]
+}

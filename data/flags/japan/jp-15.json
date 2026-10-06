@@ -1,0 +1,60 @@
+{
+  "code": "jp-15",
+  "isoNumeric": "",
+  "name": "Niigata",
+  "officialName": "Niigata Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "新潟県",
+      "romanized": "Niigata-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Niigata Prefecture.svg",
+  "capital": "Niigata",
+  "region": "Japan",
+  "subregion": "Chūbu",
+  "population": 2068476,
+  "area": 12584,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    37.5,
+    138.9
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A gold emblem on a red field: the kanji 新 (nii) at the top of a ring formed by the katakana ガタ (gata).",
+    "adopted": "1963",
+    "colors": [
+      "red",
+      "yellow"
+    ],
+    "symbolism": "The emblem spells Niigata, and the ring, like a necklace, stands for harmony, hope and smooth growth."
+  },
+  "hook": "Niigata's gold ring on red spells its own name: 新 (nii) sits on top of a loop of ガタ (gata).",
+  "lookalikes": [],
+  "trivia": [
+    "Niigata is famous for Koshihikari rice and for its sake.",
+    "Sado Island, off the coast, had one of Japan's richest gold mines."
+  ]
+}

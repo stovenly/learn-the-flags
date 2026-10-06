@@ -1,0 +1,60 @@
+{
+  "code": "jp-08",
+  "isoNumeric": "",
+  "name": "Ibaraki",
+  "officialName": "Ibaraki Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "茨城県",
+      "romanized": "Ibaraki-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Ibaraki Prefecture.svg",
+  "capital": "Mito",
+  "region": "Japan",
+  "subregion": "Kantō",
+  "population": 2791207,
+  "area": 6097,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    36.3,
+    140.3
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white disc on an indigo field, holding a blue spiral: a rose bud.",
+    "adopted": "1991",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "symbolism": "The rose is the prefectural flower, and the spiral stands for progress, creativity and growth."
+  },
+  "hook": "Ibaraki's white disc on blue holds a spiral rose bud; the name means \"thorn castle\", and roses have thorns.",
+  "lookalikes": [],
+  "trivia": [
+    "Mito, the capital, is famous for nattō, fermented soybeans.",
+    "The present flag replaced an older rose design in 1991."
+  ]
+}

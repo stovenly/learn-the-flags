@@ -1,0 +1,60 @@
+{
+  "code": "jp-14",
+  "isoNumeric": "",
+  "name": "Kanagawa",
+  "officialName": "Kanagawa Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "神奈川県",
+      "romanized": "Kanagawa-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Kanagawa Prefecture.svg",
+  "capital": "Yokohama",
+  "region": "Japan",
+  "subregion": "Kantō",
+  "population": 9193657,
+  "area": 2416,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    35.4,
+    139.3
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A red kanji 神 (kana) drawn symmetrically on a white field.",
+    "adopted": "1948",
+    "colors": [
+      "white",
+      "red"
+    ],
+    "symbolism": "神 is the first character of Kanagawa."
+  },
+  "hook": "Kanagawa's red emblem on white is the kanji 神 (kana), the first character of its name, drawn as a mirror-image pattern of lines.",
+  "lookalikes": [],
+  "trivia": [
+    "Yokohama, the capital, is Japan's second-largest city.",
+    "Kamakura was the seat of Japan's first shogunate, from 1185 to 1333."
+  ]
+}

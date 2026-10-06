@@ -1,0 +1,60 @@
+{
+  "code": "jp-21",
+  "isoNumeric": "",
+  "name": "Gifu",
+  "officialName": "Gifu Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "岐阜県",
+      "romanized": "Gifu-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Gifu Prefecture.svg",
+  "capital": "Gifu",
+  "region": "Japan",
+  "subregion": "Chūbu",
+  "population": 1891489,
+  "area": 10621,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    35.8,
+    137
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A green ring on a white field, holding a squared-off green kanji 岐 (gi).",
+    "adopted": "1932",
+    "colors": [
+      "white",
+      "green"
+    ],
+    "symbolism": "The character 岐 begins the prefecture's name, and the green stands for the beauty of its nature."
+  },
+  "hook": "Gifu's flag is a green 岐 (gi) in a green ring on white, like a rubber stamp of its own name.",
+  "lookalikes": [],
+  "trivia": [
+    "The Battle of Sekigahara, which sealed Tokugawa rule in 1600, was fought in Gifu.",
+    "The thatched farmhouses of Shirakawa-gō are a UNESCO World Heritage Site."
+  ]
+}

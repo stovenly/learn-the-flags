@@ -1,0 +1,60 @@
+{
+  "code": "jp-17",
+  "isoNumeric": "",
+  "name": "Ishikawa",
+  "officialName": "Ishikawa Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "石川県",
+      "romanized": "Ishikawa-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Ishikawa Prefecture.svg",
+  "capital": "Kanazawa",
+  "region": "Japan",
+  "subregion": "Chūbu",
+  "population": 1088221,
+  "area": 4191,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    36.8,
+    136.8
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white emblem on a blue field: the kanji 石川 (Ishikawa) drawn in the shape of the Noto Peninsula.",
+    "adopted": "1972",
+    "colors": [
+      "light-blue",
+      "white"
+    ],
+    "symbolism": "The blue stands for the Sea of Japan and for the prefecture's greenery, clean water and clear air."
+  },
+  "hook": "Ishikawa's white strokes on blue spell 石川 (Ishikawa) and trace the Noto Peninsula jutting into the sea.",
+  "lookalikes": [],
+  "trivia": [
+    "Kanazawa, the capital, makes almost all of Japan's gold leaf.",
+    "Ishikawa is the only prefecture with no separate emblem: the design on its flag serves instead."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "code": "jp-35",
+  "isoNumeric": "",
+  "name": "Yamaguchi",
+  "officialName": "Yamaguchi Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "山口県",
+      "romanized": "Yamaguchi-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Yamaguchi Prefecture.svg",
+  "capital": "Yamaguchi",
+  "region": "Japan",
+  "subregion": "Chūgoku",
+  "population": 1264006,
+  "area": 6113,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    34.2,
+    131.5
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white emblem on a brown field: the kanji 山口 (Yamaguchi) drawn as a bird flying toward the sun.",
+    "adopted": "1962",
+    "colors": [
+      "brown",
+      "white"
+    ],
+    "symbolism": "The circle and the bird flying toward the sun hide 山 (yama) and 口 (guchi), and stand for unity and progress."
+  },
+  "hook": "Yamaguchi is the brown flag: its white bird is 山口 (Yamaguchi) flying with a mountain in its middle.",
+  "lookalikes": [],
+  "trivia": [
+    "More prime ministers of Japan have come from Yamaguchi than from any other prefecture.",
+    "Shimonoseki, at its western tip, is famous for fugu, the pufferfish."
+  ]
+}

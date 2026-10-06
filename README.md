@@ -1,6 +1,6 @@
 # Learn the Flags
 
-A free static web app for memorizing flags: every sovereign state (the 193 UN members plus Vatican City and Palestine), US states, Canadian provinces and territories, territories and dependencies, states with limited recognition, iconic historical flags and international organizations.
+A free static web app for memorizing flags: every sovereign state (the 193 UN members plus Vatican City and Palestine), US states, Canadian provinces and territories, Japanese prefectures, territories and dependencies, states with limited recognition, iconic historical flags and international organizations.
 
 Live site: https://stovenly.github.io/learn-the-flags/
 
@@ -54,8 +54,8 @@ Lookalike pairs live in `data/lookalikes/*.json`, keyed by the two codes in sort
 
 - `scripts/build-assets.mjs` re-renders the favicon, the touch icon and the `og.png` social preview.
 - `scripts/build-maps.mjs` runs as part of the build. It renders `img/maps/<code>.svg`: a regional map zoomed on each flag's place with it highlighted and labelled, neighbours labelled with their name and flag where they fit, and a locator globe inset. `img/maps/plain/` has the same maps without flags, used on "Which is the flag of…" questions so the map does not give options away. Countries come from Natural Earth via `world-atlas`, matched by `isoNumeric` or name.
-- `scripts/fetch-geo.mjs` writes `data/geo/extra.json`, the outlines `world-atlas` lacks (US states, Canadian provinces, the UK's nations, breakaway states), from Natural Earth 10m. Run it only to change that list.
+- `scripts/fetch-geo.mjs` writes `data/geo/extra.json`, the outlines `world-atlas` lacks (US states, Canadian provinces, Japanese prefectures, the UK's nations, breakaway states), from Natural Earth 10m, and `data/geo/lakes.json`, Natural Earth's larger lakes plus Japan's lakes from OpenStreetMap. Run it only to change those lists.
 - `scripts/build-pages.mjs` runs as part of the build. It copies the built app shell to every route, so each URL loads directly, and pre-fills each flag page and the flag index with crawlable content and meta tags (hidden once the app runs). It also writes `404.html`, `sitemap.xml` and `robots.txt`.
 - `site.config.json` holds the site URL, name and description used for SEO tags.
 
-Flag images come from Wikimedia Commons, directly or via [flagcdn.com](https://flagcdn.com). Map outlines come from [Natural Earth](https://www.naturalearthdata.com) (public domain). Base country facts come from [mledoze/countries](https://github.com/mledoze/countries) (ODbL), and population figures from the World Bank. See [CREDITS.md](CREDITS.md) for everything else.
+Flag images come from Wikimedia Commons, directly or via [flagcdn.com](https://flagcdn.com). Map outlines come from [Natural Earth](https://www.naturalearthdata.com) (public domain), and Japan's lakes from [OpenStreetMap](https://www.openstreetmap.org) (ODbL). Base country facts come from [mledoze/countries](https://github.com/mledoze/countries) (ODbL), and population figures from the World Bank. See [CREDITS.md](CREDITS.md) for everything else.

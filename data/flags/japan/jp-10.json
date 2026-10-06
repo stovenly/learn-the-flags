@@ -1,0 +1,60 @@
+{
+  "code": "jp-10",
+  "isoNumeric": "",
+  "name": "Gunma",
+  "officialName": "Gunma Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "群馬県",
+      "romanized": "Gunma-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Gunma Prefecture.svg",
+  "capital": "Maebashi",
+  "region": "Japan",
+  "subregion": "Kantō",
+  "population": 1867582,
+  "area": 6362,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    36.5,
+    139
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white emblem on a purple field: three crescents around 羣, an old form of the kanji 群 (gun).",
+    "adopted": "1968",
+    "colors": [
+      "purple",
+      "white"
+    ],
+    "symbolism": "The crescents rework the prefectural emblem's three mountains, Akagi, Haruna and Myōgi, into a sign of a growing Gunma; the purple recalls the old culture of Kōzuke Province."
+  },
+  "hook": "Gunma's three white crescents on purple began as its three famous mountains; Tokyo's white emblem on purple is a six-rayed sun.",
+  "lookalikes": [],
+  "trivia": [
+    "Kusatsu Onsen is one of Japan's best-known hot spring towns.",
+    "The Tomioka Silk Mill, opened in 1872, is a UNESCO World Heritage Site."
+  ]
+}

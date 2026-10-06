@@ -1,0 +1,60 @@
+{
+  "code": "jp-40",
+  "isoNumeric": "",
+  "name": "Fukuoka",
+  "officialName": "Fukuoka Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "福岡県",
+      "romanized": "Fukuoka-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Fukuoka Prefecture.svg",
+  "capital": "Fukuoka",
+  "region": "Japan",
+  "subregion": "Kyūshū",
+  "population": 5081879,
+  "area": 4987,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    33.5,
+    130.7
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Kyūshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white plum blossom on a blue field, drawn from the hiragana ふく (fuku).",
+    "adopted": "1966",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "symbolism": "The plum is the prefectural flower, and ふく begins the prefecture's name; together they stand for peace and growth."
+  },
+  "hook": "Fukuoka's white plum blossom on blue is woven from ふく (fuku).",
+  "lookalikes": [],
+  "trivia": [
+    "Dazaifu Tenmangū shrine in Fukuoka is famous for its thousands of plum trees.",
+    "Fukuoka City, home of Hakata ramen, is the largest city in Kyūshū."
+  ]
+}

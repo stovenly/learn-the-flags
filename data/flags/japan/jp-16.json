@@ -1,0 +1,60 @@
+{
+  "code": "jp-16",
+  "isoNumeric": "",
+  "name": "Toyama",
+  "officialName": "Toyama Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "富山県",
+      "romanized": "Toyama-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Toyama Prefecture.svg",
+  "capital": "Toyama",
+  "region": "Japan",
+  "subregion": "Chūbu",
+  "population": 985675,
+  "area": 4248,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    36.6,
+    137.2
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A green emblem on a white field: the hiragana と (to) set in the peaks of Mount Tateyama.",
+    "adopted": "1988",
+    "colors": [
+      "white",
+      "green"
+    ],
+    "symbolism": "と, the first sound of Toyama, stands in the middle of Mount Tateyama, for a prefecture leaping toward the sky."
+  },
+  "hook": "Toyama's green on white is と (to) inside the Tateyama peaks: Toyama means \"rich mountain\".",
+  "lookalikes": [],
+  "trivia": [
+    "The Tateyama Kurobe Alpine Route runs between walls of snow up to about 20 m high each spring.",
+    "Until 1989 the flag was a gold emblem on green; it then became the green-on-white flag of today."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "code": "jp-31",
+  "isoNumeric": "",
+  "name": "Tottori",
+  "officialName": "Tottori Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "鳥取県",
+      "romanized": "Tottori-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Tottori Prefecture.svg",
+  "capital": "Tottori",
+  "region": "Japan",
+  "subregion": "Chūgoku",
+  "population": 523732,
+  "area": 3507,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    35.4,
+    133.9
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white emblem on a blue field: the hiragana と (to) drawn as a bird in flight.",
+    "adopted": "1968",
+    "colors": [
+      "blue",
+      "white"
+    ],
+    "symbolism": "と is the first sound of Tottori, whose name means \"bird-catching\"; the bird stands for freedom, peace and progress."
+  },
+  "hook": "Tottori means \"bird catcher\", and its white と (to) on blue is a bird; Tokushima's bird is yellow.",
+  "lookalikes": [],
+  "trivia": [
+    "Tottori is the least populous prefecture.",
+    "In 2023 Tottori objected to a Hong Kong food company selling goods under a near-copy of its bird emblem."
+  ]
+}

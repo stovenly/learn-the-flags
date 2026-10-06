@@ -1,0 +1,60 @@
+{
+  "code": "jp-13",
+  "isoNumeric": "",
+  "name": "Tokyo",
+  "officialName": "Tokyo Metropolis",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "東京都",
+      "romanized": "Tōkyō-to"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Tokyo Metropolis.svg",
+  "capital": "Shinjuku",
+  "region": "Japan",
+  "subregion": "Kantō",
+  "population": 14246219,
+  "area": 2194,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    35.7,
+    139.4
+  ],
+  "facts": [
+    [
+      "Type",
+      "Metropolis (to)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white six-rayed sun with a hollow center on a deep purple field.",
+    "adopted": "1964",
+    "colors": [
+      "purple",
+      "white"
+    ],
+    "symbolism": "The emblem, made for Tokyo City in 1889, weaves the characters 日本東京 (\"Japan, Tokyo\") into a sun shining in six directions; the purple is Edo murasaki, the color of old Edo."
+  },
+  "hook": "Tokyo flies a white six-rayed sun on Edo purple; Gunma's white emblem on purple is three crescents.",
+  "lookalikes": [],
+  "trivia": [
+    "The metropolitan government sits in Shinjuku; Tokyo has had no single capital city since Tokyo City merged into the metropolis in 1943.",
+    "The flag was adopted on 1 October 1964, days before the Tokyo Olympics opened."
+  ]
+}

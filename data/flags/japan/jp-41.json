@@ -1,0 +1,61 @@
+{
+  "code": "jp-41",
+  "isoNumeric": "",
+  "name": "Saga",
+  "officialName": "Saga Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "佐賀県",
+      "romanized": "Saga-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Saga Prefecture.svg",
+  "capital": "Saga",
+  "region": "Japan",
+  "subregion": "Kyūshū",
+  "population": 781214,
+  "area": 2441,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    33.3,
+    130.1
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Kyūshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white six-petalled camphor flower with red stamens at its heart on a dark green field.",
+    "adopted": "1968",
+    "colors": [
+      "green",
+      "white",
+      "red"
+    ],
+    "symbolism": "The camphor flower is the prefectural flower; the white petals stand for fairness and cleanliness, the red stamens for sincerity and passion."
+  },
+  "hook": "Saga's white camphor flower on dark green has a red heart; Miyagi's white emblem on dark green is all white.",
+  "lookalikes": [],
+  "trivia": [
+    "Arita in Saga has made porcelain since the early 1600s.",
+    "The Yoshinogari site is one of Japan's largest Yayoi-era settlements."
+  ]
+}

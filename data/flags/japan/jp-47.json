@@ -1,0 +1,65 @@
+{
+  "code": "jp-47",
+  "isoNumeric": "",
+  "name": "Okinawa",
+  "officialName": "Okinawa Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "沖縄県",
+      "romanized": "Okinawa-ken"
+    },
+    {
+      "language": "Okinawan",
+      "name": "ウチナーチン",
+      "romanized": "Uchinaachin"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Okinawa Prefecture.svg",
+  "capital": "Naha",
+  "region": "Japan",
+  "subregion": "Ryūkyū Islands",
+  "population": 1468220,
+  "area": 2283,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    26.5,
+    128
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Okinawa Island"
+    ]
+  ],
+  "flag": {
+    "description": "A red disc with a white ring inside it, on a white field.",
+    "adopted": "1972",
+    "colors": [
+      "white",
+      "red"
+    ],
+    "symbolism": "The white ring is an O for Okinawa."
+  },
+  "hook": "Okinawa looks like Japan's red sun with a white O punched into it: O for Okinawa.",
+  "lookalikes": [],
+  "trivia": [
+    "Okinawa was the independent Ryukyu Kingdom until Japan annexed it in 1879, and was under US administration from 1945 until 15 May 1972.",
+    "The emblem was first meant to be blue, white and red, but looked too like the All Japan Kendo Federation's mark; it was blue and white for a few months before turning red in October 1972."
+  ]
+}

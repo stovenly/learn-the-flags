@@ -1,0 +1,60 @@
+{
+  "code": "jp-02",
+  "isoNumeric": "",
+  "name": "Aomori",
+  "officialName": "Aomori Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "青森県",
+      "romanized": "Aomori-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Aomori Prefecture.svg",
+  "capital": "Aomori",
+  "region": "Japan",
+  "subregion": "Tōhoku",
+  "population": 1140395,
+  "area": 9646,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    40.8,
+    140.8
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A green map of the prefecture on a white field.",
+    "adopted": "1961",
+    "colors": [
+      "white",
+      "green"
+    ],
+    "symbolism": "The emblem is the outline of Aomori itself, with the Tsugaru and Shimokita peninsulas reaching north around Mutsu Bay; the white stands for the boundless universe and the deep green for hope and the future."
+  },
+  "hook": "Aomori's flag is just its own map in green on white, the two peninsulas at the tip of Honshu standing up like horns.",
+  "lookalikes": [],
+  "trivia": [
+    "Aomori grows more than half of Japan's apples.",
+    "Its flag is one of the few prefectural flags drawn as a map rather than a stylized character."
+  ]
+}

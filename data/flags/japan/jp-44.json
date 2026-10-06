@@ -1,0 +1,60 @@
+{
+  "code": "jp-44",
+  "isoNumeric": "",
+  "name": "Oita",
+  "officialName": "Oita Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "大分県",
+      "romanized": "Ōita-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Oita Prefecture.svg",
+  "capital": "Ōita",
+  "region": "Japan",
+  "subregion": "Kyūshū",
+  "population": 1076875,
+  "area": 6341,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    33.2,
+    131.4
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Kyūshū"
+    ]
+  ],
+  "flag": {
+    "description": "Three red kanji 大 (ō) joined in a ring on a white field.",
+    "adopted": "1966",
+    "colors": [
+      "white",
+      "red"
+    ],
+    "symbolism": "The three 大 stand for trust, work and friendship; joined hand in hand they form a rising sun."
+  },
+  "hook": "Oita's red ring on white is three 大 (ō) characters holding hands; Saitama's red ring is sixteen jewels.",
+  "lookalikes": [],
+  "trivia": [
+    "Ōita has more hot spring sources than any other prefecture, many of them in Beppu and Yufuin.",
+    "Beppu's \"hells\" are boiling, colored hot springs meant for looking at, not bathing in."
+  ]
+}

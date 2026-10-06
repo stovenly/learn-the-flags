@@ -27,6 +27,15 @@
     "flags": "Canadian provincial and territorial flags"
   },
   {
+    "id": "japan",
+    "name": "Japanese prefectures",
+    "noun": "prefecture",
+    "description": "All 47 prefectures of Japan, from Hokkaido to Okinawa.",
+    "cover": "jp",
+    "badge": "Japan",
+    "flags": "Japanese prefectural flags"
+  },
+  {
     "id": "territories",
     "name": "Territories",
     "noun": "territory",

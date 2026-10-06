@@ -1,0 +1,60 @@
+{
+  "code": "jp-45",
+  "isoNumeric": "",
+  "name": "Miyazaki",
+  "officialName": "Miyazaki Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "宮崎県",
+      "romanized": "Miyazaki-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Miyazaki Prefecture.svg",
+  "capital": "Miyazaki",
+  "region": "Japan",
+  "subregion": "Kyūshū",
+  "population": 1018904,
+  "area": 7735,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    32.2,
+    131.3
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Kyūshū"
+    ]
+  ],
+  "flag": {
+    "description": "A yellow emblem of three slanted bars on a green field: the katakana ミ (mi).",
+    "adopted": "1964",
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "symbolism": "ミ is the first sound of Miyazaki, drawn as sunlight pouring onto its green land."
+  },
+  "hook": "Miyazaki's three yellow bars on green are a katakana ミ (mi): sunshine falling on green land.",
+  "lookalikes": [],
+  "trivia": [
+    "Takachiho Gorge in Miyazaki is tied to the myths of Japan's gods.",
+    "Miyazaki is known for its mangoes and its warm southern climate."
+  ]
+}

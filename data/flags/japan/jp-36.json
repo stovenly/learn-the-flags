@@ -1,0 +1,60 @@
+{
+  "code": "jp-36",
+  "isoNumeric": "",
+  "name": "Tokushima",
+  "officialName": "Tokushima Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "徳島県",
+      "romanized": "Tokushima-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Tokushima Prefecture.svg",
+  "capital": "Tokushima",
+  "region": "Japan",
+  "subregion": "Shikoku",
+  "population": 675489,
+  "area": 4147,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    33.9,
+    134.2
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Shikoku"
+    ]
+  ],
+  "flag": {
+    "description": "A yellow emblem on a blue field: the hiragana とく (toku) drawn as a bird in flight.",
+    "adopted": "1966",
+    "colors": [
+      "blue",
+      "yellow"
+    ],
+    "symbolism": "とく is the first part of Tokushima, shaped as a bird for unity and soaring growth."
+  },
+  "hook": "Tokushima's yellow bird on blue spells とく (toku); Tottori's bird on blue is white.",
+  "lookalikes": [],
+  "trivia": [
+    "The Awa Odori dance festival draws over a million visitors every August.",
+    "The Naruto whirlpools churn in the strait between Tokushima and Awaji Island."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "code": "jp-28",
+  "isoNumeric": "",
+  "name": "Hyogo",
+  "officialName": "Hyogo Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "兵庫県",
+      "romanized": "Hyōgo-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Hyogo Prefecture.svg",
+  "capital": "Kōbe",
+  "region": "Japan",
+  "subregion": "Kansai",
+  "population": 5323825,
+  "area": 8401,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    35.1,
+    134.8
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "White waves across a light blue field, forming the kanji 兵 (hyō).",
+    "adopted": "1964",
+    "colors": [
+      "light-blue",
+      "white"
+    ],
+    "symbolism": "兵 is the first character of Hyōgo, drawn as waves because the prefecture faces both the Sea of Japan and the Seto Inland Sea; blue stands for youth."
+  },
+  "hook": "Hyogo's flag is all waves: white stripes on blue that, looked at closely, form the kanji 兵 (hyō).",
+  "lookalikes": [],
+  "trivia": [
+    "Himeji Castle, the \"White Heron Castle\", is a UNESCO World Heritage Site.",
+    "Japan Standard Time is set on the 135th meridian, which runs through Akashi in Hyōgo."
+  ]
+}

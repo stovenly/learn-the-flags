@@ -1,0 +1,61 @@
+{
+  "code": "jp-38",
+  "isoNumeric": "",
+  "name": "Ehime",
+  "officialName": "Ehime Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "愛媛県",
+      "romanized": "Ehime-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Ehime Prefecture.svg",
+  "capital": "Matsuyama",
+  "region": "Japan",
+  "subregion": "Shikoku",
+  "population": 1260088,
+  "area": 5676,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    33.6,
+    132.8
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Shikoku"
+    ]
+  ],
+  "flag": {
+    "description": "A wide green band between two yellow-orange bands, with a white citrus blossom in the center.",
+    "adopted": "1952",
+    "colors": [
+      "orange",
+      "green",
+      "white"
+    ],
+    "symbolism": "The mandarin orange blossom is the prefectural flower; white stands for simplicity, green for peace and hope, and yellow for happiness."
+  },
+  "hook": "Ehime is the only striped prefecture flag: orange, green, orange, with a white citrus blossom, for its mandarin groves.",
+  "lookalikes": [],
+  "trivia": [
+    "Dōgo Onsen in Matsuyama is one of Japan's oldest hot springs.",
+    "The Shimanami Kaidō bridges link Ehime to Hiroshima across the islands of the Seto Inland Sea."
+  ]
+}

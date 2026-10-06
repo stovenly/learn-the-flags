@@ -1,0 +1,60 @@
+{
+  "code": "jp-37",
+  "isoNumeric": "",
+  "name": "Kagawa",
+  "officialName": "Kagawa Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "香川県",
+      "romanized": "Kagawa-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Kagawa Prefecture.svg",
+  "capital": "Takamatsu",
+  "region": "Japan",
+  "subregion": "Shikoku",
+  "population": 907725,
+  "area": 1877,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    34.2,
+    134
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Shikoku"
+    ]
+  ],
+  "flag": {
+    "description": "A white emblem on an olive green field: the katakana カ (ka) drawn as a rounded arch.",
+    "adopted": "1977",
+    "colors": [
+      "green",
+      "white"
+    ],
+    "symbolism": "カ, the first sound of Kagawa, is drawn as the prefecture's mountains and as an olive leaf, an old sign of peace."
+  },
+  "hook": "Kagawa's white カ (ka) on olive green bends like an olive leaf, for the olives of Shōdoshima.",
+  "lookalikes": [],
+  "trivia": [
+    "Kagawa is the smallest prefecture by area.",
+    "It is known as the \"Udon Prefecture\" for Sanuki udon noodles."
+  ]
+}

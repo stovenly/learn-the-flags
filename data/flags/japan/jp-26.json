@@ -1,0 +1,61 @@
+{
+  "code": "jp-26",
+  "isoNumeric": "",
+  "name": "Kyoto",
+  "officialName": "Kyoto Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "京都府",
+      "romanized": "Kyōto-fu"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Kyoto Prefecture.svg",
+  "capital": "Kyōto",
+  "region": "Japan",
+  "subregion": "Kansai",
+  "population": 2502747,
+  "area": 4612,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    35.2,
+    135.4
+  ],
+  "facts": [
+    [
+      "Type",
+      "Urban prefecture (fu)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white six-leafed flower on a violet field, holding a yellow 京 (kyō) drawn as a human figure.",
+    "adopted": "1976",
+    "colors": [
+      "purple",
+      "white",
+      "yellow"
+    ],
+    "symbolism": "The six leaves stand for the dignity of the old capital, and the 京 in their heart for the people of Kyoto joining their strength."
+  },
+  "hook": "Kyoto's white flower on violet has a yellow 京 (kyō), for Kyoto, at its heart.",
+  "lookalikes": [],
+  "trivia": [
+    "Kyoto was Japan's imperial capital for more than a thousand years, from 794 to 1869.",
+    "The prefecture also reaches north to the Sea of Japan at Amanohashidate."
+  ]
+}

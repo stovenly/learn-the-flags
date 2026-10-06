@@ -1,0 +1,60 @@
+{
+  "code": "jp-24",
+  "isoNumeric": "",
+  "name": "Mie",
+  "officialName": "Mie Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "三重県",
+      "romanized": "Mie-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Mie Prefecture.svg",
+  "capital": "Tsu",
+  "region": "Japan",
+  "subregion": "Kansai",
+  "population": 1694896,
+  "area": 5774,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    34.5,
+    136.4
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white emblem on a green field: the hiragana み (mi) drawn as an arrow pointing up, with a ring at its foot.",
+    "adopted": "1964",
+    "colors": [
+      "green",
+      "white"
+    ],
+    "symbolism": "み is the first sound of Mie; the arrow stands for progress and the ring for the pearls farmed in Ago Bay."
+  },
+  "hook": "Mie's white み (mi) shoots up like an arrow from an Ago Bay pearl on bright green; Miyagi's み curls into leaves on dark green.",
+  "lookalikes": [],
+  "trivia": [
+    "The Ise Grand Shrine, Shinto's holiest site, is in Mie.",
+    "Iga, in Mie, is famous as a home of the ninja."
+  ]
+}

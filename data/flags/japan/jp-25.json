@@ -1,0 +1,60 @@
+{
+  "code": "jp-25",
+  "isoNumeric": "",
+  "name": "Shiga",
+  "officialName": "Shiga Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "滋賀県",
+      "romanized": "Shiga-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Shiga Prefecture.svg",
+  "capital": "Ōtsu",
+  "region": "Japan",
+  "subregion": "Kansai",
+  "population": 1392439,
+  "area": 4017,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    35.2,
+    136.1
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white emblem on a light blue field: the katakana シガ (Shiga) drawn as a ring with wings.",
+    "adopted": "1968",
+    "colors": [
+      "light-blue",
+      "white"
+    ],
+    "symbolism": "The ring stands for harmony, the circle inside it for Lake Biwa and the wings for the prefecture taking flight."
+  },
+  "hook": "Shiga's white ring with wings on blue spells シガ (Shiga); the hole in the middle is Lake Biwa.",
+  "lookalikes": [],
+  "trivia": [
+    "Lake Biwa, Japan's largest lake, covers about a sixth of Shiga.",
+    "Hikone Castle is one of only a handful of Japanese castles with its original keep."
+  ]
+}

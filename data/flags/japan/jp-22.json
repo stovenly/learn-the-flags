@@ -1,0 +1,61 @@
+{
+  "code": "jp-22",
+  "isoNumeric": "",
+  "name": "Shizuoka",
+  "officialName": "Shizuoka Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "静岡県",
+      "romanized": "Shizuoka-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Shizuoka Prefecture.svg",
+  "capital": "Shizuoka",
+  "region": "Japan",
+  "subregion": "Chūbu",
+  "population": 3468845,
+  "area": 7777,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    35,
+    138.3
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "An orange emblem edged in white on a blue field: the outline of the prefecture shaped into Mount Fuji.",
+    "adopted": "1968",
+    "colors": [
+      "blue",
+      "white",
+      "orange"
+    ],
+    "symbolism": "The emblem simplifies Mount Fuji, the Izu Peninsula, Suruga Bay and Cape Omaezaki into one shape; blue is the sky and the Pacific, orange the sunshine and the people's passion."
+  },
+  "hook": "Shizuoka's orange emblem on blue is its own coastline bent into the shape of Mount Fuji.",
+  "lookalikes": [],
+  "trivia": [
+    "Shizuoka is one of Japan's biggest green tea growers.",
+    "Tokugawa Ieyasu spent his retirement at Sunpu Castle, in today's Shizuoka City."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "code": "jp-04",
+  "isoNumeric": "",
+  "name": "Miyagi",
+  "officialName": "Miyagi Prefecture",
+  "endonyms": [
+    {
+      "language": "Japanese",
+      "name": "宮城県",
+      "romanized": "Miyagi-ken"
+    }
+  ],
+  "aliases": [],
+  "image": "Flag of Miyagi Prefecture.svg",
+  "capital": "Sendai",
+  "region": "Japan",
+  "subregion": "Tōhoku",
+  "population": 2227240,
+  "area": 7282,
+  "languages": [
+    "Japanese"
+  ],
+  "currencies": [
+    {
+      "name": "Japanese yen",
+      "code": "JPY",
+      "symbol": "¥"
+    }
+  ],
+  "demonym": "",
+  "latlng": [
+    38.4,
+    140.9
+  ],
+  "facts": [
+    [
+      "Type",
+      "Prefecture (ken)"
+    ],
+    [
+      "Island",
+      "Honshū"
+    ]
+  ],
+  "flag": {
+    "description": "A white emblem on a dark green field: the hiragana み (mi) drawn as three bush-clover leaves.",
+    "adopted": "1966",
+    "colors": [
+      "green",
+      "white"
+    ],
+    "symbolism": "Miyagino bush clover (Miyaginohagi) is the prefectural flower and み the first sound of Miyagi; the middle leaf stands for lasting growth, the left for harmony and the right for love of home."
+  },
+  "hook": "Miyagi's white み (mi) curls into three bush-clover leaves on dark green; Mie's み is a straight arrow on bright green.",
+  "lookalikes": [],
+  "trivia": [
+    "Sendai, the capital, is the largest city in the Tōhoku region.",
+    "Matsushima Bay, with over 200 pine-covered islets, is counted among the Three Views of Japan."
+  ]
+}
