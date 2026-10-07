@@ -206,7 +206,7 @@ export function progressView(root: HTMLElement) {
             ['new', 'Not started'],
           ] as const
         )
-          .map(([k, label]) => `<button class="chip${gridFilter === k ? ' active' : ''}" data-filter="${k}">${label}</button>`)
+          .map(([k, label]) => `<button class="chip${gridFilter === k ? ' active' : ''}" data-filter="${k}"><span class="status-mark is-${k}" aria-hidden="true"></span>${label}</button>`)
           .join('')}
       </div>
     </div>

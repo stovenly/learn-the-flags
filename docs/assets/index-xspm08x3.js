@@ -344,7 +344,7 @@
     <div class="section-head wall-toolbar">
       <h2>Your flags</h2>
       <div class="chips" role="group" aria-label="Show">
-        ${[[`all`,`All`],[`learned`,`Learned`],[`learning`,`In progress`],[`new`,`Not started`]].map(([e,t])=>`<button class="chip${In===e?` active`:``}" data-filter="${e}">${t}</button>`).join(``)}
+        ${[[`all`,`All`],[`learned`,`Learned`],[`learning`,`In progress`],[`new`,`Not started`]].map(([e,t])=>`<button class="chip${In===e?` active`:``}" data-filter="${e}"><span class="status-mark is-${e}" aria-hidden="true"></span>${t}</button>`).join(``)}
       </div>
     </div>
     ${v}

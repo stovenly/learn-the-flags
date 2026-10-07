@@ -901,19 +901,31 @@ body[data-route='study'] #app { padding-top: clamp(28px, 7vh, 64px); }
 .wall-flag { position: relative; aspect-ratio: 3 / 2; display: block; border-radius: 4px; }
 .wall-flag .flag { position: absolute; inset: 0; margin: auto; width: auto; height: auto; max-width: 100%; max-height: 100%; transition: transform 0.12s, filter 0.12s, opacity 0.12s; }
 .wall-flag:hover .flag, .wall-flag:focus-visible .flag { transform: scale(1.15); }
-.wall-flag.is-new .flag { filter: grayscale(1); opacity: 0.28; }
+.wall-flag.is-new .flag { filter: grayscale(1); opacity: 0.22; }
 .wall-flag.is-new:hover .flag { opacity: 0.6; }
-.wall-flag.is-learning::after {
+.wall-flag.is-learning .flag { opacity: 0.8; }
+/* The filter chips reuse these marks as their legend. */
+.wall-flag.is-learned::after, .wall-flag.is-learning::after, .status-mark {
   content: '';
   position: absolute;
-  right: -3px;
-  top: -3px;
-  width: 9px;
-  height: 9px;
+  right: -5px;
+  bottom: -5px;
+  width: 15px;
+  height: 15px;
+  box-sizing: border-box;
   border-radius: 50%;
-  background: var(--learning);
   box-shadow: 0 0 0 2px var(--surface);
 }
+.wall-flag.is-learned::after, .status-mark.is-learned {
+  background: var(--learned) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center / 10px no-repeat;
+}
+.wall-flag.is-learning::after, .status-mark.is-learning {
+  border: 2px solid var(--learned);
+  background: conic-gradient(var(--learned) 0 50%, var(--surface) 0);
+}
+.status-mark { position: static; display: inline-block; vertical-align: -2px; margin-right: 6px; box-shadow: none; }
+.status-mark.is-new { border: 2px dashed var(--muted); }
+.status-mark.is-all { display: none; }
 
 .progress-cols { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: 16px; align-items: start; }
 .progress-cols.single { grid-template-columns: 1fr; }
